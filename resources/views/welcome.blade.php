@@ -21,51 +21,83 @@
                         <small class="text-white sub-caption">Find the World's leading lighting companies</small>
                     </p>
                     <button class="btn btn-outline-light">Read More</button>
-                    <button class="btn btn-outline-light">Get your Free Trial</button>
+                    <!-- <button class="btn btn-light">Get your Free Trial</button> -->
                 </div>
             </div>
         </div>
     </div>
     <div class="section-2">
-        <div class="container section-2-contents">
+        <div class="container section-2-container">
             <div class="row justify-content-center section-2-contents">
-                <div class="col-md-3">
+                <div class="col-sm-4">
                     <div class="card section-2-card">
+                        <img src="{{ asset('images/home-icon.png') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="card-title">
-                                MyHome
+                                <h3 class="font-weight-bold">
+                                    MY HOME
+                                </h3> 
                             </div>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                Private homes, villas, and palaces
+                            </h6>
+                            <hr class="hr-card">
                             <p class="card-text">
                                 Some quick example text to build on the card title and make up the bulk of the card's content.
                             </p>
+                            <a href="" class="btn btn-sm btn-dark">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-4">
                     <div class="card section-2-card">
+                        <img src="{{ asset('images/tower-icon.png') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="card-title">
-                                MyHome
+                                <h3 class="font-weight-bold">
+                                    MY TOWER
+                                </h3> 
                             </div>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                Consultants, contractors and project owners
+                            </h6>
+                            <hr class="hr-card">
                             <p class="card-text">
                                 Some quick example text to build on the card title and make up the bulk of the card's content.
                             </p>
+                            <a href="" class="btn btn-sm btn-dark">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-4">
                     <div class="card section-2-card">
+                        <img src="{{ asset('images/world-icon.png') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="card-title">
-                                MyHome
+                                <h3 class="font-weight-bold">
+                                    SOURCING SOLUTIONS
+                                </h3> 
                             </div>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                B2B or B2C
+                            </h6>
+                            <hr class="hr-card">
                             <p class="card-text">
                                 Some quick example text to build on the card title and make up the bulk of the card's content.
                             </p>
+                            <a href="" class="btn btn-sm btn-dark">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row justify-content-center mt-6">
+                <a href="#" class="btn btn-lg btn-dark">GET YOUR FREE ACCESS NOW!</a>
+            </div>
+        </div>
+    </div>
+    <div class="section-3">
+        <div class="container-fluid bg-dark section-3-contents">
+            Hello World
         </div>
     </div>
 </div>
