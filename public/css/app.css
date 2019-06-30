@@ -11177,8 +11177,14 @@ body {
 }
 
 .section-2 {
-  height: 500px;
-  z-index: -1;
+  height: 450px;
+  z-index: 1;
+}
+
+.section-2-container {
+  height: 100%;
+  position: relative;
+  bottom: 200px;
 }
 
 .section-2-contents {
@@ -11186,7 +11192,30 @@ body {
 }
 
 .section-2-card {
-  height: 75%;
+  height: 100%;
+  padding: 20px;
+}
+
+.mt-6 {
+  margin-top: 4rem;
+}
+
+.card-img-top {
+  width: 64px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.hr-card {
+  margin-right: 170px;
+}
+
+.section-3 {
+  height: 500px;
+}
+
+.section-3-contents {
+  height: 500px;
 }
 
 footer {
