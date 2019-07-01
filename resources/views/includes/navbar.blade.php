@@ -13,7 +13,7 @@
                 </li>
                 <li class="nav-item dropdown mr-3">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    About Us
+                    About
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">What is Buyanylight?</a>
@@ -24,7 +24,7 @@
                 </li>
                 <li class="nav-item dropdown mr-3">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Our Packages
+                    Packages
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Entry Level Plan</a>
@@ -38,7 +38,7 @@
                     <a class="nav-link text-white" href="#">IEO</a>
                 </li>
                 <li class="nav-item mr-3">
-                    <a class="nav-link text-white" href="#">Contact Us</a>
+                    <a class="nav-link text-white" href="#">Contact</a>
                 </li>
                 <li class="nav-item mr-3">
                     <a class="nav-link text-white" href="#">Sign In</a>

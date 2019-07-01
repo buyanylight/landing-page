@@ -9,6 +9,7 @@
 
 body{
 	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
 }
 
 // SECTION 1
@@ -116,6 +117,14 @@ body{
     margin-top: 20px;
 }
 
+.card-text{
+	height: 130px;
+}
+
+.card-subtitle{
+	font-size:12px;
+}
+
 .hr-card{
 	margin-right: 170px;
 }
@@ -126,16 +135,182 @@ body{
 // SECTION 3
 
 .section-3{
-	height: 500px;
+	height: 425px;
 }
 
 .section-3-contents{
-	height: 500px;
+	height: 425px;
 }
 
+.section-3-hr{
+	margin-right: 365px;
+	background-color: white;
+	margin-top: 8px;
+}
 
 // SECTION 3
 // -------------
+// SECTION 4
+
+.section-4{
+	background: url("/images/section4.png");
+	height: 55vw;
+	background-position-x: right;
+	background-position-y: -25px;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 95%;
+}
+
+.section-4-part1{
+	position: relative;
+    top: 115px;	
+}
+
+.section-4-part2{
+	position: relative;
+    top: 230px;	
+}
+
+
+// SECTION 4
+// -------------
+// SECTION 5
+
+.section-5{
+	height: 500px;
+}
+
+// SECTION 5
+// -------------
+// SECTION 6
+
+.section-6{
+	background: url("/images/section6.png");
+	height: 70vw;
+    background-size: 90%;
+    background-repeat:no-repeat;
+    background-color:white;
+    background-position-x: left;
+}
+
+.section-6-part1{
+	position: relative;
+    top: 115px;	
+}
+
+.section-6-part2{
+	position: relative;
+    top: 230px;	
+}
+
+// SECTION 6
+// -------------
+// SECTION 7
+
+.section-7{
+	height: 500px;
+}
+
+// SECTION 7
+// -------------
+// SECTION 8
+
+.section-8{
+	height: 500px;
+}
+
+.section-8-hr{
+	background-color: white;
+	margin-right: 438px;
+
+}
+
+// SECTION 8
+// -------------
+// SECTION 9
+
+.section-9{
+	height: 900px;
+}
+
+.section-9-hr{
+	background-color: black;
+	margin-right: 455px;
+
+}
+
+// SECTION 9
+// -------------
+// SECTION 10
+
+.section-10{
+	height: 825px;
+}
+
+.section-10-hr{
+	background-color: white;
+	margin-right: 455px;
+
+}
+
+// SECTION 10
+// -------------
+// SECTION 11
+
+.section-11{
+	height: 850px;
+}
+
+.section-11-hr{
+	background-color: black;
+	margin-right: 438px;
+
+}
+
+// SECTION 11
+// -------------
+// SECTION 12
+
+.section-12{
+	height: 500px;
+}
+
+.section-12-hr{
+	background-color: black;
+	margin-right: 438px;
+
+}
+
+// SECTION 12
+// -------------
+// SECTION 13
+
+.section-13{
+	height: 100%;
+}
+
+.section-13-hr{
+	background-color: black;
+	margin-right: 438px;
+
+}
+
+.section-13-img{
+	width: 345px;
+    height: 225px;
+}
+
+.section-13-text{
+	height: 250px;
+}
+
+// SECTION 13
+// -------------
+
+
+
+
 footer{
 	height: 500px;
 }
