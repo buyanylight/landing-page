@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PageController@home')->name('home');
+
+
+Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUsController@contactSaveData']);
+
+
+Route::get('/m', 'MobileController@index');
