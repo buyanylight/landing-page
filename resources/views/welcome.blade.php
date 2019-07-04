@@ -1,16 +1,33 @@
 @extends('layouts.main-layout')
 @section('content')
+<div class="modal" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                    @if(session('success'))
+                    <div class="thank-you-pop">
+                        <img src="{{ asset('images/green-tick.png')}}" alt="">
+                        <h2>Hey, Thanks for getting in touch!</h2>
+                        <p>{{session('success')}}</p>
+                    </div>
+                    @endif
+            </div>
+        </div>
+    </div>
+</div>
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
 <div class="body-content">
     <div class="section-1">
         <div class="video-banner">
             <div class="video-image-container">
-                <img src="{{asset('images/preview.png')}}" class="video-image">
+                <img src="{{asset('images/main-image.png')}}" class="video-image">
             </div>
             <div class="d-flex justify-content-center align-items-center video-container">
-                <div class="video-overlay"></div>
-                <video autoplay muted loop class="embed-responsive-item video-banner-vid" id="autovid">
-                    <source src="{{asset('images/banner-video.mp4')}}" type="video/mp4">
-                </video>
                 <div class="container bannercontainer">
                     <h1 class=" display-4 text-left headline">
                         Sourcing Reinvented
@@ -26,12 +43,12 @@
             </div>
         </div>
     </div>
-    <div class="section-2">
-        <div class="container section-2-container">
-            <div class="row justify-content-center section-2-contents">
+    <div class=" bg-white section-2 pt-5 pb-5">
+        <div class=" container section-2-container">
+            <div class="row justify-content-center section-2-contents text-center">
                 <div class="col-sm-4">
                     <div class="card section-2-card">
-                        <img src="{{ asset('images/home-icon.png') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('images/home-icon.png') }}" class="card-top" alt="...">
                         <div class="card-body">
                             <div class="card-title">
                                 <h3 class="font-weight-bold">
@@ -51,7 +68,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="card section-2-card">
-                        <img src="{{ asset('images/tower-icon.png') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('images/tower-icon.png') }}" class="card-top" alt="...">
                         <div class="card-body">
                             <div class="card-title">
                                 <h3 class="font-weight-bold">
@@ -71,7 +88,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="card section-2-card">
-                        <img src="{{ asset('images/world-icon.png') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('images/world-icon.png') }}" class="card-top" alt="...">
                         <div class="card-body">
                             <div class="card-title">
                                 <h3 class="font-weight-bold">
@@ -90,16 +107,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center mt-6">
-                <a href="#" class="btn btn-lg btn-dark">GET YOUR FREE ACCESS NOW!</a>
-            </div>
         </div>
     </div>
-    <div class="section-3">
-        <div class="bg-dark section-3-contents">
+    <div class="section-3" id="mission">
+        <div class="bg-white section-3-contents">
             <div class="container pt-5 pb-5 h-100">
                 <div class="row align-items-center h-100">
-                    <div class="col-md-5 col-sm-5 text-white pt-4 h-100">
+                    <div class="col-md-5 col-sm-5 text-dark pt-4 h-100">
                         <h4 class="font-weight-bold">
                             Mission
                             <hr class="section-3-hr">
@@ -127,8 +141,11 @@
             </div>
         </div>
     </div>
-    <div class="section-4">
+    <div class="section-4" id="about">
         <div class="section-4-contents h-100">
+            <div class="section-4-img d-flex justify-content-center align-items-center">
+            
+            </div>
             <div class="container h-100">
                 <div class="row section-4-part1">
                     <div class="col-md-6">
@@ -152,12 +169,11 @@
                         </div>
                     </div>
                     <div class="col-md-6 ">
-                        <img src="{{ asset('images/demo1.jpg')}}" width="500">
+                        
                     </div>
                 </div>
                 <div class="row section-4-part2">
                     <div class="col-md-6">
-                        <img src="{{ asset('images/demo1.jpg')}}" width="500">
                     </div>
                     <div class="col-md-6 text-white">
                         <div>
@@ -176,14 +192,291 @@
             </div>
         </div>
     </div>
-    <div class="section-5">
-        <div class="section-5-container bg-dark h-100">
+    <div class="section-5" id="balvsretail">
+        <div class="section-5-container bg-black h-100">
             <div class="container pt-5">
                 <h4 class="text-white font-weight-bold">BAL VS RETAIL</h4>
+                <div class="slide hi-slide">
+                    <div class="hi-prev"></div>
+                    <div class="hi-next"> </div>
+                    <ul>
+                        <li>
+                            <div class="card bg-dark">
+                                <div class="card-body">
+                                    <img class="card-img" src="{{ asset('images/products/light1.jpg') }}" alt="">
+                                    <div class="card-text text-white p-2 pt-3">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt="">
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $6
+                                                </p>        
+                                            </div>
+                                            <div class="col-md-2">
+                                                /
+                                            </div>
+                                            <div class="col-md-5">
+                                                <img class="card-img" src="{{ asset('images/retails/bega_logo.jpg') }}" alt="">
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $28
+                                                </p>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card bg-dark ">
+                                <div class="card-body">
+                                    <img class="card-img" src="{{ asset('images/products/light2.jpg') }}" alt="">
+                                    <div class="card-text text-white p-2 pt-3">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt="">
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $33
+                                                </p>        
+                                            </div>
+                                            <div class="col-md-2">
+                                                /
+                                            </div>
+                                            <div class="col-md-5">
+                                                 <img class="card-img" src="{{ asset('images/retails/erco.jpg') }}" alt="">
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $251
+                                                </p>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card bg-dark">
+                                <div class="card-body">
+                                    <img class="card-img" src="{{ asset('images/products/light3.jpg') }}" alt="">
+                                    <div class="card-text text-white p-2 pt-3">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt="">           
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $15
+                                                </p> 
+                                            </div>
+                                            <div class="col-md-2">
+                                                /
+                                            </div>
+                                            <div class="col-md-5">
+                                                <img class="card-img" src="{{ asset('images/retails/flos.png') }}" alt=""> 
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $205
+                                                </p>   
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card bg-dark">
+                                <div class="card-body">
+                                    <img class="card-img" src="{{ asset('images/products/light4.jpg') }}" alt="">
+                                    <div class="card-text text-white p-2 pt-3">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt="">
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $8
+                                                </p>        
+                                            </div>
+                                            <div class="col-md-2">
+                                                /
+                                            </div>
+                                            <div class="col-md-5">
+                                                <img class="card-img" src="{{ asset('images/retails/iguzzinii.png') }}" alt="">
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $40
+                                                </p>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card bg-dark">
+                                <div class="card-body">
+                                    <img class="card-img" src="{{ asset('images/products/light5.jpg') }}" alt="">
+                                    <div class="card-text text-white p-2 pt-3">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                            <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt="">           
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $102
+                                                </p>
+                                            </div>
+                                            <div class="col-md-2">
+                                                /
+                                            </div>
+                                            <div class="col-md-5">
+                                                <img class="card-img" src="{{ asset('images/retails/ledvance.png') }}" alt=""> 
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $3501
+                                                </p>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card bg-dark">
+                                <div class="card-body">
+                                    <img class="card-img" src="{{ asset('images/products/light6.jpg') }}" alt="">
+                                    <div class="card-text text-white p-2 pt-3">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt="">
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $12
+                                                </p>           
+                                            </div>
+                                            <div class="col-md-2">
+                                                /
+                                            </div>
+                                            <div class="col-md-5">
+                                                <img class="card-img" src="{{ asset('images/retails/marset_logo.png') }}" alt=""> 
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $529
+                                                </p>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card bg-dark">
+                                <div class="card-body">
+                                    <img class="card-img" src="{{ asset('images/products/light7.jpg') }}" alt="">
+                                    <div class="card-text text-white p-2 pt-3">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                            <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt="">
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $67
+                                                </p>           
+                                            </div>
+                                            <div class="col-md-2">
+                                                /
+                                            </div>
+                                            <div class="col-md-5">
+                                                <img class="card-img" src="{{ asset('images/retails/mw.png') }}" alt="">
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $446
+                                                </p>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card bg-dark">
+                                <div class="card-body">
+                                    <img class="card-img" src="{{ asset('images/products/light8.jpg') }}" alt="">
+                                    <div class="card-text text-white p-2 pt-3">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt=""> 
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $70
+                                                </p>          
+                                            </div>
+                                            <div class="col-md-2">
+                                                /
+                                            </div>
+                                            <div class="col-md-5">
+                                                <img class="card-img" src="{{ asset('images/retails/osram.png') }}" alt=""> 
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $650
+                                                </p>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card bg-dark">
+                                <div class="card-body">
+                                    <img class="card-img" src="{{ asset('images/products/light9.jpg') }}" alt="">
+                                    <div class="card-text text-white p-2 pt-3">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                            <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt=""> 
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $3
+                                                </p>          
+                                            </div>
+                                            <div class="col-md-2">
+                                                /
+                                            </div>
+                                            <div class="col-md-5">
+                                                <img class="card-img" src="{{ asset('images/retails/philips.png') }}" alt="">
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $25
+                                                </p> 
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card bg-dark">
+                                <div class="card-body">
+                                    <img class="card-img" src="{{ asset('images/products/light10.jpg') }}" alt="">
+                                    <div class="card-text text-white p-2 pt-3">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt=""> 
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $25
+                                                </p>          
+                                            </div>
+                                            <div class="col-md-2">
+                                                /
+                                            </div>
+                                            <div class="col-md-5">
+                                                <img class="card-img" src="{{ asset('images/retails/thorlux.png') }}" alt="">
+                                                <p class="font-weight-bold text-center pt-4">
+                                                    $444
+                                                </p>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pt-5 text-white text-center font-15">
+                    <p class="pt-5">
+                        Get your Free Quote
+                    </p>
+                    <p>
+                        Click Here
+                    </p>
+                    <a href="#trial" class="text-white">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="section-6">
+    <div class="section-6" id="ninety">
         <div class="section-6-container">
             <div class="container h-100">
                 <div class="row section-6-part1">
@@ -236,16 +529,328 @@
             </div>
         </div>
     </div>
-    <div class="section-7">
+    <div class="section-7 bg-white">
         <div class="section-7-container">
             <div class="container pt-5">
                 <h4 class="font-weight-bold">
                     Why Choose Us
                 </h4>
+                <div class="pt-3">
+                    <p>
+                        BUY ANY LIGHT (BAL) delivers exceptional advantages to both sellers and buyers, ensuring that every BAL platform user gets win-win results, every time! 
+                    </p>
+                    <p>
+                        Take a look at just some of the big BAL benefits:
+                    </p>
+                </div>
+                <div class="pb-5">
+                    <h3 class="pt-5 pb-5 font-weight-bold text-center">
+                        Buyers
+                    </h3>
+                    <div class="container buyer-cards">
+                        <div class="card-deck w-100">
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-stopwatch"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">Convenient</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        BAL is a one-stop shop that reduces the time spent on sourcing LED lights by over 90%.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-dollar-sign"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">Lowest prices</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        Get the best quotes directly from BAL and manufacturers, without involving any costly middle-men.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-boxes"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">Greater variety</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        Find any type of LED light you need on BAL. Review different designs and technical specifications from world-class brands.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container buyer-cards pt-4">
+                        <div class="card-deck w-100">
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-equals"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">Easy price comparisons</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        Use the advanced filter feature to select quotes and pick the best ones to review and compare.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-key"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">Security</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        Enjoy 100% payment protection guarantee. Your payment is secured with BAL until the goods reach their destination.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-filter"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">Risk-free</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        No long-term financial commitment - and no upfront payment when using essential and corporate packages.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container buyer-cards pt-4">
+                        <div class="card-deck w-100">
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-lightbulb"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">Request samples</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        Want to try before you buy? You can order a few samples first before buying in bulk.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-globe-asia"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">World-class logistics</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        BAL takes responsibility for ensuring that all your orders are securely handled with the greatest care. We promise on-time delivery and a live shipment tracker.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">First-class consultancy</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        Private homeowners, consultants and contractors can take advantage of our consultancy services. Our LED lighting experts are here to ensure the success of every project, whatever its size.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <h3 class="pb-5 font-weight-bold text-center">
+                        Sellers
+                    </h3>
+                    <div class="container buyer-cards">
+                        <div class="card-deck w-100">
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-business-time"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">Easy set-up</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        No need for tedious product listing processes: just complete your seller profile and verification.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-laptop"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">Free registration</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        BAL is completely free for sellers. Simply register and start receiving Requests For Quotes (RFQs) from buyers across the globe!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-hand-holding-usd"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">Cost-saving</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        Get access to thousands of highly-targeted buyers across the globe without spending a cent on marketing! BAL is an excellent free channel for selling your stock.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container buyer-cards pt-4">
+                        <div class="card-deck w-100">
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-wallet"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">Flexible pricing</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        Sellers can give a flexible price for each quote based on availability, the target market and any fluctuations in production costs, etc.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-shield-alt"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">Secure platform</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        BAL guarantees the payments for every supply project and acts as trustee. Fulfil all your orders with absolute confidence!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-smile"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">Completely free</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        No long-term financial commitment - and no upfront payment when using essential and corporate packages.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container buyer-cards pt-4">
+                        <div class="card-deck w-100">
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-lightbulb"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">Provide samples</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        Buyers can order samples before a bulk order. This feature prevents disputes as the buyer knows what to expect.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-boxes"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">Hassle-free supply</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        We save you all the hassle and headaches of managing logistics: we fulfil the order and make sure it’s sent to the buyer promptly and safely.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card h-250">
+                                <div class="card-body">
+                                    <div class="text-center font-35 buyer-card">
+                                        <div class="buyer-img">
+                                            <i class="fas fa-pen-square"></i>
+                                        </div>
+                                        <div class="buyer-text">
+                                            <h5 class="card-title text-center">Easy to use</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-text text-center buyer-card-text">
+                                        Forget about tiring learning curves! The BAL platform is intuitive and easy to use.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="section-8">
+    <div class="section-8" id="trial">
         <div class="section-8-container bg-black h-100">
             <div class="container h-100">
                 <h4 class="font-weight-bold pt-5 text-white">
@@ -259,7 +864,7 @@
                     </div>
                     <div class="col-md-6">
                         <h5 class="font-weight-bold">
-                            ENTRY LEVEL
+                            Free Trial
                             <hr class="section-8-hr"> 
                         </h5>
                         <p>
@@ -272,7 +877,7 @@
             </div>
         </div>
     </div>
-    <div class="section-9">
+    <div class="section-9" id="home">
         <div class="section-9-container h-100">
             <div class="container h-100">
                 <div class="row pt-5">
@@ -330,7 +935,7 @@
             </div>
         </div>
     </div>
-    <div class="section-10">
+    <div class="section-10" id="tower">
         <div class="section-10-container h-100 bg-black text-white">
             <div class="container h-100">
                 <div class="row pt-5">
@@ -382,7 +987,7 @@
             </div>
         </div>
     </div>
-    <div class="section-11">
+    <div class="section-11" id="finder">
         <div class="section-11-container h-100">
             <div class="container h-100">
                 <div class="row pt-5">
@@ -432,11 +1037,431 @@
             </div>
         </div>
     </div>
-    <div class="section-12">
-        <div class="section-12-container">
-            <h4 class="text-center pt-5 font-weight-bold">
-                All Packages
-            </h4>
+    <div class="section-12" id="package">
+        <div class="section-12-container h-100">
+            <div class="container h-100">
+                <h4 class="text-center pt-5 font-weight-bold">
+                    All Packages
+                </h4>
+                <div class="pt-5 h-100">
+                    <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+                        <li class="nav-item" style="border: 1px solid black; border-radius: 5px;">
+                            <a class="nav-link text-dark font-weight-bold" id="pills-trial-tab" data-toggle="pill" href="#pills-trial" role="tab" aria-controls="pills-trial" aria-selected="true">Free Trial</a>
+                        </li>
+                        <li class="nav-item" style="border: 1px solid black; border-radius: 5px;">
+                            <a class="nav-link text-dark font-weight-bold" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false">My Home</a>
+                        </li>
+                        <li class="nav-item" style="border: 1px solid black; border-radius: 5px;">
+                            <a class="nav-link text-dark font-weight-bold" id="pills-tower-tab" data-toggle="pill" href="#pills-tower" role="tab" aria-controls="pills-tower" aria-selected="false">My Tower</a>
+                        </li>
+                        <li class="nav-item" style="border: 1px solid black; border-radius: 5px;">
+                            <a class="nav-link active text-dark font-weight-bold" id="pills-finder-tab" data-toggle="pill" href="#pills-finder" role="tab" aria-controls="pills-finder" aria-selected="false">LightFinder</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content pt-5" id="pills-tabContent" style="height: 90%;">
+                        <div class="tab-pane fade h-100" id="pills-trial" role="tabpanel" aria-labelledby="pills-trial-tab">
+                            <div class="pills-all h-100">
+                                <div class="card trial-height w-60">
+                                    <h5 class="card-header" style="background: #1B1B1B; color: white;">
+                                        Free Trial
+                                        <div class="text-muted">
+                                            <small>
+                                                NO UPFRONT COSTS & FREE QUOTATION
+                                            </small>
+                                        </div>
+                                    </h5>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <ul class="trial-list">
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                             Risk-free
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Explore BAL
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-times"></i>
+                                                            Markup feature
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul class="trial-list">
+                                                        <li>
+                                                            <i class="fas fa-times"></i>
+                                                            Sample request
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-times"></i>
+                                                            Multiple item request
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-times"></i>
+                                                            Designated lighting designer
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-12 pt-2">
+                                                    <p class="text-center">
+                                                        <strong>Note:</strong>
+                                                        A LightFinder package is required to confirm the order.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade h-100" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="pills-all h-100">
+                                <div class="card pt-height w-65">
+                                    <h5 class="card-header" style="background: #1B1B1B; color: white;">
+                                        My Home
+                                        <div class="text-muted">
+                                            <small>
+                                                NO UPFRONT COSTS & FREE QUOTATION
+                                            </small>
+                                        </div>
+                                    </h5>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <ul class="trial-list">
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                             Risk-free
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Unlimited revisions
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Sample request
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Best price guarantee
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul class="trial-list">
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            100% Payment Protection
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Home lighting consultation
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Designated lighting designer
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-times"></i>
+                                                            Markup feature
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-12 pt-2">
+                                                    <p class="text-center">
+                                                        <span>FOR ALL THIS, YOU PAY <strong>$0.00</strong></span><br><br>
+                                                        <strong>*</strong>10% BAL fee on order confirmation <br>
+                                                        <strong>**</strong>$949 Project fee payable only on offer acceptance
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade h-100" id="pills-tower" role="tabpanel" aria-labelledby="pills-tower-tab">
+                            <div class="pills-all h-100">
+                                <div class="card pt-height w-65">
+                                    <h5 class="card-header" style="background: #1B1B1B; color: white;">
+                                        My Tower
+                                        <div class="text-muted">
+                                            <small>
+                                                NO UPFRONT COSTS & FREE QUOTATION
+                                            </small>
+                                        </div>
+                                    </h5>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <ul class="trial-list">
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                             Risk-free
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Unlimited revisions
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Sample request
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Best price guarantee
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul class="trial-list">
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            100% payment protection
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Project lighting consultation
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Designated lighting designer
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Markup feature
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-12 pt-2">
+                                                    <p class="text-center">
+                                                        <span>FOR ALL THIS, YOU PAY <strong>$0.00</strong></span><br><br>
+                                                        <strong>*</strong> 10% BAL fee on order confirmation <br>
+                                                        <strong>**</strong> $1949 Project fee payable only on offer acceptance
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show active h-100" id="pills-finder" role="tabpanel" aria-labelledby="pills-finder-tab">
+                            <div class="pills-all h-100">
+                                <div class="card" style="width: 50%; height: 495px;">
+                                    <h5 class="card-header" style="background: #1B1B1B; color: white;">
+                                        MINI
+                                        <div class="text-muted">
+                                            <small>
+                                                SOURCING REINVENTED
+                                            </small>
+                                        </div>
+                                    </h5>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            <ul class="trial-list" >
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                        Inquire & source 3 items
+                                                </li>
+                                                <li>
+                                                       <i class="fas fa-check"></i>
+                                                        Minimum order quantity: 20
+                                                </li>
+                                                <li>
+                                                        <i class="fas fa-check"></i>
+                                                        100% payment guarantee
+                                                </li>
+                                                 <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Best price guarantee
+                                                </li>
+                                                 <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Sample request
+                                                </li>
+                                                <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Additional inquiry for $199
+                                                </li>
+                                                <li>
+                                                        <i class="fas fa-times"></i>
+                                                        Label & design support
+                                                </li>
+                                                <li>
+                                                        <i class="fas fa-times"></i>
+                                                        Designated lighting designer
+                                                </li>
+                                                <li>
+                                                        <i class="fas fa-times"></i>
+                                                        Markup Feature
+                                                </li>
+                                            </ul>
+                                           <div class= "pt-2">
+                                                <div class="text-center">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <strong>$5499/Yearly</strong>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <strong>$499/Monthly</strong>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <p class="text-center">
+                                                        <strong>*</strong> 20% BAL fee on order confirmation <br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 50%; height: 495px; box-shadow: 0px 0px 15px #000000; border: black; z-index: 1;">
+                                    <h5 class="card-header" style="background: #1B1B1B; color: white; ">
+                                        STANDARD
+                                        <div class="text-muted">
+                                            <small>
+                                                SOURCING REINVENTED
+                                            </small>
+                                        </div>
+                                    </h5>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            <ul class="trial-list">
+                                                 <li>
+                                                    <i class="fas fa-check"></i>
+                                                        Inquire & source 6 items
+                                                </li>
+                                                <li>
+                                                       <i class="fas fa-check"></i>
+                                                        Minimum order quantity: 10
+                                                </li>
+                                                <li>
+                                                        <i class="fas fa-check"></i>
+                                                        100% payment guarantee
+                                                </li>
+                                                <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Best price guarantee
+                                                </li>
+                                                 <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Sample request
+                                                </li>
+                                                <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Additional inquiry for $149
+                                                </li>
+                                                <li>
+                                                        <i class="fas fa-times"></i>
+                                                        Label & design support
+                                                </li>
+                                                <li>
+                                                        <i class="fas fa-times"></i>
+                                                        Designated lighting designer
+                                                </li>
+                                                <li>
+                                                        <i class="fas fa-times"></i>
+                                                        Markup Feature
+                                                </li>
+                                            </ul>
+                                           <div class= "pt-2">
+                                                <div class="text-center">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <strong>$7699/Yearly</strong>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <strong>$699/Monthly</strong>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <p class="text-center">
+                                                        <strong>*</strong> 15% BAL fee on order confirmation <br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 50%; height: 495px;">
+                                    <h5 class="card-header" style="background: #1B1B1B; color: white;">
+                                        PREMIUM
+                                        <div class="text-muted">
+                                            <small>
+                                                SOURCING REINVENTED
+                                            </small>
+                                        </div>
+                                    </h5>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            <ul class="trial-list">
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                        Inquire & source 10 items
+                                                </li>
+                                                <li>
+                                                       <i class="fas fa-check"></i>
+                                                        Minimum order quantity: 10
+                                                </li>
+                                                <li>
+                                                        <i class="fas fa-check"></i>
+                                                        100% payment guarantee
+                                                </li>
+                                                <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Best price guarantee
+                                                </li>
+                                                 <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Sample request
+                                                </li>
+                                                <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Additional inquiry for $99
+                                                </li>
+                                                <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Label & design support
+                                                </li>
+                                                <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Designated lighting designer
+                                                </li>
+                                                <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Markup Feature
+                                                </li>
+                                            </ul>
+                                           <div class= "pt-2">
+                                                <div class="text-center">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <strong>$9899/Yearly</strong>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <strong>$899/Monthly</strong>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <p class="text-center">
+                                                        <strong>*</strong> 10% BAL fee on order confirmation <br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="section-13 pb-5">
@@ -495,5 +1520,119 @@
             </div>
         </div>
     </div>
+    <div class="section-14" id="contact">
+        <div class="section-14-container">
+            <div class="pt-5 pb-5 text-center contact-header bg-dark text-white">
+                <div>
+                    <h4 class="font-weight-bold">CONTACT US</h4>
+                    <p>Feel free to get in touch with us and we'll get back to you</p>
+                </div>
+            </div>
+            <div class="container contact-form-container bg-black"> 
+                <div class="row">
+                    <div class="col-md-8 bg-white">
+                        <div class="formBox ">
+                            <form method="post" action="/contact-us">
+                                {{ csrf_field() }}
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h1 class="font-weight-bold">Get in Touch</h1>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="inputBox ">
+                                            <div class="inputText">Full Name</div>
+                                            <input type="text" name="name" class="input">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="inputBox">
+                                            <div class="inputText">Email</div>
+                                            <input type="text" name="email" class="input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="inputBox">
+                                            <div class="inputText">Subject</div>
+                                            <input type="text" name="subject" class="input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="inputBox">
+                                            <div class="inputText">Message</div>
+                                            <textarea class="input" name="message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input type="submit" class="btn btn-dark w-100" value="Send Message">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- <div class="location text-white">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <span><b>Dotcom Ventures FZE</b></span><br>
+                                    <span>Business Center Al Shmookh Building</span><br>
+                                    <span>UAQ Free Trade Zone, Umm Al Quwain,</span><br>
+                                    <span>United Arab Emirates</span>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="location text-white">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <span><b>+971 4 887 3265</b></span><br>
+                                    <span>Mon to Fri 9am to 6pm</span><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location text-white">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <span><b>info@buyanylight.com</b></span><br>
+                                    <span>Send us your query anytime</span><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
+
+<!-- <script src="https://www.google.com/recaptcha/api.js?render={{ env('CAPTCHA_KEY') }}"></script>
+<script type="text/javascript">
+    grecaptcha.ready(function() {
+        grecaptcha.execute( '{{ env('CAPTCHA_KEY') }}' , { action: 'contact' } )
+           .then(function(token) {
+                var recaptchaResponse = document.getElementById('recaptchaResponse');
+                recaptchaResponse.value = token;
+                $('.send-message').removeAttr('disabled','disabled');
+            });
+     });
+
+</script> -->
 @endsection

@@ -13,6 +13,8 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
     </head>
     <body>
         @include('includes.navbar')
@@ -22,4 +24,28 @@
         <!-- Scripts -->
         <script src="js/app.js" charset="utf-8"></script>
     </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slide').hiSlide();
+        });
+    </script>
+    @if (session('success'))
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            $('#myModal').modal('show');
+        });
+      
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?render={{ env('CAPTCHA_KEY') }}"></script>
+    <script type="text/javascript">
+        grecaptcha.ready(function() {
+            grecaptcha.execute( '{{ env('CAPTCHA_KEY') }}' , { action: 'contact' } )
+           .    then(function(token) {
+                    var recaptchaResponse = document.getElementById('recaptchaResponse');
+                    recaptchaResponse.value = token;
+                    $('.send-message').removeAttr('disabled','disabled');
+                });
+            });
+    </script>
+    @endif
 </html>
