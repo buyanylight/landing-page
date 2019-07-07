@@ -6,12 +6,6 @@
                     <h5 class="text-white font-weight-bold">Buyers</h5>
                     <ul class="list-group footer-list">
                         <li class="mt-3">
-                            <a href="#about" class="text-white">About us</a>
-                        </li>
-                        <li class="mt-3">
-                            <a href="#about" class="text-white">Why BAL</a>
-                        </li>
-                        <li class="mt-3">
                             <a href="#about" class="text-white">How it works</a>
                         </li>
                         <li class="mt-3">
@@ -20,14 +14,20 @@
                          <li class="mt-3">
                             <a href="#balvsretail" class="text-white">Packages</a>
                          </li>
+                        <li class="mt-3">
+                            <a href="#about" class="text-white">About us</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="#about" class="text-white">Why BAL</a>
+                        </li>
                          <li class="mt-3">
-                            <a href="#balvsretail" class="text-white">FAQ</a>
+                            <a href="https://lightfinder.buyanylight.com/buyer/register" class="text-white">Register</a>
                          </li>
                          <li class="mt-3">
-                            <a href="#balvsretail" class="text-white">Register</a>
+                            <a href="" class="text-white">FAQ</a>
                          </li>
                          <li class="mt-3">
-                            <a href="#balvsretail" class="text-white">Sign in</a>
+                            <a href="https://lightfinder.buyanylight.com" class="text-white">Sign in</a>
                          </li>
                      </ul>
                 </div>
@@ -35,27 +35,27 @@
                     <h5 class="text-white font-weight-bold">Sellers</h5>
                     <ul class="list-group footer-list">
                         <li class="mt-3">
-                            <a href="" class="text-white">Apply</a>
+                            <a href="" class="text-white">Register</a>
                         </li>
                         <li class="mt-3">
-                            <a href="#balvsretail" class="text-white">FAQ</a>
-                         </li>
+                            <a href="https://lightfinder.buyanylight.com" class="text-white">Sign in</a>
+                        </li>
                          <li class="mt-3">
-                            <a href="#balvsretail" class="text-white">Contact us</a>
+                            <a href="/seller" class="text-white">Apply</a>
                          </li>
                         <li class="mt-3">
-                            <a href="" class="text-white">Sign in</a>
-                        </li>
+                            <a href="" class="text-white">FAQ</a>
+                         </li>
                      </ul>
                 </div>
                 <div class="col-md-2">
                     <h5 class="text-white font-weight-bold">Investors</h5>
                     <ul class="list-group footer-list">
                         <li class="mt-3">
-                            <a href="" class="text-white">IEO</a>
+                            <a href="/investor" class="text-white">Let's talk</a>
                         </li>
                         <li class="mt-3">
-                            <a href="#contact" class="text-white">Let's talk</a>
+                            <a href="" class="text-white">IEO</a>
                         </li>
                      </ul>
                 </div>
@@ -72,7 +72,7 @@
                         </div>
                         <div class="row social-links mt-3">
                             <div class="col-sm-1 one-link">
-                                <a href="" class="text-grey"><i class="fab fa-youtube"></i></a>
+                                <a href="https://m.youtube.com/channel/UCI9XteW2432262A4rFKtQ3w" class="text-grey"><i class="fab fa-youtube"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
                                 <a href="https://twitter.com/BuyAnyLight" class="text-grey"><i class="fab fa-twitter"></i></a>
@@ -84,7 +84,7 @@
                                 <a href="https://www.facebook.com/BuyAnyLight/" class="text-grey"><i class="fab fa-facebook-f"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="" class="text-grey"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/buyanylight" class="text-grey"><i class="fab fa-github"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
                                 <a href="https://www.reddit.com/user/BuyAnyLight/" class="text-grey"><i class="fab fa-reddit-alien"></i></a>
@@ -96,7 +96,7 @@
                                 <a href="" class="text-grey"><i class="fab fa-telegram-plane"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="" class="text-grey"><i class="fab fa-medium-m"></i></a>
+                                <a href="https://medium.com/@infobuyanylight" class="text-grey"><i class="fab fa-medium-m"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
                                 <a href="https://www.linkedin.com/company/buyanylight/" class="text-grey"><i class="fab fa-linkedin-in"></i></a>
