@@ -11,4 +11,13 @@ class MobileController extends Controller
     	return view('mobile.index');
 
     }
+    public function seller()
+    {
+    	return view('mobile.seller');
+    }
+
+    public function investor()
+    {
+		return view('mobile.investor');
+    }
 }

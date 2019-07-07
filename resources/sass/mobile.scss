@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+}
+
+.bg-black{
+	background: black !important;
+}
+
+.section1{
+	height: 650px;
+	background: url("/images/mobile_bg.png");
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: -55px;
+    background-repeat: no-repeat;
+}
+
+.section2{
+	height: 100%;
+}
+
+.section2 .card{
+	height: 314px;
+}
+
+.section3{
+	height: 100%;
+	background: url("/images/mobile_about.png");
+	background-size: 106%;
+    background-position-x: left;
+    background-position-y: -105px;
+	
+
+}
+
+.section3-contents{
+	line-height: 30px;
+}
+
+.section4{
+	height: 100%;
+}
+
+.section4-container{
+	line-height: 30px;
+}
+
+.section5{
+	height: 100%;
+}
+
+.section6{
+	height: 100%;
+}
+
+.section6-container{
+	line-height: 30px;
+}
+
+.section7-container{
+	line-height: 30px;
+}
+
+.section7 .card{
+	height: 314px;
+}
+
+.lighting-consultation{
+	background: url('/images/IMG1.png');
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    color: white;
+}
+
+.lux-calculation{
+	background:url('/images/IMG2.png');
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    color: white
+
+}
+
+.threed-design{
+	background:url('/images/IMG3.png');
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    color: white
+
+
+}
+
+.section8-container{
+	line-height: 30px;
+}
+
+
+.section10{
+	background: url('/images/sellers2.png');
+	background-size:100%;
+}
+
+.section10 .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+	background:black;
+}
+
+.section10 .nav-link{
+	color: white;
+}
+
+
+.section14{
+	height: 100%;
+}
+
+.section14-contents{
+	background: url('/images/investor_bg.png');
+	height: 250px;
+	background-size:100%;
+}
+
+
+.section12{
+	height: 100%;
+}
+
+
+#topBtn{
+ 	position: fixed;
+ 	bottom:80px;
+ 	right: 10px;
+ 	// top: 50px;
+ 	display: none;
+ }
+
