@@ -99,7 +99,7 @@
                             </h6>
                             <hr class="hr-card">
                             <p class="card-text">
-                                Generic lights don’t belong in stylish, 21st century homes… Custom LED saves energy and costs and helps protect our planet and gives far greater aestehetics and design opportunities...
+                                Generic lights don’t belong in stylish, 21st century homes… Custom LED saves energy and costs, helps protect our planet and gives far greater aesthetic and design opportunities...
                             </p>
                             <a href="#home" class="btn btn-sm btn-dark">Read More</a>
                         </div>
@@ -943,7 +943,7 @@
                             <hr class="section-9-hr">
 
                             <p>
-                               Generic lights don’t belong in stylish, 21st century homes… Custom LED saves energy and costs and helps protect our planet and gives far greater aestehetics and design opportunities. However, choosing and buying LED locally is often complex, stressful and disappointing. BAL is here to help you source LED lights with professional precision and world-class products and service. Very few private property owners are experts in LED, lumens, CCT or CRI, so we provide all the help you want and need.
+                              Generic lights don’t belong in stylish, 21st century homes… Custom LED saves energy and costs, helps protect our planet and gives far greater aesthetic and design opportunities. However, choosing and buying LED locally is often complex, stressful and disappointing. BAL is here to help you source LED lights with professional precision and world-class products and service. Very few private property owners are experts in LED, lumens, CCT or CRI, so we provide all the help you want and need.
                             </p>
                         </div>
                         <div>
