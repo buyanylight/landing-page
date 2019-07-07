@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand " href="/">
-            <img src="{{ asset('images/logo-white.png') }}" width="55" class="logo"> 
+            <img src="{{ asset('images/logo-white-mobile.png') }}" width="55" class="logo"> 
         </a>
         <div class="text-white font-weight-bold" style="font-size: 20px;">BuyAnyLight</div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
