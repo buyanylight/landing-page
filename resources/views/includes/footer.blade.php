@@ -93,7 +93,7 @@
                                 <a href="" class="text-grey"><i class="fab fa-bitcoin"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="" class="text-grey"><i class="fab fa-telegram-plane"></i></a>
+                                <a href="https://t.me/buyanylight" class="text-grey"><i class="fab fa-telegram-plane"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
                                 <a href="https://medium.com/@infobuyanylight" class="text-grey"><i class="fab fa-medium-m"></i></a>
