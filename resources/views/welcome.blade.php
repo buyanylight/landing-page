@@ -36,7 +36,7 @@
                         <br>
                         <small class="text-white sub-caption">BuyAnyLight (BAL) has transformed the way we source LED lighting.</small>
                     </p>
-                    <button class="btn btn-outline-light">Read More</button>
+                    <a href="#about" class="btn btn-outline-light">Read More</a>
                     <!-- <button class="btn btn-light">Get your Free Trial</button> -->
                 </div>
             </div>
