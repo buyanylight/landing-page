@@ -32,20 +32,27 @@ const app = new Vue({
     el: '#app',
 });
 
-$(window).scroll(function(){
-    $('nav').toggleClass('bg-white', $(this).scrollTop() > 550);
-});
 
-$(window).scroll(function(){
-    if($(this).scrollTop() > 550){
-        $('.links').addClass('ncol')
-        $(".logo").attr("src","images/logo-black.png");
-    } else {
+    $(window).scroll(function(){
+        $('nav').toggleClass('bg-white', $(this).scrollTop() > 550);
+    });
 
-        $(".logo").attr("src","images/logo-white.png");
-        $('.links').removeClass('ncol')
-    }
-});
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 550){
+            $('#topBtn').fadeIn();
+            $('.links').addClass('ncol')
+            $(".logo").attr("src","images/logo-black.png");
+        } else {  
+            $(".logo").attr("src","images/logo-white.png");
+            $('.links').removeClass('ncol')
+        }
+    });
+
+    $("#topBtn").click(function(){
+       $('html, body').animate({scrollTop: 0}, 800);
+
+    });
+
 
 (function($) {
     // 本函数每次调用只负责一个轮播图的功能

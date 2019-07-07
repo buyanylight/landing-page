@@ -12,9 +12,13 @@
 */
 
 Route::get('/', 'PageController@home')->name('home');
+Route::get('/seller', 'PageController@seller')->name('seller');
+Route::get('/investor', 'PageController@investor')->name('investor');
 
 
 Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUsController@contactSaveData']);
 
 
 Route::get('/m', 'MobileController@index');
+Route::get('/m/seller', 'MobileController@seller');
+Route::get('/m/investor', 'MobileController@investor');

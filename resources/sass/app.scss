@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 // Variables
 @import 'variables';
@@ -7,17 +7,22 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	font-family: 'Poppins', sans-serif;
 	font-size: 13px;
 }
 
-
-
 .ncol{
  color: black !important;
 }
 
+.navbar-nav li:hover>.dropdown-menu {
+  display: block;
+}
 
 // Thank you modal
 
@@ -132,6 +137,7 @@ body{
     height: 100%;
     bottom: 0%;
     // zoom: 115%;
+    background: white;
 }
 
 .video-image{
@@ -223,13 +229,13 @@ body{
 // SECTION 4
 
 .section-4{
-	background-image: url("/images/vector2.png"), url("/images/section4.png");
-	min-height: 64vw;
-	background-position-x: center, right;
-	background-position-y: 175px, -5px;
+	background-image: url(/images/vector2.png), url(/images/section4.png);
+    min-height: 64vw;
+    background-position-x: center, right;
+    background-position-y: 165px, -5px;
     background-repeat: no-repeat;
     background-color: white;
-    background-size: 65%, 65% ;
+    background-size: 65%, 65%;
 }
 
 .section-4-part1{
@@ -349,22 +355,21 @@ li .card-body{
 // SECTION 6
 
 .section-6{
-	background: url("/images/section6.png");
-	height: 70vw;
-    background-size: 90%;
-    background-repeat:no-repeat;
-    background-color:white;
-    background-position-x: left;
+	background: url('/images/section6(1).png'), url('/images/section6.png');
+    height: 100%;
+    background-size: 53%, 80%;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position-x: 460px, left;
+    background-position-y: 0px, 0px;
 }
 
 .section-6-part1{
-	position: relative;
-    top: 115px;	
+	padding-top: 8%;
 }
 
 .section-6-part2{
-	position: relative;
-    top: 230px;	
+	
 }
 
 // SECTION 6
@@ -372,11 +377,12 @@ li .card-body{
 // SECTION 7
 
 .section-7{
-	background: url(/images/section7.png);
+	background: url('/images/section4(1).png');
     height: 100%;
-    background-position-x: center;
-    background-position-y: -25px;
-    background-size: 104%;
+    background-position-x: 625px;
+    background-position-y: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .font-35{
@@ -443,12 +449,12 @@ li .card-body{
 // SECTION 8
 
 .section-8{
-	height: 500px;
+	height: 100%;
 }
 
 .section-8-hr{
 	background-color: white;
-	margin-right: 438px;
+	// margin-right: 438px;
 
 }
 
@@ -457,12 +463,12 @@ li .card-body{
 // SECTION 9
 
 .section-9{
-	height: 900px;
+	height: 100%;
 }
 
 .section-9-hr{
 	background-color: black;
-	margin-right: 455px;
+	// margin-right: 455px;
 
 }
 
@@ -471,12 +477,13 @@ li .card-body{
 // SECTION 10
 
 .section-10{
-	height: 825px;
+	height: 100%;
+	
 }
 
 .section-10-hr{
 	background-color: white;
-	margin-right: 455px;
+	// margin-right: 455px;
 
 }
 
@@ -486,11 +493,12 @@ li .card-body{
 
 .section-11{
 	height: 900px;
+
 }
 
 .section-11-hr{
 	background-color: black;
-	margin-right: 438px;
+	// margin-right: 438px;
 
 }
 
@@ -500,7 +508,7 @@ li .card-body{
 
 .section-12{
 	height: 900px;
-	background: url(/images/section7.png);
+	background: url();
 	background-position-x: center;
     background-position-y: -800px;
     background-size: 104%;
@@ -645,7 +653,7 @@ textarea{
 
 
 footer{
-	height: 385px;
+	height: 100%;
 }
 
 .footer-list{
@@ -682,3 +690,131 @@ footer{
 	background-color: #fff !important;
 }
 
+// Section15
+.section15-banner{
+	background: url('/images/investor.png');
+	background-size:100%;
+	height: 445px;
+}
+
+// section16
+.section16-banner {
+	background: url('/images/seller_bg.png');
+	height: 445px;
+}
+
+.section16-section{
+	background: url('/images/seller_bg2.png');
+}
+
+.section16 .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+	background:black;
+}
+
+.section16 .nav-link{
+	color: white;
+}
+ .section16 .video{
+	width: 50%;
+}
+
+ .section16 .tab-content > .active{
+ 	display: flex;
+ 	justify-content: center;
+ }
+
+
+ #topBtn{
+ 	position: fixed;
+ 	bottom:80px;
+ 	right: 40px;
+ 	// top: 50px;
+ 	display: none;
+ }
+
+
+
+ // Media Breakpoints
+
+ @media only screen and (min-width: 2000px) and ( max-width: 2600px) {
+ 	.section-4{
+ 		background-image: url(/images/vector2.png), url(/images/section4.png);
+    	min-height: 64vw;
+    	background-position-x: center, right;
+    	background-position-y: 250px, -5px;
+    	background-repeat: no-repeat;
+    	background-color: white;
+    	background-size: 65%, 65%;
+ 	}
+
+ 	.section-4-part2{
+ 		padding-top: 50%;
+ 	}
+
+ 	.section-6{
+ 		background: url('/images/section6(1).png'), url('/images/section6.png');
+    	height: 100%;
+    	background-size: 45%, 75%;
+    	background-repeat: no-repeat;
+    	background-color: white;
+    	background-position-x: 690px, left;
+    	background-position-y: -2px, 0px;
+ 	}
+
+ 	.section-6-part2{
+ 		padding-left: 10% !important;
+ 	}
+
+ }
+
+  @media only screen and (max-width: 1500px) {
+
+  	.section-4{
+	background-image: url('/images/vector2.png'), url('/images/section4.png');
+    min-height: 100%;
+    background-position-x: center, 470px;
+    background-position-y: 220px, -5px;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 65%, 75%;
+
+  	}
+  	.section-4-part2{
+  		padding-top: 15%;
+ 		padding-bottom: 3%;
+ 	}
+
+ 	.section-6{
+ 		    background: url('/images/section6(1).png'), url('/images/section6.png');
+    height: 100%;
+    background-size: 60%, 86%;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position-x: 308px, left;
+    background-position-y: 56px, 0px;
+ 	}
+
+  }
+
+@media only screen and (max-width: 1030px) {
+
+	.section-4{
+	 	background-image: url('/images/vector2.png'), url('/images/section4.png');
+		min-height: 100%;
+		background-position-x: center, 370px;
+		background-position-y: 220px, 5px;
+		background-repeat: no-repeat;
+		background-color: white;
+		background-size: 87%, 85%;
+	}
+
+	.section-6{
+		background: url('/images/section6(1).png'), url('/images/section6.png');
+    	height: 100%;
+    	background-size: 85%, 100%;
+    	background-repeat: no-repeat;
+    	background-color: white;
+    	background-position-x: 100px, left;
+    	background-position-y: 100px, -50px;
+	}
+}

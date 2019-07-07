@@ -24,4 +24,39 @@ class PageController extends Controller
         }
 
     }
+
+    public function seller ()
+    {
+
+        $agent = new Agent();
+
+        $isMobile = $agent->isMobile();
+        $isTablet = $agent->isTablet();
+
+    
+        if($isMobile && !$isTablet) {
+            return view('mobile.seller');
+        } else {
+            return view('seller');
+        }
+
+    }
+
+    public function investor ()
+    {
+
+        $agent = new Agent();
+
+        $isMobile = $agent->isMobile();
+        $isTablet = $agent->isTablet();
+
+    
+        if($isMobile && !$isTablet) {
+            return view('mobile.investor');
+        } else {
+            return view('investor');
+        }
+
+    }
+
 }

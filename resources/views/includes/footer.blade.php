@@ -3,28 +3,49 @@
         <div class="pt-5">
             <div class="row">
                 <div class="col-md-2">
-                    <h5 class="text-white font-weight-bold">Buyer</h5>
+                    <h5 class="text-white font-weight-bold">Buyers</h5>
                     <ul class="list-group footer-list">
                         <li class="mt-3">
-                            <a href="#about" class="text-white">About Us</a>
+                            <a href="#about" class="text-white">About us</a>
                         </li>
                         <li class="mt-3">
-                            <a href="balvsretail" class="text-white">BAL vs Retail</a>
+                            <a href="#about" class="text-white">Why BAL</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="#about" class="text-white">How it works</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="#balvsretail" class="text-white">BAL vs. retail</a>
                          </li>
                          <li class="mt-3">
-                            <a href="#contact" class="text-white">Let's Talk</a>
-                        </li>
+                            <a href="#balvsretail" class="text-white">Packages</a>
+                         </li>
+                         <li class="mt-3">
+                            <a href="#balvsretail" class="text-white">FAQ</a>
+                         </li>
+                         <li class="mt-3">
+                            <a href="#balvsretail" class="text-white">Register</a>
+                         </li>
+                         <li class="mt-3">
+                            <a href="#balvsretail" class="text-white">Sign in</a>
+                         </li>
                      </ul>
                 </div>
                 <div class="col-md-2">
-                    <h5 class="text-white font-weight-bold">Manufacturer</h5>
+                    <h5 class="text-white font-weight-bold">Sellers</h5>
                     <ul class="list-group footer-list">
                         <li class="mt-3">
                             <a href="" class="text-white">Apply</a>
                         </li>
                         <li class="mt-3">
-                            <a href="" class="text-white">Sign in</a>
+                            <a href="#balvsretail" class="text-white">FAQ</a>
                          </li>
+                         <li class="mt-3">
+                            <a href="#balvsretail" class="text-white">Contact us</a>
+                         </li>
+                        <li class="mt-3">
+                            <a href="" class="text-white">Sign in</a>
+                        </li>
                      </ul>
                 </div>
                 <div class="col-md-2">
@@ -34,7 +55,7 @@
                             <a href="" class="text-white">IEO</a>
                         </li>
                         <li class="mt-3">
-                            <a href="#contact" class="text-white">Let's Talk</a>
+                            <a href="#contact" class="text-white">Let's talk</a>
                         </li>
                      </ul>
                 </div>
@@ -95,13 +116,13 @@
                                 <i class="fab fa-cc-mastercard"></i>
                             </div>
                             <div class="col-md-1 one-pay text-grey">
+                                <i class="fab fa-monero"></i>
+                            </div>
+                            <div class="col-md-1 one-pay text-grey">
                                 <i class="fab fa-bitcoin"></i>
                             </div>
                             <div class="col-md-1 one-pay text-grey">
                                 <i class="fab fa-ethereum"></i>
-                            </div>
-                            <div class="col-md-1 one-pay text-grey">
-                                <i class="fab fa-monero"></i>
                             </div>
                         </div>
                     </div>
@@ -109,16 +130,15 @@
             </div>
             <hr class="bg-white mt-5">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-2">
                 </div>
-                <div class="col-md-4 text-right text-white mt-2">
+                <div class="col-md-3 text-right text-white mt-2">
                 </div>
-                <div class="col-md-5 text-right text-white mt-2">
-                    <div class="mr-2">
-                        <a href="" class="text-white">Terms of use</a>&nbsp;
-                        <a href="" class="text-white">Privacy & Cookies</a>&nbsp;
-                         © BuyAnyLight 2019
-                        
+                <div class="col-md-7 text-right text-white mt-2">
+                    <div class="mr-2" style="font-size: 12px;">
+                        <pre>
+                        <a href="" class="text-white">Terms of use</a>     <a href="" class="text-white">Privacy & Cookies</a>     <span class="text-white">© BuyAnyLight 2019</span>
+                        </pre>
                     </div>
                 </div>
             </div>
