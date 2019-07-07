@@ -75,19 +75,19 @@
                                 <a href="" class="text-grey"><i class="fab fa-youtube"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="" class="text-grey"><i class="fab fa-twitter"></i></a>
+                                <a href="https://twitter.com/BuyAnyLight" class="text-grey"><i class="fab fa-twitter"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="" class="text-grey"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/buyanylight/" class="text-grey"><i class="fab fa-instagram"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="" class="text-grey"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/BuyAnyLight/" class="text-grey"><i class="fab fa-facebook-f"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
                                 <a href="" class="text-grey"><i class="fab fa-github"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="" class="text-grey"><i class="fab fa-reddit-alien"></i></a>
+                                <a href="https://www.reddit.com/user/BuyAnyLight/" class="text-grey"><i class="fab fa-reddit-alien"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
                                 <a href="" class="text-grey"><i class="fab fa-bitcoin"></i></a>
@@ -99,7 +99,7 @@
                                 <a href="" class="text-grey"><i class="fab fa-medium-m"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="" class="text-grey"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/company/buyanylight/" class="text-grey"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>

@@ -12,11 +12,7 @@
 	</div>
 	<div class="section2 pt-5">
 		<div class="container text-center">
-			<p>
-				<b>Dive into BAL World with free access to the most 
-				advanced AI technology known as LightFinder</b>
-			</p>
-			<a href="" class="btn btn-dark">Start your free trial today</a>
+			<a href="#trial" class="btn btn-dark">Start your free trial today</a>
 		</div>
 		<div class="container pt-5">
 			<div class="row">
