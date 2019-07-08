@@ -26,6 +26,31 @@
         </div>
     </div>
 </div>
+<div class="modal" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                    @if(session('success'))
+                    <div class="thank-you-pop">
+                        <img src="{{ asset('images/green-tick.png')}}" alt="" class="pop-up-img">
+                        <h2>Hey, Thanks for getting in touch!</h2>
+                        <p>{{session('success')}}</p>
+                    </div>
+                    @else
+                    <div class="sorry-pop">
+                        <img src="{{ asset('images/red-cross.png')}}" alt="" class="pop-up-img">
+                        <p>{{session('danger')}}</p>
+                    </div>
+                    @endif
+            </div>
+        </div>
+    </div>
+</div>
 <div class="section14 pt-5 pb-5" style="margin-top: 25px;">
 	<div class="section14-contents d-flex align-items-center">
 		<div class="container text-white">
