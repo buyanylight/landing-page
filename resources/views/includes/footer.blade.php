@@ -137,7 +137,7 @@
                 <div class="col-md-7 text-right text-white mt-2">
                     <div class="mr-2" style="font-size: 12px;">
                         <pre>
-                        <a href="" class="text-white">Terms of use</a>     <a href="" class="text-white">Privacy & Cookies</a>     <span class="text-white">© BuyAnyLight 2019</span>
+                        <a href="/terms" class="text-white">Terms of use</a>     <a href="/privacy" class="text-white" >Privacy & Cookies</a>     <span class="text-white">© BuyAnyLight 2019</span>
                         </pre>
                     </div>
                 </div>

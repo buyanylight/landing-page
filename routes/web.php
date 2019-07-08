@@ -14,6 +14,8 @@
 Route::get('/', 'PageController@home')->name('home');
 Route::get('/seller', 'PageController@seller')->name('seller');
 Route::get('/investor', 'PageController@investor')->name('investor');
+Route::get('/terms', 'PageController@terms')->name('terms');
+Route::get('/privacy', 'PageController@privacy')->name('privacy');
 
 
 Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUsController@contactSaveData']);
