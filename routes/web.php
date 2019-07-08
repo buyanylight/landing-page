@@ -16,6 +16,9 @@ Route::get('/seller', 'PageController@seller')->name('seller');
 Route::get('/investor', 'PageController@investor')->name('investor');
 Route::get('/terms', 'PageController@terms')->name('terms');
 Route::get('/privacy', 'PageController@privacy')->name('privacy');
+Route::get('/ieo', 'PageController@ieo')->name('ieo');
+Route::get('/buyer-faq', 'PageController@buyer_faq')->name('buyer-faq');
+Route::get('/seller-faq', 'PageController@seller_faq')->name('seller-faq');
 
 
 Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUsController@contactSaveData']);

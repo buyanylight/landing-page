@@ -603,10 +603,14 @@ li .card-body{
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 	text-transform: uppercase;
 	font-size: 20px;
 }
+ .formBox p {
+ 	margin-bottom: 50px;
+ }
+
 .inputBox{
 	position: relative;
 	box-sizing: border-box;
@@ -690,6 +694,10 @@ footer{
 	background-color: #fff !important;
 }
 
+.contact-header{
+	background: url('/images/contact-us-map.png');
+}
+
 // Section15
 .section15-banner{
 	background: url('/images/investor.png');
@@ -731,6 +739,31 @@ footer{
  	// top: 50px;
  	display: none;
  }
+
+
+ .ieo-coming-soon{
+ 	background: url('/images/ieo-coming-soon.png');
+ 	height:1000px;
+ 	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 105%;
+ }
+
+
+ .seller-faq{
+ 	height: 100%;
+ 	padding-top:100px;
+ }
+
+.buyer-faq{
+	height: 100%;
+	padding-top:100px;
+
+}
 
 
 

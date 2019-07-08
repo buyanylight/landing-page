@@ -35,7 +35,7 @@
                     </div>
                 </li>
                 <li class="nav-item mr-3">
-                    <a class="nav-link text-white links" href="#">IEO</a>
+                    <a class="nav-link text-white links" href="/ieo">IEO</a>
                 </li>
                 <li class="nav-item mr-3">
                     <a class="nav-link text-white links" href="/#contact">Contact</a>
