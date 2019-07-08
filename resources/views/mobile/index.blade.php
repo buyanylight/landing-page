@@ -17,34 +17,31 @@
 		<div class="container pt-5">
 			<div class="row">
 				<div class="col" >
-					<div class=" text-center" style=" height: 175px;">
+					<div class=" text-center" style=" height: 100px;">
 						<img src="{{ asset('images/world-icon.png') }}" width="50%">
 						<h5 class="pt-3"><b>LightFinder</b></h5>
-						<p>B2B & B2C</p>
 					</div>
 					<div class="text-center">
-						<a href="" class="btn btn-sm btn-outline-secondary">Learn more</a>
+						<a href="" class="btn btn-sm btn-outline-secondary">More</a>
 					</div>
 				</div>
 				<div class="col">
-					<div class=" text-center" style=" height: 175px;">
+					<div class=" text-center" style=" height: 100px;">
 						<img src="{{ asset('images/home-icon.png') }}" width="50%">
 						<h5 class="pt-3"><b>My Home</b></h5>
-						<p>Private homes, villas, and palaces</p>
 					</div>
 					<div class="text-center">
-						<a href="" class="btn btn-sm btn-outline-secondary">Learn more</a>
+						<a href="" class="btn btn-sm btn-outline-secondary">More</a>
 					</div>
 					
 				</div>
 				<div class="col">
-					<div class=" text-center" style=" height: 175px;">
+					<div class=" text-center" style=" height: 100px;">
 						<img src="{{ asset('images/tower-icon.png') }}" width="50%">
 						<h5 class="pt-3"><b>My Tower</b></h5>
-						<p>Consultants, contractors and project owners</p>
 					</div>
 					<div class="text-center">
-						<a href="" class="btn btn-sm btn-outline-secondary">Learn more</a>
+						<a href="" class="btn btn-sm btn-outline-secondary">More</a>
 					</div>
 				</div>
 			</div>
@@ -363,7 +360,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" style=" border: black; z-index: 1;">
+                                <div class="card" style=" border: black;">
                                     <h5 class="card-header" style="background: #1B1B1B; color: white; ">
                                         STANDARD
                                         <div class="text-muted">
