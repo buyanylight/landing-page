@@ -72,7 +72,7 @@
 	            </div>
 	            <input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
 	            <div class="form-group mt-3">
-	            	<button type="submit" id="send-message" class="btn btn-dark w-100" disabled="disabled">Send Message</button>
+	            	<button type="submit" class="btn btn-dark w-100 send-message" disabled="disabled">Send Message</button>
 	            </div>
 	        </form>
 		</div>
