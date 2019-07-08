@@ -1045,7 +1045,7 @@
         </div>
     </div>
     
-    <div class="section-12" id="package">
+    <div class="section-12 pb-5" id="package">
         <div class="section-12-container h-100">
             <div class="container h-100">
                 <h4 class="text-center pt-5 font-weight-bold">
