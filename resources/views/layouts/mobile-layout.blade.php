@@ -46,6 +46,14 @@
 	@include('includes.mobile-navbar')
 	@yield('content')
 
-   <script src="js/mobile.js" charset="utf-8"></script>
+    <script src="js/mobile.js" charset="utf-8"></script>
+    @if (session('success') || session('danger'))
+    <script type="text/javascript">
+    $( document ).ready(function() {
+        $('#myModal').modal('show');
+    });
+      
+    </script>
+    @endif
 </body>
 </html>
