@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark {{Request::path() == '/'  ? 'bg-transparent' : 'bg-black'}} fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand " href="/">
-            <img src="{{ asset('images/logo-white.png') }}" width="55" class="logo">
+            <img src="{{ asset('images/logo-white.png') }}" width="250" class="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
