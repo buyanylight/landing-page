@@ -144,6 +144,8 @@ body{
 .video-image{
 	width: 100%;
 	height: 1000px;
+	position:relative;
+	bottom:110px;
 }
 
 .sub-title{
@@ -468,7 +470,7 @@ li .card-body{
 }
 
 .section-9-hr{
-	background-color: black;
+	background-color: white;
 	// margin-right: 455px;
 
 }
@@ -483,7 +485,7 @@ li .card-body{
 }
 
 .section-10-hr{
-	background-color: white;
+	background-color: black;
 	// margin-right: 455px;
 
 }
@@ -736,7 +738,7 @@ footer{
  #topBtn{
  	position: fixed;
  	bottom:80px;
- 	right: 40px;
+ 	right: 20px;
  	// top: 50px;
  	display: none;
  }

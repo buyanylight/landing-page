@@ -39,7 +39,7 @@
                     <p>
                         <span class="sub-title">The global marketplace for LED Lighting<span>
                         <br>
-                        <small class="text-white sub-caption">BuyAnyLight (BAL) has transformed the way we source LED lighting.</small>
+                        <small class="text-white sub-caption">BuyAnyLight has transformed the way we source LED lighting</small>
                     </p>
                     <a href="#about" class="btn btn-outline-light">Read More</a>
                     <!-- <button class="btn btn-light">Get your Free Trial</button> -->
@@ -47,7 +47,7 @@
             </div>
         </div>
     </div>
-    <div class=" bg-white section-2 pt-5 pb-5">
+    <div class=" bg-white section-2 pb-5">
         <div class=" container section-2-container">
             <div class="row justify-content-center section-2-contents text-center">
                 <div class="col-sm-4">
@@ -72,26 +72,6 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="card section-2-card">
-                        <img src="{{ asset('images/tower-icon.png') }}" class="card-top" alt="...">
-                        <div class="card-body">
-                            <div class="card-title">
-                                <h3 class="font-weight-bold">
-                                    My Tower
-                                </h3> 
-                            </div>
-                            <h6 class="card-subtitle mb-2 text-muted">
-                                Consultants, contractors and project owners
-                            </h6>
-                            <hr class="hr-card">
-                            <p class="card-text">
-                                My Tower users leverage our expertise to get the best products in the market, save a fortune, and improve their project delivery. When starting a project, you subscribe to our package...
-                            </p>
-                            <a href="#tower" class="btn btn-sm btn-dark">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card section-2-card">
                         <img src="{{ asset('images/home-icon.png') }}" class="card-top" alt="...">
                         <div class="card-body">
                             <div class="card-title">
@@ -110,8 +90,28 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-4">
+                    <div class="card section-2-card">
+                        <img src="{{ asset('images/tower-icon.png') }}" class="card-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3 class="font-weight-bold">
+                                    My Tower
+                                </h3> 
+                            </div>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                Consultants, contractors and project owners
+                            </h6>
+                            <hr class="hr-card">
+                            <p class="card-text">
+                                My Tower users leverage our expertise to get the best products in the market, save a fortune, and improve their project delivery. When starting a project, you subscribe to our package...
+                            </p>
+                            <a href="#tower" class="btn btn-sm btn-dark">Read More</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="container text-center pt-5">
-                    <a href="" class="btn btn-dark">Start your free trial today</a>
+                    <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-dark btn-lg">Start your free trial today</a>
                 </div>
             </div>
         </div>
@@ -510,7 +510,7 @@
                     </div>
                     <div class="col-md-6 text-dark pl-5">
                         <h4 class="font-weight-bold">
-                            SAVING UP TO 90%... HOW DOES THAT WORK?
+                            SAVING UP TO 90%...HOW DOES THAT WORK?
                         </h4>
                         <div>
                             <p>
@@ -531,7 +531,7 @@
             </div>
         </div>
     </div>
-    <div class="section-7 bg-white">
+    <div class="section-7 bg-white" id="why-bal">
         <div class="section-7-container">
             <div class="container pt-5">
                 <h4 class="font-weight-bold">
@@ -873,7 +873,6 @@
                         </p>
                         <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-light">REGISTER NOW</a>
                         <a href="#package" class="btn btn-danger">CHECK RATE</a>
-                        <a href="" class="btn btn-secondary">DOWNLOAD BROCHURE</a>
                     </div>
                 </div> 
             </div>
@@ -921,7 +920,7 @@
                             </p>
                             <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-dark">REGISTER NOW</a>
                             <a href="#package" class="btn btn-danger">CHECK RATE</a>
-                        <a href="" class="btn btn-secondary">DOWNLOAD BROCHURE</a>
+                            <a href="{{ asset('brochures/lightfinder.pdf') }}" class="btn btn-secondary" target="_blank">DOWNLOAD BROCHURE</a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -980,7 +979,7 @@
                             </p>
                             <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-dark">REGISTER NOW</a>
                             <a href="#package" class="btn btn-danger">CHECK RATE</a>
-                            <a href="" class="btn btn-secondary">DOWNLOAD BROCHURE</a>
+                            <a href="{{ asset('brochures/my_home.pdf') }}" class="btn btn-secondary" target="_blank">DOWNLOAD BROCHURE</a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -1038,7 +1037,7 @@
                             </p>
                             <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-dark">REGISTER NOW</a>
                             <a href="#package" class="btn btn-danger">CHECK RATE</a>
-                        <a href="" class="btn btn-secondary">DOWNLOAD BROCHURE</a>
+                            <a href="{{ asset('brochures/my_tower.pdf') }}" class="btn btn-secondary" target="_blank">DOWNLOAD BROCHURE</a>
                         </div>
                     </div>
                 </div>
@@ -1497,7 +1496,7 @@
                                 Great lighting creates an aesthetic ambience that instantly elevates one’s mood and style. Our highly skilled LED lighting designers will help you to create a stunning atmosphere that brings your LED lighting design dreams to life. This add-on is available to all BAL users, irrespective of your package choice. We provide one-to-one access to our world-class consultants who will work with you and provide expert advice from project start-up to the final glorious switch-on! 
                             </p>
                         </div>
-                        <a href="" class="btn btn-sm btn-dark">BOOK NOW</a>
+                        <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-sm btn-dark">BOOK NOW</a>
                     </div>
                     <div class="col-md-4">
                         <h5 class="font-weight-bold">
@@ -1510,7 +1509,7 @@
                                 This valuable add-on determines the exact brightness requirements (lumens) for a project area - data which is essential for selecting the right products and quantities to achieve the design objectives in any lighting project. Essentially, contractors and consultants can leverage our expertise to give their clients the most reasonable quote - and including this data in a proposal or quote elevates your professionalism and credibility. What’s more, an accurate lux calculation justifies the quote’s rationale and increases the chances of winning the project bid.
                             </p>
                         </div>
-                        <a href="" class="btn btn-sm btn-dark">BOOK NOW</a>
+                        <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-sm btn-dark">BOOK NOW</a>
                     </div>
                     <div class="col-md-4">
                         <h5 class="font-weight-bold">
@@ -1523,7 +1522,7 @@
                                 This additional option (available to all BAL users) gives you the opportunity to envision the look and feel of your finished project area. Our professional lighting designers prepare your 3D designs with pinpoint accuracy. In some cases, a 3D lighting design is a contractual requirement when executing a lighting project, but every contractor and consultant can present these stunning 3D models to their clients to inform, reassure and impress. It’s also a chance to gain an edge over competitors, and can add an extra revenue stream to the project.
                             </p> 
                         </div>
-                        <a href="" class="btn btn-sm btn-dark">BOOK NOW</a>
+                        <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-sm btn-dark">BOOK NOW</a>
                     </div>
                 </div>
             </div>
@@ -1552,7 +1551,7 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="inputBox ">
-                                            <div class="inputText">Full Name</div>
+                                            <div class="inputText">Name</div>
                                             <input type="text" name="name" class="input">
                                         </div>
                                     </div>

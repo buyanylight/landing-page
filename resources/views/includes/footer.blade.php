@@ -1,4 +1,4 @@
-<footer class="bg-black">
+<footer class="bg-black pb-3">
     <div class="container">
         <div class="pt-5">
             <div class="row">
@@ -72,34 +72,34 @@
                         </div>
                         <div class="row social-links mt-3">
                             <div class="col-sm-1 one-link">
-                                <a href="https://m.youtube.com/channel/UCI9XteW2432262A4rFKtQ3w" class="text-grey"><i class="fab fa-youtube"></i></a>
+                                <a href="https://m.youtube.com/channel/UCI9XteW2432262A4rFKtQ3w" class="text-grey" target="_blank"><i class="fab fa-youtube"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="https://twitter.com/BuyAnyLight" class="text-grey"><i class="fab fa-twitter"></i></a>
+                                <a href="https://twitter.com/BuyAnyLight" class="text-grey" target="_blank"><i class="fab fa-twitter"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="https://www.instagram.com/buyanylight/" class="text-grey"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/buyanylight/" class="text-grey" target="_blank"><i class="fab fa-instagram"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="https://www.facebook.com/BuyAnyLight/" class="text-grey"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/BuyAnyLight/" class="text-grey" target="_blank"><i class="fab fa-facebook-f"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="https://github.com/buyanylight" class="text-grey"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/buyanylight" class="text-grey" target="_blank"><i class="fab fa-github"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="https://www.reddit.com/user/BuyAnyLight/" class="text-grey"><i class="fab fa-reddit-alien"></i></a>
+                                <a href="https://www.reddit.com/user/BuyAnyLight/" class="text-grey" target="_blank"><i class="fab fa-reddit-alien"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="https://bitcointalk.org/index.php?action=profile;u=2636303;sa=summary" class="text-grey"><i class="fab fa-bitcoin"></i></a>
+                                <a href="https://bitcointalk.org/index.php?action=profile;u=2636303;sa=summary" class="text-grey" target="_blank"><i class="fab fa-bitcoin"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="https://t.me/buyanylight" class="text-grey"><i class="fab fa-telegram-plane"></i></a>
+                                <a href="https://t.me/buyanylight" class="text-grey" target="_blank"><i class="fab fa-telegram-plane"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="https://medium.com/@infobuyanylight" class="text-grey"><i class="fab fa-medium-m"></i></a>
+                                <a href="https://medium.com/@infobuyanylight" class="text-grey" target="_blank"><i class="fab fa-medium-m"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="https://www.linkedin.com/company/buyanylight/" class="text-grey"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/company/buyanylight/" class="text-grey" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
@@ -130,15 +130,25 @@
             </div>
             <hr class="bg-white mt-5">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-3">
                 </div>
                 <div class="col-md-3 text-right text-white mt-2">
                 </div>
-                <div class="col-md-7 text-right text-white mt-2">
+                <div class="col-md-6 text-right text-white mt-2">
                     <div class="mr-2" style="font-size: 12px;">
-                        <pre>
-                        <a href="/terms" class="text-white">Terms of use</a>     <a href="/privacy" class="text-white" >Privacy & Cookies</a>     <span class="text-white">© BuyAnyLight 2019</span>
-                        </pre>
+                        <div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a href="/terms" class="text-white">Terms of use</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="/privacy" class="text-white" >Privacy & Cookies</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    © BuyAnyLight 2019
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
