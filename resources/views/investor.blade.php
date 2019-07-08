@@ -1,6 +1,26 @@
 @extends('layouts.main-layout')
 
 @section('content')
+<div class="modal" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @if(session('success'))
+                	<div class="thank-you-pop">
+                        <img src="{{ asset('images/green-tick.png')}}" alt="">
+                        <h2>Hey, Thanks for getting in touch!</h2>
+                        <p>{{session('success')}}</p>
+                    </div>
+                @endif
+            </div>
+        </div>
+    </div>
+</div>
 <div class="section15">
 	<div class="section15-contents">
 		<div class="section15-banner d-flex align-items-center">
