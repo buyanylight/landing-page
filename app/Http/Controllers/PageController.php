@@ -72,5 +72,26 @@ class PageController extends Controller
 
     }
 
+    public function ieo ()
+    {
+
+        return view('ieo');
+
+    }
+
+    public function seller_faq ()
+    {
+
+        return view('seller-faq');
+
+    }
+
+    public function buyer_faq ()
+    {
+
+        return view('buyer-faq');
+
+    }
+
 
 }

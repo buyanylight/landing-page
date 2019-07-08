@@ -1526,11 +1526,10 @@
     </div>
     <div class="section-14" id="contact">
         <div class="section-14-container">
-            <div class="pt-5 pb-5 text-center contact-header bg-dark text-white">
-                <div>
-                    <h4 class="font-weight-bold">CONTACT US</h4>
-                    <p>Feel free to get in touch with us and we'll get back to you</p>
-                </div>
+            <div class="pt-5 pb-5 text-center contact-header">
+               <!--  <div>
+                    <h4 class="font-weight-bold"></h4>
+                </div> -->
             </div>
             <div class="container contact-form-container bg-black"> 
                 <div class="row">
@@ -1541,7 +1540,8 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <h1 class="font-weight-bold">Get in Touch</h1>
+                                        <h1 class="font-weight-bold">CONTACT US</h1>
+                                        <p>Feel free to get in touch with us and we'll get back to you</p>
                                     </div>
                                 </div>
                                 <div class="row">

@@ -35,7 +35,7 @@
                     <h5 class="text-white font-weight-bold">Sellers</h5>
                     <ul class="list-group footer-list">
                         <li class="mt-3">
-                            <a href="" class="text-white">Register</a>
+                            <a href="https://lightfinder.buyanylight.com/supplier/register" class="text-white">Register</a>
                         </li>
                         <li class="mt-3">
                             <a href="https://lightfinder.buyanylight.com" class="text-white">Sign in</a>
@@ -44,7 +44,7 @@
                             <a href="/seller" class="text-white">Apply</a>
                          </li>
                         <li class="mt-3">
-                            <a href="" class="text-white">FAQ</a>
+                            <a href="/seller-faq" class="text-white">FAQ</a>
                          </li>
                      </ul>
                 </div>
@@ -55,7 +55,7 @@
                             <a href="/investor" class="text-white">Let's talk</a>
                         </li>
                         <li class="mt-3">
-                            <a href="" class="text-white">IEO</a>
+                            <a href="/ieo" class="text-white">IEO</a>
                         </li>
                      </ul>
                 </div>
@@ -90,7 +90,7 @@
                                 <a href="https://www.reddit.com/user/BuyAnyLight/" class="text-grey"><i class="fab fa-reddit-alien"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
-                                <a href="" class="text-grey"><i class="fab fa-bitcoin"></i></a>
+                                <a href="https://bitcointalk.org/index.php?action=profile;u=2636303;sa=summary" class="text-grey"><i class="fab fa-bitcoin"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
                                 <a href="https://t.me/buyanylight" class="text-grey"><i class="fab fa-telegram-plane"></i></a>
