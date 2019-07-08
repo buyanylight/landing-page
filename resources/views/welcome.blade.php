@@ -1577,7 +1577,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
-                                        <input type="submit" class="btn btn-dark w-100" value="Send Message" disabled="disabled">
+                                        <input type="submit" class="btn btn-dark w-100 send-message" value="Send Message" disabled="disabled">
                                     </div>
                                 </div>
                             </form>
