@@ -50,7 +50,7 @@
                     IEO
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/ieo">Lets talk</a>
+                        <a class="dropdown-item" href="/investor">Lets talk</a>
                     </div>
                 </li>
                 <li class="nav-item mr-3">
