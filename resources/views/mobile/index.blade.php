@@ -12,13 +12,13 @@
             <div class="modal-body">
                     @if(session('success'))
                     <div class="thank-you-pop text-center">
-                        <img src="{{ asset('images/green-tick.png')}}" alt="" class="pop-up-img">
+                        <img src="{{ asset('images/green-tick.png')}}" alt="" width="100">
                         <h2>Hey, Thanks for getting in touch!</h2>
                         <p>{{session('success')}}</p>
                     </div>
                     @else
                     <div class="sorry-pop">
-                        <img src="{{ asset('images/red-cross.png')}}" alt="" class="pop-up-img">
+                        <img src="{{ asset('images/red-cross.png')}}" alt="" width="100">
                         <p>{{session('danger')}}</p>
                     </div>
                     @endif
