@@ -55,13 +55,12 @@
             $('.slide').hiSlide();
         });
     </script>
-    @if (session('success'))
-    <script type="text/javascript">
-        $( document ).ready(function() {
-            $('#myModal').modal('show');
-        });
+@if (session('success') || session('danger'))
+<script type="text/javascript">
+    $( document ).ready(function() {
+        $('#myModal').modal('show');
+    });
       
-    </script>
-
-    @endif
+</script>
+@endif
 </html>
