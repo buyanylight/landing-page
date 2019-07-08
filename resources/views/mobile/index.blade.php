@@ -17,7 +17,7 @@
                         <p>{{session('success')}}</p>
                     </div>
                     @else
-                    <div class="sorry-pop">
+                    <div class="sorry-pop text-center">
                         <img src="{{ asset('images/red-cross.png')}}" alt="" width="100">
                         <p>{{session('danger')}}</p>
                     </div>
