@@ -13,10 +13,15 @@ html{
 body{
 	font-family: 'Poppins', sans-serif;
 	font-size: 13px;
+	background-color: white;
 }
 
 .bg-black{
 	background: black !important;
+}
+
+.pop-up-img{
+	width: 100px;
 }
 
 .section1{
@@ -43,7 +48,6 @@ body{
     background-position-x: left;
     background-position-y: -105px;
 	
-
 }
 
 .section3-contents{
