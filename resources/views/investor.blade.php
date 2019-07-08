@@ -10,13 +10,18 @@
                 </button>
             </div>
             <div class="modal-body">
-                @if(session('success'))
-                	<div class="thank-you-pop">
+                    @if(session('success'))
+                    <div class="thank-you-pop">
                         <img src="{{ asset('images/green-tick.png')}}" alt="">
                         <h2>Hey, Thanks for getting in touch!</h2>
                         <p>{{session('success')}}</p>
                     </div>
-                @endif
+                    @else
+                    <div class="sorry-pop">
+                        <img src="{{ asset('images/red-cross.png')}}" alt="">
+                        <p>{{session('danger')}}</p>
+                    </div>
+                    @endif
             </div>
         </div>
     </div>
