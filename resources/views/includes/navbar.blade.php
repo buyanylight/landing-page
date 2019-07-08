@@ -38,6 +38,9 @@
                     <a class="nav-link text-white links" href="/ieo">IEO</a>
                 </li>
                 <li class="nav-item mr-3">
+                    <a class="nav-link text-white links" href="https://medium.com/@infobuyanylight" target="_blank">News</a>
+                </li>
+                <li class="nav-item mr-3">
                     <a class="nav-link text-white links" href="/#contact">Contact</a>
                 </li>
                 <li class="nav-item mr-3">
