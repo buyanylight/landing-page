@@ -75,7 +75,19 @@ class PageController extends Controller
     public function ieo ()
     {
 
-        return view('ieo');
+        $agent = new Agent();
+
+        $isMobile = $agent->isMobile();
+        $isTablet = $agent->isTablet();
+
+    
+        if($isMobile && !$isTablet) {
+            return view('mobile.ieo');
+        } else {
+            return view('ieo');
+        }
+
+
 
     }
 

@@ -11230,6 +11230,21 @@ body {
   height: 100%;
 }
 
+.ieo-coming-soon {
+  background: url("/images/ieo-coming-soon.png");
+  height: 100vh;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  text-align: center;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 105%;
+}
+
 #topBtn {
   position: fixed;
   bottom: 80px;
