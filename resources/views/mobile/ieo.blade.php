@@ -1,13 +1,14 @@
-@extends('layouts.main-layout')
+@extends('layouts.mobile-layout')
+
 @section('content')
 <div class="ieo-coming-soon">
 	<div class="container text-white">
-		<h1 style="font-size: 5rem;">
+		<h1>
 			<b>
 			COMING <br> SOON!
 			</b>
 		</h1>
-		<p style="font-size: 18px;">Stay tuned for BAL IEO</p>
+		<p>Stay tuned for BAL IEO</p>
 	</div>
 </div>
 @endsection
