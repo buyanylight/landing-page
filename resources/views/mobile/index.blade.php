@@ -91,7 +91,7 @@
 				<li>the world’s lowest prices for any light unit</li>
 				<li>greater efficiency of lighting procurement</li>
 				<li>superb online automation and functionality</li>
-				<li>access to top global brand manufacturers. </li>
+				<li>access to top global brand manufacturers.</li>
 			</ul>
 			<p>Whether you’re new to LED or a professional expert, we have a package to achieve all your objectives. </p>
 		</div>

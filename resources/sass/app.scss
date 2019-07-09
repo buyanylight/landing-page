@@ -189,7 +189,7 @@ body{
     margin-top: 20px;
 }
 
-.card-text{
+ .section-2 .card-text{
 	height: 130px;
 }
 
@@ -511,10 +511,44 @@ li .card-body{
 
 .section-12{
 	height: 100%;
-	background: url();
 	background-position-x: center;
     background-position-y: -800px;
     background-size: 104%;
+}
+
+
+.card-my-tower{
+	width: 370px;
+}
+
+.card-my-home{
+	width: 370px;
+}
+
+
+.card-trial{
+	width: 370px;
+}
+
+
+.card-mini{
+	height: 100%;
+	position:relative;
+	top: 5%;
+	left: 1%
+}
+
+.card-standard{
+	height: 100%;
+	position:relative;
+	top: 5%;
+	right: 1%;
+}
+
+.card-premium{
+	height: 110%;
+	box-shadow: 0px 0px 10px 0px #545454;
+    z-index: 1;
 }
 
 .section-12-hr{
@@ -531,10 +565,12 @@ li .card-body{
 
 .trial-list {
   list-style: none;
+  line-height: 25px;
 }
 
 .trial-list li{
  margin-top: 10px;
+
 }
 
 

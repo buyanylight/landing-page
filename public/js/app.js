@@ -49578,6 +49578,10 @@ $("#topBtn").click(function () {
   });
 })(jQuery);
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
