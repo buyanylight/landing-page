@@ -176,6 +176,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Jenssegers\Agent\AgentServiceProvider::class,
+        App\Providers\AgentServiceProvider::class
+        
 
 
     ],

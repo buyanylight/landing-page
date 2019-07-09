@@ -1,9 +1,9 @@
-@extends('layouts.main-layout')
+@extends(($agent->isMobile()) ? 'layouts.mobile-layout' : 'layouts.main-layout')
 @section('content')
 <div class="seller-faq pb-5 bg-white">
 	<div class="container">
-		<h1><b>SELLER FAQ</b></h1>
-		<div id="accordion">
+		<h1 class="{{$agent->isMobile()  ? 'text-center faq-header' : ''}}"><b>SELLER FAQ</b></h1>
+		<div id="accordion"   class=" {{$agent->isMobile()  ? 'text-center' : ''}} ">
   			<div class="card">
     			<div class="card-header" id="headingOne">
       				<h5 class="mb-0">
@@ -12,7 +12,6 @@
         				</button>
       				</h5>
     			</div>
-
     			<div id="faq-1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
       				<div class="card-body">
        					 BAL is a pioneering online platform offering an innovative and value-packed procedure for resourcing LED lighting projects. BAL delivers unique advantages for both sellers and buyers and a win-win edge for them all.
@@ -89,6 +88,7 @@
        					The BAL platform gives sellers many great benefits, including higher sales, better profitability, free registration, easy set-up and use, flexible pricing, secure payments, hassle-free logistics and the opportunity to offer samples.
       				</div>
     			</div>
+  			</div>
     			<div class="card">
     				<div class="card-header" id="headingOne">
       					<h5 class="mb-0">
@@ -173,7 +173,6 @@
       					</div>
     				</div>
   				</div>
-  			</div>
 		</div>
 	</div>
 </div>

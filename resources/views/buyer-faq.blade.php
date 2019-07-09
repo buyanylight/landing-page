@@ -1,9 +1,9 @@
-@extends('layouts.main-layout')
+@extends(($agent->isMobile()) ? 'layouts.mobile-layout' : 'layouts.main-layout')
 @section('content')
 <div class="buyer-faq pb-5 bg-white">
 	<div class="container">
-		<h1><b>BUYER FAQ</b></h1>
-		<div id="accordion">
+		<h1 class="{{$agent->isMobile()  ? 'text-center faq-header' : ''}}"><b>BUYER FAQ</b></h1>
+		<div id="accordion" class=" {{$agent->isMobile()  ? 'text-center' : ''}} ">
   			<div class="card">
     			<div class="card-header" id="headingOne">
       				<h5 class="mb-0">
