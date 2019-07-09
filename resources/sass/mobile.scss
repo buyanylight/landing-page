@@ -26,11 +26,11 @@ body{
 
 
 .section1{
-	height: 650px;
-	background: url("/images/mobile_bg.png");
+	height: 550px;
+    background: url('/images/mobile_bg.png');
     background-size: 100%;
     background-position-x: center;
-    background-position-y: -55px;
+    background-position-y: -100px;
     background-repeat: no-repeat;
 }
 
@@ -44,7 +44,6 @@ body{
 
 .section3{
 	height: 100%;
-	background: url("/images/mobile_about.png");
 	background-size: 106%;
     background-position-x: left;
     background-position-y: -105px;
