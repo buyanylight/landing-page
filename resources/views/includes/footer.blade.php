@@ -106,23 +106,8 @@
                     <div class="payments mt-3 ">
                         <h5 class="text-white">Accepted Payments</h5>
                         <div class="row mt-3">
-                            <div class="col-md-1 one-pay text-grey">
-                                <i class="fab fa-cc-visa"></i>
-                            </div>
-                            <div class="col-md-1 one-pay text-grey">
-                                <i class="fab fa-cc-amex"></i>
-                            </div>
-                            <div class="col-md-1 one-pay text-grey">
-                                <i class="fab fa-cc-mastercard"></i>
-                            </div>
-                            <div class="col-md-1 one-pay text-grey">
-                                <i class="fab fa-monero"></i>
-                            </div>
-                            <div class="col-md-1 one-pay text-grey">
-                                <i class="fab fa-bitcoin"></i>
-                            </div>
-                            <div class="col-md-1 one-pay text-grey">
-                                <i class="fab fa-ethereum"></i>
+                            <div class="col"> 
+                                <img src="{{ asset('images/payment.png') }}" width="70%">
                             </div>
                         </div>
                     </div>

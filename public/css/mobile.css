@@ -11123,7 +11123,7 @@ body {
   background: url("/images/mobile_bg.png");
   background-size: 100%;
   background-position-x: center;
-  background-position-y: -100px;
+  background-position-y: bottom;
   background-repeat: no-repeat;
 }
 
