@@ -62,12 +62,12 @@
 			<div class="tab-content pt-3" id="pills-tabContent">
   				<div class="tab-pane fade show active" id="pills-english" role="tabpanel" aria-labelledby="pills-english-tab">
   					<div class="embed-responsive embed-responsive-16by9">
-	             		<iframe width="640" height="360" src="https://www.youtube.com/embed/aaJQLTaSgLk?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+	             		<iframe width="640" height="360" src="https://www.youtube.com/embed/7N3FqFyASC0?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 	        		</div>
   				</div>
   				<div class="tab-pane fade" id="pills-chinese" role="tabpanel" aria-labelledby="pills-chinese-tab">
   					<div class="embed-responsive embed-responsive-16by9">
-	             		<iframe width="640" height="360" src="https://www.youtube.com/embed/aaJQLTaSgLk?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+	             		<iframe width="640" height="360" src="https://www.youtube.com/embed/YR-FYxOz3ps?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 	        		</div>
   				</div>
 			</div>
