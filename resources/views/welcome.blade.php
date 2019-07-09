@@ -188,7 +188,7 @@
                                <b>A private homeowner?</b> Use BAL to make your home a greener, more stylish and cost-efficient zone by switching to LED lights. The energy bill savings are huge!
                             </p>
                             <p>
-                                <b>A consultant, contractor or a project owner?</b> We've got you covered! We save you time, money and add even more value with the finest technical expertise to specify the ideal LED lights for your project. Your own BAL expert will help you through your project, every step of the way, ensuring that you get the best prices, designs and products anywhere in the world. BAL allows contractors and consultants to provide outstanding services for their clients, achieve project objectives and maximise profits. With BAL, it's always a win-win situation!
+                                <b>A consultant, contractor or  project owner?</b> We've got you covered! We save you time, money and add even more value with the finest technical expertise to specify the ideal LED lights for your project. Your own BAL expert will help you through your project, every step of the way ensuring that you get the best prices, designs and products anywhere in the world. BAL allows contractors and consultants to provide outstanding services for their clients, achieve project objectives and maximise profits. With BAL, it's always a win-win situation!
                             </p>
                             <p>
                                 <b>Researching LED prices and products?</b> Because it’s focused purely on LED lights, BuyAnyLight allows you to do this in record time. BAL provides the best value in product quality, costs, and service.
@@ -493,7 +493,7 @@
                         </h4>
                         <div>
                             <p>
-                                BUY ANY LIGHT (BAL) has the world’s largest network of lighting manufacturers, and we continually add more, allowing BAL to provide the finest platform for finding any type of LED lighting item. Our artificial intelligence systems and high-speed servers match buyer enquiries with the most suitable suppliers in a matter of seconds and instantly send out Requests For Quotes (RFQs). When your quotes arrive, simply use the powerful BAL tools to select the most competitive: it’s fast – and beautifully simple!
+                                BuyAnyLight (BAL) has the world’s largest network of lighting manufacturers, and we continually add more, allowing BAL to provide the finest platform for finding any type of LED lighting item. Our artificial intelligence systems and high-speed servers match buyer enquiries with the most suitable suppliers in a matter of seconds and instantly send out Requests For Quotes (RFQs). When your quotes arrive, simply use the powerful BAL tools to select the most competitive: it’s fast – and beautifully simple!
                             </p>
                         </div>
                         <div>
@@ -534,10 +534,10 @@
     <div class="section-7 bg-white" id="why-bal">
         <div class="section-7-container">
             <div class="container pt-5">
-                <h4 class="font-weight-bold">
+                <h4 class="font-weight-bolder text-center">
                     WHY CHOOSE US?
                 </h4>
-                <div class="pt-3">
+                <div class="pt-3 text-center">
                     <p>
                        BuyAnyLight (BAL) delivers exceptional advantages to both sellers and buyers, ensuring that every BAL platform user gets win-win results, every time!  
                     </p>
@@ -592,7 +592,7 @@
                                         </div>
                                     </div>
                                     <div class="card-text text-center buyer-card-text">
-                                        Find any type of LED light you need on BAL. Review different designs and technical specifications from world-class brands.
+                                        Find any type of LED light you need on BAL. Review different designs and technical specifications from<br>world-class brands.
                                     </div>
                                 </div>
                             </div>
@@ -622,7 +622,7 @@
                                             <i class="fas fa-key"></i>
                                         </div>
                                         <div class="buyer-text">
-                                            <h5 class="card-title text-center">Security</h5>
+                                            <h5 class="card-title text-center">Secure</h5>
                                         </div>
                                     </div>
                                     <div class="card-text text-center buyer-card-text">
@@ -729,7 +729,7 @@
                                         </div>
                                     </div>
                                     <div class="card-text text-center buyer-card-text">
-                                        BAL is completely free for sellers. Simply register and start receiving Requests For Quotes (RFQs) from buyers across the globe!
+                                        BAL is completely free for sellers. Simply register and start receiving Requests For Quotes (RFQs) from buyers worldwide!
                                     </div>
                                 </div>
                             </div>
