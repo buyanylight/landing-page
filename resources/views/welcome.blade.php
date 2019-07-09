@@ -168,7 +168,7 @@
                                 <li>the best possible prices for any light unit</li>
                                 <li>greater efficiency of lighting procurement</li>
                                 <li>superb online automation and functionality</li>
-                                <li>access to the actual manufacturers of top global brands</li>
+                                <li>access to top global brand manufacturers.</li>
                             </ul>
                             <p style="width: 95%;">
                                 Whether you have lots of experience with LED lights or none at all, we have a package to help you achieve all your objectives.
@@ -859,7 +859,7 @@
                     OUR PACKAGES
                 </h4>
                 <p class="text-white">We welcome everyone to use our platform. Take a look at the groups below and see which one is right for you. If you have any queries, don’t hesitate to <a href="#contact">get in touch.</a></p>
-                <div class="row pb-5 text-white">
+                <div class="row pt-5 pb-5 text-white">
                     <div class="col-md-6">
                         <img src="{{ asset('images/trial.png')}}" width="100%">
                     </div>
@@ -1067,193 +1067,184 @@
                         </li>
                     </ul>
                     <div class="tab-content pt-5" id="pills-tabContent" style="height: 90%;">
-                        <div class="tab-pane fade h-100" id="pills-trial" role="tabpanel" aria-labelledby="pills-trial-tab">
+                        <div class="tab-pane fade  h-100" id="pills-trial" role="tabpanel" aria-labelledby="pills-trial-tab">
                             <div class="pills-all h-100">
-                                <div class="card trial-height w-60">
-                                    <h5 class="card-header" style="background: #1B1B1B; color: white;">
-                                        Free Trial
-                                        <div class="text-muted">
-                                            <small>
-                                                NO UPFRONT COSTS & FREE QUOTATION
-                                            </small>
+                                <div class="card card-trial">
+                                    <h4 class="card-header text-center bg-black text-white">
+                                        FREE TRIAL
+                                        <small></small>
+                                    </h4>
+                                    <div class="card-body pt-5 pb-5">
+                                        <p class="card-text text-center">EXPERIENCE THE POWER OF BAL AND GET A FREE QUOTE AT UNBELIEVABLE PRICES</p>
+                                        <div class="pb-2 pt-2">
+                                            <ul class="trial-list">
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                    Risk-free
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                    Explore BAL
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-times"></i>
+                                                    Sample request
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-times"></i>
+                                                    Multiple Item Request
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-times"></i>
+                                                    Designated lighting designer
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-times"></i>
+                                                    Markup feature 
+                                                    <span class="btn btn-sm" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </span>
+                                                </li>
+                                            </ul>
                                         </div>
-                                    </h5>
-                                    <div class="card-body">
-                                        <div class="card-text">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <ul class="trial-list">
-                                                        <li>
-                                                            <i class="fas fa-check"></i>
-                                                             Risk-free
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-check"></i>
-                                                            Explore BAL
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-times"></i>
-                                                            Markup feature
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <ul class="trial-list">
-                                                        <li>
-                                                            <i class="fas fa-times"></i>
-                                                            Sample request
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-times"></i>
-                                                            Multiple item request
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-times"></i>
-                                                            Designated lighting designer
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-12 pt-2">
-                                                    <p class="text-center">
-                                                        <strong>Note:</strong>
-                                                        A LightFinder package is required to confirm the order.
-                                                    </p>
-                                                </div>
-                                            </div>
+                                         <p class="text-center">
+                                            <b>Note: </b> A LightFinder package is required to confirm the order.
+                                        </p>
+                                        <hr>
+                                        <div class="text-center pt-4">
+                                            <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-dark">Subscribe now</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade h-100" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="tab-pane   fade h-100" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                             <div class="pills-all h-100">
-                                <div class="card pt-height w-65">
-                                    <h5 class="card-header" style="background: #1B1B1B; color: white;">
-                                        My Home
-                                        <div class="text-muted">
-                                            <small>
-                                                NO UPFRONT COSTS & FREE QUOTATION
-                                            </small>
+                                <div class="card card-my-home">
+                                    <h4 class="card-header text-center bg-black text-white">
+                                        MY HOME
+                                        <small></small>
+                                    </h4>
+                                    <div class="card-body pt-5 pb-5">
+                                        <p class="card-text text-center">A PACKAGE TAILORED SPCIFICALLY FOR YOUR BEAUTIFUL HOMES TO ACHIEVE BEST RESULTS</p>
+                                        <div class="pb-2 pt-2">
+                                            <ul class="trial-list">
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                    Risk-free
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                    Unlimited Revisions
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                    Sample request
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                    Best price guarantee
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                    100% payment protection
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                    Project lighting consultation
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                    Designated lighting designer
+                                                    <span class="btn" data-toggle="tooltip" data-placement="right" title="This lets you communicate with your designated lighting designer who helps you throughout the process" style="font-size: 12px; ">
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-times"></i>
+                                                    Markup feature
+                                                    <span class="btn" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </span>
+                                                </li>
+                                            </ul>
                                         </div>
-                                    </h5>
-                                    <div class="card-body">
-                                        <div class="card-text">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <ul class="trial-list">
-                                                        <li>
-                                                            <i class="fas fa-check"></i>
-                                                             Risk-free
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-check"></i>
-                                                            Unlimited revisions
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-check"></i>
-                                                            Sample request
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-check"></i>
-                                                            Best price guarantee
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <ul class="trial-list">
-                                                        <li>
-                                                            <i class="fas fa-check"></i>
-                                                            100% Payment Protection
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-check"></i>
-                                                            Home lighting consultation
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-check"></i>
-                                                            Designated lighting designer
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-times"></i>
-                                                            Markup feature
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-12 pt-2">
-                                                    <p class="text-center">
-                                                        <span>FOR ALL THIS, YOU PAY <strong>$0.00</strong></span><br><br>
-                                                        <strong>*</strong>10% BAL fee on order confirmation <br>
-                                                        <strong>**</strong>$949 Project fee payable only on offer acceptance
-                                                    </p>
-                                                </div>
-                                            </div>
+                                         <p class="text-center">
+                                            * 10% BAL fee on order confirmation <br>
+                                            ** $949 Project fee payable only on offer acceptance
+                                        </p>
+                                        <hr>
+                                        <div class="text-center pb-2">
+                                            <h5>FOR ALL THIS, YOU PAY <b>$0.00</b></h5> 
+                                        </div>
+                                        <div class="text-center">
+                                            <a href="https://lightfinder.buyanylight.com/buyer/register/my-home" class="btn btn-dark">Subscribe now</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade h-100" id="pills-tower" role="tabpanel" aria-labelledby="pills-tower-tab">
+                        <div class="tab-pane fade  h-100" id="pills-tower" role="tabpanel" aria-labelledby="pills-tower-tab">
                             <div class="pills-all h-100">
-                                <div class="card pt-height w-65">
-                                    <h5 class="card-header" style="background: #1B1B1B; color: white;">
-                                        My Tower
-                                        <div class="text-muted">
-                                            <small>
-                                                NO UPFRONT COSTS & FREE QUOTATION
-                                            </small>
+                                <div class="card card-my-tower">
+                                    <h4 class="card-header text-center bg-black text-white">
+                                        MY TOWER
+                                        <small></small>
+                                    </h4>
+                                    <div class="card-body pt-5 pb-5">
+                                        <p class="card-text text-center">A COMPLETE PROJECT SOLUTION GURANTEEING LOWEST PRICES IN THE ENTIRE MARKET</p>
+                                        <div class="pb-2 pt-2">
+                                            <ul class="trial-list">
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                    Risk-free
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                    Unlimited Revisions
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                    Sample request
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                    Best price guarantee
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                    100% payment protection
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                    Project lighting consultation
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                    Designated lighting designer
+                                                    <span class="btn" data-toggle="tooltip" data-placement="right" title="This lets you communicate with your designated lighting designer who helps you throughout the process" style="font-size: 12px; ">
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-check"></i>
+                                                    Markup feature
+                                                    <span class="btn" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </span>
+                                                </li>
+                                            </ul>
                                         </div>
-                                    </h5>
-                                    <div class="card-body">
-                                        <div class="card-text">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <ul class="trial-list">
-                                                        <li>
-                                                            <i class="fas fa-check"></i>
-                                                             Risk-free
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-check"></i>
-                                                            Unlimited revisions
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-check"></i>
-                                                            Sample request
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-check"></i>
-                                                            Best price guarantee
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <ul class="trial-list">
-                                                        <li>
-                                                            <i class="fas fa-check"></i>
-                                                            100% payment protection
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-check"></i>
-                                                            Project lighting consultation
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-check"></i>
-                                                            Designated lighting designer
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-check"></i>
-                                                            Markup feature
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-12 pt-2">
-                                                    <p class="text-center">
-                                                        <span>FOR ALL THIS, YOU PAY <strong>$0.00</strong></span><br><br>
-                                                        <strong>*</strong> 10% BAL fee on order confirmation <br>
-                                                        <strong>**</strong> $1949 Project fee payable only on offer acceptance
-                                                    </p>
-                                                </div>
-                                            </div>
+                                         <p class="text-center">
+                                            * 10% BAL fee on order confirmation <br>
+                                            ** $1949 Project fee payable only on offer acceptance
+                                        </p>
+                                        <hr>
+                                        <div class="text-center pb-2">
+                                            <h5>FOR ALL THIS, YOU PAY <b>$0.00</b></h5> 
+                                        </div>
+                                        <div class="text-center">
+                                            <a href="https://lightfinder.buyanylight.com/buyer/register/my-tower" class="btn btn-dark">Subscribe now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1261,205 +1252,200 @@
                         </div>
                         <div class="tab-pane fade show active h-100" id="pills-finder" role="tabpanel" aria-labelledby="pills-finder-tab">
                             <div class="pills-all h-100">
-                                <div class="card" style="width: 50%; height: 495px;">
-                                    <h5 class="card-header" style="background: #1B1B1B; color: white;">
-                                        MINI
-                                        <div class="text-muted">
-                                            <small>
-                                                SOURCING REINVENTED
-                                            </small>
-                                        </div>
-                                    </h5>
-                                    <div class="card-body">
-                                        <div class="card-text">
-                                            <ul class="trial-list" >
-                                                <li>
-                                                    <i class="fas fa-check"></i>
+                                <div class="card-group">
+                                    <div class="card card-mini">
+                                        <h4 class="card-header text-center bg-black text-white">MINI</h4>
+                                        <div class="card-body pt-5 pb-5 text-center">
+                                            <p class="card-text">TO GET STARTED AND TO EXPERIENCE BAL GET THIS PACK</p>
+                                            <div class="pt-2 pb-2 text-left">
+                                                <ul class="trial-list">
+                                                    <li>
+                                                        <i class="fas fa-check"></i>
                                                         Inquire & source 3 items
-                                                </li>
-                                                <li>
-                                                       <i class="fas fa-check"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-check"></i>
                                                         Minimum order quantity: 20
-                                                </li>
-                                                <li>
+                                                    </li>
+                                                    <li>
                                                         <i class="fas fa-check"></i>
                                                         100% payment guarantee
-                                                </li>
-                                                 <li>
+                                                    </li>
+                                                    <li>
                                                         <i class="fas fa-check"></i>
                                                         Best price guarantee
-                                                </li>
-                                                 <li>
+                                                    </li>
+                                                    <li>
                                                         <i class="fas fa-check"></i>
                                                         Sample request
-                                                </li>
-                                                <li>
+                                                    </li>
+                                                    <li>
                                                         <i class="fas fa-check"></i>
                                                         Additional inquiry for $199
-                                                </li>
-                                                <li>
+                                                    </li>
+                                                    <li>
                                                         <i class="fas fa-times"></i>
                                                         Label & design support
-                                                </li>
-                                                <li>
+                                                        <span class="btn" data-toggle="tooltip" data-placement="right" title="We provide OEM/ODM service as per your requirement. You can send your logo and/or labels to be placed on the light fixtures" style="font-size: 12px; ">
+                                                            <i class="fas fa-info-circle"></i>
+                                                        </span>
+                                                    </li>
+                                                    <li>
                                                         <i class="fas fa-times"></i>
                                                         Designated lighting designer
-                                                </li>
-                                                <li>
+                                                        <span class="btn" data-toggle="tooltip" data-placement="right" title="This lets you communicate with your designated lighting designer who helps you throughout the process" style="font-size: 12px; ">
+                                                            <i class="fas fa-info-circle"></i>
+                                                        </span>
+                                                    </li>
+                                                    <li>
                                                         <i class="fas fa-times"></i>
-                                                        Markup Feature
-                                                </li>
-                                            </ul>
-                                           <div class= "pt-2">
-                                                <div class="text-center">
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <strong>$5499/Yearly</strong>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <strong>$499/Monthly</strong>
-                                                        </div>
-                                                    </div>
-                                                    <br>
-                                                    <p class="text-center">
-                                                        <strong>*</strong> 20% BAL fee on order confirmation <br>
-                                                    </p>
-                                                </div>
+                                                        Markup feature
+                                                        <span class="btn" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
+                                                            <i class="fas fa-info-circle"></i>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p class="text-center">* 20% BAL fee on order confirmation</p>
+                                            <hr>
+                                            <div class="text-center pb-2">
+                                                <h5>$499/Monthly</h5>
+                                                <small>$5499/Yearly</small>   
+                                            </div>
+                                            <div >
+                                                <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder" class="btn btn-dark">Subscribe now</a>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card" style="width: 50%; height: 495px; box-shadow: 0px 0px 15px #000000; border: black; z-index: 1;">
-                                    <h5 class="card-header" style="background: #1B1B1B; color: white; ">
-                                        STANDARD
-                                        <div class="text-muted">
-                                            <small>
-                                                SOURCING REINVENTED
-                                            </small>
-                                        </div>
-                                    </h5>
-                                    <div class="card-body">
-                                        <div class="card-text">
-                                            <ul class="trial-list">
-                                                 <li>
-                                                    <i class="fas fa-check"></i>
-                                                        Inquire & source 6 items
-                                                </li>
-                                                <li>
-                                                       <i class="fas fa-check"></i>
-                                                        Minimum order quantity: 10
-                                                </li>
-                                                <li>
-                                                        <i class="fas fa-check"></i>
-                                                        100% payment guarantee
-                                                </li>
-                                                <li>
-                                                        <i class="fas fa-check"></i>
-                                                        Best price guarantee
-                                                </li>
-                                                 <li>
-                                                        <i class="fas fa-check"></i>
-                                                        Sample request
-                                                </li>
-                                                <li>
-                                                        <i class="fas fa-check"></i>
-                                                        Additional inquiry for $149
-                                                </li>
-                                                <li>
-                                                        <i class="fas fa-times"></i>
-                                                        Label & design support
-                                                </li>
-                                                <li>
-                                                        <i class="fas fa-times"></i>
-                                                        Designated lighting designer
-                                                </li>
-                                                <li>
-                                                        <i class="fas fa-times"></i>
-                                                        Markup Feature
-                                                </li>
-                                            </ul>
-                                           <div class= "pt-2">
-                                                <div class="text-center">
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <strong>$7699/Yearly</strong>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <strong>$699/Monthly</strong>
-                                                        </div>
-                                                    </div>
-                                                    <br>
-                                                    <p class="text-center">
-                                                        <strong>*</strong> 15% BAL fee on order confirmation <br>
-                                                    </p>
+                                    <div class="card card-premium">
+                                        <h4 class="card-header text-center bg-black text-white">PREMIUM</h4>
+                                        <div class="card-body pt-0 pb-0 text-center d-flex align-items-center">
+                                            <div class="card-premium-contents">
+                                                <p class="card-text">TO GET THE MOST OUT OF BAL AND FOR YOUR COMPANY GET THIS PACK</p>
+                                                <div class="pt-2 pb-2 text-left">
+                                                    <ul class="trial-list">
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Inquire & source 10 items
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Minimum order quantity: 10
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            100% payment guarantee
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Best price guarantee
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Sample request
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Additional inquiry for $149
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Label & design support
+                                                            <span class="btn" data-toggle="tooltip" data-placement="right" title="We provide OEM/ODM service as per your requirement. You can send your logo and/or labels to be placed on the light fixtures" style="font-size: 12px; ">
+                                                                <i class="fas fa-info-circle"></i>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Designated lighting designer
+                                                            <span class="btn" data-toggle="tooltip" data-placement="right" title="This lets you communicate with your designated lighting designer who helps you throughout the process" style="font-size: 12px; ">
+                                                                <i class="fas fa-info-circle"></i>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Markup feature
+                                                            <span class="btn" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
+                                                                <i class="fas fa-info-circle"></i>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <p class="text-center">* 10% BAL fee on order confirmation</p>
+                                                <hr>
+                                                <div class="text-center pb-2">
+                                                    <h5>$899/Monthly</h5>
+                                                    <small>$9899/Yearly</small>   
+                                                </div>
+                                                <div>
+                                                    <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder" class="btn btn-dark">Subscribe now</a>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="card" style="width: 50%; height: 495px;">
-                                    <h5 class="card-header" style="background: #1B1B1B; color: white;">
-                                        PREMIUM
-                                        <div class="text-muted">
-                                            <small>
-                                                SOURCING REINVENTED
-                                            </small>
-                                        </div>
-                                    </h5>
-                                    <div class="card-body">
-                                        <div class="card-text">
-                                            <ul class="trial-list">
-                                                <li>
-                                                    <i class="fas fa-check"></i>
-                                                        Inquire & source 10 items
-                                                </li>
-                                                <li>
-                                                       <i class="fas fa-check"></i>
-                                                        Minimum order quantity: 10
-                                                </li>
-                                                <li>
-                                                        <i class="fas fa-check"></i>
-                                                        100% payment guarantee
-                                                </li>
-                                                <li>
-                                                        <i class="fas fa-check"></i>
-                                                        Best price guarantee
-                                                </li>
-                                                 <li>
-                                                        <i class="fas fa-check"></i>
-                                                        Sample request
-                                                </li>
-                                                <li>
-                                                        <i class="fas fa-check"></i>
-                                                        Additional inquiry for $99
-                                                </li>
-                                                <li>
-                                                        <i class="fas fa-check"></i>
-                                                        Label & design support
-                                                </li>
-                                                <li>
-                                                        <i class="fas fa-check"></i>
-                                                        Designated lighting designer
-                                                </li>
-                                                <li>
-                                                        <i class="fas fa-check"></i>
-                                                        Markup Feature
-                                                </li>
-                                            </ul>
-                                           <div class= "pt-2">
-                                                <div class="text-center">
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <strong>$9899/Yearly</strong>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <strong>$899/Monthly</strong>
-                                                        </div>
-                                                    </div>
-                                                    <br>
-                                                    <p class="text-center">
-                                                        <strong>*</strong> 10% BAL fee on order confirmation <br>
-                                                    </p>
+                                    </div> 
+                                    <div class="card card-standard">
+                                        <h4 class="card-header text-center bg-black text-white">STANDARD</h4>
+                                        <div class="card-body pt-5 pb-5 text-center d-flex align-items-center">
+                                            <div class="card-standard-contents">
+
+                                                <p class="card-text">IF YOU NEED MORE THEN JUST A FEW LIGHTS GET THIS PACK</p>
+                                                <div class="pt-2 pb-2 text-left">
+                                                    <ul class="trial-list">
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Inquire & source 6 items
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Minimum order quantity: 10
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            100% payment guarantee
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Best price guarantee
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Sample request
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check"></i>
+                                                            Additional inquiry for $149
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-times"></i>
+                                                            Label & design support
+                                                            <small class="btn" data-toggle="tooltip" data-placement="right" title="We provide OEM/ODM service as per your requirement. You can send your logo and/or labels to be placed on the light fixtures" style="font-size: 12px; ">
+                                                                <i class="fas fa-info-circle"></i>
+                                                            </small>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-times"></i>
+                                                            Designated lighting designer
+                                                            <span class="btn " data-toggle="tooltip" data-placement="right" title="This lets you communicate with your designated lighting designer who helps you throughout the process" style="font-size: 12px; ">
+                                                                <i class="fas fa-info-circle"></i>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-times"></i>
+                                                            Markup feature
+                                                            <span class="btn" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
+                                                                <i class="fas fa-info-circle"></i>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <p class="text-center">* 15% BAL fee on order confirmation</p>
+                                                <hr>
+                                                <div class="text-center pb-2">
+                                                    <h5>$699/Monthly</h5>
+                                                    <small>$7699/Yearly</small>   
+                                                </div>
+                                                <div>
+                                                    <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder" class="btn btn-dark">Subscribe now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1472,7 +1458,7 @@
             </div>
         </div>
     </div>
-    <div class="section-13 pb-5">
+    <div class="section-13 pb-5 pt-5">
         <div class="section-13-container">
             <div class="container">
                 <h4 class="pt-5 font-weight-bold">
@@ -1528,7 +1514,7 @@
             </div>
         </div>
     </div>
-    <div class="section-14" id="contact">
+    <div class="section-14 pt-5" id="contact">
         <div class="section-14-container">
             <div class="pt-5 pb-5 text-center contact-header">
                <!--  <div>
