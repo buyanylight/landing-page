@@ -1072,7 +1072,8 @@
                                 <div class="card card-trial">
                                     <h4 class="card-header text-center bg-black text-white">
                                         FREE TRIAL
-                                        <small></small>
+                                        <br>
+                                        <small style="font-size: 13px;">NO UPFRONT COSTS & FREE QUOTATION</small>
                                     </h4>
                                     <div class="card-body pt-5 pb-5">
                                         <p class="card-text text-center">EXPERIENCE THE POWER OF BAL AND GET A FREE QUOTE AT UNBELIEVABLE PRICES</p>
@@ -1123,7 +1124,8 @@
                                 <div class="card card-my-home">
                                     <h4 class="card-header text-center bg-black text-white">
                                         MY HOME
-                                        <small></small>
+                                        <br>
+                                        <small style="font-size: 13px;">NO UPFRONT COSTS & FREE QUOTATION</small>
                                     </h4>
                                     <div class="card-body pt-5 pb-5">
                                         <p class="card-text text-center">A PACKAGE TAILORED SPCIFICALLY FOR YOUR BEAUTIFUL HOMES TO ACHIEVE BEST RESULTS</p>
@@ -1189,7 +1191,8 @@
                                 <div class="card card-my-tower">
                                     <h4 class="card-header text-center bg-black text-white">
                                         MY TOWER
-                                        <small></small>
+                                        <br>
+                                        <small style="font-size: 13px;">NO UPFRONT COSTS & FREE QUOTATION</small>
                                     </h4>
                                     <div class="card-body pt-5 pb-5">
                                         <p class="card-text text-center">A COMPLETE PROJECT SOLUTION GURANTEEING LOWEST PRICES IN THE ENTIRE MARKET</p>
