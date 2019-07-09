@@ -1259,7 +1259,7 @@
                                     <div class="card card-mini">
                                         <h4 class="card-header text-center bg-black text-white">MINI</h4>
                                         <div class="card-body pt-5 pb-5 text-center">
-                                            <p class="card-text">TO GET STARTED AND TO EXPERIENCE BAL GET THIS PACK</p>
+                                            <p class="card-text">TO GET STARTED AND TO EXPERIENCE BAL <br> GET THIS PACK</p>
                                             <div class="pt-2 pb-2 text-left">
                                                 <ul class="trial-list">
                                                     <li>
@@ -1391,7 +1391,7 @@
                                         <div class="card-body pt-5 pb-5 text-center d-flex align-items-center">
                                             <div class="card-standard-contents">
 
-                                                <p class="card-text">IF YOU NEED MORE THEN JUST A FEW LIGHTS GET THIS PACK</p>
+                                                <p class="card-text">IF YOU NEED MORE THAN JUST A FEW LIGHTS GET <br> THIS PACK</p>
                                                 <div class="pt-2 pb-2 text-left">
                                                     <ul class="trial-list">
                                                         <li>
