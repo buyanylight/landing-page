@@ -114,7 +114,7 @@
 				<a href="">Find out lots more NOW on our desktop website</a>
 		</div>
 	</div>
-	<div class="section5 pt-5 pb-5 bg-black">
+	<div class="section5 pt-5 pb-5 bg-black" id="works">
 		<div class="container">
 			<h3 class="text-white">
 				HOW BAL WORKS
@@ -124,7 +124,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="section13 pt-5 pb-5">
+	<div class="section13 pt-5 pb-5" id="why-bal">
 		<div class="container">
 			<h3><b>WHY CHOOSE US?</b></h3>
 			<p class="pt-3">
@@ -153,7 +153,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="bg-black home pt-5 pb-5 text-white section6-container">
+		<div class="bg-black home pt-5 pb-5 text-white section6-container" id="#trial">
 			<div class="container">
 				<h4><b>My Home</b></h4>
 				<p class="pt-3">
@@ -226,7 +226,7 @@
                                 </div>
 			</div>
 		</div>
-		<div class="tower pt-5 pb-5 section6-container">
+		<div class="tower pt-5 pb-5 section6-container" id="#tower">
 			<div class="container">
 				<h3><b>My Tower</b></h3>
 				<p class="pt-3">
@@ -302,7 +302,7 @@
                                 </div>
 			</div>
 		</div>
-		<div class="finder pt-5 pb-5 section6-container bg-black text-white">
+		<div class="finder pt-5 pb-5 section6-container bg-black text-white" id="finder">
 			<div class="container">
 				<h4>LightFinder - B2B & B2C</h4>
 				<p class="pt-3">

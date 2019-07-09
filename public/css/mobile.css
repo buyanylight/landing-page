@@ -11114,6 +11114,10 @@ body {
   background: black !important;
 }
 
+.faq-header {
+  padding-top: 100px;
+}
+
 .section1 {
   height: 650px;
   background: url("/images/mobile_bg.png");

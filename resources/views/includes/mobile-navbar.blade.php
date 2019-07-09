@@ -21,7 +21,6 @@
                         <a class="dropdown-item" href="#home">My Home Plan</a>
                         <a class="dropdown-item" href="#tower">My Tower Plan</a>
                         <a class="dropdown-item" href="#finder">LightFinder Plan</a>
-                        <a class="dropdown-item" href="#package">Package Summary</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
@@ -29,8 +28,7 @@
                     Buyers
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/#ninety">How it works</a>
-                        <a class="dropdown-item" href="/#balvsretail">BAL vs. retail</a>
+                        <a class="dropdown-item" href="/#works">How it works</a>
                         <a class="dropdown-item" href="/#why-bal">Why BAL</a>
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/buyer/register">Register</a>
                         <a class="dropdown-item" href="/buyer-faq">FAQ</a>
