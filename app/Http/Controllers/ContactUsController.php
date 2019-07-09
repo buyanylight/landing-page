@@ -40,9 +40,7 @@ class ContactUsController extends Controller
             ), function($message) use ($request)
            	{
                 $message->from('no-reply@buyanylight.com');
-                        ->to($request->get('email'), $request->get('name'))
-                        ->to('info@buyanylight.com', 'Admin')
-                        ->subject($request->get('subject'));
+                $message->to('info@buyanylight.com', 'Admin')->subject($request->get('subject'));
             });
                return back()->with('success', 'If you need a reply, we’ll get back to you just as soon as we can');
            } else {
