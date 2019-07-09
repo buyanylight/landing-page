@@ -11564,6 +11564,7 @@ li .card-body {
   position: relative;
   top: 5%;
   left: 1%;
+  width: 370px;
 }
 
 .card-standard {
@@ -11571,12 +11572,14 @@ li .card-body {
   position: relative;
   top: 5%;
   right: 1%;
+  width: 370px;
 }
 
 .card-premium {
   height: 110%;
   box-shadow: 0px 0px 10px 0px #545454;
   z-index: 1;
+  width: 370px;
 }
 
 .section-12-hr {
