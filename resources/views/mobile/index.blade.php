@@ -37,36 +37,36 @@
 	</div>
 	<div class="section2 pt-5">
 		<div class="container text-center">
-			<a href="#trial" class="btn btn-dark">Start your free trial today</a>
+			<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-dark">Start your free trial today</a>
 		</div>
 		<div class="container pt-5">
 			<div class="row">
 				<div class="col" >
 					<div class=" text-center" style=" height: 100px;">
 						<img src="{{ asset('images/world-icon.png') }}" width="50%">
-						<h5 class="pt-3"><b>LightFinder</b></h5>
+						<p class="pt-3"><b>LightFinder</b></p>
 					</div>
 					<div class="text-center">
-						<a href="" class="btn btn-sm btn-outline-secondary">More</a>
+						<a href="#finder" class="btn btn-md btn-outline-secondary">More</a>
 					</div>
 				</div>
 				<div class="col">
 					<div class=" text-center" style=" height: 100px;">
 						<img src="{{ asset('images/home-icon.png') }}" width="50%">
-						<h5 class="pt-3"><b>My Home</b></h5>
+						<p class="pt-3"><b>My Home</b></p>
 					</div>
 					<div class="text-center">
-						<a href="" class="btn btn-sm btn-outline-secondary">More</a>
+						<a href="#home" class="btn btn-md btn-outline-secondary">More</a>
 					</div>
 					
 				</div>
 				<div class="col">
 					<div class=" text-center" style=" height: 100px;">
 						<img src="{{ asset('images/tower-icon.png') }}" width="50%">
-						<h5 class="pt-3"><b>My Tower</b></h5>
+						<p class="pt-3"><b>My Tower</b></p>
 					</div>
 					<div class="text-center">
-						<a href="" class="btn btn-sm btn-outline-secondary">More</a>
+						<a href="#tower" class="btn btn-md btn-outline-secondary">More</a>
 					</div>
 				</div>
 			</div>
@@ -78,7 +78,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="section3 pt-5" id="about">
+	<div class="section3 pt-5 pb-5" id="about">
 		<!-- <img src="{{ asset('images/mobile_about.png')}}"> -->
 		<div class="container section3-contents">
 			<h3><b>ABOUT BUY ANY LIGHT</b></h3>
@@ -90,8 +90,8 @@
 				<li>higher profit margins</li>
 				<li>the world’s lowest prices for any light unit</li>
 				<li>greater efficiency of lighting procurement</li>
-				<li>superb online automation and functionality.</li>
-				<li>access to the actual manufacturers of top global brands </li>
+				<li>superb online automation and functionality</li>
+				<li>access to top global brand manufacturers. </li>
 			</ul>
 			<p>Whether you’re new to LED or a professional expert, we have a package to achieve all your objectives. </p>
 		</div>
@@ -99,9 +99,7 @@
 			Private homeowner?<br> Consultant?<br> Contractor?<br> Project owner?
 		</p>
 		<p class="text-center"><b>WE'VE GOT YOU COVERED!</b></p>
-	</div>
-	<div class="section4 pt-5 pb-5">
-		<div class="container pt-5 pb-5 section4-container">
+		<div class="container pb-5 section4-container">
 		
 			<p class="pt-3">
 				We save you time, money and add greater value. Your dedicated BAL expert will help you through your project every step of the way, ensuring that you get the best prices, designs and products anywhere in the world. BAL helps contractors and consultants to provide outstanding services for their clients, achieve project objectives and maximise profits. With BAL, it's always a win-win!
@@ -153,14 +151,14 @@
 				</p>
 			</div>
 		</div>
-		<div class="bg-black home pt-5 pb-5 text-white section6-container" id="#trial">
+		<div class="bg-black home pt-5 pb-5 text-white section6-container" id="home">
 			<div class="container">
 				<h4><b>My Home</b></h4>
 				<p class="pt-3">
 					Perfect for private homes, villas, and palaces where you want the best in design and aesthetics matched with cost-saving, eco-friendly LED from the world’s finest lighting manufacturers.
 				</p>
 				<div class="embed-responsive embed-responsive-16by9 video">
-                            <iframe width="640" height="360" src="https://www.youtube.com/embed/OBm3CPqiXt8?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="640" height="360" src="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                         </div> 
             	<div class="card pt-height w-65">
                                     <h5 class="card-header" style="background: #1B1B1B; color: white;">
@@ -226,7 +224,7 @@
                                 </div>
 			</div>
 		</div>
-		<div class="tower pt-5 pb-5 section6-container" id="#tower">
+		<div class="tower pt-5 pb-5 section6-container" id="tower">
 			<div class="container">
 				<h3><b>My Tower</b></h3>
 				<p class="pt-3">

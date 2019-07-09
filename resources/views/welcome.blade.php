@@ -141,7 +141,7 @@
                     </div>
                     <div class="col-md-6 col-sm-6">
                         <div class="embed-responsive embed-responsive-16by9 video">
-                            <iframe width="640" height="360" src="https://www.youtube.com/embed/aaJQLTaSgLk?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>  
                     </div>
                 </div>    

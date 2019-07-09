@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="css/privacy.css?v=1">
 
 </head>
-<body>
+<body class="eupopup eupopup-bottom eupopup-style-compact">
 	@include('includes.mobile-navbar')
 	@yield('content')
 

@@ -17,11 +17,11 @@ class PageController extends Controller
         $isTablet = $agent->isTablet();
 
     
-        if($isMobile && !$isTablet) {
-            return view('mobile.index');
-        } else {
+        // if($isMobile && !$isTablet) {
+        //     return view('mobile.index');
+        // } else {
             return view('welcome');
-        }
+        // }
 
     }
 
