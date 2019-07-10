@@ -39,7 +39,7 @@
                     <p>
                         <span class="sub-title">The global marketplace for LED Lighting<span>
                         <br>
-                        <small class="text-white sub-caption">BuyAnyLight has transformed the way we source LED lighting</small>
+                        <!-- <small class="text-white sub-caption">BuyAnyLight has transformed the way we source LED lighting</small> -->
                     </p>
                     <a href="#about" class="btn btn-outline-light">Read More</a>
                     <!-- <button class="btn btn-light">Get your Free Trial</button> -->
@@ -1093,7 +1093,7 @@
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-times"></i>
-                                                    Multiple Item Request
+                                                    Multiple item request
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-times"></i>
@@ -1113,7 +1113,7 @@
                                         </p>
                                         <hr>
                                         <div class="text-center pt-4">
-                                            <a href="https://lightfinder.buyanylight.com/buyer/register/free-trial" class="btn btn-dark">Subscribe now</a>
+                                            <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-dark">Subscribe now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1153,7 +1153,7 @@
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-check"></i>
-                                                    Project lighting consultation
+                                                    Home lighting consultation
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-check"></i>
@@ -1180,7 +1180,7 @@
                                             <h5>FOR ALL THIS, YOU PAY <b>$0.00</b></h5> 
                                         </div>
                                         <div class="text-center">
-                                            <a href="https://lightfinder.buyanylight.com/buyer/register/my-home" class="btn btn-dark">Subscribe now</a>
+                                            <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-dark">Subscribe now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1247,7 +1247,7 @@
                                             <h5>FOR ALL THIS, YOU PAY <b>$0.00</b></h5> 
                                         </div>
                                         <div class="text-center">
-                                            <a href="https://lightfinder.buyanylight.com/buyer/register/my-tower" class="btn btn-dark">Subscribe now</a>
+                                            <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-dark">Subscribe now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1316,7 +1316,7 @@
                                                 <small>$5499/Yearly</small>   
                                             </div>
                                             <div >
-                                                <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder/mini" class="btn btn-dark">Subscribe now</a>
+                                                <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder" class="btn btn-dark">Subscribe now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1349,7 +1349,7 @@
                                                         </li>
                                                         <li>
                                                             <i class="fas fa-check"></i>
-                                                            Additional inquiry for $149
+                                                            Additional inquiry for $99
                                                         </li>
                                                         <li>
                                                             <i class="fas fa-check"></i>
@@ -1381,7 +1381,7 @@
                                                     <small>$9899/Yearly</small>   
                                                 </div>
                                                 <div>
-                                                    <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder/premium" class="btn btn-dark">Subscribe now</a>
+                                                    <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder" class="btn btn-dark">Subscribe now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1447,7 +1447,7 @@
                                                     <small>$7699/Yearly</small>   
                                                 </div>
                                                 <div>
-                                                    <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder/standard" class="btn btn-dark">Subscribe now</a>
+                                                    <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder" class="btn btn-dark">Subscribe now</a>
                                                 </div>
                                             </div>
                                         </div>
