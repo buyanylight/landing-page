@@ -106,8 +106,8 @@
                     <div class="payments mt-3 ">
                         <h5 class="text-white">Accepted Payments</h5>
                         <div class="row mt-3">
-                            <div class="col"> 
-                                <img src="{{ asset('images/payment.png') }}" width="70%">
+                            <div class="col">
+                                <img src=" {{ asset('images/payment.png') }}" width="69%">
                             </div>
                         </div>
                     </div>
@@ -117,9 +117,9 @@
             <div class="row">
                 <div class="col-md-3">
                 </div>
-                <div class="col-md-3 text-right text-white mt-2">
+                <div class="col-md-4 text-right text-white mt-2">
                 </div>
-                <div class="col-md-6 text-right text-white mt-2">
+                <div class="col-lg-5 text-right text-white mt-2">
                     <div class="mr-2" style="font-size: 12px;">
                         <div>
                             <div class="row">
