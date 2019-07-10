@@ -218,7 +218,7 @@
                                             </div>
                                         </div>
                                         <div class="text-center">
-                                        	<a  class="btn btn-dark" href="https://lightfinder.buyanylight.com/buyer/register">Subscribe Now</a>
+                                        	<a  class="btn btn-dark" href="https://lightfinder.buyanylight.com/buyer/register/myhome">Subscribe Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -294,7 +294,7 @@
                                             </div>
                                         </div>
                                         <div class="text-center">
-                                        	<a  class="btn btn-dark" href="https://lightfinder.buyanylight.com/buyer/register">Subscribe Now</a>
+                                        	<a  class="btn btn-dark" href="https://lightfinder.buyanylight.com/buyer/register/mytower">Subscribe Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -545,7 +545,7 @@
 						<div>
 							<h5><b>General lighting consultation (199$)</b></h5>
 							<p>Enjoy one-to-one access to our world-class consultants who will give expert advice and support from project start-up to the final glorious switch-on!</p>
-							<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-outline-light">Book now</a>
+							<a href="https://lightfinder.buyanylight.com/buyer/register/general-lighting-consultation" class="btn btn-outline-light">Book now</a>
 						</div>
 					</div>
 				</div>
@@ -556,7 +556,7 @@
 						<div>
 							<h5><b>Lux calculation (299$)</b></h5>
 							<p>This valuable add-on determines the exact brightness requirements (lumens) for a project area - data which is essential for selecting the right products and quantities to achieve the design objectives in any lighting project.</p>
-							<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-outline-light">Book now</a>
+							<a href="https://lightfinder.buyanylight.com/buyer/register/lux-calculation" class="btn btn-outline-light">Book now</a>
 						</div>
 					</div>
 				</div>
@@ -567,7 +567,7 @@
 						<div>
 							<h5><b>3D lighting design (399$) </b></h5>
 							<p>Stunning, 3D lighting designs let you see how your finished project area will look and feel, gain an edge over competitors, and provide your project with an extra revenue stream.</p>
-							<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-outline-light">Book now</a>
+							<a href="https://lightfinder.buyanylight.com/buyer/register/3d-lighting-design" class="btn btn-outline-light">Book now</a>
 						</div>
 					</div>
 				</div>

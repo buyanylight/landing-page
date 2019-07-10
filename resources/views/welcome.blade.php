@@ -1102,7 +1102,7 @@
                                                 <li>
                                                     <i class="fas fa-times"></i>
                                                     Markup feature 
-                                                    <span class="btn btn-sm" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
+                                                    <span class="" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span>
                                                 </li>
@@ -1158,14 +1158,14 @@
                                                 <li>
                                                     <i class="fas fa-check"></i>
                                                     Designated lighting designer
-                                                    <span class="btn" data-toggle="tooltip" data-placement="right" title="This lets you communicate with your designated lighting designer who helps you throughout the process" style="font-size: 12px; ">
+                                                    <span class="" data-toggle="tooltip" data-placement="right" title="This lets you communicate with your designated lighting designer who helps you throughout the process" style="font-size: 12px; ">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-times"></i>
                                                     Markup feature
-                                                    <span class="btn" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
+                                                    <span class="" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span>
                                                 </li>
@@ -1225,14 +1225,14 @@
                                                 <li>
                                                     <i class="fas fa-check"></i>
                                                     Designated lighting designer
-                                                    <span class="btn" data-toggle="tooltip" data-placement="right" title="This lets you communicate with your designated lighting designer who helps you throughout the process" style="font-size: 12px; ">
+                                                    <span class="" data-toggle="tooltip" data-placement="right" title="This lets you communicate with your designated lighting designer who helps you throughout the process" style="font-size: 12px; ">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-check"></i>
                                                     Markup feature
-                                                    <span class="btn" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
+                                                    <span class="" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span>
                                                 </li>
@@ -1289,21 +1289,21 @@
                                                     <li>
                                                         <i class="fas fa-times"></i>
                                                         Label & design support
-                                                        <span class="btn" data-toggle="tooltip" data-placement="right" title="We provide OEM/ODM service as per your requirement. You can send your logo and/or labels to be placed on the light fixtures" style="font-size: 12px; ">
+                                                        <span class="" data-toggle="tooltip" data-placement="right" title="We provide OEM/ODM service as per your requirement. You can send your logo and/or labels to be placed on the light fixtures" style="font-size: 12px; ">
                                                             <i class="fas fa-info-circle"></i>
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <i class="fas fa-times"></i>
                                                         Designated lighting designer
-                                                        <span class="btn" data-toggle="tooltip" data-placement="right" title="This lets you communicate with your designated lighting designer who helps you throughout the process" style="font-size: 12px; ">
+                                                        <span class="" data-toggle="tooltip" data-placement="right" title="This lets you communicate with your designated lighting designer who helps you throughout the process" style="font-size: 12px; ">
                                                             <i class="fas fa-info-circle"></i>
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <i class="fas fa-times"></i>
                                                         Markup feature
-                                                        <span class="btn" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
+                                                        <span class="" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
                                                             <i class="fas fa-info-circle"></i>
                                                         </span>
                                                     </li>
@@ -1354,21 +1354,21 @@
                                                         <li>
                                                             <i class="fas fa-check"></i>
                                                             Label & design support
-                                                            <span class="btn" data-toggle="tooltip" data-placement="right" title="We provide OEM/ODM service as per your requirement. You can send your logo and/or labels to be placed on the light fixtures" style="font-size: 12px; ">
+                                                            <span class="" data-toggle="tooltip" data-placement="right" title="We provide OEM/ODM service as per your requirement. You can send your logo and/or labels to be placed on the light fixtures" style="font-size: 12px; ">
                                                                 <i class="fas fa-info-circle"></i>
                                                             </span>
                                                         </li>
                                                         <li>
                                                             <i class="fas fa-check"></i>
                                                             Designated lighting designer
-                                                            <span class="btn" data-toggle="tooltip" data-placement="right" title="This lets you communicate with your designated lighting designer who helps you throughout the process" style="font-size: 12px; ">
+                                                            <span class="" data-toggle="tooltip" data-placement="right" title="This lets you communicate with your designated lighting designer who helps you throughout the process" style="font-size: 12px; ">
                                                                 <i class="fas fa-info-circle"></i>
                                                             </span>
                                                         </li>
                                                         <li>
                                                             <i class="fas fa-check"></i>
                                                             Markup feature
-                                                            <span class="btn" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
+                                                            <span class="" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
                                                                 <i class="fas fa-info-circle"></i>
                                                             </span>
                                                         </li>
@@ -1421,7 +1421,7 @@
                                                         <li>
                                                             <i class="fas fa-times"></i>
                                                             Label & design support
-                                                            <small class="btn" data-toggle="tooltip" data-placement="right" title="We provide OEM/ODM service as per your requirement. You can send your logo and/or labels to be placed on the light fixtures" style="font-size: 12px; ">
+                                                            <small class="" data-toggle="tooltip" data-placement="right" title="We provide OEM/ODM service as per your requirement. You can send your logo and/or labels to be placed on the light fixtures" style="font-size: 12px; ">
                                                                 <i class="fas fa-info-circle"></i>
                                                             </small>
                                                         </li>
@@ -1435,7 +1435,7 @@
                                                         <li>
                                                             <i class="fas fa-times"></i>
                                                             Markup feature
-                                                            <span class="btn" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
+                                                            <span class="" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
                                                                 <i class="fas fa-info-circle"></i>
                                                             </span>
                                                         </li>

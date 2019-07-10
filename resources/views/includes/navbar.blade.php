@@ -46,13 +46,11 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <a class="nav-link dropdown-toggle text-white links" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white links" href="/investor" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Investors
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="/ieo">IEO</a>
-                    </div>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="/investor">Lets talk</a>
                     </div>
                 </li>
