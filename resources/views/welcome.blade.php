@@ -909,7 +909,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center pt-5">
+                <div class="row align-items-center pt-5 pb-5">
                     <div class="col-md-6">
                         <div>
                             <p class="font-weight-bold">
@@ -1113,7 +1113,7 @@
                                         </p>
                                         <hr>
                                         <div class="text-center pt-4">
-                                            <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-dark">Subscribe now</a>
+                                            <a href="https://lightfinder.buyanylight.com/buyer/register/free-trial" class="btn btn-dark">Subscribe now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1137,7 +1137,7 @@
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-check"></i>
-                                                    Unlimited Revisions
+                                                    Unlimited revisions
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-check"></i>
@@ -1204,7 +1204,7 @@
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-check"></i>
-                                                    Unlimited Revisions
+                                                    Unlimited revisions
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-check"></i>
@@ -1230,7 +1230,7 @@
                                                     </span>
                                                 </li>
                                                 <li>
-                                                    <i class="fas fa-check"></i>
+                                                    <i class="fas fa-times"></i>
                                                     Markup feature
                                                     <span class="" data-toggle="tooltip" data-placement="right" title="This markup feature can let you customize the quotation prices" style="font-size: 12px; ">
                                                         <i class="fas fa-info-circle"></i>
@@ -1316,7 +1316,7 @@
                                                 <small>$5499/Yearly</small>   
                                             </div>
                                             <div >
-                                                <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder" class="btn btn-dark">Subscribe now</a>
+                                                <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder/mini" class="btn btn-dark">Subscribe now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1381,7 +1381,7 @@
                                                     <small>$9899/Yearly</small>   
                                                 </div>
                                                 <div>
-                                                    <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder" class="btn btn-dark">Subscribe now</a>
+                                                    <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder/premium" class="btn btn-dark">Subscribe now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1390,7 +1390,6 @@
                                         <h4 class="card-header text-center bg-black text-white">STANDARD</h4>
                                         <div class="card-body pt-5 pb-5 text-center d-flex align-items-center">
                                             <div class="card-standard-contents">
-
                                                 <p class="card-text">NEED MORE THAN JUST A FEW LIGHTS? THIS IS THE PACKAGE FOR YOU!</p>
                                                 <div class="pt-2 pb-2 text-left">
                                                     <ul class="trial-list">
@@ -1448,7 +1447,7 @@
                                                     <small>$7699/Yearly</small>   
                                                 </div>
                                                 <div>
-                                                    <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder" class="btn btn-dark">Subscribe now</a>
+                                                    <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder/standard" class="btn btn-dark">Subscribe now</a>
                                                 </div>
                                             </div>
                                         </div>

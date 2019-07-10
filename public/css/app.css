@@ -11319,7 +11319,7 @@ body {
 }
 
 .section-4-part1 {
-  padding-top: 20%;
+  padding-top: 15%;
 }
 
 .section-4-part2 {
@@ -11433,7 +11433,7 @@ li .card-body {
 .section-7 {
   background: url("/images/section4(1).png");
   height: 100%;
-  background-position-x: 625px;
+  background-position-x: 780px;
   background-position-y: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -11533,7 +11533,7 @@ li .card-body {
 }
 
 .section-11 {
-  height: 900px;
+  height: 100%;
 }
 
 .section-11-hr {
