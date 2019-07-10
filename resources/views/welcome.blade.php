@@ -1076,7 +1076,7 @@
                                         <small style="font-size: 13px;">NO UPFRONT COSTS & FREE QUOTATION</small>
                                     </h4>
                                     <div class="card-body pt-5 pb-5">
-                                        <p class="card-text text-center">EXPERIENCE THE POWER OF BAL AND GET A FREE QUOTE AT UNBELIEVABLE PRICES</p>
+                                        <p class="card-text text-center"> GET A FREE QUOTE AT UNBELIEVABLE PRICES. YOU'LL LOVE OUR AMAZING PRICES!</p>
                                         <div class="pb-2 pt-2">
                                             <ul class="trial-list">
                                                 <li>
@@ -1109,7 +1109,7 @@
                                             </ul>
                                         </div>
                                          <p class="text-center">
-                                            <b>Note: </b> A LightFinder package is required to confirm the order.
+                                            <b>Note </b> <br> A LightFinder package is required to <br> confirm the order.
                                         </p>
                                         <hr>
                                         <div class="text-center pt-4">
@@ -1128,7 +1128,7 @@
                                         <small style="font-size: 13px;">NO UPFRONT COSTS & FREE QUOTATION</small>
                                     </h4>
                                     <div class="card-body pt-5 pb-5">
-                                        <p class="card-text text-center">A PACKAGE TAILORED SPCIFICALLY FOR YOUR BEAUTIFUL HOMES TO ACHIEVE BEST RESULTS</p>
+                                        <p class="card-text text-center">GET THE POSSIBLE RESULTS FOR EVERY BEAUTIFUL HOME!</p>
                                         <div class="pb-2 pt-2">
                                             <ul class="trial-list">
                                                 <li>
@@ -1195,7 +1195,7 @@
                                         <small style="font-size: 13px;">NO UPFRONT COSTS & FREE QUOTATION</small>
                                     </h4>
                                     <div class="card-body pt-5 pb-5">
-                                        <p class="card-text text-center">A COMPLETE PROJECT SOLUTION GURANTEEING LOWEST PRICES IN THE ENTIRE MARKET</p>
+                                        <p class="card-text text-center">A COMPLETE PROJECT SOLUTION WITH LOWEST PRICES IN THE ENTIRE MARKET - GUARANTEED!</p>
                                         <div class="pb-2 pt-2">
                                             <ul class="trial-list">
                                                 <li>
@@ -1259,7 +1259,7 @@
                                     <div class="card card-mini">
                                         <h4 class="card-header text-center bg-black text-white">MINI</h4>
                                         <div class="card-body pt-5 pb-5 text-center">
-                                            <p class="card-text">TO GET STARTED AND TO EXPERIENCE BAL <br> GET THIS PACK</p>
+                                            <p class="card-text">MAKE A GREAT BAL START RIGHT HERE!</p>
                                             <div class="pt-2 pb-2 text-left">
                                                 <ul class="trial-list">
                                                     <li>
@@ -1324,7 +1324,7 @@
                                         <h4 class="card-header text-center bg-black text-white">PREMIUM</h4>
                                         <div class="card-body pt-0 pb-0 text-center d-flex align-items-center">
                                             <div class="card-premium-contents">
-                                                <p class="card-text">TO GET THE MOST OUT OF BAL AND FOR YOUR COMPANY GET THIS PACK</p>
+                                                <p class="card-text">AN ABUNDANCE OF GREAT BAL BENEFITS - THE PERFECT PACKAGE FOR YOUR BUSINESS</p>
                                                 <div class="pt-2 pb-2 text-left">
                                                     <ul class="trial-list">
                                                         <li>
@@ -1391,7 +1391,7 @@
                                         <div class="card-body pt-5 pb-5 text-center d-flex align-items-center">
                                             <div class="card-standard-contents">
 
-                                                <p class="card-text">IF YOU NEED MORE THAN JUST A FEW LIGHTS GET <br> THIS PACK</p>
+                                                <p class="card-text">NEED MORE THAN JUST A FEW LIGHTS? THIS IS THE PACKAGE FOR YOU!</p>
                                                 <div class="pt-2 pb-2 text-left">
                                                     <ul class="trial-list">
                                                         <li>
@@ -1421,14 +1421,14 @@
                                                         <li>
                                                             <i class="fas fa-times"></i>
                                                             Label & design support
-                                                            <small class="" data-toggle="tooltip" data-placement="right" title="We provide OEM/ODM service as per your requirement. You can send your logo and/or labels to be placed on the light fixtures" style="font-size: 12px; ">
+                                                            <span class="" data-toggle="tooltip" data-placement="right" title="We provide OEM/ODM service as per your requirement. You can send your logo and/or labels to be placed on the light fixtures" style="font-size: 12px; ">
                                                                 <i class="fas fa-info-circle"></i>
-                                                            </small>
+                                                            </span>
                                                         </li>
                                                         <li>
                                                             <i class="fas fa-times"></i>
                                                             Designated lighting designer
-                                                            <span class="btn " data-toggle="tooltip" data-placement="right" title="This lets you communicate with your designated lighting designer who helps you throughout the process" style="font-size: 12px; ">
+                                                            <span class=" " data-toggle="tooltip" data-placement="right" title="This lets you communicate with your designated lighting designer who helps you throughout the process" style="font-size: 12px; ">
                                                                 <i class="fas fa-info-circle"></i>
                                                             </span>
                                                         </li>
