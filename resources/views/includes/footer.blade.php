@@ -115,22 +115,16 @@
             </div>
             <hr class="bg-white mt-5">
             <div class="row">
-                <div class="col-md-3">
-                </div>
-                <div class="col-md-4 text-right text-white mt-2">
-                </div>
-                <div class="col-lg-5 text-right text-white mt-2">
+                <div class="col-md-12 text-right text-white mt-2">
                     <div class="mr-2" style="font-size: 12px;">
                         <div>
                             <div class="row">
-                                <div class="col-sm-4">
-                                    <a href="/terms" class="text-white">Terms of use</a>
+                                <div class="col-sm-12">
+                                    <a href="/terms" class="text-white">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/privacy" class="text-white">Privacy & Cookies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© BuyAnyLight 2019
                                 </div>
                                 <div class="col-sm-4">
-                                    <a href="/privacy" class="text-white" >Privacy & Cookies</a>
                                 </div>
                                 <div class="col-sm-4">
-                                    © BuyAnyLight 2019
                                 </div>
                             </div>
                         </div>
