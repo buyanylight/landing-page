@@ -510,7 +510,7 @@
                     </div>
                     <div class="col-md-6 text-dark pl-5">
                         <h4 class="font-weight-bold">
-                            SAVING UP TO 90%...HOW DOES THAT WORK?
+                            SAVE UP TO 90%... HOW DOES THAT WORK?
                         </h4>
                         <div>
                             <p>
