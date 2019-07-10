@@ -45,14 +45,12 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <a class="nav-link dropdown-toggle text-white links" href="/ieo" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Investor
+                    <a class="nav-link dropdown-toggle text-white links" href="/investor" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Investors
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="/ieo">IEO</a>
-                    </div>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/investor">Lets talk</a>
+                        <a class="dropdown-item" href="/investor">Lets Talk</a>
                     </div>
                 </li>
                 <li class="nav-item mr-3">
@@ -65,7 +63,7 @@
                     <a class="nav-link text-white links" href="https://lightfinder.buyanylight.com">Sign in</a>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <a class="nav-link dropdown-toggle text-white links" href="/seller" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white links" href="/https://lightfinder.buyanylight.com/buyer/register" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Sign up
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
