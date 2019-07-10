@@ -147,7 +147,7 @@
                                 <li><span>4.5</span> The Buyer Dashboard and Backend Office. The Website provides the Buyers with features that enables them to filter the quotes automatically based on predefined factors such as price, the location of the factory, number of workers, previous Buyer ratings, and many more. The filtering allows the Buyers to streamline the best offer and choose a supplier to patronize.</li>
 
                                 <li>
-                                    <span>4.6</span> Service Fee for Buyers. The Buyers who source for light on the Website will have to choose a Package that enables them to send specific numbers of RFQs per month. The Website charges a fix Service Fee of 10% on each Package. However, the Buyers are not required to pay if they are not sourcing any product or calling for RFQs. The Website is completely free for Sellers who can register and receive RFQs without any charges.
+                                    <span>4.6</span> Service Fee for Buyers. The Buyers who source for light on the Website will have to choose a Package that enables them to send specific numbers of RFQs per month.The Website charges a fix Service Fee of 10%, 15% or 20% depending on the chosen LightFinder Package. However, the Buyers are not required to pay if they are not sourcing any product or calling for RFQs. The Website is completely free for Sellers who can register and receive RFQs without any charges.
                                 </li>
 
                                 <h3>5. Refund Policy</h3>
