@@ -1230,7 +1230,7 @@
                                                     </span>
                                                 </li>
                                                 <li>
-                                                    <i class="fas fa-times"></i>
+                                                    <i class="fas fa-check"></i>
                                                     Markup feature
                                                     <span class="" data-toggle="tooltip" data-placement="right" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
                                                         <i class="fas fa-info-circle"></i>
