@@ -62,14 +62,15 @@
                 <div class="col-md-6">
                     <div>
                         <h5 class="text-white font-weight-bold">Connect with our newsletter</h5>
-                        <div class="input-group mt-3">
-                            <input type="text" name="" class="form-control" placeholder="Your Email Address">
+
+                        <form  action="https://buyanylight.us3.list-manage.com/subscribe/post?u=22d8456f8db4bacaef7a16d53&amp;id=7b85cd9f3f" method="post" class="input-group mt-3" name="mc-embedded-subscribe-form" novalidate target="_blank">
+                            <input type="email" name="EMAIL" class="form-control" placeholder="Your Email Address">
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-dark">
                                     <i class="fas fa-paper-plane"></i>
                                 </button>
                             </div>
-                        </div>
+                        </form>
                         <div class="row social-links mt-3">
                             <div class="col-sm-1 one-link">
                                 <a href="https://m.youtube.com/channel/UCI9XteW2432262A4rFKtQ3w" class="text-grey" target="_blank"><i class="fab fa-youtube"></i></a>
