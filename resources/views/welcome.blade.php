@@ -920,7 +920,7 @@
                             </p>
                             <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder" class="btn btn-dark">REGISTER NOW</a>
                             <a href="#package" class="btn btn-danger">CHECK RATE</a>
-                            <a href="{{ asset('brochures/lightfinder.pdf') }}" class="btn btn-secondary" target="_blank">DOWNLOAD BROCHURE</a>
+                            <a href="{{ asset('brochures/LightFinder_BAL.pdf') }}" class="btn btn-secondary" target="_blank">DOWNLOAD BROCHURE</a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -979,7 +979,7 @@
                             </p>
                             <a href="https://lightfinder.buyanylight.com/buyer/register/my-home" class="btn btn-dark">REGISTER NOW</a>
                             <a href="#package" class="btn btn-danger">CHECK RATE</a>
-                            <a href="{{ asset('brochures/my_home.pdf') }}" class="btn btn-secondary" target="_blank">DOWNLOAD BROCHURE</a>
+                            <a href="{{ asset('brochures/MyHome_BAL.pdf') }}" class="btn btn-secondary" target="_blank">DOWNLOAD BROCHURE</a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -1037,7 +1037,7 @@
                             </p>
                             <a href="https://lightfinder.buyanylight.com/buyer/register/my-tower" class="btn btn-dark">REGISTER NOW</a>
                             <a href="#package" class="btn btn-danger">CHECK RATE</a>
-                            <a href="{{ asset('brochures/my_tower.pdf') }}" class="btn btn-secondary" target="_blank">DOWNLOAD BROCHURE</a>
+                            <a href="{{ asset('brochures/MyTower_BAL.pdf') }}" class="btn btn-secondary" target="_blank">DOWNLOAD BROCHURE</a>
                         </div>
                     </div>
                 </div>
