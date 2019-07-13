@@ -11797,8 +11797,8 @@ footer {
 
 #topBtn {
   position: fixed;
-  bottom: 80px;
-  right: 20px;
+  bottom: 10px;
+  right: 10px;
   display: none;
 }
 
@@ -11825,6 +11825,10 @@ footer {
 .buyer-faq {
   height: 100%;
   padding-top: 100px;
+}
+
+.grecaptcha-badge {
+  visibility: collapse !important;
 }
 
 @media only screen and (min-width: 2000px) and (max-width: 2600px) {

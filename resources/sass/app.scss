@@ -776,8 +776,8 @@ footer{
 
  #topBtn{
  	position: fixed;
- 	bottom:80px;
- 	right: 20px;
+ 	bottom: 10px;
+    right: 10px;
  	// top: 50px;
  	display: none;
  }
@@ -805,6 +805,11 @@ footer{
 	height: 100%;
 	padding-top:100px;
 
+}
+
+
+.grecaptcha-badge{
+	visibility: collapse !important;  
 }
 
 
