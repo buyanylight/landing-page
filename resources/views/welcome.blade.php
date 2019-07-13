@@ -216,16 +216,16 @@
                                             <div class="col-md-5">
                                                 <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt="">
                                                 <p class="font-weight-bold text-center pt-4">
-                                                    $15
+                                                    $102
                                                 </p>        
                                             </div>
                                             <div class="col-md-2">
                                                 /
                                             </div>
                                             <div class="col-md-5">
-                                                 <img class="card-img" src="{{ asset('images/retails/artemide.png') }}" alt="">
+                                                 <img class="card-img" src="{{ asset('images/retails/flos.png') }}" alt="">
                                                 <p class="font-weight-bold text-center pt-4">
-                                                    $205
+                                                    $3501
                                                 </p>
                                             </div>    
                                         </div>
@@ -294,16 +294,16 @@
                                             <div class="col-md-5">
                                                 <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt="">
                                                 <p class="font-weight-bold text-center pt-4">
-                                                    $13
+                                                    $3
                                                 </p>        
                                             </div>
                                             <div class="col-md-2">
                                                 /
                                             </div>
                                             <div class="col-md-5">
-                                                <img class="card-img" src="{{ asset('images/retails/thorn.png') }}" alt="">
+                                                <img class="card-img" src="{{ asset('images/retails/slv_logo.png') }}" alt="">
                                                 <p class="font-weight-bold text-center pt-4">
-                                                    $143
+                                                    $25
                                                 </p>
                                             </div>    
                                         </div>
@@ -320,16 +320,16 @@
                                             <div class="col-md-5">
                                             <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt="">           
                                                 <p class="font-weight-bold text-center pt-4">
-                                                    $33
+                                                    $8
                                                 </p>
                                             </div>
                                             <div class="col-md-2">
                                                 /
                                             </div>
                                             <div class="col-md-5">
-                                                <img class="card-img" src="{{ asset('images/retails/iguzzinii.png') }}" alt=""> 
+                                                <img class="card-img" src="{{ asset('images/retails/philips.png') }}" alt=""> 
                                                 <p class="font-weight-bold text-center pt-4">
-                                                    $251
+                                                    $40
                                                 </p>    
                                             </div>
                                         </div>
