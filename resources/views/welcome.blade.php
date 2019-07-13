@@ -1254,7 +1254,7 @@
                             </div>
                         </div>
                         <div class="tab-pane fade show active h-100" id="pills-finder" role="tabpanel" aria-labelledby="pills-finder-tab">
-                            <div class="pills-all h-100">
+                            <div class="pills-all h-100" style=" {{ ($agent->is('IE')) ? 'display:block;' : '' }}" >
                                 <div class="card-group">
                                     <div class="card card-mini">
                                         <h4 class="card-header text-center bg-black text-white">MINI</h4>
@@ -1322,7 +1322,7 @@
                                     </div>
                                     <div class="card card-premium">
                                         <h4 class="card-header text-center bg-black text-white">PREMIUM</h4>
-                                        <div class="card-body pt-0 pb-0 text-center d-flex align-items-center">
+                                        <div class="card-body {{ ($agent->is('IE')) ? 'pb-5 pt-5' : 'pb-0 pt-0' }} text-center d-flex align-items-center">
                                             <div class="card-premium-contents">
                                                 <p class="card-text">AN ABUNDANCE OF GREAT BAL BENEFITS - THE PERFECT PACKAGE FOR YOUR BUSINESS</p>
                                                 <div class="pt-2 pb-2 text-left">
