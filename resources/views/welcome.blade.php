@@ -1579,6 +1579,17 @@
                         <div class="location text-white">
                             <div class="row">
                                 <div class="col-md-1">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <span><b>BuyAnyLight.com</b></span><br>
+                                    <span>Dubai Investment Park 1, <br> Opp. Green Community East, Showroom 10, <br>P.O. BOX 3219 Dubai, <br> United Arab Emirates</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location text-white">
+                            <div class="row">
+                                <div class="col-md-1">
                                     <i class="fas fa-phone"></i>
                                 </div>
                                 <div class="col-md-10">
