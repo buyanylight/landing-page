@@ -202,7 +202,7 @@
     <div class="section-5" id="balvsretail">
         <div class="section-5-container bg-black h-100">
             <div class="container pt-5">
-                <h4 class="text-white font-weight-bold">BuyAnyLight PRICE COMPARISON</h4>
+                <h4 class="text-white font-weight-bold">BUYANYLIGHT PRICE COMPARISON</h4>
                 <div class="slide hi-slide">
                     <div class="hi-prev"></div>
                     <div class="hi-next"> </div>
@@ -872,7 +872,7 @@
                             To start finding out about all the benefits you can enjoy with us, simply register for the free trial. This enables you to explore many of BAL’s tools and functions before choosing the right subscription package for you or your organisation. It’s also useful if you want to make an enquiry and receive quotes quickly and simply. You may subscribe to one of the LightFinder packages to request for samples or confirm an order.
                         </p>
                         <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-light">REGISTER NOW</a>
-                        <a href="#package" class="btn btn-danger">CHECK RATE</a>
+                        <a href="#package" class="btn btn-danger">CHECK DETAILS</a>
                     </div>
                 </div> 
             </div>
