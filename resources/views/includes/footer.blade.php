@@ -6,25 +6,25 @@
                     <h5 class="text-white font-weight-bold">Buyers</h5>
                     <ul class="list-group footer-list">
                         <li class="mt-3">
-                            <a href="#about" class="text-white">How it works</a>
+                            <a href="/#ninety" class="text-white">How it works</a>
                         </li>
                         <li class="mt-3">
-                            <a href="#balvsretail" class="text-white">BAL vs. retail</a>
+                            <a href="/#balvsretail" class="text-white">BAL vs. retail</a>
                          </li>
                          <li class="mt-3">
-                            <a href="#balvsretail" class="text-white">Packages</a>
+                            <a href="/#package" class="text-white">Packages</a>
                          </li>
                         <li class="mt-3">
-                            <a href="#about" class="text-white">About us</a>
+                            <a href="/#about" class="text-white">About us</a>
                         </li>
                         <li class="mt-3">
-                            <a href="#about" class="text-white">Why BAL</a>
+                            <a href="/#why-bal" class="text-white">Why BAL</a>
                         </li>
                          <li class="mt-3">
                             <a href="https://lightfinder.buyanylight.com/buyer/register" class="text-white">Register</a>
                          </li>
                          <li class="mt-3">
-                            <a href="" class="text-white">FAQ</a>
+                            <a href="/buyer-faq" class="text-white">FAQ</a>
                          </li>
                          <li class="mt-3">
                             <a href="https://lightfinder.buyanylight.com" class="text-white">Sign in</a>
