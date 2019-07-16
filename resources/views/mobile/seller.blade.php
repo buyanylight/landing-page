@@ -11,13 +11,22 @@
 			<p class="pt-3">
 				Our innovative sourcing platform connects seller and buyers directly, without the need for an intermediary. BAL delivers huge and unique advantages to both sellers and buyers and a win-win edge for every BAL platform user.
 			</p>
-			<a href="#video-section" class="btn btn-dark">Watch Video</a>
+			<div class="text-left">
+                    <a href="#video-section" class="btn text-white pl-0">
+                        <div class="link-text">
+                            Watch Video
+                        </div>&nbsp;
+                        <div class="link-icon">
+                            <i class="fas fa-arrow-right"></i> 
+                        </div>
+                    </a>
+                </div>
 		</div>
 	</div>
 	<div class="section9">
-		<div class="container pt-5">
+		<div class="container pt-5 pb-5">
 			<p class=" text-center"><b> Registration is completely FREE and allows you to:</b></p>
-			<div class="row pt-3">
+			<div class="row pt-3 ">
 				<div class="col text-center">
 					<img src="{{ asset('images/1.png') }}" width="25%">
 					<p class="pt-3">Recieve enquiries from us or buyers</p>
@@ -29,8 +38,8 @@
 			</div>
 			<div class="row pt-3">
 				<div class="col text-center">
-					<img src="{{ asset('images/3.png') }}" width="25%">
-					<p class="pt-3">Make fast and easy bids</p>
+					<img src="{{ asset('images/5.png') }}" width="25%">
+					<p class="pt-3">Provide buyers with flexible rates depending on order size</p>
 				</div>
 				<div class="col text-center">
 					<img src="{{ asset('images/4.png') }}" width="25%">
@@ -39,8 +48,8 @@
 			</div>
 			<div class="row pt-3">
 				<div class="col text-center">
-					<img src="{{ asset('images/5.png') }}" width="25%">
-					<p class="pt-3">Provide buyers with flexible rates depending on order size</p>
+					<img src="{{ asset('images/3.png') }}" width="25%">
+					<p class="pt-3">Make fast and easy bids</p>
 				</div>
 				<div class="col text-center">
 				</div>
@@ -50,13 +59,13 @@
 	<div class="section10" id="video-section">
 		<div class="container pt-5 pb-5">
 			<p class=" text-center text-white"><b> To understand further how BAL works and what we offer</b></p>
-			<p class="text-center text-white">Watch our Manufacturer Video – and sign up FREE today!</p>
+			<p class="text-center text-white">Watch our Manufacturer Video <br> and sign up FREE today!</p>
 			<ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
-  				<li class="nav-item">
-    				<a class="nav-link active" id="pills-english-tab" data-toggle="pill" href="#pills-english" role="tab" aria-controls="pills-english" aria-selected="true">English</a>
+  				<li class="nav-item border border-white">
+    				<a class="nav-link active text-white rounded-0" id="pills-english-tab" data-toggle="pill" href="#pills-english" role="tab" aria-controls="pills-english" aria-selected="true">English</a>
   				</li>
-  				<li class="nav-item">
-  					<a class="nav-link" id="pills-chinese-tab" data-toggle="pill" href="#pills-chinese" role="tab" aria-controls="pills-chinese" aria-selected="false">Chinese</a>
+  				<li class="nav-item border border-white rounded-0">
+  					<a class="nav-link text-white rounded-0" id="pills-chinese-tab" data-toggle="pill" href="#pills-chinese" role="tab" aria-controls="pills-chinese" aria-selected="false">Chinese</a>
   				</li>
 			</ul>
 			<div class="tab-content pt-3" id="pills-tabContent">

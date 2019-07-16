@@ -27,3 +27,7 @@ Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUsController@
 Route::get('/m', 'MobileController@index');
 Route::get('/m/seller', 'MobileController@seller');
 Route::get('/m/investor', 'MobileController@investor');
+Route::get('/m/about', 'MobileController@about');
+Route::get('/m/why-us', 'MobileController@why_us');
+Route::get('/m/package', 'MobileController@packages');
+Route::get('/m/add-ons', 'MobileController@add_ons');

@@ -26,26 +26,23 @@
         </div>
     </div>
 </div>
-<div class="section14 pt-5 pb-5" style="margin-top: 25px;">
+<div class="section14 pt-5 pb-5">
 	<div class="section14-contents d-flex align-items-center">
 		<div class="container text-white">
 			<h3><b>BE AN INVESTOR</b></h3>
+		</div>
+	</div>
+	<div class="container pt-3">
 			<p>
 				<b>BuyAnyLight… IMMENSE GROWTH POTENTIAL AND EXCEPTIONAL INVESTMENT OPPORTUNITIES!</b>
 			</p>
 			<p>
 				BAL has pioneered the innovative sourcing of LED lights and we are set to become one of the most successful commercial platforms in the world.
 			</p>
-		</div>
-	</div>
-	<div class="container pt-5">
 		<p>If you’re considering investing and would like to know more, please call +971 4 8873265 to discuss our hugely exciting investment proposal!</p>
-		<div class="text-left pt-5 pb-5">
-			<a href="" style="color: black;">Find out lots more NOW on our desktop website</a>
-		</div>
+		<div class="pt-3">
 		<h3><b>Drop us a message</b></h3>
 		<p>Feel free to get in touch with you</p>
-		<div>
 			<form method="post" action="/contact-us">
 	            {{ csrf_field() }}
 	            <div class="row">

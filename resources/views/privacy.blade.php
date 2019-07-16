@@ -1,5 +1,5 @@
 <!-- {{-- PRIVACY POLICY --}} -->
-@extends('layouts.main-layout')
+@extends(($agent->isMobile()) ? 'layouts.mobile-layout' : 'layouts.main-layout')
 @section('content')
 <div class="container-fluid">
     

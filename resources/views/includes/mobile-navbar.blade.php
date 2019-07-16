@@ -1,9 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand " href="/">
-            <img src="{{ asset('images/logo-white-mobile.png') }}" width="55" class="logo"> 
+            <img src="{{ asset('images/logo-white.png') }}" width="150" class="logo"> 
         </a>
-        <div class="text-white font-weight-bold" style="font-size: 20px;">BuyAnyLight</div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -17,10 +16,10 @@
                     Packages
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/#trial">Free Trial Plan</a>
-                        <a class="dropdown-item" href="/#home">My Home Plan</a>
-                        <a class="dropdown-item" href="/#tower">My Tower Plan</a>
-                        <a class="dropdown-item" href="/#finder">LightFinder Plan</a>
+                        <a class="dropdown-item" href="/m/#trial">Free Trial Plan</a>
+                        <a class="dropdown-item" href="/m/#home">My Home Plan</a>
+                        <a class="dropdown-item" href="/m/#tower">My Tower Plan</a>
+                        <a class="dropdown-item" href="/m/#finder">LightFinder Plan</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
@@ -28,8 +27,8 @@
                     Buyers
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/#works">How it works</a>
-                        <a class="dropdown-item" href="/#why-bal">Why BAL</a>
+                        <a class="dropdown-item" href="/m/#works">How it works</a>
+                        <a class="dropdown-item" href="/m/why-us">Why BAL</a>
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/buyer/register">Register</a>
                         <a class="dropdown-item" href="/buyer-faq">FAQ</a>
                     </div>
