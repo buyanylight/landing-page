@@ -20,4 +20,24 @@ class MobileController extends Controller
     {
 		return view('mobile.investor');
     }
+
+    public function about()
+    {
+        return view('mobile.about');
+    }
+
+    public function why_us()
+    {
+        return view('mobile.why-us');
+    }
+
+    public function packages()
+    {
+        return view('mobile.package');
+    }
+
+    public function add_ons()
+    {
+        return view('mobile.add-ons');
+    }
 }
