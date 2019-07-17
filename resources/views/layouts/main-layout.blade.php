@@ -62,7 +62,7 @@
     @if (session('success') || session('danger'))
     <script type="text/javascript">
         $( document ).ready(function() {
-            $('#myModal').modal('show');
+            $('.toast').toast('show')
         });
     </script>
     @endif
