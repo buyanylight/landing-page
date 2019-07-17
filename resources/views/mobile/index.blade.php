@@ -154,7 +154,7 @@
 		<div class="container">
 			<h3 class="text-left">
                 <b>
-				    HOW BAL WORKS
+				    LightFinder?
                 </b>
 			</h3>
 			<div class="text-center pt-4">
