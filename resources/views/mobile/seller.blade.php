@@ -101,7 +101,7 @@
 			<p class="pt-5 text-center"><b> Save time and make your online registration now!</b>
 			</p>
 			<div class="text-center">
-				<a href="" class="btn btn-dark">REGISTER NOW</a>
+				<a href="https://lightfinder.buyanylight.com/supplier/register" class="btn btn-dark">Register Now</a>
 			</div>
 		</div>
 	</div>

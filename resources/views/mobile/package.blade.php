@@ -93,7 +93,7 @@
                     <iframe width="640" height="360" src="https://www.youtube.com/embed/OBm3CPqiXt8?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                 </div> 
                 <a href="" class="btn btn-sm btn-light">REGISTER NOW</a>
-                <a href="{{ asset('brochures/lightfinder.pdf') }}" class="btn btn-sm btn-secondary" target="_blank">BROCHURE</a>
+                <a href="{{ asset('brochures/lightfinder_BAL.pdf') }}" class="btn btn-sm btn-secondary" target="_blank">BROCHURE</a>
                 <button class="btn btn-sm btn-danger" type="button" data-toggle="collapse" data-target="#finder-card" aria-expanded="false" aria-controls="finder-card">
                     CHECK DETAILS
                 </button>
@@ -325,7 +325,7 @@
                     <iframe width="640" height="360" src="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                 </div> 
                 <a href="" class="btn btn-sm btn-dark">REGISTER NOW</a>
-                <a href="{{ asset('brochures/my_home.pdf') }}" class="btn btn-sm  btn-secondary" target="_blank">BROCHURE</a>
+                <a href="{{ asset('brochures/myhome_BAL.pdf') }}" class="btn btn-sm  btn-secondary" target="_blank">BROCHURE</a>
                 <button class="btn btn-sm btn-danger" type="button" data-toggle="collapse" data-target="#home-card" aria-expanded="false" aria-controls="home-card">
                     CHECK DETAILS
                 </button>
@@ -413,7 +413,7 @@
                     <iframe width="640" height="360" src="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <a href="" class="btn btn-sm  btn-light">REGISTER NOW</a>
-                <a href="{{ asset('brochures/my_tower.pdf') }}" class="btn btn-sm  btn-secondary" target="_blank">BROCHURE</a>
+                <a href="{{ asset('brochures/mytower_BAL.pdf') }}" class="btn btn-sm  btn-secondary" target="_blank">BROCHURE</a>
                 <button class="btn btn-sm btn-danger" type="button" data-toggle="collapse" data-target="#tower-card" aria-expanded="false" aria-controls="tower-card">
                     CHECK DETAILS
                 </button>
