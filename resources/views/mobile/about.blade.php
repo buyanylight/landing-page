@@ -57,7 +57,7 @@
             </li>
             <hr>
         </ul>
-        <p>Whether you’re new to LED or a professional expert, we have a package to achieve all your 
+        <p>Whether you’re new to LED or a professional expert, we have a package to achieve all your objectives.</p>
     </div>
 </div>
 <div class="section4 pb-5">
