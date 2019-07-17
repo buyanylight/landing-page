@@ -34,11 +34,11 @@
                                     <li class="list-group-item">100% secure payments</li>
                                     <li class="list-group-item">First-class consultancy</li>
                                     <li class="list-group-item">Easy price comparison</li>
-                                    <li class="list-group-item">On-time deivery guaranteed</li>
-                                    <li class="list-group-item">Try samples before buld orders</li>
+                                    <li class="list-group-item">On-time delivery guaranteed</li>
+                                    <li class="list-group-item">Try samples before build orders</li>
                                     <li class="list-group-item">Vast choice of world-class LEDs</li>
                                     <li class="list-group-item">Cuts sourcing time by up to 90%</li>
-                                    <li class="list-group-item">no middle men means lowest prices</li>
+                                    <li class="list-group-item">No middle men means lowest prices</li>
                                 </ul>       
                             </div>
                             <div class="tab-pane fade" id="seller" role="tabpanel" aria-labelledby="seller-tab">
