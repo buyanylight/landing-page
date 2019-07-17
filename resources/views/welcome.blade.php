@@ -38,11 +38,11 @@
             </div>
             @if(session('success'))
             <div class="toast-body">
-                {{session('success')}}
+                {!! session('success') !!}
             </div>
             @else
             <div class="toast-body">
-                {{session('danger')}}
+                {!!session('danger')!!}
             </div>
             @endif
         </div>
