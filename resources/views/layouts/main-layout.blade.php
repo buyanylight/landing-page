@@ -42,6 +42,8 @@
         <!-- Styles -->
         <link rel="stylesheet" href="css/app.css?v=1">
         <link rel="stylesheet" href="css/privacy.css?v=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        
     </head>
     <body class="eupopup eupopup-bottom eupopup-style-compact">
         @include('includes.navbar')
@@ -50,6 +52,7 @@
         @include('includes.footer')
         <!-- Scripts -->
         <script src="js/app.js" charset="utf-8"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     </body>
     <script type="text/javascript">
         $(document).ready(function(){

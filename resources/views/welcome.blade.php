@@ -41,7 +41,24 @@
                         <br>
                         <!-- <small class="text-white sub-caption">BuyAnyLight has transformed the way we source LED lighting</small> -->
                     </p>
-                    <a href="#about" class="btn btn-outline-light">Read More</a>
+                    <a href="#about" class="btn btn-sm pl-0 text-white">
+                        <div class="link-text">
+                            Read more 
+                        </div>&nbsp;
+                        <div class="link-icon">
+                            <i class="fas fa-arrow-right"></i> 
+                        </div>
+                    </a>
+                    <a  data-fancybox href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" class="btn btn-sm pl-0 text-white">
+                        <div class="link-text">
+                            Watch video 
+                        </div>&nbsp;
+                        <div class="link-icon">
+                            <i class="fas fa-arrow-right"></i> 
+                        </div>
+                    </a>
+                    <!-- <a href="" class="btn btn-outline-light">Read More</a> -->
+                    <!-- <a data-fancybox  href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" class="btn btn-light header-link fancybox">Watch Video</a> -->
                     <!-- <button class="btn btn-light">Get your Free Trial</button> -->
                 </div>
             </div>
@@ -871,8 +888,8 @@
                         <p>
                             To start finding out about all the benefits you can enjoy with us, simply register for the free trial. This enables you to explore many of BAL’s tools and functions before choosing the right subscription package for you or your organisation. It’s also useful if you want to make an enquiry and receive quotes quickly and simply. You may subscribe to one of the LightFinder packages to request for samples or confirm an order.
                         </p>
-                        <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-light">REGISTER NOW</a>
-                        <a href="#package" class="btn btn-danger">CHECK DETAILS</a>
+                        <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-light">Register Now</a>
+                        <a href="#package" class="btn btn-danger">Check Details</a>
                     </div>
                 </div> 
             </div>
@@ -918,9 +935,9 @@
                             <p>
                                 As a LightFinder user you have the choice of Mini, Standard, and Premium subscriptions, depending on the volumes you need. Like all BAL users, you can leverage the platform’s power to find the finest global suppliers and the best value for a fraction of the usual cost - all from the comfort of your own home or office. 
                             </p>
-                            <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder" class="btn btn-dark">REGISTER NOW</a>
-                            <a href="#package" class="btn btn-danger">CHECK RATE</a>
-                            <a href="{{ asset('brochures/LightFinder_BAL.pdf') }}" class="btn btn-secondary" target="_blank">DOWNLOAD BROCHURE</a>
+                            <a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder" class="btn btn-dark">Register now</a>
+                            <a href="#package" class="btn btn-danger">Check rate</a>
+                            <a href="{{ asset('brochures/LightFinder_BAL.pdf') }}" class="btn btn-secondary" target="_blank">Download brochure</a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -977,9 +994,9 @@
                             <p>
                                 To take advantage of these huge savings and benefits, we charge only a one-time project subscription fee and 10% commission on the total product cost. That’s quite simply how we earn our revenue. Plus, you don’t pay anything until you’ve decided to commit to our quote, so there is ZERO RISK to you when trying us out!
                             </p>
-                            <a href="https://lightfinder.buyanylight.com/buyer/register/my-home" class="btn btn-dark">REGISTER NOW</a>
-                            <a href="#package" class="btn btn-danger">CHECK RATE</a>
-                            <a href="{{ asset('brochures/MyHome_BAL.pdf') }}" class="btn btn-secondary" target="_blank">DOWNLOAD BROCHURE</a>
+                            <a href="https://lightfinder.buyanylight.com/buyer/register/my-home" class="btn btn-dark">Register now</a>
+                            <a href="#package" class="btn btn-danger">Check rate</a>
+                            <a href="{{ asset('brochures/MyHome_BAL.pdf') }}" class="btn btn-secondary" target="_blank">Download brochure</a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -1035,9 +1052,9 @@
                             <p>
                                 DID YOU KNOW? Our Markup Feature (exclusive to BAL corporate users) - is a fantastic BAL feature, allowing you to add markups to the quotes, quickly and easily. It means you can offer your customers lower prices than local suppliers while also boosting your profits - a win-win for everyone!
                             </p>
-                            <a href="https://lightfinder.buyanylight.com/buyer/register/my-tower" class="btn btn-dark">REGISTER NOW</a>
-                            <a href="#package" class="btn btn-danger">CHECK RATE</a>
-                            <a href="{{ asset('brochures/MyTower_BAL.pdf') }}" class="btn btn-secondary" target="_blank">DOWNLOAD BROCHURE</a>
+                            <a href="https://lightfinder.buyanylight.com/buyer/register/my-tower" class="btn btn-dark">Register Now</a>
+                            <a href="#package" class="btn btn-danger">Check rate</a>
+                            <a href="{{ asset('brochures/MyTower_BAL.pdf') }}" class="btn btn-secondary" target="_blank">Download brochure</a>
                         </div>
                     </div>
                 </div>
@@ -1484,7 +1501,7 @@
                                 Great lighting creates an aesthetic ambience that instantly elevates one’s mood and style. Our highly skilled LED lighting designers will help you to create a stunning atmosphere that brings your LED lighting design dreams to life. This add-on is available to all BAL users, irrespective of your package choice. We provide one-to-one access to our world-class consultants who will work with you and provide expert advice from project start-up to the final glorious switch-on! 
                             </p>
                         </div>
-                        <a href="https://lightfinder.buyanylight.com/buyer/register/general-lighting-consultation" class="btn btn-sm btn-dark">BOOK NOW</a>
+                        <a href="https://lightfinder.buyanylight.com/buyer/register/general-lighting-consultation" class="btn btn-sm btn-dark">Book now</a>
                     </div>
                     <div class="col-md-4">
                         <h5 class="font-weight-bold">
@@ -1497,7 +1514,7 @@
                                 This valuable add-on determines the exact brightness requirements (lumens) for a project area - data which is essential for selecting the right products and quantities to achieve the design objectives in any lighting project. Essentially, contractors and consultants can leverage our expertise to give their clients the most reasonable quote - and including this data in a proposal or quote elevates your professionalism and credibility. What’s more, an accurate lux calculation justifies the quote’s rationale and increases the chances of winning the project bid.
                             </p>
                         </div>
-                        <a href="https://lightfinder.buyanylight.com/buyer/register/lux-calculation" class="btn btn-sm btn-dark">BOOK NOW</a>
+                        <a href="https://lightfinder.buyanylight.com/buyer/register/lux-calculation" class="btn btn-sm btn-dark">Book now</a>
                     </div>
                     <div class="col-md-4">
                         <h5 class="font-weight-bold">
@@ -1510,7 +1527,7 @@
                                 This additional option (available to all BAL users) gives you the opportunity to envision the look and feel of your finished project area. Our professional lighting designers prepare your 3D designs with pinpoint accuracy. In some cases, a 3D lighting design is a contractual requirement when executing a lighting project, but every contractor and consultant can present these stunning 3D models to their clients to inform, reassure and impress. It’s also a chance to gain an edge over competitors, and can add an extra revenue stream to the project.
                             </p> 
                         </div>
-                        <a href="https://lightfinder.buyanylight.com/buyer/register/3d-lighting-design" class="btn btn-sm btn-dark">BOOK NOW</a>
+                        <a href="https://lightfinder.buyanylight.com/buyer/register/3d-lighting-design" class="btn btn-sm btn-dark">Book now</a>
                     </div>
                 </div>
             </div>
