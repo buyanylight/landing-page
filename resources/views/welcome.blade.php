@@ -1,6 +1,6 @@
 @extends('layouts.main-layout')
 @section('content')
-<div class="modal" id="myModal" tabindex="-1" role="dialog">
+<!-- <div class="modal" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -24,6 +24,30 @@
             </div>
         </div>
     </div>
+</div> -->
+<div style="position: relative; min-height: 100px; z-index: 5">
+            <!-- Position toasts -->
+    <div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
+        <div class="toast" data-autohide="false">
+            <div class="toast-header">
+                <strong class="mr-auto">
+                    <img src="{{ asset('images/logo-black-icon.png') }}" width="25">
+                    BuyAnyLight
+                </strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+            </div>
+            @if(session('success'))
+            <div class="toast-body">
+                <b>Thanks for being awesome</b>
+                {{session('success')}}
+            </div>
+            @else
+            <div class="toast-body">
+                {{session('danger')}}
+            </div>
+            @endif
+        </div>
+    </div>    
 </div>
 <div class="body-content">
     <div class="section-1">
