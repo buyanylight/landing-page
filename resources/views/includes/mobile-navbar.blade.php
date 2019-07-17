@@ -24,9 +24,9 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <div class="nav-link dropdown-toggle text-white links" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white links" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Buyers
-                    </div>
+                    </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="/m/#works">How it works</a>
                         <a class="dropdown-item" href="/m/why-us">Why BAL</a>
@@ -35,9 +35,9 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <div class="nav-link dropdown-toggle text-white links" href="/seller" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white links" href="/seller" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Sellers
-                    </div>
+                    </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/supplier/register">Register</a>
                         <a class="dropdown-item" href="/seller">Apply</a>
@@ -45,9 +45,9 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <div class="nav-link dropdown-toggle text-white links" href="/investor" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white links" href="/investor" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Investors
-                    </div>
+                    </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="/ieo">IEO</a>
                         <a class="dropdown-item" href="/investor">Lets Talk</a>
@@ -63,9 +63,9 @@
                     <a class="nav-link text-white links" href="https://lightfinder.buyanylight.com">Sign in</a>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <div class="nav-link dropdown-toggle text-white links" href="/https://lightfinder.buyanylight.com/buyer/register" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white links" href="/https://lightfinder.buyanylight.com/buyer/register" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Sign up
-                    </div>
+                    </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/buyer/register">Buyers</a>
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/supplier/register">Sellers</a>
