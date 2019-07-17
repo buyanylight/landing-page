@@ -17,7 +17,7 @@ class PageController extends Controller
         $isTablet = $agent->isTablet();
 
     
-        if($isMobile && !$isTablet) {
+        if($isMobile || $isTablet) {
             return view('mobile.index');
         } else {
             return view('welcome');
@@ -34,7 +34,7 @@ class PageController extends Controller
         $isTablet = $agent->isTablet();
 
     
-        if($isMobile && !$isTablet) {
+        if($isMobile || $isTablet) {
             return view('mobile.seller');
         } else {
             return view('seller');
@@ -51,7 +51,7 @@ class PageController extends Controller
         $isTablet = $agent->isTablet();
 
     
-        if($isMobile && !$isTablet) {
+        if($isMobile || $isTablet) {
             return view('mobile.investor');
         } else {
             return view('investor');
@@ -81,7 +81,7 @@ class PageController extends Controller
         $isTablet = $agent->isTablet();
 
     
-        if($isMobile && !$isTablet) {
+        if($isMobile || $isTablet) {
             return view('mobile.ieo');
         } else {
             return view('ieo');
