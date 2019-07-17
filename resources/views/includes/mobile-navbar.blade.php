@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top" >
     <div class="container-fluid">
         <a class="navbar-brand " href="/">
             <img src="{{ asset('images/logo-white.png') }}" width="150" class="logo"> 
@@ -12,20 +12,20 @@
                     <a class="nav-link text-white links" href="/">Home</a>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <a class="nav-link dropdown-toggle text-white links" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="nav-link dropdown-toggle text-white links" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Packages
-                    </a>
+                    </div>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/m/#trial">Free Trial Plan</a>
-                        <a class="dropdown-item" href="/m/#home">My Home Plan</a>
-                        <a class="dropdown-item" href="/m/#tower">My Tower Plan</a>
-                        <a class="dropdown-item" href="/m/#finder">LightFinder Plan</a>
+                        <a class="dropdown-item" href="/m/package/#trial">Free Trial Plan</a>
+                        <a class="dropdown-item" href="/m/package/#home">My Home Plan</a>
+                        <a class="dropdown-item" href="/m/package/#tower">My Tower Plan</a>
+                        <a class="dropdown-item" href="/m/package/#finder">LightFinder Plan</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <a class="nav-link dropdown-toggle text-white links" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="nav-link dropdown-toggle text-white links" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Buyers
-                    </a>
+                    </div>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="/m/#works">How it works</a>
                         <a class="dropdown-item" href="/m/why-us">Why BAL</a>
@@ -34,9 +34,9 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <a class="nav-link dropdown-toggle text-white links" href="/seller" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="nav-link dropdown-toggle text-white links" href="/seller" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Sellers
-                    </a>
+                    </div>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/supplier/register">Register</a>
                         <a class="dropdown-item" href="/seller">Apply</a>
@@ -44,9 +44,9 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <a class="nav-link dropdown-toggle text-white links" href="/investor" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="nav-link dropdown-toggle text-white links" href="/investor" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Investors
-                    </a>
+                    </div>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="/ieo">IEO</a>
                         <a class="dropdown-item" href="/investor">Lets Talk</a>
@@ -56,15 +56,15 @@
                     <a class="nav-link text-white links" href="https://medium.com/@infobuyanylight" target="_blank">News</a>
                 </li>
                 <li class="nav-item mr-3">
-                    <a class="nav-link text-white links" href="/#contact">Contact</a>
+                    <a class="nav-link text-white links" href="/#footer">Contact</a>
                 </li>
                 <li class="nav-item mr-3">
                     <a class="nav-link text-white links" href="https://lightfinder.buyanylight.com">Sign in</a>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <a class="nav-link dropdown-toggle text-white links" href="/https://lightfinder.buyanylight.com/buyer/register" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="nav-link dropdown-toggle text-white links" href="/https://lightfinder.buyanylight.com/buyer/register" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Sign up
-                    </a>
+                    </div>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/buyer/register">Buyers</a>
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/supplier/register">Sellers</a>

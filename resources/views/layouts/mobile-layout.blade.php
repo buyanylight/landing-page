@@ -167,6 +167,13 @@
             $('[data-toggle="tooltip"]').tooltip()
         })
 
+        // $('#navbarNavDropdown ul li a').on('click',function(){
+        //     $(this).parent().parent().slideToggle(); 
+        // });
+
+        $('.navbar-nav>li>a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
 
 
     
