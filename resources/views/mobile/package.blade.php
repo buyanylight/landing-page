@@ -92,7 +92,7 @@
 				 <div class="embed-responsive embed-responsive-16by9 mb-3">
                     <iframe width="640" height="360" src="https://www.youtube.com/embed/OBm3CPqiXt8?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                 </div> 
-                <a href="" class="btn btn-sm btn-light">REGISTER NOW</a>
+                <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-sm btn-light">REGISTER NOW</a>
                 <a href="{{ asset('brochures/LightFinder_BAL.pdf') }}" class="btn btn-sm btn-secondary" target="_blank">BROCHURE</a>
                 <button class="btn btn-sm btn-danger" type="button" data-toggle="collapse" data-target="#finder-card" aria-expanded="false" aria-controls="finder-card">
                     CHECK DETAILS
@@ -324,7 +324,7 @@
 				<div class="embed-responsive embed-responsive-16by9 mb-3">
                     <iframe width="640" height="360" src="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                 </div> 
-                <a href="" class="btn btn-sm btn-dark">REGISTER NOW</a>
+                <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-sm btn-dark">REGISTER NOW</a>
                 <a href="{{ asset('brochures/MyHome_BAL.pdf') }}" class="btn btn-sm  btn-secondary" target="_blank">BROCHURE</a>
                 <button class="btn btn-sm btn-danger" type="button" data-toggle="collapse" data-target="#home-card" aria-expanded="false" aria-controls="home-card">
                     CHECK DETAILS
@@ -412,7 +412,7 @@
 				<div class="embed-responsive embed-responsive-16by9 mb-3">
                     <iframe width="640" height="360" src="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <a href="" class="btn btn-sm  btn-light">REGISTER NOW</a>
+                <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-sm  btn-light">REGISTER NOW</a>
                 <a href="{{ asset('brochures/MyTower_BAL.pdf') }}" class="btn btn-sm  btn-secondary" target="_blank">BROCHURE</a>
                 <button class="btn btn-sm btn-danger" type="button" data-toggle="collapse" data-target="#tower-card" aria-expanded="false" aria-controls="tower-card">
                     CHECK DETAILS
