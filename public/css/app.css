@@ -11847,13 +11847,13 @@ footer {
   }
 
   .section-6 {
-    background: url("/images/section6(1).png"), url("/images/section6.png");
+    background: url("/images/section6.png");
     height: 100%;
-    background-size: 36%, 75%;
+    background-size: 75%;
     background-repeat: no-repeat;
     background-color: white;
-    background-position-x: 840px, left;
-    background-position-y: -2px, 0px;
+    background-position-x: left;
+    background-position-y: 0px;
   }
 
   .section-6-part2 {
@@ -11878,13 +11878,13 @@ footer {
   }
 
   .section-6 {
-    background: url("/images/section6(1).png"), url("/images/section6.png");
+    background: url("/images/section6.png");
     height: 100%;
-    background-size: 60%, 86%;
+    background-size: 86%;
     background-repeat: no-repeat;
     background-color: white;
-    background-position-x: 310px, -30px;
-    background-position-y: 10px, 0px;
+    background-position-x: -30px;
+    background-position-y: 0px;
   }
 }
 
@@ -11900,13 +11900,13 @@ footer {
   }
 
   .section-6 {
-    background: url("/images/section6(1).png"), url("/images/section6.png");
+    background: url("/images/section6.png");
     height: 100%;
-    background-size: 80%, 95%;
+    background-size: 95%;
     background-repeat: no-repeat;
     background-color: white;
-    background-position-x: 115px, -30px;
-    background-position-y: 60px, 0px;
+    background-position-x: -30px;
+    background-position-y: 0px;
   }
 }
 
