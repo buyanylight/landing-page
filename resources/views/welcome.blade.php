@@ -38,11 +38,12 @@
             </div>
             @if(session('success'))
             <div class="toast-body">
+                <b>Thanks for being awesome</b>
                 {!! session('success') !!}
             </div>
             @else
             <div class="toast-body">
-                {!!session('danger')!!}
+                {!! session('danger') !!}
             </div>
             @endif
         </div>
