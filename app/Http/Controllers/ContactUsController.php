@@ -42,12 +42,12 @@ class ContactUsController extends Controller
                 $message->from('no-reply@buyanylight.com');
                 $message->to('info@buyanylight.com', 'Admin')->subject($request->get('subject'));
             });
-               return back()->with('success', 'We will get back to you shortly');
+               return back()->with('success', '<b> Thanks for being awesome! <br> We will get back to you shortly.');
            } else {
-                return back()->with('danger', 'Please try again later');
+                return back()->with('danger', 'Please try again later!');
            }
         } else {
-            return back()->with('danger', 'Please try again later, Could not validate you');
+            return back()->with('danger', 'Please try again later! <br> Could not validate you.');
         }       
     }
 }
