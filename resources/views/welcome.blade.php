@@ -38,7 +38,7 @@
             </div>
             @if(session('success'))
             <div class="toast-body">
-                <b>Thanks for being awesome</b>
+                <b>Thanks for being awesome</b><br>
                 {{session('success')}}
             </div>
             @else
