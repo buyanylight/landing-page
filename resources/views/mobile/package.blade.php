@@ -145,24 +145,31 @@
                                         <li>
                                             <i class="fas fa-times"></i>
                                             Label & design support
-                                            <span class="" data-toggle="tooltip" data-placement="right" title="Our ODM services mean we can brand your individual light fittings with your own logo and/or labels." style="font-size: 12px; ">
+                                            <span class="" data-toggle="tooltip" data-placement="bottom" title="Our ODM services mean we can brand your individual light fittings with your own logo and/or labels." style="font-size: 12px; ">
                                                 <i class="fas fa-info-circle"></i>
                                             </span>
                                         </li>
                                         <li>
                                             <i class="fas fa-times"></i>
                                                 Designated lighting designer
-                                            <span class="" data-toggle="tooltip" data-placement="right" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
+                                            <span class="" data-toggle="tooltip" data-placement="bottom" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
                                                 <i class="fas fa-info-circle"></i>
                                             </span>
                                         </li>
                                         <li>
                                             <i class="fas fa-times"></i>
                                                 Markup feature
+                                            <span class="" data-toggle="tooltip" data-placement="bottom" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
+                                                <i class="fas fa-info-circle"></i>
+                                            </span>
+                                        </li>
+                                    <!--     <li>
+                                            <i class="fas fa-times"></i>
+                                                Markup feature
                                             <span class="" data-toggle="tooltip" data-placement="right" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
                                                  <i class="fas fa-info-circle"></i>
                                             </span>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                                 <p class="text-center">* 20% BAL fee on order confirmation</p>
@@ -209,21 +216,21 @@
                                                 <li>
                                                     <i class="fas fa-check"></i>
                                                     Label & design support
-                                                    <span class="" data-toggle="tooltip" data-placement="right" title="Our ODM services mean we can brand your individual light fittings with your own logo and/or labels." style="font-size: 12px; ">
+                                                    <span class="" data-toggle="tooltip" data-placement="bottom" title="Our ODM services mean we can brand your individual light fittings with your own logo and/or labels." style="font-size: 12px; ">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-check"></i>
                                                     Designated lighting designer
-                                                    <span class="" data-toggle="tooltip" data-placement="right" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
+                                                    <span class="" data-toggle="tooltip" data-placement="bottom" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-check"></i>
                                                     Markup feature
-                                                    <span class="" data-toggle="tooltip" data-placement="right" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
+                                                    <span class="" data-toggle="tooltip" data-placement="bottom" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span>
                                                 </li>
@@ -274,21 +281,21 @@
                                                 <li>
                                                     <i class="fas fa-times"></i>
                                                     Label & design support
-                                                    <span class="" data-toggle="tooltip" data-placement="right" title="Our ODM services mean we can brand your individual light fittings with your own logo and/or labels." style="font-size: 12px; ">
+                                                    <span class="" data-toggle="tooltip" data-placement="bottom" title="Our ODM services mean we can brand your individual light fittings with your own logo and/or labels." style="font-size: 12px; ">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-times"></i>
                                                     Designated lighting designer
-                                                    <span class=" " data-toggle="tooltip" data-placement="right" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
+                                                    <span class=" " data-toggle="tooltip" data-placement="bottom" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span>
                                                 </li>
                                                 <li>
                                                     <i class="fas fa-times"></i>
                                                     Markup feature
-                                                    <span class="" data-toggle="tooltip" data-placement="right" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
+                                                    <span class="" data-toggle="tooltip" data-placement="bottom" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span>
                                                 </li>
@@ -367,14 +374,14 @@
                                     <li>
                                         <i class="fas fa-check"></i>
                                         Designated lighting designer
-                                        <span class="" data-toggle="tooltip" data-placement="right" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
+                                        <span class="" data-toggle="tooltip" data-placement="bottom" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
                                             <i class="fas fa-info-circle"></i>
                                          </span>
                                     </li>
                                     <li>
                                         <i class="fas fa-times"></i>
                                         Markup feature
-                                        <span class="" data-toggle="tooltip" data-placement="right" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
+                                        <span class="" data-toggle="tooltip" data-placement="bottom" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
                                             <i class="fas fa-info-circle"></i>
                                         </span>
                                     </li>
@@ -455,14 +462,14 @@
                                     <li>
                                         <i class="fas fa-check"></i>
                                         Designated lighting designer
-                                        <span class="" data-toggle="tooltip" data-placement="right" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
+                                        <span class="" data-toggle="tooltip" data-placement="bottom" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
                                                 <i class="fas fa-info-circle"></i>
                                         </span>
                                     </li>
                                     <li>
                                         <i class="fas fa-check"></i>
                                         Markup feature
-                                        <span class="" data-toggle="tooltip" data-placement="left" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
+                                        <span class="" data-toggle="tooltip" data-placement="bottom" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
                                             <i class="fas fa-info-circle"></i>
                                         </span>
                                     </li>
