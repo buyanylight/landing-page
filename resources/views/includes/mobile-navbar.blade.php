@@ -12,14 +12,15 @@
                     <a class="nav-link text-white links" href="/">Home</a>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <div class="nav-link dropdown-toggle text-white links" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white links" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Packages
-                    </div>
+                    </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="/m/package/#trial">Free Trial Plan</a>
                         <a class="dropdown-item" href="/m/package/#home">My Home Plan</a>
                         <a class="dropdown-item" href="/m/package/#tower">My Tower Plan</a>
                         <a class="dropdown-item" href="/m/package/#finder">LightFinder Plan</a>
+                        <a class="dropdown-item" href="/m/add-ons">Add ons</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
