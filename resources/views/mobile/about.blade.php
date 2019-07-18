@@ -101,7 +101,7 @@
             <div class="text-left">
                     <a href="/m/add-ons" class="btn text-dark pl-0">
                         <div class="link-text">
-                            Explore services
+                            Add extra value
                         </div>&nbsp;
                         <div class="link-icon">
                             <i class="fas fa-arrow-right"></i> 

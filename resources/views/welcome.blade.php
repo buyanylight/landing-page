@@ -67,7 +67,7 @@
                     </p>
                     <a href="#about" class="btn btn-sm pl-0 text-white">
                         <div class="link-text">
-                            Read more 
+                            Discover big BAL benefits 
                         </div>&nbsp;
                         <div class="link-icon">
                             <i class="fas fa-arrow-right"></i> 
@@ -75,7 +75,7 @@
                     </a>
                     <a  data-fancybox href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" class="btn btn-sm pl-0 text-white">
                         <div class="link-text">
-                            Watch video 
+                            Watch the video 
                         </div>&nbsp;
                         <div class="link-icon">
                             <i class="fas fa-arrow-right"></i> 
@@ -107,7 +107,15 @@
                             <p class="card-text">
                                 LightFinder users are businesses such as lighting companies, consultants or homeowners who prefer to source LED lights personally and directly from manufacturers...
                             </p>
-                            <a href="#finder" class="btn btn-sm btn-dark">Read More</a>
+                            <a href="#finder" class="btn btn-sm pl-4 text-dark">
+                                <div class="link-text">
+                                    Cut LED cost, <br> not quality 
+                                </div>&nbsp;
+                                <div class="first-link-icon">
+                                    <i class="fas fa-arrow-right"></i> 
+                                </div>
+                            </a>
+                            <!-- <a href="#finder" class="btn btn-sm btn-dark">Cut LED cost, not quality</a> -->
                         </div>
                     </div>
                 </div>
@@ -127,7 +135,15 @@
                             <p class="card-text">
                                 Generic lights don’t belong in stylish, 21st century homes… Custom LED saves energy and costs, helps protect our planet and gives far greater aesthetic and design opportunities...
                             </p>
-                            <a href="#home" class="btn btn-sm btn-dark">Read More</a>
+                            <a href="#home" class="btn btn-sm pl-5 text-dark">
+                                <div class="link-text">
+                                    Find dream home LED <br> at dreamy prices 
+                                </div>&nbsp;
+                                <div class="first-link-icon">
+                                    <i class="fas fa-arrow-right"></i> 
+                                </div>
+                            </a>
+                            <!-- <a href="#home" class="btn btn-sm btn-dark">Read More</a> -->
                         </div>
                     </div>
                 </div>
@@ -147,7 +163,15 @@
                             <p class="card-text">
                                 My Tower users leverage our expertise to get the best products in the market, save a fortune, and improve their project delivery. When starting a project, you subscribe to our package...
                             </p>
-                            <a href="#tower" class="btn btn-sm btn-dark">Read More</a>
+                            <a href="#tower" class="btn btn-sm pl-5 text-dark">
+                                <div class="link-text">
+                                    Get the best quality <br> and prices ever
+                                </div>&nbsp;
+                                <div class="first-link-icon">
+                                    <i class="fas fa-arrow-right"></i> 
+                                </div>
+                            </a>
+                            <!-- <a href="#tower" class="btn btn-sm btn-dark">Read More</a> -->
                         </div>
                     </div>
                 </div>
