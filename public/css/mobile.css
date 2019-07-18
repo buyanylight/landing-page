@@ -11295,6 +11295,12 @@ nav {
   background-size: cover;
 }
 
+.intro-faq {
+  height: 30vh;
+  background: url("/images/LightFinder.jpg");
+  background-size: cover;
+}
+
 .section8 .nav-link {
   font-size: 11px;
 }
