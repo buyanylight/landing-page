@@ -40,4 +40,10 @@ class MobileController extends Controller
     {
         return view('mobile.add-ons');
     }
+
+     public function reasons()
+    {
+        return view('mobile.more-reasons');
+    }
+
 }
