@@ -35,7 +35,7 @@
                                     <li class="list-group-item">First-class consultancy</li>
                                     <li class="list-group-item">Easy price comparison</li>
                                     <li class="list-group-item">On-time delivery guaranteed</li>
-                                    <li class="list-group-item">Try samples before build orders</li>
+                                    <li class="list-group-item">Try samples before bulk orders</li>
                                     <li class="list-group-item">Vast choice of world-class LEDs</li>
                                     <li class="list-group-item">Cuts sourcing time by up to 90%</li>
                                     <li class="list-group-item">No middle men means lowest prices</li>

@@ -144,7 +144,7 @@
                   				<a href="">BAL vs. retail</a>
                   			</li> -->
                   			<li class="mt-3">
-                  				<a href="/m/packages" class="text-dark" >Packages</a>
+                  				<a href="/m/package" class="text-dark" >Packages</a>
                   			
                   			</li>
                   			<li class="mt-3">
