@@ -11289,6 +11289,12 @@ nav {
   background-size: cover;
 }
 
+.intro-seller {
+  height: 30vh;
+  background: url("/images/LightFinder.jpg");
+  background-size: cover;
+}
+
 .section8 .nav-link {
   font-size: 11px;
 }
@@ -11416,5 +11422,11 @@ nav {
 .one-link {
   font-size: 15px;
   text-align: center;
+}
+
+.reason-content {
+  background: url("/images/hexagon.png");
+  background-size: cover;
+  background-position-x: -140%;
 }
 

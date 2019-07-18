@@ -31,3 +31,4 @@ Route::get('/m/about', 'MobileController@about');
 Route::get('/m/why-us', 'MobileController@why_us');
 Route::get('/m/package', 'MobileController@packages');
 Route::get('/m/add-ons', 'MobileController@add_ons');
+Route::get('/m/more-reasons', 'MobileController@reasons');

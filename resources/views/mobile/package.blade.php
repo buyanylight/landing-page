@@ -13,7 +13,6 @@
 				<p class="pt-3">
 					We offer a range of buyer packages to suit the different needs of individuals and businesses. 
 				</p>
-				<p>Take a look at our desktop website to find out more.</p>
 				<h4>
                     <b>Free Trial</b>
                     <hr style="border: 1px solid black;">
@@ -21,9 +20,9 @@
 				<p class="pt-2">
 					To start finding out about all the benefits you can enjoy with us, simply register for the free trial.
 				</p>
-                <a href="" class="btn  btn-sm btn-dark">REGISTER NOW</a>
+                <a href="" class="btn  btn-sm btn-dark">Register now</a>
                 <button class="btn btn-sm btn-danger" type="button" data-toggle="collapse" data-target="#trial-card" aria-expanded="false" aria-controls="trial-card">
-                    CHECK DETAILS
+                    Check details
                 </button>
                 <div class="collapse pt-3" id="trial-card">
                     <div class="card card-trial">
@@ -80,7 +79,7 @@
 		<div class="finder pt-5 pb-5 bg-black text-white" id="finder">
 			<div class="container">
 				<h4>
-                    LightFinder - B2B & B2C
+                    <b> LightFinder </b>
                     <hr style="border: 1px solid white;">
                 </h4>
 				<p class="pt-2">
@@ -92,10 +91,13 @@
 				 <div class="embed-responsive embed-responsive-16by9 mb-3">
                     <iframe width="640" height="360" src="https://www.youtube.com/embed/OBm3CPqiXt8?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                 </div> 
-                <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-sm btn-light">REGISTER NOW</a>
-                <a href="{{ asset('brochures/LightFinder_BAL.pdf') }}" class="btn btn-sm btn-secondary" target="_blank">BROCHURE</a>
+                <p>
+                    With a choice of valuable subscription options, the LightFinder package saves time, effort and stress for consultants, homeowners or companies who want to buy quality LED direct from the manufacturer. Best of all, BAL cuts costs by up to 90%. 
+                </p>
+                <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-sm btn-light">Register now</a>
+                <a href="{{ asset('brochures/LightFinder_BAL.pdf') }}" class="btn btn-sm btn-secondary" target="_blank">Brochure</a>
                 <button class="btn btn-sm btn-danger" type="button" data-toggle="collapse" data-target="#finder-card" aria-expanded="false" aria-controls="finder-card">
-                    CHECK DETAILS
+                    Check rate
                 </button>
                 <div class="collapse pt-3" id="finder-card">
                     <div class="card text-left">
@@ -331,10 +333,13 @@
 				<div class="embed-responsive embed-responsive-16by9 mb-3">
                     <iframe width="640" height="360" src="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                 </div> 
-                <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-sm btn-dark">REGISTER NOW</a>
-                <a href="{{ asset('brochures/MyHome_BAL.pdf') }}" class="btn btn-sm  btn-secondary" target="_blank">BROCHURE</a>
+                <p>
+                    No more poor quality LED, high prices or confusing choices… For a one-time fee, BAL’s My Home package accesses help and advice, top quality LED, lowest prices and speedy delivery for owners of private homes, villas and palaces. 
+                </p>
+                <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-sm btn-dark">Register now</a>
+                <a href="{{ asset('brochures/MyHome_BAL.pdf') }}" class="btn btn-sm  btn-secondary" target="_blank">Brochure</a>
                 <button class="btn btn-sm btn-danger" type="button" data-toggle="collapse" data-target="#home-card" aria-expanded="false" aria-controls="home-card">
-                    CHECK DETAILS
+                    Check rate
                 </button>
                 <div class="collapse pt-3" id="home-card">
                     <div class="card card-my-home">
@@ -419,10 +424,13 @@
 				<div class="embed-responsive embed-responsive-16by9 mb-3">
                     <iframe width="640" height="360" src="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-sm  btn-light">REGISTER NOW</a>
-                <a href="{{ asset('brochures/MyTower_BAL.pdf') }}" class="btn btn-sm  btn-secondary" target="_blank">BROCHURE</a>
+                <p>
+                     With no middlemen or upfront costs, My Tower offers a complete project solution. My Tower saves you time and effort and delivers world-class LED that costs up to 90% less. The result… Better projects and happier clients!
+                </p>
+                <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-sm  btn-light">Register now</a>
+                <a href="{{ asset('brochures/MyTower_BAL.pdf') }}" class="btn btn-sm  btn-secondary" target="_blank">Brochure</a>
                 <button class="btn btn-sm btn-danger" type="button" data-toggle="collapse" data-target="#tower-card" aria-expanded="false" aria-controls="tower-card">
-                    CHECK DETAILS
+                    Check rate
                 </button>
                 <div class="collapse pt-3" id="tower-card">
                     <div class="card card-my-tower text-dark">

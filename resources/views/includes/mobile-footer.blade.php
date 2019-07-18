@@ -156,12 +156,12 @@
 								</a>
 							</li>
                   			<li class="mt-3">
-                  				<a href="" class="text-dark">
+                  				<a href="https://lightfinder.buyanylight.com/buyer/register" class="text-dark">
                   					Register
                   				</a>
                   			</li>
                   			<li class="mt-3">
-                  				<a href="" class="text-dark">
+                  				<a href="https://lightfinder.buyanylight.com/" class="text-dark">
                   					Sign in
                   				</a>
                   			</li>
@@ -192,12 +192,12 @@
                 	<div class="accordion-inner">
                     	<ul class="footer-list m-0 text-dark">
                   			<li class="mt-3">
-                  				<a href="" class="text-dark">
+                  				<a href="https://lightfinder.buyanylight.com/supplier/register" class="text-dark">
                   					Register
                   				</a>
                   			</li>
                   			<li class="mt-3" >
-                  				<a href="" class="text-dark">
+                  				<a href="https://lightfinder.buyanylight.com/" class="text-dark">
                   					Sign in
                   				</a>
                   			</li>
