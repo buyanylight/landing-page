@@ -1,30 +1,29 @@
 @extends('layouts.mobile-layout')
 
 @section('content')
-<div class="modal" id="myModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+<div style="position: relative;  z-index: 5">
+            <!-- Position toasts -->
+    <div style="position: absolute; top: 70px; left:10%; min-width: 300px;">
+        <div class="toast" data-autohide="false">
+            <div class="toast-header">
+                <strong class="mr-auto">
+                    <img src="{{ asset('images/logo-black-icon.png') }}" width="25">
+                    BuyAnyLight
+                </strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
             </div>
-            <div class="modal-body">
-                    @if(session('success'))
-                    <div class="thank-you-pop text-center">
-                        <img src="{{ asset('images/green-tick.png')}}" alt="" width="100">
-                        <h2>Hey, Thanks for getting in touch!</h2>
-                        <p>{{session('success')}}</p>
-                    </div>
-                    @else
-                    <div class="sorry-pop text-center">
-                        <img src="{{ asset('images/red-cross.png')}}" alt="" width="100">
-                        <p>{{session('danger')}}</p>
-                    </div>
-                    @endif
+            @if(session('success'))
+            <div class="toast-body">
+                <b>Thanks for being awesome!</b>
+                {!! session('success') !!}
             </div>
+            @else
+            <div class="toast-body">
+                {!! session('danger') !!}
+            </div>
+            @endif
         </div>
-    </div>
+    </div>    
 </div>
 <div class="section14 pt-5 pb-5">
 	<div class="section14-contents d-flex align-items-center">
