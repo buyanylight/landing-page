@@ -48,9 +48,18 @@
 
     <!-- Meta -->
     <!-- //////////////////////////////////////////////////////////////////////// -->
-    <meta name="description" content="BuyAnyLight (BAL) has the world’s largest network of lighting manufacturers, and we are continually adding more, allowing BAL to provide the finest platform for finding any type of LED lighting item. Our artificial intelligence systems and high-speed servers match buyer enquiries with the most suitable suppliers in a matter of seconds and instantly send out Requests For Quotes (RFQs). When your quotes arrive, simply use the powerful BAL tools to select the most competitive: it’s fast – and beautifully simple!
+    <meta name="description" content="BuyAnyLight (BAL) has the world’s largest network of lighting manufacturers, and we are continually adding more, allowing BAL to provide the finest platform for finding any type of LED lighting item. Our artificial intelligence systems and high-speed servers match buyer enquiries with the most suitable suppliers in a matter of seconds and instantly send out Requests For Quotes (RFQs). When your quotes arrive, simply use the powerful BAL tools to select the most competitive: it’s fast and beautifully simple! BAL secures 100% of your funds until you receive your goods. The system also manages the logistics, so you receive your order on time, safely and securely." />
+    <meta name="author" content="Buyanylight.com">
+    <meta name="title" content="BuyAnyLight.com | Sourcing Reinvented - The global marketplace for LED Lighting">
+    <meta name="keywords" content="sourcing reinvented,project management,led lights,consultancy,register now,led,lights,lighting design,lighting solutions,lighting project,home lighting,project owner,contractors,lighting companies,expo2020,lighting consultant,innovations,smart home,evolutions,AI,switch to led,sourcing solution,home owners,blockchain,revolution,consultants,market,investors,startups,hot startups,lighting manufaturers,venture capital" />
 
-BAL secures 100% of your funds until you receive your goods. The system also manages the logistics, so you receive your order on time, safely and securely." />
+
+    <meta property="og:title" content="Sourcing Reinvented - The global marketplace for LED Lighting | BuyAnyLight.com">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://buyanylight.com">
+    <meta property="og:image" content="https://buyanylight.com/images/logo-white.png">
+    <meta property="og:description" content="BUY ANY LIGHT (BAL) has pioneered an innovation that changes the procedure of sourcing lights forever! The BAL platform benefits users with the best possible prices for any light, increased efficiency of lights procurement, access to the actual manufacturers of top global brands, increased profits, automation functions, and many other excellent features.">
+
 
     <!-- //////////////////////////////////////////////////////////////////////// -->
     <!-- Meta -->
