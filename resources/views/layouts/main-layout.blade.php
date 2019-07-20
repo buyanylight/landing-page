@@ -44,6 +44,18 @@
         <link rel="stylesheet" href="css/privacy.css?v=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
         
+
+
+    <!-- Meta -->
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+    <meta name="description" content="BuyAnyLight (BAL) has the world’s largest network of lighting manufacturers, and we are continually adding more, allowing BAL to provide the finest platform for finding any type of LED lighting item. Our artificial intelligence systems and high-speed servers match buyer enquiries with the most suitable suppliers in a matter of seconds and instantly send out Requests For Quotes (RFQs). When your quotes arrive, simply use the powerful BAL tools to select the most competitive: it’s fast – and beautifully simple!
+
+BAL secures 100% of your funds until you receive your goods. The system also manages the logistics, so you receive your order on time, safely and securely." />
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+    <!-- Meta -->
+
+
     </head>
     <body class="eupopup eupopup-bottom eupopup-style-compact">
         @include('includes.navbar')
