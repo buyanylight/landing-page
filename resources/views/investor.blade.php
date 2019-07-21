@@ -40,7 +40,7 @@
 	<div class="section15-contents">
 		<div class="section15-banner d-flex align-items-center">
 			<div class="container text-white">
-				<h3><b>Be An Investor</b></h3>
+				<h3><b>Be an investor</b></h3>
 				<p>
 					<b>BAL: immense growth potential and exceptional investment opportunities!</b>
 				</p>

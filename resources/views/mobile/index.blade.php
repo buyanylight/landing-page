@@ -46,18 +46,18 @@
         <div class="share-icons text-center w-100">
             <div class="row m-0">
                 <div class="col-4">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=buyanylight.com&display=popup" class="one-icon">
-                        <i class="fab fa-facebook-f"></i>
+                    <a href="https://www.linkedin.com/company/buyanylight/" class="one-icon" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.instagram.com/buyanylight/" class="one-icon" target="_blank">
+                        <i class="fab fa-instagram"></i>
                     </a>
                 </div>
                 <div class="col-4">
                     <a href="whatsapp://send?text=Hey! Check out BuyAnyLight! https://buyanylight.com" class="one-icon">
                         <i class="fab fa-whatsapp"></i>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a href="http://twitter.com/share?text=Hey! Check out BuyAnyLight! https://buyanylight.com" class="one-icon">
-                        <i class="fab fa-twitter"></i>
                     </a>
                 </div>
             </div>
@@ -66,55 +66,52 @@
 	<div class="section2 pt-5 pb-5">
         <div class="container">
             <div class="">
-                <div class="card LightFinder">
-                    <div class="card-body d-flex align-items-end">
-                        <div>
-                            <h5 class="text-white"><b>LightFinder</b></h5>
-                            <a href="/m/package/#finder" class="btn btn-sm pl-0 text-white">
+                <a href="/m/package/#finder" class=" pl-0 text-white">
+                    <div class="card LightFinder">
+                        <div class="card-body d-flex align-items-end pb-3">
+                            <div>
                                 <div class="link-text">
-                                    Learn more 
+                                    <h5 class="text-white mb-0"><b>LightFinder</b></h5>
                                 </div>&nbsp;
                                 <div class="link-icon">
                                     <i class="fas fa-arrow-right"></i> 
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
+            </div>
+            <div class="pt-3">
+                <a href="/m/package/#home" class="pl-0 text-white">
+                    <div class="card MyHome">
+                        <div class="card-body d-flex align-items-end pb-3">
+                            <div>
+                                <div class="link-text"> 
+                                    <h5 class="text-white mb-0"><b>My Home</b></h5>
+                                </div>&nbsp;
+                                <div class="link-icon">
+                                    <i class="fas fa-arrow-right"></i> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class=" pt-3">
-                <div class="card MyHome">
-                    <div class="card-body d-flex align-items-end">
-                        <div>
-                            <h5 class="text-white"><b>My Home</b></h5>
-                            <a href="/m/package/#home" class="btn btn-sm pl-0 text-white">
+                <a href="/m/package/#tower" class="pl-0 text-white">
+                    <div class="card MyTower">
+                        <div class="card-body d-flex align-items-end pb-3">
+                            <div>
                                 <div class="link-text">
-                                    Learn more 
+                                    <h5 class="text-white mb-0"><b>My Tower</b></h5> 
                                 </div>&nbsp;
                                 <div class="link-icon">
                                     <i class="fas fa-arrow-right"></i> 
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class=" pt-3">
-                <div class="card MyTower">
-                    <div class="card-body d-flex align-items-end">
-                        <div>
-                            <h5 class="text-white"><b>My Tower</b></h5>
-                            <a href="/m/package/#tower" class="btn btn-sm pl-0 text-white">
-                                <div class="link-text">
-                                    Learn more 
-                                </div>&nbsp;
-                                <div class="link-icon">
-                                    <i class="fas fa-arrow-right"></i> 
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
 	</div>
