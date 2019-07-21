@@ -4,7 +4,7 @@
 
 <div style="position: relative;  z-index: 5">
             <!-- Position toasts -->
-    <div style="position: absolute; top: 70px; left:10%; min-width: 300px;">
+    <div style="position: absolute; top: 70px; left:10px; min-width: 300px;">
         <div class="toast" data-autohide="false">
             <div class="toast-header">
                 <strong class="mr-auto">

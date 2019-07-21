@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="section6 pt-5 pb-5" id="why-bal">
-		<div class="intro d-flex align-items-center ">
+		<div class="intro-why d-flex align-items-center ">
             <div class="container">
                 <h3 class=" text-white">
                     <b>WHY CHOOSE US?</b>

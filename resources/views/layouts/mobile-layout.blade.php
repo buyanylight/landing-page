@@ -45,6 +45,24 @@
     <link rel="stylesheet" href="/css/slick-theme.css?v=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
+     <!-- Meta -->
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+    <meta name="description" content="BuyAnyLight (BAL) has the world’s largest network of lighting manufacturers, and we are continually adding more, allowing BAL to provide the finest platform for finding any type of LED lighting item. Our artificial intelligence systems and high-speed servers match buyer enquiries with the most suitable suppliers in a matter of seconds and instantly send out Requests For Quotes (RFQs). When your quotes arrive, simply use the powerful BAL tools to select the most competitive: it’s fast and beautifully simple! BAL secures 100% of your funds until you receive your goods. The system also manages the logistics, so you receive your order on time, safely and securely." />
+    <meta name="author" content="Buyanylight.com">
+    <meta name="title" content="BuyAnyLight.com | Sourcing Reinvented - The global marketplace for LED Lighting">
+    <meta name="keywords" content="Light, chandelier, lamp, led strip lights, ceiling lights, pendant lighting, outdoor lights, led strip, wall lights, light fixtures, Cheapest lights, cheapest place to buy lights, LED lights, online lighting store, kitchen lights, bathroom lights, bedroom lights, led panel, flood lights, lighting design, architectural lighting, home lighting, smart home, find light, light finder, get light quotes, search lights online, buy lights online, Sourcing reinvented, project management, lighting mangement, lighting consultancy, lighting solutions, lighting project, lighting companies, lighting consultant, innovation, switch to led, sourcing solution" />
+
+
+    <meta property="og:title" content="Sourcing Reinvented - The global marketplace for LED Lighting | BuyAnyLight.com">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://buyanylight.com">
+    <meta property="og:image" content="https://buyanylight.com/images/logo-white.png">
+    <meta property="og:description" content="BUY ANY LIGHT (BAL) has pioneered an innovation that changes the procedure of sourcing lights forever! The BAL platform benefits users with the best possible prices for any light, increased efficiency of lights procurement, access to the actual manufacturers of top global brands, increased profits, automation functions, and many other excellent features.">
+
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+    <!-- Meta -->
+
 </head>
 <body class="eupopup eupopup-bottom eupopup-style-compact">
 	@include('includes.mobile-navbar')
@@ -171,9 +189,14 @@
         //     $(this).parent().parent().slideToggle(); 
         // });
 
-        // $('.navbar-nav>li>a').on('click', function(){
-        //     $('.navbar-collapse').collapse('hide');
-        // });
+        $('.navbar-nav>li>a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+
+        $('.navbar-nav>li>div>a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+
 
 
     
