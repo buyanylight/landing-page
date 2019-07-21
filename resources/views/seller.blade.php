@@ -1,5 +1,15 @@
 @extends('layouts.main-layout')
 
+@section('meta-title')
+<meta name="title" content="BuyAnyLight | Seller - Apply ">
+<meta property="og:title" content=" BuyAnyLight | Seller - Apply">
+@endsection
+
+@section('meta-description')
+<meta name="description" content="With BAL, you’ll experience unlimited global business opportunities, along with our dedicated support to make sure you benefit to the max." />
+<meta property="og:description" content="With BAL, you’ll experience unlimited global business opportunities, along with our dedicated support to make sure you benefit to the max.">
+@endsection
+
 @section('content')
 <div class="section16">
 	<div class="section16-container">

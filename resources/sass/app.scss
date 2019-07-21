@@ -25,6 +25,8 @@ body{
   display: block;
 }
 
+
+
 // Thank you modal
 
 .thank-you-pop{
@@ -826,10 +828,19 @@ footer{
 
 }
 
+.intro-faq{
+	height: 30vh;
+	background:url('/images/faq_bg.png');
+	    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+}
 
 .grecaptcha-badge{
 	visibility: collapse !important;  
 }
+
+
 
 
 
