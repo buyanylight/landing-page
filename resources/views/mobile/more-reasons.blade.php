@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="pt-5">
-	<div class="intro d-flex align-items-center">
+	<div class="intro-reasons d-flex align-items-center">
 		<div class="container">
 			<h3 class="text-white">
 				<b>MORE REASONS WHY</b>

@@ -11115,9 +11115,26 @@ nav {
   transition: all 0.5s;
 }
 
+.navbar-nav {
+  height: 100vh;
+}
+
 .scrollUp {
   -webkit-transform: translateY(-80px);
           transform: translateY(-80px);
+}
+
+.btn-black {
+  background-color: #000;
+  border-color: #000;
+}
+
+nav .dropdown-toggle::after {
+  display: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 15px;
 }
 
 .grecaptcha-badge {
@@ -11194,7 +11211,7 @@ nav {
 
 .about-header {
   height: 30vh;
-  background: url("/images/LightFinder.jpg");
+  background: url("/images/mobile_bg/about_mobile.jpg");
   background-size: cover;
 }
 
@@ -11289,6 +11306,24 @@ nav {
   background-size: cover;
 }
 
+.intro-package {
+  height: 30vh;
+  background: url("/images/mobile_bg/packages_mobile.jpg");
+  background-size: cover;
+}
+
+.intro-why {
+  height: 30vh;
+  background: url("/images/mobile_bg/why_mobile.jpg");
+  background-size: cover;
+}
+
+.intro-reasons {
+  height: 30vh;
+  background: url("/images/mobile_bg/reasons_mobile.jpg");
+  background-size: cover;
+}
+
 .intro-seller {
   height: 30vh;
   background: url("/images/LightFinder.jpg");
@@ -11353,7 +11388,7 @@ nav {
 }
 
 .lighting-consultation {
-  background: url("/images/IMG1.png");
+  background: url("/images/IMG3.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -11373,7 +11408,7 @@ nav {
 }
 
 .threed-design {
-  background: url("/images/IMG3.png");
+  background: url("/images/IMG1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -11396,8 +11431,8 @@ nav {
 }
 
 .section14-contents {
-  background: url("/images/investor_bg.png");
-  height: 250px;
+  background: url("/images/mobile_bg/investor_mobile.jpg");
+  height: 30vh;
   background-size: 100%;
 }
 
