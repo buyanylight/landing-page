@@ -1,26 +1,41 @@
 @extends(($agent->isMobile()) ? 'layouts.mobile-layout' : 'layouts.main-layout')
+@section('meta-title')
+<meta name="title" content="BuyAnyLight | Buyer FAQs">
+<meta property="og:title" content=" BuyAnyLight | Buyer FAQs">
+@endsection
+
+@section('meta-description')
+<meta name="description" content="Here are the list of buyer's frequently Asked Questions to know more about us" />
+<meta property="og:description" content="Here are the list of buyer's frequently Asked Questions to know more about us">
+@endsection
 @section('content')
-<div class="buyer-faq pb-5 bg-white">
-	<div class="container">
-		<h1 class="{{$agent->isMobile()  ? 'text-center faq-header' : ''}}"><b>BUYER FAQ</b></h1>
-		<div id="accordion" class=" {{$agent->isMobile()  ? 'text-center' : ''}} ">
-  			<div class="card">
-    			<div class="card-header" id="headingOne">
+<div class="buyer-faq pt-5 pb-3 bg-white">
+    <div class="intro-faq d-flex align-items-center">
+    	<div class="container">
+    		<h3 class="text-white">
+                <b>BUYER FAQ</b>
+            </h3>
+        </div>
+    </div>
+    <div class="container pt-3 border-0 bg-white">
+		<div id="accordion">
+  			<div class="card border-0 bg-white">
+    			<div class="card-header border-0 bg-white" id="headingOne">
       				<h5 class="mb-0">
         				<button class="btn btn-link" data-toggle="collapse" data-target="#faq-1" aria-expanded="true" aria-controls="faq-1">
           				What is BAL?
         				</button>
       				</h5>
     			</div>
-
     			<div id="faq-1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
       				<div class="card-body">
        					 BAL (BuyAnyLight) is a pioneering online platform offering an innovative and value-packed procedure for resourcing LED lighting projects. BAL delivers unique advantages for both buyers and sellers and a win-win edge for them all.
       				</div>
     			</div>
-  			</div>	
-  			<div class="card">
-    			<div class="card-header" id="headingOne">
+  			</div>
+            <hr>	
+  			<div class="card border-0 bg-white">
+    			<div class="card-header border-0 bg-white" id="headingOne">
       				<h5 class="mb-0">
         				<button class="btn btn-link" data-toggle="collapse" data-target="#faq-2" aria-expanded="true" aria-controls="faq-2">
           				Who can register with BAL?
@@ -30,26 +45,27 @@
 
     			<div id="faq-2" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
       				<div class="card-body">
-       					 <p>Anyone looking for a quality LED lighting supplier can register. There are four main groups of people who can reap huge BAL benefits:</p>
-                           <ul>
-                            	<li>
-                              		Free Trial (any lighting user)
-                            	</li>
-                             	<li>
-                               		My Home (private homeowners)
-                            	</li>
-                            	<li>
-                                	My Tower (contractors, consultants and project owners)
-                            	</li>
-                            	<li>
-                                 	Sourcing Solutions (lighting companies)
-                            	</li>
-                           </ul>
+       					<p>Anyone looking for a quality LED lighting supplier can register. There are four main groups of people who can reap huge BAL benefits:</p>
+                        <ul>
+                            <li>
+                              	Free Trial (any lighting user)
+                            </li>
+                            <li>
+                               	My Home (private homeowners)
+                            </li>
+                            <li>
+                                My Tower (contractors, consultants and project owners)
+                            </li>
+                            <li>
+                                 Sourcing Solutions (lighting companies)
+                            </li>
+                        </ul>
       				</div>
     			</div>
   			</div>
-  			<div class="card">
-    			<div class="card-header" id="headingOne">
+            <hr>     
+  			<div class="card border-0 bg-white">
+    			<div class="card-header border-0 bg-white" id="headingOne">
       				<h5 class="mb-0">
         				<button class="btn btn-link" data-toggle="collapse" data-target="#faq-3" aria-expanded="true" aria-controls="faq-3">
           				How do I register with BAL as a buyer?
@@ -62,8 +78,9 @@
       				</div>
     			</div>
   			</div>
-  			<div class="card">
-    			<div class="card-header" id="headingOne">
+            <hr>    
+  			<div class="card border-0 bg-white">
+    			<div class="card-header border-0 bg-white" id="headingOne">
       				<h5 class="mb-0">
         				<button class="btn btn-link" data-toggle="collapse" data-target="#faq-4" aria-expanded="true" aria-controls="faq-4">
           				What does it cost to register with BAL?
@@ -76,8 +93,9 @@
       				</div>
     			</div>
   			</div>
-  			<div class="card">
-    			<div class="card-header" id="headingOne">
+            <hr>    
+  			<div class="card border-0 bg-white">
+    			<div class="card-header border-0 bg-white" id="headingOne">
       				<h5 class="mb-0">
         				<button class="btn btn-link" data-toggle="collapse" data-target="#faq-5" aria-expanded="true" aria-controls="faq-5">
           				Can I try before I buy?
@@ -90,8 +108,9 @@
       				</div>
     			</div>
   			</div>
-  			<div class="card">
-    			<div class="card-header" id="headingOne">
+            <hr>    
+  			<div class="card border-0 bg-white">
+    			<div class="card-header border-0 bg-white" id="headingOne">
       				<h5 class="mb-0">
         				<button class="btn btn-link" data-toggle="collapse" data-target="#faq-6" aria-expanded="true" aria-controls="faq-6">
           				Why should I use the BAL platform?
@@ -126,8 +145,9 @@
                            </ul>
       				</div>
     			</div>
-    			<div class="card">
-    				<div class="card-header" id="headingOne">
+                <hr>
+    			<div class="card border-0 bg-white">
+    				<div class="card-header border-0 bg-white" id="headingOne">
       					<h5 class="mb-0">
         					<button class="btn btn-link" data-toggle="collapse" data-target="#faq-7" aria-expanded="true" aria-controls="faq-7">
           					How do I get a quotation? 
@@ -140,8 +160,9 @@
       					</div>
     				</div>
   				</div>
-  				<div class="card">
-    				<div class="card-header" id="headingOne">
+                <hr>    
+  				<div class="card border-0 bg-white">
+    				<div class="card-header border-0 bg-white" id="headingOne">
       					<h5 class="mb-0">
         					<button class="btn btn-link" data-toggle="collapse" data-target="#faq-8" aria-expanded="true" aria-controls="faq-8">
           					How do I confirm an order?
@@ -154,8 +175,9 @@
       					</div>
     				</div>
   				</div>
-  				<div class="card">
-    				<div class="card-header" id="headingOne">
+                <hr>    
+  				<div class="card border-0 bg-white">
+    				<div class="card-header border-0 bg-white" id="headingOne">
       					<h5 class="mb-0">
         					<button class="btn btn-link" data-toggle="collapse" data-target="#faq-9" aria-expanded="true" aria-controls="faq-9">
           					How do I pay?
@@ -168,8 +190,9 @@
       					</div>
     				</div>
   				</div>
-  				<div class="card">
-    				<div class="card-header" id="headingOne">
+                <hr>    
+  				<div class="card border-0 bg-white">
+    				<div class="card-header border-0 bg-white" id="headingOne">
       					<h5 class="mb-0">
         					<button class="btn btn-link" data-toggle="collapse" data-target="#faq-10" aria-expanded="true" aria-controls="faq-10">
           					How will my goods be shipped?
@@ -182,8 +205,9 @@
       					</div>
     				</div>
   				</div>
-  				<div class="card">
-    				<div class="card-header" id="headingOne">
+                <hr>    
+  				<div class="card border-0 bg-white">
+    				<div class="card-header border-0 bg-white" id="headingOne">
       					<h5 class="mb-0">
         					<button class="btn btn-link" data-toggle="collapse" data-target="#faq-11" aria-expanded="true" aria-controls="faq-11">
           					What if I forget my BAL password?
@@ -196,10 +220,11 @@
       					</div>
     				</div>
   				</div>
-  				<div class="card">
-    				<div class="card-header" id="headingOne">
+                <hr>    
+  				<div class="card border-0 bg-white">
+    				<div class="card-header border-0 bg-white" id="headingOne">
       					<h5 class="mb-0">
-        					<button class="btn btn-link" data-toggle="collapse" data-target="#faq-12" aria-expanded="true" aria-controls="faq-12">
+        					<button class="btn btn-link text-left" data-toggle="collapse" data-target="#faq-12" aria-expanded="true" aria-controls="faq-12">
           					If I have a question or concern, who do I contact?
         					</button>
       					</h5>

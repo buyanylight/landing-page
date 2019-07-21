@@ -1,7 +1,18 @@
 @extends('layouts.main-layout')
 
+@section('meta-title')
+<meta name="title" content="BuyAnyLight | Be an investor">
+<meta property="og:title" content=" BuyAnyLight | Be an investor">
+@endsection
+
+@section('meta-description')
+<meta name="description" content="BAL: immense growth potential and exceptional investment opportunities! If you’re considering investing and would like to know more, Contact us." />
+<meta property="og:description" content="BAL: immense growth potential and exceptional investment opportunities! If you’re considering investing and would like to know more, Contact us.">
+@endsection
+
+
 @section('content')
-<div style="position: relative; min-height: 100px; z-index: 5">
+<div style="position: relative; z-index: 5">
             <!-- Position toasts -->
     <div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
         <div class="toast" data-autohide="false">
