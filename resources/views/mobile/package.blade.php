@@ -511,7 +511,7 @@
                 <div class="text-left">
                     <a href="/m/add-ons" class="btn text-dark pl-0">
                         <div class="link-text">
-                            Explore packages
+                            <b>Explore packages</b>
                         </div>&nbsp;
                         <div class="link-icon">
                             <i class="fas fa-arrow-right"></i> 
