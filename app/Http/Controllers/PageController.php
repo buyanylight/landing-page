@@ -108,7 +108,8 @@ class PageController extends Controller
     public function sitemap ()
     {
 
-        return view('sitemap')
+        return response()
+                ->view('sitemap')
                 ->header('Content-Type', 'text/xml');
 
     }
