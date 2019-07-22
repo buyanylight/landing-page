@@ -5,7 +5,7 @@
 		<div class="intro-why d-flex align-items-center ">
             <div class="container">
                 <h3 class=" text-white">
-                    <b>WHY CHOOSE US?</b>
+                    <b>WHY CHOOSE BAL?</b>
                 </h3>
             </div>
         </div>
