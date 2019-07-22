@@ -105,5 +105,12 @@ class PageController extends Controller
 
     }
 
+    public function sitemap ()
+    {
+
+        return view('sitemap');
+
+    }
+
 
 }
