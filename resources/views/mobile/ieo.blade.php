@@ -1,7 +1,7 @@
 @extends('layouts.mobile-layout')
 
 @section('content')
-<div class="ieo-coming-soon">
+<div class="ieo-coming-soon all-contents">
 	<div class="container text-white">
 		<h1>
 			<b>

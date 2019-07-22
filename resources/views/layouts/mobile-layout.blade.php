@@ -191,10 +191,17 @@
 
         $('.navbar-nav>li>a').on('click', function(){
             $('.navbar-collapse').collapse('hide');
+            $('.all-contents').removeClass('filter');
         });
 
         $('.navbar-nav>li>div>a').on('click', function(){
             $('.navbar-collapse').collapse('hide');
+            $('.all-contents').removeClass('filter');
+        });
+
+
+        $('.navbar-toggler').click(function(){
+            $('.all-contents').toggleClass('filter');
         });
 
 

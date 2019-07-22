@@ -1,8 +1,8 @@
 @extends('layouts.mobile-layout')
 @section('content')
 
-<div class="section9 pt-5 pb-5">
-	<div class="intro d-flex align-items-center">
+<div class="section9 pt-5 pb-5 all-contents">
+	<div class="intro-addons d-flex align-items-center">
 		<div class="container">
 			<h3 class="text-white">
 				<b>ALWAYS ADDING VALUE: optional extras</b>

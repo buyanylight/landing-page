@@ -1,7 +1,8 @@
 @extends('layouts.mobile-layout')
 
 @section('content')
-	<div class="section8 pt-5  ">
+<div class="all-contents">
+	<div class="section8 pt-5 ">
 		<div class="container intro-seller d-flex align-items-center text-white ">
 			<h3>
 				<b>
@@ -95,4 +96,5 @@
 			</div>
 		</div>
 	</div>
+</div>
 	@endsection

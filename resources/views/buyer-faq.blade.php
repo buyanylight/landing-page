@@ -9,7 +9,7 @@
 <meta property="og:description" content="Here are the list of buyer's frequently Asked Questions to know more about us">
 @endsection
 @section('content')
-<div class="buyer-faq pt-5 pb-3 bg-white">
+<div class="buyer-faq pt-5 pb-3 bg-white all-contents">
     <div class="intro-faq d-flex align-items-center">
     	<div class="container">
     		<h3 class="text-white">

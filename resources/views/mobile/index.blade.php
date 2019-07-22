@@ -26,7 +26,7 @@
         </div>
     </div>    
 </div>
-<div class="">
+<div class="all-contents">
 	<div class="section1">
 		<div class="h-100 d-flex align-items-center justify-content-center container text-white">
 			<div class="w-100 text-center">
@@ -66,7 +66,7 @@
 	<div class="section2 pt-5 pb-5">
         <div class="container">
             <div class="">
-                <a href="/m/package/#finder" class=" pl-0 text-white">
+                <a href="/m/package/#finder" class=" pl-0 text-white" style="text-decoration: none;">
                     <div class="card LightFinder">
                         <div class="card-body d-flex align-items-end pb-3">
                             <div>
@@ -82,7 +82,7 @@
                 </a>
             </div>
             <div class="pt-3">
-                <a href="/m/package/#home" class="pl-0 text-white">
+                <a href="/m/package/#home" class="pl-0 text-white" style="text-decoration: none;">
                     <div class="card MyHome">
                         <div class="card-body d-flex align-items-end pb-3">
                             <div>
@@ -98,7 +98,7 @@
                 </a>
             </div>
             <div class=" pt-3">
-                <a href="/m/package/#tower" class="pl-0 text-white">
+                <a href="/m/package/#tower" class="pl-0 text-white" style="text-decoration: none;">
                     <div class="card MyTower">
                         <div class="card-body d-flex align-items-end pb-3">
                             <div>
@@ -199,10 +199,20 @@
                     </li>
                 </ul>
 			</div>
-            <div class="text-left pt-3">
+            <div class="text-left pt-3 d-inline-block">
                 <a data-fancybox href="https://www.youtube.com/embed/OBm3CPqiXt8?rel=0&enablejsapi=1" class="btn text-black pl-0">
                     <div class="link-text">
                         Watch video 
+                    </div>&nbsp;
+                    <div class="link-icon">
+                        <i class="fas fa-arrow-right"></i> 
+                    </div>
+                </a>
+            </div>
+            <div class="text-left d-inline-block">
+                <a data-fancybox href="https://www.youtube.com/embed/OBm3CPqiXt8?rel=0&enablejsapi=1" class="btn text-black pl-0">
+                    <div class="link-text">
+                         Check how all packages works
                     </div>&nbsp;
                     <div class="link-icon">
                         <i class="fas fa-arrow-right"></i> 
