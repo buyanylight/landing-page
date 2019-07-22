@@ -25,7 +25,7 @@
         </div>
     </div>    
 </div>
-<div class="section14 pt-5 pb-5">
+<div class="section14 pt-5 pb-5 all-contents">
 	<div class="section14-contents d-flex align-items-center">
 		<div class="container text-white">
 			<h3><b>BE AN INVESTOR</b></h3>

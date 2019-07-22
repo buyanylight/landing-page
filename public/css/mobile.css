@@ -11133,6 +11133,42 @@ nav .dropdown-toggle::after {
   display: none;
 }
 
+.navbar-collapse {
+  position: absolute;
+  top: 54px;
+  right: -100%;
+  width: 100%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: block;
+  opacity: 0.8;
+}
+
+.navbar-collapse.collapsing {
+  height: auto !important;
+  right: -100%;
+  margin-left: 1px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0.9;
+}
+
+.navbar-collapse.show {
+  margin-right: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 1;
+}
+
+.navbar-nav {
+  margin-left: 40%;
+}
+
+.filter {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
 .navbar-dark .navbar-nav .nav-link {
   font-size: 15px;
 }
@@ -11333,6 +11369,12 @@ nav .dropdown-toggle::after {
 .intro-faq {
   height: 30vh;
   background: url("/images/mobile_bg/faq_mobile.jpg");
+  background-size: cover;
+}
+
+.intro-addons {
+  height: 30vh;
+  background: url("/images/mobile_bg/add_ons_mobile.jpg");
   background-size: cover;
 }
 

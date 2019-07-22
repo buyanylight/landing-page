@@ -11,7 +11,7 @@
 @endsection
 
 @section('content')
-<div class="seller-faq pt-5 pb-5 bg-white">
+<div class="seller-faq pt-5 pb-5 bg-white all-contents">
     <div class="intro-faq d-flex align-items-center">
     	<div class="container">
     		<h3 class="text-white"><b>SELLER FAQ</b></h3>
