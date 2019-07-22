@@ -34,6 +34,7 @@
                     </button>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="/m/#works">How it works</a>
+                        <a class="dropdown-item" href="/m/about">About BAL</a>
                         <a class="dropdown-item" href="/m/why-us">Why BAL</a>
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/buyer/register">Register</a>
                         <a class="dropdown-item" href="/buyer-faq">FAQ</a>
