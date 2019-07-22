@@ -1,7 +1,7 @@
 @extends('layouts.mobile-layout')
 @section('content')
 
-<div class="section6 pt-5 pb-5" id="why-bal">
+<div class="section6 pt-5 pb-5 all-contents" id="why-bal">
 		<div class="intro-why d-flex align-items-center ">
             <div class="container">
                 <h3 class=" text-white">

@@ -199,7 +199,7 @@
                     </li>
                 </ul>
 			</div>
-            <div class="text-left pt-3 d-inline-block">
+            <div class="text-left pt-3">
                 <a data-fancybox href="https://www.youtube.com/embed/OBm3CPqiXt8?rel=0&enablejsapi=1" class="btn text-black pl-0">
                     <div class="link-text">
                         Watch video 
@@ -209,10 +209,10 @@
                     </div>
                 </a>
             </div>
-            <div class="text-left d-inline-block">
-                <a data-fancybox href="https://www.youtube.com/embed/OBm3CPqiXt8?rel=0&enablejsapi=1" class="btn text-black pl-0">
+            <div class="text-left">
+                <a href="/m/package" class="btn text-black pl-0">
                     <div class="link-text">
-                         Check how all packages works
+                         Other package benefits
                     </div>&nbsp;
                     <div class="link-icon">
                         <i class="fas fa-arrow-right"></i> 
