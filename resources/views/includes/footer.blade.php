@@ -121,7 +121,7 @@
                         <div>
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <a href="/terms" class="text-white">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/privacy" class="text-white">Privacy & Cookies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© BuyAnyLight 2019
+                                    <a href="/terms" class="text-white">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/privacy" class="text-white">Privacy & cookies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© BuyAnyLight 2019
                                 </div>
                                 <div class="col-sm-4">
                                 </div>
