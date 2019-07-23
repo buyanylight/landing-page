@@ -57,7 +57,7 @@
                                 My Tower (contractors, consultants and project owners)
                             </li>
                             <li>
-                                 Sourcing Solutions (lighting companies)
+                                LightFinder (lighting companies)
                             </li>
                         </ul>
       				</div>
