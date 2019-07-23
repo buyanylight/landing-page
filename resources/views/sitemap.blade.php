@@ -7,7 +7,7 @@
 		<priority>0.5</priority>
 	</url>
 
-		<url> 
+	<url> 
 		<loc>https://buyanylight.com/investor</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
@@ -47,6 +47,48 @@
 
 	<url> 
 		<loc>https://buyanylight.com/privacy</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url> 
+		<loc>https://buyanylight.com/m/about</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url> 
+		<loc>https://buyanylight.com/m/investor</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url> 
+		<loc>https://buyanylight.com/m/seller</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url> 
+		<loc>https://buyanylight.com/m/why-us</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url> 
+		<loc>https://buyanylight.com/m/package</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url> 
+		<loc>https://buyanylight.com/m/add-ons</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url> 
+		<loc>https://buyanylight.com/m/more-reasons</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>

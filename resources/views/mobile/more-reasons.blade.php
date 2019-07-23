@@ -17,7 +17,7 @@
 			As LED experts, we’ve always known that that top quality LED saves up to 90% on energy costs alone. We also knew that with our buying power and global networks, we could source the best LED at the best possible prices. What’s more, we knew that we could make the whole choose – order – deliver process fast, simple and highly efficient.
 		</p>
 		<p>
-			So we created BAL
+			So we created BAL.
 		</p>
 		<p>
 			BAL’s advanced online platform allows homeowners, consultants, contractors and project owners to find the LED lights they want quickly, efficiently, easily – and at the market’s lowest prices.
