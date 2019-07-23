@@ -87,7 +87,7 @@
 				<div class="tab-content pt-3" id="pills-tabContent">
   					<div class="tab-pane fade show active" id="pills-english" role="tabpanel" aria-labelledby="pills-english-tab">
   						<div class="embed-responsive embed-responsive-16by9 video">
-	             			<iframe width="640" height="360" src="https://www.youtube.com/embed/7N3FqFyASC0?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+	             			<iframe width="640" height="360" src="https://www.youtube.com/embed/7N3FqFyASC0?version=3&enablejsapi=1" frameborder="0" allowfullscreen id="english-video"></iframe>
 	        			</div>
   					</div>
   					<div class="tab-pane fade" id="pills-chinese" role="tabpanel" aria-labelledby="pills-chinese-tab">
@@ -131,5 +131,13 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+    $(document).ready(function(){
+		$('#pills-chinese-tab').click(function(){
+			console.log("Stop video");
+			$('#english-video').stopVideo();
+		});
+    });
+</script>
 
 @endsection

@@ -52,7 +52,7 @@
                         <a class="dropdown-item" href="/m/package/#home">My Home Plan</a>
                         <a class="dropdown-item" href="/m/package/#tower">My Tower Plan</a>
                         <a class="dropdown-item" href="/m/package/#finder">LightFinder Plan</a>
-                        <a class="dropdown-item" href="/m/add-ons">Add ons</a>
+                        <a class="dropdown-item" href="/m/add-ons">Add-ons</a>
                     </div>
                 </li>
                 <hr class="border-white w-100 m-2">

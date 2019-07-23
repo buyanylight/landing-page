@@ -32,7 +32,7 @@
                         <a class="dropdown-item" href="/#tower">My Tower Plan</a>
                         <a class="dropdown-item" href="/#finder">LightFinder Plan</a>
                         <a class="dropdown-item" href="/#package">Summary</a>
-                        <a class="dropdown-item" href="/#addons">Addons</a>
+                        <a class="dropdown-item" href="/#addons">Add-ons</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
