@@ -973,9 +973,9 @@
         </div>
     </div>
     <div class="section-9" id="home">
-        <div class="section-9-container pb-5 bg-black text-white h-100">
+        <div class="section-9-container pb-5 pt-5 bg-black text-white h-100">
             <div class="container h-100">
-                <div class="row  align-items-center pt-5">
+                <div class="row  align-items-center">
                     <div class="col-md-6">
                          <div class="embed-responsive embed-responsive-16by9 video">
                             <iframe width="640" height="360" src="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
@@ -1087,7 +1087,7 @@
         </div>
     </div>
     
-    <div class="section-12 pb-5" id="package">
+    <div class="section-12 pb-5 pt-5" id="package">
         <div class="section-12-container h-100">
             <div class="container h-100">
                 <h4 class="text-center pt-5 font-weight-bold">
@@ -1502,7 +1502,7 @@
             </div>
         </div>
     </div>
-    <div class="section-13 pb-5 pt-5">
+    <div class="section-13 pb-5 pt-5" id="addons">
         <div class="section-13-container">
             <div class="container">
                 <h4 class="pt-5 font-weight-bold">
