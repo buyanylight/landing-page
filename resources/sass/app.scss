@@ -15,3 +15,92 @@ body{
 	font-size: 13px;
 	background-color: white;
 }
+
+
+.section-1{
+	background: url('/images/hexagon2.png');
+    height: 50vh;
+    background-size: 112%;
+    background-position-y: bottom;
+    background-position-x: center;
+
+}
+
+.section-1 .sub-title{
+	font-size: 19px;
+}
+
+
+.link-text{
+	display: inline-block;
+}
+
+.link-icon{
+	display: inline-block;
+    position: relative;
+    top: 2px;
+    font-size: 15px;
+}
+
+
+.section-2{
+	height: 47vh;
+}
+
+.card-top{
+	width:50px;
+}
+
+.all-cards{
+	position: relative;
+    top: -50px;
+    box-shadow: 0px 4px 10px #c3c3c3;
+}
+
+.btn-BAL{
+	background-color: #1D2951;
+	color: #fff;
+}
+
+.btn-BAL:hover{
+	background:#33447d;
+	color: #fff;
+}
+
+footer{
+	height: 100%;
+}
+
+.footer-list{
+	font-size:13px;
+	list-style-type: none;
+}
+
+.one-brand{
+	width: 64px;
+ 	-webkit-filter: grayscale(100%);
+  	-moz-filter: grayscale(100%);
+  	-ms-filter: grayscale(100%);
+  	-o-filter: grayscale(100%);
+  	filter: grayscale(100%);
+}
+
+.one-link{
+	font-size: 20px;
+}
+
+.one-pay{
+	font-size: 30px;
+}
+
+.text-grey{
+	color: grey;
+}
+
+.bg-black{
+	background-color: #000;
+}
+
+.bg-white{
+	background-color: #fff !important;
+}
