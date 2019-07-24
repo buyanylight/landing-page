@@ -63,7 +63,7 @@
     @show
 
     @section('meta-description')
-    <meta name="description" content="BuyAnyLight (BAL) has the world’s largest network of lighting manufacturers, and we are continually adding more, allowing BAL to provide the finest platform for finding any type of LED lighting item. Our artificial intelligence systems and high-speed servers match buyer enquiries with the most suitable suppliers in a matter of seconds and instantly send out Requests For Quotes (RFQs). When your quotes arrive, simply use the powerful BAL tools to select the most competitive: it’s fast and beautifully simple! BAL secures 100% of your funds until you receive your goods. The system also manages the logistics, so you receive your order on time, safely and securely." />
+    <meta name="description" content="BUY ANY LIGHT (BAL) has pioneered an innovation that changes the procedure of sourcing lights forever! The BAL platform benefits users with the best possible prices for any light, increased efficiency of lights procurement, access to the actual manufacturers of top global brands, increased profits, automation functions, and many other excellent features." />
     <meta property="og:description" content="BUY ANY LIGHT (BAL) has pioneered an innovation that changes the procedure of sourcing lights forever! The BAL platform benefits users with the best possible prices for any light, increased efficiency of lights procurement, access to the actual manufacturers of top global brands, increased profits, automation functions, and many other excellent features.">
     @show
 
