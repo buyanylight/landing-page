@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark {{Request::path() == '/'  ? 'bg-transparent' : 'bg-black'}} fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-black">
     <div class="container-fluid">
         <a class="navbar-brand " href="/">
             <img src="{{ asset('images/logo-white.png') }}" width="250" class="logo">
