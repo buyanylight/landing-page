@@ -211,6 +211,11 @@
                 <div id="seller" class="accordion-body collapse">
                 	<div class="accordion-inner">
                     	<ul class="footer-list m-0 text-dark">
+                  			<li class="mt-3" >
+                  				<a href="/seller" class="text-dark">
+                  					Start today
+                  				</a>
+                  			</li>
                   			<li class="mt-3">
                   				<a href="https://lightfinder.buyanylight.com/supplier/register" class="text-dark">
                   					Register
@@ -219,11 +224,6 @@
                   			<li class="mt-3" >
                   				<a href="https://lightfinder.buyanylight.com/" class="text-dark">
                   					Sign in
-                  				</a>
-                  			</li>
-                  			<li class="mt-3" >
-                  				<a href="/seller" class="text-dark">
-                  					Apply
                   				</a>
                   			</li>
                   			<li class="mt-3 mb-3">
