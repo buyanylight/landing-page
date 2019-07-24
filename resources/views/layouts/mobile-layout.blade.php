@@ -193,6 +193,21 @@
             }
         })
 
+
+        $('.about-btn, .help-icon').click(function(){
+            console.log("Hello World!");
+            if($('.about-down').is(':visible')){
+
+                $('.about-down').hide();  
+                $('.about-up').show();  
+
+            } else {
+
+                $('.about-down').show();  
+                $('.about-up').hide(); 
+            }
+        })
+
        $(window).scroll(function(){
             $(".share-icons").css("opacity", 1 - $(window).scrollTop() / 250);
         });

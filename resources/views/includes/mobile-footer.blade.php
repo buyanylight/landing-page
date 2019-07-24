@@ -117,7 +117,47 @@
                  	</div>
                 </div>
             </div>
-	   		
+            <hr class="m-0 border-dark">
+            <div class="accordion-group">
+                <div class="accordion-heading about-btn">
+                    <a class="accordion-toggle pt-4 pb-4 pl-3 text-dark w-100 d-block" data-toggle="collapse" href="#about">
+                        About
+                        <div class="about-down float-right pr-4">
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="about-up float-right pr-4" style="display: none;">
+                            <i class="fas fa-angle-up"></i>
+                        </div>
+                    </a>
+                </div>
+                <hr class="m-0 border-dark">
+                <div id="about" class="accordion-body collapse in">
+                    <div class="accordion-inner">
+                        <ul class="footer-list m-0 text-dark">
+                            <li class="mt-3">
+                                <a href="/#works" class="text-dark">
+                                    How it works                                    
+                                </a>
+                            </li>
+                            <!-- <li class="mt-3">
+                                <a href="">BAL vs. retail</a>
+                            </li> -->
+                            <li class="mt-3">
+                                <a href="/m/package" class="text-dark" >Packages</a>
+                            
+                            </li>
+                            <li class="mt-3">
+                                <a href="/m/about" class="text-dark">About us</a>
+                            </li>
+                            <li class="mt-3 mb-3">
+                                <a href="/m/why-us" class="text-dark">
+                                    Why BAL
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 	   		<hr class="m-0 border-dark">
             <div class="accordion-group">
                 <div class="accordion-heading buyer-btn">
@@ -135,26 +175,6 @@
                 <div id="buyer" class="accordion-body collapse in">
                 	<div class="accordion-inner">
                     	<ul class="footer-list m-0 text-dark">
-                  			<li class="mt-3">
-                  				<a href="/#works" class="text-dark">
-									How it works                  					
-                  				</a>
-							</li>
-                  			<!-- <li class="mt-3">
-                  				<a href="">BAL vs. retail</a>
-                  			</li> -->
-                  			<li class="mt-3">
-                  				<a href="/m/package" class="text-dark" >Packages</a>
-                  			
-                  			</li>
-                  			<li class="mt-3">
-                  				<a href="/m/about" class="text-dark">About us</a>
-                  			</li>
-                  			<li class="mt-3">
-								<a href="/m/why-us" class="text-dark">
-									Why BAL
-								</a>
-							</li>
                   			<li class="mt-3">
                   				<a href="https://lightfinder.buyanylight.com/buyer/register" class="text-dark">
                   					Register
