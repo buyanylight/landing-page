@@ -66,6 +66,30 @@
 </head>
 <body class="eupopup eupopup-bottom eupopup-style-compact">
 	@include('includes.mobile-navbar')
+    <div style="position: relative;  z-index: 5">
+            <!-- Position toasts -->
+        <div style="position: absolute; top: 70px; left:10px; min-width: 300px;">
+            <div class="toast" data-autohide="false">
+                <div class="toast-header">
+                    <strong class="mr-auto">
+                        <img src="{{ asset('images/logo-black-icon.png') }}" width="25">
+                        BuyAnyLight
+                    </strong>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+                </div>
+                @if(session('success'))
+                <div class="toast-body">
+                    <b>Thanks for being awesome!</b>
+                    {!! session('success') !!}
+                </div>
+                @else
+                <div class="toast-body">
+                    {!! session('danger') !!}
+                </div>
+                @endif
+            </div>
+        </div>    
+    </div>
 	@yield('content')
     
     @include('includes.mobile-footer')
@@ -82,6 +106,18 @@
     @endif
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render={{ env('CAPTCHA_KEY') }}"></script>
+    <script type="text/javascript">
+    grecaptcha.ready(function() {
+        grecaptcha.execute( '{{ env('CAPTCHA_KEY') }}' , { action: 'contact' } )
+           .then(function(token) {
+                var recaptchaResponse = document.getElementById('recaptchaResponse');
+                recaptchaResponse.value = token;
+                $('.send-message').removeAttr('disabled','disabled');
+            });
+     });
+
+    </script>
     <script type="text/javascript">
 
       $( document ).ready(function() {
