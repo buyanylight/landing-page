@@ -1,31 +1,6 @@
 @extends('layouts.mobile-layout')
 
 @section('content')
-
-<div style="position: relative;  z-index: 5">
-            <!-- Position toasts -->
-    <div style="position: absolute; top: 70px; left:10px; min-width: 300px;">
-        <div class="toast" data-autohide="false">
-            <div class="toast-header">
-                <strong class="mr-auto">
-                    <img src="{{ asset('images/logo-black-icon.png') }}" width="25">
-                    BuyAnyLight
-                </strong>
-                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
-            </div>
-            @if(session('success'))
-            <div class="toast-body">
-                <b>Thanks for being awesome!</b>
-                {!! session('success') !!}
-            </div>
-            @else
-            <div class="toast-body">
-                {!! session('danger') !!}
-            </div>
-            @endif
-        </div>
-    </div>    
-</div>
 <div class="all-contents">
 	<div class="section1">
 		<div class="h-100 d-flex align-items-center justify-content-center container text-white">
@@ -241,16 +216,4 @@
 		</div>
 	</div>
 </div>
-<script src="https://www.google.com/recaptcha/api.js?render={{ env('CAPTCHA_KEY') }}"></script>
-<script type="text/javascript">
-    grecaptcha.ready(function() {
-        grecaptcha.execute( '{{ env('CAPTCHA_KEY') }}' , { action: 'contact' } )
-           .then(function(token) {
-                var recaptchaResponse = document.getElementById('recaptchaResponse');
-                recaptchaResponse.value = token;
-                $('.send-message').removeAttr('disabled','disabled');
-            });
-     });
-
-</script>
 @endsection
