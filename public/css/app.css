@@ -11134,7 +11134,7 @@ body {
 }
 
 .section-2 {
-  height: 47vh;
+  height: 50vh;
 }
 
 .card-top {
@@ -11155,6 +11155,17 @@ body {
 .btn-BAL:hover {
   background: #33447d;
   color: #fff;
+}
+
+.section-3 {
+  background: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(50%, #000000), color-stop(50%, #ffffff), to(#ffffff));
+  background: linear-gradient(to right, #000000 0%, #000000 50%, #ffffff 50%, #ffffff 100%);
+}
+
+.section-3-hr {
+  margin-right: 365px;
+  background-color: white;
+  margin-top: 8px;
 }
 
 footer {
@@ -11193,5 +11204,9 @@ footer {
 
 .bg-white {
   background-color: #fff !important;
+}
+
+.half-width {
+  width: 49.91%;
 }
 

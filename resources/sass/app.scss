@@ -44,7 +44,7 @@ body{
 
 
 .section-2{
-	height: 47vh;
+	height: 50vh;
 }
 
 .card-top{
@@ -66,6 +66,22 @@ body{
 	background:#33447d;
 	color: #fff;
 }
+
+
+
+.section-3{
+	background: linear-gradient(to right, #000000 0%,#000000 50%,#ffffff 50%,#ffffff 100%);
+	// background: linear-gradient(to right, #000000 0%,#ffffff 50%,#ffffff 50%,#ffffff 100%);
+
+}
+
+
+.section-3-hr{
+	margin-right: 365px;
+	background-color: white;
+	margin-top: 8px;
+}
+
 
 footer{
 	height: 100%;
@@ -103,4 +119,8 @@ footer{
 
 .bg-white{
 	background-color: #fff !important;
+}
+
+.half-width{
+	width: 49.91%
 }
