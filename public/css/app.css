@@ -11111,11 +11111,12 @@ body {
 }
 
 .section-1 {
-  background: url("/images/hexagon2.png");
+  background: url("/images/section_1_bg.png"), url("/images/hexagon2.png");
   height: 50vh;
-  background-size: 112%;
-  background-position-y: bottom;
-  background-position-x: center;
+  background-size: 28%, 115%;
+  background-position-y: 0px, 110%;
+  background-position-x: 70%, center;
+  background-repeat: no-repeat;
 }
 
 .section-1 .sub-title {
@@ -11148,7 +11149,7 @@ body {
 }
 
 .btn-BAL {
-  background-color: #1D2951;
+  background-color: #5555A4;
   color: #fff;
 }
 
@@ -11158,8 +11159,8 @@ body {
 }
 
 .section-3 {
-  background: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(50%, #000000), color-stop(50%, #ffffff), to(#ffffff));
-  background: linear-gradient(to right, #000000 0%, #000000 50%, #ffffff 50%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, right top, from(black), to(#5555A4));
+  background: linear-gradient(to right, black, #5555A4);
 }
 
 footer {

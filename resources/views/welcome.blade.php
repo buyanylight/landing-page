@@ -95,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center mb-5">
+        <div class="text-center mb-5 trial-btn-link">
             <a href="" class="btn btn-BAL btn-lg">Start your free trial</a>
         </div>
     </div>
@@ -103,6 +103,12 @@
 <section class="section-3">
     <div class="container pt-5 pb-5">
         <div class="row d-flex align-items-center">
+            <div class="col-md-6 text-white">
+                <div class="embed-responsive embed-responsive-16by9 video">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>  
+            </div>
+            <div class="col-md-1"></div>
             <div class="col-md-5 text-white">
                 <div>
                     <h3>
@@ -123,18 +129,34 @@
                     </p>
                 </div>
             </div>
-            <div class="col-md-2"></div>
-            <div class="col-md-5 ">
-                <div class="embed-responsive embed-responsive-16by9 video">
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>  
-            </div>
         </div>
     </div>
 </section>
-<section>
-    <div>
-        
+<section class="section-4">
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>
+                    <b>About BuyAnyLight</b>
+                </h3>
+                <p>
+                    BuyAnyLight (BAL) has transformed the way we source LED lighting. The BAL platform gives users:
+                </p>
+                <ul>
+                    <li>higher profit margins</li>
+                    <li>the best possible prices for any light unit</li>
+                    <li>greater efficiency of lighting procurement</li>
+                    <li>superb online automation and functionality</li>
+                    <li>access to top global brand manufacturers.</li>
+                </ul>
+                <p>
+                    Whether you have lots of experience with LED lights or none at all, we have a package to help you achieve all your objectives.
+                </p>
+            </div>
+            <div class="col-md-6">
+                
+            </div>
+        </div>
     </div>
 </section>
 
