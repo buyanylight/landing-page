@@ -103,33 +103,38 @@
 <section class="section-3">
     <div class="container pt-5 pb-5">
         <div class="row d-flex align-items-center">
-            <div class="col-md-5 pr-5 text-white">
+            <div class="col-md-5 text-white">
                 <div>
                     <h3>
                         <b>Mission</b> 
-                        <hr class="section-3-hr">
+                        <hr style="margin-right: 352px; background-color: white; margin-top: 8px;">
                     </h3>
                     <p>                        
                         Principled, honest and focused, we leverage the world’s best suppliers and deliver the greatest value LED products, the finest service and advice and first-rate customer satisfaction – every time.    
                     </p>
                 </div>
-                <div>
+                <div class="pt-3">
                     <h3>
                         <b>Vision</b>
-                        <hr class="section-3-hr">
+                        <hr style="margin-right: 372px; background-color: white; margin-top: 8px;">
                     </h3>
                     <p>
                         We will be the global platform of choice for buyers and sellers of quality LED lighting.
                     </p>
                 </div>
             </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-6 pl-5">
+            <div class="col-md-2"></div>
+            <div class="col-md-5 ">
                 <div class="embed-responsive embed-responsive-16by9 video">
                     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>  
             </div>
         </div>
+    </div>
+</section>
+<section>
+    <div>
+        
     </div>
 </section>
 
