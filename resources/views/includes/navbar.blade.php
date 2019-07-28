@@ -27,10 +27,10 @@
                     Packages
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/#trial">Free Trial Plan</a>
-                        <a class="dropdown-item" href="/#home">My Home Plan</a>
-                        <a class="dropdown-item" href="/#tower">My Tower Plan</a>
-                        <a class="dropdown-item" href="/#finder">LightFinder Plan</a>
+                        <a class="dropdown-item" href="/#trial">Free Trial</a>
+                        <a class="dropdown-item" href="/#home">My Home</a>
+                        <a class="dropdown-item" href="/#tower">My Tower</a>
+                        <a class="dropdown-item" href="/#finder">LightFinder</a>
                         <a class="dropdown-item" href="/#package">Summary</a>
                         <a class="dropdown-item" href="/#addons">Add-ons</a>
                     </div>
