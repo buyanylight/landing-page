@@ -10,7 +10,7 @@
                             <h3>Introduction</h3>
 
                             <p>
-                                By accessing or using www.buyanylight.com (the “Website”), a website owned and maintained by Almani Lighting LLC (“Company”, “we,” “us” or “our”), you consent to the information collection, disclosure and use practices described in this Privacy Policy. This Privacy Policy applies to all services provided by us and sets out how we may collect, use and disclose information in relation to users of the Website
+                                By accessing or using www.buyanylight.com (the “Website”), a website owned and maintained by Dotcom Ventures (“Company”, “we,” “us” or “our”), you consent to the information collection, disclosure and use practices described in this Privacy Policy. This Privacy Policy applies to all services provided by us and sets out how we may collect, use and disclose information in relation to users of the Website
                             </p>
 
                             <p>The Website provides a platform which connects sellers and Buyers of lights. The Website is an innovative lighting sourcing platform which connects seller and Buyers directly together without the need of an intermediary. Sellers can be manufacturers as well as distributors while Buyers can be retailers, contractors, or the end users who need to source substantial number of lights. The Website allows Buyers to submit Request for Quotes (RFQs) to sellers. In response, the sellers will be able to send their Quotes to these Buyers and lock the deal (“Services”).</p>
@@ -39,10 +39,10 @@
                                 </li>
 
                                 <li>
-                                    <span style="font-weight: bold">Name:</span> Almani Lighting LLC
+                                    <span style="font-weight: bold">Name:</span> Dotcom Ventures FZE
                                 </li>
                                 <li>
-                                    <span style="font-weight: bold">Address:</span>Almani Lighting L.L.C. Showroom 10, Dubai Investment Park 1, Opposite Green Community East, Beside Park N' Shop P.O. BOX 3219 Dubai, UAE
+                                    <span style="font-weight: bold">Address:</span>Business Center, Al Shmookh Building, UAQ Free Trade Zone, Umm Al Quwain, United Arab Emirates
                                 </li>
 
                                 <li>
