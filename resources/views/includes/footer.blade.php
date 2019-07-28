@@ -108,7 +108,7 @@
                         <h5 class="text-white">Accepted Payments</h5>
                         <div class="row mt-3">
                             <div class="col">
-                                <img src=" {{ asset('images/payment2.png') }}" width="69%">
+                                <img src=" {{ asset('images/payment.png') }}" width="69%">
                             </div>
                         </div>
                     </div>
