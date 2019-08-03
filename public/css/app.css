@@ -11106,15 +11106,33 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   background-color: white;
 }
 
+nav {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.scrollUp {
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+}
+
+.ncol {
+  color: black !important;
+}
+
+.navbar-nav li:hover > .dropdown-menu {
+  display: block;
+}
+
 .section-1 {
-  background: url("/images/section_1_bg.png"), url("/images/hexagon2.png");
+  background: url("/images/section_1_bg(1).png"), url("/images/hexagon2.png");
   height: 50vh;
   background-size: 28%, 115%;
-  background-position-y: 0px, 110%;
+  background-position-y: 30px, bottom;
   background-position-x: 70%, center;
   background-repeat: no-repeat;
 }
@@ -11153,14 +11171,296 @@ body {
   color: #fff;
 }
 
+.bg-BAL {
+  background-color: #5555A4;
+}
+
 .btn-BAL:hover {
   background: #33447d;
   color: #fff;
 }
 
 .section-3 {
-  background: -webkit-gradient(linear, left top, right top, from(black), to(#5555A4));
-  background: linear-gradient(to right, black, #5555A4);
+  background: #5555A4;
+  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(#1D2951), to(#5555A4));
+  background: linear-gradient(to right, black, #1D2951, #5555A4);
+}
+
+.video {
+  border: 5px solid #5555A4;
+  padding: 0px;
+}
+
+.section-4 {
+  background: url("/images/section4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+}
+
+.about-img {
+  position: absolute;
+  width: 50%;
+  top: 110%;
+  left: 22%;
+}
+
+.section-5 {
+  height: 100%;
+}
+
+.section-6 {
+  background: url("/images/section4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+}
+
+.font-15 {
+  font-size: 15px;
+}
+
+.section-7 {
+  background: #5555a40a;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff !important;
+  background-color: #5555A4;
+}
+
+.package-one {
+  background: url("/images/LightFinder.jpg");
+  height: 160px;
+  background-size: 100%;
+}
+
+.package-two {
+  background: url("/images/MyHome.jpg");
+  height: 160px;
+  background-size: 100%;
+}
+
+.package-three {
+  background: url("/images/MyTower.jpg");
+  height: 160px;
+  background-size: 100%;
+}
+
+.card-my-tower {
+  width: 100%;
+}
+
+.card-my-home {
+  width: 100%;
+}
+
+.card-trial {
+  width: 100%;
+}
+
+.card-mini {
+  height: 100%;
+  width: 100%;
+}
+
+.card-standard {
+  height: 100%;
+  width: 100%;
+}
+
+.card-premium {
+  height: 110%;
+  box-shadow: 0px 0px 10px 0px #545454;
+  width: 100%;
+}
+
+.section-8-hr {
+  background-color: black;
+  margin-right: 438px;
+}
+
+.trial-list {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.trial-list li {
+  margin-top: 10px;
+}
+
+.section-9 {
+  height: 100%;
+  background-position-x: center;
+  background-position-y: -800px;
+  background-size: 104%;
+}
+
+.card-my-tower-summary {
+  width: 370px;
+}
+
+.card-my-home-summary {
+  width: 370px;
+}
+
+.card-trial-summary {
+  width: 370px;
+}
+
+.card-mini-summary {
+  height: 100%;
+  position: relative;
+  top: 5%;
+  left: 1%;
+  width: 370px;
+}
+
+.card-standard-summary {
+  height: 100%;
+  position: relative;
+  top: 5%;
+  right: 1%;
+  width: 370px;
+}
+
+.card-premium-summary {
+  height: 110%;
+  box-shadow: 0px 0px 10px 0px #545454;
+  z-index: 1;
+  width: 370px;
+}
+
+.section-9-hr {
+  background-color: black;
+  margin-right: 438px;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-65 {
+  width: 65%;
+}
+
+.trial-height {
+  height: 250px;
+}
+
+.pt-height {
+  height: 335px;
+}
+
+.pills-all {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.section-10-img {
+  width: 345px;
+  height: 225px;
+}
+
+.seller-faq {
+  height: 100%;
+  padding-top: 100px;
+}
+
+.buyer-faq {
+  height: 100%;
+  padding-top: 100px;
+}
+
+.intro-faq {
+  height: 45vh;
+  background: url("/images/faq_bg.png");
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+}
+
+.intro-contact {
+  height: 45vh;
+  background: url("/images/faq_bg.png");
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+}
+
+.contact {
+  height: 100%;
+  padding-top: 100px;
+}
+
+.contact-form-container {
+  position: relative;
+}
+
+.formBox {
+  padding: 50px;
+}
+
+.formBox h1 {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.formBox p {
+  margin-bottom: 50px;
+}
+
+.inputBox {
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 35px;
+}
+
+.inputBox .inputText {
+  position: absolute;
+  font-size: 12px;
+  line-height: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+.inputBox .input {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+
+.focus .inputText {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  font-size: 18px;
+  opacity: 1;
+  color: #00bcd4;
+}
+
+textarea {
+  height: 100px !important;
+}
+
+.location {
+  padding: 20px;
+  padding-top: 50px;
 }
 
 footer {
@@ -11203,5 +11503,9 @@ footer {
 
 .half-width {
   width: 49.91%;
+}
+
+.text-BAL {
+  color: #5555A4;
 }
 

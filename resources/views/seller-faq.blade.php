@@ -22,7 +22,7 @@
       			<div class="card border-0 bg-white">
         			<div class="card-header bg-white border-0" id="headingOne">
           				<h5 class="mb-0">
-            				<button class="btn btn-link" data-toggle="collapse" data-target="#faq-1" aria-expanded="true" aria-controls="faq-1">
+            				<button class="btn btn-link text-BAL" data-toggle="collapse" data-target="#faq-1" aria-expanded="true" aria-controls="faq-1">
               				What is BAL?
             				</button>
           				</h5>
@@ -37,7 +37,7 @@
       			<div class="card border-0 bg-white">
         			<div class="card-header bg-white border-0" id="headingOne">
           				<h5 class="mb-0">
-            				<button class="btn btn-link" data-toggle="collapse" data-target="#faq-2" aria-expanded="true" aria-controls="faq-2">
+            				<button class="btn btn-link text-BAL" data-toggle="collapse" data-target="#faq-2" aria-expanded="true" aria-controls="faq-2">
               				Who can register as BAL supplier?
             				</button>
           				</h5>
@@ -52,7 +52,7 @@
       			<div class="card border-0 bg-white">
         			<div class="card-header bg-white border-0" id="headingOne">
           				<h5 class="mb-0">
-            				<button class="btn btn-link text-left" data-toggle="collapse" data-target="#faq-3" aria-expanded="true" aria-controls="faq-3">
+            				<button class="btn btn-link text-BAL text-left" data-toggle="collapse" data-target="#faq-3" aria-expanded="true" aria-controls="faq-3">
               				How do I register with BAL as a supplier?
             				</button>
           				</h5>
@@ -67,7 +67,7 @@
       			<div class="card border-0 bg-white">
         			<div class="card-header bg-white border-0" id="headingOne">
           				<h5 class="mb-0">
-            				<button class="btn btn-link" data-toggle="collapse" data-target="#faq-4" aria-expanded="true" aria-controls="faq-4">
+            				<button class="btn btn-link text-BAL" data-toggle="collapse" data-target="#faq-4" aria-expanded="true" aria-controls="faq-4">
               				Does it cost anything to use BAL?
             				</button>
           				</h5>
@@ -82,7 +82,7 @@
       			<div class="card border-0 bg-white">
         			<div class="card-header bg-white border-0" id="headingOne">
           				<h5 class="mb-0">
-            				<button class="btn btn-link" data-toggle="collapse" data-target="#faq-5" aria-expanded="true" aria-controls="faq-5">
+            				<button class="btn btn-link text-BAL" data-toggle="collapse" data-target="#faq-5" aria-expanded="true" aria-controls="faq-5">
               				Can I contact the buyer directly?
             				</button>
           				</h5>
@@ -97,7 +97,7 @@
       			<div class="card border-0 bg-white">
         			<div class="card-header bg-white border-0" id="headingOne">
           				<h5 class="mb-0">
-            				<button class="btn btn-link text-left" data-toggle="collapse" data-target="#faq-6" aria-expanded="true" aria-controls="faq-6">
+            				<button class="btn btn-link text-BAL text-left" data-toggle="collapse" data-target="#faq-6" aria-expanded="true" aria-controls="faq-6">
               				What are the advantages of using the BAL platform?
             				</button>
           				</h5>
@@ -112,7 +112,7 @@
         		<div class="card border-0 bg-white">
         			<div class="card-header bg-white border-0" id="headingOne">
           				<h5 class="mb-0">
-            				<button class="btn btn-link" data-toggle="collapse" data-target="#faq-7" aria-expanded="true" aria-controls="faq-7">
+            				<button class="btn btn-link text-BAL" data-toggle="collapse" data-target="#faq-7" aria-expanded="true" aria-controls="faq-7">
               				How will I get enquiries from buyers?
             				</button>
           				</h5>
@@ -127,7 +127,7 @@
       			<div class="card border-0 bg-white">
         			<div class="card-header bg-white border-0" id="headingOne">
           				<h5 class="mb-0">
-            				<button class="btn btn-link text-left" data-toggle="collapse" data-target="#faq-8" aria-expanded="true" aria-controls="faq-8">
+            				<button class="btn btn-link text-BAL text-left" data-toggle="collapse" data-target="#faq-8" aria-expanded="true" aria-controls="faq-8">
               				What happens after I’ve responded to a bid?
             				</button>
           				</h5>
@@ -142,7 +142,7 @@
       			<div class="card border-0 bg-white">
         			<div class="card-header bg-white border-0" id="headingOne">
           				<h5 class="mb-0">
-            				<button class="btn btn-link text-left" data-toggle="collapse" data-target="#faq-9" aria-expanded="true" aria-controls="faq-9">
+            				<button class="btn btn-link text-BAL text-left" data-toggle="collapse" data-target="#faq-9" aria-expanded="true" aria-controls="faq-9">
               				Can I get an advance payment for confirmed orders?
             				</button>
           				</h5>
@@ -157,7 +157,7 @@
       			<div class="card border-0 bg-white">
         			<div class="card-header bg-white border-0" id="headingOne">
           				<h5 class="mb-0">
-            				<button class="btn btn-link" data-toggle="collapse" data-target="#faq-10" aria-expanded="true" aria-controls="faq-10">
+            				<button class="btn btn-link text-BAL" data-toggle="collapse" data-target="#faq-10" aria-expanded="true" aria-controls="faq-10">
               				What shipping methods are used?
             				</button>
           				</h5>
@@ -172,7 +172,7 @@
       			<div class="card border-0 bg-white">
         			<div class="card-header bg-white border-0" id="headingOne">
           				<h5 class="mb-0">
-            				<button class="btn btn-link" data-toggle="collapse" data-target="#faq-11" aria-expanded="true" aria-controls="faq-11">
+            				<button class="btn btn-link text-BAL" data-toggle="collapse" data-target="#faq-11" aria-expanded="true" aria-controls="faq-11">
               				What if I forget my BAL password?
             				</button>
           				</h5>
@@ -187,7 +187,7 @@
       			<div class="card border-0 bg-white">
         			<div class="card-header bg-white border-0" id="headingOne">
           				<h5 class="mb-0">
-            				<button class="btn btn-link text-left" data-toggle="collapse" data-target="#faq-12" aria-expanded="true" aria-controls="faq-12">
+            				<button class="btn btn-link text-BAL text-left" data-toggle="collapse" data-target="#faq-12" aria-expanded="true" aria-controls="faq-12">
               				If I have a question or concern, who do I contact?
             				</button>
           				</h5>

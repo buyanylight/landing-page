@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand " href="/">
             <img src="{{ asset('images/logo-white.png') }}" width="200" class="logo">
@@ -27,10 +27,10 @@
                     Packages
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/#trial">Free Trial</a>
-                        <a class="dropdown-item" href="/#home">My Home</a>
-                        <a class="dropdown-item" href="/#tower">My Tower</a>
-                        <a class="dropdown-item" href="/#finder">LightFinder</a>
+                        <a class="dropdown-item" href="/#all-packages">Free Trial Plan</a>
+                        <a class="dropdown-item" href="/#all-packages">My Home Plan</a>
+                        <a class="dropdown-item" href="/#all-packages">My Tower Plan</a>
+                        <a class="dropdown-item" href="/#all-packages">LightFinder Plan</a>
                         <a class="dropdown-item" href="/#package">Summary</a>
                         <a class="dropdown-item" href="/#addons">Add-ons</a>
                     </div>
@@ -67,7 +67,7 @@
                     <a class="nav-link text-white links" href="https://medium.com/@infobuyanylight" target="_blank">News</a>
                 </li>
                 <li class="nav-item mr-3">
-                    <a class="nav-link text-white links" href="/#contact">Contact</a>
+                    <a class="nav-link text-white links" href="/contact">Contact</a>
                 </li>
                 <li class="nav-item mr-3">
                     <a class="nav-link text-white links" href="https://lightfinder.buyanylight.com">Sign in</a>
