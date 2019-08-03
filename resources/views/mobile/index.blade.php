@@ -40,7 +40,7 @@
 	</div>
 	<div class="section2 pt-5 pb-5">
         <div class="container">
-            <div class="">
+            <div class="" id="finder">
                 <a href="/m/package/#finder" class=" pl-0 text-white" style="text-decoration: none;">
                     <div class="card LightFinder">
                         <div class="card-body d-flex align-items-end pb-3">
@@ -56,7 +56,7 @@
                     </div>
                 </a>
             </div>
-            <div class="pt-3">
+            <div class="pt-3" id="home">
                 <a href="/m/package/#home" class="pl-0 text-white" style="text-decoration: none;">
                     <div class="card MyHome">
                         <div class="card-body d-flex align-items-end pb-3">
@@ -72,7 +72,7 @@
                     </div>
                 </a>
             </div>
-            <div class=" pt-3">
+            <div class=" pt-3" id="tower">
                 <a href="/m/package/#tower" class="pl-0 text-white" style="text-decoration: none;">
                     <div class="card MyTower">
                         <div class="card-body d-flex align-items-end pb-3">
