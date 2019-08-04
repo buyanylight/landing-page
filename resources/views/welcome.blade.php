@@ -58,7 +58,7 @@
                     </div>
                     <div class="h-100 border-right border-dark"></div>
                     <div class="card border-0">
-                        <img src="{{ asset('images/home-icon.png') }}" class="card-top ml-3" alt="...">
+                        <img src="{{ asset('images/home-icon.png') }}" class="ml-3" alt="..." width="9%">
                         <div class="card-body">
                             <h4 class="card-title text-BAL">MyHome</h4>
                             <div class="card-subtitle mt-2 text-muted">Private homes, villas, and palaces</div>
@@ -388,14 +388,14 @@
             </div>
             <div class="col-md-2"></div>
             <div class="col-md-5 text-center">
-                <img src="{{ asset('images/find.png')}}" width="90%">
+                <img src="{{ asset('images/find.png')}}" width="50%">
             </div>
         </div>
     </div>
     <div class="container pt-5 pb-5">
         <div class="row align-items-center">
             <div class="col-md-5 text-center">
-                <img src="{{ asset('images/save.png')}}" width="45%">
+                <img src="{{ asset('images/save.png')}}" width="100%">
             </div>
             <div class="col-md-2"></div>
             <div class="col-md-5">
@@ -685,16 +685,16 @@
                     <div class="row pt-3">
                         <div class="col-md-12">
                             <!-- <hr class="border-black"> -->
-                            <button class="btn w-100 text-left pl-0 finder1" type="button" data-toggle="collapse" data-target="#finder1" aria-expanded="false" aria-controls="finder1">
+                            <button class="btn w-100 text-left pl-0 introduction" type="button" data-toggle="collapse" data-target="#introduction" aria-expanded="false" aria-controls="introduction">
                                 <b>Introduction</b>
-                                <div class="finder1-down float-right">
+                                <div class="introduction-down float-right">
                                     <i class="fas fa-angle-down"></i>
                                 </div>
-                                <div class="finder1-up float-right" style="display: none;">
+                                <div class="introduction-up float-right" style="display: none;">
                                     <i class="fas fa-angle-up"></i>
                                 </div>
                             </button>
-                            <div class="collapse" id="finder1">
+                            <div class="collapse" id="introduction">
                                 <div class="card card-body ml-0 pl-0 border-0">
                                     LightFinder users are businesses such as lighting companies, consultants or homeowners who prefer to source LED lights personally and directly from manufacturers. As a LightFinder user you can access the innovative BAL platform, upload your requirements and get the best quotes direct from BAL’s various world-class manufacturer partners. All suppliers on the BAL platform are first-class manufacturers, vetted directly by our team of experts.
                                 </div>
@@ -977,16 +977,16 @@
                     <div class="row">
                         <div class="col-md-12 pt-3">
                             <!-- <hr class="border-black"> -->
-                            <button class="btn w-100 text-left pl-0 home1" type="button" data-toggle="collapse" data-target="#home1" aria-expanded="false" aria-controls="home1">
+                            <button class="btn w-100 text-left pl-0 introduction" type="button" data-toggle="collapse" data-target="#introduction" aria-expanded="false" aria-controls="introduction">
                                 <b>Introduction</b>
-                                <div class="home1-down float-right">
+                                <div class="introduction-down float-right">
                                     <i class="fas fa-angle-down"></i>
                                 </div>
-                                <div class="home1-up float-right" style="display: none;">
+                                <div class="introduction-up float-right" style="display: none;">
                                     <i class="fas fa-angle-up"></i>
                                 </div>
                             </button>
-                            <div class="collapse" id="home1">
+                            <div class="collapse" id="introduction">
                                 <div class="card card-body ml-0 pl-0 border-0">
                                     Generic lights don’t belong in stylish, 21st century homes… Custom LED saves energy and costs, helps protect our planet and gives far greater aesthetic and design opportunities. However, choosing and buying LED locally is often complex, stressful and disappointing. BAL is here to help you source LED lights with professional precision and world-class products and service. Very few private property owners are experts in LED, lumens, CCT or CRI, so we provide all the help you want and need.
                                 </div>
@@ -1133,16 +1133,16 @@
                     <div class="row pt-3">
                         <div class="col-md-12">
                             <!-- <hr class="border-black"> -->
-                            <button class="btn w-100 text-left pl-0 tower1" type="button" data-toggle="collapse" data-target="#tower1" aria-expanded="false" aria-controls="tower1">
+                            <button class="btn w-100 text-left pl-0 introduction" type="button" data-toggle="collapse" data-target="#introduction" aria-expanded="false" aria-controls="introduction">
                                 <b>Introduction</b>
-                                <div class="tower1-down float-right">
+                                <div class="introduction-down float-right">
                                     <i class="fas fa-angle-down"></i>
                                 </div>
-                                <div class="tower1-up float-right" style="display: none;">
+                                <div class="introduction-up float-right" style="display: none;">
                                     <i class="fas fa-angle-up"></i>
                                 </div>
                             </button>
-                            <div class="collapse" id="tower1">
+                            <div class="collapse" id="introduction">
                                 <div class="card card-body ml-0 pl-0 border-0">
                                     My Tower users leverage our expertise to get the best products in the market, save a fortune, and improve their project delivery. When starting a project, you subscribe to our package and either upload your requirements or drag and drop your Bill of Quantities (BOQ). With NO UPFRONT PAYMENT, you can receive a solution and quote from BAL, confident in the knowledge that our expertise, products, prices, and service are unrivalled in the LED marketplace.
                                 </div>

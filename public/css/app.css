@@ -11135,6 +11135,7 @@ nav {
   background-position-y: 30px, bottom;
   background-position-x: 70%, center;
   background-repeat: no-repeat;
+  background-color: #f7f7ff;
 }
 
 .section-1 .sub-title {
@@ -11154,10 +11155,11 @@ nav {
 
 .section-2 {
   height: 50vh;
+  background-color: #f7f7ff;
 }
 
 .card-top {
-  width: 50px;
+  width: 35px;
 }
 
 .all-cards {

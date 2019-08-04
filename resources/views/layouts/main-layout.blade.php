@@ -130,17 +130,17 @@
             }
         })
 
-        $('.finder1').click(function(){
+        $('.introduction').click(function(){
             console.log("Hello World!");
-            if($('.finder1-down').is(':visible')){
+            if($('.introduction-down').is(':visible')){
 
-                $('.finder1-down').hide();  
-                $('.finder1-up').show();  
+                $('.introduction-down').hide();  
+                $('.introduction-up').show();  
 
             } else {
 
-                $('.finder1-down').show();  
-                $('.finder1-up').hide(); 
+                $('.introduction-down').show();  
+                $('.introduction-up').hide(); 
             }
         })
 
@@ -187,20 +187,6 @@
             }
         })
 
-        $('.home1').click(function(){
-            console.log("Hello World!");
-            if($('.home1-down').is(':visible')){
-
-                $('.home1-down').hide();  
-                $('.home1-up').show();  
-
-            } else {
-
-                $('.home1-down').show();  
-                $('.home1-up').hide(); 
-            }
-        })
-
         $('.home2').click(function(){
             console.log("Hello World!");
             if($('.home2-down').is(':visible')){
@@ -227,20 +213,6 @@
 
                 $('.home3-down').show();  
                 $('.home3-up').hide(); 
-            }
-        })
-
-        $('.tower1').click(function(){
-            console.log("Hello World!");
-            if($('.tower1-down').is(':visible')){
-
-                $('.tower1-down').hide();  
-                $('.tower1-up').show();  
-
-            } else {
-
-                $('.tower1-down').show();  
-                $('.tower1-up').hide(); 
             }
         })
 
