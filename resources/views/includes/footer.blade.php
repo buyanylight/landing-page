@@ -24,25 +24,25 @@
                             <a href="https://lightfinder.buyanylight.com/buyer/register" class="text-white">Register</a>
                          </li>
                          <li class="mt-3">
-                            <a href="/buyer-faq" class="text-white">FAQ</a>
+                            <a href="https://lightfinder.buyanylight.com" class="text-white">Sign in</a>
                          </li>
                          <li class="mt-3">
-                            <a href="https://lightfinder.buyanylight.com" class="text-white">Sign in</a>
+                            <a href="/buyer-faq" class="text-white">FAQ</a>
                          </li>
                      </ul>
                 </div>
                 <div class="col-md-2">
                     <h5 class="text-white font-weight-bold">Sellers</h5>
                     <ul class="list-group footer-list">
+                         <li class="mt-3">
+                            <a href="/seller" class="text-white">Start today</a>
+                         </li>
                         <li class="mt-3">
                             <a href="https://lightfinder.buyanylight.com/supplier/register" class="text-white">Register</a>
                         </li>
                         <li class="mt-3">
                             <a href="https://lightfinder.buyanylight.com" class="text-white">Sign in</a>
                         </li>
-                         <li class="mt-3">
-                            <a href="/seller" class="text-white">Apply</a>
-                         </li>
                         <li class="mt-3">
                             <a href="/seller-faq" class="text-white">FAQ</a>
                          </li>
@@ -109,6 +109,16 @@
                         <div class="row mt-3">
                             <div class="col">
                                 <img src=" {{ asset('images/payment.png') }}" width="69%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payments mt-3 ">
+                        <h5 class="text-white">Partners</h5>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <a href="https://light-middleeast.german-pavilion.com/en/home/">
+                                    <img src=" {{ asset('images/werbebanner.jpg') }}" width="69%">
+                                </a>
                             </div>
                         </div>
                     </div>
