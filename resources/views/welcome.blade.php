@@ -406,7 +406,7 @@
                     Outsourcing of LED lights has increased hugely in recent years. The digital age, globalisation, increased transparency and continued cost pressures all make outsourcing a viable and attractive option for major brands worldwide.
                 </p>
                 <p>
-                    The best outsourcing manufacturers adhere strictly to the brand specifications while also leveraging the low production costs. We are contracted to these factories which supply us with products similar to global brands such as Phillips, Osram at unbelievable prices and of course, fully within the law.
+                    The best outsourcing manufacturers adhere strictly to the brand specifications while also leveraging the low production costs. We are contracted to these factories which supply us with products similar to global brands such as Phillips, Osram etc. at unbelievable prices and of course, fully within the law.
                 </p>
                 <p>
                     Due to the massive overheads such as staff, warehouse, multi-level supply chain these global brands prices are far higher. BAL creates powerful applications that process large amounts of data and build relationships with manufacturers to provide the finest products, the best prices, and top-notch services anywhere in the world. Combining our low fees and super-low product prices means that every BAL user makes massive savings compared with any other supplier in the market.
@@ -1704,7 +1704,6 @@
             <div class="col-md-4">
                 <h5>
                     <b>General <span class="text-BAL">lighting</span> consultation</b>
-                    <small class="text-muted"> - $199 USD</small>
                 </h5>
                 <img src="{{ asset('images/lightdesign.jpg')}}" class="mt-3 w-100 section-10-img">
                 <!-- <div class="w-100 general-lighting">
@@ -1727,6 +1726,20 @@
                         <i class="fas fa-angle-up"></i>
                     </div>
                 </button>
+                <button class="btn w-100 text-left pl-0 pricing" type="button" data-toggle="collapse" data-target="#pricing" aria-expanded="false" aria-controls="pricing">
+                    <b>Pricing</b>
+                    <div class="pricing-down float-right">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="pricing-up float-right" style="display: none;">
+                        <i class="fas fa-angle-up"></i>
+                    </div>
+                </button>
+                <div class="collapse" id="pricing">
+                    <div class="card card-body ml-0 pl-0 border-0">
+                        $199
+                    </div>
+                </div>
                 <a href="https://lightfinder.buyanylight.com/buyer/register" class=" pl-0 btn">
                     <div class="link-text">
                         Book Now
@@ -1739,7 +1752,6 @@
             <div class="col-md-4">
                 <h5>
                     <b><span class="text-BAL">Lux</span> calculation</b>
-                    <small class="text-muted"> - 299 USD</small>
                 </h5>
                 <img src="{{ asset('images/luxcalculation.jpg')}}" class="mt-3 w-100 section-10-img">
                 <!-- <div class="w-100 general-lighting">
@@ -1762,6 +1774,20 @@
                         <i class="fas fa-angle-up"></i>
                     </div>
                 </button>
+                <button class="btn w-100 text-left pl-0 pricing" type="button" data-toggle="collapse" data-target="#pricing" aria-expanded="false" aria-controls="pricing">
+                    <b>Pricing</b>
+                    <div class="pricing-down float-right">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="pricing-up float-right" style="display: none;">
+                        <i class="fas fa-angle-up"></i>
+                    </div>
+                </button>
+                <div class="collapse" id="pricing">
+                    <div class="card card-body ml-0 pl-0 border-0">
+                        $299
+                    </div>
+                </div>
                 <a href="https://lightfinder.buyanylight.com/buyer/register" class=" pl-0 btn">
                     <div class="link-text">
                         Book Now
@@ -1774,7 +1800,6 @@
             <div class="col-md-4">
                 <h5>
                     <b>3D <span class="text-BAL">lighting</span> consultation</b>
-                    <small class="text-muted"> - $399 USD</small>
                 </h5>
                 <img src="{{ asset('images/3dlightingdesign.jpg')}}" class="mt-3 w-100 section-10-img">
                 <!-- <div class="w-100 general-lighting">
@@ -1797,6 +1822,20 @@
                         <i class="fas fa-angle-up"></i>
                     </div>
                 </button>
+                <button class="btn w-100 text-left pl-0 pricing" type="button" data-toggle="collapse" data-target="#pricing" aria-expanded="false" aria-controls="pricing">
+                    <b>Pricing</b>
+                    <div class="pricing-down float-right">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="pricing-up float-right" style="display: none;">
+                        <i class="fas fa-angle-up"></i>
+                    </div>
+                </button>
+                <div class="collapse" id="pricing">
+                    <div class="card card-body ml-0 pl-0 border-0">
+                        $399
+                    </div>
+                </div>
                 <a href="https://lightfinder.buyanylight.com/buyer/register" class=" pl-0 btn">
                     <div class="link-text">
                         Book Now

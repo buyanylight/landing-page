@@ -11211,7 +11211,7 @@ nav {
 }
 
 .section-6 {
-  background: url("/images/section4.png");
+  background: url("/images/section6.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
@@ -11223,7 +11223,7 @@ nav {
 }
 
 .section-7 {
-  background: #5555a40a;
+  background: #f7f7ff;
 }
 
 .nav-pills .nav-link.active,
@@ -11461,6 +11461,47 @@ textarea {
 .location {
   padding: 20px;
   padding-top: 50px;
+}
+
+.intro-investor {
+  background: url("/images/investor.png");
+  background-size: 100%;
+  height: 45vh;
+}
+
+.intro-seller {
+  background: url("/images/seller_bg.png");
+  height: 45vh;
+}
+
+.videos {
+  background: #5555a40a;
+}
+
+.english {
+  height: 150px;
+  background: url("/images/english.jpg");
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  background-size: 100%;
+  background-position-y: 85%;
+}
+
+.chinese {
+  height: 150px;
+  background: url("/images/chinese.jpg");
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  background-size: 100%;
+  background-position-y: 55%;
 }
 
 footer {

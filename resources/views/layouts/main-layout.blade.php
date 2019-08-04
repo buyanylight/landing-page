@@ -273,7 +273,19 @@
             }
         })
 
+        $('pricing').click(function(){
+            console.log("Hello World!");
+            if($('pricing-down').is(':visible')){
 
+                $('pricing-down').hide();  
+                $('pricing-up').show();  
+
+            } else {
+
+                $('pricing-down').show();  
+                $('pricing-up').hide(); 
+            }
+        })
 
         $('.addon1').click(function(){
             console.log("Hello World!");

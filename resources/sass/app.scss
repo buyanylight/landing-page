@@ -143,7 +143,7 @@ nav{
 
 
 .section-6{
-	background: url('/images/section4.png');
+	background: url('/images/section6.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -158,7 +158,7 @@ nav{
 
 
 .section-7 {
-	background:#5555a40a;
+	background:#f7f7ff;
 	// background: linear-gradient(to right, #00000024, #1d295124, #5555a424);
 }
 
@@ -414,6 +414,42 @@ textarea{
 	padding-top:50px;
 }
 
+
+.intro-investor{
+	background: url('/images/investor.png');
+	background-size:100%;
+	height: 45vh;
+}
+
+
+.intro-seller{
+	background: url('/images/seller_bg.png');
+	height: 45vh;
+}
+
+
+.videos{
+	background: #5555a40a;
+}
+.english{
+	height: 150px;
+	background:url('/images/english.jpg');
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+	background-size: 100%;
+	background-position-y: 85%;
+}
+
+.chinese{
+	height: 150px;
+	background:url('/images/chinese.jpg');
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+	background-size: 100%;
+	background-position-y: 55%;
+}
 
 footer{
 	height: 100%;

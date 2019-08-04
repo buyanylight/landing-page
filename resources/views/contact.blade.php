@@ -33,19 +33,17 @@
             	</h3>
         	</div>
 		</div>
-		<div class="contact-form pt-5 pb-5">
-			<div class="container contact-form-container bg-black"> 
+        <div class="container pt-5">
+            <h3><b>Drop us a message</b></h3>
+            <p>Questions, bug reports, feedback — we're here for it all. </p>
+        </div>
+		<div class="contact-form pt-3 pb-5">
+            <div class="container contact-form-container bg-black"> 
                 <div class="row">
                     <div class="col-md-8 bg-white border border-dark">
                         <div class="formBox ">
                             <form method="post" action="/contact-us">
                                 {{ csrf_field() }}
-
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>Feel free to get in touch with us and we'll get back to you</p>
-                                    </div>
-                                </div>
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="inputBox ">
@@ -89,10 +87,10 @@
                         <div class="location text-white">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <i class="fas fa-map-marker-alt"></i>
+                                    <i class="fas fa-map-marker-alt text-BAL"></i>
                                 </div>
                                 <div class="col-md-10">
-                                    <span><b>BuyAnyLight.com</b></span><br>
+                                    <span class="text-BAL"><b>BuyAnyLight.com</b></span><br>
                                     <span>Dubai Investment Park 1, <br> Opp. Green Community East, Showroom 10, P.O. BOX 3219 <br> Dubai,  United Arab Emirates</span>
                                 </div>
                             </div>
@@ -100,10 +98,10 @@
                         <div class="location text-white">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <i class="fas fa-phone"></i>
+                                    <i class="fas fa-phone text-BAL"></i>
                                 </div>
                                 <div class="col-md-10">
-                                    <span><b>+971 4 887 3265</b></span><br>
+                                    <span class="text-BAL"><b>+971 4 887 3265</b></span><br>
                                     <span>Mon to Fri 9am to 6pm</span><br>
                                 </div>
                             </div>
@@ -111,10 +109,10 @@
                         <div class="location text-white">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <i class="fas fa-envelope"></i>
+                                    <i class="fas fa-envelope text-BAL"></i>
                                 </div>
                                 <div class="col-md-10">
-                                    <span><b>info@buyanylight.com</b></span><br>
+                                    <span  class="text-BAL"><b>info@buyanylight.com</b></span><br>
                                     <span>Send us your query anytime</span><br>
                                 </div>
                             </div>
@@ -122,6 +120,6 @@
                     </div>
                 </div>
             </div>
-		</div>
+        </div>
 	</div>
 @endsection
