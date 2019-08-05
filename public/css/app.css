@@ -11129,9 +11129,9 @@ nav {
 }
 
 .section-1 {
-  background: url("/images/section_1_bg(1).png"), url("/images/hexagon2.png");
+  background: url("/images/section_1_bg.png"), url("/images/hexagon2.png");
   height: 50vh;
-  background-size: 28%, 115%;
+  background-size: 25%, 115%;
   background-position-y: 30px, bottom;
   background-position-x: 70%, center;
   background-repeat: no-repeat;

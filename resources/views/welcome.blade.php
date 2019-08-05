@@ -1276,7 +1276,7 @@
         </div>
     </div>
 </section>
-<section class="section 9 pt-5 pb-5">
+<section class="section 9 pt-5 pb-5" id="package">
     <div class="section-9-container h-100">
         <div class="container h-100">
             <h4 class="text-left">
@@ -1691,7 +1691,7 @@
         </div>
     </div>
 </section>
-<section class="section-10">
+<section class="section-10" id="addons">
     <div class="container pt-5 pb-5">
         <h3 class="pt-5"><span class="text-BAL"><b>ALWAYS ADDING VALUE:</span> optional extras</b></h3>
         <p class="pt-3">
