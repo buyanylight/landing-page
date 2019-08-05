@@ -11513,3 +11513,21 @@ nav .dropdown-toggle::after {
   background-position-x: -140%;
 }
 
+.video-section {
+  background-color: #f7f7ff;
+}
+
+.english {
+  height: 120px;
+  background: url("/images/english.jpg");
+  background-position-x: center;
+  background-position-y: -175px;
+}
+
+.chinese {
+  height: 120px;
+  background: url("/images/chinese.jpg");
+  background-position-x: center;
+  background-position-y: -115px;
+}
+

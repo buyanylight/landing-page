@@ -17,83 +17,121 @@
 				Our innovative sourcing platform connects seller and buyers directly, without the need for an intermediary. BAL delivers huge and unique advantages to both sellers and buyers and a win-win edge for every BAL platform user.
 			</p>
 			<p><b> Registration is completely FREE and allows you to:</b></p>
-			<div class="row pt-3 ">
-				<div class="col text-left">
-					<img src="{{ asset('images/1.png') }}" width="25%">
-					<p class="pt-3 ">Recieve enquiries from us or buyers</p>
-				</div>
-				<div class="col text-left">
-					<img src="{{ asset('images/2.png') }}" width="25%">
-					<p class="pt-3 ">Bid only when you have availability</p>
-				</div>
-			</div>
-			<div class="row pt-3 ">
-				<div class="col text-left">
-					<img src="{{ asset('images/5.png') }}" width="25%">
-					<p class="pt-3 ">Provide buyers with flexible rates depending on order size</p>
-				</div>
-				<div class="col text-left">
-					<img src="{{ asset('images/4.png') }}" width="25%">
-					<p class="pt-3 ">Enjoy secure, instant money transfer to your personal BAL Wallet</p>
-				</div>
-			</div>
-			<div class="row pt-3 ">
-				<div class="col text-left">
-					<img src="{{ asset('images/3.png') }}" width="25%">
-					<p class="pt-3 ">Make fast and easy bids</p>
-				</div>
-				<div class="col text-left">
-				</div>
-			</div>
+			<ul class="works-list text-white text-left">
+               <li class="mt-1 bg-black rounded">
+                   <div class="d-flex align-items-center list-content">
+                       <div class="step-icon d-inline-flex align-items-center justify-content-center">
+                           	<!-- <i class="fas fa-cloud-upload-alt"></i> -->
+							<img src="{{ asset('images/1.png') }}" width="100%">
+                       </div>
+                       <div class="step d-inline-block">
+                           Recieve enquiries from us or buyers
+                       </div>
+                   </div>
+               </li>
+               <li class="mt-1 bg-black rounded">
+                   <div class="d-flex align-items-center list-content">
+                       <div class="step-icon d-inline-flex align-items-center justify-content-center">
+                           <!-- <i class="fas fa-search"></i> -->
+							<img src="{{ asset('images/2.png') }}" width="100%">
+                       </div>
+                       <div class=" step d-inline-block">
+                           Bid only when you have availability
+                           
+                       </div>
+                   </div>
+               </li>
+               <li class="mt-1 bg-black rounded">
+                   <div class="d-flex align-items-center list-content">
+                       <div class="step-icon d-inline-flex align-items-center justify-content-center">
+                           <!-- <i class="fas fa-paper-plane"></i> -->
+							<img src="{{ asset('images/5.png') }}" width="100%">
+                       </div>
+                       <div class=" step d-inline-block">
+                           Provide buyers with flexible rates depending on order size
+                       </div>
+                   </div>
+               </li>
+               <li class="mt-1 bg-black rounded">
+                   <div class="d-flex align-items-center list-content">
+                       <div class="step-icon d-inline-flex align-items-center justify-content-center">
+                           <!-- <i class="fas fa-eye"></i> -->
+							<img src="{{ asset('images/4.png') }}" width="100%">
+                       </div>
+                       <div class=" step d-inline-block">
+                           Enjoy secure, instant money transfer to your personal BAL Wallet
+                       </div>
+                   </div>
+               </li>
+               <li class="mt-1 bg-black rounded">
+                   <div class="d-flex align-items-center list-content">
+                       <div class="step-icon d-inline-flex align-items-center justify-content-center">
+                           <!-- <i class="fas fa-eye"></i> -->
+							<img src="{{ asset('images/3.png') }}" width="100%">
+                       </div>
+                       <div class=" step d-inline-block">
+                           Make fast and easy bids
+                       </div>
+                   </div>
+               </li>
+            </ul>
 		</div>
 	</div>
-	<div class="section10" id="video-section">
-		<div class="container pt-4 pb-4">
-			<p class=" text-left text-white"><b> To understand further <br> how BAL works and what we offer</b></p>
-			<p class="text-left text-white">Watch our Manufacturer Video <br> and sign up FREE today!</p>
-			<ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
-  				<li class="nav-item border border-white">
-    				<a class="nav-link active text-white rounded-0" id="pills-english-tab" data-toggle="pill" href="#pills-english" role="tab" aria-controls="pills-english" aria-selected="true">English</a>
-  				</li>
-  				<li class="nav-item border border-white rounded-0">
-  					<a class="nav-link text-white rounded-0" id="pills-chinese-tab" data-toggle="pill" href="#pills-chinese" role="tab" aria-controls="pills-chinese" aria-selected="false">Chinese</a>
-  				</li>
-			</ul>
-			<div class="tab-content pt-3" id="pills-tabContent">
-  				<div class="tab-pane fade show active" id="pills-english" role="tabpanel" aria-labelledby="pills-english-tab">
-  					<div class="embed-responsive embed-responsive-16by9">
-	             		<iframe width="640" height="360" src="https://www.youtube.com/embed/7N3FqFyASC0?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-	        		</div>
-  				</div>
-  				<div class="tab-pane fade" id="pills-chinese" role="tabpanel" aria-labelledby="pills-chinese-tab">
-  					<div class="embed-responsive embed-responsive-16by9">
-	             		<iframe width="640" height="360" src="https://www.youtube.com/embed/YR-FYxOz3ps?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-	        		</div>
-  				</div>
+	<div class="pt-3 pb-3 video-section" >
+		<div class="container">
+			<p><b>Understand further how BAL works and what we offer</b></p>
+			<p>Watch our Supplier Video and sign up FREE today!</p>
+		</div>
+		<div class="container">
+			<div class="w-100 english d-flex align-items-end bg-white pb-3 pl-3">
+				<div class="text-white">
+				<b>English</b> <br>
+				<a data-fancybox href="https://www.youtube.com/embed/7N3FqFyASC0?rel=0&enablejsapi=1" class="text-white"><i class="fab fa-youtube"></i> Play video</a>
+				</div>
+
+			</div>
+			<div class="w-100 chinese d-flex align-items-end bg-white mt-3 pb-3 pl-3">
+				<div class="text-white">
+				<b>Chinese</b><br>
+				<a data-fancybox href="https://www.youtube.com/embed/YR-FYxOz3ps?rel=0&enablejsapi=1" class="text-white"><i class="fab fa-youtube"></i> Play video</a>
+					
+				</div>
 			</div>
 		</div>
+	
 	</div>
 	<div class="section11">
 		<div class="container pt-4 pb-4">
 			<p class="text-left"><b>QUICK AND SIMPLE REGISTRATION</b></p>
 			<p class="text-left">Registration for BAL is easy and should take just 2-3 minutes to complete.</p>
+			<img src=" {{ asset('images/screen.png') }} " width="100%">
 			<div class="step-1 text-left pt-3">
-				<img src=" {{ asset('images/screen.png') }} " width="80%">
-				<p class="pt-3">Step 1: Simply log in to your account </p>
+				<p class=""><b>Step 1:</b>
+					<br> Register your company. Wait for initial BAL approval.
+				</p>
 			</div>
 			<div class="step-2 text-left pt-3">
-				<img src=" {{ asset('images/screen.png') }} " width="80%">
-				<p class="pt-3">Step 2: Receive quote requests </p>
+				<p class=""><b>Step 2:</b> 
+					<br> Provide few additional information and accept our terms.
+				</p>
 			</div>
 			<div class="step-3 text-left pt-3">
-				<img src=" {{ asset('images/screen.png') }} " width="80%">
-				<p class="pt-3">Step 3: Quote your item online (no need to upload PDFs) </p>
+				<p class=""><b>Step 3:</b>
+					<br> Start receiving enquiries, get awarded and start selling on BAL!
+				</p>
 			</div>
 			<p class="pt-3 text-left"><b> Save time and make your online registration now!</b>
 			</p>
 			<div class="text-left">
-				<a href="https://lightfinder.buyanylight.com/supplier/register" class="btn btn-sm btn-dark">Register Now</a>
-			</div>
+                <a href="https://lightfinder.buyanylight.com/supplier/register" class="btn pl-0">
+                    <div class="link-text">
+                        Register now
+                    </div>&nbsp;
+                    <div class="link-icon">
+                        <i class="fas fa-arrow-right"></i> 
+                    </div>
+                </a>
+            </div>
 		</div>
 	</div>
 </div>
