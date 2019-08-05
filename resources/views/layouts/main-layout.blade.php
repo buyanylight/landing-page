@@ -40,9 +40,15 @@
         <!-- Facebook Pixel Code -->
 
         <!-- Styles -->
+        @yield('css')
+
+        @section('css')
         <link rel="stylesheet" href="css/app.css?v=1">
+        @show
         <link rel="stylesheet" href="css/privacy.css?v=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="/css/slick.css?v=1">
+        <link rel="stylesheet" href="/css/slick-theme.css?v=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
         
     @yield('meta')
 
@@ -80,11 +86,201 @@
         <!-- Scripts -->
         <script src="js/app.js" charset="utf-8"></script>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     </body>
     <script type="text/javascript">
         $(document).ready(function(){
-            $('.slide').hiSlide();
+
+        $('.center').slick({
+            centerMode: false,
+            centerPadding: '0px',
+            slidesToShow: 4,
+            initialSlide:0,
+            infinite: true,
         });
+
+
+        'use strict';
+  
+        var c, currentScrollTop = 0,
+        navbar = $('nav');
+
+        $(window).scroll(function () {
+            var a = $(window).scrollTop();
+            var b = navbar.height();
+     
+            currentScrollTop = a;
+     
+            if (c < currentScrollTop && a > b + b) {
+                navbar.addClass("scrollUp");
+            } else if (c > currentScrollTop && !(a <= b)) {
+                navbar.removeClass("scrollUp");
+            }
+            c = currentScrollTop;
+        });
+
+        $('.trial').click(function(){
+            console.log("Hello World!");
+            if($('.trial-down').is(':visible')){
+
+                $('.trial-down').hide();  
+                $('.trial-up').show();  
+
+            } else {
+
+                $('.trial-down').show();  
+                $('.trial-up').hide(); 
+            }
+        })
+
+        $('.introduction').click(function(){
+            console.log("Hello World!");
+            if($('.introduction-down').is(':visible')){
+
+                $('.introduction-down').hide();  
+                $('.introduction-up').show();  
+
+            } else {
+
+                $('.introduction-down').show();  
+                $('.introduction-up').hide(); 
+            }
+        })
+
+        $('.finder2').click(function(){
+            console.log("Hello World!");
+            if($('.finder2-down').is(':visible')){
+
+                $('.finder2-down').hide();  
+                $('.finder2-up').show();  
+
+            } else {
+
+                $('.finder2-down').show();  
+                $('.finder2-up').hide(); 
+            }
+        })
+
+
+        $('.finder3').click(function(){
+            console.log("Hello World!");
+            if($('.finder3-down').is(':visible')){
+
+                $('.finder3-down').hide();  
+                $('.finder3-up').show();  
+
+            } else {
+
+                $('.finder3-down').show();  
+                $('.finder3-up').hide(); 
+            }
+        })
+
+        $('.pricing').click(function(){
+            console.log("Hello World!");
+            if($('.pricing-down').is(':visible')){
+
+                $('.pricing-down').hide();  
+                $('.pricing-up').show();  
+
+            } else {
+
+                $('.pricing-down').show();  
+                $('.pricing-up').hide(); 
+            }
+        })
+
+        $('.home2').click(function(){
+            console.log("Hello World!");
+            if($('.home2-down').is(':visible')){
+
+                $('.home2-down').hide();  
+                $('.home2-up').show();  
+
+            } else {
+
+                $('.home2-down').show();  
+                $('.home2-up').hide(); 
+            }
+        })
+
+
+        $('.home3').click(function(){
+            console.log("Hello World!");
+            if($('.home3-down').is(':visible')){
+
+                $('.home3-down').hide();  
+                $('.home3-up').show();  
+
+            } else {
+
+                $('.home3-down').show();  
+                $('.home3-up').hide(); 
+            }
+        })
+
+        $('.tower2').click(function(){
+            console.log("Hello World!");
+            if($('.tower2-down').is(':visible')){
+
+                $('.tower2-down').hide();  
+                $('.tower2-up').show();  
+
+            } else {
+
+                $('.tower2-down').show();  
+                $('.tower2-up').hide(); 
+            }
+        })
+
+
+        $('.tower3').click(function(){
+            console.log("Hello World!");
+            if($('.tower3-down').is(':visible')){
+
+                $('.tower3-down').hide();  
+                $('.tower3-up').show();  
+
+            } else {
+
+                $('.tower3-down').show();  
+                $('.tower3-up').hide(); 
+            }
+        })
+
+        $('pricing').click(function(){
+            console.log("Hello World!");
+            if($('pricing-down').is(':visible')){
+
+                $('pricing-down').hide();  
+                $('pricing-up').show();  
+
+            } else {
+
+                $('pricing-down').show();  
+                $('pricing-up').hide(); 
+            }
+        })
+
+        $('.read-more').click(function(){
+            console.log("Hello World!");
+            if($('.read-more-down').is(':visible')){
+
+                $('.read-more-down').hide();  
+                $('.1-read-more').hide();  
+                $('.read-more-up').show();  
+                $('.1-read-less').show();  
+
+            } else {
+
+                $('.1-read-less').hide();  
+                $('.1-read-more').show();  
+                $('.read-more-down').show();  
+                $('.read-more-up').hide(); 
+            }
+        })
+
+    });
     </script>
     @if (session('success') || session('danger'))
     <script type="text/javascript">

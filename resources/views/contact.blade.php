@@ -1,63 +1,44 @@
 @extends('layouts.main-layout')
 
-@section('meta-title')
-<meta name="title" content="BuyAnyLight | Be an investor">
-<meta property="og:title" content=" BuyAnyLight | Be an investor">
-@endsection
-
-@section('meta-description')
-<meta name="description" content="BAL: immense growth potential and exceptional investment opportunities! If you’re considering investing and would like to know more, Contact us." />
-<meta property="og:description" content="BAL: immense growth potential and exceptional investment opportunities! If you’re considering investing and would like to know more, Contact us.">
-@endsection
-
-
 @section('content')
-<div style="position: relative; z-index: 5">
+	<div style="position: relative; z-index: 5">
             <!-- Position toasts -->
-    <div style="position: absolute; top: 70px; right: 55px;">
-        <div class="toast" data-autohide="false">
-            <div class="toast-header">
-                <strong class="mr-auto">
-                    <img src="{{ asset('images/logo-black-icon.png') }}" width="25">
-                    BuyAnyLight
-                </strong>
-                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
-            </div>
-            @if(session('success'))
-            <div class="toast-body">
-                <b>Thanks for being awesome!</b>
-                {!! session('success') !!}
-            </div>
-            @else
-            <div class="toast-body">
-                {!! session('danger') !!}
-            </div>
-            @endif
-        </div>
-    </div>    
-</div>
-<div class="investor pt-5">
-	<div class="intro-investor d-flex align-items-center">
-		<div class="container">
-			<h3 class="text-white">
-				<b>Be an investor</b>
-			</h3>
-			<p class="text-white">
-				<b>BAL: immense growth potential and exceptional investment opportunities!</b>
-			</p>
-		</div>
+    	<div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
+        	<div class="toast" data-autohide="false">
+            	<div class="toast-header">
+                	<strong class="mr-auto">
+                    	<img src="{{ asset('images/logo-black-icon.png') }}" width="25">
+                    	BuyAnyLight
+                	</strong>
+                	<button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+            	</div>
+            	@if(session('success'))
+           		<div class="toast-body">
+                	<b>Thanks for being awesome!</b>
+                	{!! session('success') !!}
+            	</div>
+           		@else
+            	<div class="toast-body">
+                	{!! session('danger') !!}
+            	</div>
+            	@endif
+        	</div>
+    	</div>    
 	</div>
-</div>
-<div class="container pt-5">
-	<p>
-		BAL has pioneered the innovative sourcing of LED lights and we intend to become one of the most successful commercial platforms in the world.
-	</p>
-</div>
-<div class="container pb-5">
-	<h3><b>Drop us a message</b></h3>
-	<p>If you’re considering investing and would like to know more, please get in touch to discuss our hugely exciting investment proposal.</p>
-	<div class="contact-form pt-3 pb-5">
-			<div class="container contact-form-container bg-black"> 
+	<div class="contact pt-5 ">
+		<div class="intro-contact d-flex  align-items-center">
+    		<div class="container">
+    			<h3 class="text-white">
+                	<b>CONTACT US</b>
+            	</h3>
+        	</div>
+		</div>
+        <div class="container pt-5">
+            <h3><b>Drop us a message</b></h3>
+            <p>Questions, bug reports, feedback — we're here for it all. </p>
+        </div>
+		<div class="contact-form pt-3 pb-5">
+            <div class="container contact-form-container bg-black"> 
                 <div class="row">
                     <div class="col-md-8 bg-white border border-dark">
                         <div class="formBox ">
@@ -139,19 +120,6 @@
                     </div>
                 </div>
             </div>
-		</div>
-</div>
-<script src="https://www.google.com/recaptcha/api.js?render={{ env('CAPTCHA_KEY') }}"></script>
-<script type="text/javascript">
-    grecaptcha.ready(function() {
-        grecaptcha.execute( '{{ env('CAPTCHA_KEY') }}' , { action: 'contact' } )
-           .then(function(token) {
-                var recaptchaResponse = document.getElementById('recaptchaResponse');
-                recaptchaResponse.value = token;
-                $('.send-message').removeAttr('disabled','disabled');
-            });
-     });
-
-</script>
-
+        </div>
+	</div>
 @endsection

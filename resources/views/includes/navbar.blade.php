@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark {{Request::path() == '/'  ? 'bg-transparent' : 'bg-black'}} fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand " href="/">
-            <img src="{{ asset('images/logo-white.png') }}" width="250" class="logo">
+            <img src="{{ asset('images/logo-white.png') }}" width="200" class="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,10 +27,10 @@
                     Packages
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/#trial">Free Trial</a>
-                        <a class="dropdown-item" href="/#home">My Home</a>
-                        <a class="dropdown-item" href="/#tower">My Tower</a>
-                        <a class="dropdown-item" href="/#finder">LightFinder</a>
+                        <a class="dropdown-item" href="/#all-packages">Free Trial</a>
+                        <a class="dropdown-item" href="/#all-packages">My Home</a>
+                        <a class="dropdown-item" href="/#all-packages">My Tower</a>
+                        <a class="dropdown-item" href="/#all-packages">LightFinder</a>
                         <a class="dropdown-item" href="/#package">Summary</a>
                         <a class="dropdown-item" href="/#addons">Add-ons</a>
                     </div>
@@ -67,7 +67,7 @@
                     <a class="nav-link text-white links" href="https://medium.com/@infobuyanylight" target="_blank">News</a>
                 </li>
                 <li class="nav-item mr-3">
-                    <a class="nav-link text-white links" href="/#contact">Contact</a>
+                    <a class="nav-link text-white links" href="/contact">Contact</a>
                 </li>
                 <li class="nav-item mr-3">
                     <a class="nav-link text-white links" href="https://lightfinder.buyanylight.com">Sign in</a>
