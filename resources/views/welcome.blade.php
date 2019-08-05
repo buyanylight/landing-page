@@ -1711,18 +1711,18 @@
                         <a href="" class="btn btn-BAL">Book now</a>
                     </div>
                 </div> -->
-                <div class="collapse" id="addon1">
+                <div class="collapse" id="read-more">
                     <div class="card card-body ml-0 pl-0 border-0">
                         Great lighting creates an aesthetic ambience that instantly elevates one’s mood and style. Our highly skilled LED lighting designers will help you to create a stunning atmosphere that brings your LED lighting design dreams to life. This add-on is available to all BAL users, irrespective of your package choice. We provide one-to-one access to our world-class consultants who will work with you and provide expert advice from project start-up to the final glorious switch-on!
                     </div>
                 </div>
-                <button class="btn w-100 text-left pl-0 addon1" type="button" data-toggle="collapse" data-target="#addon1" aria-expanded="false" aria-controls="addon1">
+                <button class="btn w-100 text-left pl-0 read-more" type="button" data-toggle="collapse" data-target="#read-more" aria-expanded="false" aria-controls="read-more">
                     <b class="1-read-more">Read more</b>
                     <b  class="1-read-less" style="display: none;">Read less</b>
-                    <div class="addon1-down float-right">
+                    <div class="read-more-down float-right">
                         <i class="fas fa-angle-down"></i>
                     </div>
-                    <div class="addon1-up float-right" style="display: none;">
+                    <div class="read-more-up float-right" style="display: none;">
                         <i class="fas fa-angle-up"></i>
                     </div>
                 </button>
@@ -1759,18 +1759,18 @@
                         <a href="" class="btn btn-BAL">Book now</a>
                     </div>
                 </div> -->
-                <div class="collapse" id="addon2">
+                <div class="collapse" id="read-more">
                     <div class="card card-body ml-0 pl-0 border-0">
                         Great lighting creates an aesthetic ambience that instantly elevates one’s mood and style. Our highly skilled LED lighting designers will help you to create a stunning atmosphere that brings your LED lighting design dreams to life. This add-on is available to all BAL users, irrespective of your package choice. We provide one-to-one access to our world-class consultants who will work with you and provide expert advice from project start-up to the final glorious switch-on!
                     </div>
                 </div>
-                <button class="btn w-100 text-left pl-0 addon2" type="button" data-toggle="collapse" data-target="#addon2" aria-expanded="false" aria-controls="addon2">
+                <button class="btn w-100 text-left pl-0 read-more" type="button" data-toggle="collapse" data-target="#read-more" aria-expanded="false" aria-controls="read-more">
                     <b class="2-read-more">Read more</b>
                     <b  class="2-read-less" style="display: none;">Read less</b>
-                    <div class="addon2-down float-right">
+                    <div class="read-more-down float-right">
                         <i class="fas fa-angle-down"></i>
                     </div>
-                    <div class="addon2-up float-right" style="display: none;">
+                    <div class="read-more-up float-right" style="display: none;">
                         <i class="fas fa-angle-up"></i>
                     </div>
                 </button>
@@ -1807,18 +1807,18 @@
                         <a href="" class="btn btn-BAL">Book now</a>
                     </div>
                 </div> -->
-                <div class="collapse" id="addon3">
+                <div class="collapse" id="read-more">
                     <div class="card card-body ml-0 pl-0 border-0">
                         Great lighting creates an aesthetic ambience that instantly elevates one’s mood and style. Our highly skilled LED lighting designers will help you to create a stunning atmosphere that brings your LED lighting design dreams to life. This add-on is available to all BAL users, irrespective of your package choice. We provide one-to-one access to our world-class consultants who will work with you and provide expert advice from project start-up to the final glorious switch-on!
                     </div>
                 </div>
-                <button class="btn w-100 text-left pl-0 addon3" type="button" data-toggle="collapse" data-target="#addon3" aria-expanded="false" aria-controls="addon3">
+                <button class="btn w-100 text-left pl-0 read-more" type="button" data-toggle="collapse" data-target="#read-more" aria-expanded="false" aria-controls="read-more">
                     <b class="3-read-more">Read more</b>
                     <b  class="3-read-less" style="display: none;">Read less</b>
-                    <div class="addon3-down float-right">
+                    <div class="read-more-down float-right">
                         <i class="fas fa-angle-down"></i>
                     </div>
-                    <div class="addon3-up float-right" style="display: none;">
+                    <div class="read-more-up float-right" style="display: none;">
                         <i class="fas fa-angle-up"></i>
                     </div>
                 </button>

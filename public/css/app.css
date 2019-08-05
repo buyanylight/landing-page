@@ -11506,6 +11506,21 @@ textarea {
   background-position-y: 55%;
 }
 
+.ieo-coming-soon {
+  background: url("/images/ieo-coming-soon.png");
+  height: 1000px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  text-align: center;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+}
+
 footer {
   height: 100%;
 }

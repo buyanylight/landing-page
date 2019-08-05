@@ -40,7 +40,11 @@
         <!-- Facebook Pixel Code -->
 
         <!-- Styles -->
+        @yield('css')
+
+        @section('css')
         <link rel="stylesheet" href="css/app.css?v=1">
+        @show
         <link rel="stylesheet" href="css/privacy.css?v=1">
         <link rel="stylesheet" href="/css/slick.css?v=1">
         <link rel="stylesheet" href="/css/slick-theme.css?v=1">
@@ -86,7 +90,6 @@
     </body>
     <script type="text/javascript">
         $(document).ready(function(){
-            $('.slide').hiSlide();
 
         $('.center').slick({
             centerMode: false,
@@ -259,65 +262,25 @@
             }
         })
 
-        $('.addon1').click(function(){
+        $('.read-more').click(function(){
             console.log("Hello World!");
-            if($('.addon1-down').is(':visible')){
+            if($('.read-more-down').is(':visible')){
 
-                $('.addon1-down').hide();  
+                $('.read-more-down').hide();  
                 $('.1-read-more').hide();  
-                $('.addon1-up').show();  
+                $('.read-more-up').show();  
                 $('.1-read-less').show();  
 
             } else {
 
                 $('.1-read-less').hide();  
                 $('.1-read-more').show();  
-                $('.addon1-down').show();  
-                $('.addon1-up').hide(); 
+                $('.read-more-down').show();  
+                $('.read-more-up').hide(); 
             }
         })
 
-        $('.addon2').click(function(){
-            console.log("Hello World!");
-            if($('.addon2-down').is(':visible')){
-
-                $('.addon2-down').hide();  
-                $('.2-read-more').hide();  
-                $('.addon2-up').show();  
-                $('.2-read-less').show();  
-
-            } else {
-
-                $('.2-read-less').hide();  
-                $('.2-read-more').show();  
-                $('.addon2-down').show();  
-                $('.addon2-up').hide(); 
-            }
-        })
-
-        $('.addon3').click(function(){
-            console.log("Hello World!");
-            if($('.addon3-down').is(':visible')){
-
-                $('.addon3-down').hide();  
-                $('.3-read-more').hide();  
-                $('.addon3-up').show();  
-                $('.3-read-less').show();  
-
-            } else {
-
-                $('.3-read-less').hide();  
-                $('.3-read-more').show();  
-                $('.addon3-down').show();  
-                $('.addon3-up').hide(); 
-            }
-        })
-
-
-
-
-
-        });
+    });
     </script>
     @if (session('success') || session('danger'))
     <script type="text/javascript">
