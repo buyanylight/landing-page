@@ -113,7 +113,7 @@
                         </div>
                     </div>
                     <div class="payments mt-3 ">
-                        <h5 class="text-white">Partners</h5>
+                        <h5 class="text-white">Visit Us</h5>
                         <div class="row mt-3">
                             <div class="col">
                                 <a href="https://light-middleeast.german-pavilion.com/en/home/">
