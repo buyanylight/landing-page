@@ -46,7 +46,7 @@
                             <div class="card-subtitle mt-2 text-muted">B2B & B2C</div>
                             <hr>
                             <p class="card-text">LightFinder users are businesses such as lighting companies, consultants or homeowners who prefer to source LED lights personally and directly from <br> manufacturers...</p>
-                            <a href="#finder" class="btn btn-sm pl-0 text-dark">
+                            <a href="#all-packages" class="btn btn-sm pl-0 text-dark">
                                 <div class="link-text" style="color: #5555A4">
                                     Cut LED cost, not quality 
                                 </div>&nbsp;
@@ -64,7 +64,7 @@
                             <div class="card-subtitle mt-2 text-muted">Private homes, villas, and palaces</div>
                             <hr>
                             <p class="card-text">Generic lights don’t belong in stylish, 21st century homes… Custom LED saves energy and costs, helps protect our planet and gives far greater aesthetic and design opportunities...</p>
-                            <a href="#finder" class="btn btn-sm pl-0 text-dark">
+                            <a href="#all-packages" class="btn btn-sm pl-0 text-dark">
                                 <div class="link-text" style="color: #5555A4">
                                     Find dream home LED at dreamy prices  
                                 </div>&nbsp;
@@ -82,7 +82,7 @@
                             <div class="card-subtitle mt-2 text-muted"> Consultants, contractors, clients</div>
                             <hr class="hr-card">
                             <p class="card-text"> My Tower users leverage our expertise to get the best products in the market, save a fortune, and improve their project delivery. When starting a project, you subscribe to our package...</p>
-                            <a href="#finder" class="btn btn-sm pl-0 text-dark">
+                            <a href="#all-packages" class="btn btn-sm pl-0 text-dark">
                                 <div class="link-text" style="color: #5555A4">
                                     Get the best quality and prices ever 
                                 </div>&nbsp;
