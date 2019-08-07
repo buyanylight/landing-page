@@ -110,9 +110,9 @@
 				<img src=" {{ asset('images/screen.png') }} " width="80%">	
 			</div>
 			<div class="col-md-6">
-					<p class="pt-3"><b>Step 1</b><br> Register your company. Wait for initial BAL approval. </p>
-					<p class="pt-5"><b>Step 2:</b><br> Provide few additional information and accept our terms. </p>
-					<p class="pt-5"><b>Step 3:</b><br> Start receiving enquiries, get awarded and start selling on BAL! </p>
+					<p class="pt-3"><b>Step 1</b><br>Fill out the information required </p>
+					<p class="pt-5"><b>Step 2:</b><br>Verify your e-mail ID</p>
+					<p class="pt-5"><b>Step 3:</b><br>Start receiving enquiries, get awarded and start selling on BAL! </p>
 			</div>
 		</div>
 		<p class="pt-3 text-left"><b>Save time and make your online registration now!</b>

@@ -107,12 +107,12 @@
 			<img src=" {{ asset('images/screen.png') }} " width="100%">
 			<div class="step-1 text-left pt-3">
 				<p class=""><b>Step 1:</b>
-					<br> Register your company. Wait for initial BAL approval.
+					<br> Fill out the information required
 				</p>
 			</div>
 			<div class="step-2 text-left pt-3">
 				<p class=""><b>Step 2:</b> 
-					<br> Provide few additional information and accept our terms.
+					<br> Verify your e-mail ID
 				</p>
 			</div>
 			<div class="step-3 text-left pt-3">
