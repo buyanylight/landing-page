@@ -472,7 +472,7 @@
                                         <b class="text-BAL">Greater variety</b>
                                     </div>
                                     <hr>
-                                    Find any type of LED light you need on BAL. Review different designs and technical specifications from world-class brands.
+                                    Find any type of LED light you need on BAL. Review different designs and technical specifications from world-class manufacturers.
                                 </div>
                             </div>
                         </div>
@@ -651,7 +651,7 @@
 <section class="section-8 bg-black" id="all-packages">
     <div class="container pt-5">
         <h3 class="text-white"><span class="text-BAL">OUR</span> PACKAGES</h3>
-        <p class="text-white pt-3">We welcome everyone to use our platform. Take a look at the groups below and see which one is right for you. <br> If you have any queries, don’t hesitate to <a href="#contact" class="text-white">get in touch.</a></p>
+        <p class="text-white pt-3">We welcome everyone to use our platform. Take a look at the groups below and see which one is right for you. <br> If you have any queries, don’t hesitate to <a href="/contact" class="text-white">get in touch.</a></p>
     </div>
     <div class="container pt-3 pb-5">
         <div class="card mb-3">
@@ -677,11 +677,18 @@
                     <h4 class="card-title pt-1 pb-3">
                         <b><span class="text-BAL">Light</span>Finder</b>
                     </h4>
+                    <a data-fancybox href="https://www.youtube.com/embed/OBm3CPqiXt8?rel=0&enablejsapi=1" class=" text-white package-link">
                     <div class="package-one">
-                        <div class="d-flex align-items-end pb-1 h-100">
-                            <a data-fancybox href="https://www.youtube.com/embed/OBm3CPqiXt8?rel=0&enablejsapi=1" class="btn text-white"><i class="fab fa-youtube"></i> Play video</a>
+                        <div class="d-flex align-items-end pb-2 pl-2 h-100">
+                            <div>
+                                <i class="fab fa-youtube"></i> 
+                                <span>
+                                    Play video
+                                </span>
+                            </div>
                         </div>
                     </div>
+                    </a>
                     <div class="row pt-3">
                         <div class="col-md-12">
                             <!-- <hr class="border-black"> -->
@@ -951,7 +958,7 @@
                                         <i class="fas fa-arrow-right"></i> 
                                     </div>
                                 </a>
-                                <a href="{{ asset('brochures/LightFinder_BAL.pdf') }}" class="pl-0 btn">
+                                <a href="{{ asset('brochures/LightFinder_BAL.pdf') }}" class="pl-0 btn" target="_blank">
                                     <div class="link-text">
                                         Brochure
                                     </div>&nbsp;
@@ -969,11 +976,18 @@
                     <h4 class="card-title pt-1 pb-3">
                         <b><span class="text-BAL">My</span> Home</b>
                     </h4>
+                    <a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="text-white package-link">
                     <div class="package-two">
-                        <div class="d-flex align-items-end pb-1 h-100">
-                            <a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn text-white"><i class="fab fa-youtube"></i> Play video</a>
+                        <div class="d-flex align-items-end pb-2 pl-2 h-100">
+                            <div>
+                                <i class="fab fa-youtube"></i> 
+                                <span>
+                                    Play video
+                                </span>
+                            </div>
                         </div>
                     </div>
+                    </a>
                     <div class="row">
                         <div class="col-md-12 pt-3">
                             <!-- <hr class="border-black"> -->
@@ -1002,7 +1016,7 @@
                             </button>
                             <div class="collapse" id="home2">
                                 <div class="card card-body ml-0 pl-0 border-0">
-                                    To start your project on the right track, choose the My Home package, upload your lighting requirements or share with us pictures of the lighting that’s currently in your home. Our team of experts will explore the ideal technology and design options for you and present you with a quote for your LED light project, quickly and efficiently. BAL offers you the lowest prices for excellent quality LED lights - plus you’ll also make huge savings on electricity bills. No more messing with local stores that exploit your inexperience and sell you their old stock at high prices! BAL raises the quality, lowers the costs and gives you a far more pleasing outcome all round.
+                                    To start your project on the right track, choose the MyHome package, upload your lighting requirements or share with us pictures of the lighting that’s currently in your home. Our team of experts will explore the ideal technology and design options for you and present you with a quote for your LED light project, quickly and efficiently. BAL offers you the lowest prices for excellent quality LED lights - plus you’ll also make huge savings on electricity bills. No more messing with local stores that exploit your inexperience and sell you their old stock at high prices! BAL raises the quality, lowers the costs and gives you a far more pleasing outcome all round.
                                     <br>
                                     <br>
                                     Don’t forget, with LED lights you’ll be playing a role in reducing the carbon footprint, saving energy and making the world a better place.
@@ -1107,7 +1121,7 @@
                                         <i class="fas fa-arrow-right"></i> 
                                     </div>
                                 </a>
-                                <a href="{{ asset('brochures/MyHome_BAL.pdf') }}" class="pl-0 btn">
+                                <a href="{{ asset('brochures/MyHome_BAL.pdf') }}" class="pl-0 btn" target="_blank">
                                     <div class="link-text">
                                     Brochure
                                     </div>&nbsp;
@@ -1125,11 +1139,18 @@
                     <h4 class="card-title pt-1 pb-3">
                         <b><span class="text-BAL">My</span> Tower</b>
                     </h4>
+                    <a data-fancybox href="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" class="text-white package-link">
                     <div class="package-three">
-                        <div class="d-flex align-items-end pb-1 h-100">
-                            <a data-fancybox href="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" class="btn text-white"><i class="fab fa-youtube"></i> Play video</a>
+                        <div class="d-flex align-items-end pb-2 pl-2 h-100">
+                            <div>
+                                <i class="fab fa-youtube"></i> 
+                                <span>
+                                    Play video
+                                </span>
+                            </div>
                         </div>
                     </div>
+                    </a>
                     <div class="row pt-3">
                         <div class="col-md-12">
                             <!-- <hr class="border-black"> -->
@@ -1260,7 +1281,7 @@
                                         <i class="fas fa-arrow-right"></i> 
                                     </div>
                                 </a>
-                                <a href="{{ asset('brochures/MyTower_BAL.pdf') }}" class="pl-0 btn">
+                                <a href="{{ asset('brochures/MyTower_BAL.pdf') }}" class="pl-0 btn" target="_blank">
                                     <div class="link-text">
                                         Brochure
                                     </div>&nbsp;
@@ -1307,7 +1328,7 @@
                                     <small style="font-size: 13px;">NO UPFRONT COSTS & FREE QUOTATION</small>
                                 </h4>
                                 <div class="card-body pt-5 pb-5">
-                                    <p class="card-text text-center"> GET A FREE QUOTE AT UNBELIEVABLE PRICES. YOU'LL LOVE OUR AMAZING PRICES!</p>
+                                    <p class="card-text text-center">GET A FREE QUOTE. YOU’LL LOVE OUR AMAZING PRICES!</p>
                                     <div class="pb-2 pt-2">
                                         <ul class="trial-list">
                                             <li>
@@ -1552,7 +1573,14 @@
                                     </div>
                                 </div>
                                 <div class="card card-premium-summary">
-                                    <h4 class="card-header text-center bg-BAL text-white">PREMIUM</h4>
+                                    <h4 class="card-header text-center bg-BAL text-white">
+                                        PREMIUM
+                                    </h4>
+                                    <div class="best-pick w-100 d-flex align-items-center justify-content-center">
+                                        <span class="text-black ">
+                                            <b>BEST PICK</b>
+                                        </span>
+                                    </div>
                                     <div class="card-body {{ ($agent->is('IE')) ? 'pb-5 pt-5' : 'pb-0 pt-0' }} text-center d-flex align-items-center">
                                         <div class="card-premium-contents">
                                             <p class="card-text">AN ABUNDANCE OF GREAT BAL BENEFITS - THE PERFECT PACKAGE FOR YOUR BUSINESS</p>
@@ -1703,7 +1731,7 @@
         <div class="row">
             <div class="col-md-4">
                 <h5>
-                    <b>General <span class="text-BAL">lighting</span> consultation</b>
+                    <b><span class="text-BAL">lighting</span> consultation</b>
                 </h5>
                 <img src="{{ asset('images/lightdesign.jpg')}}" class="mt-3 w-100 section-10-img">
                 <!-- <div class="w-100 general-lighting">
@@ -1799,7 +1827,7 @@
             </div>
             <div class="col-md-4">
                 <h5>
-                    <b>3D <span class="text-BAL">lighting</span> consultation</b>
+                    <b>3D <span class="text-BAL">lighting</span> design</b>
                 </h5>
                 <img src="{{ asset('images/3dlightingdesign.jpg')}}" class="mt-3 w-100 section-10-img">
                 <!-- <div class="w-100 general-lighting">

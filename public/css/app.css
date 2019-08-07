@@ -11234,22 +11234,36 @@ nav {
   background-color: #5555A4;
 }
 
+.package-link {
+  text-decoration: none;
+}
+
 .package-one {
   background: url("/images/LightFinder.jpg");
   height: 160px;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .package-two {
   background: url("/images/MyHome.jpg");
   height: 160px;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .package-three {
   background: url("/images/MyTower.jpg");
   height: 160px;
-  background-size: 100%;
+  background-size: cover;
+}
+
+.best-pick {
+  position: absolute;
+  height: 30px;
+  top: 10%;
+  text-align: center;
+  border: 1px solid #5555A4;
+  border-left: none;
+  border-right: none;
 }
 
 .card-my-tower {
