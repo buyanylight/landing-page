@@ -746,7 +746,7 @@
                             </button>
                             <div class="collapse" id="pricing">
                                 <div class="ml-0 pl-0 border-0">
-                                    <div class="card m-0 text-left">
+                                    <div class="card m-0 text-left" style="padding-bottom: 15px;">
                                         <div class="card-header bg-black">
                                             <ul class="nav nav-pills card-header-pills nav-justified">
                                                 <li class="nav-item  border border-white rounded-0">
@@ -1217,7 +1217,7 @@
                                             <small style="font-size: 13px;">NO UPFRONT COSTS & FREE QUOTATION</small>
                                         </h5>
                                         <div class="card-body pt-5 pb-3">
-                                            <p class="card-text text-center">A COMPLETE PROJECT SOLUTION WITH LOWEST PRICES IN THE ENTIRE MARKET - GUARANTEED!</p>
+                                            <p class="card-text text-center">A COMPLETE PROJECT SOLUTION WITH LOWEST PRICES IN THE ENTIRE MARKET</p>
                                             <div class="pb-2 pt-2">
                                                 <ul class="trial-list">
                                                     <li>
