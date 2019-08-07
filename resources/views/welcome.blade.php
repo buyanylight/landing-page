@@ -815,7 +815,7 @@
                                                     </div>
                                                     <p class="text-center">* 20% BAL fee on order confirmation</p>
                                                     <hr>
-                                                    <div class="text-center pb-2">
+                                                    <div class="text-center pt-2">
                                                         <h5>$499/Monthly</h5>
                                                         <small>$5499/Yearly</small>   
                                                     </div>
