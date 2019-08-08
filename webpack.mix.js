@@ -15,6 +15,7 @@ mix.js('resources/js/app.js', 'public/js')
 	.js('resources/js/mobile.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .sass('resources/sass/ieo.scss', 'public/css')
+    .sass('resources/sass/ieo-mobile.scss', 'public/css')
     .sass('resources/sass/slick/slick.scss', 'public/css')
     .sass('resources/sass/slick/slick-theme.scss', 'public/css')
     .sass('resources/sass/mobile.scss', 'public/css');
