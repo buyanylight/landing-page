@@ -917,9 +917,26 @@
 								Johannes Eidens
 							</b>
 						</p>
-						<p class="text-white pt-1">
-							sdfsd
+						<p class="text-white pt-1 mb-1">
+							Co Managing Partner
 						</p>
+						<a href="https://www.linkedin.com/in/dotcomv" class="pt-2 text-white" style="font-size: 20px;">
+							<i class="fab fa-linkedin"></i>
+						</a>
+					</div>
+					<div class="col text-center">
+						<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
+						<p class="header-text pt-3 mb-0">
+							<b>
+								Martin Heyen
+							</b>
+						</p>
+						<p class="text-white pt-1 mb-1">
+							Chief Financial Officer, International Expansion
+						</p>
+						<!-- <a href="" class="pt-2 text-white" style="font-size: 20px;">
+							<i class="fab fa-linkedin"></i>
+						</a> -->
 					</div>
 					<div class="col text-center">
 						<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
@@ -928,9 +945,12 @@
 								Leo Vicente
 							</b>
 						</p>
-						<p class="text-white pt-1">
-							sdfsd
+						<p class="text-white pt-1 mb-1">
+							Chief Technical Officer / Engineering Lead
 						</p>
+						<a href="https://www.linkedin.com/in/ljvicente/" class="pt-2 text-white" style="font-size: 20px;">
+							<i class="fab fa-linkedin"></i>
+						</a>
 					</div>
 					<div class="col text-center">
 						<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
@@ -939,10 +959,29 @@
 								Rene Rowell
 							</b>
 						</p>
-						<p class="text-white pt-1">
-							sdfsd
+						<p class="text-white pt-1 mb-1">
+							Blockchain Integration Director
 						</p>
+						<a href="https://www.linkedin.com/in/rene-rowell-dela-rama-3ab529148/" class="pt-2 text-white" style="font-size: 20px;">
+							<i class="fab fa-linkedin"></i>
+						</a>
 					</div>
+					<div class="col text-center">
+						<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
+						<p class="header-text pt-3 mb-0">
+							<b>
+								Zain Ul Abdin
+							</b>
+						</p>
+						<p class="text-white pt-1 mb-1">
+							Senior Architect
+						</p>
+						<a href="https://www.linkedin.com/in/muhammad-zain-ul-abdin-120a3612a/" class="pt-2 text-white" style="font-size: 20px;">
+							<i class="fab fa-linkedin"></i>
+						</a>
+					</div>
+				</div>
+				<div class="row pt-5">
 					<div class="col text-center">
 						<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
 						<p class="header-text pt-3 mb-0">
@@ -950,9 +989,12 @@
 								Rizvi Iqbal
 							</b>
 						</p>
-						<p class="text-white pt-1">
-							sdfsd
+						<p class="text-white pt-1 mb-1">
+							Software Developer
 						</p>
+						<a href="https://www.linkedin.com/in/rizviqbal/" class="pt-2 text-white" style="font-size: 20px;">
+							<i class="fab fa-linkedin"></i>
+						</a>
 					</div>
 					<div class="col text-center">
 						<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
@@ -961,22 +1003,40 @@
 								Ryan Quines
 							</b>
 						</p>
-						<p class="text-white pt-1">
-							sdfsd
+						<p class="text-white pt-1 mb-1">
+							UI/UX Visual Designer
 						</p>
+						<a href="https://www.linkedin.com/in/ryan-matthew-quines-551a85152/" class="pt-2 text-white" style="font-size: 20px;">
+							<i class="fab fa-linkedin"></i>
+						</a>
 					</div>
-				</div>
-				<div class="row pt-5">
 					<div class="col text-center">
 						<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
 						<p class="header-text pt-3 mb-0">
 							<b>
-								Zain Ul Abdin
+								Maria Carron Igloso
 							</b>
 						</p>
-						<p class="text-white pt-1">
-							sdfsd
+						<p class="text-white pt-1 mb-1">
+							Community Manager
 						</p>
+						<a href="https://www.linkedin.com/in/maria-carron-igloso-1324b5105/" class="pt-2 text-white" style="font-size: 20px;">
+							<i class="fab fa-linkedin"></i>
+						</a>
+					</div>
+					<div class="col text-center">
+						<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
+						<p class="header-text pt-3 mb-0">
+							<b>
+								Tiffany Anggot
+							</b>
+						</p>
+						<p class="text-white pt-1 mb-1">
+							Cryptography Researcher
+						</p>
+						<a href="https://www.linkedin.com/in/tiffany-jel-a-367548147/" class="pt-2 text-white" style="font-size: 20px;">
+							<i class="fab fa-linkedin"></i>
+						</a>
 					</div>
 					<div class="col text-center">
 						<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
@@ -985,42 +1045,12 @@
 								Nantha Kumar
 							</b>
 						</p>
-						<p class="text-white pt-1">
-							sdfsd
+						<p class="text-white pt-1 mb-1">
+							Sales Director
 						</p>
-					</div>
-					<div class="col text-center">
-						<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
-						<p class="header-text pt-3 mb-0">
-							<b>
-								Maria Carrion
-							</b>
-						</p>
-						<p class="text-white pt-1">
-							sdfsd
-						</p>
-					</div>
-					<div class="col text-center">
-						<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
-						<p class="header-text pt-3 mb-0">
-							<b>
-								Tiffany Anggot	
-							</b>
-						</p>
-						<p class="text-white pt-1">
-							sdfsd
-						</p>
-					</div>
-					<div class="col text-center">
-						<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
-						<p class="header-text pt-3 mb-0">
-							<b>
-								Team 3
-							</b>
-						</p>
-						<p class="text-white pt-1">
-							sdfsd
-						</p>
+						<a href="https://www.linkedin.com/in/nantha-kumar-36b92685/" class="pt-2 text-white" style="font-size: 20px;">
+							<i class="fab fa-linkedin"></i>
+						</a>
 					</div>
 				</div>
 				<div class="pt-5">
@@ -1040,45 +1070,57 @@
 						<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
 						<p class="header-text pt-3 mb-0">
 							<b>
-								Advisor
+								Dr. Moritz Eidens
 							</b>
 						</p>
-						<p class="text-white pt-1">
-							sdfsd
+						<p class="text-white pt-1 mb-1">
+							CEO PharmGenomics GmbH
 						</p>
+						<a href="https://www.linkedin.com/in/dr-moritz-eidens-80550910/" class="pt-2 text-white" style="font-size: 20px;">
+							<i class="fab fa-linkedin"></i>
+						</a>
 					</div>
 					<div class="col text-center">
-						<!-- <img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
+						<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
 						<p class="header-text pt-3 mb-0">
 							<b>
-								Team 2	
+								Ralph Kattan
 							</b>
 						</p>
-						<p class="text-white pt-1">
-							sdfsd
-						</p> -->
+						<p class="text-white pt-1 mb-1">
+							Early BAL Investor. Fintech, Blockchain researcher & Digital Assets expert.
+						</p>
+						<a href="" class="pt-2 text-white" style="font-size: 20px;">
+							<i class="fab fa-linkedin"></i>
+						</a>
 					</div>
 					<div class="col text-center">
-					<!-- 	<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
+						<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
 						<p class="header-text pt-3 mb-0">
 							<b>
-								Team 3
+								Khalid Almutawa
 							</b>
 						</p>
-						<p class="text-white pt-1">
-							sdfsd
-						</p> -->
+						<p class="text-white pt-1 mb-1">
+							Partner and Chairman ASAS Holding Group
+						</p>
+						<a href="https://www.linkedin.com/in/ljvicente/" class="pt-2 text-white" style="font-size: 20px;">
+							<i class="fab fa-linkedin"></i>
+						</a>
 					</div>
 					<div class="col text-center">
-						<!-- <img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
+						<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">
 						<p class="header-text pt-3 mb-0">
 							<b>
-								Team 4
+								Dr. Stefan Freh
 							</b>
 						</p>
-						<p class="text-white pt-1">
-							sdfsd
-						</p> -->
+						<p class="text-white pt-1 mb-1">
+							Specialist Solicitor Industrial Law
+						</p>
+						<!-- <a href="https://www.linkedin.com/in/rene-rowell-dela-rama-3ab529148/" class="pt-2 text-white" style="font-size: 20px;">
+							<i class="fab fa-linkedin"></i>
+						</a> -->
 					</div>
 					<div class="col text-center">
 					<!-- 	<img src="{{ asset('images/ieo/team.png')}}" class="rounded-circle team-img">

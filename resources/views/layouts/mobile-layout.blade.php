@@ -237,6 +237,15 @@
             c = currentScrollTop;
         });
 
+         $('.timeline').slick({
+            centerMode: false,
+            centerPadding: '0px',
+            slidesToShow: 1,
+            initialSlide:0,
+            infinite: false,
+           
+        });
+
 
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()

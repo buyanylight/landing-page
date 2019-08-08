@@ -11209,7 +11209,7 @@ nav .dropdown-toggle::after {
   height: 23rem !important;
   border: white 10px solid;
   position: relative;
-  bottom: 75px;
+  bottom: 100px;
 }
 
 #days {
@@ -11254,5 +11254,140 @@ nav .dropdown-toggle::after {
 
 #timer {
   border-radius: 40px;
+}
+
+.mv-img {
+  background: -webkit-linear-gradient(right, #E23D96, #5555A4);
+  padding: 8px;
+}
+
+.yt {
+  position: relative;
+  bottom: 30px;
+  left: 0px;
+  font-size: 13px;
+}
+
+#token-info td,
+#token-info th {
+  padding: 20px;
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+#token-info tr:nth-child(odd) {
+  background: -webkit-linear-gradient(right, #e23d966e, #5555a46e);
+  border-radius: 10px;
+}
+
+.token-list {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.text-1 {
+  color: #754a73;
+}
+
+.text-2 {
+  color: #f0c40f;
+}
+
+.text-3 {
+  color: #8f44ac;
+}
+
+.text-4 {
+  color: #e77d22;
+}
+
+.text-5 {
+  color: #c1392b;
+}
+
+.text-6 {
+  color: #ff2537;
+}
+
+.text-7 {
+  color: #34bad1;
+}
+
+.team-img {
+  width: 40%;
+  background: white;
+  padding: 10px;
+}
+
+.map-list {
+  list-style: none;
+}
+
+.timeline {
+  list-style-type: none;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  color: black;
+}
+
+.li {
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+
+.timestamp {
+  padding: 0px 40px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  font-weight: 100;
+}
+
+.status {
+  padding: 0px 10px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  border-top: 2px solid #D6DCE0;
+  position: relative;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+
+.one-map:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: -webkit-linear-gradient(right, #E23D96, #5555A4);
+  border-radius: 25px;
+  position: absolute;
+  top: -15px;
+  left: 42%;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+
+.li.complete .status {
+  border-top: 2px solid #969696;
+}
+
+.li.complete .status:before {
+  background-color: #66DC71;
+  border: none;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+
+.timeline {
+  font-size: 13px;
 }
 
