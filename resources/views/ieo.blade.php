@@ -640,12 +640,25 @@
 									<td>Supply Reserved for IEO:</td>
 									<td>16,500,000(30%)</td>
 								</tr>
+								<tr>
+									<td>Private Round Token Sale Date:</td>
+									<td>16.5 Million (30% of the total supply)</td>
+								</tr>
+								<tr>
+									<td>Token Available for IEO:</td>
+									<td>01.10.2019</td>
+								</tr>
+								
 							</table>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div>
 							<table class="text-left w-100" id="token-info"> 
+								<tr>
+									<td>IEO Round Token Sale Date:</td>
+									<td>01.12.2019</td>
+								</tr>
 								<tr>
 									<td>Soft Cap:</td>
 									<td>1,000,000 $</td>
@@ -663,13 +676,14 @@
 									<td>No</td>
 								</tr>
 								<tr>
-									<td>Token Issue:</td>
-									<td>30.11.2019</td>
-								</tr>
-								<tr>
 									<td>Accepts:</td>
 									<td>ETH, BTC</td>
 								</tr>
+								<tr>
+									<td>Token Available for Private Sale:</td>
+									<td>5.5 Million (10% of the total supply)</td>
+								</tr>
+								
 							</table>
 						</div>
 					</div>
