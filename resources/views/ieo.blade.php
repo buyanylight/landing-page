@@ -21,9 +21,9 @@
 					</span>
 				</h3>
 				<div class="pt-1">
-					<a href="" class="btn btn-ieo">One Pager</a>
-					<a href="" class="btn btn-ieo">White Paper</a>
-					<a href="" class="btn btn-ieo">Yellow Paper</a>
+					<a href="/coming-soon" class="btn btn-ieo">One Pager</a>
+					<a href="/coming-soon" class="btn btn-ieo">White Paper</a>
+					<a href="/coming-soon" class="btn btn-ieo">Yellow Paper</a>
 				</div>
 			</div>
 			<div class="col-md-4 bg-ieo countdown rounded-circle">
@@ -140,9 +140,9 @@
 				Download and get more detailed information <br> about out initial exchange offering
 			</p>
 			<div class="buttons pt-3">
-				<a href="" class="btn btn-ieo ">One Pager</a>
-				<a href="" class="btn btn-ieo ml-3">White Paper</a>
-				<a href="" class="btn btn-ieo ml-3">Yellow Paper</a>
+				<a href="/coming-soon" class="btn btn-ieo ">One Pager</a>
+				<a href="/coming-soon" class="btn btn-ieo ml-3">White Paper</a>
+				<a href="/coming-soon" class="btn btn-ieo ml-3">Yellow Paper</a>
 			</div>
 		</div>
 	</div>
@@ -888,9 +888,9 @@
 				Download and get more detailed information <br> about out initial exchange offering
 			</p>
 			<div class="buttons pt-3">
-				<a href="" class="btn btn-ieo ">One Pager</a>
-				<a href="" class="btn btn-ieo ml-3">White Paper</a>
-				<a href="" class="btn btn-ieo ml-3">Yellow Paper</a>
+				<a href="/coming-soon" class="btn btn-ieo ">One Pager</a>
+				<a href="/coming-soon" class="btn btn-ieo ml-3">White Paper</a>
+				<a href="/coming-soon" class="btn btn-ieo ml-3">Yellow Paper</a>
 			</div>
 		</div>
 	</div>
