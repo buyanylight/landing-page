@@ -1,5 +1,15 @@
 @extends('layouts.main-layout')
 
+@section('meta-title')
+<meta name="title" content="BuyAnyLight | IEO">
+<meta property="og:title" content=" BuyAnyLight | IEO">
+@endsection
+
+@section('meta-description')
+<meta name="description" content="BuyAnyLight (BAL) IEO is a crowdfunding campaign aimed at raising funds for the development of a decentralized,  marketplace for lighting products." />
+<meta property="og:description" content="BuyAnyLight (BAL) IEO is a crowdfunding campaign aimed at raising funds for the development of a decentralized,  marketplace for lighting products.">
+@endsection
+
 @section('css')
 	<link rel="stylesheet" href="css/ieo.css?v=1">
 @endsection
