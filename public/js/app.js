@@ -49469,7 +49469,7 @@ $("#topBtn").click(function () {
         return _self.params.htmlMarkup;
       }
 
-      var html = '<div class="eupopup-container' + ' eupopup-container-' + _self.params.popupPosition + (_self.params.compactStyle ? ' eupopup-style-compact' : '') + ' eupopup-color-' + _self.params.colorStyle + '">' + '<div class="eupopup-head">' + _self.params.popupTitle + '</div>' + '<div class="eupopup-body">' + _self.params.popupText + '</div>' + '<div class="eupopup-buttons">' + '<a href="#" class="eupopup-button eupopup-button_1">' + _self.params.buttonContinueTitle + '</a>' + '<a href="' + _self.params.cookiePolicyUrl + '"' + (_self.params.buttonLearnmoreOpenInNewWindow ? ' target=_blank ' : '') + ' class="eupopup-button eupopup-button_2">' + _self.params.buttonLearnmoreTitle + '</a>' + '<div class="clearfix"></div>' + '</div>' + '<a href="#" class="eupopup-closebutton">x</a>' + '</div>';
+      var html = '<div class="eupopup-container' + ' eupopup-container-' + _self.params.popupPosition + (_self.params.compactStyle ? ' eupopup-style-compact' : '') + ' eupopup-color-' + _self.params.colorStyle + '">' + '<div class="eupopup-head">' + _self.params.popupTitle + '</div>' + '<div class="eupopup-body">' + _self.params.popupText + '</div>' + '<div class="eupopup-buttons">' + '<a href="#" class="eupopup-button eupopup-button_1 btn btn-BAL">' + _self.params.buttonContinueTitle + '</a>' + '<a href="' + _self.params.cookiePolicyUrl + '"' + (_self.params.buttonLearnmoreOpenInNewWindow ? ' target=_blank ' : '') + ' class="eupopup-button eupopup-button_2 btn btn-BAL">' + _self.params.buttonLearnmoreTitle + '</a>' + '<div class="clearfix"></div>' + '</div>' + '<a href="#" class="eupopup-closebutton">x</a>' + '</div>';
       return html;
     }; // Storing the consent in a cookie
 
@@ -49755,6 +49755,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/privacy.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/privacy.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/slick/slick-theme.scss":
 /*!***********************************************!*\
   !*** ./resources/sass/slick/slick-theme.scss ***!
@@ -49778,14 +49789,15 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!*******************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/ieo.scss ./resources/sass/ieo-mobile.scss ./resources/sass/slick/slick.scss ./resources/sass/slick/slick-theme.scss ./resources/sass/mobile.scss ***!
-  \*******************************************************************************************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/privacy.scss ./resources/sass/ieo.scss ./resources/sass/ieo-mobile.scss ./resources/sass/slick/slick.scss ./resources/sass/slick/slick-theme.scss ./resources/sass/mobile.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\js\app.js */"./resources/js/app.js");
 __webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\privacy.scss */"./resources/sass/privacy.scss");
 __webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\ieo.scss */"./resources/sass/ieo.scss");
 __webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\ieo-mobile.scss */"./resources/sass/ieo-mobile.scss");
 __webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\slick\slick.scss */"./resources/sass/slick/slick.scss");

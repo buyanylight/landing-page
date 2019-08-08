@@ -1,6 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
+    "/css/privacy.css": "/css/privacy.css",
     "/css/ieo.css": "/css/ieo.css",
     "/css/ieo-mobile.css": "/css/ieo-mobile.css",
     "/css/slick.css": "/css/slick.css",

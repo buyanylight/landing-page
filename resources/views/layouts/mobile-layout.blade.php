@@ -70,7 +70,7 @@
     <!-- Meta -->
 
 </head>
-<body class="eupopup eupopup-bottom eupopup-style-compact">
+<body class="eupopup eupopup-bottom">
 	@include('includes.mobile-navbar')
     <div style="position: relative;  z-index: 5">
             <!-- Position toasts -->
