@@ -78,7 +78,7 @@
 	<div class="container pt-5 pb-5">
 		<div class="row">
 			<div class="col-md-6">
-				
+					<img src="{{ asset('images/ieo/2.png')}}" width="80%">		
 			</div>
 			<div class="col-md-6">
 				<h3>
