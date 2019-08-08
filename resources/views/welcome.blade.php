@@ -533,7 +533,7 @@
                                 <div class="card-body">
                                     <div class="card-title">
                                         <i class="fas fa-thumbs-up"></i>&nbsp;
-                                        <b class="text-BAL">Greater variety</b>
+                                        <b class="text-BAL">First-class consultancy</b>
                                     </div>
                                     
                                     <hr>
@@ -1309,13 +1309,13 @@
                         <a class="nav-link text-dark font-weight-bold" id="pills-trial-tab" data-toggle="pill" href="#pills-trial" role="tab" aria-controls="pills-trial" aria-selected="true">Free Trial</a>
                     </li>
                     <li class="nav-item" style="border: 1px solid black; border-radius: 5px;">
-                        <a class="nav-link text-dark font-weight-bold" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false">My Home</a>
+                        <a class="nav-link active text-dark font-weight-bold" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false">My Home</a>
                     </li>
                     <li class="nav-item" style="border: 1px solid black; border-radius: 5px;">
                         <a class="nav-link text-dark font-weight-bold" id="pills-tower-tab" data-toggle="pill" href="#pills-tower" role="tab" aria-controls="pills-tower" aria-selected="false">My Tower</a>
                     </li>
                     <li class="nav-item" style="border: 1px solid black; border-radius: 5px;">
-                        <a class="nav-link active text-dark font-weight-bold" id="pills-finder-tab" data-toggle="pill" href="#pills-finder" role="tab" aria-controls="pills-finder" aria-selected="false">LightFinder</a>
+                        <a class="nav-link text-dark font-weight-bold" id="pills-finder-tab" data-toggle="pill" href="#pills-finder" role="tab" aria-controls="pills-finder" aria-selected="false">LightFinder</a>
                     </li>
                 </ul>
                 <div class="tab-content pt-5" id="pills-tabContent" style="height: 90%;">
@@ -1371,7 +1371,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane   fade h-100" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="tab-pane show active  fade h-100" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                         <div class="pills-all h-100">
                             <div class="card card-my-home-summary">
                                 <h4 class="card-header text-center bg-BAL text-white">
@@ -1505,7 +1505,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade show active h-100" id="pills-finder" role="tabpanel" aria-labelledby="pills-finder-tab">
+                    <div class="tab-pane fade h-100" id="pills-finder" role="tabpanel" aria-labelledby="pills-finder-tab">
                         <div class="pills-all h-100" style=" {{ ($agent->is('IE')) ? 'display:block;' : '' }}" >
                             <div class="card-group">
                                 <div class="card card-mini-summary">
