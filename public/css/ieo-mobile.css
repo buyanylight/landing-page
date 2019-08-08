@@ -11391,3 +11391,7 @@ nav .dropdown-toggle::after {
   font-size: 13px;
 }
 
+.grecaptcha-badge {
+  visibility: collapse !important;
+}
+
