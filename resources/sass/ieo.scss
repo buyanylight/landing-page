@@ -1,0 +1,293 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html{	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	background-color: white;
+}
+
+nav{
+	transition: all 0.5s
+}
+
+.scrollUp{
+	transform: translateY(-80px)
+}
+
+.ncol{
+ color: black !important;
+}
+
+.navbar-nav li:hover>.dropdown-menu {
+  display: block;
+}
+
+.section-1{
+	background: url('/images/ieo/1.png');
+	background-position-y: bottom;
+	height: 66vh;
+}
+
+.header-text{
+	background: -webkit-linear-gradient( right, #E23D96, #5555A4);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.btn{
+	border-radius: 1.5rem;
+}
+.btn-ieo{
+	background: -webkit-linear-gradient( right, #E23D96, #5555A4);
+	color: white
+}
+
+.btn-ieo:hover{
+	background: -webkit-linear-gradient(right, #ea8bbf, #8e8ed4);
+	color: white;
+}
+
+.timeline {
+
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.li {
+
+  transition: all 200ms ease-in;
+}
+
+.timestamp {
+
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 100;
+}
+.status {
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #D6DCE0;
+  position: relative;
+  transition: all 200ms ease-in;  
+
+}
+  .one-map {
+	  &:before {
+
+	    content: '';
+	    width: 25px;
+	    height: 25px;
+	    background: -webkit-linear-gradient( right, #E23D96, #5555A4);
+	    border-radius: 25px;
+	    position: absolute;
+	    top: -15px;
+	    left: 42%;
+	    transition: all 200ms ease-in; 
+
+	  }
+  }
+.li.complete
+  .status {
+    border-top: 2px solid #969696;
+   &:before {
+      background-color: #66DC71;
+      border: none;
+      transition: all 200ms ease-in; 
+
+  }
+}
+
+.slick-prev, .slick-next{
+	position:relative !important;
+}
+
+.timeline{
+	font-size: 13px;
+}
+
+.author{
+	position:relative;
+	right: 8px;
+}
+
+.yt{
+	position: absolute;
+    bottom: 7%;
+    left: 48.35%;
+    font-size: 20px;
+}
+
+.mv-img{
+	background: -webkit-linear-gradient( right, #E23D96, #5555A4);
+	padding: 8px;
+}
+
+
+#token-info td, #token-info th {
+  // border: 1px solid #ddd;
+  padding: 15px;
+}
+
+#token-info tr:nth-child(odd){
+	background:-webkit-linear-gradient(right, #e23d966e, #5555a46e);
+	border-radius:10px;
+}
+
+
+.token-list {
+  list-style: none;
+  padding-left: 15px;
+}
+
+
+.text-1{
+	color: #754a73;
+}
+.text-2{
+	color: #f0c40f;
+}
+.text-3{
+	color: #8f44ac;
+}
+.text-4{
+	color: #e77d22;
+}
+.text-5{
+	color: #c1392b;
+}
+.text-6{
+	 color: #ff2537;
+}
+.text-7{
+	color: #34bad1;
+}
+
+.team-img{
+    width: 40%;
+    background: white;
+    padding: 10px;
+}
+
+.section-9{
+	height: 50vh;
+}
+
+.newsletter-card{
+	box-shadow:  1px 1px 20px #dadada;
+	border: 0px;
+}
+
+#days {
+  font-size: 10px;
+  color: #5901FB;
+}
+#hours {
+  font-size: 10px;
+  color: #9107DD;
+}
+#minutes {
+  font-size: 10px;
+  color: #C30CC3;
+}
+#seconds {
+  font-size: 10px;
+  color: #F211AA;
+}
+
+#days1 {
+  font-size: 10px;
+  color: #5901FB;
+}
+#hours1 {
+  font-size: 10px;
+  color: #9107DD;
+}
+#minutes1 {
+  font-size: 10px;
+  color: #C30CC3;
+}
+#seconds1 {
+  font-size: 10px;
+  color: #F211AA;
+}
+
+.countdown{
+	height: 60%;
+	border: white 10px solid;
+}
+
+#timer{
+	border-radius:40px;
+}
+
+
+.map-list{
+	list-style: none;
+}
+
+
+footer{
+	height: 100%;
+}
+
+.footer-list{
+	font-size:13px;
+	list-style-type: none;
+}
+
+.one-brand{
+	width: 64px;
+ 	-webkit-filter: grayscale(100%);
+  	-moz-filter: grayscale(100%);
+  	-ms-filter: grayscale(100%);
+  	-o-filter: grayscale(100%);
+  	filter: grayscale(100%);
+}
+
+.one-link{
+	font-size: 20px;
+}
+
+.one-pay{
+	font-size: 30px;
+}
+
+.text-grey{
+	color: grey;
+}
+
+.bg-black{
+	background-color: #000;
+}
+
+.bg-white{
+	background-color: #fff !important;
+}
+
+.bg-ieo{
+	background: -webkit-linear-gradient( right, #E23D96, #5555A4);
+}
+
+.half-width{
+	width: 49.91%
+}
+
+
+.text-BAL{
+	color: #5555A4;
+	}

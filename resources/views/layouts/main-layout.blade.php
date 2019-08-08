@@ -109,6 +109,18 @@
             infinite: true,
         });
 
+          $('.timeline').slick({
+            centerMode: false,
+            centerPadding: '0px',
+            slidesToShow: 4,
+            initialSlide:0,
+            infinite: false,
+            appendArrows: $('.arrows'),
+            prevArrow: '<button type="button" class="slick-prev d-inline-block">Previous</button>',
+            nextArrow: '<button type="button" class="slick-next d-inline-block">Next</button>',
+        });
+
+
 
         'use strict';
   
@@ -291,6 +303,64 @@
         })
 
     });
+
+    function makeTimerPrivate() {
+
+    //      var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");  
+        var endTime = new Date("01 October 2019 0:00:00 GMT+04:00");          
+            endTime = (Date.parse(endTime) / 1000);
+
+            var now = new Date();
+            now = (Date.parse(now) / 1000);
+
+            var timeLeft = endTime - now;
+
+            var days = Math.floor(timeLeft / 86400); 
+            var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+            var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+            var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+  
+            if (hours < "10") { hours = "0" + hours; }
+            if (minutes < "10") { minutes = "0" + minutes; }
+            if (seconds < "10") { seconds = "0" + seconds; }
+
+            $("#days").html("<span style='font-size: 14px;'>" + days +" </span>" + "<br><span>Days</span>");
+            $("#hours").html("<span style='font-size: 14px;'>" + hours +" </span>" + "<br><span>Hours</span>");
+            $("#minutes").html("<span style='font-size: 14px;'>" + minutes +" </span>" + "<br><span>Minutes</span>");
+            $("#seconds").html("<span style='font-size: 14px;'>" + seconds +" </span>" + "<br><span>Seconds</span>");       
+
+    }
+
+    setInterval(function() { makeTimerPrivate(); }, 1000);
+
+    function makeTimerPublic() {
+
+    //      var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");  
+        var endTime = new Date("01 December 2019 0:00:00 GMT+04:00");          
+            endTime = (Date.parse(endTime) / 1000);
+
+            var now = new Date();
+            now = (Date.parse(now) / 1000);
+
+            var timeLeft = endTime - now;
+
+            var days = Math.floor(timeLeft / 86400); 
+            var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+            var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+            var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+  
+            if (hours < "10") { hours = "0" + hours; }
+            if (minutes < "10") { minutes = "0" + minutes; }
+            if (seconds < "10") { seconds = "0" + seconds; }
+
+            $("#days1").html("<span style='font-size: 14px;'>" + days +" </span>" + "<br><span>Days</span>");
+            $("#hours1").html("<span style='font-size: 14px;'>" + hours +" </span>" + "<br><span>Hours</span>");
+            $("#minutes1").html("<span style='font-size: 14px;'>" + minutes +" </span>" + "<br><span>Minutes</span>");
+            $("#seconds1").html("<span style='font-size: 14px;'>" + seconds +" </span>" + "<br><span>Seconds</span>");       
+
+    }
+
+    setInterval(function() { makeTimerPublic(); }, 1000);
 
 
 
