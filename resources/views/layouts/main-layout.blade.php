@@ -78,7 +78,7 @@
 
 
     </head>
-    <body class="eupopup eupopup-bottom eupopup-style-compact">
+    <body class="eupopup eupopup-bottom">
         @include('includes.navbar')
         @yield('content')
 
