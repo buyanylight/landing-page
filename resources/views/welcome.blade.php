@@ -60,7 +60,7 @@
                     <div class="card border-0">
                         <img src="{{ asset('images/home-icon.png') }}" class="ml-3" alt="..." width="9%">
                         <div class="card-body">
-                            <h4 class="card-title text-BAL">MyHome</h4>
+                            <h4 class="card-title text-BAL">My Home</h4>
                             <div class="card-subtitle mt-2 text-muted">Private homes, villas, and palaces</div>
                             <hr>
                             <p class="card-text">Generic lights don’t belong in stylish, 21st century homes… Custom LED saves energy and costs, helps protect our planet and gives far greater aesthetic and design opportunities...</p>
@@ -78,7 +78,7 @@
                     <div class="card border-0">
                         <img src="{{ asset('images/tower-icon.png') }}" class="card-top ml-3" alt="...">
                         <div class="card-body">
-                            <h4 class="card-title text-BAL" >MyTower</h4>
+                            <h4 class="card-title text-BAL" >My Tower</h4>
                             <div class="card-subtitle mt-2 text-muted"> Consultants, contractors, clients</div>
                             <hr class="hr-card">
                             <p class="card-text"> My Tower users leverage our expertise to get the best products in the market, save a fortune, and improve their project delivery. When starting a project, you subscribe to our package...</p>
@@ -504,7 +504,7 @@
                                         <b class="text-BAL">Risk-free</b>
                                     </div>
                                     <hr>
-                                    No long-term financial commitment - and no upfront payment when using My Home and MyTower packages.
+                                    No long-term financial commitment - and no upfront payment when using My Home and My Tower packages.
                                 </div>
                             </div>
                         </div>
@@ -533,7 +533,7 @@
                                 <div class="card-body">
                                     <div class="card-title">
                                         <i class="fas fa-thumbs-up"></i>&nbsp;
-                                        <b class="text-BAL">Greater variety</b>
+                                        <b class="text-BAL">First-class consultancy</b>
                                     </div>
                                     
                                     <hr>
@@ -1016,7 +1016,7 @@
                             </button>
                             <div class="collapse" id="home2">
                                 <div class="card card-body ml-0 pl-0 border-0">
-                                    To start your project on the right track, choose the MyHome package, upload your lighting requirements or share with us pictures of the lighting that’s currently in your home. Our team of experts will explore the ideal technology and design options for you and present you with a quote for your LED light project, quickly and efficiently. BAL offers you the lowest prices for excellent quality LED lights - plus you’ll also make huge savings on electricity bills. No more messing with local stores that exploit your inexperience and sell you their old stock at high prices! BAL raises the quality, lowers the costs and gives you a far more pleasing outcome all round.
+                                    To start your project on the right track, choose the My Home package, upload your lighting requirements or share with us pictures of the lighting that’s currently in your home. Our team of experts will explore the ideal technology and design options for you and present you with a quote for your LED light project, quickly and efficiently. BAL offers you the lowest prices for excellent quality LED lights - plus you’ll also make huge savings on electricity bills. No more messing with local stores that exploit your inexperience and sell you their old stock at high prices! BAL raises the quality, lowers the costs and gives you a far more pleasing outcome all round.
                                     <br>
                                     <br>
                                     Don’t forget, with LED lights you’ll be playing a role in reducing the carbon footprint, saving energy and making the world a better place.
@@ -1309,13 +1309,13 @@
                         <a class="nav-link text-dark font-weight-bold" id="pills-trial-tab" data-toggle="pill" href="#pills-trial" role="tab" aria-controls="pills-trial" aria-selected="true">Free Trial</a>
                     </li>
                     <li class="nav-item" style="border: 1px solid black; border-radius: 5px;">
-                        <a class="nav-link text-dark font-weight-bold" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false">My Home</a>
+                        <a class="nav-link active text-dark font-weight-bold" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false">My Home</a>
                     </li>
                     <li class="nav-item" style="border: 1px solid black; border-radius: 5px;">
                         <a class="nav-link text-dark font-weight-bold" id="pills-tower-tab" data-toggle="pill" href="#pills-tower" role="tab" aria-controls="pills-tower" aria-selected="false">My Tower</a>
                     </li>
                     <li class="nav-item" style="border: 1px solid black; border-radius: 5px;">
-                        <a class="nav-link active text-dark font-weight-bold" id="pills-finder-tab" data-toggle="pill" href="#pills-finder" role="tab" aria-controls="pills-finder" aria-selected="false">LightFinder</a>
+                        <a class="nav-link text-dark font-weight-bold" id="pills-finder-tab" data-toggle="pill" href="#pills-finder" role="tab" aria-controls="pills-finder" aria-selected="false">LightFinder</a>
                     </li>
                 </ul>
                 <div class="tab-content pt-5" id="pills-tabContent" style="height: 90%;">
@@ -1371,7 +1371,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane   fade h-100" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="tab-pane show active  fade h-100" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                         <div class="pills-all h-100">
                             <div class="card card-my-home-summary">
                                 <h4 class="card-header text-center bg-BAL text-white">
@@ -1505,7 +1505,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade show active h-100" id="pills-finder" role="tabpanel" aria-labelledby="pills-finder-tab">
+                    <div class="tab-pane fade h-100" id="pills-finder" role="tabpanel" aria-labelledby="pills-finder-tab">
                         <div class="pills-all h-100" style=" {{ ($agent->is('IE')) ? 'display:block;' : '' }}" >
                             <div class="card-group">
                                 <div class="card card-mini-summary">
@@ -1827,7 +1827,7 @@
             </div>
             <div class="col-md-4">
                 <h5>
-                    <b>3D <span class="text-BAL">lighting</span> design</b>
+                    <b>3D <span class="text-BAL">Lighting</span> design</b>
                 </h5>
                 <img src="{{ asset('images/3dlightingdesign.jpg')}}" class="mt-3 w-100 section-10-img">
                 <!-- <div class="w-100 general-lighting">
