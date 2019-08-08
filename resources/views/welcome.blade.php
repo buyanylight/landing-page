@@ -1731,7 +1731,7 @@
         <div class="row">
             <div class="col-md-4">
                 <h5>
-                    <b><span class="text-BAL">lighting</span> consultation</b>
+                    <b><span class="text-BAL">Lighting</span> consultation</b>
                 </h5>
                 <img src="{{ asset('images/lightdesign.jpg')}}" class="mt-3 w-100 section-10-img">
                 <!-- <div class="w-100 general-lighting">
@@ -1827,7 +1827,7 @@
             </div>
             <div class="col-md-4">
                 <h5>
-                    <b>3D <span class="text-BAL">Lighting</span> design</b>
+                    <b>3D <span class="text-BAL">lighting</span> design</b>
                 </h5>
                 <img src="{{ asset('images/3dlightingdesign.jpg')}}" class="mt-3 w-100 section-10-img">
                 <!-- <div class="w-100 general-lighting">
