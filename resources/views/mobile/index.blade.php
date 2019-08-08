@@ -14,7 +14,7 @@
                     <a data-fancybox  href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" class="btn btn-dark header-link fancybox">Watch Video</a>
                 </div>
                 <div class="container text-center pt-2">
-                    <a href="/ieo" class="btn btn-dark header-link">IEO</a>
+                    <a href="/coming-soon" class="btn btn-dark header-link">IEO</a>
                 </div>
 			</div>
 		</div>
