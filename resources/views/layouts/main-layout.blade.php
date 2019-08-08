@@ -87,8 +87,18 @@
         <script src="js/app.js" charset="utf-8"></script>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    </body>
+     <script src="https://www.google.com/recaptcha/api.js?render={{ env('CAPTCHA_KEY') }}"></script>
+ 
+
     <script type="text/javascript">
+        grecaptcha.ready(function() {
+        grecaptcha.execute( '{{ env('CAPTCHA_KEY') }}' , { action: 'contact' } )
+           .then(function(token) {
+                var recaptchaResponse = document.getElementById('recaptchaResponse');
+                recaptchaResponse.value = token;
+                $('.send-message').removeAttr('disabled','disabled');
+            });
+     });
         $(document).ready(function(){
 
         $('.center').slick({
@@ -281,6 +291,10 @@
         })
 
     });
+
+
+
+
     </script>
     @if (session('success') || session('danger'))
     <script type="text/javascript">
@@ -289,4 +303,6 @@
         });
     </script>
     @endif
+       </body>
 </html>
+
