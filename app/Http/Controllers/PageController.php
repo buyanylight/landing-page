@@ -91,6 +91,26 @@ class PageController extends Controller
 
     }
 
+     public function soon ()
+    {
+
+        $agent = new Agent();
+
+        $isMobile = $agent->isMobile();
+        $isTablet = $agent->isTablet();
+
+    
+        if($isMobile || $isTablet) {
+            return view('mobile.coming-soon');
+        } else {
+            return view('coming-soon');
+        }
+
+
+
+    }
+
+
     public function seller_faq ()
     {
 

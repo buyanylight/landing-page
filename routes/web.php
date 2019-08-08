@@ -23,6 +23,7 @@ Route::get('/contact', 'PageController@contact')->name('contact');
 Route::get('/sitemap','PageController@sitemap')->name('sitemap_page');
 Route::get('/sitemap.xml','PageController@sitemap')->name('sitemap_page');
 
+Route::get('/coming-soon', 'PageController@soon')->name('coming_soon');
 
 Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUsController@contactSaveData']);
 
