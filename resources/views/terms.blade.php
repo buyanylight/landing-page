@@ -12,11 +12,11 @@
 			THESE TERMS AND CONDITIONS SHALL BE BINDING UPON USERS OF WEBSITE WWW.BUYANYLIGHT.COM.
 		</p>
 		<div class="container-fluid">
-			<ol>
+			<ul>
 				<li>
-					<h3>Introduction</h3>
+					<h3>1. Introduction</h3>
 				</li>
-				<ol>
+				<ul>
 					<li>
 						Please carefully read the Terms and Conditions (“Terms”) for the website located at www.buyanylight.com (the “Website”) including its sub-domains and mobile optimized version, as set out hereinafter. The Website is operated by Dotcom Ventures FZE (hereinafter referred to also as “Company”) Any ancillary terms, guidelines, the privacy policy (the “Policy”) and other documents made available by the Website from time to time and as incorporated herein by reference, shall be deemed as an integral part of the Terms. These terms set forth the legally binding agreement between you as the user(s) of the Website (hereinafter referred to as “you”, “your” or “User”) and the Company. If you are using the Website or its services on behalf of an entity, organization, or company (collectively &quot;Subscribing Organization&quot;), you declare that you are an authorized representative of that Subscribing Organization with the authority to bind such organization to these Terms; and agree to be bound by these Terms on behalf of such Subscribing Organization. In such a case, &quot;you&quot; in these Terms refers to your Subscribing Organization, and any individual authorized to use the Service on behalf of the Subscribing Organization, including you.
 					</li>
@@ -26,13 +26,14 @@
 					<li>
 						These Terms, and any rights and licenses granted hereunder, may not be transferred or assigned by you, but may be assigned by the Website without restriction. Any attempted transfer or assignment in violation hereof shall be null and void.
 					</li>
-				</ol>
-			</ol>
-		</div>
-
+				</ul>
+			</ul>
+			<ul>
+				<li>
 								<h3 style="padding-top:25px;">2. Acceptance of the Terms</h3>
-
-
+					
+				</li>
+		
 								<ul>
 									<li>
 										<span>2.1</span> Each time by viewing, using, accessing, browsing, or submitting any content or material on the Website, including the webpages contained or hyperlinked therein and owned or controlled by the Website and its services, whether through the Website itself or through such other media or media channels, devices, software, or technologies as the Website may choose from time to time, you are agreeing to abide by these Terms, as amended from time to time with or without your notice.
@@ -57,9 +58,17 @@
 										IF YOU DO NOT AGREE TO THESE TERMS OF USE, THEN YOU MAY NOT USE THE WEBSITE
 									</li>
 								</ul>
+			</ul>
 
+
+
+
+								<ul>
+									<li>
 								<h3 style="padding-top:25px;">3. Terms of Service </h3>
-
+										
+									</li>
+									<ul>
 								<li>
 									<span>3.1</span> The Website provides a platform which connects Sellers and Buyers of different types and brands of lights. The Website is an innovative lighting sourcing platform which connects Seller and Buyers directly together without the need of an intermediary. Sellers can be manufacturers as well as distributors while Buyers can be retailers, contractors, or the end users who need to source substantial number of lights. The Website allows Buyers to submit Request for Quotes (RFQs) to Sellers. In response, the Sellers will be able to send their Quotes to these Buyers and lock the deal (“Services”).
 								</li>
@@ -122,9 +131,18 @@
 								<li><span>3.10</span> Sellers who register their accounts with the Website undertake and agree that they shall not impose any direct or indirect limit or restriction on the minimum quantity of an order. In other words, they shall be bound to deliver every order to the Buyer or the Company without taking into consideration the size of the order. </li>
 
 								<li><span>3.11</span>Company reserves the right to issue all receipts/invoices in its own name for maintaining the privacy of Sellers and in order to restrict Buyers and Sellers from communicating and/or transacting outside BAL's platform. </li>
+										
+									</ul>
+								</ul>
 
-								<h3>4. Add-on Services</h3>
 
+
+								<ul>
+									<li>
+								<h3 style="padding-top:25px;">4. Add-on Services</h3>
+										
+									</li>
+									<ul>
 								<li><span>4.1</span> We also provide following add-on services:</li>
 								<ul>
 
@@ -152,20 +170,46 @@
 								<li>
 									<span>4.6</span> Service Fee for Buyers. The Buyers who source for light on the Website will have to choose a Package that enables them to send specific numbers of RFQs per month.The Website charges a fix Service Fee of 10%, 15% or 20% depending on the chosen LightFinder Package. However, the Buyers are not required to pay if they are not sourcing any product or calling for RFQs. The Website is completely free for Sellers who can register and receive RFQs without any charges.
 								</li>
+										
+									</ul>
+								</ul>
 
-								<h3>5. Refund Policy</h3>
+
+								<ul>
+									<li>
+								<h3 style="padding-top:25px;">5. Refund Policy</h3>
+										
+									</li>
+									<ul>
 
 								<li>
 									<span>5.1</span> The Seller shall be directly responsible for the terms and conditions pertaining to refund/replace or claim of warranty of a product. The Seller agrees that the Website shall not be held responsible if there is a complaint lodged by the Buyer.
 								</li>
+										
+									</ul>
+								</ul>
 
-								<h3>6. Service Availability</h3>
+								<ul>
+									<li>
+								<h3 style="padding-top:25px;">6. Service Availability</h3>
+										
+									</li>
+									<ul>
 
 								<li>
 									<span>6.1</span> The Website shall use commercially reasonable efforts to keep it up and running 24 hours a day, seven days a week; provided, however, that it may carry out scheduled and unscheduled maintenance work as necessary from time to time and such maintenance work may impact the availability of the Website.
 								</li>
+										
+									</ul>
+								</ul>
 
-								<h3>7. Account Registration and Membership</h3>
+
+								<ul>
+									<li>
+								<h3 style="padding-top:25px;">7. Account Registration and Membership</h3>
+										
+									</li>
+									<ul>
 
 								<li><span>7.1</span> In order to use some or all of the functionalities and Services provided through the Website, you may be required to register an account with the Website as mentioned above. At the time of registration of account, you will be asked to complete a registration form which shall require you to provide personal information such as name, address, phone number, email address, username and other personal information.
 								</li>
@@ -180,8 +224,15 @@
 									<li><span>7.3.3</span> You must not use any other person&#39;s account to access the Website, unless you have that person&#39;s express written permission to do so.</li>
 
 								</ul>
-								<h3>8. User IDs and passwords</h3>
-
+										
+									</ul>
+								</ul>
+								<ul>
+									<li>
+								<h3 style="padding-top:25px;">8. User IDs and passwords</h3>
+										
+									</li>
+									<ul>
 								<li><span>8.1</span> If you register for an account with the Website, you will be asked to choose a user ID and password. Your user ID must not be misleading and must comply with the content rules set out in this document; you must not use your account or user ID for or in connection with the impersonation of any person.</li>
 
 								<li><span>8.2</span> You shall be responsible to maintain the confidentiality of your password and shall be responsible for all uses via your registration and/or login, whether authorized or unauthorized by you. You agree to immediately notify us of any unauthorized use or your registration, user account or password.</li>
@@ -193,33 +244,69 @@
 									<span>8.4</span> You are responsible for any activity and content on the account arising out of any failure to keep your password confidential, and may be held liable for any losses arising out of such a failure.
 								</li>
 
-								<li><span>8.5</span> Registration data and other personally identifiable information that we may collect is subject to the terms of our Privacy Policy.</li>
+								<li><span>8.5</span> Registration data and other personally identifiable information that we may collect is subject to the terms of our Privacy Policy.</li>		
+									</ul>
+								</ul>
 
-								<h3>9. Termination of Account and Discontinuation of Use
-										</h3>
 
+
+
+								<ul>
+									<li>
+										
+								<h3 style="padding-top:25px;">9. Termination of Account and Discontinuation of Use</h3>
+									</li>
+									<ul>
 								<li><span>9.1</span> If you engage in Prohibited Conduct or otherwise violate any of the Terms, your permission to use the Website will be terminated.</li>
 
 								<li><span>9.2</span> You also agree that we may, at any time and without notice to you, suspend or revoke your access to and use of the Website, and any accounts you may have in connection with the Service including: (i) where we determine in our sole discretion that such action is reasonable in order to comply with legal requirements or to protect the rights or interests of Company or any third party; or (ii) in connection with any general discontinuation of the Website services.</li>
 
 								<li><span>9.3</span> We will have no liability whatsoever on account of any change to the Service or any suspension or revocation of your access to or use of the Website. You may terminate your account at any time by sending us an email to info@buyanylight.com.</li>
+										
+									</ul>
+								</ul>
 
-								<h3>10. Electronic Signature Consent</h3>
 
+
+								<ul>
+									<li>
+								<h3 style="padding-top:25px;">10. Electronic Signature Consent</h3>
+										
+									</li>
+									<ul>
 								<li><span>10.1</span> You agree that your “Electronic Signature” is the legal equivalent of your manual signature for this Agreement, thereby indicating your consent to do business electronically.</li>
 
 								<li><span>10.2</span> By clicking on the applicable button in the Website, you will be deemed to have executed these Terms electronically via your Electronic Signature with Company; effective on the date you first click to accept these Terms.</li>
+										
+									</ul>
+								</ul>
 
-								<h3>11. Electronic Delivery of Communications</h3>
 
+
+
+
+								<ul>
+									<li>
+									<h3 style="padding-top:25px;">11. Electronic Delivery of Communications</h3>
+										
+									</li>
+									<ul>
 								<li><span>11.1</span> You agree to receive communications from Website in electronic form. Such electronic communications may include, but will not be limited to, any and all current and future notices and/or disclosures that various laws or regulations require that we provide to you, as well as such other documents, statements, data, records and any other communications regarding your relationship with the Website.</li>
 
 								<li>
 									<span>11.2</span> You accept that the electronic documents, files and associated records provided via your account with Website are reasonable and proper notice, for the purpose of any and all laws, rules, and regulations, and you acknowledge and agree that such electronic form fully satisfies any requirement that such communications be provided to you in writing or in a form that you may keep. Website reserves the right to require ink signatures on hard copy documents from the related parties, at any time.
 								</li>
+										
+									</ul>
+								</ul>
 
-								<h3>12. User Responsibility</h3>
 
+								<ul>
+									<li>
+								<h3 style="padding-top:25px;">12. User Responsibility</h3>
+										
+									</li>
+									<ul>
 								<li><span>12.1</span> Users are solely responsible for all of the transactions conducted on, through or as a result of use of the Website or Services.</li>
 
 								<li><span>12.2 </span>You agree that the use of the Website and/or the Website Services on the Website is subject to all applicable local, state and federal laws and regulations. You also agree:</li>
@@ -298,47 +385,111 @@
 
 								</ul>
 								<li><span>12.4</span> You also acknowledge and accept that any violation of the aforementioned provisions may result in the immediate termination of your access to the Website and use of our Services, without refund, reimbursement, or any other credit on our part. Access to the Website may be terminated or suspended without prior notice or liability of Company. You represent and warrant to us that you have all right, title, and interest to any and all content you may post, upload or otherwise disseminate through the Website. You hereby agree to provide Company with all necessary information, materials and approval, and render all reasonable assistance and cooperation necessary for our Services.</li>
+										
+									</ul>
+								</ul>
 
-								<h3>13. Third party websites</h3>
+
+
+								<ul>
+									<li>
+								<h3 style="padding-top:25px;">13. Third party websites</h3>
+										
+									</li>
+									<ul>
 								<li><span>13.1</span> The Website includes hyperlinks to other websites owned and operated by third parties; such hyperlinks are not recommendations. Goods and services of third parties may be advertised and/or made available on or through this web site. Representations made regarding products and services provided by third parties are governed by the policies and representations made by these third parties. The Website shall not be liable for or responsible in any manner for any of your dealings or interaction with third parties.</li>
 								<li><span>13.2</span> The management of the Website has no control over third party websites and their contents, and subject to the Terms it accepts no responsibility for them or for any loss or damage that may arise from your use of them.</li>
 								<li><span>13.3</span> The Website may contain links from third party websites. External hyperlinks to or from the site do not constitute the Website’s endorsement of, affiliation with, or recommendation of any third party or its website, products, resources or other information. The Website is not responsible for any software, data or other information available from any third party website. You are solely responsible for complying with the terms and conditions for the third party sites. You acknowledge that Company shall have no liability for any damage or loss arising from your access to any third party website, software, data or other information.</li>
 								<li><span>13.4</span> We do not always review the information, pricing, availability or fitness for use of such products and services and they will not necessarily be available or error free or serve your purposes, and any use thereof is at your sole risk. We do not make any endorsements or warranties, whether express or implied, regarding any third party websites (or their products and services). Any linked websites are ruled by their privacy policies, terms and conditions and legal disclaimers. Please read those documents, which will rule any interaction thereof.</li>
 								<li><span>13.5</span> The Website may provide tools through the Service that enable you to export information to third party services, including through use of an API or by linking your account on the Website with an account on the third party service, such as Twitter or Facebook. By using these tools, you agree that we may transfer such User Content and information to the applicable third party service. Such third party services are not under our control, and we are not responsible for the contents of the third party service or the use of your User Content or information by the third party service. The Service, including our websites, may also contain links to third-party websites. The linked sites are not under our control, and we are not responsible for the contents of any linked site. We provide these links as a convenience only, and a link does not imply our endorsement of, sponsorship of, or affiliation with the linked site. You should make whatever investigation you feel necessary or appropriate before proceeding with any transaction with any of these third parties services or websites.</li>
-								<h3>14. Third party rights</h3>
+										
+									</ul>
+								</ul>
+
+
+
+
+								<ul>
+									<li>
+								<h3 style="padding-top:25px;">14. Third party rights</h3>
+										
+									</li>
+									<ul>
 								<li><span>14.1</span> A contract under the Terms is for our benefit and your benefit, and is not intended to benefit or be enforceable by any third party.</li>
 								<li><span>14.2</span> The exercise of the parties&#39; rights under a contract under the Terms is not subject to the consent of any third party.</li>
 								<li><span>14.3</span> You agree not to; modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, scrape, gather, market, rent, lease, re-license, reverse engineer, or sell any information published by other users without the original publishers written consent.</li>
+										
+									</ul>
+								</ul>
 
-								<h3>15. Ownership</h3>
 
+
+								<ul>
+									<li>
+								<h3 style="padding-top:25px;">15. Ownership</h3>
+										
+									</li>
+									<ul>
 								<li><span>15.1</span> The trademarks, copyright, service marks, trade names and other intellectual and proprietary notices displayed on the Website are the property of – or otherwise are licensed to – Company or its licensors or affiliates, whether acknowledged (or not), and which are protected under intellectual and proprietary rights throughout the world. Respective title holders may or may not be affiliated with us or our affiliates, partners and advertisers.</li>
 
 								<li><span>15.2</span> No section hereof shall be construed as intent to grant to you any interest in the Website or our Services, in whole or in part. All content and materials included as part of the Services, such as images, photographs, graphics, texts, forms, lists, charts, guidelines, data, logos, code, icons, videos, audio and other content are the property of, are licensed to or are otherwise duly available to Company, its affiliates, its licensors or to the appertaining third party copyrights holder.
 								</li>
 
 								<li><span>15.3</span> You acknowledge and agree that any and all infringing use or exploitation of copyrighted content in the Website and our Services may cause us, our affiliates, licensors or content providers irreparable injury, which may not be remedied solely at law, and therefore our affiliates, licensors or content providers may seek remedy for breach of these Terms, either in equity or through injunctive or other equitable relief.</li>
+										
+									</ul>
+								</ul>
 
-								<h3>16. Term and Termination</h3>
 
+								<ul>
+									<li>
+								<h3 style="padding-top:25px;">16. Term and Termination</h3>
+										
+									</li>
+									<ul>
 								<li><span>16.1</span> The term hereof shall begin on the date that comes first among: (i) first access to the Website; (ii)your first access or execution of our Services; or (iii) Company begins providing its Services to you.</li>
 								<li><span>16.2</span> The term hereof will automatically end on the earlier date of either your: (i) account deactivation, suspension, freezing or deletion; (ii) access termination or access revocation for our Services or the Website; (iii) Company’s termination of these Terms or its Services, at its sole and final discretion; (iv) the termination date indicated by Company to you from time to time; or (v) Company’ decision to make the Website or Services no longer available for use, at its sole and final discretion.</li>
 
 								<li><span>16.3</span> Upon expiration of these Terms or termination of your subscription to our Services, you shall thereafter immediately cease any and all use of our Services, along with any and all information and data collected therefrom.</li>
+										
+									</ul>
+								</ul>
 
-								<h3>17. Amendments</h3>
-
+								<ul>
+									<li>
+								<h3 style="padding-top:25px;">17. Amendments</h3>
+										
+									</li>
+									<ul>
 								<li><span>17.1</span> Company hereby reserves the right to update, modify, change, amend, terminate or discontinue the Website, the Terms and/or the Policy, at any time and at its sole and final discretion. Company may change the Website’s functionalities and (any) applicable fees at any time. Any changes to these Terms will be displayed in the Website, and we may notify you through the Website or by email. Please, refer to the date shown above for the date where effective changes were last undertook by us. Your use of our Services after the effective date of any update– either by an account registration or simple use – thereby indicates your acceptance thereof.</li>
+										
+									</ul>
+								</ul>
 
-								<h3>18. No Warranty</h3>
+
+								<ul>
+									<li>
+								<h3 style="padding-top:25px;">18. No Warranty</h3>
+										
+									</li>
+									<ul>
 								<li><span>18.1</span> Your use of our Website is at your own risk, and therefore you hereby acknowledge and agree that our Website and Services are provided “as is”, “with all faults”, and “as available”, including all content, guides, checklists, reference guides, sample filing forms, software, materials, services, functions and/or information made available thereby. It shall be your own responsibility to ensure that the Services or information available through this Website meet your specific requirements.</li>
 
 								<li><span>18.2</span> Neither Company, nor its affiliates, subsidiaries, officers, employees and agents warrantee that the Website will be error-free, uninterrupted, secure, or produce any particular results; or that any listing, purchase, order, amount, information, guide, sheet, checklist and/or content will be current, measured useful and/or valid, or that it will produce any particular results or that the information obtained therefrom will be reliable or accurate. No advice or information given by Company or its employees, affiliates, contractors and/or agents shall create a guarantee. No warranty or representation is made with regard to such services or products of third parties contacted on or through the Website. In no event shall Company or our affiliates be held liable for any such services.</li>
 
 								<li><span>18.3</span> Neither Company, nor its affiliates, licensors, owners, subsidiaries, brands or advertisers are a professional advisor in any industry. The results described in the Website are not typical and will vary based on a variety of factors outside the control of Company. Your use of any information and/or materials on this Website is entirely at your own risk, for which we shall not be held liable.</li>
+										
+									</ul>
+								</ul>
 
-								<h3>19. Disclaimer of Damages</h3>
 
+
+								<ul>
+									<li>
+								<h3 style="padding-top:25px;">19. Disclaimer of Damages</h3>
+										
+									</li>
+									<ul>
 								<li><span>19.1</span> In no event shall the Company be liable to you or to any third party for any direct, indirect, incidental, consequential, special, exemplary or punitive damages, including but not limited to: (i) damages for business interruption, loss of profits, loss of data, computer or software failure or inaccessibility or any other type of personal damages or losses arising out of or related to your use of or inability to use the Website, including negligence; (ii) infringement of third party intellectual property rights; and (iii) claims by any party that they are entitled to defense or indemnification in relation to assertions of rights, demands or claims by third party rights claimants.
 								</li>
 
@@ -347,9 +498,19 @@
 								<li>
 									<span>19.3</span> To the fullest extent allowable under applicable law, Company hereby expressly disclaims any and all representations and warranties of any kind with respect to the Website, including any and all liability arising out of or related to any purported facts or information and description of any information, products and/or Services displayed on our Website, including all warranties of any kind, whether express or implied; including, without limitation, warranties of title, merchantability, accuracy, completeness, condition, quality, durability, performance, accuracy, reliability, suitability, fitness for a particular purpose or non-infringement.
 								</li>
+										
+									</ul>
+								</ul>
 
-								<h3>20. Indemnification</h3>
 
+
+
+								<ul>
+									<li>
+								<h3 style="padding-top:25px;">20. Indemnification</h3>
+										
+									</li>
+									<ul>
 								<li><span>20.1</span> You agree to indemnify, defend and hold Company and its independent contractors, affiliates, subsidiaries, officers, employees and agents, and their respective employees, agents and representatives, harmless from and against any and all actual or threatened proceedings (at law or in equity), suits, actions, damages, claims, deficiencies, payments, settlements, fines, judgments, costs, liabilities, losses and expenses (including, but not limited to, reasonable expert and attorney fees and disbursements) arising out of, caused or resulting from: (i) your conduct and any user content; (ii) your violation of these Terms or the Policy; and (iii) your violation of the rights of any third-party.</li>
 
 								<li>
@@ -357,9 +518,16 @@
 								</li>
 
 								<li><span>20.3</span> You hereby indemnify the Website and its management and will not hold them responsible for copyright theft, reverse engineering and use of your content by other users on the website.</li>
+										
+									</ul>
+								</ul>
 
-								<h3>21. Generals</h3>
 
+								<ul>
+									<li>
+										<h3 style="padding-top:25px;">21. Generals</h3>
+									</li>
+									<ul>
 								<li><span>21.1</span> Advertisements and Promotions. From time to time, we may place ads and promotions from third party sources in the Website. Accordingly, your participation or undertakings in promotions of third parties other than Company, and any terms, conditions, warranties or representations associated with such undertakings, are solely between you and such third party. Company is not responsible or liable for any loss or damage of any sort incurred as the result of any such dealings or as the result of the presence of third party advertisers on the Website.</li>
 
 								<li><span>21.2</span> No Assignment. You may not assign or transfer these Terms by operation of law or otherwise without our prior written consent. Notwithstanding the foregoing, we may assign any rights or obligations hereunder to any current or future affiliated company and to any successor in interest. Any rights not expressly granted herein are thereby reserved. These terms will inure to the benefit of any successors of the parties. We reserve the right, at any time, to transfer some or all of Company’s assets in connection with a merger, acquisition, reorganization or sale of assets or in the event of bankruptcy.</li>
@@ -376,13 +544,28 @@
 								<li><span>21.8</span> Notices. All legal notices or demands to or upon Company shall be made in writing and sent to Company personally, by courier, certified mail, or facsimile, and shall be delivered to any address the parties may provide. For communications by e-mail, the date of receipt will be the one in which confirmation receipt notice is obtained. You agree that all agreements, notices, demands, disclosures and other communications that Company sends to you electronically satisfy the legal requirement that such communication should be in writing.</li>
 
 								<li><span>21.9</span> Severability. If any provision of these Terms is held unenforceable, then such provision will be modified to reflect the parties&#39; intention. All remaining provisions of these Terms will remain in full force and effect. The failure of either party to exercise in any respect any right provided for herein will not be deemed a waiver of any further rights hereunder.</li>
+										
+									</ul>
+								
 
 							</ul>
+							<div class="container-fluid">
+								<p>For any inquires or complaints regarding the Service or Website, please contact by email at <a href="" class="email-attr" target="_blank">inf<span>o@buy</span>anyligh<span>t.co</span>m</a>.</p>
+								
+							</div>
 
-							<p>For any inquires or complaints regarding the Service or Website, please contact by email at <a href="" class="email-attr" target="_blank">inf<span>o@buy</span>anyligh<span>t.co</span>m</a>.</p>
-
-						</div>
 					</div>
+				</div>
+			</div>
 <!-- {{-- TERMS AND CONDITIONS --}} -->
+<style type="text/css">
+	ul{
+		list-style: none;
+	}
+
+	li{
+		list-style: none;
+	}
+</style>
 
 @endsection
