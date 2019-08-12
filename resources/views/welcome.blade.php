@@ -44,8 +44,8 @@
 </section>
 <section class="section-2">  
     <div class="container h-100">
-        <div class="w-100 card all-cards">
-            <div class="card-body d-flex justify-content-center">
+        <div class="w-100 card all-cards" >
+            <div class="card-body d-flex justify-content-center"style=" {{ ($agent->is('IE')) ? 'display:block !important;' : '' }}">
                 <div class="card-deck">
                     <div class="card border-0 lightfinder">
                         <img src="{{ asset('images/world-icon.png') }}" class="card-top ml-3" alt="...">
@@ -65,8 +65,8 @@
                         </div>
                     </div>
                     <div class="h-100 border-right border-dark"></div>
-                    <div class="card border-0">
-                        <img src="{{ asset('images/home-icon.png') }}" class="ml-3" alt="..." width="9%">
+                    <div class="card border-0" style=" {{ ($agent->is('IE')) ? 'display:block !important;' : '' }}">
+                        <img src="{{ asset('images/home-icon.png') }}" class=" card-top ml-3" alt="..." width="9%">
                         <div class="card-body">
                             <h4 class="card-title text-BAL">My Home</h4>
                             <div class="card-subtitle mt-2 text-muted">Private homes, villas, and palaces</div>
@@ -83,7 +83,7 @@
                         </div>
                     </div>
                     <div class="h-100 border-right border-dark"></div>
-                    <div class="card border-0">
+                    <div class="card border-0"style=" {{ ($agent->is('IE')) ? 'display:block !important;' : '' }}">
                         <img src="{{ asset('images/tower-icon.png') }}" class="card-top ml-3" alt="...">
                         <div class="card-body">
                             <h4 class="card-title text-BAL" >My Tower</h4>
