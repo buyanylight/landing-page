@@ -40,7 +40,7 @@
                 </a>
             </div>
             <div class="mt-1">
-                 <a href="one-pagers/BUYANYLIGHT.pdf" target="_blank" 
+                 <a href="one-pagers/BuyAnyLight.pdf" target="_blank" 
                  class="btn btn-sm btn-outline-dark text-white">
                     <div class="link-icon">
 	            		<i class="far fa-file-pdf"></i>

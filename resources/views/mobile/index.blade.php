@@ -17,7 +17,7 @@
                     <a href="/coming-soon" class="btn btn-dark header-link">IEO</a>
                 </div>
                 <div class="container text-center pt-2">
-		            <a href="one-pagers/BUYANYLIGHT.pdf" 
+		            <a href="one-pagers/BuyAnyLight.pdf" 
 		            target="_blank" 		            
 		            class="btn btn-dark header-link">
 		            	<i class="far fa-file-pdf mr-2"></i>
