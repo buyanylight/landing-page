@@ -16,6 +16,15 @@
                 <div class="container text-center pt-2">
                     <a href="/coming-soon" class="btn btn-dark header-link">IEO</a>
                 </div>
+                <div class="container text-center pt-3 mt-3">
+		            <a href="one-pagers/BUYANYLIGHT.pdf" 
+		            target="_blank" 
+		            style="background-color: green; color: white;" 
+		            class="btn">
+		            	<i class="far fa-file-pdf mr-2"></i>
+		            	Download BAL One Page PDF
+		            </a>                    
+                </div>
 			</div>
 		</div>
         <div class="share-icons text-center w-100">

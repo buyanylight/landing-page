@@ -42,7 +42,7 @@
         </div>
     </div>
 </section>
-<section class="section-2">  
+<section class="section-2" style="height: auto;">  
     <div class="container h-100">
         <div class="w-100 card all-cards" >
             <div class="card-body d-flex justify-content-center"style=" {{ ($agent->is('IE')) ? 'display:block !important;' : '' }}">
@@ -103,8 +103,17 @@
                 </div>
             </div>
         </div>
-        <div class="text-center mb-5 trial-btn-link">
+        <div class="text-center mb-3 trial-btn-link">
             <a href="#all-packages" class="btn btn-BAL btn-lg">Start your free trial</a>
+        </div>
+        <div class="text-center mb-5 trial-btn-link">
+            <a href="one-pagers/BUYANYLIGHT.pdf" 
+            target="_blank" 
+            style="background-color: green; color: white;" 
+            class="btn btn-lg">
+            	<i class="far fa-file-pdf mr-2"></i>
+            	Download BAL One Page PDF
+            </a>
         </div>
     </div>
 </section>
