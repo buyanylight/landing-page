@@ -47,7 +47,7 @@
                     </div>
                     &nbsp;
                     <div class="link-text">
-	            		Download BAL One Page PDF
+	            		Download BAL One Pager
                     </div>
                 </a>	            
             </div>
@@ -116,7 +116,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center mb-3 trial-btn-link">
+        <div class="text-center mb-5 trial-btn-link">
             <a href="#all-packages" class="btn btn-BAL btn-lg">Start your free trial</a>
         </div>
         {{-- <div class="text-center mb-5 trial-btn-link">
