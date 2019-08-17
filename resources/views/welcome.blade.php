@@ -39,6 +39,19 @@
                     </div>
                 </a>
             </div>
+            <div class="mt-1">
+                 <a href="one-pagers/BUYANYLIGHT.pdf" target="_blank" 
+                 class="btn btn-sm btn-outline-dark text-white">
+                    <div class="link-icon">
+	            		<i class="far fa-file-pdf"></i>
+                    </div>
+                    &nbsp;
+                    <div class="link-text">
+	            		Download BAL One Page PDF
+                    </div>
+                </a>	            
+            </div>
+
         </div>
     </div>
 </section>
@@ -106,7 +119,7 @@
         <div class="text-center mb-3 trial-btn-link">
             <a href="#all-packages" class="btn btn-BAL btn-lg">Start your free trial</a>
         </div>
-        <div class="text-center mb-5 trial-btn-link">
+        {{-- <div class="text-center mb-5 trial-btn-link">
             <a href="one-pagers/BUYANYLIGHT.pdf" 
             target="_blank" 
             style="background-color: green; color: white;" 
@@ -114,7 +127,7 @@
             	<i class="far fa-file-pdf mr-2"></i>
             	Download BAL One Page PDF
             </a>
-        </div>
+        </div> --}}
     </div>
 </section>
 <!-- <section class="section-3 mt-4">
