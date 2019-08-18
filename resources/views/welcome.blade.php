@@ -4,7 +4,7 @@
 @section('content')
 <section class="section-1 mt-5 pt-5">
     <div class="container h-100 d-flex align-items-center">
-        <div class="text-white">
+        <div class="text-white" style="margin-left: 70px;">
             <h1>
                 <b>
                     Sourcing Reinvented
@@ -22,7 +22,7 @@
                         <i class="fas fa-arrow-right"></i> 
                     </div>
                 </a>
-                <a  data-fancybox href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" class="btn btn-sm btn-outline-dark text-white">
+                <a data-fancybox href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" class="btn btn-sm btn-outline-dark text-white">
                     <div class="link-text">
                         Watch the video 
                     </div>&nbsp;
@@ -40,7 +40,7 @@
                 </a>
             </div>
             <div class="mt-1">
-                 <a href="one-pagers/BuyAnyLight.pdf" target="_blank" 
+                 <a href="{{ asset('one-pagers/BuyAnyLight.pdf') }}?v={{ $ver }}" target="_blank" 
                  class="btn btn-sm btn-outline-dark text-white">
                     <div class="link-icon">
 	            		<i class="far fa-file-pdf"></i>
@@ -48,6 +48,16 @@
                     &nbsp;
                     <div class="link-text">
 	            		Download BAL One Pager
+                    </div>
+                </a>	            
+                 <a href="{{ asset('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ $ver }}" target="_blank" 
+                 class="btn btn-sm btn-outline-dark text-white">
+                    <div class="link-icon">
+	            		<i class="far fa-file-pdf"></i>
+                    </div>
+                    &nbsp;
+                    <div class="link-text">
+	            		Download BAL IEO One Pager
                     </div>
                 </a>	            
             </div>
@@ -988,7 +998,7 @@
                                         <i class="fas fa-arrow-right"></i> 
                                     </div>
                                 </a>
-                                <a href="{{ asset('brochures/LightFinder_BAL.pdf') }}" class="pl-0 btn" target="_blank">
+                                <a href="{{ asset('brochures/LightFinder_BAL.pdf') }}?v={{ $ver }}" class="pl-0 btn" target="_blank">
                                     <div class="link-text">
                                         Brochure
                                     </div>&nbsp;
@@ -1151,7 +1161,7 @@
                                         <i class="fas fa-arrow-right"></i> 
                                     </div>
                                 </a>
-                                <a href="{{ asset('brochures/MyHome_BAL.pdf') }}" class="pl-0 btn" target="_blank">
+                                <a href="{{ asset('brochures/MyHome_BAL.pdf') }}?v={{ $ver }}" class="pl-0 btn" target="_blank">
                                     <div class="link-text">
                                     Brochure
                                     </div>&nbsp;
@@ -1311,7 +1321,7 @@
                                         <i class="fas fa-arrow-right"></i> 
                                     </div>
                                 </a>
-                                <a href="{{ asset('brochures/MyTower_BAL.pdf') }}" class="pl-0 btn" target="_blank">
+                                <a href="{{ asset('brochures/MyTower_BAL.pdf') }}?v={{ $ver }}" class="pl-0 btn" target="_blank">
                                     <div class="link-text">
                                         Brochure
                                     </div>&nbsp;

@@ -18,9 +18,9 @@ class PageController extends Controller
 
     
         if($isMobile || $isTablet) {
-            return view('mobile.index');
+            return view('mobile.index')->with('ver','20190818');
         } else {
-            return view('welcome');
+            return view('welcome')->with('ver','20190818');
         }
 
     }
