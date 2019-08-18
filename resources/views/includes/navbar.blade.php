@@ -59,7 +59,7 @@
                     Investors
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/coming-soon">IEO</a>
+                        <a class="dropdown-item" href="/ieo">IEO</a>
                         <a class="dropdown-item" href="/investor">Lets talk</a>
                     </div>
                 </li>
