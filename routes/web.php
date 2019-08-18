@@ -28,6 +28,8 @@ Route::get('/ieo-test', 'PageController@ieo')->name('ieo');
 
 Route::get('/whitepaper', 'PageController@soon')->name('coming_soon_whitepaper');
 
+Route::get('/coming-soon', 'PageController@soon')->name('coming_soon');
+
 Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUsController@contactSaveData']);
 
 
