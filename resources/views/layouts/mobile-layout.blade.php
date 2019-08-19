@@ -34,7 +34,9 @@
     <title>Buyanylight.com - Sourcing Reinvented</title>
     <link href="{{ asset('images/logo-black-icon.png') }}" rel="icon" type="image/x-icon">
 
-        <!-- Fonts -->
+	{{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> --}}
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet">
 
@@ -43,12 +45,12 @@
    @yield('css')
 
     @section('css')
-        <link rel="stylesheet" href="/css/mobile.css?v=1">
+        <link rel="stylesheet" href="css/mobile.css?v=1">
     @show
 
-    <link rel="stylesheet" href="/css/privacy.css?v=1">
-    <link rel="stylesheet" href="/css/slick.css?v=1">
-    <link rel="stylesheet" href="/css/slick-theme.css?v=1">
+    <link rel="stylesheet" href="css/privacy.css?v=1">
+    <link rel="stylesheet" href="css/slick.css?v=1">
+    <link rel="stylesheet" href="css/slick-theme.css?v=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
      <!-- Meta -->
@@ -68,9 +70,158 @@
 
     <!-- //////////////////////////////////////////////////////////////////////// -->
     <!-- Meta -->
+	{{-- preloader --}}
+	{{-- ////////////////////////////////////////////////////////////// --}}
+	<style>
+		.currently-preloading {
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+		}
+		.preloader {
+			/*height: 100vh;
+			width: 100vw;*/
+			height: 100%;
+			width: 100%;
+			z-index: 1032;
+			display: flex;
+		    justify-content: center;
+		    align-items: center;			
+			position: fixed;
+		    top: 0;
+		    /*background-color: #000;*/
+		    /*transition: 1s;*/
+		}
+		.preloader:before {
+			content:'';
+			position: absolute;
+			left: 0;
+			width: 50%;
+			height: 100%;			
+		    background-color: #000;
+		    transition: 1s;
+		}
+		.preloader:after {
+			content:'';
+			position: absolute;
+			right: 0;
+			width: 50%;
+			height: 100%;			
+		    background-color: #000;
+		    transition: 1s;
+		}
+		.preloader.completed:before {
+			left: -50%;
+		}
+		.preloader.completed:after {
+			right: -50%;
+		}
+
+
+		.sk-folding-cube {
+			z-index: 1032;
+		  	margin: 20px auto;
+		  	width: 40px;
+		  	height: 40px;
+		  	position: relative;
+		  	-webkit-transform: rotateZ(45deg);
+		    transform: rotateZ(45deg);
+		}
+
+		.sk-folding-cube .sk-cube {
+		  float: left;
+		  width: 50%;
+		  height: 50%;
+		  position: relative;
+		  -webkit-transform: scale(1.1);
+		      -ms-transform: scale(1.1);
+		          transform: scale(1.1); 
+		}
+		.sk-folding-cube .sk-cube:before {
+		  content: '';
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  background-color: #fff;
+		  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+		          animation: sk-foldCubeAngle 2.4s infinite linear both;
+		  -webkit-transform-origin: 100% 100%;
+		      -ms-transform-origin: 100% 100%;
+		          transform-origin: 100% 100%;
+		}
+		.sk-folding-cube .sk-cube2 {
+		  -webkit-transform: scale(1.1) rotateZ(90deg);
+		          transform: scale(1.1) rotateZ(90deg);
+		}
+		.sk-folding-cube .sk-cube3 {
+		  -webkit-transform: scale(1.1) rotateZ(180deg);
+		          transform: scale(1.1) rotateZ(180deg);
+		}
+		.sk-folding-cube .sk-cube4 {
+		  -webkit-transform: scale(1.1) rotateZ(270deg);
+		          transform: scale(1.1) rotateZ(270deg);
+		}
+		.sk-folding-cube .sk-cube2:before {
+		  -webkit-animation-delay: 0.3s;
+		          animation-delay: 0.3s;
+		}
+		.sk-folding-cube .sk-cube3:before {
+		  -webkit-animation-delay: 0.6s;
+		          animation-delay: 0.6s; 
+		}
+		.sk-folding-cube .sk-cube4:before {
+		  -webkit-animation-delay: 0.9s;
+		          animation-delay: 0.9s;
+		}
+		@-webkit-keyframes sk-foldCubeAngle {
+		  0%, 10% {
+		    -webkit-transform: perspective(140px) rotateX(-180deg);
+		            transform: perspective(140px) rotateX(-180deg);
+		    opacity: 0; 
+		  } 25%, 75% {
+		    -webkit-transform: perspective(140px) rotateX(0deg);
+		            transform: perspective(140px) rotateX(0deg);
+		    opacity: 1; 
+		  } 90%, 100% {
+		    -webkit-transform: perspective(140px) rotateY(180deg);
+		            transform: perspective(140px) rotateY(180deg);
+		    opacity: 0; 
+		  } 
+		}
+
+		@keyframes sk-foldCubeAngle {
+		  0%, 10% {
+		    -webkit-transform: perspective(140px) rotateX(-180deg);
+		            transform: perspective(140px) rotateX(-180deg);
+		    opacity: 0; 
+		  } 25%, 75% {
+		    -webkit-transform: perspective(140px) rotateX(0deg);
+		            transform: perspective(140px) rotateX(0deg);
+		    opacity: 1; 
+		  } 90%, 100% {
+		    -webkit-transform: perspective(140px) rotateY(180deg);
+		            transform: perspective(140px) rotateY(180deg);
+		    opacity: 0; 
+		  }
+		}		
+	</style>
+	{{-- ////////////////////////////////////////////////////////////// --}}
+	{{-- preloader --}}
 
 </head>
 <body class="eupopup eupopup-bottom">
+
+	<div class="preloader">
+		<div class="sk-folding-cube">
+			<div class="sk-cube1 sk-cube"></div>
+			<div class="sk-cube2 sk-cube"></div>
+			<div class="sk-cube4 sk-cube"></div>
+			<div class="sk-cube3 sk-cube"></div>
+		</div>	
+	</div>
+
 	@include('includes.mobile-navbar')
     <div style="position: relative;  z-index: 5">
             <!-- Position toasts -->
@@ -101,7 +252,23 @@
     @include('includes.mobile-footer')
 
 
-    <script src="/js/mobile.js" charset="utf-8"></script>
+    <script src="js/mobile.js" charset="utf-8"></script>
+
+	{{-- preloader --}}
+	{{-- ////////////////////////////////////////////////////////////// --}}
+	<script>
+		$(window).on('load',function(){
+			$('.preloader .sk-folding-cube').css("display", "none");
+			$('.preloader').addClass('completed');
+			setTimeout(()=>{
+				$('.preloader').css("display", "none");
+			},1100);
+		});
+	</script>
+	{{-- ////////////////////////////////////////////////////////////// --}}
+	{{-- preloader --}}
+    
+
     @if (session('success') || session('danger'))
     <script type="text/javascript">
     $( document ).ready(function() {
@@ -331,5 +498,6 @@
     
     })
     </script>
+	@yield('body-end-javascript')
 </body>
 </html>
