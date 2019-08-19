@@ -242,10 +242,16 @@
 {{-- if contact is in url --}}
 {{-- ////////////////////////////////////////////////////////////////// --}}
 <script>
+$(document).ready(function(){
+
 	var anchors = window.location.href.split("#");
 	console.log(anchors);
-	if(anchors.length >1 && (anchors[1]=='footer' || anchors[1]=='contact'))
-	$('#contact').addClass('show');
+	if(anchors.length >1 && (anchors[1]=='footer' || anchors[1]=='contact')) {
+		$('#contact').addClass('show');
+       	// $('html, body').animate({scrollTop: 0}, 800);
+	}
+
+});
 </script>
 {{-- ////////////////////////////////////////////////////////////////// --}}
 {{-- if contact is in url --}}
