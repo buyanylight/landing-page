@@ -59,7 +59,7 @@
         			</div>
         			<div id="faq-3" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
           				<div class="card-body">
-           					Simply visit <a href="https://lightfinder.buyanylight.com/supplier/register">https://lightfinder.buyanylight.com/supplier/register</a>, follow the steps to create an account and fill in the registration form. When your registration is complete you’ll receive an email confirmation from the BAL team.
+           					Simply visit <a href="https://lightfinder.buyanylight.com/supplier/register">https:// lightfinder.buyanylight.com /supplier/register</a>, follow the steps to create an account and fill in the registration form. When your registration is complete you’ll receive an email confirmation from the BAL team.
           				</div>
         			</div>
       			</div>

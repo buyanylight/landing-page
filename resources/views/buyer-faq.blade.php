@@ -77,7 +77,7 @@
     			</div>
     			<div id="faq-3" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
       				<div class="card-body">
-       					Simply visit <a href="https://lightfinder.buyanylight.com/buyer/register">https://lightfinder.buyanylight.com/buyer/register</a>, follow the steps to create an account and fill in the registration form. Once you’ve registered, you can start uploading your enquiry.
+       					Simply visit <a href="https://lightfinder.buyanylight.com/buyer/register">https:// lightfinder.buyanylight.com /buyer/register</a>, follow the steps to create an account and fill in the registration form. Once you’ve registered, you can start uploading your enquiry.
       				</div>
     			</div>
   			</div>
