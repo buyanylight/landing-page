@@ -43,11 +43,11 @@
 		@yield('css')
 
 		@section('css')
-		<link rel="stylesheet" href="css/app.css?v=1">
+		<link rel="stylesheet" href="{{ asset('css/app.css') }}?ver={{ env('VERSION','0') }}">
 		@show
-		<link rel="stylesheet" href="css/privacy.css?v=1">
-		<link rel="stylesheet" href="css/slick.css?v=1">
-		<link rel="stylesheet" href="css/slick-theme.css?v=1">
+		<link rel="stylesheet" href="{{ asset('css/privacy.css') }}?ver={{ env('VERSION','0') }}">
+		<link rel="stylesheet" href="{{ asset('css/slick.css') }}?ver={{ env('VERSION','0') }}">
+		<link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}?ver={{ env('VERSION','0') }}">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 		
 	@yield('meta')
@@ -237,7 +237,7 @@
 
 		@include('includes.footer')
 		<!-- Scripts -->
-		<script src="js/app.js" charset="utf-8"></script>
+		<script src="{{ asset('js/app.js') }}?ver={{ env('VERSION','0') }}" charset="utf-8"></script>
 		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	 	<script src="https://www.google.com/recaptcha/api.js?render={{ env('CAPTCHA_KEY') }}"></script>
