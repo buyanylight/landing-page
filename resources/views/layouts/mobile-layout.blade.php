@@ -45,12 +45,12 @@
    @yield('css')
 
     @section('css')
-        <link rel="stylesheet" href="css/mobile.css?v=1">
+        <link rel="stylesheet" href="{{ asset('css/mobile.css') }}?ver={{ env('VERSION','0') }}">
     @show
 
-    <link rel="stylesheet" href="css/privacy.css?v=1">
-    <link rel="stylesheet" href="css/slick.css?v=1">
-    <link rel="stylesheet" href="css/slick-theme.css?v=1">
+    <link rel="stylesheet" href="{{ asset('css/privacy.css') }}?ver={{ env('VERSION','0') }}">
+    <link rel="stylesheet" href="{{ asset('css/slick.css') }}?ver={{ env('VERSION','0') }}">
+    <link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}?ver={{ env('VERSION','0') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
      <!-- Meta -->
@@ -252,7 +252,7 @@
     @include('includes.mobile-footer')
 
 
-    <script src="js/mobile.js" charset="utf-8"></script>
+    <script src="{{ asset('js/mobile.js') }}?ver={{ env('VERSION','0') }}" charset="utf-8"></script>
 
 	{{-- preloader --}}
 	{{-- ////////////////////////////////////////////////////////////// --}}
@@ -267,7 +267,6 @@
 	</script>
 	{{-- ////////////////////////////////////////////////////////////// --}}
 	{{-- preloader --}}
-    
 
     @if (session('success') || session('danger'))
     <script type="text/javascript">
