@@ -40,7 +40,7 @@
                 </a>
             </div>
             <div class="mt-1">
-                 <a href="{{ asset('one-pagers/BuyAnyLight.pdf') }}?v={{ $ver }}" target="_blank" 
+                 <a href="{{ asset('one-pagers/BuyAnyLight.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" 
                  class="btn btn-sm btn-outline-dark text-white">
                     <div class="link-icon">
 	            		<i class="far fa-file-pdf"></i>
@@ -50,7 +50,7 @@
 	            		Download BAL One Pager
                     </div>
                 </a>	            
-                 <a href="{{ asset('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ $ver }}" target="_blank" 
+                 <a href="{{ asset('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" 
                  class="btn btn-sm btn-outline-dark text-white">
                     <div class="link-icon">
 	            		<i class="far fa-file-pdf"></i>
@@ -998,7 +998,7 @@
                                         <i class="fas fa-arrow-right"></i> 
                                     </div>
                                 </a>
-                                <a href="{{ asset('brochures/LightFinder_BAL.pdf') }}?v={{ $ver }}" class="pl-0 btn" target="_blank">
+                                <a href="{{ asset('brochures/LightFinder_BAL.pdf') }}?v={{ env('VERSION','20190819') }}" class="pl-0 btn" target="_blank">
                                     <div class="link-text">
                                         Brochure
                                     </div>&nbsp;
@@ -1161,7 +1161,7 @@
                                         <i class="fas fa-arrow-right"></i> 
                                     </div>
                                 </a>
-                                <a href="{{ asset('brochures/MyHome_BAL.pdf') }}?v={{ $ver }}" class="pl-0 btn" target="_blank">
+                                <a href="{{ asset('brochures/MyHome_BAL.pdf') }}?v={{ env('VERSION','20190819') }}" class="pl-0 btn" target="_blank">
                                     <div class="link-text">
                                     Brochure
                                     </div>&nbsp;
@@ -1321,7 +1321,7 @@
                                         <i class="fas fa-arrow-right"></i> 
                                     </div>
                                 </a>
-                                <a href="{{ asset('brochures/MyTower_BAL.pdf') }}?v={{ $ver }}" class="pl-0 btn" target="_blank">
+                                <a href="{{ asset('brochures/MyTower_BAL.pdf') }}?v={{ env('VERSION','20190819') }}" class="pl-0 btn" target="_blank">
                                     <div class="link-text">
                                         Brochure
                                     </div>&nbsp;
