@@ -1,4 +1,5 @@
-@extends(($agent->isMobile()) ? 'layouts.mobile-layout' : 'layouts.main-layout')
+@extends( ($agent->isMobile()) ? 'layouts.mobile-layout' : 'layouts.main-layout' )
+
 @section('meta-title')
 <meta name="title" content="BuyAnyLight | Buyer FAQs">
 <meta property="og:title" content=" BuyAnyLight | Buyer FAQs">
@@ -8,6 +9,8 @@
 <meta name="description" content="Here are the list of buyer's frequently Asked Questions to know more about us" />
 <meta property="og:description" content="Here are the list of buyer's frequently Asked Questions to know more about us">
 @endsection
+
+
 @section('content')
 <div class="buyer-faq pt-5 pb-3 bg-white all-contents">
     <div class="intro-faq d-flex align-items-center">
@@ -74,7 +77,7 @@
     			</div>
     			<div id="faq-3" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
       				<div class="card-body">
-       					Simply visit (<a href="https://lightfinder.buyanylight.com/buyer/register">https://lightfinder.buyanylight.com/buyer/register</a>) , follow the steps to create an account and fill in the registration form. Once you’ve registered, you can start uploading your enquiry.
+       					Simply visit <a href="https://lightfinder.buyanylight.com/buyer/register">https://lightfinder.buyanylight.com/buyer/register</a>, follow the steps to create an account and fill in the registration form. Once you’ve registered, you can start uploading your enquiry.
       				</div>
     			</div>
   			</div>
@@ -89,7 +92,10 @@
     			</div>
     			<div id="faq-4" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
       				<div class="card-body">
-       					BAL registration is completely <span style="font-weight: 500">FREE</span>! You only pay a subscription package when you’ve accepted a quotation and are ready to commit with BAL.
+       					{{-- BAL registration is completely <span style="font-weight: 600">FREE</span>! You only pay a subscription package when you’ve accepted a quotation and are ready to commit with BAL. --}}
+       					<strong>For My Home and My Tower package:</strong> BAL registration is completely FREE! You only pay a subscription package when you’ve accepted a quotation and are ready to commit with BAL.
+       					<br><br>
+       					<strong>For LightFinder package:</strong> You can start with a free trial, but you are required to subscribe for a chosen package: Mini, Standard and Premium to start your project.
       				</div>
     			</div>
   			</div>
@@ -240,3 +246,7 @@
 	</div>
 </div>
 @endsection
+
+
+
+
