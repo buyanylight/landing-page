@@ -73,7 +73,7 @@
                         </form>
                         <div class="row social-links mt-3">
                             <div class="col-sm-1 one-link">
-                                <a href="https://m.youtube.com/channel/UCI9XteW2432262A4rFKtQ3w" class="text-grey" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a href="http://www.youtube.com/c/BuyAnyLight" class="text-grey" target="_blank"><i class="fab fa-youtube"></i></a>
                             </div>
                             <div class="col-sm-1 one-link">
                                 <a href="https://twitter.com/BuyAnyLight" class="text-grey" target="_blank"><i class="fab fa-twitter"></i></a>

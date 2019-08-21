@@ -3,7 +3,7 @@
 		<div class="social icons pt-4 pb-4">
 			<div class="row pb-3">
 				<div class="col one-link">
-       	        	<a href="https://m.youtube.com/channel/UCI9XteW2432262A4rFKtQ3w" class="text-dark" target="_blank"><i class="fab fa-youtube"></i></a>
+       	        	<a href="http://www.youtube.com/c/BuyAnyLight" class="text-dark" target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
                 <div class="col one-link">
                     <a href="https://twitter.com/BuyAnyLight" class="text-dark" target="_blank"><i class="fab fa-twitter"></i></a>
