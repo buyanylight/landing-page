@@ -21,8 +21,9 @@ $(document).ready(function(){
 })
 
 
+jQuery(function($) {
 
-(function($) {
+
 console.log("I am Working!")
 // for ie9 doesn't support debug console >>>
 if (!window.console) window.console = {};
@@ -47,7 +48,7 @@ $.fn.euCookieLawPopup = (function() {
         buttonLearnmoreOpenInNewWindow : true,
         agreementExpiresInDays : 30,
         autoAcceptCookiePolicy : false,
-        htmlMarkup : null
+        htmlMarkup : null,
     };
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -55,7 +56,7 @@ $.fn.euCookieLawPopup = (function() {
     _self.vars = {
         INITIALISED : false,
         HTML_MARKUP : null,
-        COOKIE_NAME : 'EU_COOKIE_LAW_CONSENT'
+        COOKIE_NAME : 'EU_COOKIE_LAW_CONSENT',
     };
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -259,6 +260,14 @@ $.fn.euCookieLawPopup = (function() {
     return publicfunc;
 });
 
+
+
+}); // jQuery(function($) {
+
+
+
+
+
 $(document).ready( function() {
     if ($(".eupopup").length > 0) {
         $(document).euCookieLawPopup().init({
@@ -274,5 +283,4 @@ $(document).bind("user_cookie_consent_changed", function(event, object) {
     console.log("User cookie consent changed: " + $(object).attr('consent') );
 });
 
-}(jQuery));
 
