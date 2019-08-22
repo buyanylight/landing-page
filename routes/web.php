@@ -22,9 +22,9 @@ Route::get('/contact', 'PageController@contact')->name('contact');
 Route::get('/sitemap','PageController@sitemap')->name('sitemap_page');
 Route::get('/sitemap.xml','PageController@sitemap')->name('sitemap_page');
 
-// Route::get('/ieo', 'PageController@ieo')->name('ieo');
-Route::get('/ieo', 'PageController@soon')->name('coming_soon_ieo');
-Route::get('/ieo-test', 'PageController@ieo')->name('ieo');
+Route::get('/ieo', 'PageController@ieo')->name('ieo');
+// Route::get('/ieo', 'PageController@soon')->name('ieo');
+Route::get('/ieo-test', 'PageController@ieo')->name('ieo-test');
 
 Route::get('/whitepaper', 'PageController@soon')->name('coming_soon_whitepaper');
 
