@@ -254,19 +254,7 @@
 
     <script src="{{ asset('js/mobile.js') }}?ver={{ env('VERSION','0') }}" charset="utf-8"></script>
 
-	{{-- preloader --}}
-	{{-- ////////////////////////////////////////////////////////////// --}}
-	<script>
-		$(window).on('load',function(){
-			$('.preloader .sk-folding-cube').css("display", "none");
-			$('.preloader').addClass('completed');
-			setTimeout(()=>{
-				$('.preloader').css("display", "none");
-			},1100);
-		});
-	</script>
-	{{-- ////////////////////////////////////////////////////////////// --}}
-	{{-- preloader --}}
+
 
     @if (session('success') || session('danger'))
     <script type="text/javascript">
@@ -497,6 +485,22 @@
     
     })
     </script>
+
 	@yield('body-end-javascript')
+
+
+	{{-- preloader --}}
+	{{-- ////////////////////////////////////////////////////////////// --}}
+	<script>
+		$(window).on('load',function(){
+			$('.preloader .sk-folding-cube').css("display", "none");
+			$('.preloader').addClass('completed');
+			setTimeout(()=>{
+				$('.preloader').css("display", "none");
+			},1100);
+		});
+	</script>
+	{{-- ////////////////////////////////////////////////////////////// --}}
+	{{-- preloader --}}    	
 </body>
 </html>

@@ -242,20 +242,6 @@
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	 	<script src="https://www.google.com/recaptcha/api.js?render={{ env('CAPTCHA_KEY') }}"></script>
  
-	{{-- preloader --}}
-	{{-- ////////////////////////////////////////////////////////////// --}}
-	<script>
-		$(window).on('load',function(){
-			$('.preloader .sk-folding-cube').css("display", "none");
-			$('.preloader').addClass('completed');
-			setTimeout(()=>{
-				$('.preloader').css("display", "none");
-			},1100);
-		});
-	</script>
-	{{-- ////////////////////////////////////////////////////////////// --}}
-	{{-- preloader --}}
-
 	<script type="text/javascript">
 		grecaptcha.ready(function() {
 		grecaptcha.execute( '{{ env('CAPTCHA_KEY') }}' , { action: 'contact' } )
@@ -550,6 +536,58 @@
 	@endif
 	
 	@yield('body-end-javascript')
+
+
+
+	{{-- preloader --}}
+	{{-- ////////////////////////////////////////////////////////////// --}}
+	<script>
+		function detectOldIE() {
+		    var ua = window.navigator.userAgent;
+
+		    var msie = ua.indexOf('MSIE ');
+		    if (msie > 0) {
+		        // IE 10 or older => return version number
+		        // return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+		        return true;
+		    }
+
+		    var trident = ua.indexOf('Trident/');
+		    if (trident > 0) {
+		        // IE 11 => return version number
+		        var rv = ua.indexOf('rv:');
+		        // return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+		        return true;
+		    }
+
+		    var edge = ua.indexOf('Edge/');
+		    if (edge > 0) {
+		       	// Edge (IE 12+) => return version number
+		       	// return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+			    return false;
+		    }
+
+		    // other browser
+		    return false;
+		}
+
+		if(detectOldIE()){
+			//if IE 11 or <
+			$('.preloader').css("display", "none");
+		} 
+		else { 
+			//if not IE 11
+			$(window).on('load',function(){
+				$('.preloader .sk-folding-cube').css("display", "none");
+				$('.preloader').addClass('completed');
+				setTimeout(function(){
+					$('.preloader').css("display", "none");
+				},1100);
+			});			
+		}
+	</script>
+	{{-- ////////////////////////////////////////////////////////////// --}}
+	{{-- preloader --}}
 
 	</body>
 </html>

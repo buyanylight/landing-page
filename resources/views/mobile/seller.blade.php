@@ -117,10 +117,10 @@
 			</div>
 			<div class="step-3 text-left pt-3">
 				<p class=""><b>Step 3:</b>
-					<br> Start receiving enquiries, get awarded and start selling on BAL!
+					<br> Start receiving enquiries, get awarded and start selling on BAL.
 				</p>
 			</div>
-			<p class="pt-3 text-left"><b> Save time and make your online registration now!</b>
+			<p class="pt-3 text-left"><b> Register Today!</b>
 			</p>
 			<div class="text-left">
                 <a href="https://lightfinder.buyanylight.com/supplier/register" class="btn pl-0">
