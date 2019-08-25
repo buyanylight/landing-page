@@ -6,19 +6,19 @@
                     <h5 class="text-white font-weight-bold">Buyers</h5>
                     <ul class="list-group footer-list">
                         <li class="mt-3">
-                            <a href="/#ninety" class="text-white">How it works</a>
+                            <a href="{{ route('home') }}#ninety" class="text-white">How it works</a>
                         </li>
                         <li class="mt-3">
-                            <a href="/#balvsretail" class="text-white">BAL vs. retail</a>
+                            <a href="{{ route('home') }}#balvsretail" class="text-white">BAL vs. retail</a>
                          </li>
                          <li class="mt-3">
-                            <a href="/#package" class="text-white">Packages</a>
+                            <a href="{{ route('home') }}#package" class="text-white">Packages</a>
                          </li>
                         <li class="mt-3">
-                            <a href="/#about" class="text-white">About us</a>
+                            <a href="{{ route('home') }}#about" class="text-white">About us</a>
                         </li>
                         <li class="mt-3">
-                            <a href="/#why-bal" class="text-white">Why BAL</a>
+                            <a href="{{ route('home') }}#why-bal" class="text-white">Why BAL</a>
                         </li>
                          <li class="mt-3">
                             <a href="https://lightfinder.buyanylight.com/buyer/register" class="text-white">Register</a>
@@ -27,7 +27,7 @@
                             <a href="https://lightfinder.buyanylight.com" class="text-white">Sign in</a>
                          </li>
                          <li class="mt-3">
-                            <a href="/buyer-faq" class="text-white">FAQ</a>
+                            <a href="{{ route('buyer-faq') }}" class="text-white">FAQ</a>
                          </li>
                      </ul>
                 </div>
@@ -35,7 +35,7 @@
                     <h5 class="text-white font-weight-bold">Sellers</h5>
                     <ul class="list-group footer-list">
                          <li class="mt-3">
-                            <a href="/seller" class="text-white">Start today</a>
+                            <a href="{{ route('seller') }}" class="text-white">Start today</a>
                          </li>
                         <li class="mt-3">
                             <a href="https://lightfinder.buyanylight.com/supplier/register" class="text-white">Register</a>
@@ -44,7 +44,7 @@
                             <a href="https://lightfinder.buyanylight.com" class="text-white">Sign in</a>
                         </li>
                         <li class="mt-3">
-                            <a href="/seller-faq" class="text-white">FAQ</a>
+                            <a href="{{ route('seller-faq') }}" class="text-white">FAQ</a>
                          </li>
                      </ul>
                 </div>
@@ -52,10 +52,10 @@
                     <h5 class="text-white font-weight-bold">Investors</h5>
                     <ul class="list-group footer-list">
                         <li class="mt-3">
-                            <a href="/investor" class="text-white">Let's talk</a>
+                            <a href="{{ route('investor') }}" class="text-white">Let's talk</a>
                         </li>
                         <li class="mt-3">
-                            <a href="/ieo" class="text-white">IEO</a>
+                            <a href="{{ route('ieo') }}" class="text-white">IEO</a>
                         </li>
                      </ul>
                 </div>
@@ -131,7 +131,7 @@
                         <div>
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <a href="/terms" class="text-white">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/privacy" class="text-white">Privacy & cookies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© BuyAnyLight 2019
+                                    <a href="{{ route('terms') }}" class="text-white">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ route('privacy') }}" class="text-white">Privacy & cookies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© BuyAnyLight 2019
                                 </div>
                                 <div class="col-sm-4">
                                 </div>

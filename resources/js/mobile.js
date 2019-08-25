@@ -42,7 +42,8 @@ $.fn.euCookieLawPopup = (function() {
         colorStyle : 'default',
         compactStyle : false,
         popupTitle : 'This website is using cookies',
-        popupText : 'We use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we\'ll assume that you are happy to receive all cookies on this website.',
+        // popupText : 'We use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we\'ll assume that you are happy to receive all cookies on this website.',
+        popupText : 'We use cookies to offer you a better browsing experience, if you continue to use this site, you consent to our use of cookies.',
         buttonContinueTitle : 'Continue',
         buttonLearnmoreTitle : 'Learn&nbsp;more',
         buttonLearnmoreOpenInNewWindow : true,
@@ -274,7 +275,8 @@ $(document).ready( function() {
             'info' : 'YOU_CAN_ADD_MORE_SETTINGS_HERE',
             'cookiePolicyUrl' : '/privacy',
             'popupTitle' : '',
-            'popupText' : 'We use cookies to offer you a better browsing experience, analyze site traffic, personalize content.<br> Read about how we use cookies and how you can control them on our Privacy Policy. If you continue to use this site, you consent to our use of cookies.'
+            // 'popupText' : 'We use cookies to offer you a better browsing experience, analyze site traffic, personalize content.<br> Read about how we use cookies and how you can control them on our Privacy Policy. If you continue to use this site, you consent to our use of cookies.'
+            'popupText' : 'We use cookies to offer you a better browsing experience. If you continue to use this site, you consent to our use of cookies.'
         });
     }
 });

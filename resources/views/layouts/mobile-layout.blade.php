@@ -42,7 +42,7 @@
 
 	<!-- Styles -->
 
-   @yield('css')
+   	
 
 	@section('css')
 		<link rel="stylesheet" href="{{ asset('css/mobile.css') }}?ver={{ env('VERSION','0') }}">
@@ -65,7 +65,8 @@
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="https://buyanylight.com">
 	{{-- <meta property="og:image" content="https://buyanylight.com/images/logo-white.png"> --}}
-	<meta property="og:image" content="https://buyanylight.com/images/bal-logo-share.png?ver={{ env('VERSION','0') }}">
+	{{-- <meta property="og:image" content="https://buyanylight.com/images/bal-logo-share.png?ver={{ env('VERSION','0') }}"> --}}
+	<meta property="og:image" content="https://buyanylight.com/images/bal-logo-share.png">
 	<meta property="og:description" content="BUY ANY LIGHT (BAL) has pioneered an innovation that changes the procedure of sourcing lights forever! The BAL platform benefits users with the best possible prices for any light, increased efficiency of lights procurement, access to the actual manufacturers of top global brands, increased profits, automation functions, and many other excellent features.">
 
 
