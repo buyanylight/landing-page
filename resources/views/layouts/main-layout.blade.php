@@ -59,7 +59,7 @@
 
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="https://buyanylight.com">
-	<meta property="og:image" content="https://buyanylight.com/images/bal-logo-share.png">
+	<meta property="og:image" content="https://buyanylight.com/images/bal-logo-share.png?ver={{ env('VERSION','0') }}">
 
 
 
