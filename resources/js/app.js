@@ -55,7 +55,7 @@ require('./bootstrap');
             $('#topBtn').fadeIn();
             $('.links').addClass('ncol')
             $(".logo").attr("src","images/logo-black.png");
-        } else {  
+        } else {
             $(".logo").attr("src","images/logo-white.png");
             $('.links').removeClass('ncol')
         }
