@@ -63,7 +63,7 @@
 		<div class="col text-center">
 			<img src="{{ asset('images/5.png')}}" width="30%">
 			<div  class="pt-3" >
-				<p>enjoy secure, instant money transfer to your personal BAL Wallet.</p>
+				<p>enjoy secure, instant money transfer to your personal BAL Wallet</p>
 			</div>
 		</div>
 	</div>
@@ -112,10 +112,10 @@
 			<div class="col-md-6">
 					<p class="pt-3"><b>Step 1</b><br>Fill out the information required </p>
 					<p class="pt-5"><b>Step 2:</b><br>Verify your e-mail ID</p>
-					<p class="pt-5"><b>Step 3:</b><br>Start receiving enquiries, get awarded and start selling on BAL! </p>
+					<p class="pt-5"><b>Step 3:</b><br>Start receiving enquiries, get awarded and start selling on BAL.</p>
 			</div>
 		</div>
-		<p class="pt-3 text-left"><b>Save time and make your online registration now!</b>
+		<p class="pt-3 text-left"><b>Save time and make your online registration today!</b>
 		</p>
 		<div class="text-left">
 			<a href="https://lightfinder.buyanylight.com/seller/register" class=" pl-0 btn">

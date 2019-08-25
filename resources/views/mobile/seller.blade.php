@@ -120,7 +120,7 @@
 					<br> Start receiving enquiries, get awarded and start selling on BAL.
 				</p>
 			</div>
-			<p class="pt-3 text-left"><b> Register Today!</b>
+			<p class="pt-3 text-left"><b>Save time and make your online registration today!</b>
 			</p>
 			<div class="text-left">
                 <a href="https://lightfinder.buyanylight.com/supplier/register" class="btn pl-0">
