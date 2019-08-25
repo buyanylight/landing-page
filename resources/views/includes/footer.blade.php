@@ -55,7 +55,7 @@
                             <a href="/investor" class="text-white">Let's talk</a>
                         </li>
                         <li class="mt-3">
-                            <a href="/coming-soon" class="text-white">IEO</a>
+                            <a href="/ieo" class="text-white">IEO</a>
                         </li>
                      </ul>
                 </div>
