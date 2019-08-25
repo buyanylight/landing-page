@@ -89,7 +89,7 @@
         			</div>
         			<div id="faq-5" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
           				<div class="card-body">
-           					No: all transactions must be made via the BAL platform and you may NOT include any of your company information in either your quotation or your packaging.
+           					No - all transactions must be made via the BAL platform and you may NOT include any of your company information in either your quotation or your packaging.
           				</div>
         			</div>
       			</div>
@@ -164,7 +164,8 @@
         			</div>
         			<div id="faq-10" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
           				<div class="card-body">
-           					You’ll get 100% payment when the order has been confirmed by the buyer. The amount will show in your Dashboard Wallet and is credited automatically into your bank account as soon as the goods have been delivered to the buyer.
+           					{{-- You’ll get 100% payment when the order has been confirmed by the buyer. The amount will show in your Dashboard Wallet and is credited automatically into your bank account as soon as the goods have been delivered to the buyer. --}}
+          					When a buyer uploads their enquiry, they choose their preferred shipping method (either sea, land, or air). Every quotation you provide must include the shipping charges.
           				</div>
         			</div>
       			</div>
