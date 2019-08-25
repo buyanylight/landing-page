@@ -30,7 +30,7 @@
                         <i class="fas fa-arrow-right"></i> 
                     </div>
                 </a>
-                 <a href="/coming-soon" class="btn btn-sm btn-outline-dark text-white">
+                 <a href="/ieo" class="btn btn-sm btn-outline-dark text-white">
                     <div class="link-text">
                         IEO
                     </div>&nbsp;
