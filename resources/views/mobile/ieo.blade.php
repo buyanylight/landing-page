@@ -702,7 +702,6 @@
 	      						</div>
 	    					</div>
 	  					</div>
-
 					</li>
 					
   					<li class="li complete">
@@ -1550,11 +1549,11 @@
 				<h4 class="text-center">
 					<b>
 						Want to know more about our Private Round? 
-						<a href="/contact" class="header-text">
-							<span >
+						<span class="header-text scrollTo openContact" target="contact">
+							<span>
 								Contact Us!		
 							</span>
-						</a>
+						</span>
 
 						
 					</b>
