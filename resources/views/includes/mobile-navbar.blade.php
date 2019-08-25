@@ -49,10 +49,10 @@
                     Packages
                     </button>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/m/package/#trial">Free Trial</a>
-                        <a class="dropdown-item" href="/m/package/#home">My Home</a>
-                        <a class="dropdown-item" href="/m/package/#tower">My Tower</a>
-                        <a class="dropdown-item" href="/m/package/#finder">LightFinder</a>
+                        <a class="dropdown-item" href="{{ route('m-package') }}#trial">Free Trial</a>
+                        <a class="dropdown-item" href="{{ route('m-package') }}#home">My Home</a>
+                        <a class="dropdown-item" href="{{ route('m-package') }}#tower">My Tower</a>
+                        <a class="dropdown-item" href="{{ route('m-package') }}#finder">LightFinder</a>
                         <a class="dropdown-item" href="{{ route('m-add-ons') }}">Add-ons</a>
                     </div>
                 </li>
