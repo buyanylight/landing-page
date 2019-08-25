@@ -258,7 +258,7 @@
                         		</a>
                         	</li>
                         	<li class="mt-3 mb-3">
-                        		<a href="/coming-soon" class="text-dark">
+                        		<a href="/ieo" class="text-dark">
                         			IEO
                         		</a>
                         	</li>
