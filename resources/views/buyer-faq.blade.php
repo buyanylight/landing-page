@@ -128,25 +128,25 @@
        					 Here are some of great values the platform provides for sellers: 
                            <ul>
                               <li>
-                                <i class="fas fa-check"> </i> easy to set-up and use 
+                                easy to set-up and use 
                               </li>
                               <li>
-                                <i class="fas fa-check"> </i> free registration 
+                                free registration 
                               </li>
                               <li>
-                                <i class="fas fa-check"> </i> saves you lots of money 
+                                saves you lots of money 
                               </li>
                               <li>
-                                <i class="fas fa-check"> </i> secure payment
+                                secure payment
                               </li>
                               <li>
-                                <i class="fas fa-check"> </i> samples available 
+                                samples available 
                               </li>
                               <li>
-                                <i class="fas fa-check"> </i> reliable 
+                                reliable 
                               </li>
                               <li>
-                                <i class="fas fa-check"> </i> trackable deliveries to your door
+                                trackable deliveries to your door
                               </li>
                            </ul>
       				</div>
