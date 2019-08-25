@@ -59,7 +59,7 @@
                 </div> 
             </div>
             <div class="pt-3">
-                <a href="/m/more-reasons" class="btn text-dark pl-0">
+                <a href="{{ route('m-more-reasons') }}" class="btn text-dark pl-0">
                     <div class="link-text">
                        <b> More reasons why </b>
                     </div>&nbsp;

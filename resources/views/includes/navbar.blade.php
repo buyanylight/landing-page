@@ -16,10 +16,10 @@
                     About
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/#ninety">How it works</a>
-                        <a class="dropdown-item" href="/#balvsretail">BAL vs. retail</a>
-                        <a class="dropdown-item" href="/#about">About BAL</a>
-                        <a class="dropdown-item" href="/#why-bal">Why BAL</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#ninety">How it works</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#balvsretail">BAL vs. retail</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#about">About BAL</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#why-bal">Why BAL</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
@@ -27,12 +27,12 @@
                     Packages
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/#all-packages">Free Trial</a>
-                        <a class="dropdown-item" href="/#all-packages">My Home</a>
-                        <a class="dropdown-item" href="/#all-packages">My Tower</a>
-                        <a class="dropdown-item" href="/#all-packages">LightFinder</a>
-                        <a class="dropdown-item" href="/#package">Summary</a>
-                        <a class="dropdown-item" href="/#addons">Add-ons</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#all-packages">Free Trial</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#all-packages">My Home</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#all-packages">My Tower</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#all-packages">LightFinder</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#package">Summary</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#addons">Add-ons</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
@@ -41,39 +41,39 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/buyer/register">Register</a>
-                        <a class="dropdown-item" href="/buyer-faq">FAQ</a>
+                        <a class="dropdown-item" href="{{ route('buyer-faq') }}">FAQ</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <a class="nav-link dropdown-toggle text-white links" href="/seller" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white links" href="{{ route('seller') }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Sellers
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/seller">Start today</a>
+                        <a class="dropdown-item" href="{{ route('seller') }}">Start today</a>
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/supplier/register">Register</a>
-                        <a class="dropdown-item" href="/seller-faq">FAQ</a>
+                        <a class="dropdown-item" href="{{ route('seller-faq') }}">FAQ</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <a class="nav-link dropdown-toggle text-white links" href="/investor" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white links" href="{{ route('investor') }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Investors
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/ieo">IEO</a>
-                        <a class="dropdown-item" href="/investor">Lets talk</a>
+                        <a class="dropdown-item" href="{{ route('ieo') }}">IEO</a>
+                        <a class="dropdown-item" href="{{ route('investor') }}">Lets talk</a>
                     </div>
                 </li>
                 <li class="nav-item mr-3">
                     <a class="nav-link text-white links" href="https://medium.com/@infobuyanylight" target="_blank">News</a>
                 </li>
                 <li class="nav-item mr-3">
-                    <a class="nav-link text-white links" href="/contact">Contact</a>
+                    <a class="nav-link text-white links" href="{{ route('contact') }}">Contact</a>
                 </li>
                 <li class="nav-item mr-3">
                     <a class="nav-link text-white links" href="https://lightfinder.buyanylight.com">Sign in</a>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <a class="nav-link dropdown-toggle text-white links" href="/seller" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white links" href="{{ route('seller') }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Sign up
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">

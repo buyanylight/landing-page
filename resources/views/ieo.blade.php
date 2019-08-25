@@ -49,14 +49,15 @@
 					</span>
 					<br> 
 					<p class="small-desc">
-						BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowd funding campaign aimed at raising funds for the development of a decentralized.
+						{{-- BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowd funding campaign aimed at raising funds for the development of a decentralized. --}}
+						The BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowd funding campaign aimed at raising funds for the development of a blockchain deployed, decentralized marketplace for lighting products and expansion of the existing BAL Network.
 					</p>					
 				</h3>
 
 				<div class="pt-1 pagers-paper">
 					<a href="{{ asset('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" class="btn btn-ieo">One Pager</a>					
-					<a href="/coming-soon" class="btn btn-ieo">White Paper</a>
-					<a href="/coming-soon" class="btn btn-ieo">Yellow Paper</a>
+					<a href="{{ route('whitepaper') }}" class="btn btn-ieo">White Paper</a>
+					<a href="{{ route('yellowpaper') }}" class="btn btn-ieo">Yellow Paper</a>
 				</div>
 				<div class="videos mt-5">
 					<a data-fancybox 
@@ -1274,7 +1275,7 @@
 				<h4 class="text-center">
 					<b>
 						Want to know more about our Private Round? 
-						<a href="/contact" class="header-text">
+						<a href="{{ route('contact') }}" class="header-text">
 							<span >
 								Contact Us!		
 							</span>

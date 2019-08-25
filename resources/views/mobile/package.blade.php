@@ -509,7 +509,7 @@
 			<p class="pt-3">
 				We’ve designed packages to delight a variety of user categories. But every user is an individual, so we’ve also built in optional services to get additional tailored help if you need it. 
                 <div class="text-left">
-                    <a href="/m/add-ons" class="btn text-dark pl-0">
+                    <a href="{{ route('m-add-ons') }}" class="btn text-dark pl-0">
                         <div class="link-text">
                             <b>Explore packages</b>
                         </div>&nbsp;

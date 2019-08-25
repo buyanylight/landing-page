@@ -391,7 +391,7 @@ $(document).ready( function() {
             'info' : 'YOU_CAN_ADD_MORE_SETTINGS_HERE',
             'cookiePolicyUrl' : '/privacy',
             'popupTitle' : '',
-            'popupText' : 'We use cookies to offer you a better browsing experience, analyze site traffic, personalize content.<br> Read about how we use cookies and how you can control them on our Privacy Policy. If you continue to use this site, you consent to our use of cookies.'
+            'popupText' : 'We use cookies to offer you a better browsing experience, analyze site traffic, personalize content. Read about how we use cookies and how you can control them on our Privacy Policy. If you continue to use this site, you consent to our use of cookies.'
         });
     }
 });

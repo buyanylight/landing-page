@@ -11199,12 +11199,13 @@ nav {
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
+  position: relative;
 }
 
 .about-img {
   position: absolute;
   width: 50%;
-  top: 110%;
+  top: 4%;
   left: 22%;
 }
 
@@ -11583,5 +11584,11 @@ footer {
 
 .grecaptcha-badge {
   visibility: collapse !important;
+}
+
+.eupopup-body {
+  text-align: left;
+  width: 60%;
+  margin: auto;
 }
 

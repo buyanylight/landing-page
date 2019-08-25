@@ -99,7 +99,7 @@
         <p class="pt-3">
             Offering top quality LED from the world’s best manufacturers at the lowest prices, BAL also delivers the finest service and advice and first-rate customer satisfaction every time.
             <div class="text-left">
-                    <a href="/m/add-ons" class="btn text-dark pl-0">
+                    <a href="{{ route('m-add-ons') }}" class="btn text-dark pl-0">
                         <div class="link-text">
                             <b>Add extra value</b>
                         </div>&nbsp;

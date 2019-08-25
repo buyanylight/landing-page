@@ -391,7 +391,7 @@ nav .dropdown-toggle::after {
 .section-1-bg {
 	background: url('/images/mobile_bg/ieo/1.png');
 	// height: 100vh;
-	height: 500px;
+	height: 470px;
 	background-size: cover;
 	> .container {
 		// padding-bottom: 200px;
@@ -487,4 +487,14 @@ nav .dropdown-toggle::after {
 	    background: -webkit-linear-gradient(right, #9a1e61, #5555A4);
 	    color: #fff;
 	}
+}
+
+
+
+
+
+
+.eupopup-body {
+	text-align: justify;
+    margin-top: 10px;
 }

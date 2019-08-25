@@ -30,7 +30,7 @@
                         <i class="fas fa-arrow-right"></i> 
                     </div>
                 </a>
-                 <a href="/ieo" class="btn btn-sm btn-outline-dark text-white">
+                 <a href="{{ route('ieo') }}" class="btn btn-sm btn-outline-dark text-white">
                     <div class="link-text">
                         IEO
                     </div>&nbsp;
@@ -176,7 +176,8 @@
     <div class="container pt-5 pb-5">
         <div class="row d-flex align-items-center">
             <img src="{{asset('images/about.png')}}" width="100%" class="about-img">
-            <div class="col-md-5 ">
+            <div class="col-md-5" style="text-shadow: 1px 1px 0px #fff, 0px 0px 5px #fff, 0px 0px 10px #fff;">
+            	{{-- <div class="px-4 pt-4 pb-2" style="background-color: rgba(247, 247, 255, 0.7); border: 1px solid;"> --}}
                 <h3>
                     <b><span class="text-BAL">About</span> BuyAnyLight</b>
                 </h3>
@@ -193,6 +194,7 @@
                 <p>
                     Whether you have lots of experience with LED lights or none at all, we have a package to help you achieve all your objectives.
                 </p>
+	            {{-- </div> --}}
             </div>
             <div class="col-md-2"></div>
             <div class="col-md-5 text-center">
@@ -691,7 +693,7 @@
 <section class="section-8 bg-black" id="all-packages">
     <div class="container pt-5">
         <h3 class="text-white"><span class="text-BAL">OUR</span> PACKAGES</h3>
-        <p class="text-white pt-3">We welcome everyone to use our platform. Take a look at the groups below and see which one is right for you. <br> If you have any queries, don’t hesitate to <a href="/contact" class="text-white">get in touch.</a></p>
+        <p class="text-white pt-3">We welcome everyone to use our platform. Take a look at the groups below and see which one is right for you. <br> If you have any queries, don’t hesitate to <a href="{{ route('contact') }}" class="text-white">get in touch.</a></p>
     </div>
     <div class="container pt-3 pb-5">
         <div class="card mb-3">

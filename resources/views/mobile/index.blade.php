@@ -14,7 +14,7 @@
                     <a data-fancybox  href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" class="btn btn-dark header-link fancybox">Watch Video</a>
                 </div>
                 <div class="container text-center pt-2">
-                    <a href="/ieo" class="btn btn-dark header-link">IEO</a>
+                    <a href="{{ route('ieo') }}" class="btn btn-dark header-link">IEO</a>
                 </div>
                 <div class="container text-center pt-2">
 		            {{-- <a href="one-pagers/BuyAnyLight.pdf"  --}}
@@ -119,7 +119,7 @@
                 Principled, honest and focused, BAL leverages the world’s best suppliers and delivers the greatest value LED products, the finest service and advice and first-rate customer satisfaction – every time.
             </p>
             <div class="text-left pt-3">
-                <a href="/m/about" class="btn text-white pl-0">
+                <a href="{{ route('m-about') }}" class="btn text-white pl-0">
                     <div class="link-text">
                         Explore your benefits
                     </div>&nbsp;
@@ -129,7 +129,7 @@
                 </a>
             </div>
             <!-- <div class="text-left">
-                <a href="/m/about" class="btn text-white pl-0">
+                <a href="{{ route('m-about') }}" class="btn text-white pl-0">
                     <div class="link-text">
                         One pager
                     </div>&nbsp;
@@ -203,7 +203,7 @@
                 </a>
             </div>
             <div class="text-left">
-                <a href="/m/package" class="btn text-black pl-0">
+                <a href="{{ route('m-package') }}" class="btn text-black pl-0">
                     <div class="link-text">
                          Other package benefits
                     </div>&nbsp;
@@ -222,7 +222,7 @@
 			<p class="pt-4 text-left">
 				BAL delivers exceptional advantages to both sellers and buyers, ensuring that every BAL platform user gets win-win results, every time! 
 			</p>
-            <a href="/m/why-us" class="btn btn-sm pl-0 text-white">
+            <a href="{{ route('m-why-us') }}" class="btn btn-sm pl-0 text-white">
                 <div class="link-text">
                     Find out 
                 </div>

@@ -135,7 +135,7 @@
                     <div class="accordion-inner">
                         <ul class="footer-list m-0 text-dark">
                             <li class="mt-3">
-                                <a href="/#works" class="text-dark">
+                                <a href="{{ route('home') }}#works" class="text-dark">
                                     How it works                                    
                                 </a>
                             </li>
@@ -143,14 +143,14 @@
                                 <a href="">BAL vs. retail</a>
                             </li> -->
                             <li class="mt-3">
-                                <a href="/m/package" class="text-dark" >Packages</a>
+                                <a href="{{ route('m-package') }}" class="text-dark" >Packages</a>
                             
                             </li>
                             <li class="mt-3">
-                                <a href="/m/about" class="text-dark">About us</a>
+                                <a href="{{ route('m-about') }}" class="text-dark">About us</a>
                             </li>
                             <li class="mt-3 mb-3">
-                                <a href="/m/why-us" class="text-dark">
+                                <a href="{{ route('m-why-us') }}" class="text-dark">
                                     Why BAL
                                 </a>
                             </li>
@@ -186,7 +186,7 @@
                   				</a>
                   			</li>
                   			<li class="mt-3 mb-3">
-                  				<a href="/buyer-faq" class="text-dark">
+                  				<a href="{{ route('buyer-faq') }}" class="text-dark">
                   					FAQ
                   				</a>
                   			</li>
@@ -212,7 +212,7 @@
                 	<div class="accordion-inner">
                     	<ul class="footer-list m-0 text-dark">
                   			<li class="mt-3" >
-                  				<a href="/seller" class="text-dark">
+                  				<a href="{{ route('seller') }}" class="text-dark">
                   					Start today
                   				</a>
                   			</li>
@@ -227,7 +227,7 @@
                   				</a>
                   			</li>
                   			<li class="mt-3 mb-3">
-                  				<a href="/seller-faq" class="text-dark">
+                  				<a href="{{ route('seller-faq') }}" class="text-dark">
                   					FAQ
                   				</a>
                   			</li>
@@ -253,12 +253,12 @@
                 	<div class="accordion-inner">
                     	<ul class="footer-list m-0 text-dark">
                         	<li class="mt-3">
-                        		<a href="/investor" class="text-dark">
+                        		<a href="{{ route('investor') }}" class="text-dark">
                         			Lets Talk
                         		</a>
                         	</li>
                         	<li class="mt-3 mb-3">
-                        		<a href="/ieo" class="text-dark">
+                        		<a href="{{ route('ieo') }}" class="text-dark">
                         			IEO
                         		</a>
                         	</li>
@@ -274,12 +274,12 @@
             			</a>
             		</div>
             		<div class="col-2">
-            			<a href="/terms" class="text-dark">
+            			<a href="{{ route('terms') }}" class="text-dark">
             				Terms
             			</a>
             		</div>
             		<div class="col-2">
-            			<a href="/privacy" class="text-dark">
+            			<a href="{{ route('privacy') }}" class="text-dark">
             				Policy
             			</a>
             		</div>
