@@ -35,6 +35,9 @@
 
 
 @section('content')
+<div class="all-contents">
+
+
 <section class="section-1 mb-3">
 	<div class="section-1-bg pt-5">
 		<div class="container text-center h-100 d-flex align-items-end justify-content-center">
@@ -403,271 +406,7 @@
 		</div>
 		
 		<div class="container text-center text-white">
-			{{-- <ul class="roadmap">
-  					<li class="li complete mr-3">
-    					<div class="timestamp">
-      						<span class="author text-white pb-4">2014</span>
-    					</div>
-    					<div class="status">
-      						<div class="one-map pt-4 text-left"> 
-      							<div class="card">
-      								<div class="card-body">
-      									<ul class=" p-0 map-list">
-      										<li>
-      											Establishment of Almani Lighting in Germany
-      										</li>
-      									</ul>
-      								</div>
-      							</div>
-      						</div>
-    					</div>
-  					</li>
-  					<li class="li complete mr-3">
-    					<div class="timestamp">
-      						<span class="author text-white pb-4">2015</span>
-     					</div>
-    					<div class="status">
-      						<div class="one-map pt-4 text-left"> 
-      							<div class="card">
-      								<div class="card-body">
-      									<ul class="pl-0 map-list">
-      										<li>
-      											Establishment of the Almani Lighting Dubai, UAE Branch		
-      										</li>
-      									</ul> 
-      								</div>
-      							</div>
-      							<div class="card mt-2">
-      								<div class="card-body">
-      									<ul class=" map-list pl-0">
-      										<li>
-      											Cooperation with Asas Holdings, UAE
-      										</li>
-      									</ul>
-      								</div>
-      							</div>
-      						</div>
-    					</div>
-  					</li>
-  					<li class="li complete mr-3">
-    					<div class="timestamp">
-      						<span class="author text-white pb-4">2017</span>
-    					</div>
-    					<div class="status">
-      						<div class="one-map pt-4 text-left"> 
-      							<div class="card">
-      								<div class="card-body">
-      									<ul class="map-list pl-0">
-      										<li>
-      											Establishment of a state-of-the-art showroom
-      										</li>
-      									</ul>	 
-      								</div>	
-      							</div>
-      						</div>
-    					</div>
-  					</li>
-  					<li class="li complete mr-3">
-    					<div class="timestamp">
-      						<span class="author text-white pb-4">2018</span>
-    					</div>
-    					<div class="status">
-      						<div class="one-map pt-4 text-left"> 
-      							<div class="card">
-      								<div class="card-body">
-      									<ul class="map-list pl-0">
-      										<li>
-      											<b>Q1-Q2</b>
-      											<ul class="pl-3 pt-2">
-      												<li>
-      													Idea inception of the BAL Platform
-      												</li>
-      												<li>
-      													Initial Research
-      												</li>
-      												<li>
-      													Team Building
-      												</li>
-      											</ul>
-      										</li>
-      									</ul>
-      								</div>
-      							</div>
-      							<div class="card mt-2">
-      								<div class="card-body">
-      									<ul class="map-list pl-0">
-      										<li>
-      											<b>Q2-Q3</b>
-      											<ul class="pl-3 pt-2">
-      												<li>
-      													Platform Development Initiated
-      												</li>
-      												<li>
-      													BAL Website development
-      												</li>
-      											</ul>
-      										</li>
-      									</ul>
-      								</div>
-      							</div>
-      						</div>
-    					</div>
-  					</li>
-  					<li class="li complete mr-3">
-    					<div class="timestamp">
-      						<span class="author text-white pb-4">2019</span>
-    					</div>
-    					<div class="status">
-      						<div class="one-map pt-4 text-left"> 
-      							<div class="card">
-      								<div class="card-body">
-      									<ul class="map-list pl-0">
-      										<li>
-      											<b>Q1-Q2</b>
-      											<ul class="pl-3 pt-2">
-      												<li>
-      													White Paper Drafting for the BAL Platform
-      												</li>
-      												<li>
-      													Centralized Platform completed and ready for user review
-      												</li>
-      												<li>
-      													Token Development
-      												</li>
-      												<li>
-      													IEO planning and launching
-      												</li>
-      												<li>
-      													Marketing Campaign Kick-off
-      												</li>
-      											</ul>
-      										</li>
-      									</ul>
-      								</div>
-      							</div>
-      							<div class="card mt-2">
-      								<div class="card-body">
-      									<ul class="map-list pl-0">
-      										<li>
-      											<b>Q2-Q3</b>
-      											<ul class="pl-3 pt-2">
-      												<li>
-      													Exchange listing and IEO
-      												</li>
-      												<li>
-      													Hybrid Blockchain work initialized
-      												</li>
-      												<li>
-      													Participation in Roadshows
-      												</li>
-      												<li>
-      													Smart Contracts implementation
-      												</li>
-      											</ul>
-      										</li>
-      									</ul>
-      								</div>
-      							</div>
-      						</div>
-    					</div>
-  					</li>
-  					<li class="li complete mr-3">
-    					<div class="timestamp">
-      						<span class="author text-white pb-4">2020</span>
-    					</div>
-    					<div class="status">
-      						<div class="one-map pt-4 text-left"> 
-      							<div class="card">
-      								<div class="card-body">
-      									<ul class="map-list pl-0">
-      										<li>
-      											<b>Q1-Q2</b>
-      											<ul class="pl-3 pt-2">
-      												<li>
-      													Wallet Launch with the functionality of Crosschain Swapping
-      												</li>
-      												<li>
-      													Blockchain testing and improvement
-      												</li>
-      												<li>
-      													Team expansion
-      												</li>
-      											</ul>
-      										</li>
-      									</ul>
-      								</div>
-      							</div>
-      							<div class="card mt-2">
-      								<div class="card-body">
-      									<ul class="map-list pl-0">
-      										<li>
-      											<b>Q2-Q3</b>
-      											<ul class="pl-3 pt-2">
-      												<li>
-      													Mobile application launch
-      												</li>
-      												<li>
-      													Mobile wallet launch
-      												</li>
-      												<li>
-      													Business expansion into Indian markets
-      												</li>
-      											</ul>
-      										</li>
-      									</ul>
-      								</div>
-      							</div>
-      						</div>
-    					</div>
-  					</li>
-  					<li class="li complete mr-3">
-    					<div class="timestamp">
-      						<span class="author text-white pb-4">2021</span>
-    					</div>
-    					<div class="status">
-      						<div class="one-map pt-4 text-left"> 
-      							<div class="card">
-      								<div class="card-body">
-      									<ul class="map-list pl-0">
-      										<li>
-      											<b>Q1-Q2</b>
-      											<ul class="pl-3 pt-2">
-      												<li>
-      													Migration from Ethereum to Patented Blockchain
-      												</li>
-      												<li>
-      													Cloud Staking Functionality Implemented
-      												</li>
-      												<li>
-      													On-chain logistic, freight tracking functionality implemented
-      												</li>
-      											</ul>
-      										</li>
-      									</ul>
-      								</div>
-      							</div>
-      							<div class="card mt-2">
-      								<div class="card-body">
-      									<ul class="map-list pl-0">
-      										<li>
-      											<b>Q2-Q3</b>
-      											<ul class="pl-3 pt-2">
-      												<li>
-      													Business expansion to American markets
-      												</li>
-      											</ul>
-      										</li>
-      									</ul>
-      								</div>
-      							</div>
-      						</div>
-    					</div>
-  					</li>
-			</ul>   --}}
-
-			
-
-				
+		
 
 				
 
@@ -1002,6 +741,12 @@
 		</div>
 	</div>
 </section>
+
+
+
+
+
+
 <section class="section-6">
 	<div class="container pt-5 pb-5">
 		<h3 class="pb-3 text-center">
@@ -1161,126 +906,6 @@
 					<img src="{{ asset('images/ieo/graph1.png') }}" width="60%">
 				</div>
 				<div class="row pt-4">
-					{{-- <div class=" col-6">
-						<ul class="token-list">
-							<li>
-								<div class="d-flex align-items-start">
-									<div class="d-inline-block text-1">
-										<i class="fas fa-square"></i>
-									</div>
-									<div class="d-inline-block pl-2">
-										<span> 
-											20%
-										</span>
-										<br>	 
-										<span>
-											Seed Investor Allocation
-										</span>	
-									</div>
-								</div>
-							</li>
-							<li class="mt-3">
-								<div class="d-flex align-items-start">
-									<div class="d-inline-block text-2">
-										<i class="fas fa-square"></i>
-									</div>
-									<div class="d-inline-block pl-2">
-										<span> 
-											10%
-										</span>
-										<br>	 
-										<span>
-											Private Round, Angel Investor
-										</span>	
-									</div>
-								</div>
-							</li>
-							<li class="mt-3">
-								<div class="d-flex align-items-start">
-									<div class="d-inline-block text-3">
-										<i class="fas fa-square"></i>
-									</div>
-									<div class="d-inline-block pl-2">
-										<span> 
-											30%
-										</span>
-										<br>	 
-										<span>
-											Main Sale Event
-										</span>	
-									</div>
-								</div>
-							</li>
-							<li class="mt-3">
-								<div class="d-flex align-items-start">
-									<div class="d-inline-block text-4">
-										<i class="fas fa-square"></i>
-									</div>
-									<div class="d-inline-block pl-2">
-										<span> 
-											10%
-										</span>
-										<br>	 
-										<span>
-											Team and Management
-										</span>	
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="col-6">
-						<ul class="token-list">
-							<li>
-								<div class="d-flex align-items-start">
-									<div class="d-inline-block text-5">
-										<i class="fas fa-square"></i>
-									</div>
-									<div class="d-inline-block pl-2">
-										<span> 
-											5%
-										</span>
-										<br>	 
-										<span>
-											Bounty and Airdrop
-										</span>	
-									</div>
-								</div>
-							</li>
-							<li class="mt-3">
-								<div class="d-flex align-items-start">
-									<div class="d-inline-block text-6">
-										<i class="fas fa-square"></i>
-									</div>
-									<div class="d-inline-block pl-2">
-										<span> 
-											10%
-										</span>
-										<br>	 
-										<span>
-											Advisory Board Allocation
-										</span>	
-									</div>
-								</div>
-							</li>
-							<li class="mt-3">
-								<div class="d-flex align-items-start">
-									<div class="d-inline-block text-7">
-										<i class="fas fa-square"></i>
-									</div>
-									<div class="d-inline-block pl-2">
-										<span> 
-											15%
-										</span>
-										<br>	 
-										<span>
-											Reserve
-										</span>	
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div> --}}
 
 					<div class=" col-6">
 							<ul class="token-list">
@@ -1409,6 +1034,7 @@
 		</div>
 	</div>
 </section>
+
 <section class="section-7 bg-black">
 	<div class="container pt-5 pb-5">
 		<h3 class="text-center">
@@ -1562,4 +1188,7 @@
 		</div>
 	</div>
 </section>
+
+</div>
+
 @endsection

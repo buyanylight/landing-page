@@ -13,16 +13,16 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<!-- Facebook Pixel Code -->
 	<script>
-	  !function(f,b,e,v,n,t,s)
-	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-	  n.queue=[];t=b.createElement(e);t.async=!0;
-	  t.src=v;s=b.getElementsByTagName(e)[0];
-	  s.parentNode.insertBefore(t,s)}(window, document,'script',
-	  'https://connect.facebook.net/en_US/fbevents.js');
-	  fbq('init', '422311248361106');
-	  fbq('track', 'PageView');
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '422311248361106');
+		fbq('track', 'PageView');
 	</script>
 	<noscript><img height="1" width="1" style="display:none"
 	  src="https://www.facebook.com/tr?id=422311248361106&ev=PageView&noscript=1"
@@ -45,12 +45,12 @@
    	
 
 	@section('css')
-		<link rel="stylesheet" href="{{ asset('css/mobile.css') }}?ver={{ env('VERSION','0') }}">
+		<link rel="stylesheet" href="{{ Util::assetUrl('css/mobile.css') }}">
 	@show
 
-	<link rel="stylesheet" href="{{ asset('css/privacy.css') }}?ver={{ env('VERSION','0') }}">
-	<link rel="stylesheet" href="{{ asset('css/slick.css') }}?ver={{ env('VERSION','0') }}">
-	<link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}?ver={{ env('VERSION','0') }}">
+	<link rel="stylesheet" href="{{ Util::assetUrl('css/privacy.css') }}">
+	<link rel="stylesheet" href="{{ Util::assetUrl('css/slick.css') }}">
+	<link rel="stylesheet" href="{{ Util::assetUrl('css/slick-theme.css') }}">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
 	 <!-- Meta -->
@@ -65,8 +65,7 @@
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="https://buyanylight.com">
 	{{-- <meta property="og:image" content="https://buyanylight.com/images/logo-white.png"> --}}
-	{{-- <meta property="og:image" content="https://buyanylight.com/images/bal-logo-share.png?ver={{ env('VERSION','0') }}"> --}}
-	<meta property="og:image" content="https://buyanylight.com/images/bal-logo-share.png">
+	<meta property="og:image" content="{{ Util::assetUrl('images/bal-logo-share.png') }}">
 	<meta property="og:description" content="BUY ANY LIGHT (BAL) has pioneered an innovation that changes the procedure of sourcing lights forever! The BAL platform benefits users with the best possible prices for any light, increased efficiency of lights procurement, access to the actual manufacturers of top global brands, increased profits, automation functions, and many other excellent features.">
 
 
@@ -254,7 +253,7 @@
 	@include('includes.mobile-footer')
 
 
-	<script src="{{ asset('js/mobile.js') }}?ver={{ env('VERSION','0') }}" charset="utf-8"></script>
+	<script src="{{ Util::assetUrl('js/mobile.js') }}" charset="utf-8"></script>
 
 
 
@@ -411,20 +410,6 @@
 		//     $(this).parent().parent().slideToggle(); 
 		// });
 
-		$('.navbar-nav>li>a').on('click', function(){
-			$('.navbar-collapse').collapse('hide');
-			$('.all-contents').removeClass('filter');
-		});
-
-		$('.navbar-nav>li>div>a').on('click', function(){
-			$('.navbar-collapse').collapse('hide');
-			$('.all-contents').removeClass('filter');
-		});
-
-
-		$('.navbar-toggler').click(function(){
-			$('.all-contents').toggleClass('filter');
-		});
 
 		 function makeTimerPrivate() {
 
@@ -489,27 +474,6 @@
 	</script>
 
 	@yield('body-end-javascript')
-
-	{{-- if contact is in url --}}
-	{{-- ////////////////////////////////////////////////////////////////// --}}
-	<script>
-	$(document).ready(function(){
-
-		var anchors = window.location.href.split("#");
-		if(anchors.length >1 && (anchors[1]=='footer' || anchors[1]=='contact')) {
-			console.log('anchors',anchors);
-			$('#contact').addClass('show');
-			// $('html, body').animate({scrollTop: 0}, 800);
-		}
-
-		$('.openContact').click(function(){
-			$('#contact').addClass('show');	
-		});
-
-	});
-	</script>
-	{{-- ////////////////////////////////////////////////////////////////// --}}
-	{{-- if contact is in url --}}
 
 	{{-- scroll to --}}
 	{{-- ////////////////////////////////////////////////////////////// --}}	

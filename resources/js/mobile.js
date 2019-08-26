@@ -286,3 +286,58 @@ $(document).bind("user_cookie_consent_changed", function(event, object) {
 });
 
 
+
+// if contact is in url 
+//////////////////////////////////////////////////////////////// 
+$(document).ready(function(){
+
+	var anchors = window.location.href.split("#");
+	if(anchors.length >1 && (anchors[1]=='footer' || anchors[1]=='contact')) {
+		// console.log('anchors',anchors);
+		$('#contact').addClass('show');
+		// $('html, body').animate({scrollTop: 0}, 800);
+	}
+
+	$('.openContact').click(function(){
+		$('#contact').addClass('show');	
+	});
+
+});
+//////////////////////////////////////////////////////////////// 
+// if contact is in url 
+
+// navbar
+//////////////////////////////////////////////////////////////// 
+$(document).ready(function(){
+
+
+
+	$('.navbar-nav>li>a').on('click', function(){
+		$('.navbar-collapse').collapse('hide');
+		$('.all-contents').removeClass('filter');
+	});
+
+	$('.navbar-nav>li>div>a').on('click', function(){
+		$('.navbar-collapse').collapse('hide');
+		$('.all-contents').removeClass('filter');
+	});
+
+
+	$('.navbar-toggler').click(function(){
+		$('.all-contents').toggleClass('filter');
+	});
+
+
+	// $('.hideNavbar').on('click',function() {
+	//   	$('#navbarNavDropdown').collapse('hide');
+	// });
+	$('#mobileNavbar').click(function (evnt) {
+	  	// $('#navbarNavDropdown').collapse('hide');
+	  	if($(evnt.target).attr('id')=='navbarNavDropdown') {
+			$('.all-contents').toggleClass('filter');
+	  		$('#navbarNavDropdown').collapse('hide');
+	  	}
+	});	
+});
+//////////////////////////////////////////////////////////////// 
+// navbar
