@@ -475,3 +475,20 @@ nav .dropdown-toggle::after {
 	text-align: justify;
     margin-top: 10px;
 }
+
+
+
+
+
+
+
+
+.nav-backdrop {
+
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.3);	
+	display: none;
+}

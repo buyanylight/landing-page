@@ -40,14 +40,14 @@
 		<!-- Facebook Pixel Code -->
 
 		<!-- Styles -->
-		@yield('css')
+		{{-- @yield('css') --}}
 
 		@section('css')
-		<link rel="stylesheet" href="{{ asset('css/app.css') }}?ver={{ env('VERSION','0') }}">
+		<link rel="stylesheet" href="{{ Util::assetUrl('css/app.css') }}">
 		@show
-		<link rel="stylesheet" href="{{ asset('css/privacy.css') }}?ver={{ env('VERSION','0') }}">
-		<link rel="stylesheet" href="{{ asset('css/slick.css') }}?ver={{ env('VERSION','0') }}">
-		<link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}?ver={{ env('VERSION','0') }}">
+		<link rel="stylesheet" href="{{ Util::assetUrl('css/privacy.css') }}">
+		<link rel="stylesheet" href="{{ Util::assetUrl('css/slick.css') }}">
+		<link rel="stylesheet" href="{{ Util::assetUrl('css/slick-theme.css') }}">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 		
 	@yield('meta')
@@ -59,8 +59,7 @@
 
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="https://buyanylight.com">
-	{{-- <meta property="og:image" content="https://buyanylight.com/images/bal-logo-share.png?ver={{ env('VERSION','0') }}"> --}}
-	<meta property="og:image" content="https://buyanylight.com/images/bal-logo-share.png">
+	<meta property="og:image" content="{{ Util::assetUrl('images/bal-logo-share.png') }}">
 
 
 
@@ -238,7 +237,7 @@
 
 		@include('includes.footer')
 		<!-- Scripts -->
-		<script src="{{ asset('js/app.js') }}?ver={{ env('VERSION','0') }}" charset="utf-8"></script>
+		<script src="{{ Util::assetUrl('js/app.js') }}" charset="utf-8"></script>
 		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	 	<script src="https://www.google.com/recaptcha/api.js?render={{ env('CAPTCHA_KEY') }}"></script>

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark p-0 fixed-top" >
+<nav class="navbar navbar-expand-lg navbar-dark p-0 fixed-top" id="mobileNavbar">
 	<!-- test -->
     <div class="container-fluid">
         <div class="w-100 p-2 bg-black">
@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav bg-black">
                 <li class="nav-item mr-3 ml-3 mt-3">
-                    <a class="nav-link text-white links w-100" href="{{ route('m-home') }}">Home</a>
+                    <a class="nav-link text-white links w-100" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item dropdown mr-3 ml-3">
                     <button class="nav-link dropdown-toggle text-white text-left links btn-black w-100" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -85,7 +85,13 @@
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/supplier/register">Sellers</a>
                     </div>
                 </li>
+                <li class="nav-item dropdown mr-3 ml-3">
+                    <button class="btn btn-success text-white hideNavbar">
+                    	hide
+                    </button>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
+{{-- <div class="nav-backdrop"></div> --}}
