@@ -19,5 +19,6 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/ieo-mobile.scss', 'public/css')
     .sass('resources/sass/slick/slick.scss', 'public/css')
     .sass('resources/sass/slick/slick-theme.scss', 'public/css')
+    .sass('resources/sass/preloaders.scss', 'public/css')
     .sass('resources/sass/mobile.scss', 'public/css')
     .sourceMaps();
