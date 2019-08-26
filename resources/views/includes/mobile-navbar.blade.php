@@ -85,11 +85,11 @@
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/supplier/register">Sellers</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown mr-3 ml-3">
+                {{-- <li class="nav-item dropdown mr-3 ml-3">
                     <button class="btn btn-success text-white hideNavbar">
                     	hide
                     </button>
-                </li>
+                </li> --}}
             </ul>
         </div>
     </div>
