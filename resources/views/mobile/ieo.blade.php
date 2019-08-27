@@ -56,7 +56,7 @@
 				<div class="col-12">
 					<div class="btn-group" role="group" aria-label="Basic example">
 						<button type="button"class="btn btn-ieo-left">
-							<a href="{{ asset('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" 
+							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" 
 							target="_blank">
 								One Pager								
 							</a>
@@ -189,7 +189,7 @@
 							class="mx-3">
 								<span>IEO</span>
 								<i class="far fa-play-circle ml-1"></i>
-								{{-- <img class="video" src="{{ asset('/images/ieo/bal-ieo.png') }}" alt=""> --}}
+								{{-- <img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt=""> --}}
 							</a>
 						</button>
 						
@@ -201,7 +201,7 @@
 							class="">
 								<span>IEO vs ICO</span>
 								<i class="far fa-play-circle ml-1"></i>
-								{{-- <img class="video" src="{{ asset('/images/ieo/bal-ieo-vs-ico.png') }}" alt=""> --}}
+								{{-- <img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}" alt=""> --}}
 							</a>								
 						</button>
 
@@ -251,7 +251,7 @@
 		</div>
 	</div>
 	{{-- <div class="container pt-3 pb-5">
-		<img src="{{ asset('images/mobile_bg/ieo/2.png')}}" width="100%">
+		<img src="{{ Util::assetUrl('images/mobile_bg/ieo/2.png')}}" width="100%">
 	</div> --}}
 </section>
 <section class="section-3 bg-black">
@@ -277,7 +277,7 @@
 				<a data-fancybox 
 				href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0" 
 				class="">
-					<img class="video" src="{{ asset('/images/ieo/bal-ieo.png') }}" alt="">
+					<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="">
 				</a>
 
 			</div>
@@ -303,7 +303,7 @@
 				<a data-fancybox 
 				href="https://www.youtube-nocookie.com/embed/5nMkricvzfc?rel=0" 
 				class="">
-					<img class="video" src="{{ asset('/images/ieo/bal-ieo-vs-ico.png') }}" alt="">
+					<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}" alt="">
 				</a>				
 			</div>
 		</div>
@@ -318,7 +318,7 @@
 		</h3>
 		<div class="pt-3">
 			<div class="text-center">
-				<img src="{{ asset('images/ieo/6-1.png') }}" width="25%">
+				<img src="{{ Util::assetUrl('images/ieo/6-1.png') }}" width="25%">
 			</div>
 			<h5 class="text-center pt-3"><b>Decentralization</b></h5>
 			<div class="text-justify pt-2">
@@ -329,7 +329,7 @@
 		</div>
 		<div class="pt-3">
 			<div class="text-center">
-				<img src="{{ asset('images/ieo/6-2.png') }}" width="25%">
+				<img src="{{ Util::assetUrl('images/ieo/6-2.png') }}" width="25%">
 			</div>
 			<h5 class="text-center pt-3"><b>Security</b></h5>
 			<div class="text-justify pt-2">
@@ -340,7 +340,7 @@
 		</div>
 		<div class="pt-3">
 			<div class="text-center">
-				<img src="{{ asset('images/ieo/6-3.png') }}" width="25%">
+				<img src="{{ Util::assetUrl('images/ieo/6-3.png') }}" width="25%">
 			</div>
 			<h5 class="text-center pt-3"><b>Utility</b></h5>
 			<div class="text-justify pt-2">
@@ -351,7 +351,7 @@
 		</div>
 		<div class="pt-3">
 			<div class="text-center">
-				<img src="{{ asset('images/ieo/6-4.png') }}" width="25%">
+				<img src="{{ Util::assetUrl('images/ieo/6-4.png') }}" width="25%">
 			</div>
 			<h5 class="text-center pt-3"><b>Liquidity and Easy Transactions</b></h5>
 			<div class="text-justify pt-2">
@@ -362,7 +362,7 @@
 		</div>
 		<div class="pt-3">
 			<div class="text-center">
-				<img src="{{ asset('images/ieo/6-5.png') }}" width="25%">
+				<img src="{{ Util::assetUrl('images/ieo/6-5.png') }}" width="25%">
 			</div>
 			<h5 class="text-center pt-3"><b>Nominal Transactional Fee</b></h5>
 			<div class="text-justify pt-2">
@@ -373,7 +373,7 @@
 		</div>
 		<div class="pt-3">
 			<div class="text-center">
-				<img src="{{ asset('images/ieo/6-6.png') }}" width="25%">
+				<img src="{{ Util::assetUrl('images/ieo/6-6.png') }}" width="25%">
 			</div>
 			<h5 class="text-center pt-3"><b>Transparency</b></h5>
 			<div class="text-justify pt-2">
@@ -903,7 +903,7 @@
 					</b>
 				</h3>
 				<div class="text-center pt-3"> 
-					<img src="{{ asset('images/ieo/graph1.png') }}" width="60%">
+					<img src="{{ Util::assetUrl('images/ieo/graph1.png') }}" width="60%">
 				</div>
 				<div class="row pt-4">
 
@@ -1066,7 +1066,7 @@
 				<div class="row justify-content-center">
 				@foreach($coreTeam as $tm)
 					<div class="col-6 mt-5 text-center">						
-						<div class="rounded-circle team-img" style="background-image: url({{ asset($tm['image'])}})">
+						<div class="rounded-circle team-img" style="background-image: url({{ Util::assetUrl($tm['image'])}})">
 							@if($tm['linkedin'])
 							<a href="{{ $tm['linkedin'] }}" class="text-white linkedin" style="font-size: 20px;" target="_blank">
 								<i class="fab fa-linkedin"></i>
@@ -1111,7 +1111,7 @@
 				<div class="row justify-content-center">
 				@foreach($coreTeam as $tm)
 					<div class="col-6 mt-5 text-center">						
-						<div class="rounded-circle team-img" style="background-image: url({{ asset($tm['image'])}})">
+						<div class="rounded-circle team-img" style="background-image: url({{ Util::assetUrl($tm['image'])}})">
 							@if($tm['linkedin'])
 							<a href="{{ $tm['linkedin'] }}" class="text-white linkedin" style="font-size: 20px;" target="_blank">
 								<i class="fab fa-linkedin"></i>
@@ -1166,7 +1166,7 @@
 							</div>
 						</div>
 						<div class="col-md-4 d-flex align-items-center justify-content-center">
-							<img src="{{ asset('images/ieo/7.png')}}" style="width: 50%; height: auto;">
+							<img src="{{ Util::assetUrl('images/ieo/7.png')}}" style="width: 50%; height: auto;">
 						</div>
 					</div>
 				</div>

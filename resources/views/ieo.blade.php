@@ -33,7 +33,7 @@
 @endsection
 
 @section('content')
-<section class="section-1" style="background-image : url({{ asset('/images/ieo/ieo-bg1.png') }})">
+<section class="section-1" style="background-image : url({{ Util::assetUrl('/images/ieo/ieo-bg1.png') }})">
 	<div class="container h-100">
 		<div class="row w-100 h-100 d-flex align-items-center">
 			<div class="col-md-7 bal-ieo-text">
@@ -55,7 +55,7 @@
 				</h3>
 
 				<div class="pt-1 pagers-paper">
-					<a href="{{ asset('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" class="btn btn-ieo">One Pager</a>					
+					<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" class="btn btn-ieo">One Pager</a>					
 					<a href="{{ route('whitepaper') }}" class="btn btn-ieo">White Paper</a>
 					<a href="{{ route('yellowpaper') }}" class="btn btn-ieo">Yellow Paper</a>
 				</div>
@@ -63,12 +63,12 @@
 					<a data-fancybox 
 					href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0" 
 					class="">
-						<img class="video" src="{{ asset('/images/ieo/bal-ieo.png') }}" alt="">
+						<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="">
 					</a>
 					<a data-fancybox 
 					href="https://www.youtube-nocookie.com/embed/5nMkricvzfc?rel=0" 
 					class="">
-						<img class="video" src="{{ asset('/images/ieo/bal-ieo-vs-ico.png') }}" alt="">
+						<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}" alt="">
 					</a>
 				</div>
 			</div>
@@ -100,7 +100,7 @@
 								</div>
 							</div>
 							<div class="w-100 mt-5">
-								<img class="countdown-bottom-img" src="{{ asset('images/ieo/countdown-bottom.png') }}" alt="">
+								<img class="countdown-bottom-img" src="{{ Util::assetUrl('images/ieo/countdown-bottom.png') }}" alt="">
 							</div>
 						</div>
 					</div>
@@ -113,7 +113,7 @@
 	<div class="container pt-5 pb-5">
 		<div class="row">
 			<div class="col-md-6">
-					<img src="{{ asset('images/ieo/2.png')}}" width="80%">		
+					<img src="{{ Util::assetUrl('images/ieo/2.png')}}" width="80%">		
 			</div>
 			<div class="col-md-6">
 				<h3>
@@ -157,7 +157,7 @@
 					</p>
 				</div>
 				<div class="col-md-6 text-center">	
-					<img src="{{ asset('images/ieo/3.png')}}" width="80%">		
+					<img src="{{ Util::assetUrl('images/ieo/3.png')}}" width="80%">		
 				</div>
 			</div>
 		</div>
@@ -165,7 +165,7 @@
 </section>
 <section class="section-3 pt-3 pb-5">
 	{{-- <div class="text-center pt-5">
-		<img src="{{ asset('images/ieo/4.png')}}" width="50%">
+		<img src="{{ Util::assetUrl('images/ieo/4.png')}}" width="50%">
 	</div> --}}
 	<div class="container pt-5 pb-5">
 		<div class="pt-1 text-center">
@@ -176,7 +176,7 @@
 				Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
 			</p>
 			<div class="buttons pt-3">
-				<a href="{{ asset('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" class="btn btn-ieo">One Pager</a>
+				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" class="btn btn-ieo">One Pager</a>
 				<a href="/coming-soon" class="btn btn-ieo ml-3">White Paper</a>
 				<a href="/coming-soon" class="btn btn-ieo ml-3">Yellow Paper</a>
 			</div>
@@ -215,7 +215,7 @@
 						<a data-fancybox 
 						href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0" 
 						class="">
-							<img class="video" src="{{ asset('/images/ieo/bal-ieo.png') }}" alt="">
+							<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="">
 						</a>
 							
 					</div>
@@ -235,7 +235,7 @@
 						<a data-fancybox 
 						href="https://www.youtube-nocookie.com/embed/5nMkricvzfc?rel=0" 
 						class="">
-							<img class="video" src="{{ asset('/images/ieo/bal-ieo-vs-ico.png') }}" alt="">
+							<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}" alt="">
 						</a>
 					</div>
 				</div>
@@ -274,7 +274,7 @@
 		<div class="row pt-5">
 			<div class="col-md-4">
 				<div>
-					<img src="{{ asset('images/ieo/6-1.png') }}" width="20%">
+					<img src="{{ Util::assetUrl('images/ieo/6-1.png') }}" width="20%">
 					<div class="pt-3">
 						<h5>
 							<b>Decentralization</b>
@@ -287,7 +287,7 @@
 			</div>
 			<div class="col-md-4">
 				<div>
-					<img src="{{ asset('images/ieo/6-2.png') }}" width="20%">
+					<img src="{{ Util::assetUrl('images/ieo/6-2.png') }}" width="20%">
 					<div class="pt-3">
 						<h5>
 							<b>Security</b>
@@ -300,7 +300,7 @@
 			</div>
 			<div class="col-md-4">
 				<div>
-					<img src="{{ asset('images/ieo/6-3.png') }}" width="20%">
+					<img src="{{ Util::assetUrl('images/ieo/6-3.png') }}" width="20%">
 					<div class="pt-3">
 						<h5>
 							<b>Utility</b>
@@ -315,7 +315,7 @@
 		<div class="row pt-5 pb-5">
 			<div class="col-md-4">
 				<div>
-					<img src="{{ asset('images/ieo/6-4.png') }}" width="20%">
+					<img src="{{ Util::assetUrl('images/ieo/6-4.png') }}" width="20%">
 					<div class="pt-3">
 						<h5>
 							<b>Liquidity and Easy Transaction</b>
@@ -328,7 +328,7 @@
 			</div>
 			<div class="col-md-4">
 				<div>
-					<img src="{{ asset('images/ieo/6-5.png') }}" width="20%">
+					<img src="{{ Util::assetUrl('images/ieo/6-5.png') }}" width="20%">
 					<div class="pt-3">
 						<h5>
 							<b>Nominal Transactional Fee</b>
@@ -341,7 +341,7 @@
 			</div>
 			<div class="col-md-4">
 				<div>
-					<img src="{{ asset('images/ieo/6-6.png') }}" width="20%">
+					<img src="{{ Util::assetUrl('images/ieo/6-6.png') }}" width="20%">
 					<div class="pt-3">
 						<h5>
 							<b>Transparency</b>
@@ -911,7 +911,7 @@
 			</h3>
 			<div class="row pt-3 d-flex align-items-center">
 				<div class="col-md-6 text-center">
-					<img src="{{ asset('images/ieo/graph1.png') }}" width="60%">
+					<img src="{{ Util::assetUrl('images/ieo/graph1.png') }}" width="60%">
 				</div>
 				<div class="col-md-6">
 					<div class="row">
@@ -1050,7 +1050,7 @@
 				Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
 			</p>
 			<div class="buttons pt-3">
-				<a href="{{ asset('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" class="btn btn-ieo">One Pager</a>
+				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" class="btn btn-ieo">One Pager</a>
 				<a href="/coming-soon" class="btn btn-ieo ml-3">White Paper</a>
 				<a href="/coming-soon" class="btn btn-ieo ml-3">Yellow Paper</a>
 			</div>
@@ -1083,7 +1083,7 @@
 				<div class="row pt-5 justify-content-center">
 				@foreach($coreTeam as $tm)
 					<div class="col text-center">						
-						<div class="rounded-circle team-img" style="background-image: url({{ asset($tm['image'])}})">							
+						<div class="rounded-circle team-img" style="background-image: url({{ Util::assetUrl($tm['image'])}})">							
 							@if($tm['linkedin'])
 							<a href="{{ $tm['linkedin'] }}" class="text-white linkedin" style="font-size: 20px;" target="_blank">
 								<i class="fab fa-linkedin"></i>
@@ -1113,7 +1113,7 @@
 				<div class="row pt-5 justify-content-center">
 				@foreach($coreTeam as $tm)
 					<div class="col text-center">						
-						<div class="rounded-circle team-img" style="background-image: url({{ asset($tm['image'])}})">							
+						<div class="rounded-circle team-img" style="background-image: url({{ Util::assetUrl($tm['image'])}})">							
 							@if($tm['linkedin'])
 							<a href="{{ $tm['linkedin'] }}" class="text-white linkedin" style="font-size: 20px;" target="_blank">
 								<i class="fab fa-linkedin"></i>
@@ -1141,7 +1141,7 @@
 				<div class="row pt-5 justify-content-center">
 				@foreach($coreTeam as $tm)
 					<div class="col-3 text-center">
-						<div class="rounded-circle team-img" style="background-image: url({{ asset($tm['image'])}})">							
+						<div class="rounded-circle team-img" style="background-image: url({{ Util::assetUrl($tm['image'])}})">							
 							@if($tm['linkedin'])
 							<a href="{{ $tm['linkedin'] }}" class="text-white linkedin" style="font-size: 20px;" target="_blank">
 								<i class="fab fa-linkedin"></i>
@@ -1188,7 +1188,7 @@
 				<div class="row pt-5 justify-content-center">
 				@foreach($coreTeam as $tm)
 					<div class="col text-center">						
-						<div class="rounded-circle team-img" style="background-image: url({{ asset($tm['image'])}})">							
+						<div class="rounded-circle team-img" style="background-image: url({{ Util::assetUrl($tm['image'])}})">							
 							@if($tm['linkedin'])
 							<a href="{{ $tm['linkedin'] }}" class="text-white linkedin" style="font-size: 20px;" target="_blank">
 								<i class="fab fa-linkedin"></i>
@@ -1216,7 +1216,7 @@
 				<div class="row pt-5 justify-content-center">
 				@foreach($coreTeam as $tm)
 					<div class="col-3 text-center">						
-						<div class="rounded-circle team-img" style="background-image: url({{ asset($tm['image'])}})">							
+						<div class="rounded-circle team-img" style="background-image: url({{ Util::assetUrl($tm['image'])}})">							
 							@if($tm['linkedin'])
 							<a href="{{ $tm['linkedin'] }}" class="text-white linkedin" style="font-size: 20px;" target="_blank">
 								<i class="fab fa-linkedin"></i>
@@ -1266,7 +1266,7 @@
 							</div>
 						</div>
 						<div class="col-md-4 d-flex align-items-center justify-content-center">
-							<img src="{{ asset('images/ieo/7.png')}}"  style="width: 50%; height: auto;">
+							<img src="{{ Util::assetUrl('images/ieo/7.png')}}"  style="width: 50%; height: auto;">
 						</div>
 					</div>
 				</div>

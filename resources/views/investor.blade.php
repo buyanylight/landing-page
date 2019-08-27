@@ -18,7 +18,7 @@
         <div class="toast" data-autohide="false">
             <div class="toast-header">
                 <strong class="mr-auto">
-                    <img src="{{ asset('images/logo-black-icon.png') }}" width="25">
+                    <img src="{{ Util::assetUrl('images/logo-black-icon.png') }}" width="25">
                     BuyAnyLight
                 </strong>
                 <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>

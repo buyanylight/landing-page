@@ -35,33 +35,33 @@
 	</p>
 	<div class="row pt-3">
 		<div class="col text-center">
-			<img src="{{ asset('images/1.png')}}" width="30%">
+			<img src="{{ Util::assetUrl('images/1.png')}}" width="30%">
 			<div class="p-3">
 				<p>receive enquiries from us and or/ buyers</p>
 			</div>
 		</div>
 		<div class="col text-center">
-			<img src="{{ asset('images/2.png')}}" width="30%">
+			<img src="{{ Util::assetUrl('images/2.png')}}" width="30%">
 			<div class="pt-3">
 				<p>bid only when you have availability</p>
 			</div>
 		</div>
 		<div class="col text-center">
-			<img src="{{ asset('images/3.png')}}" width="30%">
+			<img src="{{ Util::assetUrl('images/3.png')}}" width="30%">
 			<div class="pt-3">
 				<p>make fast and easy bids</p>
 				
 			</div>
 		</div>
 		<div class="col text-center">
-			<img src="{{ asset('images/4.png')}}" width="30%">
+			<img src="{{ Util::assetUrl('images/4.png')}}" width="30%">
 			<div class="pt-3">
 				<p>provide buyers with flexible rates depending on order size</p>
 				
 			</div>
 		</div>
 		<div class="col text-center">
-			<img src="{{ asset('images/5.png')}}" width="30%">
+			<img src="{{ Util::assetUrl('images/5.png')}}" width="30%">
 			<div  class="pt-3" >
 				<p>enjoy secure, instant money transfer to your personal BAL Wallet</p>
 			</div>
@@ -107,7 +107,7 @@
 		<p class="text-left">Registration for BAL is easy and should take just 2-3 minutes to complete.</p>
 		<div class="row h-100">
 			<div class="col-md-6 text-center">
-				<img src=" {{ asset('images/screen.png') }} " width="80%">	
+				<img src=" {{ Util::assetUrl('images/screen.png') }} " width="80%">	
 			</div>
 			<div class="col-md-6">
 					<p class="pt-3"><b>Step 1</b><br>Fill out the information required </p>

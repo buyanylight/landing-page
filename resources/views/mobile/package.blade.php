@@ -96,7 +96,7 @@
                     With a choice of valuable subscription options, the LightFinder package saves time, effort and stress for consultants, homeowners or companies who want to buy quality LED direct from the manufacturer. Best of all, BAL cuts costs by up to 90%. 
                 </p>
                 <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-sm btn-light">Register now</a>
-                <a href="{{ asset('brochures/LightFinder_BAL.pdf') }}" class="btn btn-sm btn-secondary" target="_blank">Brochure</a>
+                <a href="{{ Util::assetUrl('brochures/LightFinder_BAL.pdf') }}" class="btn btn-sm btn-secondary" target="_blank">Brochure</a>
                 <button class="btn btn-sm btn-danger" type="button" data-toggle="collapse" data-target="#finder-card" aria-expanded="false" aria-controls="finder-card">
                     Check rate
                 </button>
@@ -338,7 +338,7 @@
                     No more poor quality LED, high prices or confusing choices… For a one-time fee, BAL’s My Home package accesses help and advice, top quality LED, lowest prices and speedy delivery for owners of private homes, villas and palaces. 
                 </p>
                 <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-sm btn-dark">Register now</a>
-                <a href="{{ asset('brochures/MyHome_BAL.pdf') }}" class="btn btn-sm  btn-secondary" target="_blank">Brochure</a>
+                <a href="{{ Util::assetUrl('brochures/MyHome_BAL.pdf') }}" class="btn btn-sm  btn-secondary" target="_blank">Brochure</a>
                 <button class="btn btn-sm btn-danger" type="button" data-toggle="collapse" data-target="#home-card" aria-expanded="false" aria-controls="home-card">
                     Check rate
                 </button>
@@ -429,7 +429,7 @@
                      With no middlemen or upfront costs, My Tower offers a complete project solution. My Tower saves you time and effort and delivers world-class LED that costs up to 90% less. The result… Better projects and happier clients!
                 </p>
                 <a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-sm  btn-light">Register now</a>
-                <a href="{{ asset('brochures/MyTower_BAL.pdf') }}" class="btn btn-sm  btn-secondary" target="_blank">Brochure</a>
+                <a href="{{ Util::assetUrl('brochures/MyTower_BAL.pdf') }}" class="btn btn-sm  btn-secondary" target="_blank">Brochure</a>
                 <button class="btn btn-sm btn-danger" type="button" data-toggle="collapse" data-target="#tower-card" aria-expanded="false" aria-controls="tower-card">
                     Check rate
                 </button>

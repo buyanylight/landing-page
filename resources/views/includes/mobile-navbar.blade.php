@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="w-100 p-2 bg-black">
             <a class="navbar-brand " href="{{ route('home') }}">
-                <img src="{{ asset('images/logo-white.png') }}" width="150" class="logo"> 
+                <img src="{{ Util::assetUrl('images/logo-white.png') }}" width="150" class="logo"> 
             </a>
             <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
