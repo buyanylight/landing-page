@@ -56,7 +56,7 @@
 				<div class="col-12">
 					<div class="btn-group" role="group" aria-label="Basic example">
 						<button type="button"class="btn btn-ieo-left">
-							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" 
+							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" 
 							target="_blank">
 								One Pager								
 							</a>

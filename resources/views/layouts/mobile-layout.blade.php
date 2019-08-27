@@ -93,12 +93,19 @@
 
 		{{-- <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> --}}
 		
-		<div class="bal-loading-logo">
+		{{-- <div class="bal-loading-logo">
 			<div class="ld ld-shadow">
 				<img src="{{ Util::assetUrl('images/logos/logo-white2.png') }}" 
 				alt="BuyAnyLight">
 			</div>
+		</div> --}}
+
+		<div style="z-index: 1032;">
+			<img class="bal-solo" 
+			style="width: 152px; margin-right: -10px;" 
+			src="{{ Util::assetUrl('images/logos/logo-white.png') }}">
 		</div>
+
 
 	</div>
 
@@ -378,7 +385,8 @@
 	{{-- ////////////////////////////////////////////////////////////// --}}
 	<script>
 		$(window).on('load',function(){
-			$('.preloader > div').css("display", "none");
+			// $('.preloader > div').css("display", "none");
+			$('.preloader > div').fadeOut();
 			$('.preloader').addClass('completed');
 			setTimeout(()=>{
 				$('.preloader').css("display", "none");

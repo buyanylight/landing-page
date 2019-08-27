@@ -55,7 +55,7 @@
 				</h3>
 
 				<div class="pt-1 pagers-paper">
-					<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" class="btn btn-ieo">One Pager</a>					
+					<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>					
 					<a href="{{ route('whitepaper') }}" class="btn btn-ieo">White Paper</a>
 					<a href="{{ route('yellowpaper') }}" class="btn btn-ieo">Yellow Paper</a>
 				</div>
@@ -176,7 +176,7 @@
 				Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
 			</p>
 			<div class="buttons pt-3">
-				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" class="btn btn-ieo">One Pager</a>
+				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>
 				<a href="/coming-soon" class="btn btn-ieo ml-3">White Paper</a>
 				<a href="/coming-soon" class="btn btn-ieo ml-3">Yellow Paper</a>
 			</div>
@@ -1050,7 +1050,7 @@
 				Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
 			</p>
 			<div class="buttons pt-3">
-				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" class="btn btn-ieo">One Pager</a>
+				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>
 				<a href="/coming-soon" class="btn btn-ieo ml-3">White Paper</a>
 				<a href="/coming-soon" class="btn btn-ieo ml-3">Yellow Paper</a>
 			</div>
