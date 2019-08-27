@@ -360,42 +360,55 @@
 	</script>
 
 	@yield('body-end-javascript')
+	
+	<script>
+	function scrollToTargetID(targetID){
+		console.log(targetID);
+		const yourElement = document.getElementById(targetID);
+		const yCoordinate = yourElement.getBoundingClientRect().top + window.pageYOffset;
+		const yOffset = -100; 
+
+		window.scrollTo({
+			top: yCoordinate + yOffset,
+			behavior: 'smooth'
+		});				
+	};
 
 	{{-- scroll to --}}
 	{{-- ////////////////////////////////////////////////////////////// --}}	
-	<script>
 	$(document).ready(function(){
 		$('.scrollTo').click(function() {
-			const yourElement = document.getElementById($(this).attr('target'));
-			const yCoordinate = yourElement.getBoundingClientRect().top + window.pageYOffset;
-			const yOffset = -100; 
-
-			window.scrollTo({
-				top: yCoordinate + yOffset,
-				behavior: 'smooth'
-			});			
-		});		
+			scrollToTargetID($(this).attr('target'));
+		});
 	});		
-	</script>
 	{{-- ////////////////////////////////////////////////////////////// --}}	
 	{{-- scroll to --}}
 
 
-	{{-- preloader --}}
-	{{-- ////////////////////////////////////////////////////////////// --}}
-	<script>
-		$(window).on('load',function(){
-			// $('.preloader > div').css("display", "none");
-			$('.preloader > div').fadeOut();
-			$('.preloader').addClass('completed');
-			setTimeout(()=>{
-				$('.preloader').css("display", "none");
-			},1100);
-		});
-	</script>
-	{{-- ////////////////////////////////////////////////////////////// --}}
-	{{-- preloader --}}    	
+	// if coreteam is in url 
+	//////////////////////////////////////////////////////////////// 
+	$(document).ready(function(){
+		var anchors = window.location.href.split("#");
+		if(anchors.length >1 && (anchors[1]=='coreteam')) {			
+			scrollToTargetID('coreteam');
+		};	
+	});
+	//////////////////////////////////////////////////////////////// 
+	// if coreteam is in url 
 
+	// preloader
+	//////////////////////////////////////////////////////////////// 	
+	$(window).on('load',function(){
+		// $('.preloader > div').css("display", "none");
+		$('.preloader > div').fadeOut();
+		$('.preloader').addClass('completed');
+		setTimeout(()=>{
+			$('.preloader').css("display", "none");
+		},1100);
+	});
+	//////////////////////////////////////////////////////////////
+	// preloader
+	</script>
 	
 </body>
 </html>

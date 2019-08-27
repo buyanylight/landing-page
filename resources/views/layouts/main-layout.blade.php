@@ -419,11 +419,34 @@
 	
 	@yield('body-end-javascript')
 
+	<script>
+
+	function scrollToTargetID(targetID){
+		console.log(targetID);
+		const yourElement = document.getElementById(targetID);
+		const yCoordinate = yourElement.getBoundingClientRect().top + window.pageYOffset;
+		const yOffset = -100; 
+
+		window.scrollTo({
+			top: yCoordinate + yOffset,
+			behavior: 'smooth'
+		});				
+	};
+
+	// if coreteam is in url 
+	//////////////////////////////////////////////////////////////// 
+	$(document).ready(function(){
+		var anchors = window.location.href.split("#");
+		if(anchors.length >1 && (anchors[1]=='coreteam')) {			
+			scrollToTargetID($(this).attr('target'));
+		};	
+	});
+	//////////////////////////////////////////////////////////////// 
+	// if coreteam is in url 
 
 
 	{{-- preloader --}}
 	{{-- ////////////////////////////////////////////////////////////// --}}
-	<script>
 		function detectOldIE() {
 		    var ua = window.navigator.userAgent;
 
@@ -468,9 +491,9 @@
 				},1100);
 			});			
 		}
-	</script>
 	{{-- ////////////////////////////////////////////////////////////// --}}
 	{{-- preloader --}}
+	</script>
 
 	</body>
 </html>
