@@ -236,41 +236,41 @@
                         <img class="" src="{{ Util::assetUrl('images/products/light2.jpg') }}" alt="" width="100%">
                         <div class="card-text text-white p-2 pt-3">
                             <div class="row">
-                                <div class="col-md-5">
+                                <div class="col-md-6 d-inline-flex flex-column justify-content-between">
                                     <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="" width="100%">
                                     <p class="font-weight-bold text-center pt-4">
                                         $102
-                                    </p>        
+                                    </p>       
                                 </div>
-                                <div class="col-md-2">
-                                    
-                                </div>
-                                <div class="col-md-5">
-                                     <img class="card-img" src="{{ Util::assetUrl('images/retails/flos.png') }}" alt="">
+                                {{-- <div class="col-md-1">|</div> --}}
+                                <div class="col-md-6 d-inline-flex flex-column justify-content-between">
+                                    {{-- <img class="card-img" src="{{ Util::assetUrl('images/retails/flos.png') }}" alt=""> --}}
+                                  	<p class="other-inter-brands text-center">Other International Brands</p>
                                     <p class="font-weight-bold text-center pt-4">
                                         $3501
                                     </p>
-                                </div>    
+                                </div>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="card bg-dark mr-2">
                     <div class="card-body p-0">
                         <img class="" src="{{ Util::assetUrl('images/products/light1.jpg') }}" alt="" width="100%">
                         <div class="card-text text-white p-2 pt-3">
                             <div class="row">
-                                <div class="col-md-5">
+                                <div class="col-md-6 d-inline-flex flex-column justify-content-between">
+                                {{-- <div class="col-md-5"> --}}
                                     <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">
                                     <p class="font-weight-bold text-center pt-4">
                                         $6
                                     </p>        
                                 </div>
-                                <div class="col-md-2">
-                                    |
-                                </div>
-                                <div class="col-md-5">
-                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/ledvance.png') }}" alt="">
+                                {{-- <div class="col-md-2">|</div> --}}
+                                <div class="col-md-6 d-inline-flex flex-column justify-content-between">
+                                {{-- <div class="col-md-5"> --}}
+                                    {{-- <img class="card-img" src="{{ Util::assetUrl('images/retails/ledvance.png') }}" alt=""> --}}
+                                  	<p class="other-inter-brands text-center">Other International Brands</p>
                                     <p class="font-weight-bold text-center pt-4">
                                         $28
                                     </p>
@@ -284,17 +284,18 @@
                         <img class="" src="{{ Util::assetUrl('images/products/light3.jpg') }}" alt="" width="100%">
                         <div class="card-text text-white p-2 pt-3">
                             <div class="row">
-                                <div class="col-md-5">
+                                <div class="col-md-6 d-inline-flex flex-column justify-content-between">
+                                {{-- <div class="col-md-5"> --}}
                                     <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">           
                                     <p class="font-weight-bold text-center pt-4">
                                         $25
                                     </p> 
                                 </div>
-                                <div class="col-md-2">
-                                    |
-                                </div>
-                                <div class="col-md-5">
-                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/bega.jpg') }}" alt=""> 
+                                {{-- <div class="col-md-2">|</div> --}}
+                                <div class="col-md-6 d-inline-flex flex-column justify-content-between">
+                                {{-- <div class="col-md-5"> --}}
+                                    {{-- <img class="card-img" src="{{ Util::assetUrl('images/retails/bega.jpg') }}" alt="">  --}}
+                                  	<p class="other-inter-brands text-center">Other International Brands</p>
                                     <p class="font-weight-bold text-center pt-4">
                                         $444
                                     </p>   
@@ -308,17 +309,18 @@
                         <img class="" src="{{ Util::assetUrl('images/products/light4.jpg') }}" alt="" width="100%">
                         <div class="card-text text-white p-2 pt-3">
                             <div class="row">
-                                <div class="col-md-5">
+                                <div class="col-md-6 d-inline-flex flex-column justify-content-between">
+                                {{-- <div class="col-md-5"> --}}
                                     <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">
                                     <p class="font-weight-bold text-center pt-4">
                                         $3
                                     </p>        
                                 </div>
-                                <div class="col-md-2">
-                                    |
-                                </div>
-                                <div class="col-md-5">
-                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/slv_logo.png') }}" alt="">
+                                {{-- <div class="col-md-2">|</div> --}}
+                                <div class="col-md-6 d-inline-flex flex-column justify-content-between">
+                                {{-- <div class="col-md-5"> --}}
+                                    {{-- <img class="card-img" src="{{ Util::assetUrl('images/retails/slv_logo.png') }}" alt=""> --}}
+                                  	<p class="other-inter-brands text-center">Other International Brands</p>
                                     <p class="font-weight-bold text-center pt-4">
                                         $25
                                     </p>
@@ -332,17 +334,18 @@
                         <img class="" src="{{ Util::assetUrl('images/products/light5.jpg') }}" alt="" width="100%">
                         <div class="card-text text-white p-2 pt-3">
                             <div class="row">
-                                <div class="col-md-5">
-                                <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">           
+                                <div class="col-md-6 d-inline-flex flex-column justify-content-between">
+                                {{-- <div class="col-md-5"> --}}
+                                	<img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">           
                                     <p class="font-weight-bold text-center pt-4">
                                         $8
                                     </p>
                                 </div>
-                                <div class="col-md-2">
-                                    |
-                                </div>
-                                <div class="col-md-5">
-                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/philips.png') }}" alt=""> 
+                                {{-- <div class="col-md-2">|</div> --}}
+                                <div class="col-md-6 d-inline-flex flex-column justify-content-between">
+                                {{-- <div class="col-md-5"> --}}
+                                    {{-- <img class="card-img" src="{{ Util::assetUrl('images/retails/philips.png') }}" alt="">  --}}
+                                  	<p class="other-inter-brands text-center">Other International Brands</p>
                                     <p class="font-weight-bold text-center pt-4">
                                         $40
                                     </p>    
@@ -356,17 +359,18 @@
                         <img class="" src="{{ Util::assetUrl('images/products/light6.jpg') }}" alt="" width="100%">
                         <div class="card-text text-white p-2 pt-3">
                             <div class="row">
-                                <div class="col-md-5">
+                                <div class="col-md-6 d-inline-flex flex-column justify-content-between">
+                                {{-- <div class="col-md-5"> --}}
                                     <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">
                                     <p class="font-weight-bold text-center pt-4">
                                         $67
                                     </p>           
                                 </div>
-                                <div class="col-md-2">
-                                |
-                                </div>
-                                <div class="col-md-5">
-                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/et2.png') }}" alt=""> 
+                                {{-- <div class="col-md-2">|</div> --}}
+                                <div class="col-md-6 d-inline-flex flex-column justify-content-between">
+                                {{-- <div class="col-md-5"> --}}
+                                    {{-- <img class="card-img" src="{{ Util::assetUrl('images/retails/et2.png') }}" alt="">  --}}
+                                  	<p class="other-inter-brands text-center">Other International Brands</p>
                                     <p class="font-weight-bold text-center pt-4">
                                         $446
                                     </p>
@@ -380,17 +384,18 @@
                         <img class="" src="{{ Util::assetUrl('images/products/light7.jpg') }}" alt="" width="100%">
                         <div class="card-text text-white p-2 pt-3">
                             <div class="row">
-                                <div class="col-md-5">
+                                <div class="col-md-6 d-inline-flex flex-column justify-content-between">
+                                {{-- <div class="col-md-5"> --}}
                                 <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">
                                     <p class="font-weight-bold text-center pt-4">
                                         $12
                                     </p>           
                                 </div>
-                                <div class="col-md-2">
-                                    |
-                                </div>
-                                <div class="col-md-5">
-                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/marset_logo.png') }}" alt="">
+                                {{-- <div class="col-md-2">|</div> --}}
+                                <div class="col-md-6 d-inline-flex flex-column justify-content-between">
+                                {{-- <div class="col-md-5"> --}}
+                                    {{-- <img class="card-img" src="{{ Util::assetUrl('images/retails/marset_logo.png') }}" alt=""> --}}
+                                  	<p class="other-inter-brands text-center">Other International Brands</p>
                                     <p class="font-weight-bold text-center pt-4">
                                         $529
                                     </p>
