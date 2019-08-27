@@ -18,7 +18,7 @@
                 </div>
                 <div class="container text-center pt-2">
 		            {{-- <a href="one-pagers/BuyAnyLight.pdf"  --}}
-		            <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}?v={{ env('VERSION','20190819') }}" 
+		            <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" 
 		            target="_blank" 		            
 		            class="btn btn-dark header-link">
 		            	<i class="far fa-file-pdf mr-2"></i>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="container text-center pt-2">
 		            {{-- <a href="one-pagers/BuyAnyLight-IEO.pdf"  --}}
-		            <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" 
+		            <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" 
 		            target="_blank" 		            
 		            class="btn btn-dark header-link">
 		            	<i class="far fa-file-pdf mr-2"></i>

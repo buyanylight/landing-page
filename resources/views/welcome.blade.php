@@ -40,7 +40,7 @@
                 </a>
             </div>
             <div class="mt-1">
-                 <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" 
+                 <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" target="_blank" 
                  class="btn btn-sm btn-outline-dark text-white">
                     <div class="link-icon">
 	            		<i class="far fa-file-pdf"></i>
@@ -50,7 +50,7 @@
 	            		Download BAL One Pager
                     </div>
                 </a>	            
-                 <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" 
+                 <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" 
                  class="btn btn-sm btn-outline-dark text-white">
                     <div class="link-icon">
 	            		<i class="far fa-file-pdf"></i>
@@ -1000,7 +1000,7 @@
                                         <i class="fas fa-arrow-right"></i> 
                                     </div>
                                 </a>
-                                <a href="{{ Util::assetUrl('brochures/LightFinder_BAL.pdf') }}?v={{ env('VERSION','20190819') }}" class="pl-0 btn" target="_blank">
+                                <a href="{{ Util::assetUrl('brochures/LightFinder_BAL.pdf') }}" class="pl-0 btn" target="_blank">
                                     <div class="link-text">
                                         Brochure
                                     </div>&nbsp;
@@ -1163,7 +1163,7 @@
                                         <i class="fas fa-arrow-right"></i> 
                                     </div>
                                 </a>
-                                <a href="{{ Util::assetUrl('brochures/MyHome_BAL.pdf') }}?v={{ env('VERSION','20190819') }}" class="pl-0 btn" target="_blank">
+                                <a href="{{ Util::assetUrl('brochures/MyHome_BAL.pdf') }}" class="pl-0 btn" target="_blank">
                                     <div class="link-text">
                                     Brochure
                                     </div>&nbsp;
@@ -1323,7 +1323,7 @@
                                         <i class="fas fa-arrow-right"></i> 
                                     </div>
                                 </a>
-                                <a href="{{ Util::assetUrl('brochures/MyTower_BAL.pdf') }}?v={{ env('VERSION','20190819') }}" class="pl-0 btn" target="_blank">
+                                <a href="{{ Util::assetUrl('brochures/MyTower_BAL.pdf') }}" class="pl-0 btn" target="_blank">
                                     <div class="link-text">
                                         Brochure
                                     </div>&nbsp;
