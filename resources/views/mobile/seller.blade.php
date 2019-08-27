@@ -22,7 +22,7 @@
                    <div class="d-flex align-items-center list-content">
                        <div class="step-icon d-inline-flex align-items-center justify-content-center">
                            	<!-- <i class="fas fa-cloud-upload-alt"></i> -->
-							<img src="{{ asset('images/1.png') }}" width="100%">
+							<img src="{{ Util::assetUrl('images/1.png') }}" width="100%">
                        </div>
                        <div class="step d-inline-block">
                            Recieve enquiries from us or buyers
@@ -33,7 +33,7 @@
                    <div class="d-flex align-items-center list-content">
                        <div class="step-icon d-inline-flex align-items-center justify-content-center">
                            <!-- <i class="fas fa-search"></i> -->
-							<img src="{{ asset('images/2.png') }}" width="100%">
+							<img src="{{ Util::assetUrl('images/2.png') }}" width="100%">
                        </div>
                        <div class=" step d-inline-block">
                            Bid only when you have availability
@@ -45,7 +45,7 @@
                    <div class="d-flex align-items-center list-content">
                        <div class="step-icon d-inline-flex align-items-center justify-content-center">
                            <!-- <i class="fas fa-paper-plane"></i> -->
-							<img src="{{ asset('images/5.png') }}" width="100%">
+							<img src="{{ Util::assetUrl('images/5.png') }}" width="100%">
                        </div>
                        <div class=" step d-inline-block">
                            Provide buyers with flexible rates depending on order size
@@ -56,7 +56,7 @@
                    <div class="d-flex align-items-center list-content">
                        <div class="step-icon d-inline-flex align-items-center justify-content-center">
                            <!-- <i class="fas fa-eye"></i> -->
-							<img src="{{ asset('images/4.png') }}" width="100%">
+							<img src="{{ Util::assetUrl('images/4.png') }}" width="100%">
                        </div>
                        <div class=" step d-inline-block">
                            Enjoy secure, instant money transfer to your personal BAL Wallet
@@ -67,7 +67,7 @@
                    <div class="d-flex align-items-center list-content">
                        <div class="step-icon d-inline-flex align-items-center justify-content-center">
                            <!-- <i class="fas fa-eye"></i> -->
-							<img src="{{ asset('images/3.png') }}" width="100%">
+							<img src="{{ Util::assetUrl('images/3.png') }}" width="100%">
                        </div>
                        <div class=" step d-inline-block">
                            Make fast and easy bids
@@ -104,7 +104,7 @@
 		<div class="container pt-4 pb-4">
 			<p class="text-left"><b>QUICK AND SIMPLE REGISTRATION</b></p>
 			<p class="text-left">Registration for BAL is easy and should take just 2-3 minutes to complete.</p>
-			<img src=" {{ asset('images/screen.png') }} " width="100%">
+			<img src=" {{ Util::assetUrl('images/screen.png') }} " width="100%">
 			<div class="step-1 text-left pt-3">
 				<p class=""><b>Step 1:</b>
 					<br> Fill out the information required

@@ -40,7 +40,7 @@
                 </a>
             </div>
             <div class="mt-1">
-                 <a href="{{ asset('one-pagers/BuyAnyLight.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" 
+                 <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" 
                  class="btn btn-sm btn-outline-dark text-white">
                     <div class="link-icon">
 	            		<i class="far fa-file-pdf"></i>
@@ -50,7 +50,7 @@
 	            		Download BAL One Pager
                     </div>
                 </a>	            
-                 <a href="{{ asset('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" 
+                 <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}?v={{ env('VERSION','20190819') }}" target="_blank" 
                  class="btn btn-sm btn-outline-dark text-white">
                     <div class="link-icon">
 	            		<i class="far fa-file-pdf"></i>
@@ -71,7 +71,7 @@
             <div class="card-body d-flex justify-content-center"style=" {{ ($agent->is('IE')) ? 'display:block !important;' : '' }}">
                 <div class="card-deck">
                     <div class="card border-0 lightfinder">
-                        <img src="{{ asset('images/world-icon.png') }}" class="card-top ml-3" alt="...">
+                        <img src="{{ Util::assetUrl('images/world-icon.png') }}" class="card-top ml-3" alt="...">
                         <div class="card-body">
                             <h4 class="card-title text-BAL">LightFinder</h4>
                             <div class="card-subtitle mt-2 text-muted">B2B & B2C</div>
@@ -89,7 +89,7 @@
                     </div>
                     <div class="h-100 border-right border-dark"></div>
                     <div class="card border-0" style=" {{ ($agent->is('IE')) ? 'display:block !important;' : '' }}">
-                        <img src="{{ asset('images/home-icon.png') }}" class=" card-top ml-3" alt="..." width="9%">
+                        <img src="{{ Util::assetUrl('images/home-icon.png') }}" class=" card-top ml-3" alt="..." width="9%">
                         <div class="card-body">
                             <h4 class="card-title text-BAL">My Home</h4>
                             <div class="card-subtitle mt-2 text-muted">Private homes, villas, and palaces</div>
@@ -107,7 +107,7 @@
                     </div>
                     <div class="h-100 border-right border-dark"></div>
                     <div class="card border-0"style=" {{ ($agent->is('IE')) ? 'display:block !important;' : '' }}">
-                        <img src="{{ asset('images/tower-icon.png') }}" class="card-top ml-3" alt="...">
+                        <img src="{{ Util::assetUrl('images/tower-icon.png') }}" class="card-top ml-3" alt="...">
                         <div class="card-body">
                             <h4 class="card-title text-BAL" >My Tower</h4>
                             <div class="card-subtitle mt-2 text-muted"> Consultants, contractors, clients</div>
@@ -233,11 +233,11 @@
             <div class="center">
                 <div class="card bg-dark mr-2">
                     <div class="card-body p-0">
-                        <img class="" src="{{ asset('images/products/light2.jpg') }}" alt="" width="100%">
+                        <img class="" src="{{ Util::assetUrl('images/products/light2.jpg') }}" alt="" width="100%">
                         <div class="card-text text-white p-2 pt-3">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt="" width="100%">
+                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="" width="100%">
                                     <p class="font-weight-bold text-center pt-4">
                                         $102
                                     </p>        
@@ -246,7 +246,7 @@
                                     
                                 </div>
                                 <div class="col-md-5">
-                                     <img class="card-img" src="{{ asset('images/retails/flos.png') }}" alt="">
+                                     <img class="card-img" src="{{ Util::assetUrl('images/retails/flos.png') }}" alt="">
                                     <p class="font-weight-bold text-center pt-4">
                                         $3501
                                     </p>
@@ -257,11 +257,11 @@
                 </div>
                 <div class="card bg-dark mr-2">
                     <div class="card-body p-0">
-                        <img class="" src="{{ asset('images/products/light1.jpg') }}" alt="" width="100%">
+                        <img class="" src="{{ Util::assetUrl('images/products/light1.jpg') }}" alt="" width="100%">
                         <div class="card-text text-white p-2 pt-3">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt="">
+                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">
                                     <p class="font-weight-bold text-center pt-4">
                                         $6
                                     </p>        
@@ -270,7 +270,7 @@
                                     |
                                 </div>
                                 <div class="col-md-5">
-                                    <img class="card-img" src="{{ asset('images/retails/ledvance.png') }}" alt="">
+                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/ledvance.png') }}" alt="">
                                     <p class="font-weight-bold text-center pt-4">
                                         $28
                                     </p>
@@ -281,11 +281,11 @@
                 </div>
                 <div class="card bg-dark mr-2">
                     <div class="card-body p-0">
-                        <img class="" src="{{ asset('images/products/light3.jpg') }}" alt="" width="100%">
+                        <img class="" src="{{ Util::assetUrl('images/products/light3.jpg') }}" alt="" width="100%">
                         <div class="card-text text-white p-2 pt-3">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt="">           
+                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">           
                                     <p class="font-weight-bold text-center pt-4">
                                         $25
                                     </p> 
@@ -294,7 +294,7 @@
                                     |
                                 </div>
                                 <div class="col-md-5">
-                                    <img class="card-img" src="{{ asset('images/retails/bega.jpg') }}" alt=""> 
+                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/bega.jpg') }}" alt=""> 
                                     <p class="font-weight-bold text-center pt-4">
                                         $444
                                     </p>   
@@ -305,11 +305,11 @@
                 </div>
                 <div class="card bg-dark mr-2">
                     <div class="card-body p-0">
-                        <img class="" src="{{ asset('images/products/light4.jpg') }}" alt="" width="100%">
+                        <img class="" src="{{ Util::assetUrl('images/products/light4.jpg') }}" alt="" width="100%">
                         <div class="card-text text-white p-2 pt-3">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt="">
+                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">
                                     <p class="font-weight-bold text-center pt-4">
                                         $3
                                     </p>        
@@ -318,7 +318,7 @@
                                     |
                                 </div>
                                 <div class="col-md-5">
-                                    <img class="card-img" src="{{ asset('images/retails/slv_logo.png') }}" alt="">
+                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/slv_logo.png') }}" alt="">
                                     <p class="font-weight-bold text-center pt-4">
                                         $25
                                     </p>
@@ -329,11 +329,11 @@
                 </div>
                 <div class="card bg-dark mr-2">
                     <div class="card-body p-0">
-                        <img class="" src="{{ asset('images/products/light5.jpg') }}" alt="" width="100%">
+                        <img class="" src="{{ Util::assetUrl('images/products/light5.jpg') }}" alt="" width="100%">
                         <div class="card-text text-white p-2 pt-3">
                             <div class="row">
                                 <div class="col-md-5">
-                                <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt="">           
+                                <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">           
                                     <p class="font-weight-bold text-center pt-4">
                                         $8
                                     </p>
@@ -342,7 +342,7 @@
                                     |
                                 </div>
                                 <div class="col-md-5">
-                                    <img class="card-img" src="{{ asset('images/retails/philips.png') }}" alt=""> 
+                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/philips.png') }}" alt=""> 
                                     <p class="font-weight-bold text-center pt-4">
                                         $40
                                     </p>    
@@ -353,11 +353,11 @@
                 </div>
                 <div class="card bg-dark mr-2">
                     <div class="card-body p-0">
-                        <img class="" src="{{ asset('images/products/light6.jpg') }}" alt="" width="100%">
+                        <img class="" src="{{ Util::assetUrl('images/products/light6.jpg') }}" alt="" width="100%">
                         <div class="card-text text-white p-2 pt-3">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt="">
+                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">
                                     <p class="font-weight-bold text-center pt-4">
                                         $67
                                     </p>           
@@ -366,7 +366,7 @@
                                 |
                                 </div>
                                 <div class="col-md-5">
-                                    <img class="card-img" src="{{ asset('images/retails/et2.png') }}" alt=""> 
+                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/et2.png') }}" alt=""> 
                                     <p class="font-weight-bold text-center pt-4">
                                         $446
                                     </p>
@@ -377,11 +377,11 @@
                 </div>
                 <div class="card bg-dark mr-2">
                     <div class="card-body p-0">
-                        <img class="" src="{{ asset('images/products/light7.jpg') }}" alt="" width="100%">
+                        <img class="" src="{{ Util::assetUrl('images/products/light7.jpg') }}" alt="" width="100%">
                         <div class="card-text text-white p-2 pt-3">
                             <div class="row">
                                 <div class="col-md-5">
-                                <img class="card-img" src="{{ asset('images/retails/logo.png') }}" alt="">
+                                <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">
                                     <p class="font-weight-bold text-center pt-4">
                                         $12
                                     </p>           
@@ -390,7 +390,7 @@
                                     |
                                 </div>
                                 <div class="col-md-5">
-                                    <img class="card-img" src="{{ asset('images/retails/marset_logo.png') }}" alt="">
+                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/marset_logo.png') }}" alt="">
                                     <p class="font-weight-bold text-center pt-4">
                                         $529
                                     </p>
@@ -430,14 +430,14 @@
             </div>
             <div class="col-md-2"></div>
             <div class="col-md-5 text-center">
-                <img src="{{ asset('images/find.png')}}" width="50%">
+                <img src="{{ Util::assetUrl('images/find.png')}}" width="50%">
             </div>
         </div>
     </div>
     <div class="container pt-5 pb-5">
         <div class="row align-items-center">
             <div class="col-md-5 text-center">
-                <img src="{{ asset('images/save.png')}}" width="100%">
+                <img src="{{ Util::assetUrl('images/save.png')}}" width="100%">
             </div>
             <div class="col-md-2"></div>
             <div class="col-md-5">
@@ -1000,7 +1000,7 @@
                                         <i class="fas fa-arrow-right"></i> 
                                     </div>
                                 </a>
-                                <a href="{{ asset('brochures/LightFinder_BAL.pdf') }}?v={{ env('VERSION','20190819') }}" class="pl-0 btn" target="_blank">
+                                <a href="{{ Util::assetUrl('brochures/LightFinder_BAL.pdf') }}?v={{ env('VERSION','20190819') }}" class="pl-0 btn" target="_blank">
                                     <div class="link-text">
                                         Brochure
                                     </div>&nbsp;
@@ -1163,7 +1163,7 @@
                                         <i class="fas fa-arrow-right"></i> 
                                     </div>
                                 </a>
-                                <a href="{{ asset('brochures/MyHome_BAL.pdf') }}?v={{ env('VERSION','20190819') }}" class="pl-0 btn" target="_blank">
+                                <a href="{{ Util::assetUrl('brochures/MyHome_BAL.pdf') }}?v={{ env('VERSION','20190819') }}" class="pl-0 btn" target="_blank">
                                     <div class="link-text">
                                     Brochure
                                     </div>&nbsp;
@@ -1323,7 +1323,7 @@
                                         <i class="fas fa-arrow-right"></i> 
                                     </div>
                                 </a>
-                                <a href="{{ asset('brochures/MyTower_BAL.pdf') }}?v={{ env('VERSION','20190819') }}" class="pl-0 btn" target="_blank">
+                                <a href="{{ Util::assetUrl('brochures/MyTower_BAL.pdf') }}?v={{ env('VERSION','20190819') }}" class="pl-0 btn" target="_blank">
                                     <div class="link-text">
                                         Brochure
                                     </div>&nbsp;
@@ -1775,7 +1775,7 @@
                 <h5>
                     <b><span class="text-BAL">Lighting</span> consultation</b>
                 </h5>
-                <img src="{{ asset('images/lightdesign.jpg')}}" class="mt-3 w-100 section-10-img">
+                <img src="{{ Util::assetUrl('images/lightdesign.jpg')}}" class="mt-3 w-100 section-10-img">
                 <!-- <div class="w-100 general-lighting">
                     <div class="container d-flex align-items-end h-100 pb-3">
                         <a href="" class="btn btn-BAL">Book now</a>
@@ -1823,7 +1823,7 @@
                 <h5>
                     <b><span class="text-BAL">Lux</span> calculation</b>
                 </h5>
-                <img src="{{ asset('images/luxcalculation.jpg')}}" class="mt-3 w-100 section-10-img">
+                <img src="{{ Util::assetUrl('images/luxcalculation.jpg')}}" class="mt-3 w-100 section-10-img">
                 <!-- <div class="w-100 general-lighting">
                     <div class="container d-flex align-items-end h-100 pb-3">
                         <a href="" class="btn btn-BAL">Book now</a>
@@ -1871,7 +1871,7 @@
                 <h5>
                     <b>3D <span class="text-BAL">lighting</span> design</b>
                 </h5>
-                <img src="{{ asset('images/3dlightingdesign.jpg')}}" class="mt-3 w-100 section-10-img">
+                <img src="{{ Util::assetUrl('images/3dlightingdesign.jpg')}}" class="mt-3 w-100 section-10-img">
                 <!-- <div class="w-100 general-lighting">
                     <div class="container d-flex align-items-end h-100 pb-3">
                         <a href="" class="btn btn-BAL">Book now</a>

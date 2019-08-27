@@ -108,7 +108,7 @@
                         <h5 class="text-white">Accepted Payments</h5>
                         <div class="row mt-3">
                             <div class="col">
-                                <img src=" {{ asset('images/payment.png') }}" width="69%">
+                                <img src=" {{ Util::assetUrl('images/payment.png') }}" width="69%">
                             </div>
                         </div>
                     </div>
@@ -117,7 +117,7 @@
                         <div class="row mt-3">
                             <div class="col">
                                 <a href="https://light-middleeast.german-pavilion.com/en/home/">
-                                    <img src=" {{ asset('images/werbebanner.jpg') }}" width="69%">
+                                    <img src=" {{ Util::assetUrl('images/werbebanner.jpg') }}" width="69%">
                                 </a>
                             </div>
                         </div>
