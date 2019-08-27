@@ -1057,7 +1057,7 @@
 		</div>
 	</div>
 </section>
-<section class="section-8">
+<section class="section-8" id="coreteam">
 	<div class="pt-5">
 		<div class="bg-black pt-5 pb-5">
 			<div class="container">

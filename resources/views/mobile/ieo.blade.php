@@ -1035,7 +1035,7 @@
 	</div>
 </section>
 
-<section class="section-7 bg-black">
+<section class="section-7 bg-black" id="coreteam">
 	<div class="container pt-5 pb-5">
 		<h3 class="text-center">
 			<b>
