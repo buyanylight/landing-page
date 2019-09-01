@@ -103,9 +103,9 @@
 		{{-- <div style="z-index: 1032;">
 			<img class="bal-solo" 
 			style="width: 152px; margin-right: -10px;" 
-			src="{{ Util::assetUrl('images/logos/logo-white.png') }}">
+			src="{{ Util::assetUrl('images/logos/logo-white-sm.png') }}">
 		</div> --}}
-		
+
 		<div style="z-index: 1032; 
 		display: inline-flex;
 	    justify-content: center;
@@ -113,7 +113,7 @@
 	    flex-direction: column;">
 			<img class="bal-solo" 
 			style="width: 152px; margin-right: -10px;" 
-			src="{{ Util::assetUrl('images/logos/logo-white.png') }}">
+			src="{{ Util::assetUrl('images/logos/logo-white-sm.png') }}">
 			
 			<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
 		</div>
