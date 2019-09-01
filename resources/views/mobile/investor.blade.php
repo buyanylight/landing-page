@@ -41,7 +41,7 @@
 		<p>If you’re considering investing and would like to know more, please call +971 4 8873265 to discuss our hugely exciting investment proposal!</p>
 		<div class="pt-3">
 		<h3><b>Drop us a message</b></h3>
-		<p>Feel free to get in touch with you</p>
+		<p>Feel free to get in touch with us</p>
 			<form method="post" action="/contact-us">
 	            {{ csrf_field() }}
 	            <div class="row">
