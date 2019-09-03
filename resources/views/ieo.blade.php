@@ -272,7 +272,7 @@
 			</strong> 
 		</h3>
 		<div class="row pt-5">
-			<div class="col-md-4">
+			<div class="col-md-4 whychoosebaltoken-item">
 				<div>
 					<img src="{{ Util::assetUrl('images/ieo/6-1.png') }}" width="20%">
 					<div class="pt-3">
@@ -285,7 +285,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 whychoosebaltoken-item">
 				<div>
 					<img src="{{ Util::assetUrl('images/ieo/6-2.png') }}" width="20%">
 					<div class="pt-3">
@@ -298,14 +298,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 whychoosebaltoken-item">
 				<div>
 					<img src="{{ Util::assetUrl('images/ieo/6-3.png') }}" width="20%">
 					<div class="pt-3">
 						<h5>
 							<b>Utility</b>
 						</h5>
-						<p class="pt-3">
+						<p class="pt-1">
 							BAL Token has inherent utility within the BAL marketplace, a leading marketplace based in Dubai, UAE, allowing it to be accepted as a mode of payment for lighting products.
 						</p>
 					</div>
@@ -313,7 +313,7 @@
 			</div>
 		</div>
 		<div class="row pt-5 pb-5">
-			<div class="col-md-4">
+			<div class="col-md-4 whychoosebaltoken-item">
 				<div>
 					<img src="{{ Util::assetUrl('images/ieo/6-4.png') }}" width="20%">
 					<div class="pt-3">
@@ -326,7 +326,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 whychoosebaltoken-item">
 				<div>
 					<img src="{{ Util::assetUrl('images/ieo/6-5.png') }}" width="20%">
 					<div class="pt-3">
@@ -339,7 +339,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 whychoosebaltoken-item">
 				<div>
 					<img src="{{ Util::assetUrl('images/ieo/6-6.png') }}" width="20%">
 					<div class="pt-3">

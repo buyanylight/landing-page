@@ -11482,3 +11482,8 @@ footer {
   width: 90%;
 }
 
+.whychoosebaltoken-item > div > img {
+  height: 70px;
+  width: auto;
+}
+
