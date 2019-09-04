@@ -11,7 +11,8 @@
 @endsection
 
 @section('css')
-	<link rel="stylesheet" href="css/ieo.css?v=1">
+	{{-- <link rel="stylesheet" href="css/ieo.css?v=1"> --}}
+	<link rel="stylesheet" href="{{ Util::assetUrl('css/ieo.css') }}">
 @endsection
 
 @section('body-end-javascript')
