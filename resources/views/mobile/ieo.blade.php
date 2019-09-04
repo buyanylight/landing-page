@@ -10,7 +10,8 @@
 @endsection
 
 @section('css')
-	<link rel="stylesheet" href="css/ieo-mobile.css?v=1">
+	{{-- <link rel="stylesheet" href="css/ieo-mobile.css?v=1"> --}}
+	<link rel="stylesheet" href="{{ Util::assetUrl('css/ieo-mobile.css') }}">
 @endsection
 
 
