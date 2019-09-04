@@ -23,7 +23,7 @@
 		    adaptiveHeight: true,
             centerPadding: '0px',
             slidesToShow: 1,
-            initialSlide:0,
+            initialSlide:5,
             infinite: false,
             arrows: true,
 		    prevArrow: '<button type="button" class="slick-prev d-inline-block">Previous</button>',
@@ -441,6 +441,23 @@
 	      						</div>
 	    					</div>
 	  					</div>
+					</li>
+
+  					<li class="li complete">
+						<div>
+							<div class="timestamp">
+								<span class="author text-white pb-4">2016</span>
+							</div>
+							<div class="status">
+								<div class="one-map pt-4 text-left"> 
+									<div class="card mb-2"><div class="card-body">Idea inception of the BAL Platform</div></div>
+									<div class="card mb-2"><div class="card-body">Initial research and feasibility</div></div>
+									<div class="card mb-2"><div class="card-body">Recruitment of technical team for BAL platform development</div></div>
+									<div class="card mb-2"><div class="card-body">Platform development initiated</div></div>
+									<div class="card mb-2"><div class="card-body">Product range covering 100 products in architectural, residential, commercial and decorative lighting</div></div>
+								</div>
+							</div>
+						</div>
 					</li>
 					
   					<li class="li complete">
