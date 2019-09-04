@@ -22,7 +22,7 @@
 			adaptiveHeight: true,
 			centerPadding: '0px',
 			slidesToShow: 1,
-			initialSlide:0,
+			initialSlide: 1,
 			infinite: false,
 			appendArrows: $('.arrows'),
 			prevArrow: '<button type="button" class="slick-prev d-inline-block">Previous</button>',
@@ -393,15 +393,15 @@
 
 				
 
-				
-
-				
-
-				
-
 				{{-- roadmap --}}
 				{{-- ////////////////////////////////////////////////////////////////// --}}
 				<ul class="roadmap">
+
+					{{-- lililililililililililililililililililililililililililililililililililili --}}
+					{{-- lililililililililililililililililililililililililililililililililililili --}}
+					{{-- lililililililililililililililililililililililililililililililililililili --}}
+
+
 					<li class="li complete">
 
 						<div>
@@ -409,7 +409,7 @@
 								<span class="author text-white pb-4">2014</span>
 							</div>
 							<div class="status">
-								<div class="one-map pt-4 text-left"> 
+								<div class="one-map text-left"> 
 									<div class="card mb-2"><div class="card-body">Establishment of Almani Lighting GmbH, Germany</div></div>
 									<div class="card mb-2"><div class="card-body">In depth analysis and visits to the world’s best LED manufacturer</div></div>
 								</div>
@@ -421,7 +421,7 @@
 								<span class="author text-white pb-4">2015</span>
 							</div>
 							<div class="status">
-								<div class="one-map pt-4 text-left"> 
+								<div class="one-map text-left"> 
 									<div class="card mb-2"><div class="card-body">Establishment of the Almani Lighting LLC, Dubai, UAE Branch</div></div>
 									<div class="card mb-2"><div class="card-body">Cooperation with ASAS Holdings, Dubai, UAE</div></div>      							
 									<div class="card mb-2"><div class="card-body">Product range covering 50 products in architectural and residential lighting</div></div>      							
@@ -432,10 +432,26 @@
 
 						<div>
 							<div class="timestamp">
+								<span class="author text-white pb-4">2016</span>
+							</div>
+							<div class="status">
+								<div class="one-map text-left"> 
+									<div class="card mb-2"><div class="card-body">Idea inception of the BAL Platform</div></div>
+									<div class="card mb-2"><div class="card-body">Initial research and feasibility</div></div>
+									<div class="card mb-2"><div class="card-body">Recruitment of technical team for BAL platform development</div></div>
+									<div class="card mb-2"><div class="card-body">Platform development initiated</div></div>
+									<div class="card mb-2"><div class="card-body">Product range covering 100 products in architectural, residential, commercial and decorative lighting</div></div>
+								</div>
+							</div>
+						</div>
+
+
+						<div>
+							<div class="timestamp">
 								<span class="author text-white pb-4">2017</span>
 							</div>
 							<div class="status">
-								<div class="one-map pt-4 text-left"> 
+								<div class="one-map text-left"> 
 									<div class="card mb-2"><div class="card-body">ASAS Holdings invests in Almani Lighting LLC and acquires 51% ownership</div></div>
 									<div class="card mb-2"><div class="card-body">Establishment of a state-of-the-art Dubai showroom</div></div>
 									<div class="card mb-2"><div class="card-body">Warehouse expansion</div></div>
@@ -446,12 +462,23 @@
 						</div>
 
 
-						<div>
+
+					</li>
+
+					{{-- lililililililililililililililililililililililililililililililililililili --}}
+					{{-- lililililililililililililililililililililililililililililililililililili --}}
+					{{-- lililililililililililililililililililililililililililililililililililili --}}
+
+
+					<li class="li complete">
+
+
+						<div style="width: 30%;">
 							<div class="timestamp">
 								<span class="author text-white pb-4">2018</span>
 							</div>
 							<div class="status">
-								<div class="one-map pt-4 text-left"> 
+								<div class="one-map text-left"> 
 									<div class="card mb-2"><div class="card-body">New two storey office in Dubai Investment Park</div></div>
 									<div class="card mb-2"><div class="card-body">Product range covering 600 products in architectural, residential, commercial, decorative, industrial and outdoor lighting</div></div>
 									<div class="card mb-2"><div class="card-body">Completion of two Sheikh palaces for the ruler of Sharjah emirate</div></div>
@@ -487,20 +514,12 @@
 								</div>
 							</div>
 						</div>
-
-					</li>
-
-
-
-
-					<li class="li complete">
-
-						<div style="width: 50%;">
+						<div>
 							<div class="timestamp">
 								<span class="author text-white pb-4">2019</span>
 							</div>
 							<div class="status">
-								<div class="one-map pt-4 text-left"> 
+								<div class="one-map text-left"> 
 									<div class="card mb-2">
 										<div class="card-body">
 											<ul class="map-list pl-0">
@@ -573,12 +592,22 @@
 							</div>
 						</div>
 
-						<div style="width: 50%;">
+					</li>
+
+
+					{{-- lililililililililililililililililililililililililililililililililililili --}}
+					{{-- lililililililililililililililililililililililililililililililililililili --}}
+					{{-- lililililililililililililililililililililililililililililililililililili --}}
+
+
+					<li class="li complete">
+
+						<div>
 							<div class="timestamp">
 								<span class="author text-white pb-4">2020</span>
 							</div>
 							<div class="status">
-								<div class="one-map pt-4 text-left"> 
+								<div class="one-map text-left"> 
 
 									
 									<div class="card mb-2">
@@ -645,16 +674,26 @@
 
 								</div>
 							</div>
-						</div>
+						</div>	
+
+
 					</li>
+					
+					{{-- lililililililililililililililililililililililililililililililililililili --}}
+					{{-- lililililililililililililililililililililililililililililililililililili --}}
+					{{-- lililililililililililililililililililililililililililililililililililili --}}
+
 
 					<li class="li complete">
-						<div style="width: 70%;">
+
+
+
+						<div>
 							<div class="timestamp">
 								<span class="author text-white pb-4">2021</span>
 							</div>
 							<div class="status">
-								<div class="one-map pt-4 text-left"> 
+								<div class="one-map text-left"> 
 
 									<div class="card mb-2">
 										<div class="card-body">
@@ -693,19 +732,25 @@
 						</div>
 
 
-						<div style="width: 30%;">
+						<div>
 							<div class="timestamp">
 								<span class="author text-white pb-4">2022</span>
 							</div>
 							<div class="status">
-								<div class="one-map pt-4 text-left"> 
+								<div class="one-map text-left"> 
 									<div class="card mb-2"><div class="card-body">On-chain logistic, freight tracking functionality implemented</div></div>
 									<div class="card mb-2"><div class="card-body">AI based Smart Contracts implementation</div></div>
 								</div>
 							</div>
 						</div>
 					</li>
-					
+
+					{{-- lililililililililililililililililililililililililililililililililililili --}}
+					{{-- lililililililililililililililililililililililililililililililililililili --}}
+					{{-- lililililililililililililililililililililililililililililililililililili --}}
+
+
+
 				</ul>  
 				{{-- ////////////////////////////////////////////////////////////////// --}}
 				{{-- roadmap --}}

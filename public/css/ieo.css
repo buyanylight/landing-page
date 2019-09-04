@@ -11195,17 +11195,23 @@ nav {
   transition: all 200ms ease-in;
 }
 
+.one-map {
+  padding-top: 0px;
+}
+
 .one-map:before {
   content: "";
   width: 25px;
   height: 25px;
   background: -webkit-linear-gradient(right, #E23D96, #5555A4);
   border-radius: 25px;
-  position: absolute;
-  top: -15px;
-  left: 42%;
   -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
+  position: relative;
+  top: -15px;
+  display: -webkit-box;
+  display: flex;
+  margin: auto;
 }
 
 .li.complete .status {
@@ -11230,7 +11236,6 @@ nav {
 
 .author {
   position: relative;
-  right: 8px;
 }
 
 .yt {

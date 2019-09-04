@@ -102,21 +102,28 @@ nav{
   transition: all 200ms ease-in;  
 
 }
-  .one-map {
-	  &:before {
+.one-map {
+  	
+  	padding-top: 0px;
+	&:before {
 
 		content: '';
 		width: 25px;
 		height: 25px;
 		background: -webkit-linear-gradient( right, #E23D96, #5555A4);
 		border-radius: 25px;
-		position: absolute;
-		top: -15px;
-		left: 42%;
+		// position: absolute;
+		// top: -15px;
+		// left: 42%;
 		transition: all 200ms ease-in; 
+	    
+	    position: relative;
+	    top: -15px;
+	    display: flex;
+	    margin: auto;
 
-	  }
-  }
+	}
+}
 .li.complete
   .status {
 	border-top: 2px solid #969696;
@@ -138,7 +145,7 @@ nav{
 
 .author{
 	position:relative;
-	right: 8px;
+	// right: 8px;
 }
 
 .yt{
