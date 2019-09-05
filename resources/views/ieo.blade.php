@@ -845,7 +845,7 @@
 								</tr>
 								<tr>
 									<td>Accepts:</td>
-									<td>ETH, BTC, USD</td>
+									<td>BTC, ETH, EUR, USD</td>
 								</tr>
 								<tr>
 									<td>Know Your Customer (KYC):</td>
