@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
+
+	@if(strpos(Request::url(), 'buyanylight.com'))
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143361165-1"></script>
 	<script>
@@ -11,6 +13,7 @@
 		gtag('config', 'UA-143361165-1');
 	</script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
+
 	<!-- Facebook Pixel Code -->
 	<script>
 		!function(f,b,e,v,n,t,s)
@@ -28,6 +31,9 @@
 	  src="https://www.facebook.com/tr?id=422311248361106&ev=PageView&noscript=1"
 	/></noscript>
 	<!-- End Facebook Pixel Code -->
+	@endif
+
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
