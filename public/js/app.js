@@ -579,15 +579,15 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\app.scss */"./resources/sass/app.scss");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\privacy.scss */"./resources/sass/privacy.scss");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\ieo.scss */"./resources/sass/ieo.scss");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\ieo-mobile.scss */"./resources/sass/ieo-mobile.scss");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\slick\slick.scss */"./resources/sass/slick/slick.scss");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\slick\slick-theme.scss */"./resources/sass/slick/slick-theme.scss");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\preloaders.scss */"./resources/sass/preloaders.scss");
-module.exports = __webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\mobile.scss */"./resources/sass/mobile.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\privacy.scss */"./resources/sass/privacy.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\ieo.scss */"./resources/sass/ieo.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\ieo-mobile.scss */"./resources/sass/ieo-mobile.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\slick\slick.scss */"./resources/sass/slick/slick.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\slick\slick-theme.scss */"./resources/sass/slick/slick-theme.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\preloaders.scss */"./resources/sass/preloaders.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\mobile.scss */"./resources/sass/mobile.scss");
 
 
 /***/ })
