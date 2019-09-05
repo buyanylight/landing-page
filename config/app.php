@@ -176,10 +176,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Jenssegers\Agent\AgentServiceProvider::class,
-        App\Providers\AgentServiceProvider::class
+        App\Providers\AgentServiceProvider::class,
         
 
-
+		Laravel\Socialite\SocialiteServiceProvider::class,
     ],
 
     /*
@@ -233,7 +233,8 @@ return [
         'Agent' => Jenssegers\Agent\Facades\Agent::class,
         
         'Util' => App\Util::class,
-
+		
+		'Socialite' => Laravel\Socialite\Facades\Socialite::class,
     ],
 
 ];

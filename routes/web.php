@@ -44,3 +44,15 @@ Route::get('/m/why-us', 'MobileController@why_us')->name('m-why-us');
 Route::get('/m/package', 'MobileController@packages')->name('m-package');
 Route::get('/m/add-ons', 'MobileController@add_ons')->name('m-add-ons');
 Route::get('/m/more-reasons', 'MobileController@reasons')->name('m-more-reasons');
+
+
+
+
+ 
+Route::post('sociallogin/{provider}', 'Auth\AuthController@SocialSignup');
+// Route::get('auth/{provider}/callback', 'OutController@index')->where('provider', '.*');
+// Route::post('auth/{provider}/callback', 'OutController@index')->where('provider', '.*');
+
+
+Route::get('auth/{provider}/callback', 'OutController@index');
+
