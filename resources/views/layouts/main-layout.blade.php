@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 	<head>
+
+
+		@if(strpos(Request::url(), 'buyanylight.com'))
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143361165-1"></script>
 		<script>
@@ -11,6 +14,8 @@
 			gtag('config', 'UA-143361165-1');
 		</script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
+
+		<!-- Facebook Pixel Code -->
 		<script>
 		  !function(f,b,e,v,n,t,s)
 		  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -27,6 +32,8 @@
 		  src="https://www.facebook.com/tr?id=422311248361106&ev=PageView&noscript=1"
 		/></noscript>
 		<!-- End Facebook Pixel Code -->
+		@endif
+
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -37,7 +44,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 		<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet">
 
-		<!-- Facebook Pixel Code -->
 
 		<!-- Styles -->
 		{{-- @yield('css') --}}
@@ -86,7 +92,6 @@
 
 	</head>
 	<body class="eupopup eupopup-bottom">
-
 		<div class="preloader">
 			{{-- <div class="sk-folding-cube">
 				<div class="sk-cube1 sk-cube"></div>
@@ -118,6 +123,8 @@
 				<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
 			</div>
 		</div>
+
+
 
 		@include('includes.navbar')
 		@yield('content')
