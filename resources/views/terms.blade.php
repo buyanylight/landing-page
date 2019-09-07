@@ -2,6 +2,14 @@
 @extends(($agent->isMobile()) ? 'layouts.mobile-layout' : 'layouts.main-layout')
 @section('content')
 
+@if (($agent->isMobile()) == 1)
+<style type="text/css">
+    ul{
+        padding: 0px;
+    }
+</style>
+@endif
+
 <div class="document" style="padding-top: 90px;">
 	<div class="document_text_content">
 		<h2 class="text-center">Terms and Condition</h2>
