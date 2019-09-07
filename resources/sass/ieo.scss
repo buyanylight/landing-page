@@ -452,6 +452,23 @@ footer{
 
 		}
 	}
+
+	.card-deck .card{
+		margin-right: 10px;
+		margin-left: 10px;
+		font-size: 12PX;
+	}
+
+	.progress{
+		border-radius: 28px;
+    	height: 28px;
+
+	}
+
+	.progress .progress-bar{
+		border-radius:28px;
+		background: #F511A9;
+	}
 }
 
 

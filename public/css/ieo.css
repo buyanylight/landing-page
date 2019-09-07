@@ -11483,6 +11483,22 @@ footer {
   padding: 3px 0;
 }
 
+.section-1 .card-deck .card {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 12PX;
+}
+
+.section-1 .progress {
+  border-radius: 28px;
+  height: 28px;
+}
+
+.section-1 .progress .progress-bar {
+  border-radius: 28px;
+  background: #F511A9;
+}
+
 .vision-mission .video {
   width: 90%;
 }

@@ -100,8 +100,55 @@
 									</div>
 								</div>
 							</div>
-							<div class="w-100 mt-5">
+							<div class="mt-4">
+								<div class="row" style="font-size: 10px;">
+									<p class="col-md-4 text-white m-0 d-flex align-items-center">Start</p>
+									<p class="col-md-4 text-center text-white m-0 d-flex align-items-center justify-content-center">Soft Cap</p>
+									<p class="col-md-4 text-right text-white m-0 d-flex align-items-center justify-content-end">Hard Cap</p>
+								</div>
+								<div class="pt-1">
+									<div class="progress">
+  										<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+  											$2,000,000
+  										</div>
+									</div>
+								</div>
+								<div class="row pt-1" style="font-size: 10px;">
+									<p class="col-md-4 text-white">25% target raised</p>
+									<p class="col-md-4 text-center text-white">$4,000,000</p>
+									<p class="col-md-4 text-right text-white">$8,000,000</p>
+								</div>
+							</div>
+							<div class="w-100">
 								<img class="countdown-bottom-img" src="{{ Util::assetUrl('images/ieo/countdown-bottom.png') }}" alt="">
+							</div>
+							<div class="w-100 mt-4">
+								<div class="card-deck">
+									<div class="card text-center">
+										<div class="card-header text-white " style="background: #F511A9">
+											PRE SALE
+										</div>
+										<div class="card-text p-2">
+											 1<sup>st</sup> Oct 2019 <br>to<br> 31<sup>st</sup> Oct 2019
+										</div>
+									</div>
+									<div class="card text-center">
+										<div class="card-header  text-white" style="background: #F511A9">
+											IEO START
+										</div>
+										<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
+											1<sup>st</sup>&nbsp; Dec 2019
+										</div>
+									</div>
+									<div class="card text-center ">
+										<div class="card-header  text-white" style="background: #F511A9">
+											IEO END
+										</div>
+										<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
+											31<sup>st</sup>&nbsp; Dec 2019
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
