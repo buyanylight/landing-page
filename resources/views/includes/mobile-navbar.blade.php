@@ -78,7 +78,7 @@
                 </li>
                 <li class="nav-item dropdown mr-3 ml-3">
                     <button class="nav-link dropdown-toggle text-left text-white links btn-black w-100" href="/https://lightfinder.buyanylight.com/buyer/register" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Sign up
+                    Register
                     </button>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/buyer/register">Buyers</a>
