@@ -125,8 +125,8 @@
 							<div class="w-100 mt-4">
 								<div class="card-deck">
 									<div class="card text-center">
-										<div class="card-header text-white " style="background: #F511A9">
-											<b>PRE SALE</b>
+										<div class="card-header text-white " style="background: #F511A9; padding:12px;">
+											<b>PRIVATE SALE</b>
 										</div>
 										<div class="card-text p-2">
 											 1<sup>st</sup> Oct 2019 <br>to<br> 31<sup>st</sup> Oct 2019
