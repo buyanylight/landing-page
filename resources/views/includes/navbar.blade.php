@@ -74,7 +74,7 @@
                 </li>
                 <li class="nav-item dropdown mr-3">
                     <a class="nav-link dropdown-toggle text-white links" href="{{ route('seller') }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Sign up
+                    Register
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/buyer/register">Buyers</a>
