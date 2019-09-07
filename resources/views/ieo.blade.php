@@ -126,7 +126,7 @@
 								<div class="card-deck">
 									<div class="card text-center">
 										<div class="card-header text-white " style="background: #F511A9">
-											PRE SALE
+											<b>PRE SALE</b>
 										</div>
 										<div class="card-text p-2">
 											 1<sup>st</sup> Oct 2019 <br>to<br> 31<sup>st</sup> Oct 2019
@@ -134,7 +134,7 @@
 									</div>
 									<div class="card text-center">
 										<div class="card-header  text-white" style="background: #F511A9">
-											IEO START
+											<b>IEO START</b>
 										</div>
 										<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
 											1<sup>st</sup>&nbsp; Dec 2019
@@ -142,7 +142,7 @@
 									</div>
 									<div class="card text-center ">
 										<div class="card-header  text-white" style="background: #F511A9">
-											IEO END
+											<b>IEO END</b>
 										</div>
 										<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
 											31<sup>st</sup>&nbsp; Dec 2019
