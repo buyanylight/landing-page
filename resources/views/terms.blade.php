@@ -28,10 +28,10 @@
 					<li>
 						Please carefully read the Terms and Conditions (“Terms”) for the website located at www.buyanylight.com (the “Website”) including its sub-domains and mobile optimized version, as set out hereinafter. The Website is operated by Dotcom Ventures FZE (hereinafter referred to also as “Company”) Any ancillary terms, guidelines, the privacy policy (the “Policy”) and other documents made available by the Website from time to time and as incorporated herein by reference, shall be deemed as an integral part of the Terms. These terms set forth the legally binding agreement between you as the user(s) of the Website (hereinafter referred to as “you”, “your” or “User”) and the Company. If you are using the Website or its services on behalf of an entity, organization, or company (collectively &quot;Subscribing Organization&quot;), you declare that you are an authorized representative of that Subscribing Organization with the authority to bind such organization to these Terms; and agree to be bound by these Terms on behalf of such Subscribing Organization. In such a case, &quot;you&quot; in these Terms refers to your Subscribing Organization, and any individual authorized to use the Service on behalf of the Subscribing Organization, including you.
 					</li>
-					<li>
+					<li class="pt-2">
 						By using company provided services, accessing or using the Website in any manner as laid down herein, including, but not limited to, visiting or browsing it, or contributing content or other materials to it, you agree to be bound by these Terms. 
 					</li>
-					<li>
+					<li class="pt-2">
 						These Terms, and any rights and licenses granted hereunder, may not be transferred or assigned by you, but may be assigned by the Website without restriction. Any attempted transfer or assignment in violation hereof shall be null and void.
 					</li>
 				</ul>
@@ -154,19 +154,19 @@
 								<li class="pt-2"><span><b>4.1</b></span> We also provide following add-on services:</li>
 								<ul>
 
-									<li class="pt-2"><span><b>4.1.1</b></span> General Lighting Consultation: This add-on is available to all users irrespective of the Package they choose. We provide one-on-one access to our consultants who will work with you and provide expert advice from the very start until the end of the project.
+									<li class="pt-2"><span><b>4.1.1</b></span> <b>General Lighting Consultation:</b> This add-on is available to all users irrespective of the Package they choose. We provide one-on-one access to our consultants who will work with you and provide expert advice from the very start until the end of the project.
 									</li>
 
 									<li class="pt-2">
-										<span><b>4.1.2</b></span> Lux Calculation: This add-on provides valuable data that determine the exact brightness requirements (Lumens) for a project area. The data it provides is essential for choosing the product specifics and quantity for any lighting project. With this service, you can know the number of lights required to achieve a design objective with a high level of precision.
+										<span><b>4.1.2</b></span> <b>Lux Calculation:</b> This add-on provides valuable data that determine the exact brightness requirements (Lumens) for a project area. The data it provides is essential for choosing the product specifics and quantity for any lighting project. With this service, you can know the number of lights required to achieve a design objective with a high level of precision.
 									</li>
 
-									<li class="pt-2"><span><b>4.1.3</b></span> 3D Lighting Design: This additional option gives you a chance to get an idea of how your project area would look like once all the lights are installed. Our professional lighting designers make sure that all the 3D designs are done with pinpoint accuracy. All BAL users that want to have a realistic 3D simulation of the lighting effect can use the 3D Lighting design. In some cases, it might be part of the requirements for executing a lighting project. In any case, contractors and consultants can present the model to their clients to gain an edge over competitors, and they can also charge their clients additional fees for the 3D model.</li>
+									<li class="pt-2"><span><b>4.1.3</b></span> <b>3D Lighting Design:</b> This additional option gives you a chance to get an idea of how your project area would look like once all the lights are installed. Our professional lighting designers make sure that all the 3D designs are done with pinpoint accuracy. All BAL users that want to have a realistic 3D simulation of the lighting effect can use the 3D Lighting design. In some cases, it might be part of the requirements for executing a lighting project. In any case, contractors and consultants can present the model to their clients to gain an edge over competitors, and they can also charge their clients additional fees for the 3D model.</li>
 
 								</ul>
 
 								<li class="pt-2">
-									<span><b> 4.2 </b></span>Buyer Registration. The Buyers are required to register before using the Website. They are required to choose login details as may be required by the Website.
+									<span><b> 4.2 </b></span><b>Buyer Registration.</b> The Buyers are required to register before using the Website. They are required to choose login details as may be required by the Website.
 								</li>
 
 								<li class="pt-2"><span><b>4.3</b></span> Choosing Products. The Buyer may choose a category of light they need, select the mandatory elements and post an RFQ. The Website presents the Buyer with options to filter the light categories by warranty, lumen per watt, wattage, colour and such other filters as may be provided from time to time. The Buyers have a choice of requesting specific brands and can upload the image of a particular model in the RFQ.</li>
@@ -321,53 +321,53 @@
 
 								<ul>
 
-									<li><span><b>i.</b></span> not to access the Website or services using a third-party&#39;s account/registration without the express consent of the account holder;
+									<li><span><b>i.</b></span> Not to access the Website or services using a third-party&#39;s account/registration without the express consent of the account holder;
 									</li>
 									<li>
-										<span><b>ii.</b></span> not to use the Website for illegal purposes;
+										<span><b>ii.</b></span> Not to use the Website for illegal purposes;
 									</li>
 									<li>
-										<span><b>iii.</b></span> not to commit any acts of infringement on the Website or with respect to content on the Website;
+										<span><b>iii.</b></span> Not to commit any acts of infringement on the Website or with respect to content on the Website;
 									</li>
 									<li>
-										<span><b>iv.</b></span> not to copy any content for republication in print or online;
+										<span><b>iv.</b></span> Not to copy any content for republication in print or online;
 									</li>
 									<li>
-										<span><b>v.</b></span> not to create reviews or blog entries for or with any purpose or intent that does not in good faith comport with the purpose or spirit of the Website;
+										<span><b>v.</b></span> Not to create reviews or blog entries for or with any purpose or intent that does not in good faith comport with the purpose or spirit of the Website;
 									</li>
-									<li><span><b>vi.</b></span> not to attempt to gain unauthorized access to other computer systems from or through the Website;</li>
+									<li><span><b>vi.</b></span> Not to attempt to gain unauthorized access to other computer systems from or through the Website;</li>
 									<li>
-										<span><b>vii.</b></span> not to interfere with another person&#39;s use and enjoyment of the Website or another entity&#39;s use and enjoyment of the Website;
+										<span><b>vii.</b></span> Not to interfere with another person&#39;s use and enjoyment of the Website or another entity&#39;s use and enjoyment of the Website;
 									</li>
-									<li><span><b>viii.</b></span> not to upload or transmit viruses or other harmful, disruptive or destructive files; and/or</li>
-									<li><span><b>ix.</b></span> not to disrupt, interfere with, or otherwise harm or violate the security of the Website, or any services, system restores, accounts, passwords, servers or networks connected to or accessible through the Website or affiliated or linked website.
+									<li><span><b>viii.</b></span> Not to upload or transmit viruses or other harmful, disruptive or destructive files; and/or</li>
+									<li><span><b>ix.</b></span> Not to disrupt, interfere with, or otherwise harm or violate the security of the Website, or any services, system restores, accounts, passwords, servers or networks connected to or accessible through the Website or affiliated or linked website.
 									</li>
 									<li>
-										<span><b> x.</b></span> not to use the Website in any way or take any action that causes, or may cause, damage to the Website or impairment of the performance, availability or accessibility of the Website;
+										<span><b> x.</b></span> Not to use the Website in any way or take any action that causes, or may cause, damage to the Website or impairment of the performance, availability or accessibility of the Website;
 									</li>
-									<li><span><b>xi.</b></span> not to use the Website in any way that is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity;</li>
+									<li><span><b>xi.</b></span> Not to use the Website in any way that is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity;</li>
 									<li>
-										<span><b>xii.</b></span> not to use se the Website to copy, store, host, transmit, send, use, publish or distribute any material which consists of (or is linked to) any spyware, computer virus, Trojan horse, worm, keystroke logger, rootkit or other malicious computer software;
+										<span><b>xii.</b></span> Not to use se the Website to copy, store, host, transmit, send, use, publish or distribute any material which consists of (or is linked to) any spyware, computer virus, Trojan horse, worm, keystroke logger, rootkit or other malicious computer software;
 									</li>
 
 									<li>
-										<span><b>xiii.</b></span> not to conduct any systematic or automated data collection activities (including without limitation scraping, data mining, data extraction and data harvesting) on or in relation to the Website without the express written consent of the Website owner;
+										<span><b>xiii.</b></span> Not to conduct any systematic or automated data collection activities (including without limitation scraping, data mining, data extraction and data harvesting) on or in relation to the Website without the express written consent of the Website owner;
 									</li>
 
-									<li><span><b>xiv.</b></span> not to access or otherwise interact with the Website using any robot, spider or other automated means;</li>
+									<li><span><b>xiv.</b></span> Not to access or otherwise interact with the Website using any robot, spider or other automated means;</li>
 
-									<li><span><b>xv.</b></span> not to violate the directives set out in the robots.txt file for the website;</li>
-									<li><span><b>xvi.</b></span> not to use data collected from the website for any direct marketing activity (including without limitation email marketing, SMS marketing, telemarketing and direct mailing);</li>
-									<li><span><b>xvii.</b></span> not to infringe these Terms or allow, encourage or facilitate others to do the same;</li>
-									<li><span><b>xviii.</b></span> not to plagiarize and/or infringe the intellectual property rights or privacy rights of any third party;</li>
-									<li><span><b>xix.</b></span> not to disturb the normal flow of Services provided within the Website;</li>
-									<li><span><b>xx.</b></span> not to create a link from the Website to another website or document without Company’s prior written consent;</li>
-									<li><span><b>xxi.</b></span> not to obscure or edit any copyright, trademark or other proprietary rights notice or mark appearing on the Website;</li>
-									<li><span><b>xxii.</b></span> not to create copies or derivate works of the Website or any part thereof;</li>
-									<li><span><b>xxiii.</b></span> not to reverse engineer, decompile or extract the Website’s source code;</li>
-									<li><span><b>xxiv.</b></span> not to remit or otherwise make or cause to deliver unsolicited advertising, email spam or other chain letters;</li>
-									<li><span><b>xxv.</b></span> not to collect, receive, transfer or disseminate any personally identifiable information of any person without consent from title holder; and/or</li>
-									<li><span><b>xxvi.</b></span> not to pretend to be or misrepresent any affiliation with any legal entity or third party.</li>
+									<li><span><b>xv.</b></span> Not to violate the directives set out in the robots.txt file for the website;</li>
+									<li><span><b>xvi.</b></span> Not to use data collected from the website for any direct marketing activity (including without limitation email marketing, SMS marketing, telemarketing and direct mailing);</li>
+									<li><span><b>xvii.</b></span> Not to infringe these Terms or allow, encourage or facilitate others to do the same;</li>
+									<li><span><b>xviii.</b></span> Not to plagiarize and/or infringe the intellectual property rights or privacy rights of any third party;</li>
+									<li><span><b>xix.</b></span> Not to disturb the normal flow of Services provided within the Website;</li>
+									<li><span><b>xx.</b></span> Not to create a link from the Website to another website or document without Company’s prior written consent;</li>
+									<li><span><b>xxi.</b></span> Not to obscure or edit any copyright, trademark or other proprietary rights Notice or mark appearing on the Website;</li>
+									<li><span><b>xxii.</b></span> Not to create copies or derivate works of the Website or any part thereof;</li>
+									<li><span><b>xxiii.</b></span> Not to reverse engineer, decompile or extract the Website’s source code;</li>
+									<li><span><b>xxiv.</b></span> Not to remit or otherwise make or cause to deliver unsolicited advertising, email spam or other chain letters;</li>
+									<li><span><b>xxv.</b></span> Not to collect, receive, transfer or disseminate any personally identifiable information of any person without consent from title holder; and/or</li>
+									<li><span><b>xxvi.</b></span> Not to pretend to be or misrepresent any affiliation with any legal entity or third party.</li>
 
 								</ul>
 
@@ -377,17 +377,17 @@
 								<ul>
 									<li><span><b>i.</b></span> criminal or tortuous activity, including child pornography, fraud, trafficking in obscene material, drug dealing, gambling, harassment, stalking, spamming, copyright infringement, patent infringement, or theft of trade secrets;</li>
 
-									<li><span><b>ii.</b></span> transmitting chain letters or junk email;</li>
-									<li><span><b>iii.</b></span> engaging in any automated use of the Website or the Website Services.</li>
-									<li><span><b>iv.</b></span> interfering with, disrupting, or creating an undue burden on the Website or the Website Services or the networks or services connected or linked thereto;</li>
-									<li><span><b>v.</b></span> attempting to impersonate another user or person;</li>
-									<li><span><b>vi.</b></span>using the username of another user;</li>
-									<li><span><b>vii.</b></span> selling or otherwise transferring your profile;</li>
-									<li><span><b>viii.</b></span> using any information obtained from the Website or the Website Services in order to harass, abuse, or harm another person;</li>
-									<li><span><b>ix.</b></span> deciphering, decompiling, disassembling or reverse engineering any of the software comprising or in any way making up a part of the Website or the Website Services;</li>
-									<li><span><b>x.</b></span> attempting to bypass any measures of the Website or the Website Services designed to prevent or restrict access to the Website or the Website Services, or any portion of the Website or the Website Services;</li>
-									<li><span><b>xi.</b></span> harassing, annoying, intimidating or threatening any the Website employees or agents engaged in providing any portion of the Website Services;</li>
-									<li><span><b>xii.</b></span> using the Website and/or the Website Services in any manner inconsistent with any and all applicable laws and regulations.</li>
+									<li><span><b>ii.</b></span> Transmitting chain letters or junk email;</li>
+									<li><span><b>iii.</b></span> Engaging in any automated use of the Website or the Website Services.</li>
+									<li><span><b>iv.</b></span> Interfering with, disrupting, or creating an undue burden on the Website or the Website Services or the networks or services connected or linked thereto;</li>
+									<li><span><b>v.</b></span> Attempting to impersonate another user or person;</li>
+									<li><span><b>vi.</b></span> Using the username of another user;</li>
+									<li><span><b>vii.</b></span> Selling or otherwise transferring your profile;</li>
+									<li><span><b>viii.</b></span> Using any information obtained from the Website or the Website Services in order to harass, abuse, or harm another person;</li>
+									<li><span><b>ix.</b></span> Deciphering, decompiling, disassembling or reverse engineering any of the software comprising or in any way making up a part of the Website or the Website Services;</li>
+									<li><span><b>x.</b></span> Attempting to bypass any measures of the Website or the Website Services designed to prevent or restrict access to the Website or the Website Services, or any portion of the Website or the Website Services;</li>
+									<li><span><b>xi.</b></span> Harassing, annoying, intimidating or threatening any the Website employees or agents engaged in providing any portion of the Website Services;</li>
+									<li><span><b>xii.</b></span> Using the Website and/or the Website Services in any manner inconsistent with any and all applicable laws and regulations.</li>
 									<li><span><b>xiii.</b></span> Using data collected from the website to contact individuals, companies or other persons or entities.</li>
 									<li><span><b>xiv.</b></span> Supplying false, untrue, expired, incomplete or misleading information through the Website.</li>
 
