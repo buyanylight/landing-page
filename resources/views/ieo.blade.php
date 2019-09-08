@@ -51,7 +51,7 @@
 					<br> 
 					<p class="small-desc">
 						{{-- BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowd funding campaign aimed at raising funds for the development of a decentralized. --}}
-						The BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowd funding campaign aimed at raising funds for the development of a blockchain deployed, decentralized marketplace for lighting products and expansion of the existing BAL Network.
+						The BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowd funding campaign to raise funds for the development of a blockchain deployed, decentralized marketplace for lighting products, and the expansion of the existing BAL Network.
 					</p>					
 				</h3>
 
@@ -176,10 +176,9 @@
 				</h3>
 				<div class="pt-3">
 					<p>
-						The BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowd funding campaign aimed at raising funds for the development of a blockchain deployed, decentralized marketplace for lighting products and expansion of the existing BAL Network. It is a framework for addressing the unique challenges faced by lighting contractors, manufacturers and buyers, as it combines revolutionary technologies such as blockchain and cryptography, smart contracts, fintech and tokenization.
+						The BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowdfunding campaign to raise funds for the development of a blockchain deployed, decentralized marketplace for lighting products, and the expansion of the existing BAL Network. It is a framework for addressing the unique challenges faced by lighting contractors, manufacturers, and buyers that combines revolutionary technologies such as blockchain and cryptography, smart contracts, fintech, and tokenization.
 					</p>
-					<p>
-						We understand and embrace the new blockchain-powered technologies that can optimize sourcing within the lighting industry and strive to lay the digital infrastructure for smarter light sourcing in a seamless, cost-effective way.						
+					<p>We understand and embrace the new blockchain-powered technologies that can optimize sourcing in the lighting industry and create the digital infrastructure for smarter light sourcing in a seamless, cost-effective way.						
 					</p>
 				</div>
 			</div>
@@ -201,7 +200,7 @@
 					</h3>
 					<p>
 						{{-- BAL is an ERC 20 compliant digital asset deployed on Ethereum blockchain. It allows peer to peer mode of payment store and exchange of value and is specifically designed for supporting larger volumes of transactions and creation of a complete financial ecosystem. It offers quick, secure and efficient transfer of value with high confirmation speed. --}}
-						BAL is an ERC-20 compliant digital token deployed on the Ethereum blockchain which allows peer to peer mode of payment, store and exchange of value seamlessly and securely. The BAL Token is specifically designed for supporting larger volumes of transactions happening within the BAL ecosystem. It offers quick, secure and efficient transfer of value with high confirmation speed.						
+						BAL is an ERC-20 compliant digital token deployed on the Ethereum blockchain that allows a peer-to-peer mode of payment, storage, and exchange of value seamlessly and securely. The BAL Token is specifically designed to support large volumes of transactions within the BAL ecosystem. It offers quick, secure, and efficient transfer of value with high confirmation speed.						
 					</p>
 				</div>
 				<div class="col-md-6 text-center">	
@@ -248,7 +247,7 @@
 						</strong> 
 					</h3>
 					<p class="text-white">
-						Our vision is to become the leading global platform of choice for buyers and sellers dealing in LED lighting. Through BAL marketplace, we aim to democratize the access to sourcing of lighting products without the influence of a centralized authority or intermediary.
+						Our vision is to become the leading global platform for buyers and sellers dealing in LED lighting. Through BAL Marketplace, we aim to democratize access to the sourcing of lighting products, without the interference of a centralized authority or intermediary.
 					</p>
 				</div>
 				<div class="col-md-6 text-center">
@@ -299,7 +298,7 @@
 						</strong> 
 					</h3>
 					<p class="text-white">
-						Creation of a modern-age lighting products marketplace by fully harnessing the blockchain, smart contracts and cryptographic technology. Principled, honest and focused, we leverage the world’s best suppliers and deliver the greatest value LED products, the finest service and advice and first-rate customer satisfaction – every time.
+						To create a lighting products marketplace that fully harnesses blockchain, smart contracts, and cryptographic technology. Principled, honest, and focused, we will leverage the world’s best suppliers and deliver the greatest value LED products, the finest service, advice, and first-rate customer satisfaction – every time.
 					</p>
 				</div>
 			</div>
@@ -341,7 +340,7 @@
 							<b>Security</b>
 						</h5>
 						<p class="pt-1">
-							BAL Token uses Ethereum blockchain based proof of work consensus for confirming transactions, which makes it completely decentralized and one of the most secure digital assets. All your transactional data is encrypted, and your digital assets reserved in a wallet only you can access.
+							BAL Token uses an Ethereum blockchain based proof of work consensus for confirming transactions, which makes it completely decentralized and one of the most secure digital assets. All of your transactional data is encrypted, and your digital assets are reserved in a wallet only you can access.
 						</p>
 					</div>
 				</div>
@@ -382,7 +381,7 @@
 							<b>Nominal Transactional Fee</b>
 						</h5>
 						<p class="pt-1">
-							BAL marketplace deducts significantly lower fee than any other major online payment system: enabling users to send, receive or perform any transactional activity at minimal costs.
+							BAL Marketplace deducts significantly lower fees than any other major online payment system. This allows users to send, receive or perform any transactional activity at minimal costs.
 						</p>
 					</div>
 				</div>
@@ -422,13 +421,7 @@
 
 			<div>
 				<p class="text-white">
-					The BAL Platform has an established business with a ready platform. 
-					To expand our operations across the globe and to decentralize our existing 
-					business model by implementing this on blockchain, 
-					we have devised a concrete plan and an ambitious roadmap, 
-					with the right team and expertise, all set to expand globally. 
-					Our ability to rapidly deploy a solution once the technology has been 
-					developed makes the realization of our financial business case more tangible.
+					The BAL Platform is an established business with a ready platform. To expand our operations and decentralize our business model through blockchain we have devised a solid plan and an ambitious roadmap, with the most expert team, and we are positioned to expand globally. Our ability to rapidly deploy a solution once the technology has been developed makes our financial goal more attainable.
 				</p>
 			</div>
 
@@ -472,7 +465,7 @@
 								<div class="one-map text-left"> 
 									<div class="card mb-2"><div class="card-body">Establishment of the Almani Lighting LLC, Dubai, UAE Branch</div></div>
 									<div class="card mb-2"><div class="card-body">Cooperation with ASAS Holdings, Dubai, UAE</div></div>      							
-									<div class="card mb-2"><div class="card-body">Product range covering 50 products in architectural and residential lighting</div></div>      							
+									<div class="card mb-2"><div class="card-body">A range of 50 products in architectural and residential lighting</div></div>      							
 								</div>
 							</div>
 						</div>
@@ -484,7 +477,7 @@
 							</div>
 							<div class="status">
 								<div class="one-map text-left"> 
-									<div class="card mb-2"><div class="card-body">Idea inception of the BAL Platform</div></div>
+									<div class="card mb-2"><div class="card-body">Inception of the BAL Platform</div></div>
 									<div class="card mb-2"><div class="card-body">Initial research and feasibility</div></div>
 									<div class="card mb-2"><div class="card-body">Recruitment of technical team for BAL platform development</div></div>
 									<div class="card mb-2"><div class="card-body">Platform development initiated</div></div>
@@ -500,7 +493,7 @@
 							</div>
 							<div class="status">
 								<div class="one-map text-left"> 
-									<div class="card mb-2"><div class="card-body">ASAS Holdings invests in Almani Lighting LLC and acquires 51% ownership</div></div>
+									<div class="card mb-2"><div class="card-body">ASAS Holdings invests in Almani Lighting LLC, and acquires 51% ownership</div></div>
 									<div class="card mb-2"><div class="card-body">Establishment of a state-of-the-art Dubai showroom</div></div>
 									<div class="card mb-2"><div class="card-body">Warehouse expansion</div></div>
 									<div class="card mb-2"><div class="card-body">Several prestigious projects in UAE completed</div></div>
@@ -527,19 +520,17 @@
 							</div>
 							<div class="status">
 								<div class="one-map text-left"> 
-									<div class="card mb-2"><div class="card-body">New two storey office in Dubai Investment Park</div></div>
-									<div class="card mb-2"><div class="card-body">Product range covering 600 products in architectural, residential, commercial, decorative, industrial and outdoor lighting</div></div>
-									<div class="card mb-2"><div class="card-body">Completion of two Sheikh palaces for the ruler of Sharjah emirate</div></div>
-
 									<div class="card mb-2">
 										<div class="card-body">
 											<ul class="map-list pl-0">
 												<li>
 													<b>Q1 - Q2</b>
 													<ul class="pl-3 pt-2">
-														<li>Idea inception of the BAL Platform</li>
-														<li>Initial Research</li>
-														<li>Team Building</li>
+														<li>Team Expansion</li>
+														<li>New two-story office in Dubai Investment Park </li>
+														<li>Product range covering 600 products in architectural, residential, commercial, decorative, industrial, and outdoor lighting.</li>
+														<li>Completion of two Sheikh palaces for the ruler of Sharjah emirate.</li>
+
 													</ul>
 												</li>
 											</ul>
@@ -551,9 +542,9 @@
 												<li>
 													<b>Q3 - Q4</b>
 													<ul class="pl-3 pt-2">
-														<li>Platform development initiated</li>
 														<li>BAL website development</li>
-														<li>BAL software development LightFinder</li>
+														<li>BAL My Tower testing and implementation</li>
+														<li>Collaboration with Fiat Partner</li>
 													</ul>
 												</li>
 											</ul>
@@ -575,8 +566,8 @@
 													<b>Jan - Mar</b>
 													<ul class="pl-3 pt-2">
 														<li>Biggest LED lighting portfolio within the LED industry for a single brand (Almani)</li>
-														<li>Cooperation with 100+ high quality LED lighting manufacturer</li>
-														<li>BAL backend development phase 2</li>
+														<li>Cooperation with 100+ high quality LED lighting manufacturers</li>
+														<li>BAL backend development Phase 2</li>
 													</ul>
 												</li>
 											</ul>
@@ -590,10 +581,10 @@
 													<b>April - June</b>
 													<ul class="pl-3 pt-2">
 														<li>White Paper drafting for the BAL Platform</li>
-														<li>Centralized platform development completed and ready for community and manufacturers review</li>
+														<li>Centralized platform development completed and ready for community and manufacturers</li>
 														<li>Token generation event</li>
 														<li>Seed Round Sale</li>
-														<li>Seed Round successfully completed and raised USD 2 Million</li>
+														<li>Seed Round successfully completed and raised USD $2 Million</li>
 														<li>IEO planning and meetings with the most reputable crypto exchanges</li>
 													</ul>
 												</li>
@@ -608,11 +599,11 @@
 													<b>July - Sept</b>
 													<ul class="pl-3 pt-2">
 														<li>Marketing Campaign Kick-off</li>
-														<li>My Home, My Tower, LightFinder brochure development</li>
+														<li>My Home, My Tower, and LightFinder brochure development</li>
 														<li>Private funding initiatives</li>
 														<li>Release of yellow paper (Technical Paper)</li>
-														<li>Exchange listing and Public Sale i.e. Initial Exchange Offering (IEO)</li>
-														<li>BAL nominated at Light Middle East for the most exciting startup and their founders for “Personality of the Year”</li>
+														<li>Exchange listing and public sale i.e., Initial Exchange Offering (IEO)</li>
+														<li>BAL nominated at Light Middle East for the most exciting startup, and its founders for “Personality of the Year”</li>
 													</ul>
 												</li>
 											</ul>
@@ -625,7 +616,7 @@
 												<li>
 													<b>Oct - Dec</b>
 													<ul class="pl-3 pt-2">
-														<li>Hiring blockchain developers and corporate restructuring</li>
+														<li>Hiring of blockchain developers and corporate restructuring</li>
 														<li>Smart Contracts research and implementation</li>
 														<li>Smart Contracts and Blockchain Architecture development started.</li>
 														<li>Participation in Roadshows</li>
@@ -665,7 +656,7 @@
 													<b>Jan - Mar</b>
 													<ul class="pl-3 pt-2">
 														<li>Desktop wallet development started with Crosschain asset transfer functionality</li>
-														<li>Marketing expands</li>
+														<li>Marketing expansion</li>
 														<li>Blockchain testing and improvement</li>
 														<li>Participation in EXPO2020 projects</li>
 													</ul>
@@ -680,8 +671,8 @@
 												<li>
 													<b>Apr - Jun</b>
 													<ul class="pl-3 pt-2">
-														<li>Team expansion for hiring AI and Machine Learning specialists</li>
-														<li>Artificial Intelligence Research. Research about Artificial Intelligence, Machine Learning, Big Data, and Predictive Analytics and their application within the BAL platform</li>
+														<li>Team expansion for hiring AI and machine learning specialists</li>
+														<li>Research on artificial intelligence, machine learning, big data, and predictive analytics and their application within the BAL platform</li>
 														<li>Mobile wallet application development started</li>
 													</ul>
 												</li>
@@ -696,7 +687,7 @@
 													<b>July - Sept</b>
 													<ul class="pl-3 pt-2">
 														<li>Business expansion into Scandinavian and Indian markets</li>
-														<li>Blockchain Integration on Testnet</li>
+														<li>Blockchain integration on Testnet</li>
 													</ul>
 												</li>
 											</ul>
@@ -710,9 +701,9 @@
 													<b>Oct - Dec</b>
 													<ul class="pl-3 pt-2">
 														<li>Participation in roadshows and world business summits</li>
-														<li>Desktop wallet beta version release, a non-custodial multi-currency light wallet allowing users to send, receive, and the eventual exchange of funds over Lightning Network; without needing to download full blockchains.</li>
-														<li>Mobile wallet beta version release: Mobile version of the BAL wallet. This application will be compatible on all devices and allow users to access our wallet and its features directly from their mobile device.</li>
-														<li>On-chain logistic, freight tracking functionality development initiated: This will enable blockchain based traceability of logistics and freight activities happening within our ecosystem.</li>
+														<li>Desktop wallet beta version release of a non-custodial multi-currency light wallet allowing users to send, receive, and eventually exchange funds over Lightning Network, all without needing to download full blockchains.</li>
+														<li>Release of a mobile version of the BAL wallet. This application will be compatible on all devices and allow users to access our wallet and its features directly from their mobile device.</li>
+														<li>On-chain logistic, freight tracking functionality development initiated. This will enable blockchain based traceability of logistics and freight activities within our ecosystem.</li>
 													</ul>
 												</li>
 											</ul>
@@ -750,7 +741,7 @@
 													<b>Q1 - Q2</b>
 													<ul class="pl-3 pt-2">
 														<li>Develop first reference implementation of the BAL network using the blockchain framework Substrate and provide a public testnet. The network will be reviewable by the community.</li>
-														<li>Desktop wallet alpha version launched with the functionality of Crosschain Swapping: This will allow users to transact multiple currencies directly, without converting via third-party exchange</li>
+														<li>Desktop wallet alpha version launched with the functionality of Crosschain swapping. This will allow users to transact multiple currencies directly, without converting via third-party exchange</li>
 														<li>Mobile wallet alpha version release</li>
 													</ul>
 												</li>
@@ -935,7 +926,7 @@
 			</h3>
 			<div class="pt-3">
 				<p>
-					We are aiming to make BAL Platform as the leading marketplace for sourcing light products across the globe and have devised a proper plan that would give our dream a practical implementation. The proceeds from the token sale will fund the decentralized platform launch, continued platform development, user acquisition and marketing:					
+					Our aim is to make BAL Platform the leading marketplace for sourcing light products across the globe, and we have devised a plan to make our dream a reality. The proceeds from the token sale will fund the decentralized platform launch, continued platform development, user acquisition, and marketing:					
 				</p>
 			</div>
 			<div class="pt-3">
