@@ -568,6 +568,7 @@
 												<li>
 													<b>Jan - Mar</b>
 													<ul class="pl-3 pt-2">
+														<li>BAL Online Platform release</li>
 														<li>Biggest LED lighting portfolio within the LED industry for a single brand (Almani)</li>
 														<li>Cooperation with 100+ high quality LED lighting manufacturers</li>
 														<li>BAL backend development Phase 2</li>
@@ -584,7 +585,7 @@
 													<b>April - June</b>
 													<ul class="pl-3 pt-2">
 														<li>White Paper drafting for the BAL Platform</li>
-														<li>Centralized platform development completed and ready for community and manufacturers</li>
+														<li>Centralized platform development completed and ready for community and manufacturer review</li>
 														<li>Token generation event</li>
 														<li>Seed Round Sale</li>
 														<li>Seed Round successfully completed and raised USD $2 Million</li>
