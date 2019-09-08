@@ -136,12 +136,12 @@
                                 <li class="pt-2"><span><b>5.3</b></span> If you provide any Data to us, you are deemed to have authorized us to collect, retain and use that data for the following purposes:</li>
                                 <ul>
                                     <li class="pt-2">
-                                        <span><b>i.</b></span> verifying your identity;
+                                        <span><b>i.</b></span> Verifying your identity;
                                     </li>
-                                    <li class="pt-2"><span><b>ii.</b></span> providing you with customer service and responding to your queries, feedback, or disputes;</li>
-                                    <li class="pt-2"><span><b>iii.</b></span> making such disclosures as may be required for any of the above purposes or as required by law, regulations and guidelines or in respect of any investigations, claims or potential claims brought on or against us;</li>
-                                    <li class="pt-2"><span><b>iv.</b></span> provide and maintain the Services;</li>
-                                    <li class="pt-2"><span><b>v.</b></span> notify you about changes to our Services;</li>
+                                    <li class="pt-2"><span><b>ii.</b></span> Providing you with customer service and responding to your queries, feedback, or disputes;</li>
+                                    <li class="pt-2"><span><b>iii.</b></span> Making such disclosures as may be required for any of the above purposes or as required by law, regulations and guidelines or in respect of any investigations, claims or potential claims brought on or against us;</li>
+                                    <li class="pt-2"><span><b>iv.</b></span> Provide and maintain the Services;</li>
+                                    <li class="pt-2"><span><b>v.</b></span> Notify you about changes to our Services;</li>
                                 </ul>
 
                                 <li class="pt-2"><b>5.4</b> We shall ensure that:</li>
