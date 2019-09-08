@@ -477,7 +477,7 @@
 							</div>
 							<div class="status">
 								<div class="one-map text-left"> 
-									<div class="card mb-2"><div class="card-body">Inception of the BAL Platform</div></div>
+									<div class="card mb-2"><div class="card-body">Inception of the idea for the BAL Platform</div></div>
 									<div class="card mb-2"><div class="card-body">Initial research and feasibility</div></div>
 									<div class="card mb-2"><div class="card-body">Recruitment of technical team for BAL platform development</div></div>
 									<div class="card mb-2"><div class="card-body">Platform development initiated</div></div>
