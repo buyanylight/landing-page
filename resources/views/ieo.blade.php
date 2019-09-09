@@ -498,7 +498,7 @@
 									<div class="card mb-2"><div class="card-body">Warehouse expansion</div></div>
 									<div class="card mb-2"><div class="card-body">Several prestigious projects in UAE completed</div></div>
 									<div class="card mb-2"><div class="card-body">Product range covering 250 products in architectural, residential, commercial and decorative lighting</div>
-									<div class="card mb-2"><div class="card-body">BAL Light Finder and My Home Features testing</div>
+									<div class="card mb-2"><div class="card-body">BAL LightFinder and My Home Features testing</div>
 								</div>
 									
 								</div>
