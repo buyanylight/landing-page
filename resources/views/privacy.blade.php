@@ -9,15 +9,9 @@
     }
 </style>
 @endif
-
 <style type="text/css">
-    .points{
-        list-style: circle;
-    }
-
-    .points li{
-        list-style: circle;
-
+    .hide_group {
+        display: none !important;
     }
 </style>
 <div class="pt-5 mt-5">

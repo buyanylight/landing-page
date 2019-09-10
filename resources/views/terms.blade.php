@@ -9,6 +9,12 @@
     }
 </style>
 @endif
+
+<style type="text/css">
+	.hide_group {
+  		display: none !important;
+	}
+</style>
 <div class="pt-5 mt-5">
 	
 	<section class="text-center section section_title" style="">
