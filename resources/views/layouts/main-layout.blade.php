@@ -357,6 +357,13 @@
 			}
 		})
 
+
+
+		$('.document h3').click(function(){
+			$(this).next('ul').slideToggle();
+			$(this).find('.caret_down').toggleClass('hide_group');
+			$(this).find('.caret_right').toggleClass('hide_group');
+		});
 	});
 
 	function makeTimerPrivate() {
@@ -504,6 +511,9 @@
 		}
 	{{-- ////////////////////////////////////////////////////////////// --}}
 	{{-- preloader --}}
+
+
+
 	</script>
 
 	</body>

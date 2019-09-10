@@ -477,12 +477,6 @@ nav .dropdown-toggle::after {
 }
 
 
-
-
-
-
-
-
 .nav-backdrop {
 
 	height: 100vh;
@@ -491,4 +485,8 @@ nav .dropdown-toggle::after {
 	top: 0;
 	background-color: rgba(0, 0, 0, 0.3);	
 	display: none;
+}
+
+.hide_group {
+  display: none !important;
 }

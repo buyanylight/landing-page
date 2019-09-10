@@ -272,6 +272,15 @@
 			}
 		})
 
+		
+		$('.document h3').click(function(){
+			$(this).next('ul').slideToggle();
+			$(this).find('.caret_down').toggleClass('hide_group');
+			$(this).find('.caret_right').toggleClass('hide_group');
+		});
+
+		
+
 	   $(window).scroll(function(){
 			$(".share-icons").css("opacity", 1 - $(window).scrollTop() / 250);
 		});
