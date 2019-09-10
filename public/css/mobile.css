@@ -11545,3 +11545,7 @@ nav .dropdown-toggle::after {
   display: none;
 }
 
+.hide_group {
+  display: none !important;
+}
+

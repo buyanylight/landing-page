@@ -11605,3 +11605,7 @@ footer {
   font-size: 0.9em;
 }
 
+.hide_group {
+  display: none !important;
+}
+
