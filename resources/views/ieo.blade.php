@@ -128,8 +128,8 @@
 										<div class="card-header text-white " style="background: #F511A9; padding:12px;">
 											<b>PRIVATE SALE</b>
 										</div>
-										<div class="card-text p-2">
-											 1<sup>st</sup> Oct 2019 <br>to<br> 31<sup>st</sup> Oct 2019
+										<div class="card-text p-2" style="font-size: 11px;">
+											 1<sup>st</sup> - 31<sup>st</sup> Oct 2019
 										</div>
 									</div>
 									<div class="card text-center">
@@ -1227,7 +1227,7 @@
 					$coreTeam = [];
 					$coreTeam[] = [	'name'=>'Nantha Kumar', 'title'=>'Sales Director', 'linkedin'=>'https://www.linkedin.com/in/nantha-kumar-36b92685', 'image'=>'images/ieo/team/nantha.jpg', 'text'=>'', ];
 					$coreTeam[] = [	'name'=>'Maria Carron Igloso', 'title'=>'Community Manager', 'linkedin'=>'https://www.linkedin.com/in/maria-carron-igloso-1324b5105', 'image'=>'images/ieo/team/maria.jpg', 'text'=>'', ];
-					
+
 					$coreTeam[] = [	'name'=>'Tiffany Anggot', 'title'=>'Cryptography Researcher', 'linkedin'=>'https://www.linkedin.com/in/tiffany-jel-a-367548147', 'image'=>'images/ieo/team/tiffany.jpg', 'text'=>'', ];
 				?>
 				<div class="row pt-5 justify-content-center">
