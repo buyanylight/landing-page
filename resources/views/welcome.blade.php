@@ -65,7 +65,7 @@
         </div>
     </div>
 </section>
-<section class="section-2" style="height: auto;">  
+<section class="section-2" style="{{ ($agent->is('IE')) ? '' : 'height: auto' }}">  
     <div class="container h-100">
         <div class="w-100 card all-cards" >
             <div class="card-body d-flex justify-content-center"style=" {{ ($agent->is('IE')) ? 'display:block !important;' : '' }}">
@@ -237,7 +237,7 @@
                         <div class="card-text text-white p-2 pt-3">
                             <div class="row">
                                 <div class="col-md-6 d-inline-flex flex-column justify-content-between">
-                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="" width="100%">
+                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="" width="100%" style="{{ ($agent->is('IE')) ? 'height:100%' : '' }}">
                                     <p class="font-weight-bold text-center pt-4">
                                         $102
                                     </p>       
@@ -261,7 +261,7 @@
                             <div class="row">
                                 <div class="col-md-6 d-inline-flex flex-column justify-content-between">
                                 {{-- <div class="col-md-5"> --}}
-                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">
+                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="" style="{{ ($agent->is('IE')) ? 'height: 100%' : '' }}">
                                     <p class="font-weight-bold text-center pt-4">
                                         $6
                                     </p>        
@@ -286,7 +286,7 @@
                             <div class="row">
                                 <div class="col-md-6 d-inline-flex flex-column justify-content-between">
                                 {{-- <div class="col-md-5"> --}}
-                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">           
+                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="" style="{{ ($agent->is('IE')) ? 'height: 100%' : '' }}">           
                                     <p class="font-weight-bold text-center pt-4">
                                         $25
                                     </p> 
@@ -311,7 +311,7 @@
                             <div class="row">
                                 <div class="col-md-6 d-inline-flex flex-column justify-content-between">
                                 {{-- <div class="col-md-5"> --}}
-                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">
+                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="" style="{{ ($agent->is('IE')) ? 'height: 100%' : '' }}">
                                     <p class="font-weight-bold text-center pt-4">
                                         $3
                                     </p>        
@@ -336,7 +336,7 @@
                             <div class="row">
                                 <div class="col-md-6 d-inline-flex flex-column justify-content-between">
                                 {{-- <div class="col-md-5"> --}}
-                                	<img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">           
+                                	<img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="" style="{{ ($agent->is('IE')) ? 'height: 100%' : '' }}">           
                                     <p class="font-weight-bold text-center pt-4">
                                         $8
                                     </p>
@@ -361,7 +361,7 @@
                             <div class="row">
                                 <div class="col-md-6 d-inline-flex flex-column justify-content-between">
                                 {{-- <div class="col-md-5"> --}}
-                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">
+                                    <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="" style="{{ ($agent->is('IE')) ? 'height: 100%' : '' }}">
                                     <p class="font-weight-bold text-center pt-4">
                                         $67
                                     </p>           
@@ -386,7 +386,7 @@
                             <div class="row">
                                 <div class="col-md-6 d-inline-flex flex-column justify-content-between">
                                 {{-- <div class="col-md-5"> --}}
-                                <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="">
+                                <img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="" style="{{ ($agent->is('IE')) ? 'height: 100%' : '' }}">
                                     <p class="font-weight-bold text-center pt-4">
                                         $12
                                     </p>           
@@ -797,13 +797,13 @@
                                         <div class="card-header bg-black">
                                             <ul class="nav nav-pills card-header-pills nav-justified">
                                                 <li class="nav-item  border border-white rounded-0">
-                                                    <a class="nav-link text-white active rounded-0" id="mini-tab" data-toggle="tab" href="#mini" role="tab" aria-controls="mini" aria-selected="true">Mini</a>
+                                                    <a class="nav-link text-white active rounded-0" id="mini-tab" data-toggle="tab" href="#mini" role="tab" aria-controls="mini" aria-selected="true" style=" {{ ($agent->is('IE')) ? 'height: 100%; font-size: 12px' : '' }}">Mini</a>
                                                 </li>
                                                 <li class="nav-item border border-white rounded-0">
-                                                    <a class="nav-link text-white rounded-0" id="premium-tab" data-toggle="tab" href="#premium" role="tab" aria-controls="premium" aria-selected="true">Premium</a>
+                                                    <a class="nav-link text-white rounded-0" id="premium-tab" data-toggle="tab" href="#premium" role="tab" aria-controls="premium" aria-selected="true" style=" {{ ($agent->is('IE')) ? 'height: 100%; font-size: 12px' : '' }}">Premium</a>
                                                 </li>
                                                 <li class="nav-item border border-white rounded-0">
-                                                    <a class="nav-link text-white rounded-0" id="standard-tab" data-toggle="tab" href="#standard" role="tab" aria-controls="standard" aria-selected="true">Standard</a>
+                                                    <a class="nav-link text-white rounded-0" id="standard-tab" data-toggle="tab" href="#standard" role="tab" aria-controls="standard" aria-selected="true" style=" {{ ($agent->is('IE')) ? 'height: 100%; font-size: 12px' : '' }}">Standard</a>
                                                 </li>
                                             </ul>
                                         </div>
