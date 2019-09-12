@@ -62,14 +62,32 @@
 				</div>
 				<div class="videos mt-5">
 					<a data-fancybox 
+					style="background-image: url({{ Util::assetUrl('/images/ieo/bal-ieo.png') }}); background-size: 100%; border: solid 3px black" 
 					href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0" 
-					class="">
-						<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="">
+					class="video-link" >
+						<!-- <img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="" > -->
+						<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark">
+                            <div>
+                                <i class="fab fa-youtube"></i> 
+                                <span>
+                                    Play video
+                                </span>
+                            </div>
+                        </div>
 					</a>
 					<a data-fancybox 
+					style="background-image: url({{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}); background-size: 100%; border: solid 3px black"
 					href="https://www.youtube-nocookie.com/embed/5nMkricvzfc?rel=0" 
 					class="">
-						<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}" alt="">
+						<!-- <img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}" alt="" style="border: solid 3px black"> -->
+						<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark">
+                            <div>
+                                <i class="fab fa-youtube"></i> 
+                                <span>
+                                    Play video
+                                </span>
+                            </div>
+                        </div>
 					</a>
 				</div>
 			</div>
@@ -263,6 +281,16 @@
 						href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0" 
 						class="">
 							<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="">
+							<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="    position: relative;
+    bottom: 35px;
+    left: 50px;">
+                            <div>
+                                <i class="fab fa-youtube"></i> 
+                                <span>
+                                    Play video
+                                </span>
+                            </div>
+                        </div>
 						</a>
 							
 					</div>
@@ -283,6 +311,16 @@
 						href="https://www.youtube-nocookie.com/embed/5nMkricvzfc?rel=0" 
 						class="">
 							<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}" alt="">
+							<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="    position: relative;
+    bottom: 35px;
+    left: 50px;">
+                            <div>
+                                <i class="fab fa-youtube"></i> 
+                                <span>
+                                    Play video
+                                </span>
+                            </div>
+                        </div>
 						</a>
 					</div>
 				</div>

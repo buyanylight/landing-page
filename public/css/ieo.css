@@ -11431,7 +11431,7 @@ footer {
 
 .section-1 .videos a {
   width: 50%;
-  height: 180px;
+  height: 170px;
   overflow: hidden;
   margin-right: 10px;
   padding: 0;
@@ -11501,6 +11501,7 @@ footer {
 
 .vision-mission .video {
   width: 90%;
+  border-radius: 35px;
 }
 
 .whychoosebaltoken-item > div > img {
