@@ -50,7 +50,7 @@
 
 					<div class="pt-2">
 						{{-- <p class="small-desc text-white">
-							BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowd funding campaign aimed at raising funds for the development of a decentralized.
+							BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowdfunding campaign aimed at raising funds for the development of a decentralized.
 						</p> --}}
 					</div>
 				</div>

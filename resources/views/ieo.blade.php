@@ -50,8 +50,8 @@
 					</span>
 					<br> 
 					<p class="small-desc">
-						{{-- BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowd funding campaign aimed at raising funds for the development of a decentralized. --}}
-						The BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowd funding campaign to raise funds for the development of a blockchain deployed, decentralized marketplace for lighting products, and the expansion of the existing BAL Network.
+						{{-- BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowdfunding campaign aimed at raising funds for the development of a decentralized. --}}
+						The BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowdfunding campaign to raise funds for the development of a blockchain deployed, decentralized marketplace for lighting products, and the expansion of the existing BAL Network.
 					</p>					
 				</h3>
 
