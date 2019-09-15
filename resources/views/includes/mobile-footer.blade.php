@@ -1,7 +1,7 @@
 <footer class="bg-light" id="footer">
 	<div class="container">
 		<div class="social icons pt-4 pb-4">
-			<div class="row pb-3">
+			<div class="row pb-3 text-center">
 				<div class="col one-link">
        	        	<a href="http://www.youtube.com/c/BuyAnyLight" class="text-dark" target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
@@ -18,9 +18,9 @@
                     <a href="https://github.com/buyanylight" class="text-dark" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
-            <div class="row">
+            <div class="row text-center">
                 <div class="col one-link">
-                    <a href="https://www.reddit.com/user/BuyAnyLight/" class="text-dark" target="_blank"><i class="fab fa-reddit-alien"></i></a>
+                    <a href="https://www.reddit.com/r/BuyAnyLight/" class="text-dark" target="_blank"><i class="fab fa-reddit-alien"></i></a>
                 </div>
                 <div class="col one-link">
                     <a href="https://bitcointalk.org/index.php?action=profile;u=2636303;sa=summary" class="text-dark" target="_blank"><i class="fab fa-bitcoin"></i></a>
@@ -29,7 +29,7 @@
                     <a href="https://t.me/buyanylight" class="text-dark" target="_blank"><i class="fab fa-telegram-plane"></i></a>
                 </div>
                 <div class="col one-link">
-                    <a href="https://medium.com/@infobuyanylight" class="text-dark" target="_blank"><i class="fab fa-medium-m"></i></a>
+                    <a href="https://medium.com/buyanylight" class="text-dark" target="_blank"><i class="fab fa-medium-m"></i></a>
                 </div>
                 <div class="col one-link">
                     <a href="https://www.linkedin.com/company/buyanylight/" class="text-dark" target="_blank"><i class="fab fa-linkedin-in"></i></a>
