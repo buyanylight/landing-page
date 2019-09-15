@@ -743,11 +743,24 @@
 	      						<div class="one-map pt-4 text-left"> 
 	      							<div class="card mb-2"><div class="card-body">On-chain logistic, freight tracking functionality implemented</div></div>
 									<div class="card mb-2"><div class="card-body">AI based Smart Contracts implementation</div></div>
+									<div class="card mb-2"><div class="card-body">Development of BAL Exchange for enabling digital asset trading</div></div>
+									<div class="card mb-2"><div class="card-body">Development of BAL Custodial Platform</div></div>
 	      						</div>
 	    					</div>
     					</div>
   					</li>
-  					
+  					<li class="li complete">
+						<div>
+	    					<div class="timestamp">
+	      						<span class="author text-white pb-4">2023 - 2024</span>
+	    					</div>
+	    					<div class="status">
+	      						<div class="one-map pt-4 text-left"> 
+									<div class="card mb-2"><div class="card-body">Development of BAL Tokenization Platform</div></div>
+	      						</div>
+	    					</div>
+    					</div>
+  					</li>
  				</ul>  
 				{{-- ////////////////////////////////////////////////////////////////// --}}
 				{{-- roadmap --}}
