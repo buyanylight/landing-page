@@ -67,7 +67,7 @@
 						type="button" 
 						target="_blank" 
 						class="btn btn-ieo-middle">
-							<a href="{{ route('coming_soon') }}" 
+							<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" 
 							target="_blank">
 								White Paper
 							</a>
