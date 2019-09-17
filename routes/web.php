@@ -20,6 +20,7 @@ Route::get('/buyer-faq', 'PageController@buyer_faq')->name('buyer-faq');
 Route::get('/seller-faq', 'PageController@seller_faq')->name('seller-faq');
 Route::get('/contact', 'PageController@contact')->name('contact');
 Route::get('/ieo', 'PageController@ieo')->name('ieo');
+Route::get('/buy-tokens', 'TokenController@buy_tokens')->name('buy-tokens');
 
 Route::get('/whitepaper', 'PageController@soon')->name('whitepaper');
 Route::get('/yellowpaper', 'PageController@soon')->name('yellowpaper');
