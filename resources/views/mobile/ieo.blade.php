@@ -279,7 +279,7 @@
 				href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0" 
 				class="">
 					<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="">
-					<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="position: relative; bottom: 30px; left: 30px;">
+					<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="position: relative; bottom: 30px; left: 30px; width: 50%;">
                         <div>
                         	<i class="fab fa-youtube"></i> 
                             <span>
@@ -313,7 +313,7 @@
 				href="https://www.youtube-nocookie.com/embed/5nMkricvzfc?rel=0" 
 				class="">
 					<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}" alt="">
-					<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="position: relative; bottom: 30px; left: 30px;">
+					<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="position: relative; bottom: 30px; left: 30px; width: 50%;">
                         <div>
                         	<i class="fab fa-youtube"></i> 
                             <span>
