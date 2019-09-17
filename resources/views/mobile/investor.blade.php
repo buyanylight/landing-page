@@ -1,8 +1,8 @@
 @extends('layouts.mobile-layout')
 
 @section('content')
-<div style="position: relative;  z-index: 5">
-            <!-- Position toasts -->
+<!-- <div style="position: relative;  z-index: 5">
+            Position toasts
     <div style="position: absolute; top: 70px; left:10%; min-width: 300px;">
         <div class="toast" data-autohide="false">
             <div class="toast-header">
@@ -24,7 +24,7 @@
             @endif
         </div>
     </div>    
-</div>
+</div> -->
 <div class="section14 pt-5 pb-5 all-contents">
 	<div class="section14-contents d-flex align-items-center">
 		<div class="container text-white">
