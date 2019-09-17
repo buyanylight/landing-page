@@ -11475,7 +11475,7 @@ nav .dropdown-toggle::after {
 .section14-contents {
   background: url("/images/mobile_bg/investor_mobile.jpg");
   height: 30vh;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .section12 {
