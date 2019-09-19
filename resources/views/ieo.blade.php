@@ -180,7 +180,7 @@
 							</div>
 							<div class="pt-3">
 								<small>
-									<a href="{{ Util::assetUrl('bal_certificate.pdf')}}" class="text-white">Audited by Blockchain Consilium</a>
+									<a href="{{ Util::assetUrl('bal_certificate.pdf')}}" target="_blank" class="text-white">Audited by Blockchain Consilium</a>
 								</small>
 							</div>
 						</div>
