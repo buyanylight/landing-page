@@ -90,10 +90,20 @@
                         </div>
 					</a>
 				</div>
+				<div class="pt-4">
+					<h4>
+						View on Etherscan
+					</h4>
+					<div class="pt-2">
+						<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-ieo">Token Contract</a>
+						<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-ieo">Token Owner </a>
+						<a href="#allocation" class="btn btn-ieo">Token Allocation</a>
+					</div>
+				</div>
 			</div>
 			<div class="col-md-5">
 				<div class="countdown">
-					<div class="d-flex align-items-center h-100" style="padding: 20px; padding-bottom: 3rem;">
+					<div class="d-flex align-items-center h-100" style="padding: 20px; padding-bottom: 2rem;">
 						<div class="w-100">	
 							{{-- <h4 class="text-center text-white"><b>IEO PRE SALE</b></h4> --}}
 							<div class="w-100 pt-2">
@@ -167,6 +177,11 @@
 										</div>
 									</div>
 								</div>
+							</div>
+							<div class="pt-3">
+								<small>
+									<a href="" class="text-white">Audited by Blockchain Consilium</a>
+								</small>
 							</div>
 						</div>
 					</div>
@@ -1035,7 +1050,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="pt-5 pb-5">
+	<div class="pt-5 pb-5" id="allocation">
 		<div class="container">
 			<h3 class="text-left">
 				<strong>
@@ -1066,7 +1081,8 @@
 											</span>
 											<br>	 
 											<span>
-												Seed Investor Allocation
+												Seed Investor Allocation <br>
+												<a href="https://etherscan.io/address/0xe8c066E2A338e57d220C34306B9B1f4e2490DFf3">View Allocation</a>
 											</span>	
 										</div>
 									</div>
@@ -1082,7 +1098,8 @@
 											</span>
 											<br>	 
 											<span>
-												Private Round, Angel Investor
+												Private Round, Angel Investor<br>
+												<a href="https://etherscan.io/address/0x56d700c93184F1A440eF49A366f5532AB2611b4D">View Allocation</a>
 											</span>	
 										</div>
 									</div>
@@ -1098,7 +1115,8 @@
 											</span>
 											<br>	 
 											<span>
-												Main Sale Event
+												Main Sale Event<br>
+												<a href="https://etherscan.io/address/0x955a5d4f04e7Ce70b2783D84eA38A483ED00DdEf">View Allocation</a>
 											</span>	
 										</div>
 									</div>
@@ -1114,7 +1132,8 @@
 											</span>
 											<br>	 
 											<span>
-												Advisory Board Allocation
+												Advisory Board Allocation<br>
+												<a href="https://etherscan.io/address/0xbDC7B020FCFbB08877cF7af9F78591D06F881BAf">View Allocation</a>
 											</span>	
 										</div>
 									</div>
@@ -1135,7 +1154,8 @@
 											</span>
 											<br>	 
 											<span>
-												Bounty and Airdrop
+												Bounty and Airdrop<br>
+												<a href="https://etherscan.io/address/0x997C48bF57fa3234ee718D0e3d6D0AD496aC5E83">View Allocation</a>
 											</span>	
 										</div>
 									</div>
@@ -1151,7 +1171,8 @@
 											</span>
 											<br>	 
 											<span>
-												Team and Management
+												Team and Management<br>
+												<a href="https://etherscan.io/address/0x0482AeFB13627A10b5489a89fE7d6F49Eb62B9B2">View Allocation</a>
 											</span>	
 										</div>
 									</div>
@@ -1167,7 +1188,8 @@
 											</span>
 											<br>	 
 											<span>
-												Reserve
+												Reserve<br>
+												<a href="https://etherscan.io/address/0x412ca7c3ed4Fe0d213C08443E261224b5EEd6222">View Allocation</a>
 											</span>	
 										</div>
 									</div>
