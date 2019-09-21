@@ -84,6 +84,35 @@
 
 					</div>
 				</div>
+				<div class="col-12 pt-3">
+					<div class="btn-group" role="group" aria-label="Basic example">
+						<button type="button"class="btn btn-ieo-left">
+							<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" 
+							target="_blank">
+								Token Contract								
+							</a>
+						</button>
+						
+						<button 
+						type="button" 
+						target="_blank" 
+						class="btn btn-ieo-middle">
+							<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" 
+							target="_blank">
+								Token Owner
+							</a>
+						</button>
+
+						<button 
+						type="button" 
+						class="btn btn-ieo-right">
+							<a href="#allocation">						
+								Token Allocation
+							</a>
+						</button>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -168,6 +197,11 @@
 							<div id="seconds1" class="timer-item d-inline-block"></div>
 						</div>
 					</div>
+				</div>
+				<div class="pt-3">
+					<small>
+						<a href="{{ Util::assetUrl('bal_certificate.pdf')}}" target="_blank" class="text-white">Audited by Blockchain Consilium</a>
+					</small>
 				</div>
 			</div>
 		</div>
@@ -942,7 +976,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="pt-5">
+			<div class="pt-5" id="allocation">
 				<h3 class="text-center">
 					<b>
 						<span class="header-text">Token</span>
@@ -963,11 +997,12 @@
 										</div>
 										<div class="d-inline-block pl-2">
 											<span> 
-												20%
+												20% (11 mil)
 											</span>
 											<br>	 
 											<span>
-												Seed Investor Allocation
+												Seed Investor Allocation <br>
+												<a target="_blank" href="https://etherscan.io/address/0xe8c066E2A338e57d220C34306B9B1f4e2490DFf3#tokentxns">View Allocation</a>
 											</span>	
 										</div>
 									</div>
@@ -979,11 +1014,12 @@
 										</div>
 										<div class="d-inline-block pl-2">
 											<span> 
-												10%
+												10% (5.5 mil)
 											</span>
 											<br>	 
 											<span>
-												Private Round, Angel Investor
+												Private Round, Angel Investor<br>
+												<a target="_blank" href="https://etherscan.io/address/0x56d700c93184F1A440eF49A366f5532AB2611b4D#tokentxns">View Allocation</a>
 											</span>	
 										</div>
 									</div>
@@ -995,11 +1031,12 @@
 										</div>
 										<div class="d-inline-block pl-2">
 											<span> 
-												30%
+												30% (16.5 mil)
 											</span>
 											<br>	 
 											<span>
-												Main Sale Event
+												Main Sale Event<br>
+												<a target="_blank" href="https://etherscan.io/address/0x955a5d4f04e7Ce70b2783D84eA38A483ED00DdEf#tokentxns">View Allocation</a>
 											</span>	
 										</div>
 									</div>
@@ -1011,11 +1048,12 @@
 										</div>
 										<div class="d-inline-block pl-2">
 											<span> 
-												10%
+												10% (5.5 mil)
 											</span>
 											<br>	 
 											<span>
-												Advisory Board Allocation
+												Advisory Board Allocation<br>
+												<a target="_blank" href="https://etherscan.io/address/0xbDC7B020FCFbB08877cF7af9F78591D06F881BAf#tokentxns">View Allocation</a>
 											</span>	
 										</div>
 									</div>
@@ -1031,11 +1069,12 @@
 										</div>
 										<div class="d-inline-block pl-2">
 											<span> 
-												5%
+												5% (2.75 mil)
 											</span>
 											<br>	 
 											<span>
-												Bounty and Airdrop
+												Bounty and Airdrop<br>
+												<a target="_blank" href="https://etherscan.io/address/0x997C48bF57fa3234ee718D0e3d6D0AD496aC5E83#tokentxns">View Allocation</a>
 											</span>	
 										</div>
 									</div>
@@ -1047,11 +1086,12 @@
 										</div>
 										<div class="d-inline-block pl-2">
 											<span> 
-												10%
+												10% (5.5 mil)
 											</span>
 											<br>	 
 											<span>
-												Team and Management
+												Team and Management<br>
+												<a target="_blank" href="https://etherscan.io/address/0x0482AeFB13627A10b5489a89fE7d6F49Eb62B9B2#tokentxns">View Allocation</a>
 											</span>	
 										</div>
 									</div>
@@ -1063,11 +1103,12 @@
 										</div>
 										<div class="d-inline-block pl-2">
 											<span> 
-												15%
+												15% (8.25 mil)
 											</span>
 											<br>	 
 											<span>
-												Reserve
+												Reserve<br>
+												<a target="_blank" href="https://etherscan.io/address/0x412ca7c3ed4Fe0d213C08443E261224b5EEd6222#tokentxns">View Allocation</a>
 											</span>	
 										</div>
 									</div>
