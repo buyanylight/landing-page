@@ -18,8 +18,6 @@ class TokenController extends Controller
 				$all_curr[$tkey] = $tvalue;
 				$all_curr[$tkey]['bal_rate'] = number_format($tvalue['rate'] / 5, 8);
 				$all_curr[$tkey]['time'] = date('d-M-y H:i', strtotime($all_curr[$tkey]['time'])) . ' UTC' ;
-
-
 			}
 		}
 
@@ -31,24 +29,97 @@ class TokenController extends Controller
 		);
 	}
 
-	public function buy_tokens(Request $request){
+	public function buy_tokens(Request $r){
 
-		$credit = $this->PostAPI('https://foloosi.com/api/v1/api/initialize-setup', 
-			array
-				'redirect_url' => '/buy-tokens',
-				'transaction_amount' => request()->USD_value,
-				'currency' => 'USD'
-			]
-		);
 
-			return response()
-				->header('merchant_key', 'test_$2y$10$.0TFlqFxM7y.3GoHkDIqWeO-2bT2eBz8t86PVUkHwH9zMghDm5PLi');
+		$curr = explode(' ', $r['currency']);
+
+
+		if ($curr[1] == 'USD' || $curr[1] == 'EUR') {
+		// dd($curr[1]);
+			// $faloosi = [];
+			$client = new \GuzzleHttp\Client();
+			$url = "https://foloosi.com/api/v1/api/initialize-setup";
+
+
+			$myBody = array(
+				'redirect_url' => '/buy-token', 
+				'transaction_amount' => $curr[0],
+				'currency' => $curr[1]
+			);	
+
+			$request = $client->request('POST', $url, [
+				'headers' =>  [
+					'merchant_key' => 'test_$2y$10$.0TFlqFxM7y.3GoHkDIqWeO-2bT2eBz8t86PVUkHwH9zMghDm5PLi',
+				],
+				'form_params' => $myBody
+			]);
+
+			$response = json_decode($request->getBody(), true);
+			$response_data = $response['data'];
+
+			return view('buy-token', [
+				'response' => $response_data['reference_token'],
+				'curr' => 'credit'
+			]);
+
+
+		} elseif ($curr[1] == 'BTC') {
+			return view('buy-token', [
+				'amt' => $curr[0],
+				'curr' => 'BTC'
+			]);
+		} else {
+			return view('buy-token', [
+				'amt' => $curr[0],
+				'curr' => 'ETH'
+			]);
+		}
+
 	}
 
 
-	public function payments(){
+	public function kyc(Request $request){
 
-		return view('buy-token');
+		// dd($request);
+
+		$this->validate($request, [
+                'transaction_id' => 'required',
+                'receiver_id' => 'required',
+            ]);
+            \Mail::send('mail.token',
+            array(
+                'transaction_id' => $request->get('transaction_id'),
+                'receiver_id' => $request->get('receiver_id'),
+            ), function($message) use ($request)
+           	{
+                $message->from('no-reply@buyanylight.com');
+                $message->to('info@buyanylight.com', 'Admin')->subject('New BAL Token Transaction');
+            });
+
+
+		return view('kyc')->with('success');
+	}
+
+		public function kyc_card(Request $request){
+
+		// dd($request);
+
+		$this->validate($request, [
+                'receiver_id' => 'required',
+            ]);
+            \Mail::send('mail.token-card',
+            array(
+                
+                'receiver_id' => $request->get('receiver_id'),
+            ), function($message) use ($request)
+           	{
+                $message->from('no-reply@buyanylight.com');
+                $message->to('info@buyanylight.com', 'Admin')->subject('New BAL Token Transaction');
+            });
+
+
+		return view('kyc');
 	}
 
 
