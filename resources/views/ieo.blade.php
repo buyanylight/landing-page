@@ -58,7 +58,7 @@
 				<div class="pt-1 pagers-paper">
 					<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>					
 					<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}"  target="_blank" class="btn btn-ieo">White Paper</a>
-					<a href="{{ route('yellowpaper') }}" class="btn btn-ieo">Yellow Paper</a>
+					<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo">Yellow Paper</a>
 				</div>
 				<div class="videos mt-5">
 					<a data-fancybox 
@@ -258,7 +258,7 @@
 			<div class="buttons pt-3">
 				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>
 				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-ieo ml-3">White Paper</a>
-				<a href="/coming-soon" class="btn btn-ieo ml-3">Yellow Paper</a>
+				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3">Yellow Paper</a>
 			</div>
 		</div>
 	</div>
@@ -1212,7 +1212,7 @@
 			<div class="buttons pt-3">
 				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>
 				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-ieo ml-3">White Paper</a>
-				<a href="/coming-soon" class="btn btn-ieo ml-3">Yellow Paper</a>
+				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3">Yellow Paper</a>
 			</div>
 		</div>
 	</div>
