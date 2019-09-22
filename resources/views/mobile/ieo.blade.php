@@ -76,7 +76,7 @@
 						<button 
 						type="button" 
 						class="btn btn-ieo-right">
-							<a href="{{ route('coming_soon') }}" 
+							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" 
 							target="_blank">						
 								Yellow Paper
 							</a>
