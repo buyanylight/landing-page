@@ -311,7 +311,10 @@
 	  												Amount to be paid (BTC):
 	  											</b>
 	  										</td>
-	  										<td>{{ $amt }}</td>
+	  										<td>
+	  											{{ $amt }}
+	  											<input type="hidden" name="amount" value="{{ $amt }}">
+	  										</td>
 	  									</tr>
 	  									<tr>
 	  										<td style="width: 190px; padding-top: 10px; padding-bottom: 10px;">
@@ -325,8 +328,16 @@
 	  									</tr>
 	  									<form action="/kyc" method="post" enctype="multipart/form-data">
 		  								@csrf()
-		  								<tr style="vertical-align: text-top; padding-top: 10px; border-top: 1px solid black;" >
-		  									<td>
+		  								<tr style="border-top: 1px solid black;">
+		  									<td style="vertical-align: text-top; padding-top: 10px;">
+		  										<b>Email Id:</b>
+		  									</td>
+		  									<td style="padding-top: 10px;">
+		  										<input type="email" name="email_id" class="form-control" placeholder="Email ID" required="required">
+		  									</td>
+		  								</tr>
+		  								<tr style="border-top: 1px solid black;" >
+		  									<td style="vertical-align: text-top; padding-top: 10px;">
 		  										<b>
 		  											Transaction ID: 
 		  										</b>
@@ -343,6 +354,8 @@
 		  									</td>
 		  									<td style="padding-top: 10px;">
 		  										<input type="type" name="receiver_id" class="form-control" placeholder="Your receiver ID" required="required">
+		  										<input type="hidden" name="amount" value="{{ $amt }} BTC">
+
 		  										<button type="submit" class="btn btn-sm btn-primary mt-2">
 		  											Submit
 		  										</button>
@@ -365,14 +378,17 @@
 		  							<small>
 		  								Sending coin or token other than ETH to this address may result in the loss of your deposit.
 		  							</small>
-		  							<table class="mt-3">
+		  							<table class="mt-3 w-100">
 		  								<tr>
 		  									<td>
 		  										<b>
 		  											Amount to be paid (ETH):
 		  										</b>
 		  									</td>
-		  									<td>{{ $amt }}</td>
+		  									<td>
+		  										{{ $amt }}
+		  									</td>
+
 		  								</tr>
 		  								<tr>
 		  									<td style="width: 200px; padding-top:10px; padding-bottom:10px; vertical-align: text-top;">
@@ -386,8 +402,16 @@
 		  								</tr>
 		  								<form action="/kyc" method="post" enctype="multipart/form-data">
 		  								@csrf()
-		  								<tr style="vertical-align: text-top; padding-top: 10px; border-top: 1px solid black;">
-		  									<td>
+		  								<tr style="border-top: 1px solid black;">
+		  									<td style="vertical-align: text-top; padding-top: 10px;">
+		  										<b>Email Id:</b>
+		  									</td>
+		  									<td style="padding-top: 10px;">
+		  										<input type="type" name="email_id" class="form-control" placeholder="Email ID" required="required">
+		  									</td>
+		  								</tr>
+		  								<tr>
+		  									<td style="vertical-align: text-top; padding-top: 10px;"> 
 		  										<b>
 		  											Transaction ID: 
 		  										</b>
@@ -404,6 +428,7 @@
 		  									</td>
 		  									<td style="padding-top: 10px;">
 		  										<input type="type" name="receiver_id" class="form-control" placeholder="Your receiver ID" required="required">
+		  										<input type="hidden" name="amount" value="{{ $amt }} ETH">
 		  										<button type="submit" class="btn btn-sm btn-primary mt-2">
 		  											Submit
 		  										</button>

@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "country-json": "^1.0.9",
         "magnific-popup": "^1.1.0"
     }
 }
