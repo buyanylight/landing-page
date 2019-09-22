@@ -304,7 +304,7 @@
 		  							<small>
 	  									Sending coin or token other than BTC to this address may result in the loss of your deposit.
 	  								</small>
-	  								<table class="mt-3">
+	  								<table class="mt-3 w-100">
 	  									<tr>
 	  										<td>
 	  											<b>
@@ -323,7 +323,7 @@
 	  											</b>
 	  										</td>
 	  										<td>
-	  											3Kbn178ZEKmuGCrTjL1yUWF2jW8FvxNfGb
+	  											1Ep8bLyLkwmXGMHKYrFdmRG6SRvC1179nV
 	  										</td>
 	  									</tr>
 	  									<form action="/kyc" method="post" enctype="multipart/form-data">
@@ -336,14 +336,14 @@
 		  										<input type="email" name="email_id" class="form-control" placeholder="Email ID" required="required">
 		  									</td>
 		  								</tr>
-		  								<tr style="border-top: 1px solid black;" >
+		  								<tr>
 		  									<td style="vertical-align: text-top; padding-top: 10px;">
 		  										<b>
-		  											Transaction ID: 
+		  											Transaction Hash: 
 		  										</b>
 		  									</td>
 		  									<td style="padding-top: 10px;">
-		  										<input type="type" name="transaction_id" class="form-control" placeholder="Transaction ID" required="required">
+		  										<input type="text" name="transaction_id" class="form-control" placeholder="Transaction Hash" required="required"  pattern=".{64,}" required title="Please enter the correct address">
 		  									</td>
 		  								</tr>
 		  								<tr>
@@ -353,7 +353,7 @@
 		  										</b>
 		  									</td>
 		  									<td style="padding-top: 10px;">
-		  										<input type="type" name="receiver_id" class="form-control" placeholder="Your receiver ID" required="required">
+		  										<input type="text" name="receiver_id" class="form-control" placeholder="To receive your BAL Tokens, please provide your receiver address"  pattern=".{40,42}" required title="Please enter the correct address">
 		  										<input type="hidden" name="amount" value="{{ $amt }} BTC">
 
 		  										<button type="submit" class="btn btn-sm btn-primary mt-2">
@@ -397,7 +397,7 @@
 		  										</b>
 		  									</td>
 		  									<td style="padding-bottom: 10px; padding-top: 10px;">
-		  										0xbF48C5D01832D4974CA394F156308fe01aa3BBB0
+		  										0x0b60500e43d0dd3b92acb681133d66e4f21e81bf
 		  									</td>
 		  								</tr>
 		  								<form action="/kyc" method="post" enctype="multipart/form-data">
@@ -407,17 +407,17 @@
 		  										<b>Email Id:</b>
 		  									</td>
 		  									<td style="padding-top: 10px;">
-		  										<input type="type" name="email_id" class="form-control" placeholder="Email ID" required="required">
+		  										<input type="email" name="email_id" class="form-control" placeholder="Email ID" required="required">
 		  									</td>
 		  								</tr>
 		  								<tr>
 		  									<td style="vertical-align: text-top; padding-top: 10px;"> 
 		  										<b>
-		  											Transaction ID: 
+		  											Transaction Hash: 
 		  										</b>
 		  									</td>
 		  									<td style="padding-top: 10px;">
-		  										<input type="type" name="transaction_id" class="form-control" placeholder="Transaction ID" required="required">
+		  										<input type="text" name="transaction_id" class="form-control" placeholder="Enter Transaction Hash" pattern=".{66,}" required title="Please enter the correct address">
 		  									</td>
 		  								</tr>
 		  								<tr>
@@ -427,7 +427,7 @@
 		  										</b>
 		  									</td>
 		  									<td style="padding-top: 10px;">
-		  										<input type="type" name="receiver_id" class="form-control" placeholder="Your receiver ID" required="required">
+		  										<input type="text" name="receiver_id" class="form-control" placeholder="To receive your BAL Tokens, please provide your receiver address" pattern=".{40,42}" required title="Please enter the correct address">
 		  										<input type="hidden" name="amount" value="{{ $amt }} ETH">
 		  										<button type="submit" class="btn btn-sm btn-primary mt-2">
 		  											Submit

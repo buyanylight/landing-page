@@ -336,21 +336,35 @@ class TokenController extends Controller
         ]);
 
 
-		// dd($transaction['amount']);
+		// dd($transaction['email_id']);
 
         \Mail::send('mail.token',
         array(
         	'amount' => $transaction['amount'],
             'transaction_id' => $transaction['transaction_id'],
             'receiver_id' => $transaction['receiver_id'],
+            'email_id' => $transaction['email_id'],
        	), function($message) use ($request){
             $message->from('no-reply@buyanylight.com');
            	$message->to('rizvi.almanilighting@gmail.com', 'Admin')->subject('New BAL Token Transaction');
         });
 
 
+        \Mail::send('mail.token-user',
+        array(
+        	'amount' => $transaction['amount'],
+            'transaction_id' => $transaction['transaction_id'],
+            'receiver_id' => $transaction['receiver_id'],
+            'email_id' => $transaction['email_id'],
+       	), function($message) use ($request){
+            $message->from('no-reply@buyanylight.com');
+           	$message->to($request->get('email_id'), 'Investor')->subject('Your BAL Token Transaction');
+        });
+
+
 		return view('kyc', [
-			'countries' => $countries
+			'countries' => $countries,
+			'email_id' => $transaction['email_id']
 		])->with('success');
 	}
 
@@ -609,6 +623,59 @@ class TokenController extends Controller
 
 	}
 
+
+	public function kyc_confirm(Request $request){
+
+
+
+
+		$validated_attr = request()->validate([
+            'user_name' => ['required', 'min:3'],
+            'email_id' => ['required', 'min:3'],
+            'country' => ['required'],
+            'user_id' => ['required'],
+            'user_id.*' => ['mimes:jpeg,png,jpg,gif' , 'required'],
+            'user_selfie_id' => ['required'],
+            'user_selfie_id.*' => ['mimes:jpeg,png,jpg,gif', 'required'],
+        ]);
+
+		// dd($validated_attr);
+
+		if (request()->hasFile('user_selfie_id')) {
+			$name = explode(' ', $validated_attr['user_name']);
+
+
+        	$file_name = date('YmdHis') . '-' .$name[0].'-'.request()->file('user_selfie_id')->getClientOriginalName() ;
+         request()->file('user_selfie_id')->move(public_path() . '/uploads/', $file_name);  
+        }
+
+		if (request()->hasFile('user_id')) {
+			$name = explode(' ', $validated_attr['user_name']);
+        	$selfie_file_name = date('YmdHis') . '-' .$name[0].'-'. request()->file('user_id')->getClientOriginalName();
+        	 request()->file('user_id')->move(public_path() . '/uploads/', $file_name);  
+        }
+
+         \Mail::send('mail.kyc-confirm',
+        array(
+        	'name' => $validated_attr['user_name'],
+            'email_id' => $validated_attr['email_id'],
+            'country' => $validated_attr['country'],
+            'user_id' => url('uploads/'. $file_name),
+            'selfie_user_id' => url('uploads/'. $selfie_file_name),
+       	), function($message) use ($request){
+            $message->from('no-reply@buyanylight.com');
+           	$message->to('rizvi.almanilighting@gmail.com', 'Admin')->subject('New KYC verification');
+        });
+
+
+
+
+        return view('ieo');
+
+
+
+
+	}
 
 
 

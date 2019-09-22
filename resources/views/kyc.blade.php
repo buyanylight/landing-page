@@ -13,7 +13,8 @@
 			<div class="card mt-3">
 				<div class="card-body">
 					<div>
-						<form>
+						<form action="/kyc-confirm" method="post" enctype="multipart/form-data">
+		  					@csrf()
 							<div class="form-group row">
 								<label class="col-sm-2 col-form-label"><b>Name:</b> </label>
 								<div class="col-sm-10">
@@ -23,7 +24,7 @@
 							<div class="form-group row">
 								<label class="col-sm-2 col-form-label"><b>Email ID:</b> </label>
 								<div class="col-sm-10">
-									<input type="email" name="email_id" class="form-control">
+									<input type="email" name="email_id" class="form-control" value="{{ $email_id }}">
 								</div>
 							</div>
 							<div class="form-group row">
@@ -40,7 +41,7 @@
 								<label class="col-sm-2 col-form-label"><b>Upload ID:</b> </label>
 								<div class="col-sm-10">
 									<div class="custom-file">
-		    							<input type="file" class="custom-file-input" id="validatedCustomFile" required>
+		    							<input type="file" class="custom-file-input"  name="user_id" id="validatedCustomFile" required>
 		    							<label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
 		 							</div>
 								</div>
@@ -49,7 +50,7 @@
 								<label class="col-sm-2 col-form-label"><b>Upload ID with selfie :</b> </label>
 								<div class="col-sm-10">
 									<div class="custom-file">
-		    							<input type="file" class="custom-file-input" id="validatedCustomFile" required>
+		    							<input type="file" class="custom-file-input" name="user_selfie_id" required>
 		    							<label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
 		 							</div>
 								</div>
