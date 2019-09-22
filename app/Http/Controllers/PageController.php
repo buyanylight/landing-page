@@ -86,9 +86,6 @@ class PageController extends Controller
         } else {
             return view('ieo');
         }
-
-
-
     }
 
      public function soon ()
