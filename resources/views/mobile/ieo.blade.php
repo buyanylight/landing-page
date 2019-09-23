@@ -111,11 +111,16 @@
 							</a>
 						</button>
 
+						
+
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+			
 
 	{{-- <div class="bg-ieo countdown rounded-circle">
 		<div class="d-flex align-items-center h-100" style="padding: 20px; padding-bottom: 5rem;">
@@ -201,6 +206,11 @@
 				<div class="pt-3">
 					<small>
 						<a href="{{ Util::assetUrl('bal_certificate.pdf')}}" target="_blank" class="text-white">Audited by Blockchain Consilium</a>
+						<br>
+						<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" 
+							target="_blank" class="text-white">						
+								Token Sale Agreement
+							</a>
 					</small>
 				</div>
 			</div>
