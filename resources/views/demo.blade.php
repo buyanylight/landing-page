@@ -13,15 +13,22 @@
 			<div class="card mt-3">
 				<div class="card-body">
 					<div>
-						<form>
+						<p>
+							Please complete the form for us to verify and send you the BAL tokens
+						</p>
+						<p>
+							In order to make it easier and quicker for us to verify, Please rename the file you upload to: ID.jpg / SELFIE_ID.jpg. Please avoid using spaces
+						</p>
+						<form action="/kyc-confirm" method="post" enctype="multipart/form-data">
+		  					@csrf()
 							<div class="form-group row">
 								<label class="col-sm-2 col-form-label"><b>Name:</b> </label>
 								<div class="col-sm-10">
-									<input type="text" name="user_name" class="form-control">
+									<input type="text" name="user_name" class="form-control"  placeholder="Full name">
 								</div>
 							</div>
 							<div class="form-group row">
-								<label class="col-sm-2 col-form-label"><b>Email ID:</b> </label>
+								<label class="col-sm-2 col-form-label"><b>Email:</b> </label>
 								<div class="col-sm-10">
 									<input type="email" name="email_id" class="form-control">
 								</div>
@@ -30,27 +37,32 @@
 								<label class="col-sm-2 col-form-label"><b>Country:</b> </label>
 								<div class="col-sm-10">
 									<select name="country" class="form-control">
+										<option disabled selected>Select Country</option>
 									@foreach($countries as $country)
 										<option value="{{ $country }}"> {{ $country }}</option>
 									@endforeach
 									</select>
 								</div>
 							</div>
-							<div class="form-group row">
+							<div class="form-group row was-validated">
 								<label class="col-sm-2 col-form-label"><b>Upload ID:</b> </label>
 								<div class="col-sm-10">
 									<div class="custom-file">
-		    							<input type="file" class="custom-file-input" id="validatedCustomFile" required>
-		    							<label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+		    							<input type="file" class="custom-file-input"  name="user_id" id="validatedCustomFile" required>
+		    							<label class="custom-file-label" for="validatedCustomFile">Choose file</label>
+		    							<div class="invalid-feedback">Please upload an Image</div>
+                    					<div class="valid-feedback">Image has been uploaded</div>
 		 							</div>
 								</div>
 							</div>
-							<div class="form-group row">
-								<label class="col-sm-2 col-form-label"><b>Upload ID with selfie :</b> </label>
+							<div class="form-group row was-validated">
+								<label class="col-sm-2 col-form-label"><b>Upload selfie with ID :</b> </label>
 								<div class="col-sm-10">
 									<div class="custom-file">
-		    							<input type="file" class="custom-file-input" id="validatedCustomFile" required>
-		    							<label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+		    							<input type="file" class="custom-file-input" name="user_selfie_id" required>
+		    							<label class="custom-file-label" for="validatedCustomFile">Choose file</label>
+		    							<div class="invalid-feedback">Please upload an Image</div>
+                    					<div class="valid-feedback">Image has been uploaded</div>
 		 							</div>
 								</div>
 							</div>

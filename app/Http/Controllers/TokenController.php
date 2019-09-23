@@ -58,9 +58,21 @@ class TokenController extends Controller
 			$response = json_decode($request->getBody(), true);
 			$response_data = $response['data'];
 
+			function generateRandomString($length) {
+    			$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    			$charactersLength = strlen($characters);
+    			$randomString = '';
+    			for ($i = 0; $i < $length; $i++) {
+        			$randomString .= $characters[rand(0, $charactersLength - 1)];
+    			}
+    			return $randomString;
+			}
+
 			return view('buy-token', [
 				'response' => $response_data['reference_token'],
-				'curr' => 'credit'
+				'curr' => 'credit',
+				'amt' => $r['currency'],
+				'rand' => generateRandomString(4)
 			]);
 
 
@@ -327,44 +339,89 @@ class TokenController extends Controller
       		"Zimbabwe"
 		];
 
+		// dd($request['transaction_id']);
 
-		$transaction = $this->validate($request, [
-            'transaction_id' => '',
-            'receiver_id' => 'required',
-            'amount' => 'required',
-            'email_id' => 'required', 
-        ]);
+		if ($request['transaction_id'] == null) {
+
+			if ($request['reference'] == null) {
+				$transaction = $this->validate($request, [
+	            	'receiver_id' => 'required',
+	            	'amount' => 'required',
+	            	'email_id' => 'required', 
+	            	'name' => 'required',
+	        	]);
+	        	
+				$email_details = array(
+					'amount' => $transaction['amount'],
+					'receiver_id' => $transaction['receiver_id'],
+					'email_id' => $transaction['email_id'],
+					'name' => $transaction['name'],
+				);
+
+			} else {
+				$transaction = $this->validate($request, [
+	            	'receiver_id' => 'required',
+	            	'amount' => 'required',
+	            	'email_id' => 'required', 
+	            	'name' => 'required',
+	            	'reference' => 'required',
+	        	]);
+
+				$email_details = array(
+					'amount' => $transaction['amount'],
+					'receiver_id' => $transaction['receiver_id'],
+					'email_id' => $transaction['email_id'],
+					'name' => $transaction['name'],
+					'reference' => $transaction['reference']
+				);
+			}
+
+		} else {
+
+			$transaction = $this->validate($request, [
+            	'transaction_id' => 'required',
+            	'receiver_id' => 'required',
+            	'amount' => 'required',
+            	'email_id' => 'required', 
+            	'name' => 'required',
+        	]);
+
+			$email_details = array(
+				'amount' => $transaction['amount'],
+				'transaction_id' => $transaction['transaction_id'],
+				'receiver_id' => $transaction['receiver_id'],
+				'email_id' => $transaction['email_id'],
+				'name' => $transaction['name'],
+			);
+
+		}
+
+			// dd($email_details);
+
+
+
+
+	        \Mail::send('mail.token',
+	        $email_details, function($message) use ($request){
+	            $message->from('no-reply@buyanylight.com');
+	           	$message->to('rizvi.almanilighting@gmail.com', 'Admin')->subject('New BAL Token Transaction');
+	        });
+
+
+	        \Mail::send('mail.token-user',
+	        $email_details, function($message) use ($request){
+	            $message->from('no-reply@buyanylight.com');
+	           	$message->to($request->get('email_id'), 'Investor')->subject('Your BAL Token Transaction');
+	        });
 
 
 		// dd($transaction['email_id']);
 
-        \Mail::send('mail.token',
-        array(
-        	'amount' => $transaction['amount'],
-            'transaction_id' => $transaction['transaction_id'],
-            'receiver_id' => $transaction['receiver_id'],
-            'email_id' => $transaction['email_id'],
-       	), function($message) use ($request){
-            $message->from('no-reply@buyanylight.com');
-           	$message->to('rizvi.almanilighting@gmail.com', 'Admin')->subject('New BAL Token Transaction');
-        });
-
-
-        \Mail::send('mail.token-user',
-        array(
-        	'amount' => $transaction['amount'],
-            'transaction_id' => $transaction['transaction_id'],
-            'receiver_id' => $transaction['receiver_id'],
-            'email_id' => $transaction['email_id'],
-       	), function($message) use ($request){
-            $message->from('no-reply@buyanylight.com');
-           	$message->to($request->get('email_id'), 'Investor')->subject('Your BAL Token Transaction');
-        });
-
 
 		return view('kyc', [
 			'countries' => $countries,
-			'email_id' => $transaction['email_id']
+			'email_id' => $transaction['email_id'],
+			'name' => $transaction['name']
 		])->with('success');
 	}
 
@@ -634,9 +691,9 @@ class TokenController extends Controller
             'email_id' => ['required', 'min:3'],
             'country' => ['required'],
             'user_id' => ['required'],
-            'user_id.*' => ['mimes:jpeg,png,jpg,gif' , 'required'],
+            'user_id.*' => ['mimes:jpeg,png,jpg,gif' , 'max:7168'],
             'user_selfie_id' => ['required'],
-            'user_selfie_id.*' => ['mimes:jpeg,png,jpg,gif', 'required'],
+            'user_selfie_id.*' => ['mimes:jpeg,png,jpg,gif', 'max:7168'],
         ]);
 
 		// dd($validated_attr);
@@ -670,7 +727,7 @@ class TokenController extends Controller
 
 
 
-        return view('ieo');
+        return view('ieo')->with('KYC-success','Your KYC form has submitted succssfully');
 
 
 

@@ -34,6 +34,24 @@
 @endsection
 
 @section('content')
+<div style="position: relative; z-index: 5">
+            <!-- Position toasts -->
+    	<div style="position: absolute; top: 70px; right: 55px; min-width: 300px; border: 1px solid black;">
+        	<div class="toast" id="kyc-toast" data-autohide="false" style="opacity: 100">
+            	<div class="toast-header">
+                	<strong class="mr-auto">
+                    	<img src="{{ Util::assetUrl('images/logo-black-icon.png') }}" width="25">
+                    	BuyAnyLight
+                	</strong>
+                	<button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+            	</div>
+           		<div class="toast-body">
+                	<b>Thanks for being awesome!</b><br>
+                	Your KYC Form has been submitted
+            	</div>
+        	</div>
+    	</div>    
+	</div>
 <section class="section-1" style="background-image : url({{ Util::assetUrl('/images/ieo/ieo-bg1.png') }})">
 	<div class="container h-100">
 		<div class="row w-100 h-100 d-flex align-items-center">
