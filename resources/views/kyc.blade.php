@@ -7,37 +7,40 @@
 		<div class="container">
 			<h3>
 				<b>
-					KYC form
+					Know Your Customer (KYC) form
 				</b>
 			</h3>
+			<div class="alert alert-success mt-3" role="alert">
+ 				Thanks for your payment
+			</div>
 			<div class="card mt-3">
 				<div class="card-body">
 					<div>
 						<p>
-							Please complete the form for us to verify and send you the BAL tokens
+							Please complete the KYC form. After the verification process and no later than 48h, you will be receiving your BAL tokens to the ETH address which you provided.
 						</p>
 						<p>
-							In order to make it easier and quicker for us to verify, Please rename the file you upload to: ID.jpg / SELFIE_ID.jpg. Please avoid using spaces
+							For a fast verification, kindly rename your files to: ID.jpg and SELFIE_ID.jpg. Please avoid using spaces. Thank You!
 						</p>
 						<form action="/kyc-confirm" method="post" enctype="multipart/form-data">
 		  					@csrf()
 							<div class="form-group row">
-								<label class="col-sm-2 col-form-label"><b>Name:</b> </label>
-								<div class="col-sm-10">
+								<label class="col-sm-3 col-form-label"><b>Name:</b> </label>
+								<div class="col-sm-9">
 									<input type="text" name="user_name" class="form-control"  placeholder="Full name" value="{{ $name }}">
 								</div>
 							</div>
 							<div class="form-group row">
-								<label class="col-sm-2 col-form-label"><b>Email:</b> </label>
-								<div class="col-sm-10">
+								<label class="col-sm-3 col-form-label"><b>Email:</b> </label>
+								<div class="col-sm-9">
 									<input type="email" name="email_id" class="form-control" value="{{ $email_id }}">
 								</div>
 							</div>
 							<div class="form-group row">
-								<label class="col-sm-2 col-form-label"><b>Country:</b> </label>
-								<div class="col-sm-10">
+								<label class="col-sm-3 col-form-label"><b>Country:</b> </label>
+								<div class="col-sm-9">
 									<select name="country" class="form-control" required>
-										<option disabled selected>Select Country</option>
+										<option disabled selected value="">Select Country</option>
 									@foreach($countries as $country)
 										<option value="{{ $country }}"> {{ $country }}</option>
 									@endforeach
@@ -45,8 +48,13 @@
 								</div>
 							</div>
 							<div class="form-group row was-validated">
-								<label class="col-sm-2 col-form-label"><b>Upload ID:</b> </label>
-								<div class="col-sm-10">
+								<label class="col-sm-3 col-form-label">
+									<b>Upload ID:</b> 
+									<span class="" data-toggle="tooltip" data-placement="bottom" title=" ID card / Passport or Drivers license" style="font-size: 12px; ">
+                                         <i class="fas fa-info-circle"></i>
+                                    </span>
+								</label>
+								<div class="col-sm-9">
 									<div class="custom-file">
 		    							<input type="file" class="custom-file-input"  name="user_id" id="validatedCustomFile" required>
 		    							<label class="custom-file-label" for="validatedCustomFile">Choose file</label>
@@ -56,8 +64,13 @@
 								</div>
 							</div>
 							<div class="form-group row was-validated">
-								<label class="col-sm-2 col-form-label"><b>Upload selfie with ID :</b> </label>
-								<div class="col-sm-10">
+								<label class="col-sm-3 col-form-label">
+									<b>Upload selfie with ID :</b> 
+									<span class="" data-toggle="tooltip" data-placement="bottom" title="The selfie should include a selfie with the ID, a piece of paper containing 'BAL TOKEN', date, signature" style="font-size: 12px; ">
+                                         <i class="fas fa-info-circle"></i>
+                                    </span>
+								</label>
+								<div class="col-sm-9">
 									<div class="custom-file">
 		    							<input type="file" class="custom-file-input" name="user_selfie_id" required>
 		    							<label class="custom-file-label" for="validatedCustomFile">Choose file</label>
@@ -75,6 +88,10 @@
 						</form>
 					</div>
 				</div>
+			</div>
+			<div class="card card-body mt-3">
+				How to add a Custom ERC20 Token /our BAL Token to your Ethereum wallet? <br> <a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/">
+				Check out this easy step-by-step guide</a>	
 			</div>
 		</div>
 	</div>

@@ -30,6 +30,15 @@
 			nextArrow: '<button type="button" class="slick-next d-inline-block">Next</button>',
 		});
 		
+		$('.buy-btn').click(function(){
+
+			$('.section-buy-token').slideToggle();
+
+
+		})
+
+
+
 	</script>
 
 
@@ -49,7 +58,7 @@
 		  		</div>
 		  		<div class="toast-body">
 		   			<b>Thanks for being awesome!</b><br>
-		            Your KYC Form has been submitted
+		            Your KYC form has been submitted.
 				</div>
 			</div>
 		</div>
@@ -79,6 +88,17 @@
 					<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>					
 					<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}"  target="_blank" class="btn btn-ieo">White Paper</a>
 					<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo" target="_blank">Yellow Paper</a>
+				</div>
+				<div class="pt-3">
+					<h5>
+						View on Etherscan
+					</h5>
+					<div class="pt-2">
+						<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-ieo" target="_blank">Token Contract</a>
+						<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-ieo" target="_blank">Token Owner </a>
+						<a href="#allocation" class="btn btn-ieo">Token Allocation</a>
+						<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn btn-ieo" target="_blank">Token Sale Agreement</a>
+					</div>
 				</div>
 				<div class="videos mt-5">
 					<a data-fancybox 
@@ -110,16 +130,8 @@
                         </div>
 					</a>
 				</div>
-				<div class="pt-4">
-					<h4>
-						View on Etherscan
-					</h4>
-					<div class="pt-2">
-						<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-ieo" target="_blank">Token Contract</a>
-						<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-ieo" target="_blank">Token Owner </a>
-						<a href="#allocation" class="btn btn-ieo">Token Allocation</a>
-						<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn btn-ieo" target="_blank">Token Sale Agreement</a>
-					</div>
+				<div class="pt-3">
+					<button class="btn btn-ieo buy-btn w-100" style="height: 50px">BUY TOKENS NOW!!</button>
 				</div>
 			</div>
 			<div class="col-md-5">
@@ -210,6 +222,37 @@
 			</div>
 		</div>
 	</div>
+</section>
+<section class="section-buy-token">
+	<div class="pt-5 container">
+		<h3>
+			<strong>
+				<span class="header-text">
+					Buy
+				</span>
+				<span>
+					BAL Tokens
+				</span>
+			</strong>
+		</h3>
+		<div class="buying-content">
+			<form action="/buy-token" method="post" enctype="multipart/form-data">
+				@csrf()
+				<div class="pt-4">
+					<div class="input-group">
+	  					<div class="input-group-prepend">
+	    					<span class="input-group-text" id="basic-addon1">
+	    						<img src="{{ Util::assetUrl('images/logo-black-icon.png') }}" width="25">
+	    					</span>
+	  					</div>
+	  					<input type="number" class="form-control bal-token" placeholder="Enter an amount you want to buy" aria-label="bal-token" aria-describedby="basic-addon1" min="25000" name="bal" required="required">
+	  					<br>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
 </section>
 <section class="section-2 pt-5">
 	<div class="container pt-5 pb-5">

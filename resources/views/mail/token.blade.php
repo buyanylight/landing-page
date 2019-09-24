@@ -5,10 +5,11 @@
 	<li>User ID: {{$user_reference_id}}</li>
 	<li>Name: {{ $name }}</li>
 	<li>Email: {{ $email_id }}</li>
-	<li>Amount Paid: {{ $amount }}</li>
+	<li>BAL Tokens: {{ $bal_amt }}</li>
+	<li>Amount paid: {{ $amount }}</li>
 	@if(empty($reference))
 	@else
-		<li>Bank Transfer reference: {{ $reference }}</li>
+		<li>Bank transfer reference: {{ $reference }}</li>
 	@endif
 	@if(empty($transaction_id))
 	@else

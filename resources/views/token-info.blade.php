@@ -12,11 +12,6 @@
 		})
 
 
-
-
-
-
-
 		$('.bal-token').keyup(function() {
 			Currencyconvert()
 
@@ -30,7 +25,7 @@
 
 			console.log(USDIEO - USDvalue);
 
-			var USD_return = USDIEO - USDvalue;
+			var USD_return = (USDIEO - USDvalue).toFixed(5);
 
 			 $(".USD_return").text(USD_return);
 		})

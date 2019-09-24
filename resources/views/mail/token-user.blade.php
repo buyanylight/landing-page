@@ -2,6 +2,8 @@
 <p>Email confirmation for the completed transaction</p>
 <p>Here are the details:</p>
 <ul>
+	<li>Your reference ID: {{ $user_reference_id }}</li>
+	<li>BAL Tokens: {{ $bal_amt }}</li>
 	<li>Amount Paid: {{ $amount }}</li>
 	@if(empty($reference))
 	@else

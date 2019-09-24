@@ -71,25 +71,42 @@ class TokenController extends Controller
 			$response_data = $response['data'];
 
 			
+			if ($curr[1] == 'USD') {
+				return view('buy-token', [
+					'bal_amt' => $r['bal'],
+					'user_reference_id' => strtotime('now').''.generateRandomString(3), 
+					'response' => $response_data['reference_token'],
+					'curr' => 'credit',
+					'amt' => $r['currency'],
+					'rand' => generateRandomString(4),
+					'usd' => 1
+				]);
+			} else {
+				return view('buy-token', [
+					'bal_amt' => $r['bal'],
+					'user_reference_id' => strtotime('now').''.generateRandomString(3), 
+					'response' => $response_data['reference_token'],
+					'curr' => 'credit',
+					'amt' => $r['currency'],
+					'rand' => generateRandomString(4),
+					'usd' => 0
+				]);
 
-			return view('buy-token', [
-				'user_reference_id' => strtotime('now').'-'.generateRandomString(3), 
-				'response' => $response_data['reference_token'],
-				'curr' => 'credit',
-				'amt' => $r['currency'],
-				'rand' => generateRandomString(4)
-			]);
+			}
+
 
 
 		} elseif ($curr[1] == 'BTC') {
 			return view('buy-token', [
-				'user_reference_id' => strtotime('now').'-'.generateRandomString(3), 
+				'bal_amt' => $r['bal'],
+				'user_reference_id' => strtotime('now').''.generateRandomString(3), 
 				'amt' => $curr[0],
 				'curr' => 'BTC'
 			]);
 		} else {
 			return view('buy-token', [
-				'user_reference_id' => strtotime('now').'-'.generateRandomString(3),
+				'bal_amt' => $r['bal'],
+				'user_reference_id' => strtotime('now').''.generateRandomString(3),
 				'amt' => $curr[0],
 				'curr' => 'ETH'
 			]);
@@ -357,6 +374,7 @@ class TokenController extends Controller
 	            	'email_id' => 'required', 
 	            	'name' => 'required',
 	            	'user_reference_id' => 'required',
+	            	'bal_amt' => 'required',
 	        	]);
 	        	
 				$email_details = array(
@@ -364,7 +382,8 @@ class TokenController extends Controller
 					'receiver_id' => $transaction['receiver_id'],
 					'email_id' => $transaction['email_id'],
 					'name' => $transaction['name'],
-	            	'user_reference_id' => $transaction['user_reference_id'],		
+	            	'user_reference_id' => $transaction['user_reference_id'],	
+	            	'bal_amt' => $transaction['bal_amt']	
 				);
 
 			} else {
@@ -375,6 +394,8 @@ class TokenController extends Controller
 	            	'name' => 'required',
 	            	'reference' => 'required',
 	            	'user_reference_id' => 'required',
+	            	'bal_amt' => 'required',
+
 
 	        	]);
 
@@ -384,7 +405,9 @@ class TokenController extends Controller
 					'email_id' => $transaction['email_id'],
 					'name' => $transaction['name'],
 					'reference' => $transaction['reference'],
-	            	'user_reference_id' => $transaction['user_reference_id'],		
+	            	'user_reference_id' => $transaction['user_reference_id'],	
+	            	'bal_amt' => $transaction['bal_amt']	
+
 
 				);
 			}
@@ -398,6 +421,8 @@ class TokenController extends Controller
             	'email_id' => 'required', 
             	'name' => 'required',
 	            'user_reference_id' => 'required',
+	            'bal_amt' => 'required',
+
 
         	]);
 
@@ -407,7 +432,9 @@ class TokenController extends Controller
 				'receiver_id' => $transaction['receiver_id'],
 				'email_id' => $transaction['email_id'],
 				'name' => $transaction['name'],
-	            'user_reference_id' => $transaction['user_reference_id'],		
+	            'user_reference_id' => $transaction['user_reference_id'],
+	            'bal_amt' => $transaction['bal_amt']	
+
 
 			);
 
@@ -421,7 +448,7 @@ class TokenController extends Controller
 	        \Mail::send('mail.token',
 	        $email_details, function($message) use ($request){
 	            $message->from('no-reply@buyanylight.com');
-	           	$message->to('rizvi.almanilighting@gmail.com', 'Admin')->subject('New BAL Token Transaction');
+	           	$message->to('info@buyanylight.com', 'Admin')->subject('New BAL Token Transaction');
 	        });
 
 
@@ -745,7 +772,7 @@ class TokenController extends Controller
             'selfie_user_id' => url('uploads/'. $selfie_file_name),
        	), function($message) use ($request){
             $message->from('no-reply@buyanylight.com');
-           	$message->to('rizvi.almanilighting@gmail.com', 'Admin')->subject('New KYC verification');
+           	$message->to('info@buyanylight.com', 'Admin')->subject('New KYC verification');
         });
 
 
