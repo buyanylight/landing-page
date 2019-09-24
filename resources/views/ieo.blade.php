@@ -76,7 +76,7 @@
 				<div class="pt-1 pagers-paper">
 					<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>					
 					<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}"  target="_blank" class="btn btn-ieo">White Paper</a>
-					<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo">Yellow Paper</a>
+					<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo" target="_blank">Yellow Paper</a>
 				</div>
 				<div class="videos mt-5">
 					<a data-fancybox 
@@ -116,6 +116,7 @@
 						<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-ieo" target="_blank">Token Contract</a>
 						<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-ieo" target="_blank">Token Owner </a>
 						<a href="#allocation" class="btn btn-ieo">Token Allocation</a>
+						<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn btn-ieo" target="_blank">Token Sale Agreement</a>
 					</div>
 				</div>
 			</div>
@@ -276,7 +277,7 @@
 			<div class="buttons pt-3">
 				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>
 				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-ieo ml-3">White Paper</a>
-				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3">Yellow Paper</a>
+				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">Yellow Paper</a>
 			</div>
 		</div>
 	</div>
@@ -1230,7 +1231,7 @@
 			<div class="buttons pt-3">
 				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>
 				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-ieo ml-3">White Paper</a>
-				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3">Yellow Paper</a>
+				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">Yellow Paper</a>
 			</div>
 		</div>
 	</div>
