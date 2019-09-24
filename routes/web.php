@@ -24,7 +24,7 @@ Route::get('/token-info', 'TokenController@token_info')->name('token-info');
 Route::post('/buy-token', 'TokenController@buy_tokens')->name('buy-tokens');
 Route::post('/kyc', 'TokenController@kyc')->name('kyc');
 Route::post('/kyc-confirm', 'TokenController@kyc_confirm')->name('kyc-confirm');
-Route::get('/kyc-form', 'TokenController@demo')->name('demo');
+Route::get('/kyc-form/{uid}', 'TokenController@demo')->name('demo');
 Route::get('/whitepaper', 'PageController@soon')->name('whitepaper');
 Route::get('/yellowpaper', 'PageController@soon')->name('yellowpaper');
 

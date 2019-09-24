@@ -453,13 +453,18 @@
 
 
 	</script>
-	@if (session('KYC-success'))
+
+	@if (session('success'))
+
 	<script type="text/javascript">
-		$( document ).ready(function() {
-			$('#kyc-toast').toast('show')
+		$(document).ready(function() {
+			$('.kyc-toast').toast('show');
 		});
 	</script>
+
+
 	@endif
+
 	@if (session('success') || session('danger'))
 	<script type="text/javascript">
 		$( document ).ready(function() {

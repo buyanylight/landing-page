@@ -2,6 +2,7 @@
 <p>You received a transaction for BAL Token</p>
 <p>Here are the details:</p>
 <ul>
+	<li>User ID: {{$user_reference_id}}</li>
 	<li>Name: {{ $name }}</li>
 	<li>Email: {{ $email_id }}</li>
 	<li>Amount Paid: {{ $amount }}</li>

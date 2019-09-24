@@ -11,11 +11,11 @@
 	@else
 		<li>Transaction ID: {{ $transaction_id }}</li>
 	@endif
-		<li>Receiver ID: {{ $receiver_id }}</li>
+		<li>Your Receiver ID: {{ $receiver_id }}</li>
 </ul>
 
 <p>Incase you havent completed the KYC form, Please completed it in given link below:</p>
-<a href="https://buyanylight.com/kyc-form">KYC Form</a>
+<a href="http://192.168.1.204:8004/kyc-form/{{ $user_reference_id }}">KYC Form</a>
 
 
 <p>Thank You</p>

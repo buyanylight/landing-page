@@ -149,6 +149,8 @@
 			  											</div>
 			  										</div>
 			  										<input type="hidden" name="amount" value="{{ $amt }}">
+			  										<input type="hidden" name="user_reference_id" value="{{ $user_reference_id}}">
+
 				  									<button type="submit" class="btn btn-sm btn-primary mt-2">
 				  										Submit
 				  									</button>
@@ -370,6 +372,7 @@
 			  										</div>
 			  										<input type="hidden" name="amount" value="{{ $amt }}">
 			  										<input type="hidden" name="reference" value="BuyAnyLight-{{ $rand }}">
+			  										<input type="hidden" name="user_reference_id" value="{{ $user_reference_id }}">
 				  									<button type="submit" class="btn btn-sm btn-primary mt-2">
 				  										Submit
 				  									</button>
@@ -442,7 +445,8 @@
 		  											<input type="text" name="receiver_id" class="form-control" placeholder="To receive your BAL Tokens, please provide your receiver address" pattern=".{40,42}" required title="Please enter the correct address">
 		  										</div>
 		  									</div>
-		  									<input type="hidden" name="amount" value="{{ $amt }} BTC">
+		  									<input type="hidden" name="user_reference_id" value="{{ $amt }} BTC">
+		  									<input type="hidden" name="amount" value="{{ $user_reference_id }}">
 		  									<button type="submit" class="btn  btn-primary mt-2 col-12">
 			  									Submit
 			  								</button>
@@ -511,6 +515,7 @@
 		  											<input type="text" name="receiver_id" class="form-control" placeholder="To receive your BAL Tokens, please provide your receiver address" pattern=".{40,42}" required title="Please enter the correct address">
 		  										</div>
 		  									</div>
+		  									<input type="hidden" name="user_reference_id" value="{{ $user_reference_id }}">
 		  									<input type="hidden" name="amount" value="{{ $amt }} ETH">
 		  									<button type="submit" class="btn  btn-primary mt-2 col-12">
 			  									Submit

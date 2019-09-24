@@ -35,6 +35,18 @@ class TokenController extends Controller
 		$curr = explode(' ', $r['currency']);
 
 
+		function generateRandomString($length) {
+    		$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    		$charactersLength = strlen($characters);
+    		$randomString = '';
+    		for ($i = 0; $i < $length; $i++) {
+        		$randomString .= $characters[rand(0, $charactersLength - 1)];
+    		}
+    		return $randomString;
+		}
+
+
+
 		if ($curr[1] == 'USD' || $curr[1] == 'EUR') {
 		// dd($curr[1]);
 			// $faloosi = [];
@@ -58,17 +70,10 @@ class TokenController extends Controller
 			$response = json_decode($request->getBody(), true);
 			$response_data = $response['data'];
 
-			function generateRandomString($length) {
-    			$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    			$charactersLength = strlen($characters);
-    			$randomString = '';
-    			for ($i = 0; $i < $length; $i++) {
-        			$randomString .= $characters[rand(0, $charactersLength - 1)];
-    			}
-    			return $randomString;
-			}
+			
 
 			return view('buy-token', [
+				'user_reference_id' => strtotime('now').'-'.generateRandomString(3), 
 				'response' => $response_data['reference_token'],
 				'curr' => 'credit',
 				'amt' => $r['currency'],
@@ -78,11 +83,13 @@ class TokenController extends Controller
 
 		} elseif ($curr[1] == 'BTC') {
 			return view('buy-token', [
+				'user_reference_id' => strtotime('now').'-'.generateRandomString(3), 
 				'amt' => $curr[0],
 				'curr' => 'BTC'
 			]);
 		} else {
 			return view('buy-token', [
+				'user_reference_id' => strtotime('now').'-'.generateRandomString(3),
 				'amt' => $curr[0],
 				'curr' => 'ETH'
 			]);
@@ -349,6 +356,7 @@ class TokenController extends Controller
 	            	'amount' => 'required',
 	            	'email_id' => 'required', 
 	            	'name' => 'required',
+	            	'user_reference_id' => 'required',
 	        	]);
 	        	
 				$email_details = array(
@@ -356,6 +364,7 @@ class TokenController extends Controller
 					'receiver_id' => $transaction['receiver_id'],
 					'email_id' => $transaction['email_id'],
 					'name' => $transaction['name'],
+	            	'user_reference_id' => $transaction['user_reference_id'],		
 				);
 
 			} else {
@@ -365,6 +374,8 @@ class TokenController extends Controller
 	            	'email_id' => 'required', 
 	            	'name' => 'required',
 	            	'reference' => 'required',
+	            	'user_reference_id' => 'required',
+
 	        	]);
 
 				$email_details = array(
@@ -372,7 +383,9 @@ class TokenController extends Controller
 					'receiver_id' => $transaction['receiver_id'],
 					'email_id' => $transaction['email_id'],
 					'name' => $transaction['name'],
-					'reference' => $transaction['reference']
+					'reference' => $transaction['reference'],
+	            	'user_reference_id' => $transaction['user_reference_id'],		
+
 				);
 			}
 
@@ -384,6 +397,8 @@ class TokenController extends Controller
             	'amount' => 'required',
             	'email_id' => 'required', 
             	'name' => 'required',
+	            'user_reference_id' => 'required',
+
         	]);
 
 			$email_details = array(
@@ -392,6 +407,8 @@ class TokenController extends Controller
 				'receiver_id' => $transaction['receiver_id'],
 				'email_id' => $transaction['email_id'],
 				'name' => $transaction['name'],
+	            'user_reference_id' => $transaction['user_reference_id'],		
+
 			);
 
 		}
@@ -421,11 +438,15 @@ class TokenController extends Controller
 		return view('kyc', [
 			'countries' => $countries,
 			'email_id' => $transaction['email_id'],
-			'name' => $transaction['name']
+			'name' => $transaction['name'],
+			'user_reference_id' => $transaction['user_reference_id']
 		])->with('success');
 	}
 
-	public function demo() {
+	public function demo(string $uid) {
+
+
+		// dd($uid);
 
 		$countries = [
   			"Afghanistan",
@@ -675,7 +696,8 @@ class TokenController extends Controller
 
 
 		return view('demo', [
-			'countries' => $countries
+			'countries' => $countries,
+			'user_reference_id' => $uid
 		]);
 
 	}
@@ -685,24 +707,25 @@ class TokenController extends Controller
 
 
 
+		// dd($request);
 
 		$validated_attr = request()->validate([
             'user_name' => ['required', 'min:3'],
             'email_id' => ['required', 'min:3'],
             'country' => ['required'],
             'user_id' => ['required'],
-            'user_id.*' => ['mimes:jpeg,png,jpg,gif' , 'max:7168'],
+            'user_id.*' => ['mimes:jpeg,png,jpg,pdf' , 'max:7168'],
             'user_selfie_id' => ['required'],
-            'user_selfie_id.*' => ['mimes:jpeg,png,jpg,gif', 'max:7168'],
+            'user_selfie_id.*' => ['mimes:jpeg,png,jpg,pdf', 'max:7168'],
+            'user_reference_id' => ['required']
         ]);
 
-		// dd($validated_attr);
 
 		if (request()->hasFile('user_selfie_id')) {
 			$name = explode(' ', $validated_attr['user_name']);
 
 
-        	$file_name = date('YmdHis') . '-' .$name[0].'-'.request()->file('user_selfie_id')->getClientOriginalName() ;
+        $file_name = date('YmdHis') . '-' .$name[0].'-'.request()->file('user_selfie_id')->getClientOriginalName() ;
          request()->file('user_selfie_id')->move(public_path() . '/uploads/', $file_name);  
         }
 
@@ -714,6 +737,7 @@ class TokenController extends Controller
 
          \Mail::send('mail.kyc-confirm',
         array(
+        	'user_reference_id' => $validated_attr['user_reference_id'],
         	'name' => $validated_attr['user_name'],
             'email_id' => $validated_attr['email_id'],
             'country' => $validated_attr['country'],
@@ -727,7 +751,7 @@ class TokenController extends Controller
 
 
 
-        return view('ieo')->with('KYC-success','Your KYC form has submitted succssfully');
+        return redirect('ieo')->with('success', ' dsfdsfdsf');
 
 
 
