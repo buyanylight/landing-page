@@ -869,8 +869,8 @@
 					<td>55 Million (100%)</td>
 				</tr>
 				<tr>
-					<td>Supply reserved for Seed Round:</td>
-					<td>11 Million (20% of the total supply)</td>
+					<td>Know Your Customer (KYC):</td>
+					<td>Yes</td>
 				</tr>
 				<tr>
 					<td>Supply reserved for Private Round:</td>
@@ -893,8 +893,8 @@
 					<td>BTC, ETH, EUR, USD</td>
 				</tr>
 				<tr>
-					<td>Know Your Customer (KYC):</td>
-					<td>Yes</td>
+					<td>Private round price:</td>
+					<td>1BAL = USD 0.2</td>
 				</tr>
 				<tr>
 					<td>IEO token price:</td>

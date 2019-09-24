@@ -108,8 +108,10 @@
 						<div class="w-100">	
 							{{-- <h4 class="text-center text-white"><b>IEO PRE SALE</b></h4> --}}
 							<div class="w-100 pt-2">
-								<p class="text-white text-center mb-0"><b>Private Sale starts in:</b></p>
-								<div id="timer" class="pt-2 pb-2 text-center d-flex justify-content-center">
+								<p class="text-white text-center mb-0">
+									<b>Private Sale starts in:</b>
+								</p>
+								<div id="timer" class="pt-2  text-center d-flex justify-content-center">
 									<div class="row justify-content-center" style="width: 90%">
 										<div id="days" class="timer-item d-inline-block"></div>
 										<div id="hours" class="timer-item d-inline-block"></div>
@@ -117,16 +119,23 @@
 										<div id="seconds" class="timer-item d-inline-block"></div>
 									</div>
 								</div>
+								<div class="pl-5 text-white">
+									<small><span>1 BAL = 0.2 USD</span></small>
+								</div>
 							</div>
 							<div class="w-100">
-								<p class="text-white text-center pt-3 mb-0"><b>IEO Sale starts in:</b></p>
-								<div id="timer" class=" pt-2 pb-2 text-center d-flex justify-content-center">
+								<p class="text-white text-center pt-3 mb-0"><b>IEO Sale starts in:</b>
+								</p>
+								<div id="timer" class=" pt-2 text-center d-flex justify-content-center">
 									<div class="row justify-content-center" style="width: 90%">
 										<div id="days1" class="timer-item d-inline-block"></div>
 										<div id="hours1" class="timer-item d-inline-block"></div>
 										<div id="minutes1" class="timer-item d-inline-block"></div>
 										<div id="seconds1" class="timer-item d-inline-block"></div>
 									</div>
+								</div>
+								<div class="pl-5 text-white">
+									<small><span>1 BAL = 0.30303 USD</span></small>
 								</div>
 							</div>
 							<div class="mt-4">
@@ -926,8 +935,8 @@
 									<td>55 Million (100%)</td>
 								</tr>
 								<tr>
-									<td>Supply reserved for Seed Round:</td>
-									<td>11 Million (20% of the total supply)</td>
+									<td>Know Your Customer (KYC):</td>
+									<td>Yes</td>
 								</tr>
 								<tr>
 									<td>Supply reserved for Private Round:</td>
@@ -956,8 +965,8 @@
 									<td>BTC, ETH, EUR, USD</td>
 								</tr>
 								<tr>
-									<td>Know Your Customer (KYC):</td>
-									<td>Yes</td>
+									<td>Private round price:</td>
+									<td>1BAL = USD 0.2</td>
 								</tr>
 								<tr>
 									<td>IEO token price:</td>
