@@ -121,6 +121,13 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <a href="https://www.gitexfuturestars.com/exhibitors/buy-any-light">
+                                    <img src=" {{ Util::assetUrl('images/GFS.png') }}" width="40%">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
