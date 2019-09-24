@@ -131,7 +131,7 @@
                     </div>
                 </div>
             </div>
-            <hr class="bg-white mt-5">
+            <hr class="bg-white">
             <div class="row">
                 <div class="col-md-12 text-right text-white mt-2">
                     <div class="mr-2" style="font-size: 12px;">
