@@ -59,7 +59,18 @@
                         </li>
                      </ul>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-2">
+                    <h5 class="text-white font-weight-bold">Media</h5>
+                    <ul class="list-group footer-list">
+                        <li class="mt-3">
+                            <a href="{{ route('downloads') }}" class="text-white">Downloads</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="{{ route('videos') }}" class="text-white">Videos</a>
+                        </li>
+                     </ul>
+                </div>
+                <div class="col-md-4">
                     <div>
                         <h5 class="text-white font-weight-bold">Connect with our newsletter</h5>
 

@@ -58,6 +58,9 @@
 	<link rel="stylesheet" href="{{ Util::assetUrl('css/slick.css') }}">
 	<link rel="stylesheet" href="{{ Util::assetUrl('css/slick-theme.css') }}">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	
+
+	@yield('head-css')
 
 	 <!-- Meta -->
 	<!-- //////////////////////////////////////////////////////////////////////// -->

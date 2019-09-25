@@ -158,6 +158,7 @@
                     </div>
                 </div>
             </div>
+
 	   		<hr class="m-0 border-dark">
             <div class="accordion-group">
                 <div class="accordion-heading buyer-btn">
@@ -194,6 +195,7 @@
                  	</div>
                 </div>
             </div>
+
 	   		<hr class="m-0 border-dark">
             <div class="accordion-group ">
             	<div class="accordion-heading seller-btn">
@@ -235,6 +237,7 @@
                     </div>
                 </div>
             </div>
+
 	   		<hr class="m-0 border-dark">
             <div class="accordion-group">
                 <div class="accordion-heading investor-btn ">
@@ -266,6 +269,39 @@
                   	</div>
                 </div>
             </div>
+
+	   		{{-- <hr class="m-0 border-dark"> --}}
+            <div class="accordion-group">
+                <div class="accordion-heading media-btn ">
+                	<a class="accordion-toggle text-dark w-100 d-block pl-3 pt-4 pb-4" data-toggle="collapse" href="#media">
+                    	Media
+                    	<div class="media-down float-right pr-4">
+                  			<i class="fas fa-angle-down"></i>
+                  		</div>
+                  		<div class="media-up float-right pr-4" style="display: none;">
+                  			<i class="fas fa-angle-up"></i>
+                  		</div>
+                    </a>
+                </div>
+	   			<hr class="m-0 border-dark" style=" border: 1px solid;">
+                <div id="media" class="accordion-body collapse">
+                	<div class="accordion-inner">
+                    	<ul class="footer-list m-0 text-dark">
+                        	<li class="mt-3">
+                        		<a href="{{ route('downloads') }}" class="text-dark">
+                        			Downloads
+                        		</a>
+                        	</li>
+                        	<li class="mt-3 mb-3">
+                        		<a href="{{ route('videos') }}" class="text-dark">
+                        			Videos
+                        		</a>
+                        	</li>
+                    	</ul>
+                  	</div>
+                </div>
+            </div>
+
             <div class="terms-and-policy text-dark pt-4 pb-4 text-right">
             	<div class="row">
             		<div class="col-2 help-icon" >
