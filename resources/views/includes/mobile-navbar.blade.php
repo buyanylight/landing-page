@@ -74,6 +74,7 @@
                     </button>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="{{ route('downloads') }}">Downloads</a>
+                        <a class="dropdown-item" href="{{ route('videos') }}">Videos</a>
                     </div>
                 </li>
 

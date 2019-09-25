@@ -119,6 +119,22 @@ class PageController extends Controller
     }
 
 
+    public function videos() {
+
+        $agent = new Agent();
+
+        $isMobile = $agent->isMobile();
+        $isTablet = $agent->isTablet();
+
+    
+        if($isMobile || $isTablet) {
+            return view('mobile.videos');
+        } else {
+            return view('videos');
+        }
+    }
+
+
     public function seller_faq ()
     {
 
