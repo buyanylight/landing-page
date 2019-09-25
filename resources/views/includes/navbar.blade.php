@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand " href="/">
+        <a class="navbar-brand " href="{{ route('home') }}">
             <img src="{{ Util::assetUrl('images/logo-white.png') }}" width="200" class="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,10 +9,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mr-3">
-                    <a class="nav-link text-white links" href="/">Home</a>
+                    <a class="nav-link text-white links" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <a class="nav-link dropdown-toggle text-white links" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white links" href="{{ route('home') }}#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     About
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -36,7 +36,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
-                    <a class="nav-link dropdown-toggle text-white links" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white links" href="{{ route('home') }}#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Buyers
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -54,6 +54,7 @@
                         <a class="dropdown-item" href="{{ route('seller-faq') }}">FAQ</a>
                     </div>
                 </li>
+
                 <li class="nav-item dropdown mr-3">
                     <a class="nav-link dropdown-toggle text-white links" href="{{ route('investor') }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Investors
@@ -63,6 +64,18 @@
                         <a class="dropdown-item" href="{{ route('investor') }}">Lets talk</a>
                     </div>
                 </li>
+
+
+                <li class="nav-item dropdown mr-3">
+                    <a class="nav-link dropdown-toggle text-white links" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Media
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{{ route('downloads') }}">Downloads</a>
+                    </div>
+                </li>
+
+
                 <li class="nav-item mr-3">
                     <a class="nav-link text-white links" href="https://medium.com/buyanylight" target="_blank">News</a>
                 </li>
