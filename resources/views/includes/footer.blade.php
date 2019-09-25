@@ -121,10 +121,17 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <a href="https://www.gitexfuturestars.com/exhibitors/buy-any-light">
+                                    <img src=" {{ Util::assetUrl('images/GFS.png') }}" width="40%">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <hr class="bg-white mt-5">
+            <hr class="bg-white">
             <div class="row">
                 <div class="col-md-12 text-right text-white mt-2">
                     <div class="mr-2" style="font-size: 12px;">
