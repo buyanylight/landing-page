@@ -78,6 +78,8 @@ class TokenController extends Controller
 					'response' => $response_data['reference_token'],
 					'curr' => 'credit',
 					'amt' => $r['currency'],
+					'amount' => $curr[0],
+					'dcurr' => $curr[1],
 					'rand' => generateRandomString(4),
 					'usd' => 1
 				]);
@@ -88,6 +90,8 @@ class TokenController extends Controller
 					'response' => $response_data['reference_token'],
 					'curr' => 'credit',
 					'amt' => $r['currency'],
+					'amount' => $curr[0],
+					'dcurr' => $curr[1],
 					'rand' => generateRandomString(4),
 					'usd' => 0
 				]);
@@ -383,7 +387,7 @@ class TokenController extends Controller
 					'email_id' => $transaction['email_id'],
 					'name' => $transaction['name'],
 	            	'user_reference_id' => $transaction['user_reference_id'],	
-	            	'bal_amt' => $transaction['bal_amt']	
+	            	'bal_amt' => $transaction['bal_amt'],	
 				);
 
 			} else {
@@ -406,8 +410,8 @@ class TokenController extends Controller
 					'name' => $transaction['name'],
 					'reference' => $transaction['reference'],
 	            	'user_reference_id' => $transaction['user_reference_id'],	
-	            	'bal_amt' => $transaction['bal_amt']	
-
+	            	'bal_amt' => $transaction['bal_amt'],	
+	           
 
 				);
 			}
@@ -433,29 +437,29 @@ class TokenController extends Controller
 				'email_id' => $transaction['email_id'],
 				'name' => $transaction['name'],
 	            'user_reference_id' => $transaction['user_reference_id'],
-	            'bal_amt' => $transaction['bal_amt']	
-
-
+	            'bal_amt' => $transaction['bal_amt'],
 			);
 
 		}
 
 			// dd($email_details);
 
-
+		
 
 
 	        \Mail::send('mail.token',
 	        $email_details, function($message) use ($request){
 	            $message->from('no-reply@buyanylight.com');
-	           	$message->to('info@buyanylight.com', 'Admin')->subject('New BAL Token Transaction');
+	           	$message->to('rizvi.almanilighting@gmail.com', 'Admin')->subject('New BAL Token Transaction');
 	        });
 
 
 	        \Mail::send('mail.token-user',
 	        $email_details, function($message) use ($request){
 	            $message->from('no-reply@buyanylight.com');
-	           	$message->to($request->get('email_id'), 'Investor')->subject('Your BAL Token Transaction');
+	           	$message->to($request->get('email_id'), 'Investor')
+	           			->subject('Your BAL Token Investment')
+	           			->attach(public_path() . '/BAL_Token_Sale_Agreement.pdf');
 	        });
 
 
@@ -772,7 +776,20 @@ class TokenController extends Controller
             'selfie_user_id' => url('uploads/'. $selfie_file_name),
        	), function($message) use ($request){
             $message->from('no-reply@buyanylight.com');
-           	$message->to('info@buyanylight.com', 'Admin')->subject('New KYC verification');
+           	$message->to('rizvi.almanilighting@gmail.com', 'Admin')->subject('New KYC verification');
+        });
+
+          \Mail::send('mail.kyc-confirm-user',
+        array(
+        	'user_reference_id' => $validated_attr['user_reference_id'],
+        	'name' => $validated_attr['user_name'],
+            'email_id' => $validated_attr['email_id'],
+            'country' => $validated_attr['country'],
+            'user_id' => url('uploads/'. $file_name),
+            'selfie_user_id' => url('uploads/'. $selfie_file_name),
+       	), function($message) use ($request){
+            $message->from('no-reply@buyanylight.com');
+           	$message->to($request->get('email_id'), 'Investor')->subject('KYC Form Completed - Your BAL Token Investment');
         });
 
 

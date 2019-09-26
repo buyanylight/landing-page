@@ -75,7 +75,7 @@
 					</strong> 
 					<br> 
 					<span class=""> 
-						<b>Offering (IEO) {{ session('success') }}</b> 
+						<b>Offering (IEO)</b> 
 					</span>
 					<br> 
 					<p class="small-desc">

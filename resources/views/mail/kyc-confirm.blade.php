@@ -1,4 +1,4 @@
-<h2>Hello Admin,</h2>
+<p>Hello Admin,</p>
 <p>Received a new KYC form</p>
 <p>Here are the details:</p>
 <ul>

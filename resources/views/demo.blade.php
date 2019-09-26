@@ -7,11 +7,11 @@
 		<div class="container">
 			<h3>
 				<b>
-					Know Your Customer (KYC) form
+					Know Your Customer (KYC)
 				</b>
 			</h3>
 			<div class="alert alert-success mt-3" role="alert">
- 				Thanks for your payment
+ 				Thank you for your payment!
 			</div>
 			<div class="card mt-3">
 				<div class="card-body">
@@ -19,14 +19,16 @@
 						<p>
 							Please complete the KYC form. After the verification process and no later than 48h, you will be receiving your BAL tokens to the ETH address which you provided.
 						</p>
-						<p>
-							For a fast verification, kindly rename your files to: ID.jpg and SELFIE_ID.jpg. Please avoid using spaces. Thank You!
-						</p>
-					
 						<hr>
 						<div class="mt-4">
 							<form action="/kyc-confirm" method="post" enctype="multipart/form-data">
 			  					@csrf()
+			  					<div class="form-group row">
+		  							<label class="col-sm-3 col-form-label"><b>Reference ID:</b></label>
+		  								<div class="col-sm-9 p-1">
+		  										{{$user_reference_id }}
+		  								</div>
+		  						</div>
 								<div class="form-group row">
 									<label class="col-sm-3 col-form-label"><b>Name:</b> </label>
 									<div class="col-sm-9">

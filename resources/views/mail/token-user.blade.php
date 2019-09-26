@@ -1,9 +1,11 @@
-<h2>Hello {{ $name }},</h2>
-<p>Email confirmation for the completed transaction</p>
-<p>Here are the details:</p>
+<p>Hello {{ $name }},</p>
+<p>Thank you for your trust, support and BAL Token investment during our
+private sale.</p>
+<p>Please find below your reference ID and further details concerning your
+transaction:</p>
 <ul>
-	<li>Your reference ID: {{ $user_reference_id }}</li>
-	<li>BAL Tokens: {{ $bal_amt }}</li>
+	<li>Reference ID: {{ $user_reference_id }}</li>
+	<li>BAL Tokens purchased: {{ $bal_amt }}</li>
 	<li>Amount Paid: {{ $amount }}</li>
 	@if(empty($reference))
 	@else
@@ -16,8 +18,21 @@
 		<li>Your Receiver ID: {{ $receiver_id }}</li>
 </ul>
 
-<p>Incase you havent completed the KYC form, Please completed it in given link below:</p>
+<p>In case you haven’t filled out the Know Your Customer (KYC) form, please
+complete it by accessing the following link:</p>
 <a href="http://192.168.1.204:8004/kyc-form/{{ $user_reference_id }}">KYC Form</a>
 
+<p>
+	For any further queries, please contact us at 
+	<a href="mailto:invest@buyanylight.com">invest@buyanylight.com</a>  or call us at +971 (0) 488 732 65.
+</p>
 
-<p>Thank You</p>
+<p>
+	Our Token Sale Agreement is attached to this email for your reference
+</p>
+
+
+<p>Thank You!
+<br>
+Team BuyAnyLight
+</p>
