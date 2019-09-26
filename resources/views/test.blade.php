@@ -39,13 +39,7 @@
 		})
 
 			
-				$('.bal-token').change(function() {
-			if (parseInt(this.value) < 25000) {
-				$('.bal-alert').show()
-			} else {
-				$('.bal-alert').hide()
-			}	
-		})
+
 
 		$('.bal-token').keyup(function() {
 			Currencyconvert()
@@ -372,7 +366,7 @@
 	    						<img src="{{ Util::assetUrl('images/logo-white-mobile.png') }}" width="28">
 	    					</span>
 	  					</div>
-	  					<input type="number" class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" aria-label="bal-token" aria-describedby="basic-addon1" min="25000" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 15px;">
+	  					<input type="number" class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" aria-label="bal-token" aria-describedby="basic-addon1"  name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 15px;">
 	  					<br>
 					</div>
 				</div>
@@ -1733,7 +1727,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="pt-5 mt-3">
+			<div class="pt-5">
 				<h4 class="text-center">
 					<b>
 						Want to know more about our Private Round? 
@@ -1747,126 +1741,7 @@
 					</b>
 				</h4>
 			</div>
-
-
-
-
-
-
-			{{-- contact us --}}
-			{{-- ///////////////////////////////////////////////////////////////////////////// --}}
-			{{-- ///////////////////////////////////////////////////////////////////////////// --}}
-			<div class="contact pt-0 ">
-				{{-- <div class="intro-contact d-flex  align-items-center">
-		    		<div class="container">
-		    			<h3 class="text-white">
-		                	<b>CONTACT US</b>
-		            	</h3>
-		        	</div>
-				</div> --}}
-		        <div class="container pt-5">
-		            <h3><b>Drop us a message</b></h3>
-		            <p>Questions, bug reports, feedback — we're here for it all. </p>
-		        </div>
-				<div class="contact-form pt-3 pb-5">
-		            <div class="container contact-form-container bg-black"> 
-		                <div class="row">
-		                    <div class="col-md-8 bg-white border border-dark">
-		                        <div class="formBox ">
-		                            <form method="post" action="/contact-us">
-		                                {{ csrf_field() }}
-		                                <div class="row">
-		                                    <div class="col-sm-6">
-		                                        <div class="inputBox ">
-		                                            <div class="inputText">Name</div>
-		                                            <input type="text" name="name" class="input">
-		                                        </div>
-		                                    </div>
-		                                    <div class="col-sm-6">
-		                                        <div class="inputBox">
-		                                            <div class="inputText">Email</div>
-		                                            <input type="text" name="email" class="input">
-		                                        </div>
-		                                    </div>
-		                                </div>
-		                                <div class="row">
-		                                    <div class="col-sm-6">
-		                                        <div class="inputBox">
-		                                            <div class="inputText">Subject</div>
-		                                            <input type="text" name="subject" class="input">
-		                                        </div>
-		                                    </div>
-		                                </div>
-		                                <div class="row">
-		                                    <div class="col-sm-12">
-		                                        <div class="inputBox">
-		                                            <div class="inputText">Message</div>
-		                                            <textarea class="input" name="message"></textarea>
-		                                        </div>
-		                                    </div>
-		                                </div>
-		                                <div class="row">
-		                                    <div class="col-sm-12">
-		                                        <input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
-		                                        <input type="submit" class="btn btn-dark w-100 send-message" value="Send Message" disabled="disabled">
-		                                    </div>
-		                                </div>
-		                            </form>
-		                        </div>
-		                    </div>
-		                    <div class="col-md-4">
-		                        <div class="location text-white">
-		                            <div class="row">
-		                                <div class="col-md-1">
-		                                    <i class="fas fa-map-marker-alt text-BAL"></i>
-		                                </div>
-		                                <div class="col-md-10">
-		                                    <span class="text-BAL"><b>BuyAnyLight.com</b></span><br>
-		                                    <span>Dubai Investment Park 1, <br> Opp. Green Community East, Showroom 10, P.O. BOX 3219 <br> Dubai,  United Arab Emirates</span>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <div class="location text-white">
-		                            <div class="row">
-		                                <div class="col-md-1">
-		                                    <i class="fas fa-phone text-BAL"></i>
-		                                </div>
-		                                <div class="col-md-10">
-		                                    <span class="text-BAL"><b>+971 4 887 3265</b></span><br>
-		                                    <span>Mon to Fri 9am to 6pm</span><br>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <div class="location text-white">
-		                            <div class="row">
-		                                <div class="col-md-1">
-		                                    <i class="fas fa-envelope text-BAL"></i>
-		                                </div>
-		                                <div class="col-md-10">
-		                                    <span  class="text-BAL"><b>info@buyanylight.com</b></span><br>
-		                                    <span>Send us your query anytime</span><br>
-		                                </div>
-		                            </div>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-			</div>
-			{{-- ///////////////////////////////////////////////////////////////////////////// --}}
-			{{-- ///////////////////////////////////////////////////////////////////////////// --}}
-			{{-- contact us --}}
-
-
-
-
-
-
 		</div>
 	</div>
 </section>
-
-
-
-
 @endsection

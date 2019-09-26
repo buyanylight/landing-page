@@ -11173,6 +11173,10 @@ nav .dropdown-toggle::after {
           filter: blur(3px);
 }
 
+.section-buy-token {
+  display: none;
+}
+
 .navbar-dark .navbar-nav .nav-link {
   font-size: 15px;
 }
@@ -11183,6 +11187,16 @@ nav .dropdown-toggle::after {
 
 .bg-black {
   background: black !important;
+}
+
+.btn-ieo {
+  background: -webkit-linear-gradient(right, #E23D96, #5555A4);
+  color: white;
+}
+
+.btn-ieo:hover {
+  background: -webkit-linear-gradient(right, #ea8bbf, #8e8ed4);
+  color: white;
 }
 
 .btn-round {

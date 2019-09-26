@@ -11136,6 +11136,10 @@ nav {
   background-size: cover;
 }
 
+.section-buy-token {
+  display: none;
+}
+
 .header-text {
   background: -webkit-linear-gradient(right, #E23D96, #5555A4);
   -webkit-background-clip: text;
@@ -11154,6 +11158,21 @@ nav {
 .btn-ieo:hover {
   background: -webkit-linear-gradient(right, #ea8bbf, #8e8ed4);
   color: white;
+}
+
+.input-group-text {
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  left: 15px;
+  z-index: 1;
+  box-shadow: 4px 0px 5px 0px #cccccc;
+}
+
+.bal-token {
+  height: 70px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .timeline {
