@@ -549,7 +549,9 @@
 			<div class="buttons pt-3">
 				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>
 				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-ieo ml-3">White Paper</a>
-				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">Yellow Paper</a>
+				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">Yellow Paper</a>				
+				<a href="#contact" class="btn btn-ieo m-2">Contact Us</a>
+
 			</div>
 		</div>
 	</div>
@@ -1504,6 +1506,7 @@
 				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>
 				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-ieo ml-3">White Paper</a>
 				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">Yellow Paper</a>
+				<a href="#contact" class="btn btn-ieo m-2">Contact Us</a>
 			</div>
 		</div>
 	</div>
@@ -1756,7 +1759,7 @@
 			{{-- contact us --}}
 			{{-- ///////////////////////////////////////////////////////////////////////////// --}}
 			{{-- ///////////////////////////////////////////////////////////////////////////// --}}
-			<div class="contact pt-0 ">
+			<div class="contact pt-0" id="contact">
 				{{-- <div class="intro-contact d-flex  align-items-center">
 		    		<div class="container">
 		    			<h3 class="text-white">
