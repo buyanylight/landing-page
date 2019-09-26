@@ -93,13 +93,23 @@
 							</a>
 						</button>
 						
-						<button 
+						<!-- <button 
 						type="button" 
 						target="_blank" 
 						class="btn btn-ieo-middle">
 							<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" 
 							target="_blank">
 								Token Owner
+							</a>
+						</button> -->
+
+						<button 
+						type="button" 
+						target="_blank" 
+						class="btn btn-ieo-middle">
+							<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" 
+							target="_blank">
+								Token Sale Agreement
 							</a>
 						</button>
 
@@ -206,11 +216,11 @@
 				<div class="pt-3">
 					<small>
 						<a href="{{ Util::assetUrl('bal_certificate.pdf')}}" target="_blank" class="text-white">Audited by Blockchain Consilium</a>
-						<br>
+					<!-- 	<br>
 						<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" 
 							target="_blank" class="text-white">						
 								Token Sale Agreement
-							</a>
+							</a> -->
 					</small>
 				</div>
 			</div>
