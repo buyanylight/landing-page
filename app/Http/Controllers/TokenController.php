@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Jenssegers\Agent\Agent;
+
 
 class TokenController extends Controller
 {
@@ -19,14 +21,43 @@ class TokenController extends Controller
 				$all_curr[$tkey]['bal_rate'] = number_format($tvalue['rate'] / 5, 8);
 				$all_curr[$tkey]['time'] = date('d-M-y H:i', strtotime($all_curr[$tkey]['time'])) . ' UTC' ;
 			}
+
+			if ($tvalue['asset_id_quote'] == 'EUR'){
+				$all_curr[$tkey]['logo'] = '<i class="fas fa-euro-sign"></i>';
+				$all_curr[$tkey]['symbol'] = 'Euro';
+			}
+			if ($tvalue['asset_id_quote'] == 'USD'){
+				$all_curr[$tkey]['logo'] = '<i class="fas fa-dollar-sign"></i>';
+				$all_curr[$tkey]['symbol'] = 'US Dollar';
+			}
+			if ($tvalue['asset_id_quote'] == 'BTC'){
+				$all_curr[$tkey]['logo'] = '<i class="fab fa-bitcoin"></i>';	
+				$all_curr[$tkey]['symbol'] = 'Bitcoin';
+			}
+			if ($tvalue['asset_id_quote'] == 'ETH'){
+				$all_curr[$tkey]['logo'] = '<i class="fab fa-ethereum"></i>';
+				$all_curr[$tkey]['symbol'] = 'Ethereum';
+			}
+
 		}
 
 
-		return view('token-info',
-			[
+		 $agent = new Agent();
+
+        $isMobile = $agent->isMobile();
+        $isTablet = $agent->isTablet();
+
+ 		if($isMobile || $isTablet) {
+            return view('mobile.ieo', [
 				'tokens' => $all_curr
-			]
-		);
+
+            ]);
+        } else {
+            return view('ieo', [
+				'tokens' => $all_curr
+
+            ]);
+        }
 	}
 
 	public function buy_tokens(Request $r){
@@ -367,7 +398,7 @@ class TokenController extends Controller
       		"Zimbabwe"
 		];
 
-		// dd($request['transaction_id']);
+		// dd($request['reference']);
 
 		if ($request['transaction_id'] == null) {
 

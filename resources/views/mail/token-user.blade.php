@@ -5,7 +5,7 @@ private sale.</p>
 transaction:</p>
 <ul>
 	<li>Reference ID: {{ $user_reference_id }}</li>
-	<li>BAL Tokens purchased: {{ $bal_amt }}</li>
+	<li>BAL Tokens purchased: {{ number_format($bal_amt) }}</li>
 	<li>Amount Paid: {{ $amount }}</li>
 	@if(empty($reference))
 	@else
@@ -15,7 +15,7 @@ transaction:</p>
 	@else
 		<li>Transaction ID: {{ $transaction_id }}</li>
 	@endif
-		<li>Your Receiver ID: {{ $receiver_id }}</li>
+		<li>Your ETH address: {{ $receiver_id }}</li>
 </ul>
 
 <p>In case you haven’t filled out the Know Your Customer (KYC) form, please

@@ -7,18 +7,28 @@
 		<div class="container">
 			<h3>
 				<b>
-					Know Your Customer (KYC)
+					Know <span style="background-color: #510091;">Your</span> Customer (KYC)
 				</b>
 			</h3>
-			<div class="alert alert-success mt-3" role="alert">
+			<div class="alert alert-warning alert-dismissible fade show mt-3" role="alert" style="margin-bottom: 0px;">
+ 				An email has been sent to you, if not received please check your spam or junk folder.
+  				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    				<span aria-hidden="true">&times;</span>
+  				</button>
+			</div>
+			<div class="alert alert-success mt-2" role="alert" >
  				Thank you for your payment!
 			</div>
 			<div class="card mt-3">
 				<div class="card-body">
 					<div>
 						<p>
-							Please complete the KYC form. After the verification process and no later than 48h, you will be receiving your BAL tokens to the ETH address which you provided.
+							Please complete the KYC form. You will receive your BAL Tokens soon.
 						</p>
+						<p>
+							For any queries, please contact us at <a href="mailto:invest@buyanylight.com"> invest@buyanylight.com</a> or call us at +971 (0) 488 732 65.
+						</p>
+
 						<hr>
 						<form action="/kyc-confirm" method="post" enctype="multipart/form-data">
 		  					@csrf()

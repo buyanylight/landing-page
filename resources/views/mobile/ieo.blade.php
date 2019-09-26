@@ -110,18 +110,11 @@
 								Token Allocation
 							</a>
 						</button>
-
-						
-
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-
-			
-
 	{{-- <div class="bg-ieo countdown rounded-circle">
 		<div class="d-flex align-items-center h-100" style="padding: 20px; padding-bottom: 5rem;">
 			<div class="w-100">	

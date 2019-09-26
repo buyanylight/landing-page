@@ -154,7 +154,6 @@
 								</div>
 								<div class="card-body text-center d-flex justify-content-center align-items-center" style="height: 158px;">
 									<h4 class="{{ $token['asset_id_quote'] }}_value" data-value="{{ $token['bal_rate'] }}">
-
 									</h4>
 								</div>
 								<div class="text-right pr-2 pb-1">

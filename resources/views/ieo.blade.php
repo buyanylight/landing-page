@@ -31,11 +31,99 @@
 		});
 		
 		$('.buy-btn').click(function(){
-
-			$('.section-buy-token').slideToggle();
-
-
+			$('.section-buy-token').slideDown();
 		})
+
+		$('.close-btn').click(function(){
+			$('.section-buy-token').slideUp();
+		})
+
+			
+				$('.bal-token').change(function() {
+			if (parseInt(this.value) < 25000) {
+				$('.bal-alert').show()
+			} else {
+				$('.bal-alert').hide()
+			}	
+		})
+
+		$('.bal-token').keyup(function() {
+			Currencyconvert()
+
+			$(".BAL_value").text($(this).val());
+			var USDIEO_value = formatNumber(parseFloat($(this).val() * 0.30303).toFixed(5))
+			var originalvalue = $('.bal-token').val();
+			var USDvalue = parseFloat(originalvalue) * $('.USD_value').data('value')
+			var USDIEO = parseFloat($(this).val() * 0.30303);
+
+			$(".USDIEO_value").text(USDIEO_value);
+
+			console.log(USDIEO - USDvalue);
+
+			var USD_return = (USDIEO - USDvalue).toFixed(5);
+
+			 $(".USD_return").text(USD_return);
+		})
+
+
+
+
+		function formatNumber(num) {
+ 	 		return num.toString().replace(/(?<!\..*)(\d)(?=(?:\d{3})+(?:\.|$))/g, '$1,')
+		}
+
+
+		function Currencyconvert(){
+			var originalvalue = $('.bal-token').val();
+
+			var USDvalue = parseFloat(originalvalue) * $('.USD_value').data('value')
+			var USD_input = parseFloat(USDvalue).toFixed(2);
+			var USD  = formatNumber(parseFloat(USDvalue).toFixed(2));
+
+
+			var BTCvalue = formatNumber(parseFloat(originalvalue) * $('.BTC_value').data('value'))
+
+			var ETHvalue = formatNumber(parseFloat(originalvalue) * $('.ETH_value').data('value'))
+
+			var EURvalue = parseFloat(originalvalue) * $('.EUR_value').data('value')
+			var EUR  = formatNumber(parseFloat(EURvalue).toFixed(2));
+			var EUR_input = parseFloat(EURvalue).toFixed(2);
+
+			
+
+			if (USD == 'NaN') {
+
+			$('.USD_value').text(0);
+			$('.EUR_value').text(0);
+			$('.ETH_value').text(0);
+			$('.BTC_value').text(0);
+
+
+			$('option.USD_value').val(USD_input + ' USD').text('USD');
+			$('option.EUR_value').val(EUR_input + ' EUR').text('EUR');
+			$('option.BTC_value').val(BTCvalue + ' BTC').text('BTC');
+			$('option.ETH_value').val(ETHvalue + ' ETH').text('ETH');
+
+
+
+			} else {
+
+			$('.USD_value').text(USD);
+			$('.EUR_value').text(EUR);
+			$('.ETH_value').text(ETHvalue);
+			$('.BTC_value').text(BTCvalue);
+
+
+			$('option.USD_value').val(USD_input + ' USD').text('USD');
+			$('option.EUR_value').val(EUR_input + ' EUR').text('EUR');
+			$('option.BTC_value').val(BTCvalue + ' BTC').text('BTC');
+			$('option.ETH_value').val(ETHvalue + ' ETH').text('ETH');
+			}
+
+		}
+
+
+
 
 
 
@@ -63,192 +151,214 @@
 			</div>
 		</div>
 
-<section class="section-1" style="background-image : url({{ Util::assetUrl('/images/ieo/ieo-bg1.png') }})">
+<section class="section-1" id="section-1" style="background-image : url({{ Util::assetUrl('/images/ieo/ieo-bg1.png') }})">
 	<div class="container h-100">
-		<div class="row w-100 h-100 d-flex align-items-center">
-			<div class="col-md-7 bal-ieo-text">
-				<h3 class="" style="line-height: 1.5">
-					<strong>
-						<span class="">
-							<b>BAL Initial <span class="pinkish">Exchange</span></b>
-						</span>
-					</strong> 
-					<br> 
-					<span class=""> 
-						<b>Offering (IEO)</b> 
-					</span>
-					<br> 
-					<p class="small-desc">
-						{{-- BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowdfunding campaign aimed at raising funds for the development of a decentralized. --}}
-						The BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowdfunding campaign to raise funds for the development of a blockchain deployed, decentralized marketplace for lighting products, and the expansion of the existing BAL Network.
-					</p>					
-				</h3>
+		<div class="d-flex align-items-center h-100">
+			<div>
+				
+				<div class="row w-100 h-100 d-flex align-items-center ">
+					<div class="col-md-7 bal-ieo-text">
+						<h3 class="" style="line-height: 1.5">
+							<strong>
+								<span class="">
+									<b>BAL Initial <span class="pinkish">Exchange</span></b>
+								</span>
+							</strong> 
+							<br> 
+							<span class=""> 
+								<b>Offering (IEO)</b> 
+							</span>
+							<br> 
+							<p class="small-desc">
+								{{-- BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowdfunding campaign aimed at raising funds for the development of a decentralized. --}}
+								The BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowdfunding campaign to raise funds for the development of a blockchain deployed, decentralized marketplace for lighting products, and the expansion of the existing BAL Network.
+							</p>					
+						</h3>
 
-				<div class="pt-1 pagers-paper">
-					<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>					
-					<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}"  target="_blank" class="btn btn-ieo">White Paper</a>
-					<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo" target="_blank">Yellow Paper</a>
-				</div>
-				<div class="pt-3">
-					<h5>
-						View on Etherscan
-					</h5>
-					<div class="pt-2">
-						<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-ieo" target="_blank">Token Contract</a>
-						<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-ieo" target="_blank">Token Owner </a>
-						<a href="#allocation" class="btn btn-ieo">Token Allocation</a>
-						<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn btn-ieo" target="_blank">Token Sale Agreement</a>
-					</div>
-				</div>
-				<div class="videos mt-5">
-					<a data-fancybox 
-					style="background-image: url({{ Util::assetUrl('/images/ieo/bal-ieo.png') }}); background-size: 100%; border: solid 3px black" 
-					href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0" 
-					class="video-link" >
-						<!-- <img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="" > -->
-						<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark">
-                            <div>
-                                <i class="fab fa-youtube"></i> 
-                                <span>
-                                    Play video
-                                </span>
-                            </div>
-                        </div>
-					</a>
-					<a data-fancybox 
-					style="background-image: url({{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}); background-size: 100%; border: solid 3px black"
-					href="https://www.youtube-nocookie.com/embed/5nMkricvzfc?rel=0" 
-					class="">
-						<!-- <img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}" alt="" style="border: solid 3px black"> -->
-						<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark">
-                            <div>
-                                <i class="fab fa-youtube"></i> 
-                                <span>
-                                    Play video
-                                </span>
-                            </div>
-                        </div>
-					</a>
-				</div>
-				<div class="pt-4">
-					<h4>
-						View on Etherscan
-					</h4>
-					<div class="pt-2">
-						<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-ieo" target="_blank">Token Contract</a>
-						<!-- <a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-ieo" target="_blank">Token Owner </a> -->
-						<a href="#allocation" class="btn btn-ieo">Token Allocation</a>
-						<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn btn-ieo" target="_blank">Token Sale Agreement</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-5">
-				<div class="countdown">
-					<div class="d-flex align-items-center h-100" style="padding: 20px; padding-bottom: 2rem;">
-						<div class="w-100">	
-							{{-- <h4 class="text-center text-white"><b>IEO PRE SALE</b></h4> --}}
-							<div class="w-100 pt-2">
-								<p class="text-white text-center mb-0">
-									<b>Private Sale starts in:</b>
-								</p>
-								<div id="timer" class="pt-2  text-center d-flex justify-content-center">
-									<div class="row justify-content-center" style="width: 90%">
-										<div id="days" class="timer-item d-inline-block"></div>
-										<div id="hours" class="timer-item d-inline-block"></div>
-										<div id="minutes" class="timer-item d-inline-block"></div>
-										<div id="seconds" class="timer-item d-inline-block"></div>
-									</div>
-								</div>
-								<div class="pl-5 text-white">
-									<small><span>1 BAL = 0.2 USD</span></small>
-								</div>
+						<div class="pt-1 pagers-paper">
+							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>					
+							<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}"  target="_blank" class="btn btn-ieo">White Paper</a>
+							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo" target="_blank">Yellow Paper</a>
+						</div>
+						<!-- <div class="pt-3">
+							<h5>
+								View on Etherscan
+							</h5>
+							<div class="pt-2">
+								<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-ieo" target="_blank">Token Contract</a>
+								<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-ieo" target="_blank">Token Owner </a>
+								<a href="#allocation" class="btn btn-ieo">Token Allocation</a>
+								<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn btn-ieo" target="_blank">Token Sale Agreement</a>
 							</div>
-							<div class="w-100">
-								<p class="text-white text-center pt-3 mb-0"><b>IEO Sale starts in:</b>
-								</p>
-								<div id="timer" class=" pt-2 text-center d-flex justify-content-center">
-									<div class="row justify-content-center" style="width: 90%">
-										<div id="days1" class="timer-item d-inline-block"></div>
-										<div id="hours1" class="timer-item d-inline-block"></div>
-										<div id="minutes1" class="timer-item d-inline-block"></div>
-										<div id="seconds1" class="timer-item d-inline-block"></div>
-									</div>
-								</div>
-								<div class="pl-5 text-white">
-									<small><span>1 BAL = 0.30303 USD</span></small>
-								</div>
-							</div>
-							<div class="mt-4">
-								<div class="row" style="font-size: 10px;">
-									<p class="col-md-4 text-white m-0 d-flex align-items-center">Start</p>
-									<p class="col-md-4 text-center text-white m-0 d-flex align-items-center justify-content-center">Soft Cap</p>
-									<p class="col-md-4 text-right text-white m-0 d-flex align-items-center justify-content-end">Hard Cap</p>
-								</div>
-								<div class="pt-1">
-									<div class="progress">
-  										<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-  											$2,000,000
-  										</div>
-									</div>
-								</div>
-								<div class="row pt-1" style="font-size: 10px;">
-									<p class="col-md-4 text-white">25% target raised</p>
-									<p class="col-md-4 text-center text-white">$4,000,000</p>
-									<p class="col-md-4 text-right text-white">$8,000,000</p>
-								</div>
-							</div>
-							<div class="w-100">
-								<img class="countdown-bottom-img" src="{{ Util::assetUrl('images/ieo/countdown-bottom.png') }}" alt="">
-							</div>
-							<div class="w-100 mt-4">
-								<div class="card-deck">
-									<div class="card text-center">
-										<div class="card-header text-white " style="background: #F511A9; padding:12px;">
-											<b>PRIVATE SALE</b>
-										</div>
-										<div class="card-text p-2" style="font-size: 11px;">
-											 1<sup>st</sup> - 31<sup>st</sup> Oct 2019
-										</div>
-									</div>
-									<div class="card text-center">
-										<div class="card-header  text-white" style="background: #F511A9">
-											<b>IEO START</b>
-										</div>
-										<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
-											1<sup>st</sup>&nbsp; Dec 2019
-										</div>
-									</div>
-									<div class="card text-center ">
-										<div class="card-header  text-white" style="background: #F511A9">
-											<b>IEO END</b>
-										</div>
-										<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
-											31<sup>st</sup>&nbsp; Dec 2019
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="pt-3">
-								<small>
-									<a href="{{ Util::assetUrl('bal_certificate.pdf')}}" target="_blank" class="text-white">Audited by Blockchain Consilium</a>
-								</small>
+						</div> -->
+						<div class="videos mt-4">
+							<a data-fancybox 
+							style="background-image: url({{ Util::assetUrl('/images/ieo/bal-ieo.png') }}); background-size: 100%; border: solid 3px black" 
+							href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0" 
+							class="video-link" >
+								<!-- <img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="" > -->
+								<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark">
+		                            <div>
+		                                <i class="fab fa-youtube"></i> 
+		                                <span>
+		                                    Play video
+		                                </span>
+		                            </div>
+		                        </div>
+							</a>
+							<a data-fancybox 
+							style="background-image: url({{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}); background-size: 100%; border: solid 3px black"
+							href="https://www.youtube-nocookie.com/embed/5nMkricvzfc?rel=0" 
+							class="">
+								<!-- <img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}" alt="" style="border: solid 3px black"> -->
+								<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark">
+		                            <div>
+		                                <i class="fab fa-youtube"></i> 
+		                                <span>
+		                                    Play video
+		                                </span>
+		                            </div>
+		                        </div>
+							</a>
+						</div>
+						<div class="pt-4">
+							<h4>
+								View on Etherscan
+							</h4>
+							<div class="pt-2">
+								<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-ieo" target="_blank">Token Contract</a>
+								<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-ieo" target="_blank">Token Owner </a>
+								<a href="#allocation" class="btn btn-ieo">Token Allocation</a>
+								<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn btn-ieo" target="_blank">Token Sale Agreement</a>
 							</div>
 						</div>
+						
+					</div>
+					<div class="col-md-5">
+						<div class="countdown">
+							<div class="d-flex align-items-center h-100" style="padding: 20px; padding-bottom: 2rem;">
+								<div class="w-100">	
+									{{-- <h4 class="text-center text-white"><b>IEO PRE SALE</b></h4> --}}
+									<div class="w-100 pt-2">
+										<p class="text-white text-center mb-0">
+											<b>Private Sale starts in:</b>
+										</p>
+										<div id="timer" class="pt-2  text-center d-flex justify-content-center">
+											<div class="row justify-content-center" style="width: 90%">
+												<div id="days" class="timer-item d-inline-block"></div>
+												<div id="hours" class="timer-item d-inline-block"></div>
+												<div id="minutes" class="timer-item d-inline-block"></div>
+												<div id="seconds" class="timer-item d-inline-block"></div>
+											</div>
+										</div>
+										<div class="pl-5 text-white">
+											<small><span>1 BAL = 0.2 USD</span></small>
+										</div>
+									</div>
+									<div class="w-100">
+										<p class="text-white text-center pt-3 mb-0"><b>IEO Sale starts in:</b>
+										</p>
+										<div id="timer" class=" pt-2 text-center d-flex justify-content-center">
+											<div class="row justify-content-center" style="width: 90%">
+												<div id="days1" class="timer-item d-inline-block"></div>
+												<div id="hours1" class="timer-item d-inline-block"></div>
+												<div id="minutes1" class="timer-item d-inline-block"></div>
+												<div id="seconds1" class="timer-item d-inline-block"></div>
+											</div>
+										</div>
+										<div class="pl-5 text-white">
+											<small><span>1 BAL = 0.30303 USD</span></small>
+										</div>
+									</div>
+									<div class="mt-4">
+										<div class="row" style="font-size: 10px;">
+											<p class="col-md-4 text-white m-0 d-flex align-items-center">Start</p>
+											<p class="col-md-4 text-center text-white m-0 d-flex align-items-center justify-content-center">Soft Cap</p>
+											<p class="col-md-4 text-right text-white m-0 d-flex align-items-center justify-content-end">Hard Cap</p>
+										</div>
+										<div class="pt-1">
+											<div class="progress">
+		  										<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+		  											$2,000,000
+		  										</div>
+											</div>
+										</div>
+										<div class="row pt-1" style="font-size: 10px;">
+											<p class="col-md-4 text-white">25% target raised</p>
+											<p class="col-md-4 text-center text-white">$4,000,000</p>
+											<p class="col-md-4 text-right text-white">$8,000,000</p>
+										</div>
+									</div>
+									<div class="w-100">
+										<img class="countdown-bottom-img" src="{{ Util::assetUrl('images/ieo/countdown-bottom.png') }}" alt="">
+									</div>
+									<div class="w-100 mt-4">
+										<div class="card-deck">
+											<div class="card text-center">
+												<div class="card-header text-white " style="background: #F511A9; padding:12px;">
+													<b>PRIVATE SALE</b>
+												</div>
+												<div class="card-text p-2" style="font-size: 11px;">
+													 1<sup>st</sup> - 31<sup>st</sup> Oct 2019
+												</div>
+											</div>
+											<div class="card text-center">
+												<div class="card-header  text-white" style="background: #F511A9">
+													<b>IEO START</b>
+												</div>
+												<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
+													1<sup>st</sup>&nbsp; Dec 2019
+												</div>
+											</div>
+											<div class="card text-center ">
+												<div class="card-header  text-white" style="background: #F511A9">
+													<b>IEO END</b>
+												</div>
+												<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
+													31<sup>st</sup>&nbsp; Dec 2019
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="pt-3">
+										<small>
+											<a href="{{ Util::assetUrl('bal_certificate.pdf')}}" target="_blank" class="text-white">Audited by Blockchain Consilium</a>
+										</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="pt-4 w-100">
+						<a href="#section-bal-token" class="btn btn-ieo w-100 buy-btn d-flex align-items-center justify-content-center" style="height: 60px;">
+							Buy Tokens Now!
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="section-buy-token">
+<section class="section-buy-token" id="section-bal-token">
+	<div class="text-right pr-3 pt-3 close-btn" style="font-size: 15px; position: absolute;
+    left: 98.5%; top: 102%;">
+		<a href="#section-1" class="pr-3 pt-3">
+			<i class="fas fa-times"></i>
+		</a>
+	</div>
 	<div class="pt-5 container">
 		<h3>
 			<strong>
-				<span class="header-text">
+				<span>
 					Buy
 				</span>
+				<span class="header-text">
+					BAL 
+				</span>
 				<span>
-					BAL Tokens
+					Tokens
 				</span>
 			</strong>
 		</h3>
@@ -256,21 +366,117 @@
 			<form action="/buy-token" method="post" enctype="multipart/form-data">
 				@csrf()
 				<div class="pt-4">
-					<div class="input-group">
-	  					<div class="input-group-prepend">
-	    					<span class="input-group-text" id="basic-addon1">
-	    						<img src="{{ Util::assetUrl('images/logo-black-icon.png') }}" width="25">
+					<div class="input-group" style="height: 70px; position: relative; right: 13px;">
+	  					<div class="input-group-prepend" style="width: 135px">
+	    					<span class="input-group-text d-flex justify-content-center btn-ieo" id="basic-addon1" style="width: 100%; border-radius: 20px; position: relative; left: 15px; z-index: 1; box-shadow: 4px 0px 5px 0px #cccccc;" data-toggle="tooltip" data-placement="right" title="BAL Token">
+	    						<img src="{{ Util::assetUrl('images/logo-white-mobile.png') }}" width="28">
 	    					</span>
 	  					</div>
-	  					<input type="number" class="form-control bal-token" placeholder="Enter an amount you want to buy" aria-label="bal-token" aria-describedby="basic-addon1" min="25000" name="bal" required="required">
+	  					<input type="number" class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" aria-label="bal-token" aria-describedby="basic-addon1" min="25000" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 15px;">
 	  					<br>
 					</div>
 				</div>
+				<div class="pt-4 bal-alert" style="display: none;">
+					<div class="alert alert-danger" role="alert">
+  						The minimum investment is 5000 USD = 25000 BAL.
+					</div>
+				</div>
+				<div class="pt-4">
+					<div class="row">
+						<div class="col-6">
+						@foreach($tokens as $token)
+
+							<div class="card mb-3" style="border-radius: 20px; height: 70px;">
+  								<div class="row no-gutters">
+    								<div class="col-md-3 d-flex align-items-center justify-content-center btn-ieo" style="border-radius: 20px; box-shadow: 4px 0px 5px 0px #cccccc; height: 70px;" data-toggle="tooltip" data-placement="right" title="{{ $token['symbol'] }}">
+      									<p class="mb-0" style="font-size: 20px;">{!! $token['logo'] !!}</p>
+    								</div>
+    								<div class="col-md-9">
+      									<div class="card-body card-body d-flex align-items-center justify-content-end" style="height: 70px;">
+        									<p class="card-text text-right mb-0">
+        										<span class="{{ $token['asset_id_quote'] }}_value" data-value="{{ $token['bal_rate'] }}">
+        											0
+        										</span> <span>{{ $token['asset_id_quote'] }}</span><br>
+        										<small class="text-muted">1 BAL = {{ $token['bal_rate'] }} {{ $token['asset_id_quote'] }} </small>
+        									</p>
+      									</div>
+    								</div>
+  								</div>
+							</div>
+							@endforeach
+						</div>
+						<div class="col-6">
+							<div class="card card-body">
+								<h5>
+									<b>
+										<span class="header-text">Profit / Return on Investment (ROI):</span>
+									</b>
+								</h5>
+								<div class="pt-2">
+									<div class="row">
+										<div class="col">
+											<b>
+												Private Sale:
+											</b>
+										</div>
+										<div class="col"><span class="BAL_value">1</span> BAL = <span class="USD_value">0.2</span> USD</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<b>
+												IEO:
+											</b>
+										</div>
+										<div class="col"><span class="BAL_value">1</span> BAL = <span class="USDIEO_value">0.30303</span> USD</div>
+									</div>
+								</div>	
+								<div class="pt-2">
+									<div class="row">
+										<div class="col">
+											<b>
+												ROI (%):
+											</b>
+										</div>
+										<div class="col">
+											51.52%
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<b>
+												Return (USD):
+											</b>
+										</div>
+										<div class="col">
+											<span class="USD_return">
+												151.515
+											</span>
+											 USD
+										</div>
+									</div>
+								</div>
+							</div>
+								<div class="pt-4">
+					<div class="form-group">
+						<label>Select Currency</label>
+						<select name="currency" class="form-control">
+							@foreach($tokens as $token)
+								<option value="" class="{{ $token['asset_id_quote'] }}_value">{{ $token['asset_id_quote'] }}</option>
+							@endforeach
+						</select>
+					</div>
+					<button type="submit" class="btn btn-ieo"><b>Buy Tokens</b></button>
+				</div>
+						</div>
+					</div>
+				</div>
+			
 			</form>
 		</div>
 	</div>
 
 </section>
+
 <section class="section-2 pt-5">
 	<div class="container pt-5 pb-5">
 		<div class="row">

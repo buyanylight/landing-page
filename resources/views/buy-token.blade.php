@@ -83,6 +83,7 @@
    		}
 
    		$('.completed-trxn').click(function(){
+   			$('#user-detail-form').append('<input type="hidden" name="reference" value="BuyAnyLight-{{ $rand }}">');
    			$('#user-detail-form').submit();
 
    		})
@@ -115,18 +116,14 @@
 		<div class="container">
 			<h3>
 				<b>
-					BAL Token Purchase
+					BAL <span style="color: #5555A4;">Token</span> Purchase
 				</b>
 			</h3>
 			<div>	
-				<div class="pt-5">
-					<b>
-						Token Sale Agreement
-					</b>
+				<div class="pt-3">
+				
 					<div class="pt-3">
-						<object data="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" type="application/pdf" style="width: 100%; height: 450px;">
-        					<embed src="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" type="application/pdf" />
-    					</object>
+						<a data-fancybox href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn" style="background-color: #5555A4; color: white;"> Token Sale Agreement</a>
 					</div>
 					
 				</div>
@@ -135,7 +132,7 @@
 					<div class="row">
 						<div class="col-8">
 							<div class="card user-form-card">
-								<div class="card-header">
+								<div class="card-header" style="background-color: #5555A4; color: white;">
 									<b>User Information</b>
 								</div>
 								<div class="card-body">
@@ -163,7 +160,7 @@
 					  								</div>
 					  							</div>
 					  							<div class="form-group row">
-					  								<label class="col-sm-3 col-form-label"><b>Your ETH Receiver address:</b></label>
+					  								<label class="col-sm-3 col-form-label"><b>Your ETH address:</b></label>
 					  								<div class="col-sm-9">
 					  									<input type="text" name="receiver_id" class="form-control" placeholder="To receive your BAL Tokens, please provide your receiver address" pattern=".{40,42}" required title="Please enter the correct address" id="eth_address">
 					  									<small class="text-danger" id="eth_error" style="display: none">Please enter the eth address consisting of 42 characters.</small>
@@ -173,19 +170,17 @@
 					  							<div class="form-check">
 		  											<input class="form-check-input" type="checkbox" value="1" required id="sale_check">
 		  											<label class="form-check-label">
-		   							 					I have read the token sale agreement
+		   							 					I have accepted the token sale agreement
 		  											</label><br>
-					  								<small class="text-danger" id="sale_error" style="display: none">Please read the agreement and check this box.</small>
+					  								<small class="text-danger" id="sale_error" style="display: none">Please read and accept the agreement .</small>
 
 												</div>
 					  							<input type="hidden" name="amount" value="{{ $amt }}">
-					  							<input type="hidden" name="reference" value="BuyAnyLight-{{ $rand }}">
 					  							<input type="hidden" name="user_reference_id" value="{{ $user_reference_id }}">
 					  							<input type="hidden" name="bal_amt" value="{{ $bal_amt }}">
-	
-						  						<div class="btn btn-primary mt-2 col-12" id="form-submit">
+						  						<div class="btn btn-primary mt-2 col-12" id="form-submit" style="background-color: #5555A4;">
 						  							Submit
-						  					</div>
+						  						</div>
 					  					</form>
 									</div>
 								</div>
@@ -195,30 +190,19 @@
 									Choose a Payment Method
 								</b>
 								<div class="accordion pt-3" id="payment">
-  									<div class="card">
+  									<div class="card" style="background-color: #5555A4;">
     									<div class="card-header" id="headingOne">
       										<h2 class="mb-0">
-        										<button class="btn btn-link w-100 text-left" type="button" data-toggle="collapse" data-target="#card-accordion" aria-expanded="true" aria-controls="card-accordion" >
+        										<button class="btn btn-link w-100 text-left" type="button" data-toggle="collapse" data-target="#card-accordion" aria-expanded="true" aria-controls="card-accordion" style="color: white;" id="credit">
           											Credit Card / Debit Card 
         										</button>
       										</h2>
     									</div>
-    									<div id="card-accordion" class="collapse" aria-labelledby="headingOne" data-parent="#payment">
-    										<div class="card-body ">
-			  									<div class="row pl-3 pr-3 ">
-			  										<div class="card-payment w-100">
-			  											<div class="btn btn-primary w-100" id="credit">
-			  												Pay with Credit Card / Debit Card
-			  											</div>
-			  										</div>
-			  									</div>
-    										</div>
-    									</div>
   									</div>
-  									<div class="card mt-3">
+  									<div class="card mt-3" style="background-color: #5555A4;">
     								<div class="card-header" id="headingTwo">
       									<h2 class="mb-0">
-        									<button class="btn btn-link w-100 text-left" type="button" data-toggle="collapse" data-target="#bank-accordion" aria-expanded="false" aria-controls="bank-accordion">
+        									<button class="btn btn-link w-100 text-left" type="button" data-toggle="collapse" data-target="#bank-accordion" aria-expanded="false" aria-controls="bank-accordion" style="color: white;">
           										Bank Transfer
         									</button>
       									</h2>
@@ -402,7 +386,7 @@
 			  								@endif
 			  							</div>
 			  							<div class="mt-3 col-12">
-			  								<button class="btn btn-primary w-100 completed-trxn">
+			  								<button class="btn btn-success w-100 completed-trxn">
 			  									I have sent the funds
 			  								</button>
 			  							</div>
@@ -415,8 +399,8 @@
 							</div>
 						</div>
 						<div class="col-4">
-							<div class="card">
-								<div class="card-header">
+							<div class="card" >
+								<div class="card-header" style="background-color: #5555A4; color: white;">
 									Transaction Details
 								</div>
 								<div class="card-body">
@@ -427,7 +411,7 @@
 											</b>
 										</div>
 										<div class="col">
-											{{ ($bal_amt) }} BAL
+											{{ number_format($bal_amt, 2) }} BAL
 										</div>
 									</div>
 									<div class="row">
@@ -437,7 +421,7 @@
 											</b>
 										</div>
 										<div class="col">
-											{{ $amount }} {{ $dcurr}}
+											{{ number_format($amount, 2) }} {{ $dcurr}}
 										</div>
 									</div>
 								</div>
@@ -450,7 +434,7 @@
 							<div class="col-12">
 								<div class="d-flex align-items-center">
 									<div class="card w-100">
-				  						<div class="card-header">
+				  						<div class="card-header" style="background-color: #5555A4; color: white;">
 						  					<b>
 						    					Bitcoin Transaction
 						  					</b>
@@ -458,7 +442,7 @@
 				  						<div class="card-body">
 				  							<div class="card-title">
 				  								<p>
-				  									You are buying <b>{{ $bal_amt }} BAL</b>
+				  									You are buying <b>{{ number_format($bal_amt, 2) }} BAL</b>
 				  								</p>
 				  								<p>
 				  									Please tranfer the amount of <b>{{ $amt }} BTC</b> to our Bitcoin address shown below:
@@ -506,7 +490,7 @@
 				  										</div>
 				  									</div>
 				  									<div class="form-group row">
-				  										<label class="col-sm-3 col-form-label"><b>Your ETH receiver address:</b></label>
+				  										<label class="col-sm-3 col-form-label"><b>Your ETH address:</b></label>
 				  										<div class="col-sm-9">
 				  											<input type="text" name="receiver_id" class="form-control" placeholder="To receive your BAL Tokens, please provide your receiver address" pattern=".{40,42}" required title="Please enter the correct address">
 				  										</div>
@@ -514,13 +498,13 @@
 				  									<div class="form-check">
   														<input class="form-check-input" type="checkbox" value="" required>
   														<label class="form-check-label">
-   							 								I have read the token sale agreement
+   							 								I have accepted the token sale agreement
   														</label>
 													</div>
 				  									<input type="hidden" name="user_reference_id" value="{{ $user_reference_id }}">
-				  									<input type="hidden" name="amount" value="{{ $user_reference_id }}">
+				  									<input type="hidden" name="amount" value="{{ $amt }} BTC">
 				  									<input type="hidden" name="bal_amt" value="{{ $bal_amt }}">
-				  									<button type="submit" class="btn  btn-primary mt-2 col-12">
+				  									<button type="submit" class="btn  btn-primary mt-2 col-12" style="background-color: #5555A4;">
 					  									Submit
 					  								</button>
 					  							</form>
@@ -536,30 +520,32 @@
 						</div>
 
 							@else
-							<div class="pt-4">
+							<div>
 								<div class="row">
 									<div class="col-12">
 								<div class="card w-100">
-									<div class="card-header">
+									<div class="card-header" style="background-color: #5555A4; color: white;">
 				  						<b>
 				    						Ethereum Transaction
 				  						</b>
 									</div>
 			  						<div class="card-body">
 			  							<p>
-				  							You are buying <b>{{ $bal_amt }} BAL</b>
+				  							You are buying <b>{{ number_format($bal_amt, 2) }} BAL</b>
 				  						</p>
 				  						<p>
 				  							
 				  						</p>
 				  						<p>
-				  							Please tranfer the amount of <b>{{ $amt }} ETH</b> to our Bitcoin address shown below:
+				  							Please tranfer the amount of <b>{{ $amt }} ETH</b> to our Ethereum address shown below:
 				  						</p>
 		  								<p>
 		  									0x0b60500e43d0dd3b92acb681133d66e4f21e81bf
 		  								</p>
 			  							<small>
-			  								Sending coin or token other than ETH to this address may result in the loss of your deposit.
+			  								<b>
+			  									Sending coin or token other than ETH to this address may result in the loss of your deposit.
+			  								</b>
 			  							</small>
 		  								<hr>
 		  								<form action="/kyc" method="post" enctype="multipart/form-data">
@@ -595,7 +581,7 @@
 		  										</div>
 		  									</div>
 		  									<div class="form-group row">
-		  										<label class="col-sm-3 col-form-label"><b>Your ETH receiver address:</b></label>
+		  										<label class="col-sm-3 col-form-label"><b>Your ETH address:</b></label>
 		  										<div class="col-sm-9">
 		  											<input type="text" name="receiver_id" class="form-control" placeholder="To receive your BAL Tokens, please provide your receiver address" pattern=".{40,42}" required title="Please enter the correct address">
 		  										</div>
@@ -603,14 +589,14 @@
 		  									<div class="form-check pb-3">
   												<input class="form-check-input" type="checkbox" value="" required>
   												<label class="form-check-label">
-   							 						I have read the token sale agreement
+   							 						I have accepted the token sale agreement
   												</label>
 											</div>
 		  									<input type="hidden" name="user_reference_id" value="{{ $user_reference_id }}">
 		  									<input type="hidden" name="bal_amt" value="{{ $bal_amt }}">
 
 		  									<input type="hidden" name="amount" value="{{ $amt }} ETH">
-		  									<button type="submit" class="btn  btn-primary mt-2 col-12">
+		  									<button type="submit" class="btn  btn-primary mt-2 col-12" style="background-color: #5555A4;">
 			  									Submit
 			  								</button>
 			  							</form>
