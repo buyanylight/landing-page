@@ -19,14 +19,18 @@ Route::get('/privacy', 'PageController@privacy')->name('privacy');
 Route::get('/buyer-faq', 'PageController@buyer_faq')->name('buyer-faq');
 Route::get('/seller-faq', 'PageController@seller_faq')->name('seller-faq');
 Route::get('/contact', 'PageController@contact')->name('contact');
-Route::get('/ieo', 'PageController@ieo')->name('ieo');
-Route::get('/token-info', 'TokenController@token_info')->name('token-info');
+// Route::get('/ieo', 'PageController@ieo')->name('ieo');
+
+Route::get('/ieo', 'TokenController@token_info')->name('ieo');
+Route::get('/testcode', 'TokenController@token_info_code')->name('testcode');
 Route::post('/buy-token', 'TokenController@buy_tokens')->name('buy-tokens');
 Route::post('/kyc', 'TokenController@kyc')->name('kyc');
 
 Route::get('/downloads', 'PageController@downloads')->name('downloads');
 Route::get('/videos', 'PageController@videos')->name('videos');
 
+Route::post('/kyc-confirm', 'TokenController@kyc_confirm')->name('kyc-confirm');
+Route::get('/kyc-form/{uid}', 'TokenController@demo')->name('demo');
 Route::get('/whitepaper', 'PageController@soon')->name('whitepaper');
 Route::get('/yellowpaper', 'PageController@soon')->name('yellowpaper');
 
