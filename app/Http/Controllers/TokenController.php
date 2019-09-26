@@ -146,7 +146,7 @@ class TokenController extends Controller
 
 			$request = $client->request('POST', $url, [
 				'headers' =>  [
-					'merchant_key' => 'test_$2y$10$.0TFlqFxM7y.3GoHkDIqWeO-2bT2eBz8t86PVUkHwH9zMghDm5PLi',
+					'merchant_key' => 'live_$2y$10$Q73YSkuFiykik9zVfS2BBORIwHPFfXTD0-73YXtUycUxdl5m-rCXC',
 				],
 				'form_params' => $myBody
 			]);
