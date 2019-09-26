@@ -24,6 +24,9 @@ Route::get('/token-info', 'TokenController@token_info')->name('token-info');
 Route::post('/buy-token', 'TokenController@buy_tokens')->name('buy-tokens');
 Route::post('/kyc', 'TokenController@kyc')->name('kyc');
 
+Route::get('/downloads', 'PageController@downloads')->name('downloads');
+Route::get('/videos', 'PageController@videos')->name('videos');
+
 Route::get('/whitepaper', 'PageController@soon')->name('whitepaper');
 Route::get('/yellowpaper', 'PageController@soon')->name('yellowpaper');
 

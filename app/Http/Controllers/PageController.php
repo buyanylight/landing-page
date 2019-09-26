@@ -72,25 +72,23 @@ class PageController extends Controller
 
     }
 
-    public function ieo ()
-    {
+    public function ieo () {
 
         $agent = new Agent();
 
         $isMobile = $agent->isMobile();
         $isTablet = $agent->isTablet();
-
     
         if($isMobile || $isTablet) {
             return view('mobile.ieo');
         } else {
             return view('ieo');
         }
+
     }
 
-     public function soon ()
+    public function soon ()
     {
-
         $agent = new Agent();
 
         $isMobile = $agent->isMobile();
@@ -102,9 +100,38 @@ class PageController extends Controller
         } else {
             return view('coming-soon');
         }
+    }
 
 
+    public function downloads() {
 
+        $agent = new Agent();
+
+        $isMobile = $agent->isMobile();
+        $isTablet = $agent->isTablet();
+
+    
+        if($isMobile || $isTablet) {
+            return view('mobile.downloads');
+        } else {
+            return view('downloads');
+        }
+    }
+
+
+    public function videos() {
+
+        $agent = new Agent();
+
+        $isMobile = $agent->isMobile();
+        $isTablet = $agent->isTablet();
+
+    
+        if($isMobile || $isTablet) {
+            return view('mobile.videos');
+        } else {
+            return view('videos');
+        }
     }
 
 
