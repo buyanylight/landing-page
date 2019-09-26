@@ -160,6 +160,7 @@
 		@include('includes.footer')
 		<!-- Scripts -->
 		<script src="{{ Util::assetUrl('js/app.js') }}" charset="utf-8"></script>
+		<script src="{{ Util::assetUrl('js/validator.min.js') }}" charset="utf-8"></script>
 		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	 	<script src="https://www.google.com/recaptcha/api.js?render={{ env('CAPTCHA_KEY') }}"></script>
@@ -456,6 +457,18 @@
 
 
 	</script>
+
+	@if (session('kyc-success'))
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.kyc-toast').toast('show');
+		});
+	</script>
+
+
+	@endif
+
 	@if (session('success') || session('danger'))
 	<script type="text/javascript">
 		$( document ).ready(function() {
