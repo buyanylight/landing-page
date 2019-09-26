@@ -3,7 +3,6 @@
 @section('body-end-javascript')
 
 <script type="text/javascript" src="https://www.foloosi.com/js/foloosipay.v2.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
 @if( $curr == 'credit')
 
@@ -43,9 +42,14 @@
 
    $('#form-submit').click(function(e){
    		e.stopPropagation()
+   		$('#name-div').text($('#fullname').val());
+   		$('#email-div').text($('#email').val());
+   		$('#eth-div').text($('#eth_address').val());
 
    		var value = $('#eth_address').val();
 
+
+   			console.log();
 
    			if (!(validator.isEmpty($('#fullname').val()))) {
    				console.log('Name-Yess!')
@@ -79,6 +83,8 @@
    		if (!(validator.isEmpty($('#fullname').val())) && validator.isEmail($('#email').val()) && $('input#sale_check').is(':checked') && validator.isLength($('#eth_address').val(), {min: 42})) {
    			$('.payment').slideDown();
    			$('.user-form-card').slideUp();
+   			$('.user-form-card-info').show();
+   			$('.sale-tick').show();
 
    		}
 
@@ -119,21 +125,63 @@
 					BAL <span style="color: #5555A4;">Token</span> Purchase
 				</b>
 			</h3>
+
+				<div class="row pt-3">
+
+					
+					<div class="col-md-4 col-12 pt-2">
+						<div class="card card-body text-center p-2" style="background-color: #7c7ca9; color: white; height: 50px;">
+							<small>
+								<b>STEP 1</b> <br>
+							Amount of BAL and Currency
+							</small>
+							
+						</div>
+					</div>
+					<div class="col-md-4 col-12 pt-2">
+						<div class="card card-body text-center p-2" style="background-color: #5555A4; color: white; height: 50px;"> 
+							<small>
+								<b>STEP 2 </b><br>
+							Investor Information and Payment
+								
+							</small>
+							
+						</div>
+					</div>
+					<div class="col-md-4 col-12 pt-2">
+						<div class="card card-body text-center p-2" style="  height: 50px;">
+							<small>
+								<b>STEP 3</b> <br>
+						 	Know Your Customer (KYC)
+							</small>
+							
+						</div>
+					</div>
+
+
+				</div>
 			<div>	
 				<div class="pt-3">
 				
 					<div class="pt-3">
-						<a data-fancybox href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn" style="background-color: #5555A4; color: white;"> Token Sale Agreement</a>
+						<a data-fancybox href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn" style="background-color: #5555A4; color: white;"> Token Sale Agreement 
+							<span class="text-success sale-tick" style="display: none;">
+								<i class="fas fa-check-circle"></i>
+							</span>
+						</a>
 					</div>
 					
 				</div>
+
+
+
 				<div class="pt-3 pb-5">
 					@if( $curr == 'credit')
 					<div class="row">
-						<div class="col-8">
+						<div class="col-md-8 col-12">
 							<div class="card user-form-card">
 								<div class="card-header" style="background-color: #5555A4; color: white;">
-									<b>User Information</b>
+									<b>Investor Information</b>
 								</div>
 								<div class="card-body">
 									<div class="user-form">
@@ -141,7 +189,7 @@
 					  						@csrf()
 					  							<div class="form-group row">
 		  											<label class="col-sm-3 col-form-label"><b>Reference ID:</b></label>
-		  											<div class="col-sm-9 p-1">
+		  											<div class="col-sm-9 pt-2">
 		  												{{$user_reference_id }}
 		  											</div>
 		  										</div>
@@ -170,7 +218,7 @@
 					  							<div class="form-check">
 		  											<input class="form-check-input" type="checkbox" value="1" required id="sale_check">
 		  											<label class="form-check-label">
-		   							 					I have accepted the token sale agreement
+		   							 					I have accepted the token sale agreement.
 		  											</label><br>
 					  								<small class="text-danger" id="sale_error" style="display: none">Please read and accept the agreement .</small>
 
@@ -179,10 +227,38 @@
 					  							<input type="hidden" name="user_reference_id" value="{{ $user_reference_id }}">
 					  							<input type="hidden" name="bal_amt" value="{{ $bal_amt }}">
 						  						<div class="btn btn-primary mt-2 col-12" id="form-submit" style="background-color: #5555A4;">
-						  							Submit
+						  							Submit and proceed to select your desired payment method
 						  						</div>
 					  					</form>
 									</div>
+								</div>
+							</div>
+							<div class="card user-form-card-info" style="display: none;">
+								<div class="card-header" style="background-color: #5555A4; color: white;">
+									Investor Information
+								</div>
+								<div class="card-body">
+									<div class="form-group row">
+		  								<label class="col-sm-3 col-form-label"><b>Reference ID:</b></label>
+		  								<div class="col-sm-9 pt-2">
+		  									{{$user_reference_id }}
+		  								</div>
+		  							</div>
+		  							<div class="form-group row">
+		  								<label class="col-sm-3 col-form-label"><b>Name:</b></label>
+		  								<div class="col-sm-9 pt-2 " id="name-div">
+		  								</div>
+		  							</div>
+		  							<div class="form-group row">
+		  								<label class="col-sm-3 col-form-label"><b>Email:</b></label>
+		  								<div class="col-sm-9 pt-2 " id="email-div">
+		  								</div>
+		  							</div>
+		  							<div class="form-group row">
+		  								<label class="col-sm-3 col-form-label"><b>Your Eth address:</b></label>
+		  								<div class="col-sm-9 pt-2" id="eth-div">
+		  								</div>
+		  							</div>
 								</div>
 							</div>
 							<div class="payment pt-3" style="display: none;">
@@ -199,8 +275,8 @@
       										</h2>
     									</div>
   									</div>
-  									<div class="card mt-3" style="background-color: #5555A4;">
-    								<div class="card-header" id="headingTwo">
+  									<div class="card mt-3">
+    								<div class="card-header" id="headingTwo" style="background-color: #5555A4;">
       									<h2 class="mb-0">
         									<button class="btn btn-link w-100 text-left" type="button" data-toggle="collapse" data-target="#bank-accordion" aria-expanded="false" aria-controls="bank-accordion" style="color: white;">
           										Bank Transfer
@@ -398,23 +474,23 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-4">
+						<div class="col-md-4 col-12 pt-2">
 							<div class="card" >
 								<div class="card-header" style="background-color: #5555A4; color: white;">
 									Transaction Details
 								</div>
 								<div class="card-body">
-									<div class="row">
+									<div class="row pt-2">
 										<div class="col">
 											<b>
 												BAL Tokens:
 											</b>
 										</div>
 										<div class="col">
-											{{ number_format($bal_amt, 2) }} BAL
+											{{ number_format($bal_amt) }} BAL
 										</div>
 									</div>
-									<div class="row">
+									<div class="row pt-2">
 										<div class="col">
 											<b>
 												Amount to be paid:
@@ -422,6 +498,16 @@
 										</div>
 										<div class="col">
 											{{ number_format($amount, 2) }} {{ $dcurr}}
+										</div>
+									</div>
+									<div class="row pt-2">
+										<div class="col">
+											<b>
+												Accepted Payments:
+											</b>
+										</div>
+										<div class="col">
+											Visa, Mastercard, Bank Transfer
 										</div>
 									</div>
 								</div>
@@ -442,7 +528,7 @@
 				  						<div class="card-body">
 				  							<div class="card-title">
 				  								<p>
-				  									You are buying <b>{{ number_format($bal_amt, 2) }} BAL</b>
+				  									You are buying <b>{{ number_format($bal_amt) }} BAL</b>
 				  								</p>
 				  								<p>
 				  									Please tranfer the amount of <b>{{ $amt }} BTC</b> to our Bitcoin address shown below:
@@ -462,7 +548,7 @@
 					  							@csrf()
 					  								<div class="form-group row">
 		  												<label class="col-sm-3 col-form-label"><b>Reference ID:</b></label>
-		  												<div class="col-sm-9 p-1">
+		  												<div class="col-sm-9 pt-2">
 		  													{{$user_reference_id }}
 		  												</div>
 		  											</div>
@@ -498,7 +584,7 @@
 				  									<div class="form-check">
   														<input class="form-check-input" type="checkbox" value="" required>
   														<label class="form-check-label">
-   							 								I have accepted the token sale agreement
+   							 								I have accepted the token sale agreement.
   														</label>
 													</div>
 				  									<input type="hidden" name="user_reference_id" value="{{ $user_reference_id }}">
@@ -531,7 +617,7 @@
 									</div>
 			  						<div class="card-body">
 			  							<p>
-				  							You are buying <b>{{ number_format($bal_amt, 2) }} BAL</b>
+				  							You are buying <b>{{ number_format($bal_amt) }} BAL</b>
 				  						</p>
 				  						<p>
 				  							
@@ -552,7 +638,7 @@
 			  								@csrf()
 			  								<div class="form-group row">
 		  										<label class="col-sm-3 col-form-label"><b>Reference ID:</b></label>
-		  										<div class="col-sm-9 p-1">
+		  										<div class="col-sm-9 pt-2">
 		  											{{$user_reference_id }}
 		  										</div>
 		  									</div>
@@ -589,7 +675,7 @@
 		  									<div class="form-check pb-3">
   												<input class="form-check-input" type="checkbox" value="" required>
   												<label class="form-check-label">
-   							 						I have accepted the token sale agreement
+   							 						I have accepted the token sale agreement.
   												</label>
 											</div>
 		  									<input type="hidden" name="user_reference_id" value="{{ $user_reference_id }}">

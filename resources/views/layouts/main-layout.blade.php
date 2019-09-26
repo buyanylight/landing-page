@@ -455,7 +455,7 @@
 
 	</script>
 
-	@if (session('success'))
+	@if (session('kyc-success'))
 
 	<script type="text/javascript">
 		$(document).ready(function() {

@@ -39,13 +39,7 @@
 		})
 
 			
-				$('.bal-token').change(function() {
-			if (parseInt(this.value) < 25000) {
-				$('.bal-alert').show()
-			} else {
-				$('.bal-alert').hide()
-			}	
-		})
+
 
 		$('.bal-token').keyup(function() {
 			Currencyconvert()
@@ -372,7 +366,7 @@
 	    						<img src="{{ Util::assetUrl('images/logo-white-mobile.png') }}" width="28">
 	    					</span>
 	  					</div>
-	  					<input type="number" class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" aria-label="bal-token" aria-describedby="basic-addon1" min="25000" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 15px;">
+	  					<input type="number" class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" aria-label="bal-token" aria-describedby="basic-addon1"  name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 15px;">
 	  					<br>
 					</div>
 				</div>

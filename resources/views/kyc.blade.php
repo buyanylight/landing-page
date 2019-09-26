@@ -7,9 +7,43 @@
 		<div class="container">
 			<h3>
 				<b>
-					Know <span style="background-color: #510091;">Your</span> Customer (KYC)
+					Know <span style="color: #510091;">Your</span> Customer (KYC)
 				</b>
 			</h3>
+			<div class="row pt-3">
+
+					
+					<div class="col-md-4 col-12 pt-2">
+						<div class="card card-body text-center p-2" style="background-color: #7c7ca9; color: white; height: 50px;">
+							<small>
+								<b>STEP 1</b> <br>
+							Amount of BAL and Currency
+							</small>
+							
+						</div>
+					</div>
+					<div class="col-md-4 col-12 pt-2 ">
+						<div class="card card-body text-center p-2" style="background-color: #7c7ca9; color: white; height: 50px;"> 
+							<small>
+								<b>STEP 2 </b><br>
+							Investor Information and Payment
+								
+							</small>
+							
+						</div>
+					</div>
+					<div class="col-md-4 col-12 pt-2">
+						<div class="card card-body text-center p-2" style=" background-color: #5555A4; color: white; height: 50px;">
+							<small>
+								<b>STEP 3</b> <br>
+						 	Know Your Customer (KYC)
+							</small>
+							
+						</div>
+					</div>
+
+
+				</div>
 			<div class="alert alert-warning alert-dismissible fade show mt-3" role="alert" style="margin-bottom: 0px;">
  				An email has been sent to you, if not received please check your spam or junk folder.
   				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -34,7 +68,7 @@
 		  					@csrf()
 		  					<div class="form-group row">
 		  						<label class="col-sm-3 col-form-label"><b>Reference ID:</b></label>
-		  							<div class="col-sm-9 p-1">
+		  							<div class="col-sm-9 pt-2">
 		  								{{$user_reference_id }}
 		  							</div>
 		  					</div>
@@ -96,7 +130,7 @@
 							<div class="row">
 								<div class="col-12">
 									<input type="hidden" name="user_reference_id" value="{{ $user_reference_id }}">
-									<button type="submit" class="btn text-white w-100" style="background-color: #510091;"> Submit </button>
+									<button type="submit" class="btn text-white w-100" style="background-color: #510091;"> Submit and Complete the process </button>
 								</div>
 							</div>
 						</form>

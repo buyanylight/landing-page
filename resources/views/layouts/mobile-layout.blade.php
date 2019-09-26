@@ -157,7 +157,18 @@
 
 
 	<script src="{{ Util::assetUrl('js/mobile.js') }}" charset="utf-8"></script>
+	<script src="{{ Util::assetUrl('js/validator.min.js') }}" charset="utf-8"></script>
 
+	@if (session('kyc-success'))
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.kyc-toast').toast('show');
+		});
+	</script>
+
+
+	@endif
 
 
 	@if (session('success') || session('danger'))

@@ -7,9 +7,44 @@
 		<div class="container">
 			<h3>
 				<b>
-					Know Your Customer (KYC)
+					Know <span style="color: #510091;"> Your </span>  Customer (KYC)
 				</b>
 			</h3>
+
+						<div class="row pt-3">
+
+					
+					<div class="col-md-4 col-12 pt-2">
+						<div class="card card-body text-center p-2" style="background-color: #5555A4; color: white; height: 50px;">
+							<small>
+								<b>STEP 1</b> <br>
+							Amount of BAL and Currency
+							</small>
+							
+						</div>
+					</div>
+					<div class="col-md-4 col-12 pt-2 ">
+						<div class="card card-body text-center p-2" style="background-color: #5555A4; color: white; height: 50px;"> 
+							<small>
+								<b>STEP 2 </b><br>
+							Investor Information and Payment
+								
+							</small>
+							
+						</div>
+					</div>
+					<div class="col-md-4 col-12 pt-2">
+						<div class="card card-body text-center p-2" style=" background-color: #5555A4; color: white; height: 50px;">
+							<small>
+								<b>STEP 3</b> <br>
+						 	Know Your Customer (KYC)
+							</small>
+							
+						</div>
+					</div>
+
+
+				</div>
 			<div class="alert alert-warning alert-dismissible fade show mt-3" role="alert" style="margin-bottom: 0px;">
  				An email has been sent to you, if not received please check your spam or junk folder.
   				<button type="button" class="close" data-dismiss="alert" aria-label="Close">

@@ -28,7 +28,7 @@ complete it by accessing the following link:</p>
 </p>
 
 <p>
-	Our Token Sale Agreement is attached to this email for your reference
+	Our Token Sale Agreement is attached for your reference.
 </p>
 
 

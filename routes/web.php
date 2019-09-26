@@ -20,7 +20,9 @@ Route::get('/buyer-faq', 'PageController@buyer_faq')->name('buyer-faq');
 Route::get('/seller-faq', 'PageController@seller_faq')->name('seller-faq');
 Route::get('/contact', 'PageController@contact')->name('contact');
 // Route::get('/ieo', 'PageController@ieo')->name('ieo');
+
 Route::get('/ieo', 'TokenController@token_info')->name('ieo');
+Route::get('/testcode', 'TokenController@token_info_code')->name('testcode');
 Route::post('/buy-token', 'TokenController@buy_tokens')->name('buy-tokens');
 Route::post('/kyc', 'TokenController@kyc')->name('kyc');
 Route::post('/kyc-confirm', 'TokenController@kyc_confirm')->name('kyc-confirm');

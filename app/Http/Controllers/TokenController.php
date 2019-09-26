@@ -9,7 +9,7 @@ use Jenssegers\Agent\Agent;
 class TokenController extends Controller
 {
 	public function token_info(){
-		$curr = $this->GetApi('https://rest-sandbox.coinapi.io/v1/exchangerate/USD?apikey=2852AF92-ABE7-4222-8678-3ECCAF6A8A7A');
+		$curr = $this->GetApi('https://rest.coinapi.io/v1/exchangerate/USD?apikey=B307BEFD-28DE-499C-942C-DBC5C463B1A1');
 
 		$curr_result = json_decode($curr, true);
 	
@@ -59,6 +59,59 @@ class TokenController extends Controller
             ]);
         }
 	}
+
+
+	public function token_info_code(){
+		$curr = $this->GetApi('https://rest.coinapi.io/v1/exchangerate/USD?apikey=B307BEFD-28DE-499C-942C-DBC5C463B1A1');
+
+		$curr_result = json_decode($curr, true);
+	
+		// dd($curr_result);
+
+		foreach ($curr_result['rates'] as $tkey => $tvalue) {
+			if ($tvalue['asset_id_quote'] == 'EUR' || $tvalue['asset_id_quote'] == 'BTC' ||  $tvalue['asset_id_quote'] == 'ETH' ||  $tvalue['asset_id_quote'] == 'USD') {
+				$all_curr[$tkey] = $tvalue;
+				$all_curr[$tkey]['bal_rate'] = number_format($tvalue['rate'] / 5, 8);
+				$all_curr[$tkey]['time'] = date('d-M-y H:i', strtotime($all_curr[$tkey]['time'])) . ' UTC' ;
+			}
+
+			if ($tvalue['asset_id_quote'] == 'EUR'){
+				$all_curr[$tkey]['logo'] = '<i class="fas fa-euro-sign"></i>';
+				$all_curr[$tkey]['symbol'] = 'Euro';
+			}
+			if ($tvalue['asset_id_quote'] == 'USD'){
+				$all_curr[$tkey]['logo'] = '<i class="fas fa-dollar-sign"></i>';
+				$all_curr[$tkey]['symbol'] = 'US Dollar';
+			}
+			if ($tvalue['asset_id_quote'] == 'BTC'){
+				$all_curr[$tkey]['logo'] = '<i class="fab fa-bitcoin"></i>';	
+				$all_curr[$tkey]['symbol'] = 'Bitcoin';
+			}
+			if ($tvalue['asset_id_quote'] == 'ETH'){
+				$all_curr[$tkey]['logo'] = '<i class="fab fa-ethereum"></i>';
+				$all_curr[$tkey]['symbol'] = 'Ethereum';
+			}
+
+		}
+
+
+		 $agent = new Agent();
+
+        $isMobile = $agent->isMobile();
+        $isTablet = $agent->isTablet();
+
+ 		if($isMobile || $isTablet) {
+            return view('mobile.test', [
+				'tokens' => $all_curr
+
+            ]);
+        } else {
+            return view('test', [
+				'tokens' => $all_curr
+
+            ]);
+        }
+	}	
 
 	public function buy_tokens(Request $r){
 
@@ -481,7 +534,7 @@ class TokenController extends Controller
 	        \Mail::send('mail.token',
 	        $email_details, function($message) use ($request){
 	            $message->from('no-reply@buyanylight.com');
-	           	$message->to('rizvi.almanilighting@gmail.com', 'Admin')->subject('New BAL Token Transaction');
+	           	$message->to('info@buyanylight.com', 'Admin')->subject('New BAL Token Transaction');
 	        });
 
 
@@ -807,7 +860,7 @@ class TokenController extends Controller
             'selfie_user_id' => url('uploads/'. $selfie_file_name),
        	), function($message) use ($request){
             $message->from('no-reply@buyanylight.com');
-           	$message->to('rizvi.almanilighting@gmail.com', 'Admin')->subject('New KYC verification');
+           	$message->to('info@buyanylight.com', 'Admin')->subject('New KYC verification');
         });
 
           \Mail::send('mail.kyc-confirm-user',
@@ -826,7 +879,7 @@ class TokenController extends Controller
 
 
 
-        return redirect('ieo')->with('success', ' dsfdsfdsf');
+        return redirect('ieo')->with('kyc-success', ' dsfdsfdsf');
 
 
 
