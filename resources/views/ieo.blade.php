@@ -52,7 +52,7 @@
 			Currencyconvert()
 
 			$(".BAL_value").text($(this).val());
-			var USDIEO_value = formatNumber(parseFloat($(this).val() * 0.30303).toFixed(5))
+			var USDIEO_value = numeral(parseFloat($(this).val() * 0.30303)).format('0,0.00000');
 			var originalvalue = $('.bal-token').val();
 			var USDvalue = parseFloat(originalvalue) * $('.USD_value').data('value')
 			var USDIEO = parseFloat($(this).val() * 0.30303);
@@ -67,11 +67,12 @@
 		})
 
 
+		
 
 
-		function formatNumber(num) {
- 	 		return num.toString().replace(/(?<!\..*)(\d)(?=(?:\d{3})+(?:\.|$))/, '$1,')
-		}
+
+		// 1000
+
 
 
 		function Currencyconvert(){
@@ -79,15 +80,15 @@
 
 			var USDvalue = parseFloat(originalvalue) * $('.USD_value').data('value')
 			var USD_input = parseFloat(USDvalue).toFixed(2);
-			var USD  = formatNumber(parseFloat(USDvalue).toFixed(2));
+			var USD  = numeral(parseFloat(USDvalue)).format('0,0.00');
 
 
-			var BTCvalue = formatNumber(parseFloat(originalvalue) * $('.BTC_value').data('value'))
+			var BTCvalue = parseFloat(originalvalue) * $('.BTC_value').data('value')
 
-			var ETHvalue = formatNumber(parseFloat(originalvalue) * $('.ETH_value').data('value'))
+			var ETHvalue = parseFloat(originalvalue) * $('.ETH_value').data('value')
 
 			var EURvalue = parseFloat(originalvalue) * $('.EUR_value').data('value')
-			var EUR  = formatNumber(parseFloat(EURvalue).toFixed(2));
+			var EUR  = numeral(parseFloat(EURvalue)).format('0,0.00');
 			var EUR_input = parseFloat(EURvalue).toFixed(2);
 
 			
