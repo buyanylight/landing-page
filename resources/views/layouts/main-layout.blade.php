@@ -151,9 +151,6 @@
 				<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
 			</div>
 		</div>
-
-
-
 		@include('includes.navbar')
 		@yield('content')
 

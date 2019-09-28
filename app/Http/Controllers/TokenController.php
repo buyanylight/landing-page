@@ -134,6 +134,11 @@ class TokenController extends Controller
 		if ($curr[1] == 'USD' || $curr[1] == 'EUR') {
 		// dd($curr[1]);
 			// $faloosi = [];
+			$test_url = "https://www.foloosi.com/";
+			// dd(get_headers($test_url)[0]);
+
+			if (get_headers($test_url)[0] == "HTTP/1.1 200 OK") {
+				# code...
 			$client = new \GuzzleHttp\Client();
 			$url = "https://foloosi.com/api/v1/api/initialize-setup";
 
@@ -150,6 +155,7 @@ class TokenController extends Controller
 				],
 				'form_params' => $myBody
 			]);
+
 
 			$response = json_decode($request->getBody(), true);
 			$response_data = $response['data'];
@@ -182,6 +188,33 @@ class TokenController extends Controller
 
 			}
 
+			} else {
+				if ($curr[1] == 'USD') {
+				return view('buy-token', [
+					'bal_amt' => $r['bal'],
+					'user_reference_id' => strtotime('now').''.generateRandomString(3), 
+					'curr' => 'nocredit',
+					'amt' => $r['currency'],
+					'amount' => $curr[0],
+					'dcurr' => $curr[1],
+					'rand' => generateRandomString(4),
+					'usd' => 1
+				]);
+			} else {
+				return view('buy-token', [
+					'bal_amt' => $r['bal'],
+					'user_reference_id' => strtotime('now').''.generateRandomString(3), 
+					'curr' => 'nocredit',
+					'amt' => $r['currency'],
+					'amount' => $curr[0],
+					'dcurr' => $curr[1],
+					'rand' => generateRandomString(4),
+					'usd' => 0
+				]);
+
+			}
+
+			}
 
 
 		} elseif ($curr[1] == 'BTC') {
