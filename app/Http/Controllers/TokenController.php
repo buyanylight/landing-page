@@ -62,9 +62,55 @@ class TokenController extends Controller
 
 
 	public function token_info_code(){
-		$test_url = "https://www.foloosi.com/";
-		dd(get_headers($test_url));
-		
+		$curr = $this->GetApi('https://rest.coinapi.io/v1/exchangerate/USD?apikey=B307BEFD-28DE-499C-942C-DBC5C463B1A1');
+
+		$curr_result = json_decode($curr, true);
+	
+		// dd($curr_result);
+
+		foreach ($curr_result['rates'] as $tkey => $tvalue) {
+			if ($tvalue['asset_id_quote'] == 'EUR' || $tvalue['asset_id_quote'] == 'BTC' ||  $tvalue['asset_id_quote'] == 'ETH' ||  $tvalue['asset_id_quote'] == 'USD') {
+				$all_curr[$tkey] = $tvalue;
+				$all_curr[$tkey]['bal_rate'] = number_format($tvalue['rate'] / 5, 8);
+				$all_curr[$tkey]['time'] = date('d-M-y H:i', strtotime($all_curr[$tkey]['time'])) . ' UTC' ;
+			}
+
+			if ($tvalue['asset_id_quote'] == 'EUR'){
+				$all_curr[$tkey]['logo'] = '<i class="fas fa-euro-sign"></i>';
+				$all_curr[$tkey]['symbol'] = 'Euro';
+			}
+			if ($tvalue['asset_id_quote'] == 'USD'){
+				$all_curr[$tkey]['logo'] = '<i class="fas fa-dollar-sign"></i>';
+				$all_curr[$tkey]['symbol'] = 'US Dollar';
+			}
+			if ($tvalue['asset_id_quote'] == 'BTC'){
+				$all_curr[$tkey]['logo'] = '<i class="fab fa-bitcoin"></i>';	
+				$all_curr[$tkey]['symbol'] = 'Bitcoin';
+			}
+			if ($tvalue['asset_id_quote'] == 'ETH'){
+				$all_curr[$tkey]['logo'] = '<i class="fab fa-ethereum"></i>';
+				$all_curr[$tkey]['symbol'] = 'Ethereum';
+			}
+
+		}
+
+
+		 $agent = new Agent();
+
+        $isMobile = $agent->isMobile();
+        $isTablet = $agent->isTablet();
+
+ 		if($isMobile || $isTablet) {
+            return view('mobile.test', [
+				'tokens' => $all_curr
+
+            ]);
+        } else {
+            return view('test', [
+				'tokens' => $all_curr
+
+            ]);
+        }
 	}	
 
 	public function buy_tokens(Request $r){
@@ -88,6 +134,8 @@ class TokenController extends Controller
 		if ($curr[1] == 'USD' || $curr[1] == 'EUR') {
 		// dd($curr[1]);
 			// $faloosi = [];
+			$test_url = "https://www.foloosi.com/";
+			// dd(get_headers($test_url)[0]);
 
 			if (strpos(get_headers($test_url)[0] , "200") !== false) {
 				# code...
