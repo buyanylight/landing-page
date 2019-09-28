@@ -32,6 +32,7 @@
 		
 		$('.buy-btn').click(function(){
 			$('.section-buy-token').slideDown();
+			console.log('section-opem');
 		})
 
 		$('.close-btn').click(function(){
