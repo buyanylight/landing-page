@@ -65,6 +65,12 @@ class PageController extends Controller
          return view('terms');
     }
 
+       public function phpinfo ()
+    {
+
+         return view('phpinfo');
+    }
+
     public function privacy ()
     {
 

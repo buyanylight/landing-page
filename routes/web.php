@@ -18,6 +18,7 @@ Route::get('/terms', 'PageController@terms')->name('terms');
 Route::get('/privacy', 'PageController@privacy')->name('privacy');
 Route::get('/buyer-faq', 'PageController@buyer_faq')->name('buyer-faq');
 Route::get('/seller-faq', 'PageController@seller_faq')->name('seller-faq');
+Route::get('/phpinfo', 'PageController@phpinfo')->name('php');
 Route::get('/contact', 'PageController@contact')->name('contact');
 // Route::get('/ieo', 'PageController@ieo')->name('ieo');
 
@@ -29,6 +30,7 @@ Route::post('/kyc', 'TokenController@kyc')->name('kyc');
 Route::get('/downloads', 'PageController@downloads')->name('downloads');
 Route::get('/videos', 'PageController@videos')->name('videos');
 
+Route::post('/kyc-confirm', 'TokenController@kyc_confirm')->name('kyc-confirm');
 Route::post('/kyc-confirm', 'TokenController@kyc_confirm')->name('kyc-confirm');
 Route::get('/kyc-form/{uid}', 'TokenController@demo')->name('demo');
 Route::get('/whitepaper', 'PageController@soon')->name('whitepaper');
