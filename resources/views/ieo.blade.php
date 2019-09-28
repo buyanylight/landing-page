@@ -472,7 +472,7 @@
 						</div>
 						<div class="card card-body mt-2">
 			  						How to add a Custom ERC20 Token / our BAL Token to your Ethereum wallet? <br>
-			  						<a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/">Check out this easy step-by-step guide</a>
+			  						<a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/" target="_blank">Check out this easy step-by-step guide</a>
 			  					</div>
 					</div>
 				</div>
@@ -552,8 +552,11 @@
 				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>
 				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-ieo ml-3">White Paper</a>
 				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">Yellow Paper</a>				
-				<a href="#contact" class="btn btn-ieo m-2">Contact Us</a>
 
+			</div>
+			<div>
+				<a href="#contact" class="btn btn-ieo m-2">Schedule a meeting</a>
+				<a href="#section-bal-token" class="btn btn-ieo m-2 buy-btn">Buy BAL Tokens!</a>
 			</div>
 		</div>
 	</div>
@@ -1510,6 +1513,10 @@
 				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">Yellow Paper</a>
 				<a href="#contact" class="btn btn-ieo m-2">Contact Us</a>
 			</div>
+			<div>
+				<a href="#contact" class="btn btn-ieo m-2">Schedule a meeting</a>
+				<a href="#section-bal-token" class="btn btn-ieo m-2 buy-btn">Buy BAL Tokens!</a>
+			</div>
 		</div>
 	</div>
 </section>
@@ -1738,20 +1745,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="pt-5 mt-3">
-				<h4 class="text-center">
-					<b>
-						Want to know more about our Private Round? 
-						<a href="{{ route('contact') }}" class="header-text">
-							<span >
-								Contact Us!		
-							</span>
-						</a>
-
-						
-					</b>
-				</h4>
-			</div>
 
 
 
@@ -1770,8 +1763,18 @@
 		        	</div>
 				</div> --}}
 		        <div class="container pt-5">
-		            <h3><b>Drop us a message</b></h3>
-		            <p>Questions, bug reports, feedback — we're here for it all. </p>
+		        	<h4>
+				         <b>
+								Want to know more about our Private Round? 
+								<span class="header-text">
+									<span >
+										Contact Us!		
+									</span>
+								</span>
+
+								
+							</b>
+		        	</h4>
 		        </div>
 				<div class="contact-form pt-3 pb-5">
 		            <div class="container contact-form-container bg-black"> 
@@ -1813,7 +1816,7 @@
 		                                <div class="row">
 		                                    <div class="col-sm-12">
 		                                        <input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
-		                                        <input type="submit" class="btn btn-dark w-100 send-message" value="Send Message" disabled="disabled">
+		                                        <input type="submit" class="btn btn-ieo w-100 send-message" value="Send Message" disabled="disabled">
 		                                    </div>
 		                                </div>
 		                            </form>
@@ -1826,7 +1829,7 @@
 		                                    <i class="fas fa-map-marker-alt text-BAL"></i>
 		                                </div>
 		                                <div class="col-md-10">
-		                                    <span class="text-BAL"><b>BuyAnyLight.com</b></span><br>
+		                                    <span class="header-text"><b>BuyAnyLight.com</b></span><br>
 		                                    <span>Dubai Investment Park 1, <br> Opp. Green Community East, Showroom 10, P.O. BOX 3219 <br> Dubai,  United Arab Emirates</span>
 		                                </div>
 		                            </div>
@@ -1837,7 +1840,7 @@
 		                                    <i class="fas fa-phone text-BAL"></i>
 		                                </div>
 		                                <div class="col-md-10">
-		                                    <span class="text-BAL"><b>+971 4 887 3265</b></span><br>
+		                                    <span class="header-text"><b>+971 4 887 3265</b></span><br>
 		                                    <span>Mon to Fri 9am to 6pm</span><br>
 		                                </div>
 		                            </div>
@@ -1848,7 +1851,7 @@
 		                                    <i class="fas fa-envelope text-BAL"></i>
 		                                </div>
 		                                <div class="col-md-10">
-		                                    <span  class="text-BAL"><b>info@buyanylight.com</b></span><br>
+		                                    <span  class="header-text"><b>info@buyanylight.com</b></span><br>
 		                                    <span>Send us your query anytime</span><br>
 		                                </div>
 		                            </div>
