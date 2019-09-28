@@ -999,7 +999,7 @@
 								</div>
 								<div class="card card-body mt-3">
 			  						How to add a Custom ERC20 Token / our BAL Token to your Ethereum wallet? <br>
-			  						<a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/">Check out this easy step-by-step guide</a>
+			  						<a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/" target="_blank">Check out this easy step-by-step guide</a>
 			  					</div>
 							</div>
 						</div>
@@ -1089,7 +1089,7 @@
 			  					</div>
 			  					<div class="card card-body mt-3">
 			  						How to add a Custom ERC20 Token / our BAL Token to your Ethereum wallet? <br>
-			  						<a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/">Check out this easy step-by-step guide</a>
+			  						<a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/" target="_blank">Check out this easy step-by-step guide</a>
 			  					</div>
 										
 									</div>
