@@ -380,7 +380,7 @@
 				</div>
 				<div class="pt-4 bal-alert" style="display: none;">
 					<div class="alert alert-danger" role="alert">
-  						The minimum investment is 5000 USD = 25000 BAL
+  						The minimum investment is 5000 USD and 25000 BAL
 					</div>
 				</div>
 				<div class="pt-4">
