@@ -51,8 +51,8 @@
     				<span aria-hidden="true">&times;</span>
   				</button>
 			</div>
-			<div class="alert alert-warning mt-2 alert-dismissable" role="alert">
- 				An email has been sent to you, if not received please check your spam or junk folder.
+			<div class="alert alert-success mt-2 alert-dismissable" role="alert">
+ 				Thank you for your payment!
 			</div>
 			<div class="card mt-3">
 				<div class="card-body">
