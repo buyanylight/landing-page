@@ -70,7 +70,7 @@
 
 
 		function formatNumber(num) {
- 	 		return num.toString().replace(/(?<!\..*)(\d)(?=(?:\d{3})+(?:\.|$))/g, '$1,')
+ 	 		return num.toString().replace(/(?<!\..*)(\d)(?=(?:\d{3})+(?:\.|$))/, '$1,')
 		}
 
 
