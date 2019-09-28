@@ -15,7 +15,7 @@
 
 					
 					<div class="col-md-4 col-12 pt-2">
-						<div class="card card-body text-center p-2" style="background-color: #5555A4; color: white; height: 50px;">
+						<div class="card card-body text-center p-2" style="background-color: #7c7ca9; color: white; height: 50px;">
 							<small>
 								<b>STEP 1</b> <br>
 							Amount of BAL and Currency
@@ -24,7 +24,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 col-12 pt-2 ">
-						<div class="card card-body text-center p-2" style="background-color: #5555A4; color: white; height: 50px;"> 
+						<div class="card card-body text-center p-2" style="background-color: #7c7ca9; color: white; height: 50px;"> 
 							<small>
 								<b>STEP 2 </b><br>
 							Investor Information and Payment
