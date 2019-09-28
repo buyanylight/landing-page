@@ -137,7 +137,7 @@ class TokenController extends Controller
 			$test_url = "https://www.foloosi.com/";
 			// dd(get_headers($test_url)[0]);
 
-			if (get_headers($test_url)[0] == "HTTP/1.1 200 OK") {
+			if (strpos(get_headers($test_url)[0] , "200") !== false) {
 				# code...
 			$client = new \GuzzleHttp\Client();
 			$url = "https://foloosi.com/api/v1/api/initialize-setup";
