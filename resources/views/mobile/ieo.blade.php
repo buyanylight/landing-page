@@ -31,19 +31,6 @@
 		    nextArrow: '<button type="button" class="slick-next d-inline-block">Next</button>',            
 		});
 
-
-
-		$('.buy-btn').click(function(){
-			$('.section-buy-token').slideDown();
-		})
-
-		$('.close-btn').click(function(){
-			$('.section-buy-token').slideUp();
-		})
-
-
-		
-
 			
 				$('.bal-token').change(function() {
 			if (parseInt(this.value) < 25000) {
@@ -346,29 +333,9 @@
 	</div>
 	</div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="row justify-content-center">
-					<div class="btn-group" role="group" aria-label="Basic example">
-						<a href=" #section-bal-token" class="btn btn-ieo buy-btn"> 
-							Buy BAL Tokens Now!
-						</a>
-					</div>				
-				</div>
-			</div>
-		</div>
-	</div>
-
 </section>
 
 <section class="section-buy-token" id="section-bal-token">
-	<div class="text-right  close-btn" style="font-size: 15px; position: absolute;
-   left: 92.5%; top: 112%;;">
-		<a href="#section-1" class="pr-3 pt-3">
-			<i class="fas fa-times"></i>
-		</a>
-	</div>
 	<div class="pt-5 container">
 		<h3>
 			<strong>
@@ -429,14 +396,14 @@
 							<div class="card card-body">
 								<h5>
 									<b>
-										<span class="header-text">Profit / Return on Investment (ROI):</span>
+										<span>Profit / Return on Investment (ROI):</span>
 									</b>
 								</h5>
 								<div class="pt-2">
 									<div class="row">
 										<div class="col">
 											<b>
-												Private Sale:
+												Cost buying today:
 											</b>
 										</div>
 										<div class="col"><span class="BAL_value">1</span> BAL = <span class="USD_value">0.2</span> USD</div>
@@ -444,7 +411,7 @@
 									<div class="row">
 										<div class="col">
 											<b>
-												IEO:
+												Cost buying during IEO:
 											</b>
 										</div>
 										<div class="col"><span class="BAL_value">1</span> BAL = <span class="USDIEO_value">0.30303</span> USD</div>
