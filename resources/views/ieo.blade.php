@@ -392,13 +392,13 @@
 							</b>
 						</h3>
 						@foreach($tokens as $token)
-							<div class="card mb-3" style="border-radius: 20px; height: 70px;">
+							<div class="card mb-3" style="border-radius: 20px; height: 60px;">
   								<div class="row no-gutters">
-    								<div class="col-md-3 d-flex align-items-center justify-content-center btn-ieo" style="border-radius: 20px; box-shadow: 4px 0px 5px 0px #cccccc; height: 70px;" data-toggle="tooltip" data-placement="right" title="{{ $token['symbol'] }}">
+    								<div class="col-md-3 d-flex align-items-center justify-content-center btn-ieo" style="border-radius: 20px; box-shadow: 4px 0px 5px 0px #cccccc; height: 60px;" data-toggle="tooltip" data-placement="right" title="{{ $token['symbol'] }}">
       									<p class="mb-0" style="font-size: 20px;">{!! $token['logo'] !!}</p>
     								</div>
     								<div class="col-md-9">
-      									<div class="card-body card-body d-flex align-items-center justify-content-end" style="height: 70px;">
+      									<div class="card-body card-body d-flex align-items-center justify-content-end" style="height: 60px;">
         									<p class="card-text text-right mb-0">
         										<span class="{{ $token['asset_id_quote'] }}_value" data-value="{{ $token['bal_rate'] }}">
         											0
@@ -414,79 +414,71 @@
 						<div class="col-6">
 							<h3 class="pb-3">
 								<b>
-									Profit / Return on Investment (ROI):
+									<span class="header-text">Profit</span> / Return on Investment :
 								</b>
 							</h3>
 							<div class="card card-body">
-								<h5>
-									<b>
-										<span class="header-text">Profit / Return on Investment (ROI):</span>
-									</b>
-								</h5>
 								<div class="pt-2">
-									<div class="row">
-										<div class="col">
-											<b>
-												Private Sale:
-											</b>
-										</div>
-										<div class="col"><span class="BAL_value">1</span> BAL = <span class="USD_value">0.2</span> USD</div>
-									</div>
-									<div class="row">
-										<div class="col">
-											<b>
-												IEO:
-											</b>
-										</div>
-										<div class="col"><span class="BAL_value">1</span> BAL = <span class="USDIEO_value">0.30303</span> USD</div>
-									</div>
+									<h5>
+										<b>
+											<u>Cost buying today</u>
+										</b>
+									</h5>
+									<p style="padding-bottom: 18px;">
+										<span class="BAL_value">1</span> BAL = <span class="USD_value">0.2</span> 
+										USD
+									</p>
+									<h5>
+										<b>
+											<u>Cost buying during IEO</u>
+										</b>
+									</h5>
+									<p style="padding-bottom: 18px;">
+										<span class="BAL_value">1</span> BAL = <span class="USDIEO_value">0.30303</span>
+										USD
+									</p>
+									<h5>
+										<b>
+											<u>Your profits investing today</u>
+										</b>
+									</h5>
+									<p class="mb-1 mt-1">
+									 	ROI : 51.52% 
+									 </p>
+									 <p class="mb-0">
+									 	Profits :
+										<span class="USD_return">
+											151.515
+										</span>
+										USD
+									 </p> 
 								</div>	
-								<div class="pt-2">
-									<div class="row">
-										<div class="col">
-											<b>
-												ROI (%):
-											</b>
-										</div>
-										<div class="col">
-											51.52%
-										</div>
-									</div>
-									<div class="row">
-										<div class="col">
-											<b>
-												Return (USD):
-											</b>
-										</div>
-										<div class="col">
-											<span class="USD_return">
-												151.515
-											</span>
-											 USD
-										</div>
-									</div>
-								</div>
 							</div>
-								<div class="pt-4">
-					<div class="form-group">
-						<label> <b>Step 1:</b> Select Currency to buy BAL Tokens</label>
-						<select name="currency" class="form-control">
-							@foreach($tokens as $token)
-								<option value="" class="{{ $token['asset_id_quote'] }}_value">{{ $token['asset_id_quote'] }}</option>
-							@endforeach
-						</select>
-					</div>
-					<button type="submit" class="btn btn-ieo"><b>Buy Tokens</b></button>
-				
-				</div>
 						</div>
-						<div class="card card-body mt-2">
-			  						How to add a Custom ERC20 Token / our BAL Token to your Ethereum wallet? <br>
-			  						<a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/" target="_blank">Check out this easy step-by-step guide</a>
-			  					</div>
+						<div class="pt-4 row w-100">
+							<div class="col-md-12 col-12 ">
+								<div class="form-group">
+									<h3>
+										<label> 
+											<b>Step 1:</b> Select <span>Currency</span> to buy BAL Tokens
+										</label>
+									</h3>
+									<select name="currency" class="form-control">
+									@foreach($tokens as $token)
+										<option value="" class="{{ $token['asset_id_quote'] }}_value">{{ $token['asset_id_quote'] }}</option>
+									@endforeach
+									</select>
+								</div>
+								<button type="submit" class="btn btn-ieo"><b>Buy Tokens</b></button>
+							</div>
+						</div>
+					</div>
+					<div class="card card-body mt-4">
+			  				How to add a Custom ERC20 Token / our BAL Token to your Ethereum wallet? <br>
+			  				<a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/" target="_blank">Check out this easy step-by-step guide</a>
+			  			</div>
 					</div>
 				</div>
-			
 			</form>
 		</div>
 	</div>
