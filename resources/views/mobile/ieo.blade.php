@@ -135,7 +135,7 @@
 
 @section('content')
 
-	<div style="position: absolute; top: 70px; right: 55px; min-width: 300px; z-index: 999">
+	<div style="position: absolute; top: 70px; right: 55px; min-width: 300px; z-index: 999;">
 			<div class="toast kyc-toast" data-autohide="false">
 		  		<div class="toast-header">
 		    		<img src="{{ Util::assetUrl('images/logo-black-icon.png') }}" width="25">
@@ -399,7 +399,7 @@
 				</div>
 				<div class="pt-4 bal-alert" style="display: none;">
 					<div class="alert alert-danger" role="alert">
-  						The minimum investment is 5,000 USD = 25,000 BAL
+  						The minimum investment is 5,000 USD and 25,000 BAL
 					</div>
 				</div>
 				<div class="pt-4">

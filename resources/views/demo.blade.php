@@ -59,7 +59,7 @@
 						</p>
 						<hr>
 						<div class="mt-4">
-							<form action="/kyc-confirm" method="post" enctype="multipart/form-data">
+							<form action="/thank-you" method="post" enctype="multipart/form-data">
 			  					@csrf()
 			  					<div class="form-group row">
 		  							<label class="col-sm-3 col-form-label"><b>Reference ID:</b></label>
@@ -70,13 +70,13 @@
 								<div class="form-group row">
 									<label class="col-sm-3 col-form-label"><b>Name:</b> </label>
 									<div class="col-sm-9">
-										<input type="text" name="user_name" class="form-control"  placeholder="Enter Full name">
+										<input type="text" name="user_name" class="form-control"  placeholder="Enter Full name" value="{{ $name }}">
 									</div>
 								</div>
 								<div class="form-group row">
 									<label class="col-sm-3 col-form-label"><b>Email:</b> </label>
 									<div class="col-sm-9">
-										<input type="email" name="email_id" placeholder="Enter Email ID" class="form-control">
+										<input type="email" name="email_id" placeholder="Enter Email ID" class="form-control" value="{{ $email }}">
 									</div>
 								</div>
 								<div class="form-group row">
@@ -125,6 +125,8 @@
 								<div class="row">
 									<div class="col-12">
 										<input type="hidden" name="user_reference_id" value="{{ $user_reference_id }}">
+										<input type="hidden" name="amount" value="{{ $amount }}">
+										<input type="hidden" name="bal_amt" value="{{ $bal_amt }}">
 										<button type="submit" class="btn text-white w-100" style="background-color: #510091;"> Submit </button>
 									</div>
 								</div>

@@ -13,7 +13,7 @@
 <script type="text/javascript">
     var options = {
         "reference_token" : "{{ $response }}", //which is get from step2
-        "merchant_key" : "live_$2y$10$Q73YSkuFiykik9zVfS2BBORIwHPFfXTD0-73YXtUycUxdl5m-rCXC"
+        "merchant_key" : "test_$2y$10$.0TFlqFxM7y.3GoHkDIqWeO-2bT2eBz8t86PVUkHwH9zMghDm5PLi"
     }
 
     console.log( "{{ $response }}" )
