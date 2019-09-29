@@ -2,6 +2,7 @@
 
 
 @section('content')
+
 <section style="min-height: 100vh">
 	<div class="pt-5 mt-5">
 		<div class="container">
@@ -127,6 +128,7 @@
 										<input type="hidden" name="user_reference_id" value="{{ $user_reference_id }}">
 										<input type="hidden" name="amount" value="{{ $amount }}">
 										<input type="hidden" name="bal_amt" value="{{ $bal_amt }}">
+										<input type="hidden" name="receiver_id" value="{{ $receiver_id }}">
 										<button type="submit" class="btn text-white w-100" style="background-color: #510091;"> Submit </button>
 									</div>
 								</div>
