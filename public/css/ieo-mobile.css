@@ -11173,10 +11173,6 @@ nav .dropdown-toggle::after {
           filter: blur(3px);
 }
 
-.section-buy-token {
-  display: none;
-}
-
 .navbar-dark .navbar-nav .nav-link {
   font-size: 15px;
 }

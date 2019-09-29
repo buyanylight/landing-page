@@ -336,13 +336,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<!-- <div class="row">
 					<div class="pt-4 w-100">
 						<a href="#section-bal-token" class="btn btn-ieo w-100 buy-btn d-flex align-items-center justify-content-center" style="height: 60px;">
 							Buy BAL Tokens Now!
 						</a>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
@@ -382,13 +382,12 @@
 					</div>
 				</div>
 				<hr>
-				<div class="">
+				<div class=" mt-4">
 					<div class="row">
 						<div class="col-6">
 						<h3 class="pb-3">
 							<b>
 								BAL <span class="header-text">Costs</span> Today
-								
 							</b>
 						</h3>
 						@foreach($tokens as $token)
@@ -417,7 +416,7 @@
 									<span class="header-text">Profit</span> / Return on Investment :
 								</b>
 							</h3>
-							<div class="card card-body">
+							<div class="card card-body" style="border-radius: 20px;">
 								<div class="pt-2">
 									<h5>
 										<b>
@@ -463,17 +462,23 @@
 											<b>Step 1:</b> Select <span>Currency</span> to buy BAL Tokens
 										</label>
 									</h3>
-									<select name="currency" class="form-control">
-									@foreach($tokens as $token)
-										<option value="" class="{{ $token['asset_id_quote'] }}_value">{{ $token['asset_id_quote'] }}</option>
-									@endforeach
-									</select>
+									<div class="row">
+										<div class="col-md-6 col-12">
+										<select name="currency" class="form-control">
+										@foreach($tokens as $token)
+											<option value="" class="{{ $token['asset_id_quote'] }}_value">{{ $token['asset_id_quote'] }}</option>
+										@endforeach
+										</select>
+										</div>
+										<div class="col-md-6 col-12">
+											<button type="submit" class="btn btn-ieo w-100" style="border-radius: 10px;"><b>Buy Tokens Now!</b></button>
+										</div>
+									</div>
 								</div>
-								<button type="submit" class="btn btn-ieo"><b>Buy Tokens</b></button>
 							</div>
 						</div>
 					</div>
-					<div class="card card-body mt-4">
+					<div class="card card-body mt-3">
 			  				How to add a Custom ERC20 Token / our BAL Token to your Ethereum wallet? <br>
 			  				<a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/" target="_blank">Check out this easy step-by-step guide</a>
 			  			</div>
