@@ -137,7 +137,7 @@
 
 @section('content')
 
-		<div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
+		<div style="position: absolute; top: 70px; right: 55px; min-width: 300px; z-index: 999;">
 			<div class="toast kyc-toast" data-autohide="false">
 		  		<div class="toast-header">
 		    		<img src="{{ Util::assetUrl('images/logo-black-icon.png') }}" width="25">
@@ -178,9 +178,21 @@
 						</h3>
 
 						<div class="pt-1 pagers-paper">
-							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>					
-							<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}"  target="_blank" class="btn btn-ieo">White Paper</a>
-							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo" target="_blank">Yellow Paper</a>
+							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">
+	            			<i class="far fa-file-pdf"></i>
+	            			&nbsp;
+							One Pager
+						</a>					
+							<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}"  target="_blank" class="btn btn-ieo">
+							<i class="far fa-file-pdf"></i>
+	            			&nbsp;
+							White Paper
+						</a>
+							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo" target="_blank">
+							<i class="far fa-file-pdf"></i>
+	            			&nbsp;
+								Yellow Paper
+							</a>
 						</div>
 						<!-- <div class="pt-3">
 							<h5>
@@ -380,7 +392,7 @@
 				</div>
 				<div class="pt-4 bal-alert" style="display: none;">
 					<div class="alert alert-danger" role="alert">
-  						The minimum investment is 5000 USD and 25000 BAL
+  						The minimum investment is 5,000 USD and 25,000 BAL
 					</div>
 				</div>
 				<div class="pt-4">
@@ -549,12 +561,24 @@
 				Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
 			</p>
 			<div class="buttons pt-3">
-				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>
-				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-ieo ml-3">White Paper</a>
-				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">Yellow Paper</a>				
+				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">
+					<i class="far fa-file-pdf"></i>
+	            			&nbsp;
+					One Pager
+				</a>
+				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-ieo ml-3">
+					<i class="far fa-file-pdf"></i>
+	            	&nbsp;
+					White Paper
+				</a>
+				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">
+					<i class="far fa-file-pdf"></i>
+	            			&nbsp;
+					Yellow Paper
+				</a>				
 
 			</div>
-			<div>
+			<div class="pt-3">
 				<a href="#contact" class="btn btn-ieo m-2">Schedule a meeting</a>
 				<a href="#section-bal-token" class="btn btn-ieo m-2 buy-btn">Buy BAL Tokens!</a>
 			</div>
@@ -1508,11 +1532,23 @@
 				Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
 			</p>
 			<div class="buttons pt-3">
-				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>
-				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-ieo ml-3">White Paper</a>
-				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">Yellow Paper</a>
+				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">
+					<i class="far fa-file-pdf"></i>
+	            			&nbsp;
+					One Pager
+				</a>
+				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-ieo ml-3">
+					<i class="far fa-file-pdf"></i>
+	            			&nbsp;
+					White Paper
+				</a>
+				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">
+					<i class="far fa-file-pdf"></i>
+	            			&nbsp;
+					Yellow Paper
+				</a>
 			</div>
-			<div>
+			<div class="pt-3">
 				<a href="#contact" class="btn btn-ieo m-2">Schedule a meeting</a>
 				<a href="#section-bal-token" class="btn btn-ieo m-2 buy-btn">Buy BAL Tokens!</a>
 			</div>

@@ -4,12 +4,16 @@
 
 
 @if( $curr == 'credit')
-<script type="text/javascript" src="https://www.foloosi.com/js/foloosipay.v2.js"></script>
 
+@if ($agent->isMobile())
+<script type="text/javascript" src="{{ Util::assetUrl('js/foloosipay.v2-mobile.js')}}"></script>
+@else
+<script type="text/javascript" src="{{ Util::assetUrl('js/foloosipay.v2.js')}}"></script>
+@endif
 <script type="text/javascript">
     var options = {
         "reference_token" : "{{ $response }}", //which is get from step2
-        "merchant_key" : "test_$2y$10$.0TFlqFxM7y.3GoHkDIqWeO-2bT2eBz8t86PVUkHwH9zMghDm5PLi"
+        "merchant_key" : "live_$2y$10$Q73YSkuFiykik9zVfS2BBORIwHPFfXTD0-73YXtUycUxdl5m-rCXC"
     }
 
     console.log( "{{ $response }}" )
@@ -80,7 +84,23 @@
    			}
 
 
-   		if (!(validator.isEmpty($('#fullname').val())) && validator.isEmail($('#email').val()) && $('input#sale_check').is(':checked') && validator.isLength($('#eth_address').val(), {min: 42})) {
+   			if (validator.equals($('#confirm-email').val(), $('#email').val())) {
+   				console.log('Confirm-email-yes!')
+   				$('#confirm_email_error').hide();
+
+   			} else {
+
+   				console.log('Confirm-email-no!')
+   				$('#confirm_email_error').show();
+   			}
+
+
+   		if (!(validator.isEmpty($('#fullname').val())) && 
+   			validator.isEmail($('#email').val()) && 
+   			$('input#sale_check').is(':checked') && 
+   			validator.isLength($('#eth_address').val(), {min: 42}) &&
+   			validator.equals($('#confirm-email').val(), $('#email').val())
+   			) {
    			$('.payment').slideDown();
    			$('.user-form-card').slideUp();
    			$('.user-form-card-info').show();
@@ -93,6 +113,15 @@
    			$('#user-detail-form').submit();
 
    		})
+
+
+   		   $('#investor-edit').click(function(){
+   			$('.payment').slideUp();
+
+   		$('.user-form-card').slideDown();
+   			$('.user-form-card-info').hide();
+
+   })
 
    });
 
@@ -153,8 +182,25 @@
    				$('#eth_error').show();
    			}
 
+   			if (validator.equals($('#confirm-email').val(), $('#email').val())) {
+   				console.log('Confirm-email-yes!')
+   				$('#confirm_email_error').hide();
 
-   		if (!(validator.isEmpty($('#fullname').val())) && validator.isEmail($('#email').val()) && $('input#sale_check').is(':checked') && validator.isLength($('#eth_address').val(), {min: 42})) {
+
+
+   			} else {
+
+   				console.log('Confirm-email-no!')
+   				$('#confirm_email_error').show();
+   			}
+
+
+   		if (!(validator.isEmpty($('#fullname').val())) && 
+   			validator.isEmail($('#email').val()) && 
+   			$('input#sale_check').is(':checked') && 
+   			validator.isLength($('#eth_address').val(), {min: 42}) &&
+   			validator.equals($('#confirm-email').val(), $('#email').val())
+   			){
    			$('.payment').slideDown();
    			$('.user-form-card').slideUp();
    			$('.user-form-card-info').show();
@@ -170,10 +216,45 @@
 
    });
 
+   $('#investor-edit').click(function(){
 
-  		// $("#user-detail-form").validate();
+   			$('.payment').slideUp();
+
+   		$('.user-form-card').slidedown();
+   			$('.user-form-card-info').hide();
+
+   })
+
+
 	})
 	</script>
+
+@else
+<script type="text/javascript">
+	$('#u-form').submit(function() {
+    var id1 = $('#email').val(); //if #id1 is input element change from .text() to .val() 
+    var id2 = $('#confirm_email').val(); //if #id2 is input element change from .text() to .val()
+    if (id1 !== id2) {
+   	$('#confirm_email').tooltip('show');
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+
+ 	$('#element').on('shown.bs.tooltip', function () {
+   		setTimeout(function () {
+    		$('#confirm_email').tooltip('hide');
+   		}, 2000);
+	})
+
+
+
+
+});
+
+</script>
  @endif
 @endsection
 
@@ -277,6 +358,13 @@
 					  								</div>
 					  							</div>
 					  							<div class="form-group row">
+					  								<label class="col-sm-3 col-form-label"><b>Confirm Email:</b></label>
+					  								<div class="col-sm-9">
+					  									<input type="email" class="form-control	" placeholder="Confirm Email ID" required="required" id="confirm-email">
+					  									<small class="text-danger" id="confirm_email_error" style="display: none">Email IDs must be matching!</small>
+					  								</div>
+					  							</div>
+					  							<div class="form-group row">
 					  								<label class="col-sm-3 col-form-label"><b>Your ETH address:</b></label>
 					  								<div class="col-sm-9">
 					  									<input type="text" name="receiver_id" class="form-control" placeholder="To receive your BAL Tokens, please provide your receiver address" pattern=".{40,42}" required title="Please enter the correct address" id="eth_address">
@@ -304,7 +392,18 @@
 							</div>
 							<div class="card user-form-card-info" style="display: none;">
 								<div class="card-header" style="background-color: #5555A4; color: white;">
-									Investor Information
+									<div class="row">
+										<div class="col-md-6 col-6">
+											<div class="d-inline-block" style="font-size: 16px;">
+												Investor Information
+											</div>
+										</div>
+										<div class="col-md-6 col-6 text-right">
+											<div class="btn btn-sm text-color d-inline-block bg-white" id="investor-edit">
+												<i class="fas fa-edit"></i> Edit
+											</div>
+										</div>
+									</div>
 								</div>
 								<div class="card-body">
 									<div class="form-group row">
@@ -340,6 +439,9 @@
       										<h2 class="mb-0">
         										<button class="btn btn-link w-100 text-left" type="button" data-toggle="collapse" data-target="#card-accordion" aria-expanded="true" aria-controls="card-accordion" style="color: white;" id="credit">
           											Credit Card / Debit Card 
+          											<span class="" data-toggle="tooltip" data-placement="right" data-html="true" title="Card payments are processed by our partner  Foloosi Technologies LLC" style="font-size: 15px; float: right; ">
+                                                            <i class="fas fa-info-circle"></i>
+                                                        </span>
         										</button>
       										</h2>
     									</div>
@@ -589,7 +691,18 @@
 						<div class="col-md-8 col-12">
 							<div class="card user-form-card">
 								<div class="card-header" style="background-color: #5555A4; color: white;">
-									<b>Investor Information</b>
+									<div class="row">
+										<div class="col-md-6 col-6">
+											<div class="d-inline-block" style="font-size: 16px;">
+												Investor Information
+											</div>
+										</div>
+										<div class="col-md-6 col-6 text-right">
+											<div class="btn btn-sm text-color d-inline-block bg-white" id="investor-edit">
+												<i class="fas fa-edit"></i> Edit
+											</div>
+										</div>
+									</div>
 								</div>
 								<div class="card-body">
 									<div class="user-form">
@@ -613,6 +726,13 @@
 					  								<div class="col-sm-9">
 					  									<input type="email" name="email_id" class="form-control	" placeholder="Email ID" required="required" id="email">
 					  									<small class="text-danger" id="email_error" style="display: none">Please enter your correct email id.</small>
+					  								</div>
+					  							</div>
+					  							<div class="form-group row">
+					  								<label class="col-sm-3 col-form-label"><b>Confirm Email:</b></label>
+					  								<div class="col-sm-9">
+					  									<input type="email" class="form-control	" placeholder="Confirm Email ID" required="required" id="confirm-email">
+					  									<small class="text-danger" id="confirm_email_error" style="display: none">Email IDs must be matching!</small>
 					  								</div>
 					  							</div>
 					  							<div class="form-group row">
@@ -943,7 +1063,7 @@
 					  								</small>
 												</p>
 				  								<hr>
-				  								<form action="/kyc" method="post" enctype="multipart/form-data">
+				  								<form action="/kyc" method="post" enctype="multipart/form-data" id="u-form">
 					  							@csrf()
 					  								<div class="form-group row">
 		  												<label class="col-sm-3 col-form-label"><b>Reference ID:</b></label>
@@ -958,11 +1078,18 @@
 				  										</div>
 				  									</div>
 				  									<div class="form-group row">
-				  										<label class="col-sm-3 col-form-label"><b>Email:</b></label>
-				  										<div class="col-sm-9">
-				  											<input type="text" name="email_id" class="form-control"placeholder="Email" required="required">
-				  										</div>
-				  									</div>
+		  												<label class="col-sm-3 col-form-label"><b>Email:</b></label>
+		  												<div class="col-sm-9">
+		  													<input type="text" name="email_id" class="form-control"placeholder="Email" required="required" id="email">
+		  												</div>
+		  											</div>
+		  											<div class="form-group row">
+		  												<label class="col-sm-3 col-form-label"><b>Confirm Email:</b></label>
+		  												<div class="col-sm-9">
+		  													<input type="text" class="form-control"placeholder="Email" required="required" id="confirm_email" data-toggle="tooltip" data-placement="right" data-delay='{"show":"50", "hide":"100"}' data-trigger="manual" title="Email IDs must be matching!">
+                                        
+		  												</div>
+		  											</div>
 				  									<div class="form-group row">
 				  										<label class="col-sm-3 col-form-label">
 				  											<b>Transaction Hash:</b>
@@ -1033,7 +1160,7 @@
 			  								</b>
 			  							</small>
 		  								<hr>
-		  								<form action="/kyc" method="post" enctype="multipart/form-data">
+		  								<form action="/kyc" method="post" enctype="multipart/form-data" id="u-form">
 			  								@csrf()
 			  								<div class="form-group row">
 		  										<label class="col-sm-3 col-form-label"><b>Reference ID:</b></label>
@@ -1050,9 +1177,16 @@
 		  									<div class="form-group row">
 		  										<label class="col-sm-3 col-form-label"><b>Email:</b></label>
 		  										<div class="col-sm-9">
-		  											<input type="text" name="email_id" class="form-control"placeholder="Email" required="required">
+		  											<input type="text" name="email_id" class="form-control"placeholder="Email" required="required" id="email">
 		  										</div>
 		  									</div>
+		  									<div class="form-group row">
+		  											<label class="col-sm-3 col-form-label"><b>Confirm Email:</b></label>
+		  											<div class="col-sm-9">
+		  												<input type="text" class="form-control"placeholder="Email" required="required" id="confirm_email" data-toggle="tooltip" data-placement="right" data-delay='{"show":"50", "hide":"100"}' data-trigger="manual" title="Email IDs must be matching!">
+                                        
+		  											</div>
+		  										</div>
 		  									<div class="form-group row">
 		  										<label class="col-sm-3 col-form-label">
 		  											<b>Transaction Hash: 

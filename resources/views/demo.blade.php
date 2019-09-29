@@ -45,12 +45,6 @@
 
 
 				</div>
-			<div class="alert alert-warning alert-dismissible fade show mt-3" role="alert" style="margin-bottom: 0px;">
- 				An email has been sent to you, if not received please check your spam or junk folder.
-  				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    				<span aria-hidden="true">&times;</span>
-  				</button>
-			</div>
 			<div class="alert alert-success mt-2 alert-dismissable" role="alert">
  				Thank you for your payment!
 			</div>
