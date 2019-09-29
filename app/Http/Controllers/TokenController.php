@@ -603,7 +603,9 @@ class TokenController extends Controller
 	public function demo(string $uid) {
 
 
+		// dd($_GET);
 		// dd($uid);
+
 
 		$countries = [
   			"Afghanistan",
@@ -859,6 +861,7 @@ class TokenController extends Controller
 			'bal_amt' => $_GET['bal'],
 			'name' => $_GET['name'],
 			'email' => $_GET['email'],
+			'receiver_id' => $_GET['receiver_id'],
 		]);
 
 	}
@@ -867,7 +870,7 @@ class TokenController extends Controller
 	public function kyc_confirm(Request $request){
 
 
-
+		// dd($request);
 
 		$validated_attr = request()->validate([
             'user_name' => ['required', 'min:3'],
@@ -935,6 +938,9 @@ class TokenController extends Controller
 
         $isMobile = $agent->isMobile();
         $isTablet = $agent->isTablet();
+
+
+
 
  		if($isMobile || $isTablet) {
           
