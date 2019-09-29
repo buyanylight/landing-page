@@ -43,7 +43,7 @@
 		$('.bal-token').keyup(function() {
 			Currencyconvert()
 
-			$(".BAL_value").text($(this).val());
+			$(".BAL_value").text(numeral($(this).val()).format('0,0'));
 			var USDIEO_value = numeral(parseFloat($(this).val() * 0.30303)).format('0,0.00000');
 			var originalvalue = $('.bal-token').val();
 			var USDvalue = parseFloat(originalvalue) * $('.USD_value').data('value')
@@ -413,7 +413,7 @@
 						<div class="col-6">
 							<h3 class="pb-3">
 								<b>
-									<span class="header-text">Profit</span> / Return on Investment :
+									<span class="header-text">Profit</span> / Return on Investment
 								</b>
 							</h3>
 							<div class="card card-body" style="border-radius: 20px;">

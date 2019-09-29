@@ -333,6 +333,20 @@
 	</div>
 	</div>
 
+<!-- 	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="row justify-content-center">
+					<div class="btn-group" role="group" aria-label="Basic example">
+						<a href=" #section-bal-token" class="btn btn-ieo buy-btn"> 
+							Buy BAL Tokens Now!
+						</a>
+					</div>				
+				</div>
+			</div>
+		</div>
+	</div> -->
+
 </section>
 
 <section class="section-buy-token" id="section-bal-token">
