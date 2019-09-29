@@ -367,7 +367,7 @@
 					  							<div class="form-group row">
 					  								<label class="col-sm-3 col-form-label"><b>Your ETH address:</b></label>
 					  								<div class="col-sm-9">
-					  									<input type="text" name="receiver_id" class="form-control" placeholder="To receive your BAL Tokens, please provide your receiver address" pattern=".{40,42}" required title="Please enter the correct address" id="eth_address">
+					  									<input type="text" name="receiver_id" class="form-control" placeholder="To receive your BAL Tokens, please provide your ETH address" pattern=".{40,42}" required title="Please enter the correct address" id="eth_address">
 					  									<small class="text-danger" id="eth_error" style="display: none">Please enter the eth address consisting of 42 characters.</small>
 
 					  								</div>
@@ -1202,7 +1202,7 @@
 		  									<div class="form-group row">
 		  										<label class="col-sm-3 col-form-label"><b>Your ETH address:</b></label>
 		  										<div class="col-sm-9">
-		  											<input type="text" name="receiver_id" class="form-control" placeholder="To receive your BAL Tokens, please provide your receiver address" pattern=".{40,42}" required title="Please enter the correct address">
+		  											<input type="text" name="receiver_id" class="form-control" placeholder="To receive your BAL Tokens, please provide your ETH address" pattern=".{40,42}" required title="Please enter the correct address">
 		  										</div>
 		  									</div>
 		  									<div class="form-check pb-3">
