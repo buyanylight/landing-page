@@ -13,7 +13,7 @@
 <script type="text/javascript">
     var options = {
         "reference_token" : "{{ $response }}", //which is get from step2
-        "merchant_key" : "test_$2y$10$.0TFlqFxM7y.3GoHkDIqWeO-2bT2eBz8t86PVUkHwH9zMghDm5PLi"
+        "merchant_key" : "{{ env('FOLOOSI_MERCHANT_KEY') }}"
     }
 
     console.log( "{{ $response }}" )
