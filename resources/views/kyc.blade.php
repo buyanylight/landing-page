@@ -64,12 +64,12 @@
 						</p>
 
 						<hr>
-						<form action="/kyc-confirm" method="post" enctype="multipart/form-data">
+						<form action="/thank-you" method="post" enctype="multipart/form-data">
 		  					@csrf()
 		  					<div class="form-group row">
 		  						<label class="col-sm-3 col-form-label"><b>Reference ID:</b></label>
 		  							<div class="col-sm-9 pt-2">
-		  								{{$user_reference_id }}
+		  								{{ $user_reference_id }}
 		  							</div>
 		  					</div>
 							<div class="form-group row">
@@ -129,7 +129,10 @@
 							</div>
 							<div class="row">
 								<div class="col-12">
-									<input type="hidden" name="user_reference_id" value="{{ $user_reference_id }}">
+									<input type="hidden" name="user_reference_id" value="{{$user_reference_id }}">
+									<input type="hidden" name="receiver_id" value="{{ $receiver_id }}">
+									<input type="hidden" name="bal_amt" value="{{$bal_amt }}">
+									<input type="hidden" name="amount" value="{{$amount }}">
 									<button type="submit" class="btn text-white w-100" style="background-color: #510091;"> Submit and Complete the process </button>
 								</div>
 							</div>

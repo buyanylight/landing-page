@@ -30,14 +30,6 @@
 			nextArrow: '<button type="button" class="slick-next d-inline-block">Next</button>',
 		});
 		
-		$('.buy-btn').click(function(){
-			$('.section-buy-token').slideDown();
-			console.log('section-opem');
-		})
-
-		$('.close-btn').click(function(){
-			$('.section-buy-token').slideUp();
-		})
 
 			
 				$('.bal-token').change(function() {
@@ -356,15 +348,9 @@
 	</div>
 </section>
 <section class="section-buy-token" id="section-bal-token">
-	<div class="text-right  close-btn" style="font-size: 15px; position: absolute;
-    left: 98.5%; top: 102%;">
-		<a href="#section-1" class="pr-3 pt-3">
-			<i class="fas fa-times"></i>
-		</a>
-	</div>
 	<div class="pt-5 container">
 		<h3>
-			<strong>
+			<b>
 				<span>
 					Buy
 				</span>
@@ -374,7 +360,7 @@
 				<span>
 					Tokens
 				</span>
-			</strong>
+			</b>
 		</h3>
 		<div class="buying-content">
 			<form action="/buy-token" method="post" enctype="multipart/form-data">
@@ -395,9 +381,16 @@
   						The minimum investment is 5,000 USD and 25,000 BAL
 					</div>
 				</div>
-				<div class="pt-4">
+				<hr>
+				<div class="">
 					<div class="row">
 						<div class="col-6">
+						<h3 class="pb-3">
+							<b>
+								BAL <span class="header-text">Costs</span> Today
+								
+							</b>
+						</h3>
 						@foreach($tokens as $token)
 							<div class="card mb-3" style="border-radius: 20px; height: 70px;">
   								<div class="row no-gutters">
@@ -419,6 +412,11 @@
 							@endforeach
 						</div>
 						<div class="col-6">
+							<h3 class="pb-3">
+								<b>
+									Profit / Return on Investment (ROI):
+								</b>
+							</h3>
 							<div class="card card-body">
 								<h5>
 									<b>

@@ -30,8 +30,7 @@ Route::post('/kyc', 'TokenController@kyc')->name('kyc');
 Route::get('/downloads', 'PageController@downloads')->name('downloads');
 Route::get('/videos', 'PageController@videos')->name('videos');
 
-Route::post('/kyc-confirm', 'TokenController@kyc_confirm')->name('kyc-confirm');
-Route::post('/kyc-confirm', 'TokenController@kyc_confirm')->name('kyc-confirm');
+Route::post('/thank-you', 'TokenController@kyc_confirm')->name('thank-you');
 Route::get('/kyc-form/{uid}', 'TokenController@demo')->name('demo');
 Route::get('/whitepaper', 'PageController@soon')->name('whitepaper');
 Route::get('/yellowpaper', 'PageController@soon')->name('yellowpaper');
