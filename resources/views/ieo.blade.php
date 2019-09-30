@@ -336,13 +336,20 @@
 						</div>
 					</div>
 				</div>
-				<!-- <div class="row">
+				<div class="row pt-4">
 					<div class="pt-4 w-100">
-						<a href="#section-bal-token" class="btn btn-ieo w-100 buy-btn d-flex align-items-center justify-content-center" style="height: 60px;">
-							Buy BAL Tokens Now!
+						<a href="#section-bal-token" class="btn w-100 buy-btn">
+							<div class="header-text">
+								<h4>
+									<b>
+										BUY BAL TOKENS NOW!
+									</b>
+								</h4>
+							</div> 
+							<i class="fas fa-chevron-down"></i>
 						</a>
 					</div>
-				</div> -->
+				</div>
 			</div>
 		</div>
 	</div>
