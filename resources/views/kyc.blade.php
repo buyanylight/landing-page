@@ -114,7 +114,7 @@
 		    								 <b>
 		    								 	Max-size:
 		    								 </b>
-		    								  7 MB
+		    								  5 MB
 		    							</small>
 		 							</div>
 								</div>
@@ -131,7 +131,14 @@
 		    							<input type="file" class="custom-file-input" name="user_selfie_id" required>
 		    							<label class="custom-file-label" for="validatedCustomFile">Choose file</label>
 		    							<small>
-		    								<b>Files:</b> JPG, PNG, PDF | Max-size: 7 MB
+		    								<b>
+		    									Files:
+		    								</b>
+		    								 JPG, PNG, PDF | 
+		    								 <b>
+		    								 	Max-size:
+		    								 </b>
+		    								  5 MB
 		    							</small>
 		 							</div>
 								</div>

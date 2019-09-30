@@ -267,7 +267,7 @@
     }
 </style>
 
-<section style="min-height: 100vh">
+<section style="min-height: 100vh;">
 	<div class="pt-5 mt-5">
 		<div class="container">
 			<h3>
