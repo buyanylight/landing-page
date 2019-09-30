@@ -582,7 +582,11 @@
 			</div>
 			<div class="pt-3">
 				<a href="#contact" class="btn btn-ieo m-2">Schedule a meeting</a>
-				<a href="#section-bal-token" class="btn btn-ieo m-2 buy-btn">Buy BAL Tokens!</a>
+				<a href="#section-bal-token" class="btn btn-ieo m-2 buy-btn">
+					<b>
+						BUY BAL TOKENS NOW!
+					</b>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -1552,7 +1556,11 @@
 			</div>
 			<div class="pt-3">
 				<a href="#contact" class="btn btn-ieo m-2">Schedule a meeting</a>
-				<a href="#section-bal-token" class="btn btn-ieo m-2 buy-btn">Buy BAL Tokens!</a>
+				<a href="#section-bal-token" class="btn btn-ieo m-2 buy-btn">
+					<b>
+						BUY BAL TOKENS NOW!
+					</b>					
+				</a>
 			</div>
 		</div>
 	</div>
