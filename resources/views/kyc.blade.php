@@ -106,8 +106,16 @@
 									<div class="custom-file">
 		    							<input type="file" class="custom-file-input"  name="user_id" id="validatedCustomFile" required>
 		    							<label class="custom-file-label" for="validatedCustomFile">Choose file</label>
-		    							<div class="invalid-feedback">Please upload an Image</div>
-                    					<div class="valid-feedback">Image has been uploaded</div>
+		    							<small>
+		    								<b>
+		    									Files:
+		    								</b>
+		    								 JPG, PNG, PDF | 
+		    								 <b>
+		    								 	Max-size:
+		    								 </b>
+		    								  7 MB
+		    							</small>
 		 							</div>
 								</div>
 							</div>
@@ -122,8 +130,9 @@
 									<div class="custom-file">
 		    							<input type="file" class="custom-file-input" name="user_selfie_id" required>
 		    							<label class="custom-file-label" for="validatedCustomFile">Choose file</label>
-		    							<div class="invalid-feedback">Please upload an Image</div>
-                    					<div class="valid-feedback">Image has been uploaded</div>
+		    							<small>
+		    								<b>Files:</b> JPG, PNG, PDF | Max-size: 7 MB
+		    							</small>
 		 							</div>
 								</div>
 							</div>
