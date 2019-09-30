@@ -174,6 +174,23 @@
 	 });
 		$(document).ready(function(){
 
+
+    	$(window).scroll(function(){
+        	$('nav').toggleClass('bg-white', $(this).scrollTop() > 550);
+    	});
+
+    	$(window).scroll(function(){
+        	if($(this).scrollTop() > 550){
+            	$('#topBtn').fadeIn();
+            	$('.links').addClass('ncol')
+            	$(".logo").attr("src","/images/logo-black.png");
+        	} else {
+            	$(".logo").attr("src","/images/logo-white.png");
+            	$('.links').removeClass('ncol')
+        	}
+    	});
+
+
 		$('.center').slick({
 			centerMode: false,
 			centerPadding: '0px',
