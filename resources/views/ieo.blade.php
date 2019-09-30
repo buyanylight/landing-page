@@ -58,10 +58,9 @@
 			 $(".USD_return").text(USD_return);
 		})
 
-
-		
-
-
+			$( window ).on('load', function() {
+  				$('.bal-token').val('');
+			});
 
 		// 1000
 
