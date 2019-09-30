@@ -1,5 +1,11 @@
 @extends(($agent->isMobile()) ? 'layouts.mobile-layout' : 'layouts.main-layout')
 
+@section('meta')
+
+<meta class="bal-order-id" name="bal-order-id" content="{{ $u_details['user_reference_id'] }}">
+<meta class="bal-total-token" name="bal-total-token" content="{{ $u_details['bal_amt'] }}">
+
+@endsection
 
 @section('content')
 <section style="min-height: 100vh;">
