@@ -110,7 +110,7 @@
 		    								 	<b>
 		    								 		Max-size:
 		    								 	</b>
-		    								  		7 MB
+		    								  		5 MB
 		    								</small>			    							
 			 							</div>
 									</div>
@@ -134,7 +134,7 @@
 		    								 	<b>
 		    								 		Max-size:
 		    								 	</b>
-		    								  		7 MB
+		    								  		5 MB
 		    								</small>
 			 							</div>
 									</div>
