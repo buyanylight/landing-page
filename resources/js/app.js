@@ -54,9 +54,9 @@ require('./bootstrap');
         if($(this).scrollTop() > 550){
             $('#topBtn').fadeIn();
             $('.links').addClass('ncol')
-            $(".logo").attr("src","images/logo-black.png");
+            $(".logo").attr("src","/images/logo-black.png");
         } else {
-            $(".logo").attr("src","images/logo-white.png");
+            $(".logo").attr("src","/images/logo-white.png");
             $('.links').removeClass('ncol')
         }
     });

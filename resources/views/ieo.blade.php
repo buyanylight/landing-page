@@ -471,11 +471,17 @@
 									</h3>
 									<div class="row">
 										<div class="col-md-6 col-12">
-										<select name="currency" class="form-control">
-										@foreach($tokens as $token)
-											<option value="" class="{{ $token['asset_id_quote'] }}_value">{{ $token['asset_id_quote'] }}</option>
-										@endforeach
-										</select>
+											<select name="currency" class="form-control">
+											@foreach($tokens as $token)
+												<option value="" class="{{ $token['asset_id_quote'] }}_value">{{ $token['asset_id_quote'] }}</option>
+											@endforeach
+											</select>
+											<small class="pt-3">
+												<b>
+													We accept: 
+												</b>
+												Visa, Mastercard, Bank Transfer, Bitcoin, Ethereum
+											</small>
 										</div>
 										<div class="col-md-6 col-12">
 											<button type="submit" class="btn btn-ieo w-100" style="border-radius: 10px;"><b>Buy Tokens Now!</b></button>
