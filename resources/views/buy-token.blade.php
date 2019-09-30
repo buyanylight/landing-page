@@ -674,7 +674,7 @@
 									<div class="row pt-2">
 										<div class="col">
 											<b>
-												Accepted Payments:
+												We Accept:
 											</b>
 										</div>
 										<div class="col">
