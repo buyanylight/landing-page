@@ -38,14 +38,23 @@
 
 			if (numeral($('.bal-token').val()).value() < 25000) {
 				$('.bal-alert').show()
-				$('#token-btn').attr('disabled', 'disabled')
+			
 			} else {
 				$('.bal-alert').hide()
-				$('#token-btn').removeAttr('disabled')
+				
 			}	
 		})
 
 		$('.bal-token').keyup(function() {
+
+				if (numeral($('.bal-token').val()).value() < 25000) {
+			
+				$('#token-btn').attr('disabled', 'disabled')
+			} else {
+				
+				$('#token-btn').removeAttr('disabled')
+			}
+
 
 
 			 $(this).val(function(index, value) {
