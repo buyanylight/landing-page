@@ -356,7 +356,7 @@
 </section>
 
 <section class="section-buy-token" id="section-bal-token">
-	<div class="pt-5 container">
+	<div class="pt-3 container">
 		<h3>
 			<strong>
 				<span>
@@ -513,7 +513,7 @@
 
 </section>
 
-<section class="section-2 pt-3">
+<section class="section-2 pt-5">
 	<div class="container pb-3">
 		<h3 class="text-center pb-3">
 			<b>
