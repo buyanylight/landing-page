@@ -291,8 +291,9 @@
 					<b>IEO PRE SALE</b>
 				</h4> --}}
 				<div class="w-100 pt-2">
+					<p class="mb-0 text-white"><b>PRIVATE SALE LIVE NOW!</b></p>
 					<p class="text-white text-center mb-0" style="font-size: 0.9em;">
-						<b>Private Sale starts in:</b>
+						<b>Private Sale ends in:</b>
 					</p>
 					<div id="timer" class="pt-2 pb-0 text-center d-flex justify-content-center">
 						<div class="row justify-content-center" style="width: 90%">
