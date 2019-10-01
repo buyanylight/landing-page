@@ -518,7 +518,7 @@
 								<div class="pt-4">
 					<div class="form-group">
 						<label> <b>Step 1:</b> Select Currency to buy BAL Tokens</label>
-						<select name="currency" class="form-control">
+						<select name="currency" class="form-control" required>
 							@foreach($tokens as $token)
 								<option value="" class="{{ $token['asset_id_quote'] }}_value">{{ $token['asset_id_quote'] }}</option>
 							@endforeach

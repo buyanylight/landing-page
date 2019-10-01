@@ -33,7 +33,6 @@
 
 			
 			$('.bal-token').change(function() {
-				console.log()
 
 
 
@@ -498,7 +497,7 @@
 									</h3>
 									<div class="row">
 										<div class="col-md-6 col-12">
-											<select name="currency" class="form-control">
+											<select name="currency" class="form-control" required>
 											@foreach($tokens as $token)
 												<option value="" class="{{ $token['asset_id_quote'] }}_value">{{ $token['asset_id_quote'] }}</option>
 											@endforeach
