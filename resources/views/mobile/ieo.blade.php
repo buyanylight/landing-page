@@ -62,6 +62,10 @@
     			return amount
   			});
 
+			 $('.token-price').show();
+
+
+
 			Currencyconvert()
 
 			$(".BAL_value").text(numeral($(this).val()).format('0,0'));
@@ -451,66 +455,68 @@
 									</b>
 								</h5>
 								<div class="pt-2">
-										<div>
-											<b>
-												Cost buying today
-											</b>
-										</div>
-										<div class="row">
-											<div class="col">
-												
-												<span class="BAL_value">1</span> BAL:
+									<div class="row">
+										<div class="col">
+											<div>
+												<b>
+													Cost today
+												</b>
 											</div>
-											<div class="col">
-												<span class="USD_value">0.2</span> USD</div>
-											</div> 
-									
-										<div class="pt-2">
-											<b>
-												Cost buying during IEO
-											</b>
+											<span class="BAL_value">1</span> BAL=
+											<span class="USD_value">0.2</span> USD
 										</div>
-										<div class="row">
-											<div class="col">
-												<span class="BAL_value">1</span>
-												 BAL:
-												
+										<div class="col-5">
+											<div class="token-price" style="display: none;">
+												<b>
+													Price today
+												</b>
+												<br>
+												<span>1</span> BAL=
+												<span>0.2</span> USD
+											</div>	
+										</div> 
+									</div>
+									<div class="row">
+										<div class="col">
+											<div class="pt-2">
+												<b>
+													Cost during IEO
+												</b>
 											</div>
-											<div class="col">
-												 <span class="USDIEO_value">
-												 	0.30303
-												 </span> 
-												USD
-												
+											<span class="BAL_value">1</span> BAL=
+											<span class="USDIEO_value">0.30303</span> USD
+										</div>
+										<div class="col-5">
+											<div class="pt-2 token-price" style="display: none;">
+												<b>
+													Price during IEO
+												</b>
+												<br>
+												<span>1</span> BAL=
+												<span>0.30303</span> USD
 											</div>
 										</div>
 									</div>
-						
+								</div>
 								<div class="pt-2">
 									<div>
-										<b>Your profits investing today</b>
+										<b>Profits investing today</b>
 									</div>
 									<div class="row">
 										<div class="col">
-										
-												ROI:
-											
+												ROI = 51.52%
 										</div>
 										<div class="col">
-											51.52%
+
 										</div>
 									</div>
 									<div class="row">
 										<div class="col">
-										
-												Return:
-											
+											Return = <span class="USD_return">151.515 USD
+											</span>		
 										</div>
 										<div class="col">
-											<span class="USD_return">
-												151.515
-											</span>
-											 USD
+												
 										</div>
 									</div>
 								</div>
@@ -537,12 +543,11 @@
 				</div>
 						</div>
 						<div class="card card-body mt-2">
-			  						How to add a Custom ERC20 Token / our BAL Token to your Ethereum wallet? <br>
-			  						<a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/">Check out this easy step-by-step guide</a>
-			  					</div>
+			  				How to add a Custom ERC20 Token / our BAL Token to your Ethereum wallet? <br>
+			  				<a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/">Check out this easy step-by-step guide</a>
+			  			</div>
 					</div>
 				</div>
-			
 			</form>
 		</div>
 	</div>

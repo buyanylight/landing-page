@@ -45,17 +45,14 @@
 			}	
 		})
 
-		$('.bal-token').keyup(function() {
-
+			$('.bal-token').keyup(function() {
 				if (numeral($('.bal-token').val()).value() < 25000) {
-			
 				$('#token-btn').attr('disabled', 'disabled')
 			} else {
-				
 				$('#token-btn').removeAttr('disabled')
 			}
 
-
+			 $('.token-price').show();
 
 			 $(this).val(function(index, value) {
     			var amount = numeral(value).format('0,0');
@@ -459,68 +456,94 @@
 								</b>
 							</h3>
 							<div class="card card-body" style="border-radius: 20px;">
-								<div class="pt-2">
-									<h5>
-										<b>
-											<u>Cost buying today</u>
-										</b>
-									</h5>
-									<p style="padding-bottom: 18px;">
-										<span class="BAL_value">1</span> BAL = <span class="USD_value">0.2</span> 
-										USD
-									</p>
-									<h5>
-										<b>
-											<u>Cost buying during IEO</u>
-										</b>
-									</h5>
-									<p style="padding-bottom: 18px;">
-										<span class="BAL_value">1</span> BAL = <span class="USDIEO_value">0.30303</span>
-										USD
-									</p>
-									<h5>
-										<b>
-											<u>Your profits investing today</u>
-										</b>
-									</h5>
-									<p class="mb-1 mt-1">
-									 	ROI : 51.52% 
-									 </p>
-									 <p class="mb-0">
-									 	Profits :
-										<span class="USD_return">
-											151.515
-										</span>
-										USD
-									 </p> 
-								</div>	
+								<div class="row">
+									<div class="col-7">
+										<div class="pt-2">
+											<h5>
+												<b>
+													<u>Cost today</u>
+												</b>
+											</h5>
+											<p style="padding-bottom: 18px;">
+												<span class="BAL_value">1</span> BAL = <span class="USD_value">0.2</span> 
+												USD
+											</p>
+											<h5>
+												<b>
+													<u>Cost  during IEO</u>
+												</b>
+											</h5>
+											<p style="padding-bottom: 18px;">
+												<span class="BAL_value">1</span> BAL = <span class="USDIEO_value">0.30303</span>
+												USD
+											</p>
+											<h5>
+												<b>
+													<u>Profits investing today</u>
+												</b>
+											</h5>
+											<p class="mb-1 mt-1">
+											 	ROI : 51.52% 
+											 </p>
+											 <p class="mb-0">
+											 	Profits :
+												<span class="USD_return">
+													151.515
+												</span>
+												USD
+											 </p> 
+										</div>	
+									</div>
+									<div class="col-5">
+										<div class="pt-2 token-price" style="display: none">
+											<h5>
+												<b>
+													<u>Price today</u>
+												</b>
+											</h5>
+											<p style="padding-bottom: 18px;">
+												<span>1</span> BAL = <span>0.2</span> 
+												USD
+											</p>
+											<h5>
+												<b>
+													<u>Price during IEO</u>
+												</b>
+											</h5>
+											<p style="padding-bottom: 18px;">
+												<span>1</span> BAL = <span>0.30303</span>
+											</p>
+											
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="pt-4 row w-100">
-							<div class="col-md-12 col-12 ">
-								<div class="form-group">
-									<h3>
-										<label> 
-											<b>Step 1:</b> Select <span>Currency</span> to buy BAL Tokens
-										</label>
-									</h3>
-									<div class="row">
-										<div class="col-md-6 col-12">
-											<select name="currency" class="form-control" required>
+					</div>
+					<div class="pt-4 row w-100">
+						<div class="col-md-12 col-12 ">
+							<div class="form-group">
+								<h3>
+									<label> 
+										<b>Step 1:</b> Select <span>Currency</span> to buy BAL Tokens
+									</label>
+								</h3>
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<select name="currency" class="form-control" required>
 											@foreach($tokens as $token)
-												<option value="" class="{{ $token['asset_id_quote'] }}_value">{{ $token['asset_id_quote'] }}</option>
+											<option value="" class="{{ $token['asset_id_quote'] }}_value">{{ $token['asset_id_quote'] }}</option>
 											@endforeach
-											</select>
-											<small class="pt-3">
-												<b>
-													We accept: 
-												</b>
-												Visa, Mastercard, Bank Transfer, Bitcoin, Ethereum
-											</small>
-										</div>
-										<div class="col-md-6 col-12">
-											<button type="submit" class="btn btn-ieo w-100" style="border-radius: 10px;" disabled id="token-btn"><b>Buy Tokens Now!</b></button>
-										</div>
+										</select>
+										<small class="pt-3">
+											<b>
+												We accept: 
+											</b>
+											Visa, Mastercard, Bank Transfer, Bitcoin, Ethereum
+										</small>
+									</div>
+									<div class="col-md-6 col-12">
+										<button type="submit" class="btn btn-ieo w-100" style="border-radius: 10px;" disabled id="token-btn"><b>Buy Tokens Now!</b></button>
 									</div>
 								</div>
 							</div>
