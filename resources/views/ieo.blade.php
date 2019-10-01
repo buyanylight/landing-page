@@ -41,6 +41,21 @@
 		})
 
 		$('.bal-token').keyup(function() {
+
+
+			 $(this).val(function(index, value) {
+    			var amount = value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    			
+    			return amount
+  			});
+
+			 console.log(parseInt($(this).val()));
+
+
+
+
+
+
 			Currencyconvert()
 
 			$(".BAL_value").text(numeral($(this).val()).format('0,0'));
@@ -51,11 +66,12 @@
 
 			$(".USDIEO_value").text(USDIEO_value);
 
-			console.log(USDIEO - USDvalue);
 
 			var USD_return = (USDIEO - USDvalue).toFixed(5);
 
 			 $(".USD_return").text(USD_return);
+
+
 		})
 
 			$( window ).on('load', function() {
@@ -380,7 +396,7 @@
 	    						<img src="{{ Util::assetUrl('images/logo-white-mobile.png') }}" width="28">
 	    					</span>
 	  					</div>
-	  					<input type="number" class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" aria-label="bal-token" aria-describedby="basic-addon1" min="25000" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 15px;">
+	  					<input class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 15px;">
 	  					<br>
 					</div>
 				</div>

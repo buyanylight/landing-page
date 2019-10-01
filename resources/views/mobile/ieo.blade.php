@@ -41,6 +41,16 @@
 		})
 
 		$('.bal-token').keyup(function() {
+			 $(this).val(function(index, value) {
+    			var amount = value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    			
+    			return amount
+  			});
+
+			 console.log(amount);
+
+
+
 				Currencyconvert()
 
 			$(".BAL_value").text($(this).val());
@@ -51,11 +61,12 @@
 
 			$(".USDIEO_value").text(USDIEO_value);
 
-			console.log(USDIEO - USDvalue);
-
 			var USD_return = (USDIEO - USDvalue).toFixed(5);
 
 			 $(".USD_return").text(USD_return);
+
+
+
 		})
 
 
