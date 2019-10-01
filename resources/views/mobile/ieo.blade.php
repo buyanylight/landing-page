@@ -334,19 +334,24 @@
 	</div>
 	</div>
 
-<!-- 	<div class="container">
+	<div class="container">
 		<div class="row">
 			<div class="col-12">
 				<div class="row justify-content-center">
 					<div class="btn-group" role="group" aria-label="Basic example">
-						<a href=" #section-bal-token" class="btn btn-ieo buy-btn"> 
-							Buy BAL Tokens Now!
+						<a href=" #section-bal-token" class="btn "> 
+							<div class="header-text">
+								<b>
+									Buy BAL Tokens Now!
+								</b>
+							</div>
+							<i class="fas fa-chevron-down"></i>
 						</a>
 					</div>				
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 
 </section>
 
@@ -384,7 +389,8 @@
   						The minimum investment is 5,000 USD and 25,000 BAL
 					</div>
 				</div>
-				<div class="pt-4">
+				<hr>
+				<div class="pt-2">
 					<div class="row">
 						<div class="col-12 col-md-6 ">
 						@foreach($tokens as $token)
@@ -411,33 +417,54 @@
 							<div class="card card-body">
 								<h5>
 									<b>
-										<span>Profit / Return on Investment (ROI):</span>
+										<span>Profit / Return on Investment:</span>
 									</b>
 								</h5>
 								<div class="pt-2">
-									<div class="row">
-										<div class="col">
+										<div>
 											<b>
 												Cost buying today:
 											</b>
 										</div>
-										<div class="col"><span class="BAL_value">1</span> BAL = <span class="USD_value">0.2</span> USD</div>
-									</div>
-									<div class="row">
-										<div class="col">
+										<div class="row">
+											<div class="col">
+												
+												<span class="BAL_value">1</span> BAL:
+											</div>
+											<div class="col">
+												<span class="USD_value">0.2</span> USD</div>
+											</div> 
+									
+										<div class="pt-2">
 											<b>
 												Cost buying during IEO:
 											</b>
 										</div>
-										<div class="col"><span class="BAL_value">1</span> BAL = <span class="USDIEO_value">0.30303</span> USD</div>
+										<div class="row">
+											<div class="col">
+												<span class="BAL_value">1</span>
+												 BAL:
+												
+											</div>
+											<div class="col">
+												 <span class="USDIEO_value">
+												 	0.30303
+												 </span> 
+												USD
+												
+											</div>
+										</div>
 									</div>
-								</div>	
+						
 								<div class="pt-2">
+									<div>
+										<b>Your profits investing today</b>
+									</div>
 									<div class="row">
 										<div class="col">
-											<b>
-												ROI (%):
-											</b>
+										
+												ROI:
+											
 										</div>
 										<div class="col">
 											51.52%
@@ -445,9 +472,9 @@
 									</div>
 									<div class="row">
 										<div class="col">
-											<b>
-												Return (USD):
-											</b>
+										
+												Return:
+											
 										</div>
 										<div class="col">
 											<span class="USD_return">
