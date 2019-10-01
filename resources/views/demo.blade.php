@@ -94,7 +94,7 @@
 								<div class="form-group row was-validated">
 									<label class="col-sm-3 col-form-label">
 										<b>Upload ID:</b> 
-										<span class="" data-toggle="tooltip" data-placement="bottom" title=" ID card / Passport or Drivers license" style="font-size: 12px; ">
+										<span class="" data-toggle="tooltip" data-placement="bottom" title=" ID card / Passport or Driver's license" style="font-size: 12px; ">
                                          	<i class="fas fa-info-circle"></i>
                                     	</span> <br>
 									</label>
@@ -118,7 +118,7 @@
 								<div class="form-group row was-validated">
 									<label class="col-sm-3 col-form-label">
 										<b>Upload selfie with ID :</b> 
-										<span class="" data-toggle="tooltip" data-placement="bottom" title="The selfie should include a selfie with the ID, a piece of paper containing 'BAL TOKEN', date, your signature" style="font-size: 12px; ">
+										<span class="" data-toggle="tooltip" data-placement="bottom" title="The selfie should include a selfie with the ID, a piece of paper containing 'BAL TOKEN', date, your signature." style="font-size: 12px; ">
                                          	<i class="fas fa-info-circle"></i>
                                     	</span><br>
                                    		<a data-fancybox href="{{ Util::assetUrl('images/ieo/selfie_verify.png') }}">Check example</a>

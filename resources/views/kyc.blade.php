@@ -124,7 +124,7 @@
 									<b>Upload selfie with ID :</b> 
 									<span class="" data-toggle="tooltip" data-placement="bottom" title="The selfie should include a selfie with the ID, a piece of paper containing 'BAL TOKEN', date, and your signature." style="font-size: 12px; ">
                                          <i class="fas fa-info-circle"></i>
-                                    </span>
+                                    </span><br>
                                     <a data-fancybox href="{{ Util::assetUrl('images/ieo/selfie_verify.png') }}">Check example</a>
 								</label>
 								<div class="col-sm-9">
