@@ -32,11 +32,17 @@
 		
 
 			
-				$('.bal-token').change(function() {
-			if (parseInt(this.value) < 25000) {
+			$('.bal-token').change(function() {
+				console.log()
+
+
+
+			if (numeral($('.bal-token').val()).value() < 25000) {
 				$('.bal-alert').show()
+				$('#token-btn').attr('disabled', 'disabled')
 			} else {
 				$('.bal-alert').hide()
+				$('#token-btn').removeAttr('disabled')
 			}	
 		})
 
@@ -44,13 +50,13 @@
 
 
 			 $(this).val(function(index, value) {
-    			var amount = value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    			var amount = numeral(value).format('0,0');
     			
     			return amount
   			});
 
-			 console.log(parseInt($(this).val()));
 
+			 // parseFloat($(this).val().replace(/,/g , ''))
 
 
 
@@ -59,10 +65,12 @@
 			Currencyconvert()
 
 			$(".BAL_value").text(numeral($(this).val()).format('0,0'));
-			var USDIEO_value = numeral(parseFloat($(this).val() * 0.30303)).format('0,0.00000');
-			var originalvalue = $('.bal-token').val();
-			var USDvalue = parseFloat(originalvalue) * $('.USD_value').data('value')
-			var USDIEO = parseFloat($(this).val() * 0.30303);
+			var originalvalue = numeral($('.bal-token').val()).value();
+
+			var USDIEO_value = numeral(originalvalue * 0.30303).format('0,0.00000');
+
+			var USDvalue = parseFloat(originalvalue * $('.USD_value').data('value'))
+			var USDIEO = parseFloat(originalvalue * 0.30303);
 
 			$(".USDIEO_value").text(USDIEO_value);
 
@@ -83,7 +91,7 @@
 
 
 		function Currencyconvert(){
-			var originalvalue = $('.bal-token').val();
+			var originalvalue = numeral($('.bal-token').val()).value();
 
 			var USDvalue = parseFloat(originalvalue) * $('.USD_value').data('value')
 			var USD_input = parseFloat(USDvalue).toFixed(2);
@@ -397,8 +405,10 @@
 	    					</span>
 	  					</div>
 	  					<input class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 15px;">
-	  					<br>
 					</div>
+	  				<div>
+	  					<small>The minimum investment is 5,000 USD and 25,000 BAL</small>
+	  				</div>
 				</div>
 				<div class="pt-4 bal-alert" style="display: none;">
 					<div class="alert alert-danger" role="alert">
@@ -501,7 +511,7 @@
 											</small>
 										</div>
 										<div class="col-md-6 col-12">
-											<button type="submit" class="btn btn-ieo w-100" style="border-radius: 10px;"><b>Buy Tokens Now!</b></button>
+											<button type="submit" class="btn btn-ieo w-100" style="border-radius: 10px;" disabled id="token-btn"><b>Buy Tokens Now!</b></button>
 										</div>
 									</div>
 								</div>

@@ -5,7 +5,7 @@
 	<li>User ID: {{$user_reference_id}}</li>
 	<li>Name: {{ $name }}</li>
 	<li>Email: {{ $email_id }}</li>
-	<li>BAL Tokens: {{ number_format($bal_amt) }}</li>
+	<li>BAL Tokens: {{ $bal_amt }}</li>
 	<li>Amount paid: {{ $amount }}</li>
 	@if(empty($reference))
 	@else

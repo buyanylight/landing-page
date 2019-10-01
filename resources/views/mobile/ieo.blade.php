@@ -31,35 +31,49 @@
 		    nextArrow: '<button type="button" class="slick-next d-inline-block">Next</button>',            
 		});
 
+			$('#token-form').on('keyup keypress', function(e) {
+  				var keyCode = e.keyCode || e.which;
+  				if (keyCode === 13) { 
+    				e.preventDefault();
+    				return false;
+  				}
+			});
+
+
 			
-				$('.bal-token').change(function() {
-			if (parseInt(this.value) < 25000) {
+			$('.bal-token').blur(function() {
+			if (numeral($('.bal-token').val()).value() < 25000) {
 				$('.bal-alert').show()
+				$('#token-btn').attr('disabled', 'disabled')
+			
+
 			} else {
 				$('.bal-alert').hide()
+				$('#token-btn').removeAttr('disabled')
+				
 			}	
 		})
 
 		$('.bal-token').keyup(function() {
-			 $(this).val(function(index, value) {
-    			var amount = value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+			$(this).val(function(index, value) {
+    			var amount = numeral(value).format('0,0');
     			
     			return amount
   			});
 
-			 console.log(amount);
+			Currencyconvert()
 
+			$(".BAL_value").text(numeral($(this).val()).format('0,0'));
+			var originalvalue = numeral($('.bal-token').val()).value();
 
+			var USDIEO_value = numeral(originalvalue * 0.30303).format('0,0.00000');
 
-				Currencyconvert()
-
-			$(".BAL_value").text($(this).val());
-			var USDIEO_value = numeral(parseFloat($(this).val() * 0.30303)).format('0,0.00000');
-			var originalvalue = $('.bal-token').val();
-			var USDvalue = parseFloat(originalvalue) * $('.USD_value').data('value')
-			var USDIEO = parseFloat($(this).val() * 0.30303);
+			var USDvalue = parseFloat(originalvalue * $('.USD_value').data('value'))
+			var USDIEO = parseFloat(originalvalue * 0.30303);
 
 			$(".USDIEO_value").text(USDIEO_value);
+
 
 			var USD_return = (USDIEO - USDvalue).toFixed(5);
 
@@ -70,12 +84,14 @@
 		})
 
 
-
+		$( window ).on('load', function() {
+  				$('.bal-token').val('');
+			});
 
 
 
 		function Currencyconvert(){
-				var originalvalue = $('.bal-token').val();
+			var originalvalue = numeral($('.bal-token').val()).value();
 
 			var USDvalue = parseFloat(originalvalue) * $('.USD_value').data('value')
 			var USD_input = parseFloat(USDvalue).toFixed(2);
@@ -382,7 +398,7 @@
 			</strong>
 		</h3>
 		<div class="buying-content">
-			<form action="/buy-token" method="post" enctype="multipart/form-data">
+			<form action="/buy-token" method="post" enctype="multipart/form-data" id="token-form">
 				@csrf()
 				<div class="pt-4">
 					<div class="input-group" style="height: 75px; position: relative; right: 5px;">
@@ -391,10 +407,13 @@
 	    						<img src="{{ Util::assetUrl('images/logo-white-mobile.png') }}" width="28">
 	    					</span>
 	  					</div>
-	  					<input type="number" class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" aria-label="bal-token" aria-describedby="basic-addon1" min="25000" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 12px; margin-top: 3px;">
+	  					<input  class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" min="25000" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 12px; margin-top: 3px;">
 	  					<br>
 					</div>
 				</div>
+				<div>
+	  				<small>The minimum investment is 5,000 USD and 25,000 BAL</small>
+	  			</div>
 				<div class="pt-4 bal-alert" style="display: none;">
 					<div class="alert alert-danger" role="alert">
   						The minimum investment is 5,000 USD and 25,000 BAL
@@ -511,7 +530,7 @@
 												Visa, Mastercard, Bank Transfer, Bitcoin, Ethereum
 											</small>
 					</div>
-					<button type="submit" class="btn btn-ieo">
+					<button type="submit" class="btn btn-ieo" id="token-btn" disabled>
 						<b>Buy Tokens</b>
 					</button>
 		
