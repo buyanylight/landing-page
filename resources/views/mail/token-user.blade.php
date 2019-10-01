@@ -5,7 +5,7 @@ private sale.</p>
 transaction:</p>
 <ul>
 	<li>Reference ID: {{ $user_reference_id }}</li>
-	<li>BAL Tokens purchased: {{ number_format($bal_amt) }}</li>
+	<li>BAL Tokens purchased: {{ $bal_amt }}</li>
 	<li>Amount Paid: {{ $amount }}</li>
 	@if(empty($reference))
 	@else

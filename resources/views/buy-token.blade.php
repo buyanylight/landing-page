@@ -658,7 +658,7 @@
 											</b>
 										</div>
 										<div class="col">
-											{{ number_format($bal_amt) }} BAL
+											{{ $bal_amt }} BAL
 										</div>
 									</div>
 									<div class="row pt-2">
@@ -1006,7 +1006,7 @@
 											</b>
 										</div>
 										<div class="col">
-											{{ number_format($bal_amt) }} BAL
+											{{ $bal_amt }} BAL
 										</div>
 									</div>
 									<div class="row pt-2">
@@ -1047,7 +1047,7 @@
 				  						<div class="card-body">
 				  							<div class="card-title">
 				  								<p>
-				  									You are buying <b>{{ number_format($bal_amt) }} BAL</b>
+				  									You are buying <b>{{ $bal_amt }} BAL</b>
 				  								</p>
 				  								<p>
 				  									Please tranfer the amount of <b>{{ $amt }} BTC</b> to our Bitcoin address shown below:
@@ -1143,7 +1143,7 @@
 									</div>
 			  						<div class="card-body">
 			  							<p>
-				  							You are buying <b>{{ number_format($bal_amt) }} BAL</b>
+				  							You are buying <b>{{ $bal_amt }} BAL</b>
 				  						</p>
 				  						<p>
 				  							

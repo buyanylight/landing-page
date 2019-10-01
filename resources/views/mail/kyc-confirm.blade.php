@@ -5,7 +5,7 @@
 	<li>Reference ID : {{ $user_reference_id }}</li>
 	<li>Name: {{ $name }}</li>
 	<li>Email: {{ $email_id }}</li>
-	<li>BAL Tokens purchased: {{ number_format($bal_amt) }} BAL</li>
+	<li>BAL Tokens purchased: {{ $bal_amt }} BAL</li>
 	<li>Amount Paid: {{ $amount }}</li>
 	<li>Receiver ID: {{ $receiver_id }}</li>
 	<li>Country: {{ $country }}</li>

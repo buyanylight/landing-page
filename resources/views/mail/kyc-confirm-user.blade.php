@@ -5,13 +5,13 @@
 	<li>Reference ID : {{ $user_reference_id }}</li>
 	<li>Name: {{ $name }}</li>
 	<li>Email: {{ $email_id }}</li>
-	<li>BAL Tokens purchased: {{ number_format($bal_amt) }} BAL</li>
+	<li>BAL Tokens purchased: {{ $bal_amt }} BAL</li>
 	<li>Amount Paid: {{ $amount }}</li>
 	<li>Country: {{ $country }}</li>
 	<li>User verification ID  image: Received</li>
 	<li>User selfie verification image: Received</li>
 </ul>
-<p>You will receive your {{ number_format($bal_amt) }} BAL Tokens very soon. We will send them to the following ETH address: {{ $receiver_id }}</p>
+<p>You will receive your {{ $bal_amt }} BAL Tokens very soon. We will send them to the following ETH address: {{ $receiver_id }}</p>
 <p>
 	For any further queries, please contact us at 
 	<a href="mailto:invest@buyanylight.com">invest@buyanylight.com</a> or call us at +971 (0) 488 732 65.
