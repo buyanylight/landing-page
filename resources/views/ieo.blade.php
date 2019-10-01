@@ -470,7 +470,7 @@
 											</p>
 											<h5>
 												<b>
-													<u>Cost  during IEO</u>
+													<u>Cost during IEO</u>
 												</b>
 											</h5>
 											<p style="padding-bottom: 18px;">
@@ -511,7 +511,7 @@
 												</b>
 											</h5>
 											<p style="padding-bottom: 18px;">
-												<span>1</span> BAL = <span>0.30303</span>
+												<span>1</span> BAL = <span>0.30303 USD</span>
 											</p>
 											
 										</div>
