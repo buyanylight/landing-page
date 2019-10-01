@@ -245,8 +245,10 @@
 								<div class="w-100">	
 									{{-- <h4 class="text-center text-white"><b>IEO PRE SALE</b></h4> --}}
 									<div class="w-100 pt-2">
+										<h4 class="text-center text-white"><b>PRIVATE SALE LIVE NOW!</b></h4>
 										<p class="text-white text-center mb-0">
-											<b>Private Sale starts in:</b>
+											<b>
+											Private Sale ends in:</b>
 										</p>
 										<div id="timer" class="pt-2  text-center d-flex justify-content-center">
 											<div class="row justify-content-center" style="width: 90%">

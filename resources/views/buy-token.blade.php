@@ -208,7 +208,7 @@
 
    		}
 
-   		$('.completed-trxn').click(function(){
+   		$('.completed-trxn').on('click', function(){
    			$('#user-detail-form').append('<input type="hidden" name="reference" value="BuyAnyLight-{{ $rand }}">');
    			$('#user-detail-form').submit();
 
