@@ -25,24 +25,33 @@ class TokenController extends Controller
 			if ($tvalue['asset_id_quote'] == 'EUR'){
 				$all_curr[$tkey]['logo'] = '<i class="fas fa-euro-sign"></i>';
 				$all_curr[$tkey]['symbol'] = 'Euro';
+				$all_curr[$tkey]['rank'] = 2;
 			}
 			if ($tvalue['asset_id_quote'] == 'USD'){
 				$all_curr[$tkey]['logo'] = '<i class="fas fa-dollar-sign"></i>';
 				$all_curr[$tkey]['symbol'] = 'US Dollar';
+				$all_curr[$tkey]['rank'] = 1;
 			}
 			if ($tvalue['asset_id_quote'] == 'BTC'){
 				$all_curr[$tkey]['logo'] = '<i class="fab fa-bitcoin"></i>';	
 				$all_curr[$tkey]['symbol'] = 'Bitcoin';
+				$all_curr[$tkey]['rank'] = 3;
 			}
 			if ($tvalue['asset_id_quote'] == 'ETH'){
 				$all_curr[$tkey]['logo'] = '<i class="fab fa-ethereum"></i>';
 				$all_curr[$tkey]['symbol'] = 'Ethereum';
+				$all_curr[$tkey]['rank'] = 4;
 			}
 
 		}
 
+		usort($all_curr, function($a, $b) {
+   			 return $a['rank'] <=> $b['rank'];
+		});
 
-		 $agent = new Agent();
+
+
+		$agent = new Agent();
 
         $isMobile = $agent->isMobile();
         $isTablet = $agent->isTablet();
