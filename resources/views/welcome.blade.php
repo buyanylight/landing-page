@@ -14,7 +14,7 @@
                 The global marketplace for LED lighting
             </p>
             <div>
-                <a href="#about" class="btn btn-sm btn-outline-light text-white">
+                <a href="#about" class="btn btn-sm btn-outline-light ">
                     <div class="link-text">
                         Discover BAL benefits 
                     </div>&nbsp;
@@ -22,7 +22,7 @@
                         <i class="fas fa-arrow-right"></i> 
                     </div>
                 </a>
-                <a data-fancybox href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" class="btn btn-sm btn-outline-light text-white">
+                <a data-fancybox href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" class="btn btn-sm btn-outline-light ">
                     <div class="link-text">
                         Watch the video 
                     </div>&nbsp;
@@ -32,16 +32,18 @@
                 </a>
             </div>
             <div class="mt-2">
-                 <a href="{{ route('ieo') }}" class="btn btn-sm btn-light text-dark" style=" width: 85%">
+                 <a href="{{ route('ieo') }}" class="btn btn-md btn-light text-dark" style=" width: 85%">
                     <div class="link-text">
-                       BAL IEO
+                        <b>
+                            FOR INVESTORS
+                        </b>
                     </div>&nbsp;
                     <div class="link-icon">
                         <i class="fas fa-arrow-right"></i> 
                     </div>
                 </a>
             </div>
-    <!--         <div class="mt-1">
+      <!--       <div class="mt-1">
                  <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" target="_blank" 
                  class="btn btn-sm btn-outline-dark text-white">
                     <div class="link-icon">
@@ -133,19 +135,43 @@
             <div class="card card-body" style="box-shadow: 0px 4px 10px #c3c3c3;">
                 <div class="row">
                     <div class="col-6">
-                        <p class="mb-0">
+                        <p class="mb-0 mt-1 pt-2">
                             <b>
                                 Get your favorite lighting products with a single click registration process. <br>
                                 Submit your requirements and our experts will do the rest.
                             </b>
                         </p>
                     </div>
-                    <div class="col-6 text-right">
-                        <a href="#all-packages" class="btn btn-BAL btn-lg">
+                    <div class="col-3 text-center">
+                          <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" target="_blank" 
+                 class="btn btn-sm btn-BAL text-white w-100">
+                    <div class="link-icon">
+                        <i class="far fa-file-pdf"></i>
+                    </div>
+                    &nbsp;
+                    <div class="link-text">
+                        Download BAL One Pager
+                    </div>
+                </a>    
+                <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" 
+                 class="btn btn-sm btn-BAL text-white w-100 mt-1">
+                    <div class="link-icon">
+                        <i class="far fa-file-pdf"></i>
+                    </div>
+                    &nbsp;
+                    <div class="link-text">
+                        Download BAL IEO One Pager
+                    </div>
+                </a>
+            </div>
+            <div class="col-3 pt-2 mt-1">
+                  <a href="#all-packages" class="btn btn-BAL btn-lg">
                             <b>
                                 Start your free trial
                             </b>
                         </a>
+            </div>
+                      
                     </div>
                 </div>
             </div>
