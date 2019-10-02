@@ -36,7 +36,7 @@
 
 
 
-			if (numeral($('.bal-token').val()).value() < 25000) {
+			if (numeral($('.bal-token').val()).value() < 25000 && numeral($('.bal-token').val()).value() !== 9) {
 				$('.bal-alert').show()
 			
 			} else {
@@ -46,7 +46,7 @@
 		})
 
 			$('.bal-token').keyup(function() {
-				if (numeral($('.bal-token').val()).value() < 25000) {
+				if (numeral($('.bal-token').val()).value() < 25000 && numeral($('.bal-token').val()).value() !== 9) {
 				$('#token-btn').attr('disabled', 'disabled')
 			} else {
 				$('#token-btn').removeAttr('disabled')
