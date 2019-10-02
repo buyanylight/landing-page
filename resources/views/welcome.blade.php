@@ -14,7 +14,7 @@
                 The global marketplace for LED lighting
             </p>
             <div>
-                <a href="#about" class="btn btn-sm btn-outline-dark text-white">
+                <a href="#about" class="btn btn-sm btn-outline-light text-white">
                     <div class="link-text">
                         Discover BAL benefits 
                     </div>&nbsp;
@@ -22,7 +22,7 @@
                         <i class="fas fa-arrow-right"></i> 
                     </div>
                 </a>
-                <a data-fancybox href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" class="btn btn-sm btn-outline-dark text-white">
+                <a data-fancybox href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" class="btn btn-sm btn-outline-light text-white">
                     <div class="link-text">
                         Watch the video 
                     </div>&nbsp;
@@ -30,16 +30,18 @@
                         <i class="fas fa-arrow-right"></i> 
                     </div>
                 </a>
-                 <a href="{{ route('ieo') }}" class="btn btn-sm btn-outline-dark text-white">
+            </div>
+            <div class="mt-2">
+                 <a href="{{ route('ieo') }}" class="btn btn-sm btn-light text-dark" style=" width: 85%">
                     <div class="link-text">
-                        IEO
+                       BAL IEO
                     </div>&nbsp;
                     <div class="link-icon">
                         <i class="fas fa-arrow-right"></i> 
                     </div>
                 </a>
             </div>
-            <div class="mt-1">
+    <!--         <div class="mt-1">
                  <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" target="_blank" 
                  class="btn btn-sm btn-outline-dark text-white">
                     <div class="link-icon">
@@ -60,7 +62,7 @@
 	            		Download BAL IEO One Pager
                     </div>
                 </a>	            
-            </div>
+            </div> -->
 
         </div>
     </div>
@@ -126,8 +128,27 @@
                 </div>
             </div>
         </div>
-        <div class="text-center mb-5 trial-btn-link">
-            <a href="#all-packages" class="btn btn-BAL btn-lg">Start your free trial</a>
+        <div class=" mb-5 trial-btn-link" style="position: relative;
+    top: -60px;">
+            <div class="card card-body" style="box-shadow: 0px 4px 10px #c3c3c3;">
+                <div class="row">
+                    <div class="col-6">
+                        <p class="mb-0">
+                            <b>
+                                Get your favorite lighting products with a single click registration process. <br>
+                                Submit your requirements and our experts will do the rest.
+                            </b>
+                        </p>
+                    </div>
+                    <div class="col-6 text-right">
+                        <a href="#all-packages" class="btn btn-BAL btn-lg">
+                            <b>
+                                Start your free trial
+                            </b>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         {{-- <div class="text-center mb-5 trial-btn-link">
             <a href="one-pagers/BUYANYLIGHT.pdf" 
@@ -218,6 +239,42 @@
                 <p>
                     <b class="text-BAL"> Researching LED prices and products? </b> Because it’s focused purely on LED lights, BuyAnyLight allows you to do this in record time. BAL provides the best value in product quality, costs, and service.
                 </p>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5 pb-5">
+        <div class="pt-1 text-center">
+            <h3>
+                <b>Do you want to know more?</b>
+            </h3>
+            <p class="pt-3">
+                Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
+            </p>
+            <div class="buttons pt-3">
+                <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL">
+                    <i class="far fa-file-pdf"></i>
+                            &nbsp;
+                    One Pager
+                </a>
+                <a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
+                    <i class="far fa-file-pdf"></i>
+                    &nbsp;
+                    White Paper
+                </a>
+                <a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL ml-3" target="_blank">
+                    <i class="far fa-file-pdf"></i>
+                            &nbsp;
+                    Yellow Paper
+                </a>                
+
+            </div>
+            <div class="pt-3">
+                <a href="{{ route('contact') }}" class="btn btn-BAL m-2">Schedule a meeting</a>
+                <a href="{{route('ieo') }}#section-bal-token" class="btn btn-BAL m-2 buy-btn">
+                    <b>
+                        BUY BAL TOKENS NOW!
+                    </b>
+                </a>
             </div>
         </div>
     </div>
@@ -458,6 +515,42 @@
                 <p>
                     Due to the massive overheads such as staff, warehouse, multi-level supply chain these global brands prices are far higher. BAL creates powerful applications that process large amounts of data and build relationships with manufacturers to provide the finest products, the best prices, and top-notch services anywhere in the world. Combining our low fees and super-low product prices means that every BAL user makes massive savings compared with any other supplier in the market.
                 </p>
+            </div>
+        </div>
+    </div>
+      <div class="container pt-5 pb-5">
+        <div class="pt-1 text-center">
+            <h3>
+                <b>Do you want to know more?</b>
+            </h3>
+            <p class="pt-3">
+                Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
+            </p>
+            <div class="buttons pt-3">
+                <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL">
+                    <i class="far fa-file-pdf"></i>
+                            &nbsp;
+                    One Pager
+                </a>
+                <a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
+                    <i class="far fa-file-pdf"></i>
+                    &nbsp;
+                    White Paper
+                </a>
+                <a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL ml-3" target="_blank">
+                    <i class="far fa-file-pdf"></i>
+                            &nbsp;
+                    Yellow Paper
+                </a>                
+
+            </div>
+            <div class="pt-3">
+                <a href="{{ route('contact') }}" class="btn btn-BAL m-2">Schedule a meeting</a>
+                <a href="{{route('ieo') }}#section-bal-token" class="btn btn-BAL m-2 buy-btn">
+                    <b>
+                        BUY BAL TOKENS NOW!
+                    </b>
+                </a>
             </div>
         </div>
     </div>
