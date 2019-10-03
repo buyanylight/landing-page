@@ -25,7 +25,7 @@
 		We would also want to ensure that you fill up the Know Your Customer (KYC) Form, so we could integrate your data into the system. You may complete the step by clicking the link below:
 	</p>
 	<p>
-		<a href="https://buyanylight.com/kyc-form/{{ $user_reference_id }}?amount={{ $amount }}&bal={{$bal_amt}}&receiver_id={{$receiver_id}}&name={{$name}}&email={{$email}}">KYC Form</a>
+		<a href="https://buyanylight.com/kyc-form/{{ $user_reference_id }}?amount={{ $amount }}&bal={{$bal_amt}}&receiver_id={{$receiver_id}}&name={{$name}}&email={{$email}}&number={{$number}}">KYC Form</a>
 	</p>
 	<p style="color: black; font-size: 14px !important">
 		Attached in this email is the Token Sale Agreement for your reference. If we can be of further service, feel free to contact us in all our avenues. Again, we value doing business with you.

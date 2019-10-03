@@ -7,6 +7,7 @@ New BAL Token purchase transaction details:
 	<li><b>User Reference ID:</b> {{ $user_reference_id }}</li>
 	<li style="padding-top: 10px;"><b>Name:</b> {{ $name }}</li>
 	<li style="padding-top: 10px;"><b>Email:</b> {{ $email }}</li>
+	<li style="padding-top: 10px;"><b>Mobile:</b> {{ $number }}</li>
 	<li style="padding-top: 10px;"><b>BAL Tokens Total Value:</b> {{ $bal_amt }} BAL</li>
 	<li style="padding-top: 10px;"><b>Amount Paid:</b> {{ $amount }}</li>
 	@if(!empty($reference))

@@ -49,6 +49,8 @@
    		$('#name-div').text($('#fullname').val());
    		$('#email-div').text($('#email').val());
    		$('#eth-div').text($('#eth_address').val());
+   		$('#number-div').text($('#number').val());
+
 
    		var value = $('#eth_address').val();
 
@@ -61,6 +63,16 @@
    			} else {
    				$('#name_error').show();
    			}
+
+
+   			if (!(validator.isEmpty($('#number').val()))) {
+   				console.log('Name-Yess!')
+   				$('#number_error').hide();
+   			} else {
+   				$('#number_error').show();
+   			}
+
+
    			if (validator.isEmail($('#email').val())) {
    				console.log('Email-Yes!')
    				$('#email_error').hide();
@@ -96,6 +108,7 @@
 
 
    		if (!(validator.isEmpty($('#fullname').val())) && 
+   			!(validator.isEmpty($('#number').val())) &&
    			validator.isEmail($('#email').val()) && 
    			$('input#sale_check').is(':checked') && 
    			validator.isLength($('#eth_address').val(), {min: 42}) &&
@@ -148,6 +161,7 @@
    		$('#name-div').text($('#fullname').val());
    		$('#email-div').text($('#email').val());
    		$('#eth-div').text($('#eth_address').val());
+   		$('#number-div').text($('#number').val());
 
    		var value = $('#eth_address').val();
 
@@ -160,6 +174,15 @@
    			} else {
    				$('#name_error').show();
    			}
+
+
+   			if (!(validator.isEmpty($('#number').val()))) {
+   				console.log('Name-Yess!')
+   				$('#number_error').hide();
+   			} else {
+   				$('#number_error').show();
+   			}
+
    			if (validator.isEmail($('#email').val())) {
    				console.log('Email-Yes!')
    				$('#email_error').hide();
@@ -196,6 +219,7 @@
 
 
    		if (!(validator.isEmpty($('#fullname').val())) && 
+   			!(validator.isEmpty($('#number').val())) && 
    			validator.isEmail($('#email').val()) && 
    			$('input#sale_check').is(':checked') && 
    			validator.isLength($('#eth_address').val(), {min: 42}) &&
@@ -365,6 +389,13 @@
 					  								</div>
 					  							</div>
 					  							<div class="form-group row">
+					  								<label class="col-sm-3 col-form-label"><b>Mobile:</b></label>
+					  								<div class="col-sm-9">
+					  									<input type="tel" name="number" class="form-control	" placeholder="Enter Mobile number" required="required" id="number">
+					  									<small class="text-danger" id="number_error" style="display: none">Please enter your correct Mobile number.</small>
+					  								</div>
+					  							</div>
+					  							<div class="form-group row">
 					  								<label class="col-sm-3 col-form-label"><b>Your ETH address:</b></label>
 					  								<div class="col-sm-9">
 					  									<input type="text" name="receiver_id" class="form-control" placeholder="To receive your BAL Tokens, please provide your ETH address" pattern=".{40,42}" required title="Please enter the correct address" id="eth_address">
@@ -420,6 +451,11 @@
 		  							<div class="form-group row">
 		  								<label class="col-sm-3 col-form-label"><b>Email:</b></label>
 		  								<div class="col-sm-9 pt-2 " id="email-div">
+		  								</div>
+		  							</div>
+		  							<div class="form-group row">
+		  								<label class="col-sm-3 col-form-label"><b>Mobile:</b></label>
+		  								<div class="col-sm-9 pt-2 " id="number-div">
 		  								</div>
 		  							</div>
 		  							<div class="form-group row">
@@ -736,6 +772,13 @@
 					  								</div>
 					  							</div>
 					  							<div class="form-group row">
+					  								<label class="col-sm-3 col-form-label"><b>Mobile:</b></label>
+					  								<div class="col-sm-9">
+					  									<input type="tel" name="number" class="form-control	" placeholder="Enter Mobile number" required="required" id="number">
+					  									<small class="text-danger" id="number_error" style="display: none">Please enter your correct Mobile number.</small>
+					  								</div>
+					  							</div>
+					  							<div class="form-group row">
 					  								<label class="col-sm-3 col-form-label"><b>Your ETH address:</b></label>
 					  								<div class="col-sm-9">
 					  									<input type="text" name="receiver_id" class="form-control" placeholder="To receive your BAL Tokens, please provide your receiver address" pattern=".{40,42}" required title="Please enter the correct address" id="eth_address">
@@ -780,6 +823,11 @@
 		  							<div class="form-group row">
 		  								<label class="col-sm-3 col-form-label"><b>Email:</b></label>
 		  								<div class="col-sm-9 pt-2 " id="email-div">
+		  								</div>
+		  							</div>
+		  							<div class="form-group row">
+		  								<label class="col-sm-3 col-form-label"><b>Mobile:</b></label>
+		  								<div class="col-sm-9 pt-2 " id="number-div">
 		  								</div>
 		  							</div>
 		  							<div class="form-group row">

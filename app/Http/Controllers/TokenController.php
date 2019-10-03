@@ -499,6 +499,8 @@ class TokenController extends Controller
       		"Zimbabwe"
 		];
 
+
+
 		// dd($request['reference']);
 
 		if ($request['transaction_id'] == null) {
@@ -511,6 +513,7 @@ class TokenController extends Controller
 	            	'name' => 'required',
 	            	'user_reference_id' => 'required',
 	            	'bal_amt' => 'required',
+	            	'number' => 'required',
 	        	]);
 	        	
 				$email_details =  array(
@@ -519,7 +522,8 @@ class TokenController extends Controller
 					'email_id' => $transaction['email_id'],
 					'name' => $transaction['name'],
 	            	'user_reference_id' => $transaction['user_reference_id'],	
-	            	'bal_amt' => $transaction['bal_amt'],	
+	            	'bal_amt' => $transaction['bal_amt'],
+	            	'number' => $transaction['number']	
 	            
 				);
 
@@ -532,6 +536,8 @@ class TokenController extends Controller
 	            	'reference' => 'required',
 	            	'user_reference_id' => 'required',
 	            	'bal_amt' => 'required',
+	            	'number' => 'required',
+
 
 
 	        	]);
@@ -544,6 +550,7 @@ class TokenController extends Controller
 					'reference' => $transaction['reference'],
 	            	'user_reference_id' => $transaction['user_reference_id'],	
 	            	'bal_amt' => $transaction['bal_amt'],
+	            	'number' => $transaction['number']
 	            	
 	           
 
@@ -560,6 +567,8 @@ class TokenController extends Controller
             	'name' => 'required',
 	            'user_reference_id' => 'required',
 	            'bal_amt' => 'required',
+	            	'number' => 'required',
+
 
 
 
@@ -573,6 +582,7 @@ class TokenController extends Controller
 				'name' => $transaction['name'],
 	            'user_reference_id' => $transaction['user_reference_id'],
 	            'bal_amt' => $transaction['bal_amt'],
+	            'number' => $transaction['number']
 	            
 			);
 
@@ -584,7 +594,7 @@ class TokenController extends Controller
 
 		
 
-	        \Mail::to('info@buyan')->send(new BuyingConfirmationAdmin($request));
+	        \Mail::to('info@buyanylight.com')->send(new BuyingConfirmationAdmin($request));
 
 
 	        \Mail::to($request->get('email_id'))->send(new BuyingConfirmation($request));
@@ -602,7 +612,9 @@ class TokenController extends Controller
 			'name' => $transaction['name'],
 	        'user_reference_id' => $transaction['user_reference_id'],
 	        'bal_amt' => $transaction['bal_amt'],
-	        'countries' => $countries
+	        'countries' => $countries,
+	        'number' => $transaction['number']
+
 		]);
 	}
 
