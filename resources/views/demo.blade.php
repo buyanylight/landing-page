@@ -4,7 +4,7 @@
 @section('content')
 
 <section style="min-height: 100vh">
-	<div class="pt-5 mt-5">
+	<div class="pt-5 mt-5 pb-5 mb-5">
 		<div class="container">
 			<h3>
 				<b>
@@ -78,6 +78,12 @@
 									<label class="col-sm-3 col-form-label"><b>Email:</b> </label>
 									<div class="col-sm-9">
 										<input type="email" name="email_id" placeholder="Enter Email ID" class="form-control" value="{{ $email }}">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-sm-3 col-form-label"><b>Mobile:</b> </label>
+									<div class="col-sm-9">
+										<input type="tel" name="number" class="form-control" value="{{ $number }}">
 									</div>
 								</div>
 								<div class="form-group row">

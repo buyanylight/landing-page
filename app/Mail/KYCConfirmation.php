@@ -49,7 +49,8 @@ class KYCConfirmation extends Mailable
                         'user_reference_id' => $this->kyc_details->user_reference_id,
                         'bal_amt' => $this->kyc_details->bal_amt,
                         'reference' => $this->kyc_details->reference,
-                        'country' => $this->kyc_details->country
+                        'country' => $this->kyc_details->country,
+                        'number' => $this->kyc_details->number
                      ]);
 
     }

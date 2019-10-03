@@ -5,7 +5,7 @@
 		Hello Admin,
 	</p>
 	<p>
-		Received a new KYC form
+		Received a new KYC form.
 	</p>
 	<p>
 		Here are the details:
@@ -15,6 +15,7 @@
 		<li><b>Reference ID:</b> {{ $user_reference_id }}</li>
 		<li style="padding-top: 10px;"><b>Name:</b> {{ $name }}</li>
 		<li style="padding-top: 10px;"><b>Email:</b> {{ $email }}</li>
+		<li style="padding-top: 10px;"><b>Mobile:</b> {{ $number }}</li>
 		<li style="padding-top: 10px;"><b>BAL Tokens Total Value:</b> {{ $bal_amt }}</li>
 		<li style="padding-top: 10px;"><b>Amount Paid:</b> {{ $amount }}</li>
 		<li style="padding-top: 10px;"><b>Country:</b> {{ $country }}</li>
