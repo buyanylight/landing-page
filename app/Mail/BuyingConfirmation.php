@@ -32,6 +32,8 @@ class BuyingConfirmation extends Mailable
     public function build()
     {
         return $this->markdown('emails.buyingconfirmation')
+                    ->subject('Your BAL Token Investment')
+
                      ->attach(public_path() . '/BAL_Token_Sale_Agreement.pdf')
                      ->with([
                         'name' => $this->buyer_details->name,

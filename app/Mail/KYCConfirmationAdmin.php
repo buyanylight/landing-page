@@ -47,6 +47,7 @@ class KYCConfirmationAdmin extends Mailable
 
 
         return $this->markdown('emails.kycconfirmationadmin')
+            ->subject('New KYC Form Completed')
                     ->with([
                         'name' => $this->kyc_details->user_name,
                         'email' => $this->kyc_details->email_id,
