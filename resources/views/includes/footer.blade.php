@@ -148,7 +148,13 @@
                     <div class="mr-2" style="font-size: 12px;">
                         <div>
                             <div class="row">
-                                <div class="col-sm-12">
+                                <div class="col-sm-6 text-left">
+                                    Brought to you by:&nbsp; 
+                                    <a href="https://almani.ae">
+                                        <img src="{{ Util::assetUrl('images/almani-logo.png') }}" width="14%">
+                                    </a>
+                                </div>
+                                <div class="col-sm-6">
                                     <a href="{{ route('terms') }}" class="text-white">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ route('privacy') }}" class="text-white">Privacy & cookies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© BuyAnyLight 2019
                                 </div>
                                 <div class="col-sm-4">

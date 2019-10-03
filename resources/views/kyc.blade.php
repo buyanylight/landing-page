@@ -64,12 +64,12 @@
 						</p>
 
 						<hr>
-						<form action="/kyc-confirm" method="post" enctype="multipart/form-data">
+						<form action="/thank-you" method="post" enctype="multipart/form-data">
 		  					@csrf()
 		  					<div class="form-group row">
 		  						<label class="col-sm-3 col-form-label"><b>Reference ID:</b></label>
 		  							<div class="col-sm-9 pt-2">
-		  								{{$user_reference_id }}
+		  								{{ $user_reference_id }}
 		  							</div>
 		  					</div>
 							<div class="form-group row">
@@ -106,8 +106,16 @@
 									<div class="custom-file">
 		    							<input type="file" class="custom-file-input"  name="user_id" id="validatedCustomFile" required>
 		    							<label class="custom-file-label" for="validatedCustomFile">Choose file</label>
-		    							<div class="invalid-feedback">Please upload an Image</div>
-                    					<div class="valid-feedback">Image has been uploaded</div>
+		    							<small>
+		    								<b>
+		    									Files:
+		    								</b>
+		    								 JPG, PNG, PDF | 
+		    								 <b>
+		    								 	Max-size:
+		    								 </b>
+		    								  5 MB
+		    							</small>
 		 							</div>
 								</div>
 							</div>
@@ -116,20 +124,32 @@
 									<b>Upload selfie with ID :</b> 
 									<span class="" data-toggle="tooltip" data-placement="bottom" title="The selfie should include a selfie with the ID, a piece of paper containing 'BAL TOKEN', date, and your signature." style="font-size: 12px; ">
                                          <i class="fas fa-info-circle"></i>
-                                    </span>
+                                    </span><br>
+                                    <a data-fancybox href="{{ Util::assetUrl('images/ieo/selfie_verify.png') }}">Check example</a>
 								</label>
 								<div class="col-sm-9">
 									<div class="custom-file">
 		    							<input type="file" class="custom-file-input" name="user_selfie_id" required>
 		    							<label class="custom-file-label" for="validatedCustomFile">Choose file</label>
-		    							<div class="invalid-feedback">Please upload an Image</div>
-                    					<div class="valid-feedback">Image has been uploaded</div>
+		    							<small>
+		    								<b>
+		    									Files:
+		    								</b>
+		    								 JPG, PNG, PDF | 
+		    								 <b>
+		    								 	Max-size:
+		    								 </b>
+		    								  5 MB
+		    							</small>
 		 							</div>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-12">
-									<input type="hidden" name="user_reference_id" value="{{ $user_reference_id }}">
+									<input type="hidden" name="user_reference_id" value="{{$user_reference_id }}">
+									<input type="hidden" name="receiver_id" value="{{ $receiver_id }}">
+									<input type="hidden" name="bal_amt" value="{{$bal_amt }}">
+									<input type="hidden" name="amount" value="{{$amount }}">
 									<button type="submit" class="btn text-white w-100" style="background-color: #510091;"> Submit and Complete the process </button>
 								</div>
 							</div>
@@ -138,7 +158,7 @@
 				</div>
 			</div>
 			<div class="card card-body mt-3">
-				How to add a Custom ERC20 Token /our BAL Token to your Ethereum wallet? <br> <a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/">
+				How to add a Custom ERC20 Token /our BAL Token to your Ethereum wallet? <br> <a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/" target="_blank">
 				Check out this easy step-by-step guide</a>	
 			</div>
 		</div>

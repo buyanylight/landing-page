@@ -5,7 +5,7 @@ private sale.</p>
 transaction:</p>
 <ul>
 	<li>Reference ID: {{ $user_reference_id }}</li>
-	<li>BAL Tokens purchased: {{ number_format($bal_amt) }}</li>
+	<li>BAL Tokens purchased: {{ $bal_amt }}</li>
 	<li>Amount Paid: {{ $amount }}</li>
 	@if(empty($reference))
 	@else
@@ -20,7 +20,7 @@ transaction:</p>
 
 <p>In case you haven’t filled out the Know Your Customer (KYC) form, please
 complete it by accessing the following link:</p>
-<a href="http://192.168.1.204:8004/kyc-form/{{ $user_reference_id }}">KYC Form</a>
+<a href="https://buyanylight.com/kyc-form/{{ $user_reference_id }}?amount={{ $amount }}&bal={{$bal_amt}}&receiver_id={{$receiver_id}}&name={{$name}}&email={{$email_id}}">KYC Form</a>
 
 <p>
 	For any further queries, please contact us at 

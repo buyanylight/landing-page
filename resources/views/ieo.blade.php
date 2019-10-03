@@ -30,63 +30,85 @@
 			nextArrow: '<button type="button" class="slick-next d-inline-block">Next</button>',
 		});
 		
-		$('.buy-btn').click(function(){
-			$('.section-buy-token').slideDown();
-		})
-
-		$('.close-btn').click(function(){
-			$('.section-buy-token').slideUp();
-		})
 
 			
-				$('.bal-token').change(function() {
-			if (parseInt(this.value) < 25000) {
+			$('.bal-token').change(function() {
+
+
+
+			if (numeral($('.bal-token').val()).value() < 25000 && numeral($('.bal-token').val()).value() !== 9) {
 				$('.bal-alert').show()
+			
 			} else {
 				$('.bal-alert').hide()
+				
 			}	
 		})
 
-		$('.bal-token').keyup(function() {
+			$('.bal-token').keyup(function() {
+				if (numeral($('.bal-token').val()).value() < 25000 && numeral($('.bal-token').val()).value() !== 9) {
+				$('#token-btn').attr('disabled', 'disabled')
+			} else {
+				$('#token-btn').removeAttr('disabled')
+			}
+
+			 $('.token-price').show();
+
+			 $(this).val(function(index, value) {
+    			var amount = numeral(value).format('0,0');
+    			
+    			return amount
+  			});
+
+
+			 // parseFloat($(this).val().replace(/,/g , ''))
+
+
+
+
+
 			Currencyconvert()
 
-			$(".BAL_value").text($(this).val());
-			var USDIEO_value = formatNumber(parseFloat($(this).val() * 0.30303).toFixed(5))
-			var originalvalue = $('.bal-token').val();
-			var USDvalue = parseFloat(originalvalue) * $('.USD_value').data('value')
-			var USDIEO = parseFloat($(this).val() * 0.30303);
+			$(".BAL_value").text(numeral($(this).val()).format('0,0'));
+			var originalvalue = numeral($('.bal-token').val()).value();
+
+			var USDIEO_value = numeral(originalvalue * 0.30303).format('0,0.00000');
+
+			var USDvalue = parseFloat(originalvalue * $('.USD_value').data('value'))
+			var USDIEO = parseFloat(originalvalue * 0.30303);
 
 			$(".USDIEO_value").text(USDIEO_value);
 
-			console.log(USDIEO - USDvalue);
 
 			var USD_return = (USDIEO - USDvalue).toFixed(5);
 
 			 $(".USD_return").text(USD_return);
+
+
 		})
 
+			$( window ).on('load', function() {
+  				$('.bal-token').val('');
+			});
 
+		// 1000
 
-
-		function formatNumber(num) {
- 	 		return num.toString().replace(/(?<!\..*)(\d)(?=(?:\d{3})+(?:\.|$))/g, '$1,')
-		}
 
 
 		function Currencyconvert(){
-			var originalvalue = $('.bal-token').val();
+			var originalvalue = numeral($('.bal-token').val()).value();
 
 			var USDvalue = parseFloat(originalvalue) * $('.USD_value').data('value')
 			var USD_input = parseFloat(USDvalue).toFixed(2);
-			var USD  = formatNumber(parseFloat(USDvalue).toFixed(2));
+			var USD  = numeral(parseFloat(USDvalue)).format('0,0.00');
 
 
-			var BTCvalue = formatNumber(parseFloat(originalvalue) * $('.BTC_value').data('value'))
+			var BTCvalue = parseFloat(originalvalue) * $('.BTC_value').data('value')
 
-			var ETHvalue = formatNumber(parseFloat(originalvalue) * $('.ETH_value').data('value'))
+			var ETHvalue = parseFloat(originalvalue) * $('.ETH_value').data('value')
 
 			var EURvalue = parseFloat(originalvalue) * $('.EUR_value').data('value')
-			var EUR  = formatNumber(parseFloat(EURvalue).toFixed(2));
+			var EUR  = numeral(parseFloat(EURvalue)).format('0,0.00');
 			var EUR_input = parseFloat(EURvalue).toFixed(2);
 
 			
@@ -135,7 +157,7 @@
 
 @section('content')
 
-		<div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
+		<div style="position: absolute; top: 70px; right: 55px; min-width: 300px; z-index: 999;">
 			<div class="toast kyc-toast" data-autohide="false">
 		  		<div class="toast-header">
 		    		<img src="{{ Util::assetUrl('images/logo-black-icon.png') }}" width="25">
@@ -176,9 +198,21 @@
 						</h3>
 
 						<div class="pt-1 pagers-paper">
-							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>					
-							<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}"  target="_blank" class="btn btn-ieo">White Paper</a>
-							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo" target="_blank">Yellow Paper</a>
+							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">
+	            			<i class="far fa-file-pdf"></i>
+	            			&nbsp;
+							One Pager
+						</a>					
+							<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}"  target="_blank" class="btn btn-ieo">
+							<i class="far fa-file-pdf"></i>
+	            			&nbsp;
+							White Paper
+						</a>
+							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo" target="_blank">
+							<i class="far fa-file-pdf"></i>
+	            			&nbsp;
+								Yellow Paper
+							</a>
 						</div>
 						<!-- <div class="pt-3">
 							<h5>
@@ -227,7 +261,7 @@
 							</h4>
 							<div class="pt-2">
 								<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-ieo" target="_blank">Token Contract</a>
-								<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-ieo" target="_blank">Token Owner </a>
+								<!-- <a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-ieo" target="_blank">Token Owner </a> -->
 								<a href="#allocation" class="btn btn-ieo">Token Allocation</a>
 								<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn btn-ieo" target="_blank">Token Sale Agreement</a>
 							</div>
@@ -240,8 +274,10 @@
 								<div class="w-100">	
 									{{-- <h4 class="text-center text-white"><b>IEO PRE SALE</b></h4> --}}
 									<div class="w-100 pt-2">
+										<h4 class="text-center text-white"><b>PRIVATE SALE LIVE NOW!</b></h4>
 										<p class="text-white text-center mb-0">
-											<b>Private Sale starts in:</b>
+											<b>
+											Private Sale ends in:</b>
 										</p>
 										<div id="timer" class="pt-2  text-center d-flex justify-content-center">
 											<div class="row justify-content-center" style="width: 90%">
@@ -330,10 +366,17 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row pt-4">
 					<div class="pt-4 w-100">
-						<a href="#section-bal-token" class="btn btn-ieo w-100 buy-btn d-flex align-items-center justify-content-center" style="height: 60px;">
-							Buy BAL Tokens Now!
+						<a href="#section-bal-token" class="btn w-100 buy-btn">
+							<div class="header-text">
+								<h4>
+									<b>
+										BUY BAL TOKENS NOW!
+									</b>
+								</h4>
+							</div> 
+							<i class="fas fa-chevron-down"></i>
 						</a>
 					</div>
 				</div>
@@ -342,15 +385,9 @@
 	</div>
 </section>
 <section class="section-buy-token" id="section-bal-token">
-	<div class="text-right  close-btn" style="font-size: 15px; position: absolute;
-    left: 98.5%; top: 102%;">
-		<a href="#section-1" class="pr-3 pt-3">
-			<i class="fas fa-times"></i>
-		</a>
-	</div>
 	<div class="pt-5 container">
 		<h3>
-			<strong>
+			<b>
 				<span>
 					Buy
 				</span>
@@ -360,7 +397,7 @@
 				<span>
 					Tokens
 				</span>
-			</strong>
+			</b>
 		</h3>
 		<div class="buying-content">
 			<form action="/buy-token" method="post" enctype="multipart/form-data">
@@ -372,26 +409,34 @@
 	    						<img src="{{ Util::assetUrl('images/logo-white-mobile.png') }}" width="28">
 	    					</span>
 	  					</div>
-	  					<input type="number" class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" aria-label="bal-token" aria-describedby="basic-addon1" min="25000" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 15px;">
-	  					<br>
+	  					<input class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 15px;">
 					</div>
+	  				<div>
+	  					<small>The minimum investment is 5,000 USD and 25,000 BAL</small>
+	  				</div>
 				</div>
 				<div class="pt-4 bal-alert" style="display: none;">
 					<div class="alert alert-danger" role="alert">
-  						The minimum investment is 5000 USD = 25000 BAL
+  						The minimum investment is 5,000 USD and 25,000 BAL
 					</div>
 				</div>
-				<div class="pt-4">
+				<hr>
+				<div class=" mt-4">
 					<div class="row">
 						<div class="col-6">
+						<h3 class="pb-3">
+							<b>
+								BAL <span class="header-text">Costs</span> Today
+							</b>
+						</h3>
 						@foreach($tokens as $token)
-							<div class="card mb-3" style="border-radius: 20px; height: 70px;">
+							<div class="card mb-3" style="border-radius: 20px; height: 60px;">
   								<div class="row no-gutters">
-    								<div class="col-md-3 d-flex align-items-center justify-content-center btn-ieo" style="border-radius: 20px; box-shadow: 4px 0px 5px 0px #cccccc; height: 70px;" data-toggle="tooltip" data-placement="right" title="{{ $token['symbol'] }}">
+    								<div class="col-md-3 d-flex align-items-center justify-content-center btn-ieo" style="border-radius: 20px; box-shadow: 4px 0px 5px 0px #cccccc; height: 60px;" data-toggle="tooltip" data-placement="right" title="{{ $token['symbol'] }}">
       									<p class="mb-0" style="font-size: 20px;">{!! $token['logo'] !!}</p>
     								</div>
     								<div class="col-md-9">
-      									<div class="card-body card-body d-flex align-items-center justify-content-end" style="height: 70px;">
+      									<div class="card-body card-body d-flex align-items-center justify-content-end" style="height: 60px;">
         									<p class="card-text text-right mb-0">
         										<span class="{{ $token['asset_id_quote'] }}_value" data-value="{{ $token['bal_rate'] }}">
         											0
@@ -405,76 +450,111 @@
 							@endforeach
 						</div>
 						<div class="col-6">
-							<div class="card card-body">
-								<h5>
-									<b>
-										<span class="header-text">Profit / Return on Investment (ROI):</span>
-									</b>
-								</h5>
-								<div class="pt-2">
-									<div class="row">
-										<div class="col">
-											<b>
-												Private Sale:
-											</b>
-										</div>
-										<div class="col"><span class="BAL_value">1</span> BAL = <span class="USD_value">0.2</span> USD</div>
+							<h3 class="pb-3">
+								<b>
+									<span class="header-text">Profit</span> / Return on Investment
+								</b>
+							</h3>
+							<div class="card card-body" style="border-radius: 20px;">
+								<div class="row">
+									<div class="col-7">
+										<div class="pt-2">
+											<h5>
+												<b>
+													<u>Cost today</u>
+												</b>
+											</h5>
+											<p style="padding-bottom: 18px;">
+												<span class="BAL_value">1</span> BAL = <span class="USD_value">0.2</span> 
+												USD
+											</p>
+											<h5>
+												<b>
+													<u>Cost during IEO</u>
+												</b>
+											</h5>
+											<p style="padding-bottom: 18px;">
+												<span class="BAL_value">1</span> BAL = <span class="USDIEO_value">0.30303</span>
+												USD
+											</p>
+											<h5>
+												<b>
+													<u>Profits investing today</u>
+												</b>
+											</h5>
+											<p class="mb-1 mt-1">
+											 	ROI : 51.52% 
+											 </p>
+											 <p class="mb-0">
+											 	Profits :
+												<span class="USD_return">
+													151.515
+												</span>
+												USD
+											 </p> 
+										</div>	
 									</div>
-									<div class="row">
-										<div class="col">
-											<b>
-												IEO:
-											</b>
-										</div>
-										<div class="col"><span class="BAL_value">1</span> BAL = <span class="USDIEO_value">0.30303</span> USD</div>
-									</div>
-								</div>	
-								<div class="pt-2">
-									<div class="row">
-										<div class="col">
-											<b>
-												ROI (%):
-											</b>
-										</div>
-										<div class="col">
-											51.52%
-										</div>
-									</div>
-									<div class="row">
-										<div class="col">
-											<b>
-												Return (USD):
-											</b>
-										</div>
-										<div class="col">
-											<span class="USD_return">
-												151.515
-											</span>
-											 USD
+									<div class="col-5">
+										<div class="pt-2 token-price" style="display: none">
+											<h5>
+												<b>
+													<u>Price today</u>
+												</b>
+											</h5>
+											<p style="padding-bottom: 18px;">
+												<span>1</span> BAL = <span>0.2</span> 
+												USD
+											</p>
+											<h5>
+												<b>
+													<u>Price during IEO</u>
+												</b>
+											</h5>
+											<p style="padding-bottom: 18px;">
+												<span>1</span> BAL = <span>0.30303 USD</span>
+											</p>
+											
 										</div>
 									</div>
 								</div>
 							</div>
-								<div class="pt-4">
-					<div class="form-group">
-						<label> <b>Step 1:</b> Select Currency to buy BAL Tokens</label>
-						<select name="currency" class="form-control">
-							@foreach($tokens as $token)
-								<option value="" class="{{ $token['asset_id_quote'] }}_value">{{ $token['asset_id_quote'] }}</option>
-							@endforeach
-						</select>
-					</div>
-					<button type="submit" class="btn btn-ieo"><b>Buy Tokens</b></button>
-				
-				</div>
 						</div>
-						<div class="card card-body mt-2">
-			  						How to add a Custom ERC20 Token / our BAL Token to your Ethereum wallet? <br>
-			  						<a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/">Check out this easy step-by-step guide</a>
-			  					</div>
+					</div>
+					<div class="pt-4 row w-100">
+						<div class="col-md-12 col-12 ">
+							<div class="form-group">
+								<h3>
+									<label> 
+										<b>Step 1:</b> Select <span>Currency</span> to buy BAL Tokens
+									</label>
+								</h3>
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<select name="currency" class="form-control" required>
+											@foreach($tokens as $token)
+											<option value="" class="{{ $token['asset_id_quote'] }}_value">{{ $token['asset_id_quote'] }}</option>
+											@endforeach
+										</select>
+										<small class="pt-3">
+											<b>
+												We accept: 
+											</b>
+											Visa, Mastercard, Bank Transfer, Bitcoin, Ethereum
+										</small>
+									</div>
+									<div class="col-md-6 col-12">
+										<button type="submit" class="btn btn-ieo w-100" style="border-radius: 10px;" disabled id="token-btn"><b>Buy Tokens Now!</b></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card card-body mt-3">
+			  				How to add a Custom ERC20 Token / our BAL Token to your Ethereum wallet? <br>
+			  				<a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/" target="_blank">Check out this easy step-by-step guide</a>
+			  			</div>
 					</div>
 				</div>
-			
 			</form>
 		</div>
 	</div>
@@ -547,11 +627,30 @@
 				Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
 			</p>
 			<div class="buttons pt-3">
-				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>
-				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-ieo ml-3">White Paper</a>
-				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">Yellow Paper</a>				
-				<a href="#contact" class="btn btn-ieo m-2">Contact Us</a>
+				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">
+					<i class="far fa-file-pdf"></i>
+	            			&nbsp;
+					One Pager
+				</a>
+				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-ieo ml-3">
+					<i class="far fa-file-pdf"></i>
+	            	&nbsp;
+					White Paper
+				</a>
+				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">
+					<i class="far fa-file-pdf"></i>
+	            			&nbsp;
+					Yellow Paper
+				</a>				
 
+			</div>
+			<div class="pt-3">
+				<a href="#contact" class="btn btn-ieo m-2">Schedule a meeting</a>
+				<a href="#section-bal-token" class="btn btn-ieo m-2 buy-btn">
+					<b>
+						BUY BAL TOKENS NOW!
+					</b>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -1503,10 +1602,29 @@
 				Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
 			</p>
 			<div class="buttons pt-3">
-				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">One Pager</a>
-				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-ieo ml-3">White Paper</a>
-				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">Yellow Paper</a>
-				<a href="#contact" class="btn btn-ieo m-2">Contact Us</a>
+				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">
+					<i class="far fa-file-pdf"></i>
+	            			&nbsp;
+					One Pager
+				</a>
+				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-ieo ml-3">
+					<i class="far fa-file-pdf"></i>
+	            			&nbsp;
+					White Paper
+				</a>
+				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">
+					<i class="far fa-file-pdf"></i>
+	            			&nbsp;
+					Yellow Paper
+				</a>
+			</div>
+			<div class="pt-3">
+				<a href="#contact" class="btn btn-ieo m-2">Schedule a meeting</a>
+				<a href="#section-bal-token" class="btn btn-ieo m-2 buy-btn">
+					<b>
+						BUY BAL TOKENS NOW!
+					</b>					
+				</a>
 			</div>
 		</div>
 	</div>
@@ -1737,20 +1855,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="pt-5 mt-3">
-				<h4 class="text-center">
-					<b>
-						Want to know more about our Private Round? 
-						<a href="{{ route('contact') }}" class="header-text">
-							<span >
-								Contact Us!		
-							</span>
-						</a>
-
-						
-					</b>
-				</h4>
-			</div>
 
 
 
@@ -1769,8 +1873,18 @@
 		        	</div>
 				</div> --}}
 		        <div class="container pt-5">
-		            <h3><b>Drop us a message</b></h3>
-		            <p>Questions, bug reports, feedback — we're here for it all. </p>
+		        	<h4>
+				         <b>
+								Want to know more about our Private Round? 
+								<span class="header-text">
+									<span >
+										Contact Us!		
+									</span>
+								</span>
+
+								
+							</b>
+		        	</h4>
 		        </div>
 				<div class="contact-form pt-3 pb-5">
 		            <div class="container contact-form-container bg-black"> 
@@ -1812,7 +1926,7 @@
 		                                <div class="row">
 		                                    <div class="col-sm-12">
 		                                        <input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
-		                                        <input type="submit" class="btn btn-dark w-100 send-message" value="Send Message" disabled="disabled">
+		                                        <input type="submit" class="btn btn-ieo w-100 send-message" value="Send Message" disabled="disabled">
 		                                    </div>
 		                                </div>
 		                            </form>
@@ -1825,7 +1939,7 @@
 		                                    <i class="fas fa-map-marker-alt text-BAL"></i>
 		                                </div>
 		                                <div class="col-md-10">
-		                                    <span class="text-BAL"><b>BuyAnyLight.com</b></span><br>
+		                                    <span class="header-text"><b>BuyAnyLight.com</b></span><br>
 		                                    <span>Dubai Investment Park 1, <br> Opp. Green Community East, Showroom 10, P.O. BOX 3219 <br> Dubai,  United Arab Emirates</span>
 		                                </div>
 		                            </div>
@@ -1836,7 +1950,7 @@
 		                                    <i class="fas fa-phone text-BAL"></i>
 		                                </div>
 		                                <div class="col-md-10">
-		                                    <span class="text-BAL"><b>+971 4 887 3265</b></span><br>
+		                                    <span class="header-text"><b>+971 4 887 3265</b></span><br>
 		                                    <span>Mon to Fri 9am to 6pm</span><br>
 		                                </div>
 		                            </div>
@@ -1847,7 +1961,7 @@
 		                                    <i class="fas fa-envelope text-BAL"></i>
 		                                </div>
 		                                <div class="col-md-10">
-		                                    <span  class="text-BAL"><b>info@buyanylight.com</b></span><br>
+		                                    <span  class="header-text"><b>info@buyanylight.com</b></span><br>
 		                                    <span>Send us your query anytime</span><br>
 		                                </div>
 		                            </div>

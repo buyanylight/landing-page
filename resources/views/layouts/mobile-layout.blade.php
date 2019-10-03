@@ -185,6 +185,8 @@
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://www.google.com/recaptcha/api.js?render={{ env('CAPTCHA_KEY') }}"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+
 	<script type="text/javascript">
 	grecaptcha.ready(function() {
 		grecaptcha.execute( '{{ env('CAPTCHA_KEY') }}' , { action: 'contact' } )
@@ -340,7 +342,7 @@
 		 function makeTimerPrivate() {
 
 		//      var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");  
-		var endTime = new Date("01 October 2019 0:00:00 GMT+04:00");          
+		var endTime = new Date("31 October 2019 0:00:00 GMT+04:00");          
 			endTime = (Date.parse(endTime) / 1000);
 
 			var now = new Date();

@@ -46,20 +46,6 @@ require('./bootstrap');
 // });
 
 
-    $(window).scroll(function(){
-        $('nav').toggleClass('bg-white', $(this).scrollTop() > 550);
-    });
-
-    $(window).scroll(function(){
-        if($(this).scrollTop() > 550){
-            $('#topBtn').fadeIn();
-            $('.links').addClass('ncol')
-            $(".logo").attr("src","images/logo-black.png");
-        } else {
-            $(".logo").attr("src","images/logo-white.png");
-            $('.links').removeClass('ncol')
-        }
-    });
 
     $("#topBtn").click(function(){
        $('html, body').animate({scrollTop: 0}, 800);

@@ -25,24 +25,33 @@ class TokenController extends Controller
 			if ($tvalue['asset_id_quote'] == 'EUR'){
 				$all_curr[$tkey]['logo'] = '<i class="fas fa-euro-sign"></i>';
 				$all_curr[$tkey]['symbol'] = 'Euro';
+				$all_curr[$tkey]['rank'] = 2;
 			}
 			if ($tvalue['asset_id_quote'] == 'USD'){
 				$all_curr[$tkey]['logo'] = '<i class="fas fa-dollar-sign"></i>';
 				$all_curr[$tkey]['symbol'] = 'US Dollar';
+				$all_curr[$tkey]['rank'] = 1;
 			}
 			if ($tvalue['asset_id_quote'] == 'BTC'){
 				$all_curr[$tkey]['logo'] = '<i class="fab fa-bitcoin"></i>';	
 				$all_curr[$tkey]['symbol'] = 'Bitcoin';
+				$all_curr[$tkey]['rank'] = 3;
 			}
 			if ($tvalue['asset_id_quote'] == 'ETH'){
 				$all_curr[$tkey]['logo'] = '<i class="fab fa-ethereum"></i>';
 				$all_curr[$tkey]['symbol'] = 'Ethereum';
+				$all_curr[$tkey]['rank'] = 4;
 			}
 
 		}
 
+		usort($all_curr, function($a, $b) {
+   			 return $a['rank'] <=> $b['rank'];
+		});
 
-		 $agent = new Agent();
+
+
+		$agent = new Agent();
 
         $isMobile = $agent->isMobile();
         $isTablet = $agent->isTablet();
@@ -134,6 +143,11 @@ class TokenController extends Controller
 		if ($curr[1] == 'USD' || $curr[1] == 'EUR') {
 		// dd($curr[1]);
 			// $faloosi = [];
+			$test_url = "https://www.foloosi.com/";
+			// dd(get_headers($test_url)[0]);
+
+			if (strpos(get_headers($test_url)[0] , "200") !== false) {
+				# code...
 			$client = new \GuzzleHttp\Client();
 			$url = "https://foloosi.com/api/v1/api/initialize-setup";
 
@@ -146,10 +160,11 @@ class TokenController extends Controller
 
 			$request = $client->request('POST', $url, [
 				'headers' =>  [
-					'merchant_key' => 'test_$2y$10$.0TFlqFxM7y.3GoHkDIqWeO-2bT2eBz8t86PVUkHwH9zMghDm5PLi',
+					'merchant_key' => env('FOLOOSI_MERCHANT_KEY'),
 				],
 				'form_params' => $myBody
 			]);
+
 
 			$response = json_decode($request->getBody(), true);
 			$response_data = $response['data'];
@@ -182,6 +197,33 @@ class TokenController extends Controller
 
 			}
 
+			} else {
+				if ($curr[1] == 'USD') {
+				return view('buy-token', [
+					'bal_amt' => $r['bal'],
+					'user_reference_id' => strtotime('now').''.generateRandomString(3), 
+					'curr' => 'nocredit',
+					'amt' => $r['currency'],
+					'amount' => $curr[0],
+					'dcurr' => $curr[1],
+					'rand' => generateRandomString(4),
+					'usd' => 1
+				]);
+			} else {
+				return view('buy-token', [
+					'bal_amt' => $r['bal'],
+					'user_reference_id' => strtotime('now').''.generateRandomString(3), 
+					'curr' => 'nocredit',
+					'amt' => $r['currency'],
+					'amount' => $curr[0],
+					'dcurr' => $curr[1],
+					'rand' => generateRandomString(4),
+					'usd' => 0
+				]);
+
+			}
+
+			}
 
 
 		} elseif ($curr[1] == 'BTC') {
@@ -472,6 +514,7 @@ class TokenController extends Controller
 					'name' => $transaction['name'],
 	            	'user_reference_id' => $transaction['user_reference_id'],	
 	            	'bal_amt' => $transaction['bal_amt'],	
+	            
 				);
 
 			} else {
@@ -494,7 +537,8 @@ class TokenController extends Controller
 					'name' => $transaction['name'],
 					'reference' => $transaction['reference'],
 	            	'user_reference_id' => $transaction['user_reference_id'],	
-	            	'bal_amt' => $transaction['bal_amt'],	
+	            	'bal_amt' => $transaction['bal_amt'],
+	            	
 	           
 
 				);
@@ -512,6 +556,7 @@ class TokenController extends Controller
 	            'bal_amt' => 'required',
 
 
+
         	]);
 
 			$email_details = array(
@@ -522,9 +567,12 @@ class TokenController extends Controller
 				'name' => $transaction['name'],
 	            'user_reference_id' => $transaction['user_reference_id'],
 	            'bal_amt' => $transaction['bal_amt'],
+	            
 			);
 
 		}
+
+
 
 			// dd($email_details);
 
@@ -551,17 +599,22 @@ class TokenController extends Controller
 
 
 		return view('kyc', [
-			'countries' => $countries,
+			'amount' => $transaction['amount'],
+			'receiver_id' => $transaction['receiver_id'],
 			'email_id' => $transaction['email_id'],
 			'name' => $transaction['name'],
-			'user_reference_id' => $transaction['user_reference_id']
-		])->with('success');
+	        'user_reference_id' => $transaction['user_reference_id'],
+	        'bal_amt' => $transaction['bal_amt'],
+	        'countries' => $countries
+		]);
 	}
 
 	public function demo(string $uid) {
 
 
+		// dd($_GET);
 		// dd($uid);
+
 
 		$countries = [
   			"Afghanistan",
@@ -812,7 +865,12 @@ class TokenController extends Controller
 
 		return view('demo', [
 			'countries' => $countries,
-			'user_reference_id' => $uid
+			'user_reference_id' => $uid,
+			'amount' => $_GET['amount'],
+			'bal_amt' => $_GET['bal'],
+			'name' => $_GET['name'],
+			'email' => $_GET['email'],
+			'receiver_id' => $_GET['receiver_id'],
 		]);
 
 	}
@@ -821,19 +879,23 @@ class TokenController extends Controller
 	public function kyc_confirm(Request $request){
 
 
-
 		// dd($request);
 
 		$validated_attr = request()->validate([
             'user_name' => ['required', 'min:3'],
             'email_id' => ['required', 'min:3'],
             'country' => ['required'],
+            'receiver_id' => ['required'],
+            'bal_amt' => ['required'],
+            'amount' => ['required'],
             'user_id' => ['required'],
             'user_id.*' => ['mimes:jpeg,png,jpg,pdf' , 'max:7168'],
             'user_selfie_id' => ['required'],
             'user_selfie_id.*' => ['mimes:jpeg,png,jpg,pdf', 'max:7168'],
             'user_reference_id' => ['required']
         ]);
+
+		// dd($validated_attr);
 
 
 		if (request()->hasFile('user_selfie_id')) {
@@ -855,6 +917,9 @@ class TokenController extends Controller
         	'user_reference_id' => $validated_attr['user_reference_id'],
         	'name' => $validated_attr['user_name'],
             'email_id' => $validated_attr['email_id'],
+            'receiver_id' => $validated_attr['receiver_id'],
+            'bal_amt' => $validated_attr['bal_amt'],
+            'amount' => $validated_attr['amount'],
             'country' => $validated_attr['country'],
             'user_id' => url('uploads/'. $file_name),
             'selfie_user_id' => url('uploads/'. $selfie_file_name),
@@ -868,18 +933,37 @@ class TokenController extends Controller
         	'user_reference_id' => $validated_attr['user_reference_id'],
         	'name' => $validated_attr['user_name'],
             'email_id' => $validated_attr['email_id'],
+            'receiver_id' => $validated_attr['receiver_id'],
+            'bal_amt' => $validated_attr['bal_amt'],
+            'amount' => $validated_attr['amount'],
             'country' => $validated_attr['country'],
-            'user_id' => url('uploads/'. $file_name),
-            'selfie_user_id' => url('uploads/'. $selfie_file_name),
        	), function($message) use ($request){
             $message->from('no-reply@buyanylight.com');
            	$message->to($request->get('email_id'), 'Investor')->subject('KYC Form Completed - Your BAL Token Investment');
         });
 
 
+        $agent = new Agent();
+
+        $isMobile = $agent->isMobile();
+        $isTablet = $agent->isTablet();
 
 
-        return redirect('ieo')->with('kyc-success', ' dsfdsfdsf');
+
+
+ 		if($isMobile || $isTablet) {
+          
+        	return view('mobile.thank-you', [
+        		'u_details' => $validated_attr
+        	]);
+        } else {
+        	  return view('thank-you', [
+        	'u_details' => $validated_attr
+        ]);
+           
+        }
+
+
 
 
 

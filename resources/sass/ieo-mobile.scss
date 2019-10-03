@@ -74,11 +74,7 @@ nav .dropdown-toggle::after {
 	filter: blur(3px);
 }
 
-.section-buy-token{
-  // background-color: red;
-    display: none;
 
-}
 .navbar-dark .navbar-nav .nav-link {
     font-size: 15px;
 }
@@ -422,8 +418,8 @@ nav .dropdown-toggle::after {
     text-align: center;
 }
 .countdown-ring-1 { 
-    height: 340px;
-    width: 340px;
+    height: 330px;
+    width: 330px;
     border-radius: 50%;
     border: 1px solid #fff;
     display: inline-flex;
@@ -433,8 +429,8 @@ nav .dropdown-toggle::after {
 
 }
 .countdown-ring-2 { 
-    height: 320px;
-    width: 320px;
+    height: 315px;
+    width: 315px;
     border-radius: 50%;
     border: 1px solid #fff;
     margin: auto;	

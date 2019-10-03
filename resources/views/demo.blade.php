@@ -2,6 +2,7 @@
 
 
 @section('content')
+
 <section style="min-height: 100vh">
 	<div class="pt-5 mt-5">
 		<div class="container">
@@ -15,7 +16,7 @@
 
 					
 					<div class="col-md-4 col-12 pt-2">
-						<div class="card card-body text-center p-2" style="background-color: #5555A4; color: white; height: 50px;">
+						<div class="card card-body text-center p-2" style="background-color: #7c7ca9; color: white; height: 50px;">
 							<small>
 								<b>STEP 1</b> <br>
 							Amount of BAL and Currency
@@ -24,7 +25,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 col-12 pt-2 ">
-						<div class="card card-body text-center p-2" style="background-color: #5555A4; color: white; height: 50px;"> 
+						<div class="card card-body text-center p-2" style="background-color: #7c7ca9; color: white; height: 50px;"> 
 							<small>
 								<b>STEP 2 </b><br>
 							Investor Information and Payment
@@ -45,14 +46,8 @@
 
 
 				</div>
-			<div class="alert alert-warning alert-dismissible fade show mt-3" role="alert" style="margin-bottom: 0px;">
- 				An email has been sent to you, if not received please check your spam or junk folder.
-  				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    				<span aria-hidden="true">&times;</span>
-  				</button>
-			</div>
-			<div class="alert alert-warning mt-2 alert-dismissable" role="alert">
- 				An email has been sent to you, if not received please check your spam or junk folder.
+			<div class="alert alert-success mt-2 alert-dismissable" role="alert">
+ 				Thank you for your payment!
 			</div>
 			<div class="card mt-3">
 				<div class="card-body">
@@ -65,24 +60,24 @@
 						</p>
 						<hr>
 						<div class="mt-4">
-							<form action="/kyc-confirm" method="post" enctype="multipart/form-data">
+							<form action="/thank-you" method="post" enctype="multipart/form-data">
 			  					@csrf()
 			  					<div class="form-group row">
 		  							<label class="col-sm-3 col-form-label"><b>Reference ID:</b></label>
-		  								<div class="col-sm-9 p-1">
+		  								<div class="col-sm-9 pt-2">
 		  										{{$user_reference_id }}
 		  								</div>
 		  						</div>
 								<div class="form-group row">
 									<label class="col-sm-3 col-form-label"><b>Name:</b> </label>
 									<div class="col-sm-9">
-										<input type="text" name="user_name" class="form-control"  placeholder="Enter Full name">
+										<input type="text" name="user_name" class="form-control"  placeholder="Enter Full name" value="{{ $name }}">
 									</div>
 								</div>
 								<div class="form-group row">
 									<label class="col-sm-3 col-form-label"><b>Email:</b> </label>
 									<div class="col-sm-9">
-										<input type="email" name="email_id" placeholder="Enter Email ID" class="form-control">
+										<input type="email" name="email_id" placeholder="Enter Email ID" class="form-control" value="{{ $email }}">
 									</div>
 								</div>
 								<div class="form-group row">
@@ -99,38 +94,59 @@
 								<div class="form-group row was-validated">
 									<label class="col-sm-3 col-form-label">
 										<b>Upload ID:</b> 
-										<span class="" data-toggle="tooltip" data-placement="bottom" title=" ID card / Passport or Drivers license" style="font-size: 12px; ">
+										<span class="" data-toggle="tooltip" data-placement="bottom" title=" ID card / Passport or Driver's license" style="font-size: 12px; ">
                                          	<i class="fas fa-info-circle"></i>
-                                    	</span>
+                                    	</span> <br>
 									</label>
 									<div class="col-sm-9">
 										<div class="custom-file">
 			    							<input type="file" class="custom-file-input"  name="user_id" id="validatedCustomFile" required>
 			    							<label class="custom-file-label" for="validatedCustomFile">Choose file</label>
-			    							<div class="invalid-feedback">Please upload an Image</div>
-	                    					<div class="valid-feedback">Image has been uploaded</div>
+                                    		<small>
+		    									<b>
+		    										Files:
+		    									</b>
+		    								 		JPG, PNG, PDF | 
+		    								 	<b>
+		    								 		Max-size:
+		    								 	</b>
+		    								  		5 MB
+		    								</small>			    							
 			 							</div>
 									</div>
 								</div>
 								<div class="form-group row was-validated">
 									<label class="col-sm-3 col-form-label">
 										<b>Upload selfie with ID :</b> 
-										<span class="" data-toggle="tooltip" data-placement="bottom" title="The selfie should include a selfie with the ID, a piece of paper containing 'BAL TOKEN', date, signature" style="font-size: 12px; ">
+										<span class="" data-toggle="tooltip" data-placement="bottom" title="The selfie should include a selfie with the ID, a piece of paper containing 'BAL TOKEN', date, your signature." style="font-size: 12px; ">
                                          	<i class="fas fa-info-circle"></i>
-                                    	</span>
+                                    	</span><br>
+                                   		<a data-fancybox href="{{ Util::assetUrl('images/ieo/selfie_verify.png') }}">Check example</a>
+
 									</label>
 									<div class="col-sm-9">
 										<div class="custom-file">
 			    							<input type="file" class="custom-file-input" name="user_selfie_id" required>
 			    							<label class="custom-file-label" for="validatedCustomFile">Choose file</label>
-			    							<div class="invalid-feedback">Please upload an Image</div>
-	                    					<div class="valid-feedback">Image has been uploaded</div>
+			    							<small>
+		    									<b>
+		    										Files:
+		    									</b>
+		    								 		JPG, PNG, PDF | 
+		    								 	<b>
+		    								 		Max-size:
+		    								 	</b>
+		    								  		5 MB
+		    								</small>
 			 							</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-12">
 										<input type="hidden" name="user_reference_id" value="{{ $user_reference_id }}">
+										<input type="hidden" name="amount" value="{{ $amount }}">
+										<input type="hidden" name="bal_amt" value="{{ $bal_amt }}">
+										<input type="hidden" name="receiver_id" value="{{ $receiver_id }}">
 										<button type="submit" class="btn text-white w-100" style="background-color: #510091;"> Submit </button>
 									</div>
 								</div>
@@ -141,7 +157,7 @@
 				</div>
 			</div>
 			<div class="card card-body mt-3">
-				How to add a Custom ERC20 Token /our BAL Token to your Ethereum wallet? <br> <a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/">
+				How to add a Custom ERC20 Token /our BAL Token to your Ethereum wallet? <br> <a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/" target="_blank">
 				Check out this easy step-by-step guide</a>	
 			</div>
 		</div>

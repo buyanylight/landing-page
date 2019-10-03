@@ -36,7 +36,7 @@ nav{
 .section-1{
 	background: url('/images/section_1_bg.png'), url('/images/hexagon2.png');
     height: 50vh;
-    background-size: 25%, 115%;
+    background-size: 23%, 115%;
     background-position-y: 30px, bottom;
     background-position-x: 70%, center;
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@ nav{
 
 .all-cards{
 	position: relative;
-    top: -50px;
+    top: -70px;
     box-shadow: 0px 4px 10px #c3c3c3;
 }
 
@@ -115,7 +115,7 @@ nav{
 	background: url('/images/section4.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: center;
+    background-position-y: -165px;
     background-position-x: center;
     position: relative;
 }

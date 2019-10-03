@@ -11173,10 +11173,6 @@ nav .dropdown-toggle::after {
           filter: blur(3px);
 }
 
-.section-buy-token {
-  display: none;
-}
-
 .navbar-dark .navbar-nav .nav-link {
   font-size: 15px;
 }
@@ -11524,8 +11520,8 @@ nav .dropdown-toggle::after {
 }
 
 .countdown-ring-1 {
-  height: 340px;
-  width: 340px;
+  height: 330px;
+  width: 330px;
   border-radius: 50%;
   border: 1px solid #fff;
   display: -webkit-inline-box;
@@ -11538,8 +11534,8 @@ nav .dropdown-toggle::after {
 }
 
 .countdown-ring-2 {
-  height: 320px;
-  width: 320px;
+  height: 315px;
+  width: 315px;
   border-radius: 50%;
   border: 1px solid #fff;
   margin: auto;
