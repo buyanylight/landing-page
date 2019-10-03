@@ -5,6 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Jenssegers\Agent\Agent;
 
+// use Illuminate\Support\Facades\Mail;
+use App\Mail\BuyingConfirmation;
+use App\Mail\BuyingConfirmationAdmin;
+use App\Mail\KYCConfirmation;
+use App\Mail\KYCConfirmationAdmin;
+
 
 class TokenController extends Controller
 {
@@ -498,7 +504,7 @@ class TokenController extends Controller
 		if ($request['transaction_id'] == null) {
 
 			if ($request['reference'] == null) {
-				$transaction = $this->validate($request, [
+				$transaction = $request->validate([
 	            	'receiver_id' => 'required',
 	            	'amount' => 'required',
 	            	'email_id' => 'required', 
@@ -507,7 +513,7 @@ class TokenController extends Controller
 	            	'bal_amt' => 'required',
 	        	]);
 	        	
-				$email_details = array(
+				$email_details =  array(
 					'amount' => $transaction['amount'],
 					'receiver_id' => $transaction['receiver_id'],
 					'email_id' => $transaction['email_id'],
@@ -518,7 +524,7 @@ class TokenController extends Controller
 				);
 
 			} else {
-				$transaction = $this->validate($request, [
+				$transaction = $request->validate([
 	            	'receiver_id' => 'required',
 	            	'amount' => 'required',
 	            	'email_id' => 'required', 
@@ -546,7 +552,7 @@ class TokenController extends Controller
 
 		} else {
 
-			$transaction = $this->validate($request, [
+			$transaction = $request->validate([
             	'transaction_id' => 'required',
             	'receiver_id' => 'required',
             	'amount' => 'required',
@@ -578,21 +584,12 @@ class TokenController extends Controller
 
 		
 
-
-	        \Mail::send('mail.token',
-	        $email_details, function($message) use ($request){
-	            $message->from('no-reply@buyanylight.com');
-	           	$message->to('info@buyanylight.com', 'Admin')->subject('New BAL Token Transaction');
-	        });
+	        \Mail::to('rizvi.almanilighting@gmail.com')->send(new BuyingConfirmationAdmin($request));
 
 
-	        \Mail::send('mail.token-user',
-	        $email_details, function($message) use ($request){
-	            $message->from('no-reply@buyanylight.com');
-	           	$message->to($request->get('email_id'), 'Investor')
-	           			->subject('Your BAL Token Investment')
-	           			->attach(public_path() . '/BAL_Token_Sale_Agreement.pdf');
-	        });
+	        \Mail::to($request->get('email_id'))->send(new BuyingConfirmation($request));
+
+
 
 
 		// dd($transaction['email_id']);
@@ -898,49 +895,13 @@ class TokenController extends Controller
 		// dd($validated_attr);
 
 
-		if (request()->hasFile('user_selfie_id')) {
-			$name = explode(' ', $validated_attr['user_name']);
+
+        \Mail::to($request->get('email_id'))->send(new KYCConfirmation($request));
+
+        \Mail::to('rizvi.almanilighting@gmail.com')->send(new KYCConfirmationAdmin($request));
 
 
-        $file_name = date('YmdHis') . '-' .$name[0].'-'.request()->file('user_selfie_id')->getClientOriginalName() ;
-         request()->file('user_selfie_id')->move(public_path() . '/uploads/', $file_name);  
-        }
 
-		if (request()->hasFile('user_id')) {
-			$name = explode(' ', $validated_attr['user_name']);
-        	$selfie_file_name = date('YmdHis') . '-' .$name[0].'-'. request()->file('user_id')->getClientOriginalName();
-        	 request()->file('user_id')->move(public_path() . '/uploads/', $file_name);  
-        }
-
-         \Mail::send('mail.kyc-confirm',
-        array(
-        	'user_reference_id' => $validated_attr['user_reference_id'],
-        	'name' => $validated_attr['user_name'],
-            'email_id' => $validated_attr['email_id'],
-            'receiver_id' => $validated_attr['receiver_id'],
-            'bal_amt' => $validated_attr['bal_amt'],
-            'amount' => $validated_attr['amount'],
-            'country' => $validated_attr['country'],
-            'user_id' => url('uploads/'. $file_name),
-            'selfie_user_id' => url('uploads/'. $selfie_file_name),
-       	), function($message) use ($request){
-            $message->from('no-reply@buyanylight.com');
-           	$message->to('info@buyanylight.com', 'Admin')->subject('New KYC verification');
-        });
-
-          \Mail::send('mail.kyc-confirm-user',
-        array(
-        	'user_reference_id' => $validated_attr['user_reference_id'],
-        	'name' => $validated_attr['user_name'],
-            'email_id' => $validated_attr['email_id'],
-            'receiver_id' => $validated_attr['receiver_id'],
-            'bal_amt' => $validated_attr['bal_amt'],
-            'amount' => $validated_attr['amount'],
-            'country' => $validated_attr['country'],
-       	), function($message) use ($request){
-            $message->from('no-reply@buyanylight.com');
-           	$message->to($request->get('email_id'), 'Investor')->subject('KYC Form Completed - Your BAL Token Investment');
-        });
 
 
         $agent = new Agent();
