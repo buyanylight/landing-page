@@ -14,6 +14,8 @@
 		<li style="padding-top: 10px;"><b>Amount Paid:</b> {{ $amount }}</li>
 		<li style="padding-top: 10px;"><b>Country:</b> {{ $country }}</li>
 		<li style="padding-top: 10px;"><b>Your ETH address:</b> {{ $receiver_id }}</li>
+		<li style="padding-top: 10px;"><b>User Verification ID:</b> Received</li>
+		<li style="padding-top: 10px;"><b>User Selfie Verification:</b> Received</li>
 	</ul>
 	<p style="font-size: 14px">
 		You will receive your {{ $bal_amt }} BAL Tokens very soon. We will send them to the following ETH address: {{ $receiver_id }}
@@ -21,9 +23,11 @@
 	<p style="font-size: 14px">
 		It is a pleasure to serve you. Connect with all of our channels if you need further assistance and cooperation.
 	</p>
+	<p style="font-size: 14px;">
+	Thanks,<br>
+	{{ config('app.name') }} Team	
+	</p>
 
-Thanks,<br>
-{{ config('app.name') }} Team
 @endcomponent
 </div>
 

@@ -11,7 +11,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 class BuyingConfirmationAdmin extends Mailable
 {
     use Queueable, SerializesModels;
-    
+
         protected $request;
 
 
@@ -33,6 +33,7 @@ class BuyingConfirmationAdmin extends Mailable
     public function build()
     {
         return $this->markdown('emails.buyingconfirmationadmin')
+                    ->subject('New BAL Token Purchase')
                     ->with([
                         'name' => $this->buyer_details->name,
                         'email' => $this->buyer_details->email_id,

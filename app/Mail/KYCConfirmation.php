@@ -39,6 +39,8 @@ class KYCConfirmation extends Mailable
 
 
         return $this->markdown('emails.kycconfirmation')
+            ->subject('KYC Form Completed - Your BAL Token Investment')
+
                     ->with([
                         'name' => $this->kyc_details->user_name,
                         'email' => $this->kyc_details->email_id,
