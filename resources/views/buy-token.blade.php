@@ -335,6 +335,12 @@
 
 				</div>
 			<div>	
+				<div class="alert alert-warning alert-dismissible fade show mt-3" role="alert" style="margin-bottom: 0px;">
+ 				You are not eligible and you are not to purchase any BAL token if you are a citizen, resident (tax or otherwise) or green card holder of the United States of America or a citizen or resident of the Peoples Republic of China, Iran and North Korea.
+  				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    				<span aria-hidden="true">&times;</span>
+  				</button>
+			</div>
 				<div class="pt-3">
 				
 					<div class="pt-3">
