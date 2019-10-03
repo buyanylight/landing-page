@@ -880,6 +880,7 @@ class TokenController extends Controller
 			'name' => $_GET['name'],
 			'email' => $_GET['email'],
 			'receiver_id' => $_GET['receiver_id'],
+			'number' => $_GET['number'],
 		]);
 
 	}
@@ -897,6 +898,7 @@ class TokenController extends Controller
             'receiver_id' => ['required'],
             'bal_amt' => ['required'],
             'amount' => ['required'],
+            'number' => ['required'],
             'user_id' => ['required'],
             'user_id.*' => ['mimes:jpeg,png,jpg,pdf' , 'max:7168'],
             'user_selfie_id' => ['required'],

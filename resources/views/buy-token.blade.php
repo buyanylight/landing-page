@@ -1134,10 +1134,16 @@
 		  											<div class="form-group row">
 		  												<label class="col-sm-3 col-form-label"><b>Confirm Email:</b></label>
 		  												<div class="col-sm-9">
-		  													<input type="text" class="form-control"placeholder="Email" required="required" id="confirm_email" data-toggle="tooltip" data-placement="right" data-delay='{"show":"50", "hide":"100"}' data-trigger="manual" title="Email IDs must be matching!">
+		  													<input type="text" class="form-control"placeholder="Confirm Email" required="required" id="confirm_email" data-toggle="tooltip" data-placement="right" data-delay='{"show":"50", "hide":"100"}' data-trigger="manual" title="Email IDs must be matching!">
                                         
 		  												</div>
 		  											</div>
+		  											<div class="form-group row">
+					  									<label class="col-sm-3 col-form-label"><b>Mobile:</b></label>
+					  									<div class="col-sm-9">
+					  										<input type="tel" name="number" class="form-control	" placeholder="Enter Mobile number" required="required" id="number">
+					  									</div>
+					  								</div>
 				  									<div class="form-group row">
 				  										<label class="col-sm-3 col-form-label">
 				  											<b>Transaction Hash:</b>
@@ -1231,10 +1237,16 @@
 		  									<div class="form-group row">
 		  											<label class="col-sm-3 col-form-label"><b>Confirm Email:</b></label>
 		  											<div class="col-sm-9">
-		  												<input type="text" class="form-control"placeholder="Email" required="required" id="confirm_email" data-toggle="tooltip" data-placement="right" data-delay='{"show":"50", "hide":"100"}' data-trigger="manual" title="Email IDs must be matching!">
+		  												<input type="text" class="form-control"placeholder="Confirm Email" required="required" id="confirm_email" data-toggle="tooltip" data-placement="right" data-delay='{"show":"50", "hide":"100"}' data-trigger="manual" title="Email IDs must be matching!">
                                         
 		  											</div>
 		  										</div>
+		  										<div class="form-group row">
+					  									<label class="col-sm-3 col-form-label"><b>Mobile:</b></label>
+					  									<div class="col-sm-9">
+					  										<input type="tel" name="number" class="form-control	" placeholder="Enter Mobile number" required="required" id="number">
+					  									</div>
+					  								</div>
 		  									<div class="form-group row">
 		  										<label class="col-sm-3 col-form-label">
 		  											<b>Transaction Hash: 

@@ -57,6 +57,7 @@ class KYCConfirmationAdmin extends Mailable
                         'bal_amt' => $this->kyc_details->bal_amt,
                         'reference' => $this->kyc_details->reference,
                         'country' => $this->kyc_details->country,
+                        'number' => $this->kyc_details->number,
                         'user_id' => url('uploads/'. $file_name),
                         'selfie_user_id' => url('uploads/'. $selfie_file_name),
                      ]);
