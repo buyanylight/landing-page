@@ -157,21 +157,6 @@
 
 @section('content')
 
-		<div style="position: absolute; top: 70px; right: 55px; min-width: 300px; z-index: 999;">
-			<div class="toast kyc-toast" data-autohide="false">
-		  		<div class="toast-header">
-		    		<img src="{{ Util::assetUrl('images/logo-black-icon.png') }}" width="25">
-		    		<strong class="mr-auto">BuyAnyLight</strong>
-		    		<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-		      			<span aria-hidden="true">&times;</span>
-		    		</button>
-		  		</div>
-		  		<div class="toast-body">
-		   			<b>Thanks for your support!</b><br>
-		            Your KYC form has been submitted.
-				</div>
-			</div>
-		</div>
 
 <section class="section-1" id="section-1" style="background-image : url({{ Util::assetUrl('/images/ieo/ieo-bg1.png') }})">
 	<div class="container h-100">
