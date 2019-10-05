@@ -35,7 +35,7 @@
                         <a class="dropdown-item" href="{{ route('home') }}#addons">Add-ons</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown mr-3">
+               <!--  <li class="nav-item dropdown mr-3">
                     <a class="nav-link dropdown-toggle text-white links" href="{{ route('home') }}#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Buyers
                     </a>
@@ -53,9 +53,14 @@
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/supplier/register">Register</a>
                         <a class="dropdown-item" href="{{ route('seller-faq') }}">FAQ</a>
                     </div>
+                </li> -->
+                 <li class="nav-item mr-3">
+                    <a class="nav-link text-white links" href="{{ route('ieo') }}" target="_blank">IEO</a>
                 </li>
-
-                <li class="nav-item dropdown mr-3">
+                 <li class="nav-item mr-3">
+                    <a class="nav-link text-white links" href="{{ route('investor') }}" target="_blank">Investors</a>
+                </li>
+                <!-- <li class="nav-item dropdown mr-3">
                     <a class="nav-link dropdown-toggle text-white links" href="{{ route('investor') }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Investors
                     </a>
@@ -63,7 +68,7 @@
                         <a class="dropdown-item" href="{{ route('ieo') }}">IEO</a>
                         <a class="dropdown-item" href="{{ route('investor') }}">Lets talk</a>
                     </div>
-                </li>
+                </li> -->
 
 
                 <li class="nav-item dropdown mr-3">

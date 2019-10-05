@@ -24,8 +24,20 @@
                         <a class="dropdown-item" href="{{ route('m-why-us') }}">Why BAL</a>
                     </div>
                 </li>
-                <hr class="border-white w-100 m-2">
                 <li class="nav-item dropdown mr-3 ml-3">
+                    <button class="nav-link dropdown-toggle text-white text-left links btn-black w-100" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Packages
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{{ route('m-package') }}#trial">Free Trial</a>
+                        <a class="dropdown-item" href="{{ route('m-package') }}#home">My Home</a>
+                        <a class="dropdown-item" href="{{ route('m-package') }}#tower">My Tower</a>
+                        <a class="dropdown-item" href="{{ route('m-package') }}#finder">LightFinder</a>
+                        <a class="dropdown-item" href="{{ route('m-add-ons') }}">Add-ons</a>
+                    </div>
+                </li>
+                <hr class="border-white w-100 m-2">
+                <!-- <li class="nav-item dropdown mr-3 ml-3">
                     <button class="nav-link dropdown-toggle text-left text-white links btn-black w-100" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Buyers
                     </button>
@@ -43,22 +55,15 @@
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/supplier/register">Register</a>
                         <a class="dropdown-item" href="{{ route('seller-faq') }}">FAQ</a>
                     </div>
+                </li> -->
+                <li class="nav-item mr-3 ml-3">
+                    <a class="nav-link text-white links w-100" href="{{ route('ieo') }}">IEO</a>
                 </li>
-                <li class="nav-item dropdown mr-3 ml-3">
-                    <button class="nav-link dropdown-toggle text-white text-left links btn-black w-100" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Packages
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{{ route('m-package') }}#trial">Free Trial</a>
-                        <a class="dropdown-item" href="{{ route('m-package') }}#home">My Home</a>
-                        <a class="dropdown-item" href="{{ route('m-package') }}#tower">My Tower</a>
-                        <a class="dropdown-item" href="{{ route('m-package') }}#finder">LightFinder</a>
-                        <a class="dropdown-item" href="{{ route('m-add-ons') }}">Add-ons</a>
-                    </div>
+                 <li class="nav-item mr-3 ml-3">
+                    <a class="nav-link text-white links w-100" href="{{ route('investor') }}">Investors</a>
                 </li>
-                <hr class="border-white w-100 m-2">
 
-                <li class="nav-item dropdown mr-3 ml-3">
+                <!-- <li class="nav-item dropdown mr-3 ml-3">
                     <button class="nav-link dropdown-toggle  text-left text-white links btn-black w-100" href="{{ route('investor') }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Investors
                     </button>
@@ -66,7 +71,9 @@
                         <a class="dropdown-item" href="{{ route('ieo') }}">IEO</a>
                         <a class="dropdown-item" href="{{ route('investor') }}">Lets Talk</a>
                     </div>
-                </li>
+                </li> -->
+                <hr class="border-white w-100 m-2">
+
                 
                 <li class="nav-item dropdown mr-3 ml-3">
                     <button class="nav-link dropdown-toggle  text-left text-white links btn-black w-100" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
