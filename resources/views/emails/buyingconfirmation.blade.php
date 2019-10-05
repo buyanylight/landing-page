@@ -11,18 +11,18 @@
 	</p>
 	<ul style=" color: black; list-style: none;">
 		<li><b>Reference ID:</b> {{ $user_reference_id }}</li>
-		<li style="padding-top: 10px;"><b>BAL Tokens Total Value:</b> {{ $bal_amt }}</li>
-		<li style="padding-top: 10px;"><b>Amount Paid:</b> {{ $amount }}</li>
+		<li style="padding-top: 5px;"><b>BAL Tokens Total Value:</b> {{ $bal_amt }}</li>
+		<li style="padding-top: 5px;"><b>Amount Paid:</b> {{ $amount }}</li>
 		@if(!empty($reference))
-		<li style="padding-top: 10px;"><b>Bank Transfer Reference:</b> {{ $reference }}</li>
+		<li style="padding-top: 5px;"><b>Bank Transfer Reference:</b> {{ $reference }}</li>
 		@endif
 		@if(!empty($transaction_id))
-		<li style="padding-top: 10px;"><b>Transaction ID:</b> {{ $transaction_id }}</li>
+		<li style="padding-top: 5px;"><b>Transaction ID:</b> {{ $transaction_id }}</li>
 		@endif
-		<li style="padding-top: 10px;"><b>Your ETH address:</b> {{ $receiver_id }}</li>
+		<li style="padding-top: 5px;"><b>Your ETH address:</b> {{ $receiver_id }}</li>
 	</ul>
 	<p style="color: black; font-size: 14px !important">
-		We would also want to ensure that you fill up the Know Your Customer (KYC) Form, so we could integrate your data into the system. You may complete the step by clicking the link below:
+		We would also want to ensure that you fill up the Know Your Customer (KYC) Form. The KYC is a measure taken by regulating bodies to certify that the transactions conformed was lawful and compliant. You may complete the step by clicking the link below:
 	</p>
 	<p>
 		<a href="https://buyanylight.com/kyc-form/{{ $user_reference_id }}?amount={{ $amount }}&bal={{$bal_amt}}&receiver_id={{$receiver_id}}&name={{$name}}&email={{$email}}&number={{$number}}">KYC Form</a>
