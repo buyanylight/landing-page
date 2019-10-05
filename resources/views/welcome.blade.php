@@ -4,7 +4,8 @@
 @section('content')
 <section class="section-1 mt-5 pt-5">
     <div class="container h-100 d-flex align-items-center">
-        <div class="text-white" style="margin-left: 70px;">
+        <div class="text-white" style="margin-left: 70px; margin-bottom: auto;
+    margin-top: 50px;">
             <h1>
                 <b>
                     Sourcing Reinvented
@@ -16,7 +17,7 @@
             <div>
                 <a href="#about" class="btn btn-sm btn-outline-light ">
                     <div class="link-text">
-                        Discover BAL benefits 
+                        Explore BAL benefits 
                     </div>&nbsp;
                     <div class="link-icon">
                         <i class="fas fa-arrow-right"></i> 
@@ -32,7 +33,29 @@
                 </a>
             </div>
             <div class="mt-2">
-                 <a href="{{ route('ieo') }}" class="btn btn-md btn-light text-dark" style=" width: 85%">
+                <a href="#about" class="btn btn-sm btn-outline-light ">
+                    <div class="link-text">
+                        <i class="far fa-file-pdf"></i>
+                            &nbsp;
+                        BAL One Pager
+                    </div>&nbsp;
+                    <div class="link-icon">
+                        <i class="fas fa-arrow-right"></i> 
+                    </div>
+                </a>
+                <a data-fancybox href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" class="btn btn-sm btn-outline-light ">
+                    <div class="link-text">
+                        <i class="far fa-file-pdf"></i>
+                            &nbsp;
+                        BAL IEO One Pager
+                    </div>&nbsp;
+                    <div class="link-icon">
+                        <i class="fas fa-arrow-right"></i> 
+                    </div>
+                </a>
+            </div>
+            <div class="mt-2">
+                 <a href="{{ route('ieo') }}" class="btn btn-md btn-light text-dark" style=" width: 87%">
                     <div class="link-text">
                         <b>
                             FOR INVESTORS
@@ -43,6 +66,20 @@
                     </div>
                 </a>
             </div>
+
+            <!-- <div class="mt-1">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 85%">
+                    <div class="link-text">
+                        <b>
+                            VIEW ONE PAGERS
+                        </b>
+                    </div>&nbsp;
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}">BAL One Pager</a>
+                    <a class="dropdown-item" href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}">BAL IEO One Pager</a>
+                </div>
+            </div> -->
       <!--       <div class="mt-1">
                  <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" target="_blank" 
                  class="btn btn-sm btn-outline-dark text-white">
@@ -135,14 +172,14 @@
             <div class="card card-body" style="box-shadow: 0px 4px 10px #c3c3c3;">
                 <div class="row">
                     <div class="col-6">
-                        <p class="mb-0 mt-1 pt-2">
+                        <p class="mb-0">
                             <b>
                                 Get your favorite lighting products with a single click registration process. <br>
                                 Submit your requirements and our experts will do the rest.
                             </b>
                         </p>
                     </div>
-                    <div class="col-3 text-center">
+                  <!--   <div class="col-3 text-center">
                           <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" target="_blank" 
                  class="btn btn-sm btn-BAL text-white w-100">
                     <div class="link-icon">
@@ -163,8 +200,8 @@
                         Download BAL IEO One Pager
                     </div>
                 </a>
-            </div>
-            <div class="col-3 pt-2 mt-1">
+            </div> -->
+            <div class="col-6 text-right">
                   <a href="#all-packages" class="btn btn-BAL btn-lg">
                             <b>
                                 Start your free trial
@@ -1883,11 +1920,48 @@
                 </div>
             </div>
         </div>
+         <div class="pt-5 mt-5 text-center">
+            <h3>
+                <b>Do you want to know more?</b>
+            </h3>
+            <p class="pt-3">
+                Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
+            </p>
+            <div class="buttons pt-3">
+                <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL">
+                    <i class="far fa-file-pdf"></i>
+                            &nbsp;
+                    One Pager
+                </a>
+                <a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
+                    <i class="far fa-file-pdf"></i>
+                    &nbsp;
+                    White Paper
+                </a>
+                <a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL ml-3" target="_blank">
+                    <i class="far fa-file-pdf"></i>
+                            &nbsp;
+                    Yellow Paper
+                </a>                
+            </div>
+            <div class="pt-3">
+                <a href="{{ route('contact') }}" class="btn btn-BAL m-2">Schedule a meeting</a>
+                <a href="{{route('ieo') }}#section-bal-token" class="btn btn-BAL m-2 buy-btn">
+                    <b>
+                        BUY BAL TOKENS NOW!
+                    </b>
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 <section class="section-10" id="addons">
     <div class="container pt-5 pb-5">
-        <h3 class="pt-5"><span class="text-BAL"><b>ALWAYS ADDING VALUE:</span> optional extras</b></h3>
+        <h3 class="pt-5">
+            <b>
+                <span class="text-BAL">ALWAYS ADDING VALUE:</span> optional extras
+            </b>
+        </h3>
         <p class="pt-3">
             We’ve designed packages of options to delight various user categories. But every user is an individual, and for maximum flexibility the BuyAnyLight (BAL) platform enables you to add in extra services to suit you. These services are provided by our superb team of highly experienced LED lighting design experts, able to support every kind of LED project for private villas, industrial estates, hotels, public facilities and any other building or infrastructure.  
         </p>
@@ -1897,7 +1971,9 @@
         <div class="row">
             <div class="col-md-4">
                 <h5>
-                    <b><span class="text-BAL">Lighting</span> consultation</b>
+                    <b>
+                        <span class="text-BAL">Lighting</span> consultation
+                    </b>
                 </h5>
                 <img src="{{ Util::assetUrl('images/lightdesign.jpg')}}" class="mt-3 w-100 section-10-img">
                 <!-- <div class="w-100 general-lighting">
@@ -2042,5 +2118,4 @@
         </div>
     </div>
 </section>
-
 @endsection
