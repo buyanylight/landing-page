@@ -594,7 +594,7 @@ class TokenController extends Controller
 
 		
 
-	        \Mail::to('rizvi.almanilighting@gmail.com')->send(new BuyingConfirmationAdmin($request));
+	        \Mail::to('info@buyanylight.com')->send(new BuyingConfirmationAdmin($request));
 
 
 	        \Mail::to($request->get('email_id'))->send(new BuyingConfirmation($request));
@@ -912,7 +912,7 @@ class TokenController extends Controller
 
         \Mail::to($request->get('email_id'))->send(new KYCConfirmation($request));
 
-        \Mail::to('rizvi.almanilighting@gmail.com')->send(new KYCConfirmationAdmin($request));
+        \Mail::to('info@buyanylight.com')->send(new KYCConfirmationAdmin($request));
 
 
 
