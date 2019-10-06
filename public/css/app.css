@@ -11605,3 +11605,17 @@ textarea {
   display: none !important;
 }
 
+@media screen and (max-width: 1366px) {
+  .about-img {
+    width: 60%;
+  }
+
+  .all-cards {
+    top: -10px;
+  }
+
+  .trial-btn-link {
+    top: -5px !important;
+  }
+}
+
