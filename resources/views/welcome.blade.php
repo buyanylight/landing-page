@@ -33,7 +33,7 @@
                 </a>
             </div>
             <div class="mt-2">
-                <a href="#about" class="btn btn-sm btn-outline-light ">
+                <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" class="btn btn-sm btn-outline-light ">
                     <div class="link-text">
                         <i class="far fa-file-pdf"></i>
                             &nbsp;
@@ -43,7 +43,7 @@
                         <i class="fas fa-arrow-right"></i> 
                     </div>
                 </a>
-                <a data-fancybox href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" class="btn btn-sm btn-outline-light ">
+                <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" class="btn btn-sm btn-outline-light ">
                     <div class="link-text">
                         <i class="far fa-file-pdf"></i>
                             &nbsp;
