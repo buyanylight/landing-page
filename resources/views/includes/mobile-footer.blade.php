@@ -154,6 +154,11 @@
                                     Why BAL
                                 </a>
                             </li>
+                            <li class="mt-3 mb-3">
+                                <a href="{{ route('downloads') }}" class="text-dark">
+                                    Media
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -271,7 +276,7 @@
             </div>
 
 	   		{{-- <hr class="m-0 border-dark"> --}}
-            <div class="accordion-group">
+       <!--      <div class="accordion-group">
                 <div class="accordion-heading media-btn ">
                 	<a class="accordion-toggle text-dark w-100 d-block pl-3 pt-4 pb-4" data-toggle="collapse" href="#media">
                     	Media
@@ -300,7 +305,7 @@
                     	</ul>
                   	</div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="terms-and-policy text-dark pt-4 pb-4 text-right">
             	<div class="row">

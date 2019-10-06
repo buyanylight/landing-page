@@ -20,12 +20,15 @@
                         <li class="mt-3">
                             <a href="{{ route('home') }}#why-bal" class="text-white">Why BAL</a>
                         </li>
-                         <li class="mt-3">
+                        <li class="mt-3">
                             <a href="https://lightfinder.buyanylight.com/buyer/register" class="text-white">Register</a>
-                         </li>
+                        </li>
                          <li class="mt-3">
                             <a href="https://lightfinder.buyanylight.com" class="text-white">Sign in</a>
                          </li>
+                        <li class="mt-3">
+                            <a href="{{ route('downloads') }}" class="text-white">Media</a>
+                        </li>
                          <li class="mt-3">
                             <a href="{{ route('buyer-faq') }}" class="text-white">FAQ</a>
                          </li>
@@ -59,7 +62,7 @@
                         </li>
                      </ul>
                 </div>
-                <div class="col-md-2">
+               <!--  <div class="col-md-2">
                     <h5 class="text-white font-weight-bold">Media</h5>
                     <ul class="list-group footer-list">
                         <li class="mt-3">
@@ -69,8 +72,8 @@
                             <a href="{{ route('videos') }}" class="text-white">Videos</a>
                         </li>
                      </ul>
-                </div>
-                <div class="col-md-4">
+                </div> -->
+                <div class="col-md-6">
                     <div>
                         <h5 class="text-white font-weight-bold">Connect with our newsletter</h5>
 

@@ -101,7 +101,7 @@
 
 		@foreach($downloads_bal as $dwnld)
 			@if($dwnld['title'] == 'BuyAnyLight <br> One Pager' || $dwnld['title'] == 'My Tower <br> Brochures' )
-			<a href="{{ Util::assetUrl($dwnld['link']) }}">
+			<a href="{{ Util::assetUrl($dwnld['link']) }}" target="_blank">
 				<div class="card mb-5 text-center" style="max-width: 300px;">
 		  			<div class="row no-gutters">
 		    			<div class="col-md-4 d-flex align-items-center justify-content-center border-right border-dark bg-black text-white" style="font-size: 35px;">
@@ -116,7 +116,7 @@
 				</div>
 			</a>	
 			@else
-			<a href="{{ Util::assetUrl($dwnld['link']) }}">
+			<a href="{{ Util::assetUrl($dwnld['link']) }}" target="_blank">
 				<div class="card mb-5 ml-5 text-center" style="max-width: 300px;">
 			  		<div class="row no-gutters">
 			    		<div class="col-md-4 d-flex align-items-center justify-content-center border-right border-dark bg-black text-white" style="font-size: 35px;">
