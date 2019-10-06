@@ -148,7 +148,12 @@
 				style="width: 152px; margin-right: -10px;" 
 				src="{{ Util::assetUrl('images/logos/logo-white-sm.png') }}">
 				
-				<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+				<div class="lds-ellipsis">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
 			</div>
 		</div>
 		@include('includes.navbar')
