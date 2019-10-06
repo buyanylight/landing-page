@@ -22,6 +22,7 @@
                         <a class="dropdown-item" href="{{ route('m-home') }}#works">How it works</a>
                         <a class="dropdown-item" href="{{ route('m-about') }}">About BAL</a>
                         <a class="dropdown-item" href="{{ route('m-why-us') }}">Why BAL</a>
+                        <a class="dropdown-item" href="{{ route('downloads') }}">Media</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3 ml-3">
@@ -75,7 +76,7 @@
                 <hr class="border-white w-100 m-2">
 
                 
-                <li class="nav-item dropdown mr-3 ml-3">
+            <!--     <li class="nav-item dropdown mr-3 ml-3">
                     <button class="nav-link dropdown-toggle  text-left text-white links btn-black w-100" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Media
                     </button>
@@ -83,7 +84,7 @@
                         <a class="dropdown-item" href="{{ route('downloads') }}">Downloads</a>
                         <a class="dropdown-item" href="{{ route('videos') }}">Videos</a>
                     </div>
-                </li>
+                </li> -->
 
                 <li class="nav-item mr-3 ml-3">
                     <a class="nav-link text-white links w-100" href="https://medium.com/buyanylight" target="_blank">News</a>
