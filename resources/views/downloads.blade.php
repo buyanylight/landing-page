@@ -38,20 +38,24 @@
 	}
 
 	.downloads .card {	
-	    background-image: url({{ Util::assetUrl('images/media/downloads-bg2.jpg') }});
+	    /*background-image: url({{ Util::assetUrl('images/media/downloads-bg2.jpg') }});*/
 		background-size: cover;	
 		width: 345px;
 		margin: auto;
 	}
-	.downloads .card .card-title {	
+	/*.downloads .card .card-title {	
 		min-height: 75px;
-	}
+	}*/
 	.downloads .card img {	
 	    width: 95px;
 	    height: auto;
 		   /* position: absolute;
 		    right: 5px;
 		    bottom: 5px;*/
+	}
+
+	a:hover{
+		text-decoration: none;
 	}
 	
 
@@ -64,7 +68,7 @@
 	<div class="intro-investor d-flex align-items-center">
 		<div class="container">
 			<h1 class="text-black">
-				<b>Downloads</b>
+				<b>Media</b>
 			</h1>
 		</div>
 	</div>
@@ -72,50 +76,240 @@
 
 
 <div class="container py-5">
-	<div class="row justify-content-center downloads">
+	<div class=" downloads">
 	
 		<?php 
-			$downloads = [];
-			$downloads[] = [ "link"=>"one-pagers/BuyAnyLight.pdf", "title"=>"BuyAnyLight One Pager", ];
-			$downloads[] = [ "link"=>"brochures/LightFinder_BAL.pdf", "title"=>"Lightfinder Brochures", ];
-			$downloads[] = [ "link"=>"brochures/MyHome_BAL.pdf", "title"=>"My Home Brochures", ];
-			$downloads[] = [ "link"=>"brochures/MyTower_BAL.pdf", "title"=>"My Tower Brochures", ];
+			$downloads_bal = [];
+			$downloads_bal[] = [ "link"=>"one-pagers/BuyAnyLight.pdf", "title"=>"BuyAnyLight <br> One Pager", ];
+			$downloads_bal[] = [ "link"=>"brochures/LightFinder_BAL.pdf", "title"=>"Lightfinder <br>Brochure", ];
+			$downloads_bal[] = [ "link"=>"brochures/MyHome_BAL.pdf", "title"=>"My Home <br> Brochure", ];
+			$downloads_bal[] = [ "link"=>"brochures/MyTower_BAL.pdf", "title"=>"My Tower <br> Brochures", ];		
+		?>
 
-			$downloads[] = [ "link"=>"one-pagers/BuyAnyLight-IEO.pdf", "title"=>"IEO One Pager", ];
-			$downloads[] = [ "link"=>"papers/Whitepaper_1.0.pdf", "title"=>"White Paper", ];
-			$downloads[] = [ "link"=>"papers/Yellowpaper_1.0.pdf", "title"=>"Yellow Paper", ];
-			$downloads[] = [ "link"=>"BAL_Token_Sale_Agreement.pdf", "title"=>"Token Sale Agreement", ];			
-		?>	
-	
-		@foreach($downloads as $dwnld)
-		<div class="col-4 p-3">
-			<div class="card">
-			    <div class="card-body pt-2">
-					<div class="container">
-				        <div class="row align-items-center">
+		<h3 class="mb-5">
+			<b>
+				BuyAnyLight 
+			</b>
+		</h3>
+		<h5 class="mb-3">
+			<b>
+				Downloads 
+			</b>
+		</h5>
 
-					        <div class="col-12 pl-0">
-					        	<h2 class="card-title mt-3">{{ $dwnld['title'] }}</h2>
-					        </div>
-					        
-					        <div class="col-12">
-					        	<div class="row justify-content-between align-items-center">					        		
-							        <a target="_blank" 
-							        href="{{ Util::assetUrl($dwnld['link']) }}"
-							        class="btn btn-dark black">							    		
-							    		<i class="fas fa-file-pdf"></i>
-							    		Download PDF
-									</a>
-							    	<img  src="{{ Util::assetUrl('images/logos/logo-black3.png') }}" alt="{{ $dwnld['title'] }}">
-					        	</div>
-					        </div>
+		<div class="card-deck pl-3 d-flex justify-content-start">
 
-				    	</div>
-				    </div>
-			    </div>
-			</div>
-		</div>
+		@foreach($downloads_bal as $dwnld)
+			@if($dwnld['title'] == 'BuyAnyLight <br> One Pager' || $dwnld['title'] == 'My Tower <br> Brochures' )
+			<a href="{{ Util::assetUrl($dwnld['link']) }}">
+				<div class="card mb-5 text-center" style="max-width: 300px;">
+		  			<div class="row no-gutters">
+		    			<div class="col-md-4 d-flex align-items-center justify-content-center border-right border-dark bg-black text-white" style="font-size: 35px;">
+		      				<i class="far fa-file-pdf"></i>
+		    			</div>
+		    			<div class="col-md-8">
+		      				<div class="card-body">
+		        				<p class="card-title mb-0">{!! $dwnld['title'] !!}</p>
+		      				</div>
+		    			</div>
+		  			</div>
+				</div>
+			</a>	
+			@else
+			<a href="{{ Util::assetUrl($dwnld['link']) }}">
+				<div class="card mb-5 ml-5 text-center" style="max-width: 300px;">
+			  		<div class="row no-gutters">
+			    		<div class="col-md-4 d-flex align-items-center justify-content-center border-right border-dark bg-black text-white" style="font-size: 35px;">
+			      			<i class="far fa-file-pdf"></i>
+			    		</div>
+			    		<div class="col-md-8">
+			      			<div class="card-body">
+			        			<p class="card-title mb-0">{!! $dwnld['title'] !!}</p>
+			      			</div>
+			    		</div>
+			  		</div>
+				</div>
+			</a>
+
+			@endif
 		@endforeach
+		</div>
+
+
+		<h5 class="mb-3">
+			<b>
+				Videos 
+			</b>
+		</h5>
+
+		<?php 
+			$videos_bal = [];
+			$videos_bal[] = [ "link"=>"aaJQLTaSgLk", "title"=>"Introduction to BAL", ];
+			$videos_bal[] = [ "link"=>"OBm3CPqiXt8", "title"=>"Lightfinder", ];
+			$videos_bal[] = [ "link"=>"rWX1qeigBMk", "title"=>"My Home", ];
+			$videos_bal[] = [ "link"=>"IdrrtNgvDKo", "title"=>"My Tower", ];
+			$videos_bal[] = [ "link"=>"7N3FqFyASC0", "title"=>"Become a Selller", ];
+		?>
+
+		<div class="card-deck pl-3 d-flex justify-content-start">
+
+		@foreach($videos_bal as $vid)
+			@if($vid['title'] == 'Introduction to BAL' || $vid['title'] == 'My Tower' )
+			<a data-fancybox href="https://www.youtube.com/embed/{{ $vid['link'] }}?rel=0&enablejsapi=1">
+				<div class="card mb-5 text-center" style="max-width: 300px;">
+		  			<div class="row no-gutters">
+		    			<div class="col-md-4 d-flex align-items-center justify-content-center border-right border-dark bg-black text-white" style="font-size: 30px;">
+		      				<i class="fas fa-play"></i>
+		    			</div>
+		    			<div class="col-md-8">
+		      				<div class="card-body">
+		        				<p class="card-title mb-0">{!! $vid['title'] !!}</p>
+		      				</div>
+		    			</div>
+		  			</div>
+				</div>
+			</a>	
+			@else
+			<a  data-fancybox href="https://www.youtube.com/embed/{{ $vid['link'] }}?rel=0&enablejsapi=1">
+				<div class="card mb-5 ml-5 text-center" style="max-width: 300px;">
+			  		<div class="row no-gutters">
+			    		<div class="col-md-4 d-flex align-items-center justify-content-center border-right border-dark bg-black text-white" style="font-size: 30px;">
+			      			<i class="fas fa-play"></i>
+			    		</div>
+			    		<div class="col-md-8">
+			      			<div class="card-body">
+			        			<p class="card-title mb-0">{!! $vid['title'] !!}</p>
+			      			</div>
+			    		</div>
+			  		</div>
+				</div>
+			</a>
+
+			@endif
+		@endforeach
+		</div>
+
+
+
+
+
+
+
+		<hr>
+
+
+		<?php 
+			$downloads_ieo = [];
+		
+
+			$downloads_ieo[] = [ "link"=>"one-pagers/BuyAnyLight-IEO.pdf", "title"=>"BuyAnyLight <br> IEO One Pager", ];
+			$downloads_ieo[] = [ "link"=>"papers/Whitepaper_1.0.pdf", "title"=>"BuyAnyLight <br> White Paper", ];
+			$downloads_ieo[] = [ "link"=>"papers/Yellowpaper_1.0.pdf", "title"=>"BuyAnyLight <br> Yellow Paper", ];
+			$downloads_ieo[] = [ "link"=>"BAL_Token_Sale_Agreement.pdf", "title"=>"Token Sale <br>Agreement", ];			
+		?>
+
+
+		<h3 class="mb-5">
+			<b>
+				BuyAnyLight IEO
+			</b>
+		</h3>
+		<h5 class="mb-3">
+			<b>
+				Downloads 
+			</b>
+		</h5>
+
+		<div class="card-deck pl-3 d-flex justify-content-start">
+
+		@foreach($downloads_ieo as $dwnld)
+			@if($dwnld['title'] == 'BuyAnyLight <br> IEO One Pager' || $dwnld['title'] == 'Token Sale <br>Agreement' )
+			<a href="https://www.youtube.com/embed/{{ $vid['link'] }}?rel=0&enablejsapi=1">
+				<div class="card mb-5 text-center" style="max-width: 300px;">
+		  			<div class="row no-gutters">
+		    			<div class="col-md-4 d-flex align-items-center justify-content-center border-right border-dark bg-black text-white" style="font-size: 35px;">
+		      				<i class="far fa-file-pdf"></i>
+		    			</div>
+		    			<div class="col-md-8">
+		      				<div class="card-body">
+		        				<p class="card-title mb-0">{!! $dwnld['title'] !!}</p>
+		      				</div>
+		    			</div>
+		  			</div>
+				</div>
+			</a>	
+			@else
+			<a href="https://www.youtube.com/embed/{{ $vid['link'] }}?rel=0&enablejsapi=1">
+				<div class="card mb-5 ml-5 text-center" style="max-width: 300px;">
+			  		<div class="row no-gutters">
+			    		<div class="col-md-4 d-flex align-items-center justify-content-center border-right border-dark bg-black text-white" style="font-size: 35px;">
+			      			<i class="far fa-file-pdf"></i>
+			    		</div>
+			    		<div class="col-md-8">
+			      			<div class="card-body">
+			        			<p class="card-title mb-0">{!! $dwnld['title'] !!}</p>
+			      			</div>
+			    		</div>
+			  		</div>
+				</div>
+			</a>
+
+			@endif
+		@endforeach
+		</div>
+
+
+		<?php 
+			$videos_ieo = [];
+			$videos_ieo[] = [ "link"=>"o8CAwwz6tIM", "title"=>"BuyAnyLight IEO", ];
+			$videos_ieo[] = [ "link"=>"5nMkricvzfc", "title"=>"IEO vs ICO", ];
+		?>
+
+
+		<h5 class="mb-3">
+			<b>
+				Videos 
+			</b>
+		</h5>
+
+
+		<div class="card-deck pl-3 d-flex justify-content-start">
+
+		@foreach($videos_ieo as $vid)
+			@if($vid['title'] == 'BuyAnyLight IEO' )
+			<a href="{{ Util::assetUrl($vid['link']) }}">
+				<div class="card mb-5 text-center" style="max-width: 300px;">
+		  			<div class="row no-gutters">
+		    			<div class="col-md-4 d-flex align-items-center justify-content-center border-right border-dark bg-black text-white" style="font-size: 35px;">
+		      				<i class="fas fa-play"></i>
+		    			</div>
+		    			<div class="col-md-8">
+		      				<div class="card-body">
+		        				<p class="card-title mb-0">{!! $vid['title'] !!}</p>
+		      				</div>
+		    			</div>
+		  			</div>
+				</div>
+			</a>	
+			@else
+			<a href="{{ Util::assetUrl($vid['link']) }}">
+				<div class="card mb-5 ml-5 text-center" style="max-width: 300px;">
+			  		<div class="row no-gutters">
+			    		<div class="col-md-4 d-flex align-items-center justify-content-center border-right border-dark bg-black text-white" style="font-size: 35px;">
+		      				<i class="fas fa-play"></i>
+			    		</div>
+			    		<div class="col-md-8">
+			      			<div class="card-body">
+			        			<p class="card-title mb-0">{!! $vid['title'] !!}</p>
+			      			</div>
+			    		</div>
+			  		</div>
+				</div>
+			</a>
+
+			@endif
+		@endforeach
+		</div>
 
 	</div>	
 </div>
