@@ -1729,12 +1729,12 @@
 				<?php
 					$coreTeam = [];
 				$coreTeam[] = [	'name'=>'Tiffany Anggot', 'title'=>'Cryptography Researcher', 'linkedin'=>'https://www.linkedin.com/in/tiffany-jel-a-367548147', 'image'=>'images/ieo/team/tiffany.jpg', 'text'=>'', ];
-				$coreTeam[] = [	'name'=>'Juliane Schreilechner', 'title'=>'Training Consutant', 'linkedin'=>'https://www.linkedin.com/in/juliane-schreilechner-142108174/', 'image'=>'images/ieo/team/juliane.jpg', 'text'=>'', ];
+				$coreTeam[] = [	'name'=>'Juliane Schreilechner', 'title'=>'Training Consultant', 'linkedin'=>'https://www.linkedin.com/in/juliane-schreilechner-142108174/', 'image'=>'images/ieo/team/juliane.jpg', 'text'=>'', ];
 				?>
 
 			<div class="row pt-5 justify-content-center">
 				@foreach($coreTeam as $tm)
-					<div class="col text-center">
+					<div class="col-3 text-center">
 						<div class="rounded-circle team-img" style="background-image: url({{ Util::assetUrl($tm['image'])}})">							
 							@if($tm['linkedin'])
 							<a href="{{ $tm['linkedin'] }}" class="text-white linkedin" style="font-size: 20px;" target="_blank">
