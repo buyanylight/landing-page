@@ -1703,7 +1703,6 @@
 					$coreTeam[] = [	'name'=>'Chad Hanson', 'title'=>'Social Media, Community Manager', 'linkedin'=>'https://www.linkedin.com/in/chad-hanson-a747a2137/', 'image'=>'images/ieo/team/chad.jpg', 'text'=>'', ];
 					
 					$coreTeam[] = [	'name'=>'Maria Carron Igloso', 'title'=>'Community Manager', 'linkedin'=>'https://www.linkedin.com/in/maria-carron-igloso-1324b5105', 'image'=>'images/ieo/team/maria.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Tiffany Anggot', 'title'=>'Cryptography Researcher', 'linkedin'=>'https://www.linkedin.com/in/tiffany-jel-a-367548147', 'image'=>'images/ieo/team/tiffany.jpg', 'text'=>'', ];
 				?>
 				<div class="row pt-5 justify-content-center">
 				@foreach($coreTeam as $tm)
@@ -1726,6 +1725,41 @@
 					</div>
 				@endforeach
 				</div>
+
+				<?php
+					$coreTeam = [];
+				$coreTeam[] = [	'name'=>'Tiffany Anggot', 'title'=>'Cryptography Researcher', 'linkedin'=>'https://www.linkedin.com/in/tiffany-jel-a-367548147', 'image'=>'images/ieo/team/tiffany.jpg', 'text'=>'', ];
+				$coreTeam[] = [	'name'=>'Juliane Schreilechner', 'title'=>'Training Consutant', 'linkedin'=>'https://www.linkedin.com/in/juliane-schreilechner-142108174/', 'image'=>'images/ieo/team/juliane.jpg', 'text'=>'', ];
+				?>
+
+			<div class="row pt-5 justify-content-center">
+				@foreach($coreTeam as $tm)
+					<div class="col text-center">
+						<div class="rounded-circle team-img" style="background-image: url({{ Util::assetUrl($tm['image'])}})">							
+							@if($tm['linkedin'])
+							<a href="{{ $tm['linkedin'] }}" class="text-white linkedin" style="font-size: 20px;" target="_blank">
+								<i class="fab fa-linkedin"></i>
+							</a>
+							@endif
+						</div>						
+						<p class="header-text pt-3 mb-0">
+							<b>
+								{{ $tm['name'] }}
+							</b>
+						</p>
+						<p class="text-white pt-1 mb-1">
+							{{ $tm['title'] }}							
+						</p>
+					</div>
+				@endforeach
+				</div>
+
+
+
+
+
+
+
 
 
 				<div class="pt-5 mt-5">
