@@ -473,7 +473,7 @@
 											 <p class="mb-0">
 											 	Profits :
 												<span class="USD_return">
-													151.515
+													0.10303
 												</span>
 												USD
 											 </p> 
