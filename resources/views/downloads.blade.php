@@ -155,7 +155,7 @@
 
 		@foreach($videos_bal as $vid)
 			@if($vid['title'] == 'Introduction to BAL' || $vid['title'] == 'My Tower' )
-			<a data-fancybox href="{{ Util::assetUrl($dwnld['link']) }}">
+			<a  data-fancybox href="https://www.youtube.com/embed/{{ $vid['link'] }}?rel=0&enablejsapi=1">
 				<div class="card mb-5 text-center" style="max-width: 300px;">
 		  			<div class="row no-gutters">
 		    			<div class="col-md-4 d-flex align-items-center justify-content-center border-right border-dark bg-black text-white" style="font-size: 30px;">
