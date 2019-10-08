@@ -155,7 +155,7 @@
 
 		@foreach($videos_bal as $vid)
 			@if($vid['title'] == 'Introduction to BAL' || $vid['title'] == 'My Tower' )
-			<a data-fancybox href="https://www.youtube.com/embed/{{ $vid['link'] }}?rel=0&enablejsapi=1">
+			<a data-fancybox href="{{ Util::assetUrl($dwnld['link']) }}">
 				<div class="card mb-5 text-center" style="max-width: 300px;">
 		  			<div class="row no-gutters">
 		    			<div class="col-md-4 d-flex align-items-center justify-content-center border-right border-dark bg-black text-white" style="font-size: 30px;">
@@ -224,7 +224,7 @@
 
 		@foreach($downloads_ieo as $dwnld)
 			@if($dwnld['title'] == 'BuyAnyLight <br> IEO One Pager' || $dwnld['title'] == 'Token Sale <br>Agreement' )
-			<a href="https://www.youtube.com/embed/{{ $vid['link'] }}?rel=0&enablejsapi=1">
+			<a href="{{ Util::assetUrl($dwnld['link']) }}">
 				<div class="card mb-5 text-center" style="max-width: 300px;">
 		  			<div class="row no-gutters">
 		    			<div class="col-md-4 d-flex align-items-center justify-content-center border-right border-dark bg-black text-white" style="font-size: 35px;">
@@ -239,7 +239,7 @@
 				</div>
 			</a>	
 			@else
-			<a href="https://www.youtube.com/embed/{{ $vid['link'] }}?rel=0&enablejsapi=1">
+			<a href="{{ Util::assetUrl($dwnld['link']) }}" target="_blank">
 				<div class="card mb-5 ml-5 text-center" style="max-width: 300px;">
 			  		<div class="row no-gutters">
 			    		<div class="col-md-4 d-flex align-items-center justify-content-center border-right border-dark bg-black text-white" style="font-size: 35px;">
@@ -277,7 +277,7 @@
 
 		@foreach($videos_ieo as $vid)
 			@if($vid['title'] == 'BuyAnyLight IEO' )
-			<a href="{{ Util::assetUrl($vid['link']) }}">
+			<a data-fancybox href="https://www.youtube.com/embed/{{ $vid['link'] }}?rel=0&enablejsapi=1">
 				<div class="card mb-5 text-center" style="max-width: 300px;">
 		  			<div class="row no-gutters">
 		    			<div class="col-md-4 d-flex align-items-center justify-content-center border-right border-dark bg-black text-white" style="font-size: 35px;">
@@ -292,7 +292,7 @@
 				</div>
 			</a>	
 			@else
-			<a href="{{ Util::assetUrl($vid['link']) }}">
+			<a data-fancybox href="https://www.youtube.com/embed/{{ $vid['link'] }}?rel=0&enablejsapi=1">
 				<div class="card mb-5 ml-5 text-center" style="max-width: 300px;">
 			  		<div class="row no-gutters">
 			    		<div class="col-md-4 d-flex align-items-center justify-content-center border-right border-dark bg-black text-white" style="font-size: 35px;">
