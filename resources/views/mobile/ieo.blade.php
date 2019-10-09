@@ -41,7 +41,7 @@
 
 
 			
-			$('.bal-token').blur(function() {
+			$('.bal-token').keyup(function() {
 			if (numeral($('.bal-token').val()).value() < 25000) {
 				$('.bal-alert').show()
 				$('#token-btn').attr('disabled', 'disabled')
