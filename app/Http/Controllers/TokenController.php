@@ -131,6 +131,7 @@ class TokenController extends Controller
 	public function buy_tokens(Request $r){
 
 
+
 		$curr = explode(' ', $r['currency']);
 
 
@@ -252,6 +253,8 @@ class TokenController extends Controller
 
 
 	public function kyc(Request $request){
+
+		// dd($request);
 
 		$countries = [
   			"Afghanistan",
@@ -523,11 +526,13 @@ class TokenController extends Controller
 					'name' => $transaction['name'],
 	            	'user_reference_id' => $transaction['user_reference_id'],	
 	            	'bal_amt' => $transaction['bal_amt'],
-	            	'number' => $transaction['number']	
+	            	'number' => $transaction['number'],
 	            
 				);
 
 			} else {
+				if ($request['later_bank'] !== null ) {
+					# code...
 				$transaction = $request->validate([
 	            	'receiver_id' => 'required',
 	            	'amount' => 'required',
@@ -537,6 +542,8 @@ class TokenController extends Controller
 	            	'user_reference_id' => 'required',
 	            	'bal_amt' => 'required',
 	            	'number' => 'required',
+	            	'later_bank' => 'required',
+
 
 
 
@@ -550,11 +557,50 @@ class TokenController extends Controller
 					'reference' => $transaction['reference'],
 	            	'user_reference_id' => $transaction['user_reference_id'],	
 	            	'bal_amt' => $transaction['bal_amt'],
-	            	'number' => $transaction['number']
+	            	'number' => $transaction['number'],
+	            	'later_bank' =>$transaction['later_bank']	
+
 	            	
 	           
 
 				);
+				} else {
+
+					$transaction = $request->validate([
+	            	'receiver_id' => 'required',
+	            	'amount' => 'required',
+	            	'email_id' => 'required', 
+	            	'name' => 'required',
+	            	'reference' => 'required',
+	            	'user_reference_id' => 'required',
+	            	'bal_amt' => 'required',
+	            	'number' => 'required'
+	            	,
+
+
+
+
+	        	]);
+
+				$email_details = array(
+					'amount' => $transaction['amount'],
+					'receiver_id' => $transaction['receiver_id'],
+					'email_id' => $transaction['email_id'],
+					'name' => $transaction['name'],
+					'reference' => $transaction['reference'],
+	            	'user_reference_id' => $transaction['user_reference_id'],	
+	            	'bal_amt' => $transaction['bal_amt'],
+	            	'number' => $transaction['number'],
+	  
+
+	            	
+	           
+
+				);
+
+
+
+				}
 			}
 
 		} else {
@@ -613,7 +659,7 @@ class TokenController extends Controller
 	        'user_reference_id' => $transaction['user_reference_id'],
 	        'bal_amt' => $transaction['bal_amt'],
 	        'countries' => $countries,
-	        'number' => $transaction['number']
+	        'number' => $transaction['number'],
 
 		]);
 	}
