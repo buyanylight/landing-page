@@ -21,8 +21,54 @@
 		@endif
 		<li style="padding-top: 5px;"><b>Your ETH address:</b> {{ $receiver_id }}</li>
 	</ul>
+		@if(!empty($later_bank))
+	<p>
+		You may complete the bank transfer with the following reference No. {{ $reference }}. Send the transfer slip image directly to invest@buyanylight.com so we can facilitate the transaction immediately
+	</p>
+
+		@if(strpos($amount, 'USD') !== false)
+		<p style="color: black; font-size: 14px !important">Bank Details:</p>
+		<ul style="color: black; list-style:none;">
+			<li style="padding-top: 5px;"><b>Account Holder:</b> Ms Dotcom Ventures FZE</li>
+			<li style="padding-top: 5px;"><b>Holder Address:</b> <span>UAQ Free Trade Zone,
+				  											P.O. Box 7073,
+				  											Umm Al Quwain,
+				  											United Arab Emirates</span></li>
+			<li style="padding-top: 5px;"><b>Account Number:</b> 1025511569802</li>
+			<li style="padding-top: 5px;"><b>IBAN:</b> AE340260001025511569802</li>
+			<li style="padding-top: 5px;"><b>SWIFT/BIC:</b> EBILAEADJAZ</li>
+			<li style="padding-top: 5px;"><b>Reference:</b> {{$reference}}</li>
+			<li style="padding-top: 5px;"><b> Bank Address:</b> <span>Emirates NBD,
+				  											Jabal Ali Branch,
+				  											Dubai, United Arab Emirates</span></li>
+		</ul>
+		@else
+		<p style="color: black; font-size: 14px !important">Bank Details:</p>
+		<ul>
+			<li style="padding-top: 5px;"><b>Account Holder:</b>Ms Dotcom Ventures FZE</li>
+			<li style="padding-top: 5px;"><b>Holder Address:</b> <span>UAQ Free Trade Zone,
+				  											P.O. Box 7073,
+				  											Umm Al Quwain,
+				  											United Arab Emirates</span></li>
+			<li style="padding-top: 5px;"><b>Account Number:</b> 1025511569803</li>
+			<li style="padding-top: 5px;"><b>IBAN:</b> AE340260001025511569803</li>
+			<li style="padding-top: 5px;"><b>SWIFT/BIC:</b> EBILAEADJAZ</li>
+			<li style="padding-top: 5px;"><b>Reference:</b> {{$reference}}</li>
+			<li style="padding-top: 5px;"><b>Bank Address:</b><span>Emirates NBD,
+				  											Jabal Ali Branch,
+				  											Dubai, United Arab Emirates</span></li>
+		</ul>
+		@endif
+
+		@endif
+
+
+
+
+
+
 	<p style="color: black; font-size: 14px !important">
-		We would also want to ensure that you fill up the Know Your Customer (KYC) Form. The KYC is a measure taken by regulating bodies to certify that the transactions conformed was lawful and compliant. You may complete the step by clicking the link below:
+		In case you haven’t finished the step yet, you may click on the link below for completion:
 	</p>
 	<p>
 		<a href="https://buyanylight.com/kyc-form/{{ $user_reference_id }}?amount={{ $amount }}&bal={{$bal_amt}}&receiver_id={{$receiver_id}}&name={{$name}}&email={{$email}}&number={{$number}}">KYC Form</a>

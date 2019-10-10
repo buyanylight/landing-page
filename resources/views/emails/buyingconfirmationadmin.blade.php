@@ -12,6 +12,11 @@ New BAL Token purchase transaction details:
 	<li style="padding-top: 10px;"><b>Amount Paid:</b> {{ $amount }}</li>
 	@if(!empty($reference))
 	<li style="padding-top: 10px;"><b>Bank Transfer Reference:</b> {{ $reference }}</li>
+	@if(!empty($later_bank))
+	<li style="padding-top: 10px;"><b>Bank Transfer Done:</b> No</li>
+	@else
+	<li style="padding-top: 10px;"><b>Bank Transfer Done:</b> Yes</li>
+	@endif
 	@endif
 	@if(!empty($transaction_id))
 	<li style="padding-top: 10px;"><b>Transaction ID:</b> {{ $transaction_id }}</li>
