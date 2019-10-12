@@ -88,6 +88,10 @@
                 <li class="nav-item mr-3">
                     <a class="nav-link text-white links" href="https://medium.com/buyanylight" target="_blank">News</a>
                 </li>
+
+                <li class="nav-item mr-3">
+                    <a class="nav-link text-white links" href="https://blog.buyanylight.com" target="_blank">Blog</a>
+                </li>
                 <li class="nav-item mr-3">
                     <a class="nav-link text-white links" href="{{ route('contact') }}">Contact</a>
                 </li>

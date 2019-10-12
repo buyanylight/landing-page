@@ -92,6 +92,12 @@
                 <li class="nav-item mr-3 ml-3">
                     <a class="nav-link text-white links w-100" href="https://medium.com/buyanylight" target="_blank">News</a>
                 </li>
+
+                <li class="nav-item mr-3 ml-3">
+                    <a class="nav-link text-white links w-100" href="https://blog.buyanylight.com" target="_blank">Blog</a>
+                </li>
+                
+
                 <li class="nav-item mr-3 ml-3">
                     <a class="nav-link text-white links w-100" href="{{ route('home') }}#footer">Contact</a>
                 </li>
