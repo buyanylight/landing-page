@@ -184,19 +184,23 @@
 
 						<div class="pt-1 pagers-paper">
 							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">
-	            			<i class="far fa-file-pdf"></i>
-	            			&nbsp;
-							One Pager
-						</a>					
+	            				<i class="far fa-file-pdf"></i>
+	            				&nbsp;
+								One Pager
+							</a>					
 							<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}"  target="_blank" class="btn btn-ieo">
-							<i class="far fa-file-pdf"></i>
-	            			&nbsp;
-							White Paper
-						</a>
+								<i class="far fa-file-pdf"></i>
+	            				&nbsp;
+								White Paper
+							</a>
 							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo" target="_blank">
-							<i class="far fa-file-pdf"></i>
+								<i class="far fa-file-pdf"></i>
+	            				&nbsp;
+								Yellow Paper<a href="https://t.me/buyanylight" class="btn btn-ieo ml-3" target="_blank">
+					<i class="fab fa-telegram-plane"></i>
 	            			&nbsp;
-								Yellow Paper
+					Join Our Community
+				</a>
 							</a>
 						</div>
 						<!-- <div class="pt-3">
