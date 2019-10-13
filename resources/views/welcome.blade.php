@@ -66,6 +66,18 @@
                     </div>
                 </a>
             </div>
+            <div class="mt-2">
+                 <a href="https://t.me/buyanylight" class="btn btn-md btn-light text-dark" style=" width: 87%">
+                    <div class="link-text">
+                        <b>
+                            JOIN OUR COMMUNITY
+                        </b>
+                    </div>&nbsp;
+                    <div class="link-icon">
+                        <i class="fas fa-arrow-right"></i> 
+                    </div>
+                </a>
+            </div>
 
             <!-- <div class="mt-1">
                 <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 85%">
