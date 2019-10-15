@@ -1585,7 +1585,7 @@
 					<div class="col-12">
 						<h5 class="text-white ml-3">Sponsored by:</h5>
 						<div class="icons">
-							<h3 class="text-white p-3">The German Embassy at Light Middle East Fair</h3>
+							<h3 class="text-white p-3">Consulate General of the Federal Republic of Germany Dubai</h3>
 						</div>
 					</div>
 					<div class="col-12 mt-3">
