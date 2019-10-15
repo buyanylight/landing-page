@@ -11605,3 +11605,57 @@ nav .dropdown-toggle::after {
   margin-top: 10px;
 }
 
+#partners {
+  background-size: auto;
+  background-position: center;
+}
+
+#partners .partner {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+#partners .partner img {
+  max-width: 90%;
+  max-height: 100px;
+}
+
+#partners .sponsored_fair h5 {
+  border-bottom: 1px solid;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#partners .sponsored_fair .icons {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#partners .sponsored_fair .icons a {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 0 10px;
+}
+
+#partners .sponsored_fair .icons a img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+

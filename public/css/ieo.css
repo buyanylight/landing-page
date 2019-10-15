@@ -11569,9 +11569,55 @@ footer {
   }
 }
 
-.partners .partner img {
-  margin-bottom: 130px;
+#partners {
+  background-size: auto;
+  background-position: center;
+}
+
+#partners .partner {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+#partners .partner img {
   max-width: 230px;
+  max-height: 100px;
+}
+
+#partners .sponsored_fair h5 {
+  border-bottom: 1px solid;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+
+#partners .sponsored_fair .icons {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  justify-content: space-around;
+}
+
+#partners .sponsored_fair .icons a {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 50%;
+  padding: 0 20px;
+}
+
+#partners .sponsored_fair .icons a img {
+  width: auto;
   max-height: 100px;
 }
 

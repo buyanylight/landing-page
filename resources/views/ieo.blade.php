@@ -1660,7 +1660,7 @@
 					$coreTeam[] = [	'name'=>'Martin Heyen', 'title'=>'Co-Founder & CFO', 'linkedin'=>'', 'image'=>'images/ieo/team/martin.jpg', 'text'=>'', ];
 					$coreTeam[] = [	'name'=>'Leo Vicente', 'title'=>'Chief Technical Officer', 'linkedin'=>'https://www.linkedin.com/in/ljvicente', 'image'=>'images/ieo/team/leo.jpg', 'text'=>'', ];
 					$coreTeam[] = [	'name'=>'Rene Rowell dela Rama', 'title'=>'Director of Blockchain Integration', 'linkedin'=>'https://www.linkedin.com/in/rene-rowell-dela-rama-3ab529148', 'image'=>'images/ieo/team/rene.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Rizvi Iqbal', 'title'=>'Senior Blockchain Engineer', 'linkedin'=>'https://www.linkedin.com/in/rizviqbal', 'image'=>'images/ieo/team/rizvi.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Rizvi Iqbal', 'title'=>'Blockchain & DLT Specialist', 'linkedin'=>'https://www.linkedin.com/in/rizviqbal', 'image'=>'images/ieo/team/rizvi.jpg', 'text'=>'', ];
 
 				?>
 				<div class="row pt-5 justify-content-center">
@@ -1687,10 +1687,10 @@
 
 				<?php
 					$coreTeam = [];
-					$coreTeam[] = [	'name'=>'Artem Gordadze', 'title'=>'Exchange Listings Specialist, IEO Negotiations', 'linkedin'=>'https://www.linkedin.com/in/artem-gordadze', 'image'=>'images/ieo/team/artem.jpg', 'text'=>'', ];	
+					$coreTeam[] = [	'name'=>'Artem Gordadze', 'title'=>'Marketing Specialist', 'linkedin'=>'https://www.linkedin.com/in/artem-gordadze', 'image'=>'images/ieo/team/artem.jpg', 'text'=>'', ];	
 					$coreTeam[] = [	'name'=>'Nantha Kumar', 'title'=>'Sales Director', 'linkedin'=>'https://www.linkedin.com/in/nantha-kumar-36b92685', 'image'=>'images/ieo/team/nantha.jpg', 'text'=>'', ];
 					$coreTeam[] = [	'name'=>'Marc Vazquez', 'title'=>'Sourcing, Production & Investors Relations', 'linkedin'=>'https://www.linkedin.com/in/marc-vazquez-6b01a794', 'image'=>'images/ieo/team/marc.jpg', 'text'=>'', ];					
-					$coreTeam[] = [	'name'=>'Ryan Quines', 'title'=>'UI/UX Visuals', 'linkedin'=>'https://www.linkedin.com/in/ryan-matthew-quines-551a85152', 'image'=>'images/ieo/team/ryan.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Ryan Quines', 'title'=>'Design Lead', 'linkedin'=>'https://www.linkedin.com/in/ryan-matthew-quines-551a85152', 'image'=>'images/ieo/team/ryan.jpg', 'text'=>'', ];
 
 					$coreTeam[] = [	'name'=>'Zain Ul Abdin', 'title'=>'Senior Architect', 'linkedin'=>'https://www.linkedin.com/in/muhammad-zain-ul-abdin-120a3612a', 'image'=>'images/ieo/team/zain.jpg', 'text'=>'', ];
 
@@ -1723,11 +1723,11 @@
 
 					$coreTeam[] = [	'name'=>'Shajudeen Yousf', 'title'=>'Lighting Design Architect', 'linkedin'=>'https://www.linkedin.com/in/shajudeen-yousf-783452146/', 'image'=>'images/ieo/team/shajudeen.jpg', 'text'=>'', ];
 					$coreTeam[] = [	'name'=>'Ammar Mohamed', 'title'=>'Lighting Design Architect', 'linkedin'=>'https://www.linkedin.com/in/ammar-mohamed-231379103/', 'image'=>'images/ieo/team/ammar.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Muhammad Younas', 'title'=>'Social Media, Community Manager', 'linkedin'=>'https://www.linkedin.com/in/muhammad-younas2023', 'image'=>'images/ieo/advisors/muhammad.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Muhammad Younas', 'title'=>'Content Lead', 'linkedin'=>'https://www.linkedin.com/in/muhammad-younas2023', 'image'=>'images/ieo/advisors/muhammad.jpg', 'text'=>'', ];
 
 					$coreTeam[] = [	'name'=>'Chad Hanson', 'title'=>'Social Media, Community Manager', 'linkedin'=>'https://www.linkedin.com/in/chad-hanson-a747a2137/', 'image'=>'images/ieo/team/chad.jpg', 'text'=>'', ];
 					
-					$coreTeam[] = [	'name'=>'Maria Carron Igloso', 'title'=>'Community Manager', 'linkedin'=>'https://www.linkedin.com/in/maria-carron-igloso-1324b5105', 'image'=>'images/ieo/team/maria.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Maria Carron Igloso', 'title'=>'Investor relations and Public Relations Manager', 'linkedin'=>'https://www.linkedin.com/in/maria-carron-igloso-1324b5105', 'image'=>'images/ieo/team/maria.jpg', 'text'=>'', ];
 				?>
 				<div class="row pt-5 justify-content-center">
 				@foreach($coreTeam as $tm)
@@ -1913,7 +1913,7 @@
 				<div class="pt-5 ">
 					<h3 class="text-center">
 						<strong>
-							<span class="header-text">
+							<span class="text-white">
 								Our
 							</span>
 							<span class="text-white">
@@ -1930,10 +1930,10 @@
 					$partners[] = [	'title'=>'CamelLED', 'alt'=>'CamelLED', 'src'=>Util::assetUrl('images/ieo/partners/camel_led.png'), ];
 					$partners[] = [	'title'=>'Dotcom Ventures', 'alt'=>'Dotcom Ventures', 'src'=>Util::assetUrl('images/ieo/partners/dotcom_ventures.png'), ];
 					$partners[] = [	'title'=>'Dubai Consult', 'alt'=>'Dubai Consult', 'src'=>Util::assetUrl('images/ieo/partners/dubai_consult.png'), ];
+					$partners[] = [	'title'=>'German Embassy UAE', 'alt'=>'German Embassy UAE', 'src'=>Util::assetUrl('images/ieo/partners/german_uae.png'), ];
 					$partners[] = [	'title'=>'Asas', 'alt'=>'Asas', 'src'=>Util::assetUrl('images/ieo/partners/asas.png'), ];
-					$partners[] = [	'title'=>'German UAE', 'alt'=>'German UAE', 'src'=>Util::assetUrl('images/ieo/partners/german_uae.png'), ];
-					$partners[] = [	'title'=>'Continental Investments', 'alt'=>'Continental Investments', 'src'=>Util::assetUrl('images/ieo/partners/continental.png'), ];
 					$partners[] = [	'title'=>'Light Middles East', 'alt'=>'Light Middles East', 'src'=>Util::assetUrl('images/ieo/partners/light_middles_east.png'), ];
+					$partners[] = [	'title'=>'Continental Investments', 'alt'=>'Continental Investments', 'src'=>Util::assetUrl('images/ieo/partners/continental.png'), ];
 					
 				?>
 				<div class="row pt-5 justify-content-center partners">
@@ -1944,6 +1944,25 @@
 				@endforeach
 				</div>
 		
+				<div class="row pt-0 mt-4 pb-5 justify-content-center sponsored_fair">
+					<div class="col-6">
+						<h5 class="text-white ml-3">Sponsored by:</h5>
+						<div class="icons">
+							<h3 class="text-white p-3">The German Embassy during Light Middle East Fair</h3>
+						</div>
+					</div>
+					<div class="col-6">
+						<h5 class="text-white ml-3">Fair Participations:</h5>
+						<div class="icons">
+							<a href="https://www.gitexfuturestars.com/exhibitors/buy-any-light" target="_blank">
+								<img title="Gitex" alt="Gitex" src="{{ Util::assetUrl('images/GFS.png') }}" style="">
+							</a>
+							<a>
+								<img title="Light Middle East Fair" alt="Light Middle East Fair" src="{{ Util::assetUrl('images/ieo/partners/light_middles_east.png') }}" style="">							
+							</a>
+						</div>
+					</div>
+				</div>
 
 
 			</div>

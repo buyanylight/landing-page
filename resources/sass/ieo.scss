@@ -586,12 +586,41 @@ footer{
 
 
 
-.partners {
+#partners {
+    background-size: auto;
+    background-position: center;	
 	.partner {
+		margin-top: 30px;
+		margin-bottom: 100px;
+	    display: inline-flex;
+	    justify-content: center;
+	    align-items: center;		
 		img {
-			margin-bottom: 130px;
 		    max-width: 230px;
 		    max-height: 100px;			
 		}
 	}
+	.sponsored_fair {
+		h5 {
+			border-bottom: 1px solid;
+		    display: inline-flex;
+		    margin-bottom: 20px;		    
+		}
+		.icons {			
+			display: flex;
+			align-items: center;
+			justify-content: space-around;		
+			a {
+				display: inline-flex;
+			    align-items: center;
+			    justify-content: center;				
+				width: 50%;
+				padding: 0 20px;
+				img {
+				    width: auto;
+				    max-height: 100px;
+				}
+			}
+		}
+	}	
 }
