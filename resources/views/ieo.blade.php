@@ -1913,7 +1913,7 @@
 				<div class="pt-5 ">
 					<h3 class="text-center">
 						<strong>
-							<span class="header-text">
+							<span class="text-white">
 								Our
 							</span>
 							<span class="text-white">
@@ -1930,10 +1930,10 @@
 					$partners[] = [	'title'=>'CamelLED', 'alt'=>'CamelLED', 'src'=>Util::assetUrl('images/ieo/partners/camel_led.png'), ];
 					$partners[] = [	'title'=>'Dotcom Ventures', 'alt'=>'Dotcom Ventures', 'src'=>Util::assetUrl('images/ieo/partners/dotcom_ventures.png'), ];
 					$partners[] = [	'title'=>'Dubai Consult', 'alt'=>'Dubai Consult', 'src'=>Util::assetUrl('images/ieo/partners/dubai_consult.png'), ];
+					$partners[] = [	'title'=>'German Embassy UAE', 'alt'=>'German Embassy UAE', 'src'=>Util::assetUrl('images/ieo/partners/german_uae.png'), ];
 					$partners[] = [	'title'=>'Asas', 'alt'=>'Asas', 'src'=>Util::assetUrl('images/ieo/partners/asas.png'), ];
-					$partners[] = [	'title'=>'German UAE', 'alt'=>'German UAE', 'src'=>Util::assetUrl('images/ieo/partners/german_uae.png'), ];
-					$partners[] = [	'title'=>'Continental Investments', 'alt'=>'Continental Investments', 'src'=>Util::assetUrl('images/ieo/partners/continental.png'), ];
 					$partners[] = [	'title'=>'Light Middles East', 'alt'=>'Light Middles East', 'src'=>Util::assetUrl('images/ieo/partners/light_middles_east.png'), ];
+					$partners[] = [	'title'=>'Continental Investments', 'alt'=>'Continental Investments', 'src'=>Util::assetUrl('images/ieo/partners/continental.png'), ];
 					
 				?>
 				<div class="row pt-5 justify-content-center partners">
@@ -1944,6 +1944,25 @@
 				@endforeach
 				</div>
 		
+				<div class="row pt-0 mt-4 pb-5 justify-content-center sponsored_fair">
+					<div class="col-6">
+						<h5 class="text-white ml-3">Sponsored by:</h5>
+						<div class="icons">
+							<h3 class="text-white p-3">The German Embassy during Light Middle East Fair</h3>
+						</div>
+					</div>
+					<div class="col-6">
+						<h5 class="text-white ml-3">Fair Participations:</h5>
+						<div class="icons">
+							<a href="https://www.gitexfuturestars.com/exhibitors/buy-any-light" target="_blank">
+								<img title="Gitex" alt="Gitex" src="{{ Util::assetUrl('images/GFS.png') }}" style="">
+							</a>
+							<a>
+								<img title="Light Middle East Fair" alt="Light Middle East Fair" src="{{ Util::assetUrl('images/ieo/partners/light_middles_east.png') }}" style="">							
+							</a>
+						</div>
+					</div>
+				</div>
 
 
 			</div>
