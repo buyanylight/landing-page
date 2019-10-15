@@ -11569,3 +11569,9 @@ footer {
   }
 }
 
+.partners .partner img {
+  margin-bottom: 130px;
+  max-width: 230px;
+  max-height: 100px;
+}
+
