@@ -394,11 +394,11 @@
 				<div class="pt-4">
 					<div class="input-group" style="height: 70px; position: relative; right: 13px;">
 	  					<div class="input-group-prepend" style="width: 135px">
-	    					<span class="input-group-text d-flex justify-content-center btn-ieo" id="basic-addon1" style="width: 100%; border-radius: 20px; position: relative; left: 15px; z-index: 1; box-shadow: 4px 0px 5px 0px #cccccc;" data-toggle="tooltip" data-placement="right" title="BAL Token">
+	    					<span class="input-group-text d-flex justify-content-center btn-ieo" id="basic-addon1" style="width: 100%; border-radius: 20px; position: relative; left: 15px; z-index: 1; box-shadow: 4px 0px 5px 0px #cccccc; background: -webkit-linear-gradient(right, #e4007b, #0000af);" data-toggle="tooltip" data-placement="right" title="BAL Token">
 	    						<img src="{{ Util::assetUrl('images/logo-white-mobile.png') }}" width="28">
 	    					</span>
 	  					</div>
-	  					<input class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 15px;">
+	  					<input class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 15px; border: 1px solid #000000;">
 					</div>
 	  				<div>
 	  					<small>The minimum investment is 5,000 USD and 25,000 BAL</small>
@@ -1618,6 +1618,27 @@
 		</div>
 	</div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="section-8" id="coreteam">
 	<div class="pt-5">
 		<div class="bg-black pt-5 pb-5">
@@ -1730,13 +1751,30 @@
 				@endforeach
 				</div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<div class="row pt-5 justify-content-center">
 				<?php
 					$coreTeam = [];
 				$coreTeam[] = [	'name'=>'Tiffany Anggot', 'title'=>'Cryptography Researcher', 'linkedin'=>'https://www.linkedin.com/in/tiffany-jel-a-367548147', 'image'=>'images/ieo/team/tiffany.jpg', 'text'=>'', ];
 				$coreTeam[] = [	'name'=>'Juliane Schreilechner', 'title'=>'Training Consultant', 'linkedin'=>'https://www.linkedin.com/in/juliane-schreilechner-142108174/', 'image'=>'images/ieo/team/juliane.jpg', 'text'=>'', ];
 				?>
 
-			<div class="row pt-5 justify-content-center">
 				@foreach($coreTeam as $tm)
 					<div class="col-3 text-center">
 						<div class="rounded-circle team-img" style="background-image: url({{ Util::assetUrl($tm['image'])}})">							
@@ -1757,10 +1795,6 @@
 					</div>
 				@endforeach
 				</div>
-
-
-
-
 
 
 
@@ -1844,10 +1878,98 @@
 
 
 
+
+
+
+
+
+
 			</div>
 		</div>
 	</div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{-- partners --}}
+{{-- ////////////////////////////////////////////////////////////// --}}
+<section class="section-8" id="partners" style="background-image: url({{ Util::assetUrl('images/ieo/partners-bg.png') }});">
+	<div class="pt-0">
+		<div class="pt-0 pb-0">
+			<div class="container">
+
+				<div class="pt-5 ">
+					<h3 class="text-center">
+						<strong>
+							<span class="header-text">
+								Our
+							</span>
+							<span class="text-white">
+								Patners
+							</span>
+						</strong> 
+					</h3>
+				</div>
+
+
+				<?php
+					$partners = [];
+					$partners[] = [	'title'=>'Almani', 'alt'=>'Almani', 'src'=>Util::assetUrl('images/ieo/partners/almani.png'), ];
+					$partners[] = [	'title'=>'CamelLED', 'alt'=>'CamelLED', 'src'=>Util::assetUrl('images/ieo/partners/camel_led.png'), ];
+					$partners[] = [	'title'=>'Dotcom Ventures', 'alt'=>'Dotcom Ventures', 'src'=>Util::assetUrl('images/ieo/partners/dotcom_ventures.png'), ];
+					$partners[] = [	'title'=>'Dubai Consult', 'alt'=>'Dubai Consult', 'src'=>Util::assetUrl('images/ieo/partners/dubai_consult.png'), ];
+					$partners[] = [	'title'=>'Asas', 'alt'=>'Asas', 'src'=>Util::assetUrl('images/ieo/partners/asas.png'), ];
+					$partners[] = [	'title'=>'German UAE', 'alt'=>'German UAE', 'src'=>Util::assetUrl('images/ieo/partners/german_uae.png'), ];
+					$partners[] = [	'title'=>'Continental Investments', 'alt'=>'Continental Investments', 'src'=>Util::assetUrl('images/ieo/partners/continental.png'), ];
+					$partners[] = [	'title'=>'Light Middles East', 'alt'=>'Light Middles East', 'src'=>Util::assetUrl('images/ieo/partners/light_middles_east.png'), ];
+					
+				?>
+				<div class="row pt-5 justify-content-center partners">
+				@foreach($partners as $prtnr)
+					<div class="col-3 text-center partner">
+						<img title="{{ $prtnr['title'] }}" alt="{{ $prtnr['alt'] }}" src="{{ $prtnr['src'] }}">
+					</div>
+				@endforeach
+				</div>
+		
+
+
+			</div>
+		</div>
+	</div>
+</section>
+{{-- ////////////////////////////////////////////////////////////// --}}
+{{-- partners --}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="section-9">
 	<div class=" h-100 d-flex align-items-center">
 		<div class="container">
