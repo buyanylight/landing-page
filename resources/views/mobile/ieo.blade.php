@@ -1562,14 +1562,14 @@
 
 				<?php
 					$partners = [];
-					$partners[] = [	'title'=>'Almani', 'alt'=>'Almani', 'src'=>Util::assetUrl('images/ieo/partners/almani.png'), ];
-					$partners[] = [	'title'=>'CamelLED', 'alt'=>'CamelLED', 'src'=>Util::assetUrl('images/ieo/partners/camel_led.png'), ];
-					$partners[] = [	'title'=>'Dotcom Ventures', 'alt'=>'Dotcom Ventures', 'src'=>Util::assetUrl('images/ieo/partners/dotcom_ventures.png'), ];
-					$partners[] = [	'title'=>'Dubai Consult', 'alt'=>'Dubai Consult', 'src'=>Util::assetUrl('images/ieo/partners/dubai_consult.png'), ];
-					$partners[] = [	'title'=>'Continental Investments', 'alt'=>'Continental Investments', 'src'=>Util::assetUrl('images/ieo/partners/continental.png'), ];
-					$partners[] = [	'title'=>'Asas', 'alt'=>'Asas', 'src'=>Util::assetUrl('images/ieo/partners/asas.png'), ];
-					$partners[] = [	'title'=>'German UAE', 'alt'=>'German UAE', 'src'=>Util::assetUrl('images/ieo/partners/german_uae.png'), ];
-					$partners[] = [	'title'=>'Light Middles East', 'alt'=>'Light Middles East', 'src'=>Util::assetUrl('images/ieo/partners/light_middles_east.png'), ];
+					$partners[] = [ 'style'=>'', 'title'=>'Almani', 'alt'=>'Almani', 'src'=>Util::assetUrl('images/ieo/partners/almani.png'), ];
+					$partners[] = [ 'style'=>'', 'title'=>'CamelLED', 'alt'=>'CamelLED', 'src'=>Util::assetUrl('images/ieo/partners/camel_led.png'), ];
+					$partners[] = [ 'style'=>'', 'title'=>'Dotcom Ventures', 'alt'=>'Dotcom Ventures', 'src'=>Util::assetUrl('images/ieo/partners/dotcom_ventures.png'), ];
+					$partners[] = [ 'style'=>'', 'title'=>'Dubai Consult', 'alt'=>'Dubai Consult', 'src'=>Util::assetUrl('images/ieo/partners/dubai_consult.png'), ];
+					$partners[] = [ 'style'=>'', 'title'=>'Continental Investments', 'alt'=>'Continental Investments', 'src'=>Util::assetUrl('images/ieo/partners/continental.png'), ];
+					$partners[] = [ 'style'=>'', 'title'=>'Asas', 'alt'=>'Asas', 'src'=>Util::assetUrl('images/ieo/partners/asas.png'), ];
+					$partners[] = [ 'style'=>'', 'title'=>'German UAE', 'alt'=>'German UAE', 'src'=>Util::assetUrl('images/ieo/partners/german_uae.png'), ];
+					$partners[] = [ 'style'=>'', 'title'=>'Light Middles East', 'alt'=>'Light Middles East', 'src'=>Util::assetUrl('images/ieo/partners/light_middles_east.png'), ];
 					
 				?>
 				<div class="row pt-4 justify-content-center partners">
@@ -1581,21 +1581,23 @@
 				</div>
 		
 
-				<div class="row pt-3 mt-5 pb-5 justify-content-center sponsored_fair">
+				<div class="row pt-3 mt-5 pb-3 justify-content-center sponsored_fair">
 					<div class="col-12">
 						<h5 class="text-white ml-3">Sponsored by:</h5>
 						<div class="icons">
-							<h3 class="text-white p-3">The German Embassy during Light Middle East Fair</h3>
+							<h3 class="text-white p-3">The German Embassy at Light Middle East Fair</h3>
 						</div>
 					</div>
-					<div class="col-12">
+					<div class="col-12 mt-3">
 						<h5 class="text-white ml-3">Fair Participations:</h5>
 						<div class="icons">
 							<a href="https://www.gitexfuturestars.com/exhibitors/buy-any-light" target="_blank">
 								<img title="Gitex" alt="Gitex" src="{{ Util::assetUrl('images/GFS.png') }}" style="">
 							</a>
 							<a>
-								<img title="Light Middle East Fair" alt="Light Middle East Fair" src="{{ Util::assetUrl('images/ieo/partners/light_middles_east.png') }}" style="">							
+								<img title="Light Middle East Fair" alt="Light Middle East Fair" 
+								src="{{ Util::assetUrl('images/ieo/partners/light_middles_east.png') }}" 
+								style="width: 70%;">
 							</a>
 						</div>
 					</div>

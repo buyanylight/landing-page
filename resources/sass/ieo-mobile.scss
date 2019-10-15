@@ -536,7 +536,8 @@ nav .dropdown-toggle::after {
 		h5 {
 			border-bottom: 1px solid;
 		    display: inline-flex;
-		    margin-bottom: 20px;		    
+		    margin-top: 15px;		    
+		    margin-bottom: 5px;		    
 		}
 		.icons {			
 			display: flex;
@@ -548,10 +549,10 @@ nav .dropdown-toggle::after {
 			    align-items: center;
 			    justify-content: center;				
 				width: 100%;
-				padding: 0 20px;
+				padding: 0 10px;
 				img {
-				    width: auto;
-				    max-height: 100px;
+				    width: 100%;
+			        margin-bottom: 20px;
 				}
 			}
 		}

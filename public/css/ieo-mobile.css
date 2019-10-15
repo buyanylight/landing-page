@@ -11630,7 +11630,8 @@ nav .dropdown-toggle::after {
   border-bottom: 1px solid;
   display: -webkit-inline-box;
   display: inline-flex;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 #partners .sponsored_fair .icons {
@@ -11650,11 +11651,11 @@ nav .dropdown-toggle::after {
   -webkit-box-pack: center;
           justify-content: center;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 #partners .sponsored_fair .icons a img {
-  width: auto;
-  max-height: 100px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
