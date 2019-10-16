@@ -326,7 +326,7 @@
                 Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
             </p>
             <div class="buttons pt-3">
-                <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL">
+                <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" target="_blank" class="btn btn-BAL">
                     <i class="far fa-file-pdf"></i>
                             &nbsp;
                     One Pager
@@ -602,7 +602,7 @@
                 Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
             </p>
             <div class="buttons pt-3">
-                <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL">
+                <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" target="_blank" class="btn btn-BAL">
                     <i class="far fa-file-pdf"></i>
                             &nbsp;
                     One Pager
