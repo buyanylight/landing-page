@@ -373,8 +373,11 @@
 		</div>
 	</div>
 </section>
+
+
+
 <section class="section-buy-token" id="section-bal-token">
-	<div class="pt-5 container">
+	<div class="pt-5 pb-5 container">
 		<h3>
 			<b>
 				<span>
@@ -409,7 +412,7 @@
   						The minimum investment is 5,000 USD and 25,000 BAL
 					</div>
 				</div>
-				<hr>
+				<hr/>
 				<div class=" mt-4">
 					<div class="row">
 						<div class="col-6">
@@ -436,7 +439,7 @@
     								</div>
   								</div>
 							</div>
-							@endforeach
+						@endforeach
 						</div>
 						<div class="col-6">
 							<h3 class="pb-3">
@@ -550,6 +553,118 @@
 
 </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+
+	$countries = ["Afghanistan", "Belarus", "Bolivia", "Bosnia & Herzegovina", "Burundi", "Central African Rep.", "Congo, Dem. Rep.", "Congo, Repub. of the", "Cook Islands", "Egypt", "Eritrea", "Guinea-Bissau", "Haiti", "Iran", "Iraq", "Lebanon", "Libya", "Maldives", "Mali", "Moldova", "Montenegro", "Puerto Rico", "Senegal", "Serbia", "Somalia", "Sudan", "Swaziland", "Syria", "Tunisia", "Ukraine", "United States", "Venezuela", "Yemen", "Zimbabwe",];
+?>
+
+
+<section class="section-4 text-white" id="jurisdiction">
+	<div class="bg-black pt-2 pb-2" style="background-image: url({{ Util::assetUrl('images/ieo/bal_bg.png') }});">
+		<div class="container pt-5 pb-0">
+			<div class="row justify-content-center">			
+				<h3>
+					<strong>
+						{{-- <span class="header-text" style="text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.45);"> --}}
+						<span class="">
+							Jurisdiction
+						</span>
+					</strong>
+				</h3>
+			</div>
+			<div class="row justify-content-center mb-4">
+				<p>
+					Available in 777 Countries. See the full list below:
+				</p>
+			</div>
+			<div class="row justify-content-center">
+				<div class="jurisdiction_table">					
+					@foreach($countries as $country)
+					<div class="items">{{ $country }}</div>
+					@endforeach					
+				</div>
+			</div>
+			<div class="column justify-content-space-between mt-5">
+				
+				<div class="col-12">					
+					<p style="text-align: right;">
+						<span>BuyAnyLight is brought to you by:</span> <br>
+						<a href="https://almani.ae" target="_blank">Almani Lighting GmbH, Germany</a> <br>
+					</p>
+				</div>
+
+				<div class="col-12">					
+					<p style="text-align: right;">
+						<a href="{{ route('terms') }}" target="_blank" class="terms">Terms & Conditions</a>
+					</p>
+				</div>					
+
+			</div>
+		
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="section-2 pt-5">
 	<div class="container pt-5 pb-5">
 		<div class="row">
@@ -603,6 +718,21 @@
 		</div>
 	</div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="section-3 pt-3 pb-5">
 	{{-- <div class="text-center pt-5">
 		<img src="{{ Util::assetUrl('images/ieo/4.png')}}" width="50%">

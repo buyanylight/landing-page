@@ -11621,3 +11621,43 @@ footer {
   max-height: 100px;
 }
 
+#jurisdiction .jurisdiction_table {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 830px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+}
+
+#jurisdiction .jurisdiction_table .items {
+  padding: 10px;
+  padding-left: 30px;
+  width: 200px;
+}
+
+#jurisdiction a,
+#jurisdiction a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#jurisdiction a.terms:hover {
+  color: #fff;
+}
+
+#jurisdiction .terms {
+  color: #fff;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
