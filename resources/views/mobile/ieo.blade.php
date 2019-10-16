@@ -520,7 +520,7 @@
 												Visa, Mastercard, Bank Transfer, Bitcoin, Ethereum
 											</small>
 					</div>
-					<button type="submit" class="btn btn-ieo" id="token-btn" disabled>
+					<button type="submit" class="btn btn-ieo" id="token-btn">
 						<b>Buy Tokens</b>
 					</button>
 		
