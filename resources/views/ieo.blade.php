@@ -532,7 +532,7 @@
 										</small>
 									</div>
 									<div class="col-md-6 col-12">
-										<button type="submit" class="btn btn-ieo w-100" style="border-radius: 10px;" disabled id="token-btn"><b>Buy Tokens Now!</b></button>
+										<button type="submit" class="btn btn-ieo w-100" style="border-radius: 10px;" id="token-btn"><b>Buy Tokens Now!</b></button>
 									</div>
 								</div>
 							</div>
