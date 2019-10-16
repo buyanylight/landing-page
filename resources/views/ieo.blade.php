@@ -1771,7 +1771,7 @@
 				<div class="row pt-5 justify-content-center">
 				<?php
 					$coreTeam = [];
-				$coreTeam[] = [	'name'=>'Tiffany Anggot', 'title'=>'Cryptography Researcher', 'linkedin'=>'https://www.linkedin.com/in/tiffany-jel-a-367548147', 'image'=>'images/ieo/team/tiffany.jpg', 'text'=>'', ];
+				$coreTeam[] = [	'name'=>'Tiffany Anggot', 'title'=>'Director Of Strategic Partnerships', 'linkedin'=>'https://www.linkedin.com/in/tiffany-jel-a-367548147', 'image'=>'images/ieo/team/tiffany.jpg', 'text'=>'', ];
 				$coreTeam[] = [	'name'=>'Juliane Schreilechner', 'title'=>'Training Consultant', 'linkedin'=>'https://www.linkedin.com/in/juliane-schreilechner-142108174/', 'image'=>'images/ieo/team/juliane.jpg', 'text'=>'', ];
 				?>
 
@@ -1948,7 +1948,7 @@
 					<div class="col-6">
 						<h5 class="text-white ml-3">Sponsored by:</h5>
 						<div class="icons">
-							<h3 class="text-white p-3">The German Embassy during Light Middle East Fair</h3>
+							<h3 class="text-white p-3">Consulate General of the Federal Republic of Germany Dubai</h3>
 						</div>
 					</div>
 					<div class="col-6">
