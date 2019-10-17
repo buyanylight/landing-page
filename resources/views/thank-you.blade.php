@@ -7,7 +7,30 @@
 
 @endsection
 
+@section('body-end-javascript')
+<script type="text/javascript">
+	$('.print-page').click(function(){
+
+		window.print();
+
+	})
+</script>
+
+@endsection
+
 @section('content')
+<style type="text/css">
+	@media print {
+    .print-page {
+      display: none;
+    }
+
+    footer {
+    	display: none;
+    }
+}
+
+</style>
 <section style="min-height: 100vh;">
 	<div class=" d-flex align-items-center justify-content-center" style="height: 100vh">
 		<div>
@@ -47,6 +70,7 @@
 				</p>
 				
 			</div>
+			<button class="btn btn-primary print-page">Print this page</button>
 		</div>
 	</div>
 </section>
