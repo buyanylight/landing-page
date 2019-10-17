@@ -76,6 +76,13 @@ class TokenController extends Controller
 	}
 
 
+
+	public function test(){
+
+		return view('test');
+	}
+
+
 	// public function token_info_code(){
 	// 	$curr = $this->GetApi('https://rest.coinapi.io/v1/exchangerate/USD?apikey=B307BEFD-28DE-499C-942C-DBC5C463B1A1');
 
