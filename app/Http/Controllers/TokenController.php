@@ -52,7 +52,7 @@ class TokenController extends Controller
 		}
 
 		usort($all_curr, function($a, $b) {
-   			 return $a['rank'] <=> $b['rank'];
+   			return $a['rank'] <=> $b['rank'];
 		});
 
 
