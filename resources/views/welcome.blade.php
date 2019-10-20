@@ -12,7 +12,7 @@
                 </b>
             </h1>
             <p class="sub-title pb-1 mb-0">
-                The global marketplace for LED lighting
+                The global platform for LED lighting
             </p>
             <div>
                 <a href="#about" class="btn btn-sm btn-outline-light ">
