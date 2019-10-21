@@ -624,6 +624,14 @@ footer{
 				}
 			}
 		}
+
+		.icons.listed {
+			flex-wrap: wrap;
+			img {
+				max-width: none;
+				max-height: 150px;
+			}
+		}		
 		.links {
 			h4 {
 				width: 100%;

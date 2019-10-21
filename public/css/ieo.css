@@ -11622,6 +11622,15 @@ footer {
   max-height: 100px;
 }
 
+#partners .sponsored_fair .icons.listed {
+  flex-wrap: wrap;
+}
+
+#partners .sponsored_fair .icons.listed img {
+  max-width: none;
+  max-height: 150px;
+}
+
 #partners .sponsored_fair .links h4 {
   width: 100%;
   padding-bottom: 0px !important;
