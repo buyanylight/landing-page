@@ -587,7 +587,8 @@ footer{
 
 
 #partners {
-    background-size: auto;
+    // background-size: auto;
+    background-size: cover;
     background-position: center;	
 	.partner {
 		margin-top: 30px;
@@ -604,7 +605,7 @@ footer{
 		h5 {
 			border-bottom: 1px solid;
 		    display: inline-flex;
-		    margin-bottom: 20px;		    
+		    margin-bottom: 10px;		    
 		}
 		.icons {			
 			display: flex;
@@ -618,9 +619,82 @@ footer{
 				padding: 0 20px;
 				img {
 				    width: auto;
+				    max-width: 200px;
 				    max-height: 100px;
 				}
 			}
 		}
+
+		.icons.listed {
+			flex-wrap: wrap;
+			img {
+				max-width: none;
+				max-height: 150px;
+			}
+		}		
+		.links {
+			h4 {
+				width: 100%;
+				padding-bottom: 0px !important;
+				a:hover {
+					text-decoration: none;
+					text-shadow: 0px 0px 20px #fff;
+				}
+				a {
+					color: #fff;
+				}
+			}			
+		}
 	}	
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+#jurisdiction {
+	.jurisdiction_table {
+	    padding: 0;
+        list-style: none;
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: flex-start;
+	    align-items: center;
+	    width: 830px;
+	    border: 1px solid;
+	    border-radius: 10px;
+	    padding: 10px;
+	    background-color: #fff;
+	    color: #000;
+	    .items {
+			padding: 10px;
+			padding-left: 30px;
+		    width: 200px;
+	    }
+	}
+
+	a,
+	a:hover {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	a.terms:hover {
+		color: #fff;
+	}
+
+	.terms {
+	    color: #fff;
+	    font-size: 0.8em;
+	    font-style: italic;
+	}
 }
