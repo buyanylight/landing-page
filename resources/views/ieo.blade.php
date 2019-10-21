@@ -865,9 +865,7 @@
 						href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0" 
 						class="">
 							<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="">
-							<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="    position: relative;
-    bottom: 35px;
-    left: 50px;">
+							<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="position: relative; bottom: 35px; left: 50px;">
                             <div>
                                 <i class="fab fa-youtube"></i> 
                                 <span>
@@ -895,9 +893,7 @@
 						href="https://www.youtube-nocookie.com/embed/5nMkricvzfc?rel=0" 
 						class="">
 							<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}" alt="">
-							<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="    position: relative;
-    bottom: 35px;
-    left: 50px;">
+							<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="position: relative; bottom: 35px;     left: 50px;">
                             <div>
                                 <i class="fab fa-youtube"></i> 
                                 <span>
@@ -2135,60 +2131,62 @@
 				@endforeach
 				</div>
 		
-				<div class="row pt-0 mt-0 pb-5 justify-content-start sponsored_fair">
+				<div class="row pt-0 pb-5 justify-content-start sponsored_fair">
 
 					<div class="col-6 mt-5">
-						<h5 class="text-white ml-3">Sponsored by:</h5>
+						<h5 class="text-white ml-3">Sponsors</h5>
 						<div class="icons">
 							<h3 class="text-white p-3">Consulate General of the Federal Republic of Germany Dubai</h3>
 						</div>
+
+
+						<h5 class="text-white ml-3">Marketing Partners</h5>
+						<div class="icons marketing-partners">
+							<a href="https://airdropalert.com/buyanylight-airdrop" target="_blank">
+								<img title="Airdrop Alert" alt="Airdrop Alert" src="{{ Util::assetUrl('images/ieo/marketing-partners/airdropalert.png') }}">
+							</a>
+							<a href="https://airdropking.io/en/airdrop/bal" target="_blank">
+								<img title="Airdrop King" alt="Airdrop King" src="{{ Util::assetUrl('images/ieo/marketing-partners/airdropking.png') }}">
+							</a>
+							<a href="https://airdropvillage.io/airdrop/buyanylight" target="_blank">
+								<img title="Airdrop Village" alt="Airdrop Village" src="{{ Util::assetUrl('images/ieo/marketing-partners/airdropvillage.png') }}">
+							</a>
+							<a href="http://webotic.ae" target="_blank">
+								<img title="Webotic.ae" alt="Webotic.ae" src="{{ Util::assetUrl('images/ieo/marketing-partners/webotic.png') }}">
+							</a>
+						</div>
+
+
+
+						<h5 class="text-white ml-3 mb-4">BuyAnyLight in News and Media</h5>
+						<div class="icons marketing-partners">
+							<a href="https://en.bitcoinwiki.org/wiki/Buyanylight" target="_blank">
+								<img title="Bitcoin Wiki" alt="Bitcoin Wiki" src="{{ Util::assetUrl('images/ieo/bitcoinwiki.svg') }}">
+							</a>
+						</div>
+
+
 					</div>
 
+
 					<div class="col-6 mt-5">
-						<h5 class="text-white ml-3">Fair Participations:</h5>
+
+						<h5 class="text-white ml-3">Road Shows</h5>
 						<div class="icons">
 							<a href="https://www.gitexfuturestars.com/exhibitors/buy-any-light" target="_blank">
 								<img title="Gitex" alt="Gitex" src="{{ Util::assetUrl('images/GFS.png') }}" style="">
 							</a>
-							<a href="https://light-middle-east.ae.messefrankfurt.com/dubai/en.html">
-								<img title="Light Middle East Fair" alt="Light Middle East Fair" src="{{ Util::assetUrl('images/ieo/partners/light_middles_east.png') }}" style="">							
+							<a href="https://light-middle-east.ae.messefrankfurt.com/dubai/en.html" target="_blank">
+								<img style="width: 175px;" title="Light Middle East Fair" alt="Light Middle East Fair" src="{{ Util::assetUrl('images/ieo/partners/light_middles_east.png') }}" style="">
+							</a>
+							<a href="https://maltablockchainsummit.com" target="_blank">
+								<img title="Malta Blockchainsummit " alt="Malta Blockchainsummit " src="{{ Util::assetUrl('images/ieo/partners/maltablockchainsummit2.svg') }}" style="">
 							</a>
 						</div>
-					</div>
 
-					<div class="col-6 mt-5">
-						<h5 class="text-white ml-3">Marketing Partners:</h5>
-						<div class="links pl-3 pt-3">
-							<h4 class="text-white">
-								<a href="https://airdropalert.com/buyanylight-airdrop" target="_blank">Airdrop Alert BuyAnyLight</a>
-							</h4>
-							<h4 class="text-white">
-								<a href="https://airdropking.io/en/airdrop/bal" target="_blank">Airdrop King BuyAnyLight</a>
-							</h4>
-							<h4 class="text-white">
-								<a href="https://airdropvillage.io/airdrop/buyanylight" target="_blank">Airdrop Village BuyAnyLight</a>
-							</h4>
 
-							<h4 class="text-white">
-								<a href="http://webotic.ae" target="_blank">Webotic.ae</a>
-							</h4>
-						</div>
 
-						<h5 class="text-white mt-5 ml-3">BuyAnyLight in News and Media</h5>
-						<div class="links pl-3 pt-3">
-							<h4 class="text-white">
-								<a href="https://en.bitcoinwiki.org/wiki/Buyanylight" target="_blank">Bitcoin Wiki</a>
-							</h4>
-						</div>						
-					</div>
-
-					{{-- <div class="col-6 mt-5">
-						<div id="icoholder-widget-big-black-listed-31234"></div>
-						<script type="application/javascript" async="async" src="https://icoholder.com/en/widget/big-black-listed/31234.js?width=5"></script>
-					</div> --}}
-
-					<div class="col-6 mt-5">
-						<h5 class="text-white ml-3 mb-4">We are listed and rated by:</h5>
+						<h5 class="text-white ml-3 mb-4">Audits & Ratings</h5>
 						<div class="icons listed">
 							<a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">
 								<img border="0" src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" alt="BuyAnyLight (BAL) ICO rating"/>
@@ -2197,18 +2195,24 @@
 								<img src="https://icoholder.com/files/img/widget/996ffd9d007033ad29a3e8e8a2ae3bdb.svg?r=-1" alt="BuyAnyLight ICOHolder"/>
 							</a>
 							<a href="https://icosbull.com/eng/ico/buyanylightbal" target="_blank"  title="BuyAnyLight (BAL) on ICObench">
-								<img style="max-width: 395px;" class="mt-4" src="https://icosbull.com/img/listed_dark.png" alt="BuyAnyLight ICO Bull"/>
+								<img style="max-width: 395px;" class="mt-2" src="https://icosbull.com/img/listed_dark.png" alt="BuyAnyLight ICO Bull"/>
 							</a>							
 						</div>
+
+
+
+
 					</div>
 
-					{{-- <div class="col-6 mt-5">
-						<h5 class="text-white ml-3">BuyAnyLight in News and Media</h5>
-						<div class="links pl-3 pt-3">
+						{{-- <div class="links pl-3 pt-3">
 							<h4 class="text-white">
 								<a href="https://en.bitcoinwiki.org/wiki/Buyanylight" target="_blank">Bitcoin Wiki</a>
 							</h4>
-						</div>
+						</div> --}}
+
+					{{-- <div class="col-6 mt-5">
+						<div id="icoholder-widget-big-black-listed-31234"></div>
+						<script type="application/javascript" async="async" src="https://icoholder.com/en/widget/big-black-listed/31234.js?width=5"></script>
 					</div> --}}
 
 				</div>

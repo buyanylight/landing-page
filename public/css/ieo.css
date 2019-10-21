@@ -11590,11 +11590,16 @@ footer {
   max-height: 100px;
 }
 
+#partners .sponsored_fair {
+  margin-top: -80px;
+}
+
 #partners .sponsored_fair h5 {
   border-bottom: 1px solid;
   display: -webkit-inline-box;
   display: inline-flex;
   margin-bottom: 10px;
+  margin-top: 80px;
 }
 
 #partners .sponsored_fair .icons {
@@ -11602,7 +11607,9 @@ footer {
   display: flex;
   -webkit-box-align: center;
           align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 #partners .sponsored_fair .icons a {
@@ -11610,10 +11617,11 @@ footer {
   display: inline-flex;
   -webkit-box-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  width: 50%;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  width: auto;
   padding: 0 20px;
+  margin-bottom: 20px;
 }
 
 #partners .sponsored_fair .icons a img {
@@ -11628,6 +11636,15 @@ footer {
 
 #partners .sponsored_fair .icons.listed img {
   max-width: none;
+  max-height: 150px;
+}
+
+#partners .sponsored_fair .icons.marketing-partners {
+  flex-wrap: wrap;
+}
+
+#partners .sponsored_fair .icons.marketing-partners img {
+  max-width: 225px;
   max-height: 150px;
 }
 

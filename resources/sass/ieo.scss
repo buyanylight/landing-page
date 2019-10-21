@@ -602,21 +602,28 @@ footer{
 		}
 	}
 	.sponsored_fair {
+		margin-top: -80px;
 		h5 {
 			border-bottom: 1px solid;
 		    display: inline-flex;
-		    margin-bottom: 10px;		    
+		    margin-bottom: 10px;	
+		    margin-top: 80px;	    
 		}
 		.icons {			
 			display: flex;
-			align-items: center;
-			justify-content: space-around;		
+			// align-items: center;
+			// justify-content: space-around;
+		    align-items: center;
+		    justify-content: flex-start;
+		    flex-wrap: wrap;			
 			a {
 				display: inline-flex;
 			    align-items: center;
-			    justify-content: center;				
-				width: 50%;
+			    justify-content: flex-start;				
+				// width: 50%;
+				width: auto;
 				padding: 0 20px;
+		        margin-bottom: 20px;
 				img {
 				    width: auto;
 				    max-width: 270px;
@@ -631,7 +638,16 @@ footer{
 				max-width: none;
 				max-height: 150px;
 			}
-		}		
+		}
+
+		.icons.marketing-partners {
+			flex-wrap: wrap;
+			img {
+				max-width: 225px;
+				max-height: 150px;
+			}
+		}
+
 		.links {
 			h4 {
 				width: 100%;
