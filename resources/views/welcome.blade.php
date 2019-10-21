@@ -12,7 +12,7 @@
                 </b>
             </h1>
             <p class="sub-title pb-1 mb-0">
-                The global marketplace for LED lighting
+                The global platform for LED lighting
             </p>
             <div>
                 <a href="#about" class="btn btn-sm btn-outline-light ">
@@ -33,7 +33,7 @@
                 </a>
             </div>
             <div class="mt-2">
-                <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" class="btn btn-sm btn-outline-light ">
+                <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" class="btn btn-sm btn-outline-light " target="_blank">
                     <div class="link-text">
                         <i class="far fa-file-pdf"></i>
                             &nbsp;
@@ -43,7 +43,7 @@
                         <i class="fas fa-arrow-right"></i> 
                     </div>
                 </a>
-                <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" class="btn btn-sm btn-outline-light ">
+                <a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" class="btn btn-sm btn-outline-light " target="_blank">
                     <div class="link-text">
                         <i class="far fa-file-pdf"></i>
                             &nbsp;
@@ -55,7 +55,7 @@
                 </a>
             </div>
             <div class="mt-2">
-                 <a href="{{ route('ieo') }}" class="btn btn-md btn-light text-dark" style=" width: 87%">
+                 <a href="{{ route('ieo') }}" class="btn btn-md btn-light text-dark" style=" width: 87%" target="_blank">
                     <div class="link-text">
                         <b>
                             FOR INVESTORS
@@ -67,7 +67,7 @@
                 </a>
             </div>
             <div class="mt-2">
-                 <a href="https://t.me/buyanylight" class="btn btn-md btn-light text-dark" style=" width: 87%">
+                 <a href="https://t.me/buyanylight" class="btn btn-md btn-light text-dark" style=" width: 87%" target="_blank">
                     <div class="link-text">
                         <b>
                             JOIN OUR COMMUNITY

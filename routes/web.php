@@ -28,6 +28,7 @@ Route::post('/buy-token', 'TokenController@buy_tokens')->name('buy-tokens');
 Route::post('/kyc', 'TokenController@kyc')->name('kyc');
 Route::get('/kyc-form/{uid}', 'TokenController@kyc_form')->name('kyc-form');
 Route::post('/thank-you', 'TokenController@kyc_confirm')->name('thank-you');
+Route::get('/test', 'TokenController@test')->name('test');
 
 Route::get('/downloads', 'PageController@downloads')->name('downloads');
 Route::get('/videos', 'PageController@videos')->name('videos');
