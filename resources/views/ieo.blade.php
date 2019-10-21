@@ -602,7 +602,7 @@
 
 
 
-
+{{-- 
 
 <section class="section-4 text-white" id="jurisdiction">
 	<div class="bg-black pt-2 pb-2" style="background-image: url({{ Util::assetUrl('images/ieo/bal_bg.png') }});">
@@ -610,7 +610,6 @@
 			<div class="row justify-content-center">			
 				<h3>
 					<strong>
-						{{-- <span class="header-text" style="text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.45);"> --}}
 						<span class="">
 							Jurisdiction
 						</span>
@@ -650,12 +649,8 @@
 			</div>
 		</div>
 
-
-
-
-
 	</div>
-</section>
+</section> --}}
 
 
 
