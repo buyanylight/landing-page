@@ -11618,8 +11618,17 @@ footer {
 
 #partners .sponsored_fair .icons a img {
   width: auto;
-  max-width: 200px;
-  max-height: 100px;
+  max-width: 270px;
+  max-height: 115px;
+}
+
+#partners .sponsored_fair .icons.listed {
+  flex-wrap: wrap;
+}
+
+#partners .sponsored_fair .icons.listed img {
+  max-width: none;
+  max-height: 150px;
 }
 
 #partners .sponsored_fair .links h4 {

@@ -619,11 +619,19 @@ footer{
 				padding: 0 20px;
 				img {
 				    width: auto;
-				    max-width: 200px;
-				    max-height: 100px;
+				    max-width: 270px;
+				    max-height: 115px;
 				}
 			}
 		}
+
+		.icons.listed {
+			flex-wrap: wrap;
+			img {
+				max-width: none;
+				max-height: 150px;
+			}
+		}		
 		.links {
 			h4 {
 				width: 100%;
