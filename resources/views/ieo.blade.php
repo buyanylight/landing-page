@@ -602,9 +602,9 @@
 
 
 
-{{-- 
 
-<section class="section-4 text-white" id="jurisdiction">
+
+<section class="section-4 text-white" id="jurisdiction" style="display: none !important;">
 	<div class="bg-black pt-2 pb-2" style="background-image: url({{ Util::assetUrl('images/ieo/bal_bg.png') }});">
 		<div class="container pt-5 pb-0">
 			<div class="row justify-content-center">			
@@ -650,7 +650,7 @@
 		</div>
 
 	</div>
-</section> --}}
+</section>
 
 
 
@@ -2161,18 +2161,10 @@
 							<h4 class="text-white">
 								<a href="https://airdropvillage.io/airdrop/buyanylight" target="_blank">Airdrop Village BuyAnyLight</a>
 							</h4>
-
 							<h4 class="text-white">
 								<a href="http://webotic.a" target="_blank">Webotic.ae</a>
 							</h4>
 						</div>
-
-						<h5 class="text-white mt-5 ml-3">BuyAnyLight in News and Media</h5>
-						<div class="links pl-3 pt-3">
-							<h4 class="text-white">
-								<a href="https://en.bitcoinwiki.org/wiki/Buyanylight" target="_blank">Bitcoin Wiki</a>
-							</h4>
-						</div>						
 					</div>
 
 					{{-- <div class="col-6 mt-5">
@@ -2182,7 +2174,7 @@
 
 					<div class="col-6 mt-5">
 						<h5 class="text-white ml-3 mb-4">We are listed and rated by:</h5>
-						<div class="icons listed">
+						<div class="icons">
 							<a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">
 								<img border="0" src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" alt="BuyAnyLight (BAL) ICO rating"/>
 							</a>
@@ -2190,19 +2182,19 @@
 								<img src="https://icoholder.com/files/img/widget/996ffd9d007033ad29a3e8e8a2ae3bdb.svg?r=-1" alt="BuyAnyLight ICOHolder"/>
 							</a>
 							<a href="https://icosbull.com/eng/ico/buyanylightbal" target="_blank"  title="BuyAnyLight (BAL) on ICObench">
-								<img style="max-width: none;" class="mt-4" src="https://icosbull.com/img/listed_dark.png" alt="BuyAnyLight ICO Bull"/>
+								<img src="https://icosbull.com/img/listed_dark.png" alt="BuyAnyLight ICO Bull"/>
 							</a>							
 						</div>
 					</div>
 
-					{{-- <div class="col-6 mt-5">
+					<div class="col-6 mt-5">
 						<h5 class="text-white ml-3">BuyAnyLight in News and Media</h5>
 						<div class="links pl-3 pt-3">
 							<h4 class="text-white">
 								<a href="https://en.bitcoinwiki.org/wiki/Buyanylight" target="_blank">Bitcoin Wiki</a>
 							</h4>
 						</div>
-					</div> --}}
+					</div>
 
 				</div>
 			</div>
