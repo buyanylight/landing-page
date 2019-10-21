@@ -11570,7 +11570,7 @@ footer {
 }
 
 #partners {
-  background-size: auto;
+  background-size: cover;
   background-position: center;
 }
 
@@ -11594,7 +11594,7 @@ footer {
   border-bottom: 1px solid;
   display: -webkit-inline-box;
   display: inline-flex;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #partners .sponsored_fair .icons {
@@ -11618,7 +11618,22 @@ footer {
 
 #partners .sponsored_fair .icons a img {
   width: auto;
+  max-width: 200px;
   max-height: 100px;
+}
+
+#partners .sponsored_fair .links h4 {
+  width: 100%;
+  padding-bottom: 0px !important;
+}
+
+#partners .sponsored_fair .links h4 a:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 20px #fff;
+}
+
+#partners .sponsored_fair .links h4 a {
+  color: #fff;
 }
 
 #jurisdiction .jurisdiction_table {
@@ -11628,7 +11643,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   -webkit-box-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
           align-items: center;
   width: 830px;

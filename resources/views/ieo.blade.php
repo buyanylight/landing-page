@@ -603,11 +603,6 @@
 
 
 
-<?php
-
-	$countries = ["Afghanistan", "Belarus", "Bolivia", "Bosnia & Herzegovina", "Burundi", "Central African Rep.", "Congo, Dem. Rep.", "Congo, Repub. of the", "Cook Islands", "Egypt", "Eritrea", "Guinea-Bissau", "Haiti", "Iran", "Iraq", "Lebanon", "Libya", "Maldives", "Mali", "Moldova", "Montenegro", "Puerto Rico", "Senegal", "Serbia", "Somalia", "Sudan", "Swaziland", "Syria", "Tunisia", "Ukraine", "United States", "Venezuela", "Yemen", "Zimbabwe",];
-?>
-
 
 <section class="section-4 text-white" id="jurisdiction">
 	<div class="bg-black pt-2 pb-2" style="background-image: url({{ Util::assetUrl('images/ieo/bal_bg.png') }});">
@@ -628,7 +623,10 @@
 				</p>
 			</div>
 			<div class="row justify-content-center">
-				<div class="jurisdiction_table">					
+				<div class="jurisdiction_table">
+					<?php
+						$countries = ["Afghanistan", "Belarus", "Bolivia", "Bosnia & Herzegovina", "Burundi", "Central African Rep.", "Congo, Dem. Rep.", "Congo, Repub. of the", "Cook Islands", "Egypt", "Eritrea", "Guinea-Bissau", "Haiti", "Iran", "Iraq", "Lebanon", "Libya", "Maldives", "Mali", "Moldova", "Montenegro", "Puerto Rico", "Senegal", "Serbia", "Somalia", "Sudan", "Swaziland", "Syria", "Tunisia", "Ukraine", "United States", "Venezuela", "Yemen", "Zimbabwe",];
+					?>
 					@foreach($countries as $country)
 					<div class="items">{{ $country }}</div>
 					@endforeach					
@@ -650,10 +648,46 @@
 				</div>					
 
 			</div>
-		
 		</div>
+
+
+
+
+
 	</div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2060,8 +2094,9 @@
 <section class="section-8" id="partners" style="background-image: url({{ Util::assetUrl('images/ieo/partners-bg.png') }});">
 	<div class="pt-0">
 		<div class="pt-0 pb-0">
-			<div class="container">
 
+
+			<div class="container">
 				<div class="pt-5 ">
 					<h3 class="text-center">
 						<strong>
@@ -2088,7 +2123,7 @@
 					$partners[] = [	'title'=>'Continental Investments', 'alt'=>'Continental Investments', 'src'=>Util::assetUrl('images/ieo/partners/continental.png'), 'link'=>'http://www.continvest.net'];
 					
 				?>
-				<div class="row pt-5 justify-content-center partners">
+				<div class="row pt-4 justify-content-center partners">
 				@foreach($partners as $prtnr)
 					<div class="col-3 text-center partner">
 						<a href="{{$prtnr['link']}}" target="_blank">
@@ -2098,14 +2133,16 @@
 				@endforeach
 				</div>
 		
-				<div class="row pt-0 mt-4 pb-5 justify-content-center sponsored_fair">
-					<div class="col-6">
+				<div class="row pt-0 mt-0 pb-5 justify-content-start sponsored_fair">
+
+					<div class="col-6 mt-5">
 						<h5 class="text-white ml-3">Sponsored by:</h5>
 						<div class="icons">
 							<h3 class="text-white p-3">Consulate General of the Federal Republic of Germany Dubai</h3>
 						</div>
 					</div>
-					<div class="col-6">
+
+					<div class="col-6 mt-5">
 						<h5 class="text-white ml-3">Fair Participations:</h5>
 						<div class="icons">
 							<a href="https://www.gitexfuturestars.com/exhibitors/buy-any-light" target="_blank">
@@ -2116,15 +2153,76 @@
 							</a>
 						</div>
 					</div>
+
+					<div class="col-6 mt-5">
+						<h5 class="text-white ml-3">Marketing Partners:</h5>
+						<div class="links pl-3 pt-3">
+							<h4 class="text-white">
+								<a href="https://airdropalert.com/buyanylight-airdrop" target="_blank">Airdrop Alert BuyAnyLight</a>
+							</h4>
+							<h4 class="text-white">
+								<a href="https://airdropking.io/en/airdrop/bal" target="_blank">Airdrop King BuyAnyLight</a>
+							</h4>
+							<h4 class="text-white">
+								<a href="https://airdropvillage.io/airdrop/buyanylight" target="_blank">Airdrop Village BuyAnyLight</a>
+							</h4>
+							<h4 class="text-white">
+								<a href="http://webotic.a" target="_blank">Webotic.ae</a>
+							</h4>
+						</div>
+					</div>
+
+					{{-- <div class="col-6 mt-5">
+						<div id="icoholder-widget-big-black-listed-31234"></div>
+						<script type="application/javascript" async="async" src="https://icoholder.com/en/widget/big-black-listed/31234.js?width=5"></script>
+					</div> --}}
+
+					<div class="col-6 mt-5">
+						<h5 class="text-white ml-3 mb-4">We are listed and rated by:</h5>
+						<div class="icons">
+							<a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">
+								<img border="0" src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" alt="BuyAnyLight (BAL) ICO rating"/>
+							</a>
+							<a href="https://icoholder.com/en/buyanylight-31234" target="_blank"  title="BuyAnyLight ICOHolder">
+								<img src="https://icoholder.com/files/img/widget/996ffd9d007033ad29a3e8e8a2ae3bdb.svg?r=-1" alt="BuyAnyLight ICOHolder"/>
+							</a>
+							<a href="https://icosbull.com/eng/ico/buyanylightbal" target="_blank"  title="BuyAnyLight (BAL) on ICObench">
+								<img src="https://icosbull.com/img/listed_dark.png" alt="BuyAnyLight ICO Bull"/>
+							</a>							
+						</div>
+					</div>
+
+					<div class="col-6 mt-5">
+						<h5 class="text-white ml-3">BuyAnyLight in News and Media</h5>
+						<div class="links pl-3 pt-3">
+							<h4 class="text-white">
+								<a href="https://en.bitcoinwiki.org/wiki/Buyanylight" target="_blank">Bitcoin Wiki</a>
+							</h4>
+						</div>
+					</div>
+
 				</div>
-
-
 			</div>
+
+
+
+
+
 		</div>
 	</div>
 </section>
 {{-- ////////////////////////////////////////////////////////////// --}}
 {{-- partners --}}
+
+
+
+
+
+
+
+
+
+
 
 
 
