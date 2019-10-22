@@ -11626,6 +11626,7 @@ nav .dropdown-toggle::after {
   max-height: 100px;
 }
 
+#partners .sponsored_fair h2,
 #partners .sponsored_fair h5 {
   border-bottom: 1px solid;
   display: -webkit-inline-box;
@@ -11655,7 +11656,8 @@ nav .dropdown-toggle::after {
 }
 
 #partners .sponsored_fair .icons a img {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   margin-bottom: 20px;
 }
 

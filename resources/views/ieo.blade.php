@@ -2099,10 +2099,11 @@
 {{-- ////////////////////////////////////////////////////////////// --}}
 <section class="section-8" id="partners" style="background-image: url({{ Util::assetUrl('images/ieo/partners-bg.png') }});">
 	<div class="pt-0">
-			<div class="container">
+			<div class="container pt-5 pb-5">
 
+				<div class="row pt-5 pb-5 mb-3 justify-content-center sponsored_fair">
 
-				<div class="pt-5 ">
+				{{-- <div class="pt-5 ">
 					<h3 class="text-center">
 						<strong>
 							<span class="text-white">
@@ -2113,126 +2114,159 @@
 							</span>
 						</strong> 
 					</h3>
-				</div>
+				</div> --}}
 
 
 				<?php
 					$partners = [];
-					$partners[] = [	'title'=>'Almani', 'alt'=>'Almani', 'src'=>Util::assetUrl('images/ieo/partners/almani.png'), 'link'=>'https://almani.ae'];
-					$partners[] = [	'title'=>'CamelLED', 'alt'=>'CamelLED', 'src'=>Util::assetUrl('images/ieo/partners/camel_led.png'), 'link'=>'https://camel.almani.ae'];
-					$partners[] = [	'title'=>'Dotcom Ventures', 'alt'=>'Dotcom Ventures', 'src'=>Util::assetUrl('images/ieo/partners/dotcom_ventures.png'), 'link'=>'https://dotcomv.com'];
-					$partners[] = [	'title'=>'Dubai Consult', 'alt'=>'Dubai Consult', 'src'=>Util::assetUrl('images/ieo/partners/dubai_consult.png'), 'link'=>'https://dubaiconsult.com/'];
-					$partners[] = [	'title'=>'German Embassy UAE', 'alt'=>'German Embassy UAE', 'src'=>Util::assetUrl('images/ieo/partners/german_uae.png'), 'link'=>'https://uae.diplo.de/ae-en/vertretungen/generalkonsulat1' ];
-					$partners[] = [	'title'=>'Asas', 'alt'=>'Asas', 'src'=>Util::assetUrl('images/ieo/partners/asas.png'), 'link'=>'https://asasholding.ae'];
-					$partners[] = [	'title'=>'Light Middles East', 'alt'=>'Light Middles East', 'src'=>Util::assetUrl('images/ieo/partners/light_middles_east.png'), 'link'=>'https://light-middle-east.ae.messefrankfurt.com/dubai/en.html'];
-					$partners[] = [	'title'=>'Continental Investments', 'alt'=>'Continental Investments', 'src'=>Util::assetUrl('images/ieo/partners/continental.png'), 'link'=>'http://www.continvest.net'];
-					
+					$partners[] = [	'style'=>'', 'title'=>'Almani', 'alt'=>'Almani', 'src'=>Util::assetUrl('images/ieo/partners/almani.png'), 'link'=>'https://almani.ae'];
+					$partners[] = [	'style'=>'', 'title'=>'CamelLED', 'alt'=>'CamelLED', 'src'=>Util::assetUrl('images/ieo/partners/camel_led.png'), 'link'=>'https://camel.almani.ae'];
+					$partners[] = [	'style'=>'', 'title'=>'Dotcom Ventures', 'alt'=>'Dotcom Ventures', 'src'=>Util::assetUrl('images/ieo/partners/dotcom_ventures.png'), 'link'=>'https://dotcomv.com'];
+					$partners[] = [	'style'=>'', 'title'=>'Dubai Consult', 'alt'=>'Dubai Consult', 'src'=>Util::assetUrl('images/ieo/partners/dubai_consult.png'), 'link'=>'https://dubaiconsult.com/'];
+					$partners[] = [	'style'=>'', 'title'=>'German Embassy UAE', 'alt'=>'German Embassy UAE', 'src'=>Util::assetUrl('images/ieo/partners/german_uae.png'), 'link'=>'https://uae.diplo.de/ae-en/vertretungen/generalkonsulat1' ];
+					$partners[] = [	'style'=>'', 'title'=>'Asas', 'alt'=>'Asas', 'src'=>Util::assetUrl('images/ieo/partners/asas.png'), 'link'=>'https://asasholding.ae'];
+					// $partners[] = [	'style'=>'', 'title'=>'Light Middle East', 'alt'=>'Light Middle East', 'src'=>Util::assetUrl('images/ieo/partners/light_middles_east.png'), 'link'=>'https://light-middle-east.ae.messefrankfurt.com/dubai/en.html'];
+					$partners[] = [	'style'=>'', 'title'=>'Light Middle East', 'alt'=>'Light Middle East', 'src'=>Util::assetUrl('images/ieo/partners/madeingermany.png'), 'link'=>'https://light-middleeast.german-pavilion.com/en/home/'];
+					$partners[] = [	'style'=>'', 'title'=>'Continental Investments', 'alt'=>'Continental Investments', 'src'=>Util::assetUrl('images/ieo/partners/continental.png'), 'link'=>'http://www.continvest.net'];
 				?>
-				<div class="row pt-5 justify-content-center sponsored_fair">
-
-					<div class="col-12 mt-5">
-						<h5 class="text-white ml-3">Partners</h5>
-						<div class="icons marketing-partners">
-							@foreach($partners as $prtnr)					
-							<a href="{{$prtnr['link']}}" target="_blank">
+				<div class="col-12">
+					<h2 class="text-white ml-3 mt-0">Partners</h2>
+					<div class="icons">
+						@foreach($partners as $prtnr)
+						<div class="col-3 partner">								
+							<a href="{{$prtnr['link']}}" target="_blank" title="{{ $prtnr['title'] }}" alt="{{ $prtnr['alt'] }}">
 								<img title="{{ $prtnr['title'] }}" alt="{{ $prtnr['alt'] }}" src="{{ $prtnr['src'] }}">
 							</a>
-							@endforeach
 						</div>
+						@endforeach
 					</div>
 				</div>
 		
-				<div class="row pt-0 pb-5 justify-content-start sponsored_fair">
 
-					<div class="col-6 mt-5">
-						<h5 class="text-white ml-3">Sponsors</h5>
-						<div class="icons">
-							<h3 class="text-white p-3">Consulate General of the Federal Republic of Germany Dubai</h3>
-						</div>
-
-
-						<h5 class="text-white ml-3">Marketing Partners</h5>
-						<div class="icons marketing-partners">
-							<a href="https://airdropalert.com/buyanylight-airdrop" target="_blank">
-								<img title="Airdrop Alert" alt="Airdrop Alert" src="{{ Util::assetUrl('images/ieo/marketing-partners/airdropalert.png') }}">
-							</a>
-							<a href="https://airdropking.io/en/airdrop/bal" target="_blank">
-								<img title="Airdrop King" alt="Airdrop King" src="{{ Util::assetUrl('images/ieo/marketing-partners/airdropking.png') }}">
-							</a>
-							<a href="https://airdropvillage.io/airdrop/buyanylight" target="_blank">
-								<img title="Airdrop Village" alt="Airdrop Village" src="{{ Util::assetUrl('images/ieo/marketing-partners/airdropvillage.png') }}">
-							</a>
-							<a href="http://webotic.ae" target="_blank">
-								<img title="Webotic.ae" alt="Webotic.ae" src="{{ Util::assetUrl('images/ieo/marketing-partners/webotic.png') }}">
+				<?php
+					$roadshows = [];					
+					$roadshows[] = [ 'style'=>"", 'title'=>"Gitex Future Stars", 'link'=>"https://www.gitexfuturestars.com/exhibitors/buy-any-light", 'src'=>"images/ieo/partners/gitexfuturestars.png", ];
+					$roadshows[] = [ 'style'=>"", 'title'=>"Malta Blockchain Summit", 'link'=>"https://maltablockchainsummit.com", 'src'=>"images/ieo/partners/maltablockchainsummit.png", ];
+					$roadshows[] = [ 'style'=>"", 'title'=>"Future Blockchain Summit", 'link'=>"https://www.futureblockchainsummit.com/", 'src'=>"images/ieo/partners/futureblockchainsummit.png", ];
+					$roadshows[] = [ 'style'=>"", 'title'=>"Light Middle East Fair", 'link'=>"https://light-middle-east.ae.messefrankfurt.com/dubai/en.html", 'src'=>"images/ieo/partners/light_middles_east_date.png", ];
+				?>
+				<div class="col-12 mt-10">
+					<h2 class="text-white ml-3 mt-0">Road Shows</h2>
+					<div class="icons">
+						@foreach($roadshows as $rdshw)
+						<div class="col-3 partner">								
+							<a href="{{$rdshw['link']}}" target="_blank" title="{{ $rdshw['title'] }}" alt="{{ $rdshw['title'] }}" >
+								<img src="{{ Util::assetUrl($rdshw['src']) }}">
 							</a>
 						</div>
+						@endforeach
+					</div>
+				</div>
+		
+		
 
-
-
-						<h5 class="text-white ml-3 mb-4">BuyAnyLight in News and Media</h5>
-						<div class="icons marketing-partners">
-							<a href="https://en.bitcoinwiki.org/wiki/Buyanylight" target="_blank">
-								<img title="Bitcoin Wiki" alt="Bitcoin Wiki" src="{{ Util::assetUrl('images/ieo/bitcoinwiki.svg') }}">
+				<?php
+					
+					// $datas[] = [ 'style'=>"", 'title'=>"", 'link'=>"", 'src'=>"", ];					
+					$datas = [];
+					$datas[] = [ 'style'=>"", 'title'=>"Airdrop Village", 'link'=>"https://airdropvillage.io/airdrop/buyanylight", 'src'=>"images/ieo/marketing-partners/airdropvillage.png", ];
+					$datas[] = [ 'style'=>"", 'title'=>"Airdrop King", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/marketing-partners/airdropking.png", ];
+					$datas[] = [ 'style'=>"", 'title'=>"Webotic.ae", 'link'=>"http://webotic.ae", 'src'=>"images/ieo/marketing-partners/webotic.png", ];
+					$datas[] = [ 'style'=>"", 'title'=>"Airdrop Alert", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/marketing-partners/airdropalert.png", ];
+				?>
+				<div class="col-5 mt-10">
+					<h2 class="text-white ml-3 mt-0">Marketing Partners</h2>
+					<div class="icons">
+						@foreach($datas as $data)
+						<div class="col-6 partner small">
+							<a href="{{$data['link']}}" target="_blank" title="{{ $data['title'] }}" alt="{{ $data['title'] }}" >
+								{{-- <img src="{{ Util::assetUrl($data['src']) }}"> --}}
+								<div class="icon" style="background-image: url({{ Util::assetUrl($data['src']) }})"></div>
 							</a>
 						</div>
+						@endforeach
+					</div>
+				</div>
+				
+				<div class="col-2 mt-10">
+				</div>
 
+				<?php
+					
+					// $datas[] = [ 'style'=>"", 'title'=>"", 'link'=>"", 'src'=>"", ];					
+					$datas = [];
+					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICORATING", 'link'=>"https://icobench.com/ico/buyanylight-bal", 'src'=>"images/ieo/partners/icoholder.png", ];
+					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOHOLDER", 'link'=>"https://icobench.com/ico/buyanylight-bal", 'src'=>"images/ieo/partners/icobench.png", ];
+					//$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOSBULL", 'link'=>"https://icosbull.com/eng/ico/buyanylightbal", 'src'=>"images/ieo/partners/icosbull.png", ];
+				?>
+				<div class="col-5 mt-10">
+					<h2 class="text-white ml-3 mt-0">Audits and Ratings</h2>
+					<div class="icons">
+						@foreach($datas as $data)
+						<div class="col-6 partner">
+							<a href="{{$data['link']}}" target="_blank" title="{{ $data['title'] }}" alt="{{ $data['title'] }}" >
+								{{-- <img src="{{ Util::assetUrl($data['src']) }}"> --}}
+								<div class="icon" style="background-image: url({{ Util::assetUrl($data['src']) }})"></div>
+							</a>
+						</div>
+						@endforeach
+						
+
+						<?php $data = [ 'style'=>"", 'title'=>"BuyAnyLight ICOSBULL", 'link'=>"https://icosbull.com/eng/ico/buyanylightbal", 'src'=>"images/ieo/partners/icosbull.png", ]; ?>						
+						<div class="col-12 partner">
+							<a href="{{$data['link']}}" target="_blank" title="{{ $data['title'] }}" alt="{{ $data['title'] }}" >
+								{{-- <img src="{{ Util::assetUrl($data['src']) }}"> --}}
+								<div class="icon" style="background-image: url({{ Util::assetUrl($data['src']) }})"></div>
+							</a>
+						</div>
 
 					</div>
+				</div>
+		
+			
+				
 
-
-					<div class="col-6 mt-5">
-
-						<h5 class="text-white ml-3">Road Shows</h5>
-						<div class="icons">
-							<a href="https://www.gitexfuturestars.com/exhibitors/buy-any-light" target="_blank">
-								<img title="Gitex" alt="Gitex" src="{{ Util::assetUrl('images/GFS.png') }}" style="">
-							</a>
-							<a href="https://light-middle-east.ae.messefrankfurt.com/dubai/en.html" target="_blank">
-								<img style="width: 175px;" title="Light Middle East Fair" alt="Light Middle East Fair" src="{{ Util::assetUrl('images/ieo/partners/light_middles_east.png') }}" style="">
-							</a>
-							<a href="https://maltablockchainsummit.com" target="_blank">
-								<img title="Malta Blockchainsummit " alt="Malta Blockchainsummit " src="{{ Util::assetUrl('images/ieo/partners/maltablockchainsummit2.svg') }}" style="">
+				<?php
+					
+					// $datas[] = [ 'style'=>"", 'title'=>"", 'link'=>"", 'src'=>"", ];					
+					$datas = [];
+					$datas[] = [ 'style'=>"", 'title'=>"Bitcoin Wiki", 'link'=>"https://en.bitcoinwiki.org/wiki/Buyanylight", 'src'=>"images/ieo/partners/bitcoinwiki.png", ];
+				?>
+				<div class="col-5 mt-10">
+					<h2 class="text-white ml-3 mt-0">BuyAnyLight in News and Media</h2>
+					<div class="icons">
+						@foreach($datas as $data)
+						<div class="col-12 partner">
+							<a href="{{$data['link']}}" target="_blank" title="{{ $data['title'] }}" alt="{{ $data['title'] }}" >
+								{{-- <img src="{{ Util::assetUrl($data['src']) }}"> --}}
+								<div class="icon" style="background-image: url({{ Util::assetUrl($data['src']) }})"></div>
 							</a>
 						</div>
-
-
-
-						<h5 class="text-white ml-3 mb-4">Audits & Ratings</h5>
-						<div class="icons listed">
-							<a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">
-								<img border="0" src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" alt="BuyAnyLight (BAL) ICO rating"/>
-							</a>
-							<a href="https://icoholder.com/en/buyanylight-31234" target="_blank"  title="BuyAnyLight ICOHolder">
-								<img src="https://icoholder.com/files/img/widget/996ffd9d007033ad29a3e8e8a2ae3bdb.svg?r=-1" alt="BuyAnyLight ICOHolder"/>
-							</a>
-							<a href="https://icosbull.com/eng/ico/buyanylightbal" target="_blank"  title="BuyAnyLight (BAL) on ICObench">
-								<img style="max-width: 395px;" class="mt-2" src="https://icosbull.com/img/listed_dark.png" alt="BuyAnyLight ICO Bull"/>
-							</a>							
-						</div>
-
-
-
-
+						@endforeach
 					</div>
-
-						{{-- <div class="links pl-3 pt-3">
-							<h4 class="text-white">
-								<a href="https://en.bitcoinwiki.org/wiki/Buyanylight" target="_blank">Bitcoin Wiki</a>
-							</h4>
-						</div> --}}
-
-					{{-- <div class="col-6 mt-5">
-						<div id="icoholder-widget-big-black-listed-31234"></div>
-						<script type="application/javascript" async="async" src="https://icoholder.com/en/widget/big-black-listed/31234.js?width=5"></script>
-					</div> --}}
-
+				</div>
+					
+				
+				
+				<div class="col-2 mt-10">
 				</div>
 
 
+				<div class="col-5 mt-10">
+					<h2 class="text-white ml-3 mt-0">Sponsors</h2>
+					<div class="icons">
+						<h3 class="text-white p-3">Consulate General of the Federal Republic of Germany Dubai</h3>
+					</div>
 
-
+				</div>
+		
+			
 
 			</div>
+
+
+
+		</div>
 	</div>
 </section>
 {{-- ////////////////////////////////////////////////////////////// --}}

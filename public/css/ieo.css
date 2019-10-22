@@ -11569,6 +11569,10 @@ footer {
   }
 }
 
+.mt-10 {
+  margin-top: 100px;
+}
+
 #partners {
   background-size: cover;
   background-position: center;
@@ -11576,7 +11580,7 @@ footer {
 
 #partners .partner {
   margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 0;
   display: -webkit-inline-box;
   display: inline-flex;
   -webkit-box-pack: center;
@@ -11585,17 +11589,14 @@ footer {
           align-items: center;
 }
 
-#partners .partner img {
-  max-width: 230px;
-  max-height: 100px;
-}
-
+#partners .sponsored_fair h2,
 #partners .sponsored_fair h5 {
   border-bottom: 1px solid;
   display: -webkit-inline-box;
   display: inline-flex;
   margin-bottom: 10px;
   margin-top: 80px;
+  font-size: 26px;
 }
 
 #partners .sponsored_fair .icons {
@@ -11613,17 +11614,31 @@ footer {
   display: inline-flex;
   -webkit-box-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-          justify-content: flex-start;
-  width: auto;
-  padding: 0 20px;
-  margin-bottom: 20px;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0px;
+  height: 105px;
 }
 
 #partners .sponsored_fair .icons a img {
+  max-width: 100%;
   width: auto;
-  max-width: 270px;
-  max-height: 115px;
+  max-height: 100%;
+  height: auto;
+}
+
+#partners .sponsored_fair .icons a .small {
+  margin-top: 0;
+}
+
+#partners .sponsored_fair .icons .icon {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #partners .sponsored_fair .icons.listed {
@@ -11640,8 +11655,10 @@ footer {
 }
 
 #partners .sponsored_fair .icons.marketing-partners img {
-  max-width: 225px;
-  max-height: 150px;
+  max-width: 100%;
+  width: auto;
+  max-height: 100%;
+  height: auto;
 }
 
 #partners .sponsored_fair .links h4 {

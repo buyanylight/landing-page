@@ -126,8 +126,8 @@ nav{
 
 }
 .one-map {
-  	
-  	padding-top: 0px;
+	
+	padding-top: 0px;
 	&:before {
 
 		content: '';
@@ -139,11 +139,11 @@ nav{
 		// top: -15px;
 		// left: 42%;
 		transition: all 200ms ease-in; 
-	    
-	    position: relative;
-	    top: -15px;
-	    display: flex;
-	    margin: auto;
+		
+		position: relative;
+		top: -15px;
+		display: flex;
+		margin: auto;
 
 	}
 }
@@ -230,20 +230,20 @@ nav{
 // }
 
 .team-img{
-    width: 90px;
-    height: 90px;
-    background: white;
-    padding: 10px;
-    background-size: cover;
-    background-position: center;
-    margin: auto;
+	width: 90px;
+	height: 90px;
+	background: white;
+	padding: 10px;
+	background-size: cover;
+	background-position: center;
+	margin: auto;
 	position: relative;
 }
 
 .linkedin {
 	position: absolute;
-    right: -25px;
-    bottom: -15px;		
+	right: -25px;
+	bottom: -15px;		
 }
 
 
@@ -354,8 +354,8 @@ footer{
 		}
 		h3 > span {
 			color: #000;
-		    font-weight: 900;
-		    font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+			font-weight: 900;
+			font-family: Arial Black,Arial Bold,Gadget,sans-serif;
 		}
 
 		.small-desc {
@@ -423,10 +423,10 @@ footer{
 				span:nth-child(3) {
 					font-size: 10px;
 					font-weight: normal;
-				    display: block;
-				    width: 100%;
-				    background-color: #a90c74;
-				    padding: 3px 0;
+					display: block;
+					width: 100%;
+					background-color: #a90c74;
+					padding: 3px 0;
 				}
 			}
 
@@ -475,7 +475,7 @@ footer{
 
 	.progress{
 		border-radius: 28px;
-    	height: 28px;
+		height: 28px;
 
 	}
 
@@ -490,8 +490,8 @@ footer{
 .vision-mission {
 
 	.video {
-	    width: 90%;
-	    border-radius: 35px;
+		width: 90%;
+		border-radius: 35px;
 	}
 
 }
@@ -523,10 +523,10 @@ footer{
 }
 .inputBox .inputText{
 	position: absolute;
-    font-size: 12px;
-    line-height: 0px;
-    transition: .5s;
-    opacity: .5;
+	font-size: 12px;
+	line-height: 0px;
+	transition: .5s;
+	opacity: .5;
 }
 .inputBox .input{
 	position: relative;
@@ -534,20 +534,20 @@ footer{
 	height: 50px;
 	background: transparent;
 	border: none;
-    outline: none;
-    font-size: 12px;
-    border-bottom: 1px solid rgba(0,0,0,.5);
-    margin-top:10px;
+	outline: none;
+	font-size: 12px;
+	border-bottom: 1px solid rgba(0,0,0,.5);
+	margin-top:10px;
 
 }
 
 .formBox {
-    padding: 50px;
+	padding: 50px;
 }
 
 .location {
-    padding: 20px;
-    padding-top: 50px;
+	padding: 20px;
+	padding-top: 50px;
 }
 
 
@@ -579,56 +579,82 @@ footer{
 
 
 
-
-
-
-
-
+.mt-10 {
+	margin-top: 100px;
+}
 
 
 #partners {
-    // background-size: auto;
-    background-size: cover;
-    background-position: center;	
+	// background-size: auto;
+	background-size: cover;
+	background-position: center;	
 	.partner {
 		margin-top: 30px;
-		margin-bottom: 100px;
-	    display: inline-flex;
-	    justify-content: center;
-	    align-items: center;		
-		img {
-		    max-width: 230px;
-		    max-height: 100px;			
-		}
+		// margin-bottom: 25px;
+		margin-bottom: 0;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;		
+		// img {
+		// 	// max-width: 230px;
+		// 	max-width: 100%;
+		// 	width: 100%;
+		// 	max-height: 100px;			
+		// }
 	}
 	.sponsored_fair {
 		// margin-top: -80px;
-		h5 {
+		h2,h5 {
 			border-bottom: 1px solid;
-		    display: inline-flex;
-		    margin-bottom: 10px;	
-		    margin-top: 80px;	    
+			display: inline-flex;
+			margin-bottom: 10px;	
+			margin-top: 80px;
+		    font-size: 26px;
 		}
 		.icons {			
 			display: flex;
 			// align-items: center;
 			// justify-content: space-around;
-		    align-items: center;
-		    justify-content: flex-start;
-		    flex-wrap: wrap;			
+			align-items: center;
+			justify-content: flex-start;
+			flex-wrap: wrap;			
 			a {
 				display: inline-flex;
-			    align-items: center;
-			    justify-content: flex-start;				
+				align-items: center;
+				// justify-content: flex-start;				
+				justify-content: center;				
 				// width: 50%;
-				width: auto;
-				padding: 0 20px;
-		        margin-bottom: 20px;
+				width: 100%;
+				// padding: 0 10px;
+				padding: 0;
+				// margin-bottom: 20px;
+				margin-bottom: 0px;
+				// height: 150px;
+				height: 105px;
+				// img {
+				// 	width: auto;
+				// 	max-width: 270px;
+				// 	max-height: 115px;
+				// }
 				img {
-				    width: auto;
-				    max-width: 270px;
-				    max-height: 115px;
+					max-width: 100%;
+					width: auto;
+					max-height: 100%;
+					height: auto;
 				}
+
+				.small {
+				    margin-top: 0;
+				}
+
+			}
+
+			.icon {
+			    width: 100%;
+			    height: 100%;
+			    background-size: contain;
+			    background-position: center;
+			    background-repeat: no-repeat;				
 			}
 		}
 
@@ -643,9 +669,18 @@ footer{
 		.icons.marketing-partners {
 			flex-wrap: wrap;
 			img {
-				max-width: 225px;
-				max-height: 150px;
+				// // max-width: 225px;
+				// max-width: 100%;
+				// width: auto;				
+				// max-height: 150px;
 			}
+
+			img {
+				max-width: 100%;
+				width: auto;
+				max-height: 100%;
+				height: auto;
+			}			
 		}
 
 		.links {
@@ -679,23 +714,23 @@ footer{
 
 #jurisdiction {
 	.jurisdiction_table {
-	    padding: 0;
-        list-style: none;
-	    display: flex;
-	    flex-wrap: wrap;
-	    justify-content: flex-start;
-	    align-items: center;
-	    width: 830px;
-	    border: 1px solid;
-	    border-radius: 10px;
-	    padding: 10px;
-	    background-color: #fff;
-	    color: #000;
-	    .items {
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+		width: 830px;
+		border: 1px solid;
+		border-radius: 10px;
+		padding: 10px;
+		background-color: #fff;
+		color: #000;
+		.items {
 			padding: 10px;
 			padding-left: 30px;
-		    width: 200px;
-	    }
+			width: 200px;
+		}
 	}
 
 	a,
@@ -709,8 +744,8 @@ footer{
 	}
 
 	.terms {
-	    color: #fff;
-	    font-size: 0.8em;
-	    font-style: italic;
+		color: #fff;
+		font-size: 0.8em;
+		font-style: italic;
 	}
 }
