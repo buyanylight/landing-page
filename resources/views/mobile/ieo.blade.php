@@ -1678,7 +1678,10 @@
 						<h5 class="text-white ml-3 mb-4">BuyAnyLight in News and Media</h5>
 						<div class="icons">
 							<a href="https://en.bitcoinwiki.org/wiki/Buyanylight" target="_blank">
-								<img title="Bitcoin Wiki" alt="Bitcoin Wiki" src="{{ Util::assetUrl('images/ieo/bitcoinwiki.svg') }}">
+								<img style="width: 200px;" 
+								title="Bitcoin Wiki" 
+								alt="Bitcoin Wiki" 
+								src="{{ Util::assetUrl('images/ieo/bitcoinwiki.svg') }}">
 							</a>
 						</div>
 					</div>
