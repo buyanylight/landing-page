@@ -186,13 +186,13 @@
 		<div class="container text-center h-100 d-flex align-items-end justify-content-center">
 			<div class="row">
 				<div class="col-12" style="position: relative;">
-					<h3 class="text-white" style=" text-align: left; padding-left: 10px; margin-bottom: 25px;">
+					<h3 class="text-white" style=" text-align: left; padding-left: 10px; margin-bottom: 20px;">
 						<b>BAL Initial Exchange <br> Offering (IEO)</b>
 					</h3>
 
 					<a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
 					<img border="0" 
-					style="height: 70px; position: absolute; top: -10px; right: 15px;" 
+					style="height: 65px; position: absolute; top: 0px; right: 30px;" 
 					src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" 
 					alt="BuyAnyLight (BAL) ICO rating"/>
 					</a>

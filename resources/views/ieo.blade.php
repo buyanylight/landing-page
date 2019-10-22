@@ -190,7 +190,7 @@
 
 						<a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
 						<img border="0" 
-						style="height: 100px; position: absolute; top: -30px; right: 25px;" 
+						style="height: 80px; position: absolute; top: -5px; right: 25px;" 
 						src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" 
 						alt="BuyAnyLight (BAL) ICO rating"/>
 						</a>
@@ -2099,10 +2099,9 @@
 {{-- ////////////////////////////////////////////////////////////// --}}
 <section class="section-8" id="partners" style="background-image: url({{ Util::assetUrl('images/ieo/partners-bg.png') }});">
 	<div class="pt-0">
-		<div class="pt-0 pb-0">
-
-
 			<div class="container">
+
+
 				<div class="pt-5 ">
 					<h3 class="text-center">
 						<strong>
@@ -2129,14 +2128,18 @@
 					$partners[] = [	'title'=>'Continental Investments', 'alt'=>'Continental Investments', 'src'=>Util::assetUrl('images/ieo/partners/continental.png'), 'link'=>'http://www.continvest.net'];
 					
 				?>
-				<div class="row pt-4 justify-content-center partners">
-				@foreach($partners as $prtnr)
-					<div class="col-3 text-center partner">
-						<a href="{{$prtnr['link']}}" target="_blank">
-							<img title="{{ $prtnr['title'] }}" alt="{{ $prtnr['alt'] }}" src="{{ $prtnr['src'] }}">
-						</a>
+				<div class="row pt-5 justify-content-center sponsored_fair">
+
+					<div class="col-12 mt-5">
+						<h5 class="text-white ml-3">Partners</h5>
+						<div class="icons marketing-partners">
+							@foreach($partners as $prtnr)					
+							<a href="{{$prtnr['link']}}" target="_blank">
+								<img title="{{ $prtnr['title'] }}" alt="{{ $prtnr['alt'] }}" src="{{ $prtnr['src'] }}">
+							</a>
+							@endforeach
+						</div>
 					</div>
-				@endforeach
 				</div>
 		
 				<div class="row pt-0 pb-5 justify-content-start sponsored_fair">
@@ -2224,13 +2227,12 @@
 					</div> --}}
 
 				</div>
+
+
+
+
+
 			</div>
-
-
-
-
-
-		</div>
 	</div>
 </section>
 {{-- ////////////////////////////////////////////////////////////// --}}
