@@ -185,16 +185,17 @@
 	<div class="section-1-bg pt-5">
 		<div class="container text-center h-100 d-flex align-items-end justify-content-center">
 			<div class="row">
-				<div class="col-12">
-					<h3 class="text-white">
+				<div class="col-12" style="position: relative;">
+					<h3 class="text-white" style=" text-align: left; padding-left: 10px; margin-bottom: 25px;">
 						<b>BAL Initial Exchange <br> Offering (IEO)</b>
 					</h3>
 
-					<div class="pt-2">
-						{{-- <p class="small-desc text-white">
-							BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowdfunding campaign aimed at raising funds for the development of a decentralized.
-						</p> --}}
-					</div>
+					<a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
+					<img border="0" 
+					style="height: 70px; position: absolute; top: -10px; right: 15px;" 
+					src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" 
+					alt="BuyAnyLight (BAL) ICO rating"/>
+					</a>
 				</div>
 				<div class="col-12">
 					<div class="btn-group" role="group" aria-label="Basic example">

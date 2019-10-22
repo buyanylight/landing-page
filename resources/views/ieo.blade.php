@@ -186,7 +186,15 @@
 			<div>
 				
 				<div class="row w-100 h-100 d-flex align-items-center ">
-					<div class="col-md-7 bal-ieo-text">
+					<div class="col-md-7 bal-ieo-text" style="position: relative;">
+
+						<a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
+						<img border="0" 
+						style="height: 100px; position: absolute; top: -30px; right: 25px;" 
+						src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" 
+						alt="BuyAnyLight (BAL) ICO rating"/>
+						</a>
+
 						<h3 class="" style="line-height: 1.5">
 							<strong>
 								<span class="">
