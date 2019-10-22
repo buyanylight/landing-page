@@ -1578,7 +1578,7 @@
 								Our
 							</span>
 							<span class="text-white">
-								Patners
+								Partners
 							</span>
 						</strong> 
 					</h3>
