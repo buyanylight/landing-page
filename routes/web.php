@@ -36,6 +36,7 @@ Route::get('/videos', 'PageController@videos')->name('videos');
 Route::get('/whitepaper', 'PageController@soon')->name('whitepaper');
 Route::get('/yellowpaper', 'PageController@soon')->name('yellowpaper');
 
+Route::get('/mytower', 'PageController@mytower')->name('mytower');
 
 
 

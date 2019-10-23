@@ -56,8 +56,33 @@ class PageController extends Controller
         } else {
             return view('investor');
         }
+    }
+
+
+
+    public function mytower ()
+    {
+
+        $agent = new Agent();
+
+        $isMobile = $agent->isMobile();
+        $isTablet = $agent->isTablet();
+
+    
+        if($isMobile || $isTablet) {
+            $layout = 'layouts.mobile-layout';
+            $isDesktop = false;
+        } else {
+            $layout = 'layouts.main-layout';
+            $isDesktop = true;
+        }
+
+        return view('mytower')->with('layout', $layout)->with('isDesktop', $isDesktop);
 
     }
+
+
+
 
     public function terms ()
     {
@@ -65,7 +90,7 @@ class PageController extends Controller
          return view('terms');
     }
 
-       public function phpinfo ()
+    public function phpinfo ()
     {
 
          return view('phpinfo');
