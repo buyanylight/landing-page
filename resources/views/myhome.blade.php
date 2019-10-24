@@ -188,10 +188,10 @@
 			</div>
 			<div class="col-12 col-md-7">
 				<div class="card-deck slide">
-					<div class="card" style="background: url({{ Util::assetUrl('/images/home/home1.jpg') }}); background-size: cover; background-position: center; background-position-x: left; border-radius: 15px;"></div>
-					<div class="card" style="background: url({{ Util::assetUrl('/images/home/home2.jpg') }}); background-size: cover; background-position: center; border-radius: 15px;"></div>
-					<div class="card" style="background: url({{ Util::assetUrl('/images/home/home3.jpg') }}); background-size: cover; background-position: center; border-radius: 15px;"></div>
-					<div class="card" style="background: url({{ Util::assetUrl('/images/home/home4.jpg') }}); background-size: cover; background-position: center; border-radius: 15px;"></div>
+					<div class="card" style="background: url({{ Util::assetUrl('/images/home/home1.jpg') }}); background-size: cover; background-position: center; background-position-x: left; border-radius: 15px; background-repeat: no-repeat;"></div>
+					<div class="card" style="background: url({{ Util::assetUrl('/images/home/home2.jpg') }}); background-size: cover; background-position: center; border-radius: 15px; background-repeat: no-repeat;"></div>
+					<div class="card" style="background: url({{ Util::assetUrl('/images/home/home3.jpg') }}); background-size: cover; background-position: center; border-radius: 15px; background-repeat: no-repeat;"></div>
+					<div class="card" style="background: url({{ Util::assetUrl('/images/home/home4.jpg') }}); background-size: cover; background-position: center; border-radius: 15px; background-repeat: no-repeat;"></div>
 				</div>
 				<div class="arrows"></div>
 			</div>

@@ -173,7 +173,7 @@
 						$datas[]= ['src'=>'images/mytower/mytower-imgs6.jpg'];
 					?>
 					@foreach($datas as $data)
-					<div class="card top-section-images" style="background-image: url({{ Util::assetUrl($data['src']) }}); background-size: cover; background-position: center; background-position-x: left; border-radius: 15px;"></div>
+					<div class="card top-section-images" style="background-image: url({{ Util::assetUrl($data['src']) }}); background-size: cover; background-position: center; background-position-x: left; border-radius: 15px; background-repeat: no-repeat;"></div>
 					@endforeach
 				</div>
 				<div class="arrows"></div>
