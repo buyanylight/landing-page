@@ -1,0 +1,286 @@
+// Basic CSS 
+
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html{	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	background-color: white;
+}
+
+nav{
+	transition: all 0.5s
+}
+
+.scrollUp{
+	transform: translateY(-80px)
+}
+
+.ncol{
+ color: black !important;
+}
+
+.navbar-nav li:hover>.dropdown-menu {
+  display: block;
+}
+
+footer{
+	height: 100%;
+}
+
+.footer-list{
+	font-size:13px;
+	list-style-type: none;
+}
+
+.one-brand{
+	width: 64px;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.one-link{
+	font-size: 20px;
+}
+
+.one-pay{
+	font-size: 30px;
+}
+
+.text-grey{
+	color: grey;
+}
+
+.bg-black{
+	background-color: #000;
+}
+
+.bg-white{
+	background-color: #fff !important;
+}
+
+.grecaptcha-badge{
+	visibility: collapse !important;  
+}
+
+
+h1{
+	margin-bottom: 1rem;
+}
+
+// Basic CSS
+
+.section-1{
+	height: 100vh;
+	background: black;
+}
+
+
+.section-padding{
+	padding-left:10rem;
+	padding-right:10rem;
+
+}
+
+.section-1-row{
+    height: 50%
+}
+
+.card-deck.slide.slick-initialized.slick-slider{
+    height: 100%;
+}
+
+.card-deck.row-two {
+    padding-top: 30px;
+}
+
+
+.btn-BAL{
+	background: #5555A4;
+	color: white;
+}
+
+.btn-BAL:hover{
+	background: #7a7abd;
+	color: white;
+}
+
+.slick-list.draggable{
+	height: 100%;
+}
+
+.slick-track{
+	height: 100%;
+}
+
+
+.arrow-btn{
+
+	font-size: 25px;
+}
+
+
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+    outline:none;
+    box-shadow:none;
+}
+
+.icon-scroll,
+.icon-scroll:before{
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  width: 25px;
+  height: 45px;
+  margin-left: -20px;
+  top: 97%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+.icon-scroll:before{
+ content: "";
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    margin-left: -2px;
+    top: 0px;
+    border-radius: 4px;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+}
+
+@keyframes scroll{
+  0%{
+    opacity: 1;
+
+  	}
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+	}
+}
+
+.section-2 {
+ height: 100%;
+ background:white;
+
+}
+
+.section-3 {
+    height: 70vh;
+
+    .main-bg{
+        background-image: url('/images/home/home5.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+    }
+
+    .works{
+        width: 546px;
+    }
+
+    .works-row{
+        position: relative; bottom: 220px; margin:0px
+    }
+
+    .laptop{
+        background: url(http://192.168.1.204:8004/images/home/home_laptop.png?ver=0); height: 393px; background-repeat: no-repeat; background-position: center; background-size:contain;
+    }
+
+    .works-img{
+        width: 95.25%;
+        position: relative;
+        top: 22px;
+        left: 0px;
+        height: 327px;
+    }
+}
+
+
+
+.card-my-home-summary{
+	width: 370px;
+}
+
+.trial-list {
+  list-style: none;
+  padding-left: 15px;
+
+ 
+}
+
+.trial-list li{
+ margin-top: 10px;
+
+}
+
+.bg-BAL{
+	background-color: #5555A4;
+
+}
+
+.center-content{
+	display: flex;
+	justify-content: center;
+	padding-top:3rem;
+}
+
+
+.section-price{
+	padding-top:60px;
+}
+
+.section-4 {
+ // height: 50vh;
+ background:white;
+}
+
+#accordion {
+	.card {
+		.btn-link:active,
+		.btn-link:hover,
+		.btn-link {
+		    color: #000;
+		    font-weight: bold;
+		    border-radius: 0;
+		    text-decoration: none;
+		}
+		.btn-link:active,
+		.btn-link:focus,
+		.btn-link:hover {
+			border-bottom: 1px solid;
+		    outline: none;
+		}
+	}
+}
+
+
+.section-5 {
+	background-color: #5555A4;
+
+}
+
+
