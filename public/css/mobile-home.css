@@ -11234,7 +11234,7 @@ nav .dropdown-toggle::after {
 }
 
 .section-3 {
-  height: 70vh;
+  height: 75vh;
 }
 
 .section-3 .main-bg {
@@ -11246,6 +11246,60 @@ nav .dropdown-toggle::after {
 
 .section-3 .works {
   width: 81%;
+}
+
+.section-3 .works-text {
+  -webkit-box-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.section-3 .works-row {
+  position: relative;
+  bottom: 110px;
+  margin: 0px;
+}
+
+.section-3 .works-img {
+  width: 78.5%;
+  position: relative;
+  top: 9px;
+  left: 0px;
+  height: 138px;
+}
+
+.section-3 .laptop {
+  background: url(http://192.168.1.204:8004/images/home/home_laptop.png?ver=0);
+  height: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.card-my-home-summary {
+  width: 370px;
+}
+
+.trial-list {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.trial-list li {
+  margin-top: 10px;
+}
+
+.bg-BAL {
+  background-color: #5555A4;
+}
+
+.center-content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  padding-top: 3rem;
 }
 
 #accordion .card .btn-link:active,

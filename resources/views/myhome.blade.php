@@ -150,7 +150,7 @@
 			<div class="col-12 col-md-5 d-flex align-items-center justify-content-items">
 				<div>
 					<h1 class="text-white">
-						BuyAnyLight <br><strong>My Home Package</strong>
+						<br><strong>My Home</strong>
 					</h1>
 					<p class="text-white">
 						<b>
@@ -160,10 +160,28 @@
 					<p class="text-white">
 						We’ve got great news for you. There’s a new and innovative LED sourcing platform that gives you access to experts, saves you time and helps you make incredible savings on your lighting projects.
 					</p>
-					<div>
-						<form>
-							<input type="email" name="email" placeholder="Enter you email" class="form-control">
-							<button class="btn btn-BAL mt-2">I'm interested</button>
+					<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a>
+					<a data-fancybox href="{{ Util::assetUrl('brochures/MyHome_BAL.pdf') }}" class="btn btn-BAL"><i class="far fa-file-pdf"></i> &nbsp; View Brochure</a>
+					<div class="pt-3">
+						<h3 class="text-white">
+							<b>
+								<span style="text-decoration:line-through;">Project fee = $949 </span> <br>No Project fee on your first project
+							</b>
+						</h3>
+						<form class="pt-1" method="post" action="/subscribe">
+							{{ csrf_field() }}
+								<select class="form-control" name="answer" required="required" style="background: black; color:white">
+									<option selected disabled value="">Interested?</option>
+									<option value="Yes, Constructing Home">I'm looking for lights for my new home.</option>
+									<option value="Yes, Renovating Home">I'm looking for lights to renovate my home.</option>
+									<option value="Yes, Like the idea">Just interested on the idea.</option>
+								</select>
+							
+								
+									<input type="email" name="email" placeholder="Enter your email" class="form-control mt-3" required="required" style="background: black; color: white;">
+								
+				
+							<button type="submit" class=" mt-3 btn btn-BAL">I'm Interested</button>
 						</form>
 					</div>
 				</div>
@@ -183,11 +201,11 @@
 	</div>
 </section>
 <section class="section-2">
-	<div class="pt-5 mt-5 pb-5 mb-5 h-100">
+	<div class="pt-5 mt-5 pb-3 h-100">
 		<div class="container h-100">
 			<h3>
 				<b>
-					BuyAnyLight <span style="color: #5555A4">Home Package</span> Advantages
+					<span style="color: #5555A4">My Home</span> Advantages
 				</b>
 			</h3>
 			<div class="card-deck h-50 pt-5">
@@ -236,6 +254,11 @@
 					</div>
 				</div>
 			</div>
+			<div class="pt-5 text-center">
+				<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-md btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a>
+				<a href="#interested" class="btn btn-md btn-BAL">I'm Interested</a>
+				
+			</div>
 		</div>
 	</div>
 </section>
@@ -247,31 +270,31 @@
 			</h2>
 		</div>
 	</div>
-	<div class="row w-100" style="position: relative; bottom: 220px; margin:0px">
+	<div class="row w-100 works-row">
 		<div class="col-md-3 col-12">
 			<div class="d-flex  h-100 align-items-end justify-content-end"></div>
 		</div>
 		<div class="col-md-6 col-12">
-			<div class="d-flex justify-content-center" style="background: url({{ Util::assetUrl('/images/home/home_laptop.png') }}); height: 393px; background-repeat: no-repeat; background-position: center; background-size:contain;">
+			<div class="d-flex justify-content-center laptop">
 				<div class="works">
 					<div>
 						<div class="d-flex justify-content-center">
-							<img src="{{ Util::assetUrl('images/home/home_ui1.png') }}" style="        width: 94.5%; position: relative; top: 108px; left: 0px; height: 166px;">
+							<img src="{{ Util::assetUrl('images/home/home_ui1.png') }}" class="works-img">
 						</div>
 					</div>
 					<div>
 						<div class="d-flex justify-content-center">
-							<img src="{{ Util::assetUrl('images/home/home_ui2.png') }}" style="        width: 94.5%; position: relative; top: 108px; left: 0px; height: 166px;">
+							<img src="{{ Util::assetUrl('images/home/home_ui2.png') }}" class="works-img">
 						</div>
 					</div>	
 					<div>
 						<div class="d-flex justify-content-center">
-							<img src="{{ Util::assetUrl('images/home/home_ui3.png') }}" style="        width: 94.5%; position: relative; top: 108px; left: 0px; height: 166px;">
+							<img src="{{ Util::assetUrl('images/home/home_ui3.png') }}" class="works-img">
 						</div>
 					</div>	
 					<div>
 						<div class="d-flex justify-content-center">
-							<img src="{{ Util::assetUrl('images/home/home_ui4.png') }}" style="        width: 94.5%; position: relative; top: 108px; left: 0px; height: 166px;">
+							<img src="{{ Util::assetUrl('images/home/home_ui4.png') }}"class="works-img">
 						</div>
 					</div>
 				</div>
@@ -297,6 +320,92 @@
 				</div>
 			</div>
 		</div>
+		<div class="container text-center pt-5">
+			<a data-fancybox href="{{ Util::assetUrl('brochures/MyHome_BAL.pdf') }}" class="btn btn-md btn-BAL"> <i class="fas fa-file-pdf"></i> &nbsp;View Brochure</a>
+			<a href="#interested" class="btn btn-md btn-BAL">I'm Interested</a>
+
+		</div>
+	</div>
+</section>
+<section class="section-price">
+	<div class="pt-5 mt-5 pb-5 mb-5 h-100" style="background-color: #f7f7f7;">
+		<div class="container h-100">
+			<h3 class="text-center">
+				<b>
+					<span style="color: #5555A4">My Home Package</span> Price
+				</b>
+			</h3>
+			<div class="center-content">
+			<div class="card card-my-home-summary" style="box-shadow: 8px 8px 20px #cccccc;">
+				<h4 class="card-header text-center bg-BAL text-white">
+					MY HOME
+					<br>
+					<small style="font-size: 13px;">NO UPFRONT COSTS & FREE QUOTATION</small>
+				</h4>
+				<div class="card-body pt-5 pb-5">
+						<p class="card-text text-center">GET THE POSSIBLE RESULTS FOR EVERY BEAUTIFUL HOME!</p>
+							<div class="pb-2 pt-2">
+								<ul class="trial-list">
+									<li>
+										<i class="fas fa-check"></i>
+										Risk-free
+									</li>
+									<li>
+										<i class="fas fa-check"></i>
+										Unlimited revisions
+									</li>
+									<li>
+										<i class="fas fa-check"></i>
+										Sample request
+									</li>
+									<li>
+										<i class="fas fa-check"></i>
+										Best price guarantee
+									</li>
+									<li>
+										<i class="fas fa-check"></i>
+										100% payment protection
+									</li>
+									<li>
+										<i class="fas fa-check"></i>
+										Home lighting consultation
+									</li>
+									<li>
+										<i class="fas fa-check"></i>
+										Designated lighting designer
+										<span class="" data-toggle="tooltip" data-placement="right" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
+											<i class="fas fa-info-circle"></i>
+										</span>
+									</li>
+									<li>
+										<i class="fas fa-times"></i>
+										Markup feature
+										<span class="" data-toggle="tooltip" data-placement="right" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
+											<i class="fas fa-info-circle"></i>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<p class="text-center">
+								<span style="text-decoration: line-through;">
+									<b>* 10% BAL fee on order confirmation</b> <br>
+								</span>
+								<span style="text-decoration: line-through;">
+									<b>** $949 Project fee payable only on offer acceptance</b>
+								</span>
+							</p>
+							<hr>
+							<div class="text-center pb-2">
+								<h5>Free of cost on your first project</h5> 
+							</div>
+							<div class="text-center">
+								<a href="#interested" class="btn btn-md btn-BAL">I'm interested</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+
 	</div>
 </section>
 <section class="section-4">
@@ -310,10 +419,33 @@
 			<div id="accordion" class="mt-4">
 				<?php 
 					$datas = [];
-					$datas[]= [ 'title'=>'What is BAL?', 							'content'=>'Simply visit <a href="https://lightfinder.buyanylight.com/buyer/register">https:// lightfinder.buyanylight.com /buyer/register</a>, follow the steps to create an account and fill in the registration form. Once you’ve registered, you can start uploading your enquiry.', ];
-					$datas[]= [ 'title'=>'How do I register with BAL as a buyer?', 	'content'=>'BAL (BuyAnyLight) is a pioneering online platform offering an innovative and value-packed procedure for resourcing LED lighting projects. BAL delivers unique advantages for both buyers and sellers and a win-win edge for them all.', ];
-					$datas[]= [ 'title'=>'What is BAL?', 							'content'=>'BAL (BuyAnyLight) is a pioneering online platform offering an innovative and value-packed procedure for resourcing LED lighting projects. BAL delivers unique advantages for both buyers and sellers and a win-win edge for them all.', ];
-					$datas[]= [ 'title'=>'How do I register with BAL as a buyer?', 	'content'=>'Simply visit <a href="https://lightfinder.buyanylight.com/buyer/register">https:// lightfinder.buyanylight.com /buyer/register</a>, follow the steps to create an account and fill in the registration form. Once you’ve registered, you can start uploading your enquiry.', ];
+					$datas[]= [ 'title'=>'What is BAL?', 'content'=>' BAL (BuyAnyLight) is a pioneering online platform offering an innovative and value-packed procedure for resourcing LED lighting projects. BAL delivers unique advantages for both buyers and sellers and a win-win edge for them all.', ];
+					$datas[]= [ 'title'=>'How do I register with BAL?', 	'content'=>'Simply visit <a href="https://lightfinder.buyanylight.com/buyer/register">https:// lightfinder.buyanylight.com /buyer/register</a>, follow the steps to create an account and fill in the registration form. Once you’ve registered, you can start uploading your enquiry.', ];
+					$datas[]= [ 'title'=>'Why should I use the BAL platform?', 							'content'=>'	 Here are some of great values the platform provides for sellers: 
+                           <ul>
+                              <li>
+                                easy to set-up and use 
+                              </li>
+                              <li>
+                                free registration 
+                              </li>
+                              <li>
+                                saves you lots of money 
+                              </li>
+                              <li>
+                                secure payment
+                              </li>
+                              <li>
+                                samples available 
+                              </li>
+                              <li>
+                                reliable 
+                              </li>
+                              <li>
+                                trackable deliveries to your door
+                              </li>
+                           </ul>', ];
+					$datas[]= [ 'title'=>'If I have a question or concern, who do I contact?', 	'content'=>'Email us at info@buyanylight.com', ];
 				?>
 ​
 				@foreach($datas as $key => $data)
@@ -344,25 +476,26 @@
 		</div>
 	</div>
 </section>
-<section class="section-5">
+<section class="section-5" id="interested">
 	<div class="pt-5 mt-5 pb-5">
 		<div class="container">
 			<h2 class="text-white">
 				<b>
-					Are you looking for lights for your house?
+					<span style="text-decoration:line-through;">Project fee = $1949 </span> 
+					<br>No Project fee on your first project
 				</b>
 			</h2>
 			<form class="pt-3" method="post" action="/subscribe">
 				{{csrf_field()}}
 				<div>
 					<select class="form-control" name="answer" required="required">
-						<option selected disabled value="">Select an option</option>
+						<option selected disabled value="">Looking for lights?</option>
 						<option value="Yes, Constructing Home">Yes, I'm constructing my Home.</option>
 						<option value="Yes, Renovating Home">Yes, I'm renovating my Home.</option>
 						<option value="Yes, Like the idea">No, but interested on the idea.</option>
 					</select>
 					<input type="email" name="email" placeholder="Enter your email" class="form-control mt-3" required="required">
-					<button type="submit" class=" mt-3 btn btn-dark">I'm Interested</button>
+					<button type="submit" class=" mt-3 btn btn-dark">Sign me up</button>
 				</div>
 			</form>
 		</div>

@@ -189,18 +189,68 @@ h1{
 }
 
 .section-3 {
-	height: 70vh;
+    height: 70vh;
 
- 	.main-bg{
- 		background-image: url('/images/home/home5.jpg');
- 		background-size: cover;
- 		background-position: center;
-		height: 40vh;
- 	}
+    .main-bg{
+        background-image: url('/images/home/home5.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+    }
 
- 	.works{
- 		width: 546px;
- 	}
+    .works{
+        width: 546px;
+    }
+
+    .works-row{
+        position: relative; bottom: 220px; margin:0px
+    }
+
+    .laptop{
+        background: url(http://192.168.1.204:8004/images/home/home_laptop.png?ver=0); height: 393px; background-repeat: no-repeat; background-position: center; background-size:contain;
+    }
+
+    .works-img{
+        width: 95.25%;
+        position: relative;
+        top: 22px;
+        left: 0px;
+        height: 327px;
+    }
+}
+
+
+
+.card-my-home-summary{
+	width: 370px;
+}
+
+.trial-list {
+  list-style: none;
+  padding-left: 15px;
+
+ 
+}
+
+.trial-list li{
+ margin-top: 10px;
+
+}
+
+.bg-BAL{
+	background-color: #5555A4;
+
+}
+
+.center-content{
+	display: flex;
+	justify-content: center;
+	padding-top:3rem;
+}
+
+
+.section-price{
+	padding-top:60px;
 }
 
 .section-4 {

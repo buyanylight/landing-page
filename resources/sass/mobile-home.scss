@@ -132,7 +132,7 @@ nav .dropdown-toggle::after {
 }
 
 .section-3 {
-    height: 70vh;
+    height: 75vh;
 
     .main-bg{
         background-image: url('/images/home/home5.jpg');
@@ -144,6 +144,62 @@ nav .dropdown-toggle::after {
     .works{
         width:81%;
     }
+
+    .works-text {
+        justify-content: center;
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .works-row{
+        position: relative; bottom: 110px; margin:0px
+    }
+
+
+    .works-img{
+        width: 78.5%;
+    position: relative;
+    top: 9px;
+    left: 0px;
+    height: 138px;
+    }
+
+    .laptop{
+        background: url(http://192.168.1.204:8004/images/home/home_laptop.png?ver=0);
+        height: 165px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+
+
+.card-my-home-summary{
+    width: 370px;
+}
+
+.trial-list {
+  list-style: none;
+  padding-left: 15px;
+
+ 
+}
+
+.trial-list li{
+ margin-top: 10px;
+
+}
+
+.bg-BAL{
+    background-color: #5555A4;
+
+}
+
+.center-content{
+    display: flex;
+    justify-content: center;
+    padding-top:3rem;
 }
 
 #accordion {
