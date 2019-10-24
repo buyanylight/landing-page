@@ -37,6 +37,7 @@ Route::get('/whitepaper', 'PageController@soon')->name('whitepaper');
 Route::get('/yellowpaper', 'PageController@soon')->name('yellowpaper');
 
 Route::get('/myhome', 'PageController@myhome')->name('myhome');
+Route::get('/mytower', 'PageController@mytower')->name('mytower');
 
 
 Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUsController@contactSaveData']);
