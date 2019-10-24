@@ -1,0 +1,199 @@
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    background-color: white;
+}
+
+nav{
+    transition: all 0.5s
+}
+
+.navbar-nav{
+    height: 100vh;
+}
+
+.scrollUp{
+    transform: translateY(-80px)
+}
+
+.btn-black{
+    background-color: #000;
+    border-color: #000;
+}
+
+nav .dropdown-toggle::after {
+    display:none;
+}
+
+.navbar-collapse {
+    position: absolute;
+    top: 54px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.4s ease;
+    display: block;
+    opacity: 0.8;
+}
+.navbar-collapse.collapsing {
+    height: auto !important;
+    right: -100%;
+    margin-left: 1px;
+    transition: all 0.2s ease;
+    opacity: 0.9;
+}
+
+.navbar-collapse.show {
+    margin-right: 100%;
+    transition: all 0.2s ease;
+    opacity: 1;
+}
+
+
+.navbar-nav{
+    margin-left: 40%;
+}
+
+.filter{
+    filter: blur(3px);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 15px;
+}
+
+.grecaptcha-badge{
+    visibility: collapse !important;  
+}
+
+.bg-black{
+    background: black !important;
+}
+
+
+.section-1{
+    height: 100%;
+    background: black;
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
+
+
+
+.btn-BAL{
+    background: #5555A4;
+    color: white;
+}
+
+.btn-BAL:hover{
+    background: #7a7abd;
+    color: white;
+}
+
+.slick-list.draggable{
+    height: 100%;
+}
+
+.slick-track{
+    height: 100%;
+}
+
+.card-deck.slide.slick-initialized.slick-slider{
+    height: 200px;
+    padding-top: 1rem;
+}
+
+.arrow-btn{
+
+    font-size: 25px;
+}
+
+
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+    outline:none;
+    box-shadow:none;
+}
+.icon-scroll{
+    display: none;
+}
+.card-deck.row-two {
+    padding-top: 0px;
+}
+
+.section-3 {
+    height: 75vh;
+
+    .main-bg{
+        background-image: url('/images/home/home5.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+    }
+
+    .works{
+        width:81%;
+    }
+
+    .works-text {
+        justify-content: center;
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .works-row{
+        position: relative; bottom: 110px; margin:0px
+    }
+
+
+    .works-img{
+        width: 78.5%;
+    position: relative;
+    top: 9px;
+    left: 0px;
+    height: 138px;
+    }
+
+    .laptop{
+        background: url(http://192.168.1.204:8004/images/home/home_laptop.png?ver=0);
+        height: 165px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+#accordion {
+    .card {
+        .btn-link:active,
+        .btn-link:hover,
+        .btn-link {
+            color: #000;
+            font-weight: bold;
+            border-radius: 0;
+            text-decoration: none;
+        }
+        .btn-link:active,
+        .btn-link:focus,
+        .btn-link:hover {
+            border-bottom: 1px solid;
+            outline: none;
+        }
+    }
+}
+
+
+.section-5 {
+    background-color: #5555A4;
+
+}
