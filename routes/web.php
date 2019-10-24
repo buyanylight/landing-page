@@ -40,6 +40,7 @@ Route::get('/yellowpaper', 'PageController@soon')->name('yellowpaper');
 
 
 Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUsController@contactSaveData']);
+Route::post('subscribe', ['as'=>'subscribe.store','uses'=>'SubscribeController@saveData']);
 
 
 Route::get('/ieo-test', 'PageController@ieo')->name('ieo-test');
