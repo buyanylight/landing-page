@@ -6,8 +6,8 @@
 @endsection
 
 @section('meta-description')
-<meta name="description" content="BuyAnyLight (BAL) IEO is a crowdfunding campaign aimed at raising funds for the development of a decentralized,  marketplace for lighting products." />
-<meta property="og:description" content="BuyAnyLight (BAL) IEO is a crowdfunding campaign aimed at raising funds for the development of a decentralized,  marketplace for lighting products.">
+<meta name="description" content="BuyAnyLight (BAL) IEO is a crowdfunding campaign aimed at raising funds for the development of a decentralized, marketplace for lighting products." />
+<meta property="og:description" content="BuyAnyLight (BAL) IEO is a crowdfunding campaign aimed at raising funds for the development of a decentralized, marketplace for lighting products.">
 @endsection
 
 @section('css')
@@ -156,15 +156,45 @@
 @endsection
 
 @section('content')
-
-
+<div style="position: relative; z-index: 5">
+            <!-- Position toasts -->
+    	<div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
+        	<div class="toast" data-autohide="false">
+            	<div class="toast-header">
+                	<strong class="mr-auto">
+                    	<img src="{{ Util::assetUrl('images/logo-black-icon.png') }}" width="25">
+                    	BuyAnyLight
+                	</strong>
+                	<button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+            	</div>
+            	@if(session('success'))
+           		<div class="toast-body">
+                	<b>Thanks for being awesome!</b>
+                	{!! session('success') !!}
+            	</div>
+           		@else
+            	<div class="toast-body">
+                	{!! session('danger') !!}
+            	</div>
+            	@endif
+        	</div>
+    	</div>    
+	</div>
 <section class="section-1" id="section-1" style="background-image : url({{ Util::assetUrl('/images/ieo/ieo-bg1.png') }})">
 	<div class="container h-100">
 		<div class="d-flex align-items-center h-100">
 			<div>
 				
 				<div class="row w-100 h-100 d-flex align-items-center ">
-					<div class="col-md-7 bal-ieo-text">
+					<div class="col-md-7 bal-ieo-text" style="position: relative;">
+
+						<a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
+						<img border="0" 
+						style="height: 80px; position: absolute; top: -5px; right: 25px;" 
+						src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" 
+						alt="BuyAnyLight (BAL) ICO rating"/>
+						</a>
+
 						<h3 class="" style="line-height: 1.5">
 							<strong>
 								<span class="">
@@ -184,19 +214,23 @@
 
 						<div class="pt-1 pagers-paper">
 							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">
-	            			<i class="far fa-file-pdf"></i>
-	            			&nbsp;
-							One Pager
-						</a>					
+	            				<i class="far fa-file-pdf"></i>
+	            				&nbsp;
+								One Pager
+							</a>					
 							<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}"  target="_blank" class="btn btn-ieo">
-							<i class="far fa-file-pdf"></i>
-	            			&nbsp;
-							White Paper
-						</a>
+								<i class="far fa-file-pdf"></i>
+	            				&nbsp;
+								White Paper
+							</a>
 							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo" target="_blank">
-							<i class="far fa-file-pdf"></i>
+								<i class="far fa-file-pdf"></i>
+	            				&nbsp;
+								Yellow Paper<a href="https://t.me/buyanylight" class="btn btn-ieo ml-3" target="_blank">
+					<i class="fab fa-telegram-plane"></i>
 	            			&nbsp;
-								Yellow Paper
+					Join Our Community
+				</a>
 							</a>
 						</div>
 						<!-- <div class="pt-3">
@@ -369,8 +403,11 @@
 		</div>
 	</div>
 </section>
+
+
+
 <section class="section-buy-token" id="section-bal-token">
-	<div class="pt-5 container">
+	<div class="pt-5 pb-5 container">
 		<h3>
 			<b>
 				<span>
@@ -390,11 +427,11 @@
 				<div class="pt-4">
 					<div class="input-group" style="height: 70px; position: relative; right: 13px;">
 	  					<div class="input-group-prepend" style="width: 135px">
-	    					<span class="input-group-text d-flex justify-content-center btn-ieo" id="basic-addon1" style="width: 100%; border-radius: 20px; position: relative; left: 15px; z-index: 1; box-shadow: 4px 0px 5px 0px #cccccc;" data-toggle="tooltip" data-placement="right" title="BAL Token">
+	    					<span class="input-group-text d-flex justify-content-center btn-ieo" id="basic-addon1" style="width: 100%; border-radius: 20px; position: relative; left: 15px; z-index: 1; box-shadow: 4px 0px 5px 0px #cccccc; background: -webkit-linear-gradient(right, #e4007b, #0000af);" data-toggle="tooltip" data-placement="right" title="BAL Token">
 	    						<img src="{{ Util::assetUrl('images/logo-white-mobile.png') }}" width="28">
 	    					</span>
 	  					</div>
-	  					<input class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 15px;">
+	  					<input class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 15px; border: 1px solid #000000;">
 					</div>
 	  				<div>
 	  					<small>The minimum investment is 5,000 USD and 25,000 BAL</small>
@@ -405,7 +442,7 @@
   						The minimum investment is 5,000 USD and 25,000 BAL
 					</div>
 				</div>
-				<hr>
+				<hr/>
 				<div class=" mt-4">
 					<div class="row">
 						<div class="col-6">
@@ -432,7 +469,7 @@
     								</div>
   								</div>
 							</div>
-							@endforeach
+						@endforeach
 						</div>
 						<div class="col-6">
 							<h3 class="pb-3">
@@ -473,7 +510,7 @@
 											 <p class="mb-0">
 											 	Profits :
 												<span class="USD_return">
-													151.515
+													0.10303
 												</span>
 												USD
 											 </p> 
@@ -528,7 +565,7 @@
 										</small>
 									</div>
 									<div class="col-md-6 col-12">
-										<button type="submit" class="btn btn-ieo w-100" style="border-radius: 10px;" disabled id="token-btn"><b>Buy Tokens Now!</b></button>
+										<button type="submit" class="btn btn-ieo w-100" style="border-radius: 10px;" id="token-btn"><b>Buy Tokens Now!</b></button>
 									</div>
 								</div>
 							</div>
@@ -545,6 +582,154 @@
 	</div>
 
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php /*
+
+
+
+
+
+
+<section class="section-4 text-white" id="jurisdiction" style="display: none !important;">
+	<div class="bg-black pt-2 pb-2" style="background-image: url({{ Util::assetUrl('images/ieo/bal_bg.png') }});">
+		<div class="container pt-5 pb-0">
+			<div class="row justify-content-center">			
+				<h3>
+					<strong>
+						{{-- <span class="header-text" style="text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.45);"> --}}
+						<span class="">
+							Jurisdiction
+						</span>
+					</strong>
+				</h3>
+			</div>
+			<div class="row justify-content-center mb-4">
+				<p>
+					Available in 777 Countries. See the full list below:
+				</p>
+			</div>
+			<div class="row justify-content-center">
+				<div class="jurisdiction_table">
+					<?php
+						$countries = ["Afghanistan", "Belarus", "Bolivia", "Bosnia & Herzegovina", "Burundi", "Central African Rep.", "Congo, Dem. Rep.", "Congo, Repub. of the", "Cook Islands", "Egypt", "Eritrea", "Guinea-Bissau", "Haiti", "Iran", "Iraq", "Lebanon", "Libya", "Maldives", "Mali", "Moldova", "Montenegro", "Puerto Rico", "Senegal", "Serbia", "Somalia", "Sudan", "Swaziland", "Syria", "Tunisia", "Ukraine", "United States", "Venezuela", "Yemen", "Zimbabwe",];
+					?>
+					@foreach($countries as $country)
+					<div class="items">{{ $country }}</div>
+					@endforeach					
+				</div>
+			</div>
+			<div class="column justify-content-space-between mt-5">
+				
+				<div class="col-12">					
+					<p style="text-align: right;">
+						<span>BuyAnyLight is brought to you by:</span> <br>
+						<a href="https://almani.ae" target="_blank">Almani Lighting GmbH, Germany</a> <br>
+					</p>
+				</div>
+
+				<div class="col-12">					
+					<p style="text-align: right;">
+						<a href="{{ route('terms') }}" target="_blank" class="terms">Terms & Conditions</a>
+					</p>
+				</div>					
+
+			</div>
+		</div>
+
+
+
+
+
+
+	</div>
+</section>
+
+
+
+
+
+
+*/ ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <section class="section-2 pt-5">
 	<div class="container pt-5 pb-5">
@@ -599,6 +784,21 @@
 		</div>
 	</div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="section-3 pt-3 pb-5">
 	{{-- <div class="text-center pt-5">
 		<img src="{{ Util::assetUrl('images/ieo/4.png')}}" width="50%">
@@ -673,9 +873,7 @@
 						href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0" 
 						class="">
 							<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="">
-							<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="    position: relative;
-    bottom: 35px;
-    left: 50px;">
+							<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="position: relative; bottom: 35px; left: 50px;">
                             <div>
                                 <i class="fab fa-youtube"></i> 
                                 <span>
@@ -703,9 +901,7 @@
 						href="https://www.youtube-nocookie.com/embed/5nMkricvzfc?rel=0" 
 						class="">
 							<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}" alt="">
-							<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="    position: relative;
-    bottom: 35px;
-    left: 50px;">
+							<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="position: relative; bottom: 35px;     left: 50px;">
                             <div>
                                 <i class="fab fa-youtube"></i> 
                                 <span>
@@ -1614,6 +1810,27 @@
 		</div>
 	</div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="section-8" id="coreteam">
 	<div class="pt-5">
 		<div class="bg-black pt-5 pb-5">
@@ -1635,7 +1852,7 @@
 					$coreTeam[] = [	'name'=>'Martin Heyen', 'title'=>'Co-Founder & CFO', 'linkedin'=>'', 'image'=>'images/ieo/team/martin.jpg', 'text'=>'', ];
 					$coreTeam[] = [	'name'=>'Leo Vicente', 'title'=>'Chief Technical Officer', 'linkedin'=>'https://www.linkedin.com/in/ljvicente', 'image'=>'images/ieo/team/leo.jpg', 'text'=>'', ];
 					$coreTeam[] = [	'name'=>'Rene Rowell dela Rama', 'title'=>'Director of Blockchain Integration', 'linkedin'=>'https://www.linkedin.com/in/rene-rowell-dela-rama-3ab529148', 'image'=>'images/ieo/team/rene.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Rizvi Iqbal', 'title'=>'Senior Blockchain Engineer', 'linkedin'=>'https://www.linkedin.com/in/rizviqbal', 'image'=>'images/ieo/team/rizvi.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Rizvi Iqbal', 'title'=>'Blockchain & DLT Specialist', 'linkedin'=>'https://www.linkedin.com/in/rizviqbal', 'image'=>'images/ieo/team/rizvi.jpg', 'text'=>'', ];
 
 				?>
 				<div class="row pt-5 justify-content-center">
@@ -1662,10 +1879,10 @@
 
 				<?php
 					$coreTeam = [];
-					$coreTeam[] = [	'name'=>'Artem Gordadze', 'title'=>'Exchange Listings Specialist, IEO Negotiations', 'linkedin'=>'https://www.linkedin.com/in/artem-gordadze', 'image'=>'images/ieo/team/artem.jpg', 'text'=>'', ];	
+					$coreTeam[] = [	'name'=>'Artem Gordadze', 'title'=>'Marketing Specialist', 'linkedin'=>'https://www.linkedin.com/in/artem-gordadze', 'image'=>'images/ieo/team/artem.jpg', 'text'=>'', ];	
 					$coreTeam[] = [	'name'=>'Nantha Kumar', 'title'=>'Sales Director', 'linkedin'=>'https://www.linkedin.com/in/nantha-kumar-36b92685', 'image'=>'images/ieo/team/nantha.jpg', 'text'=>'', ];
 					$coreTeam[] = [	'name'=>'Marc Vazquez', 'title'=>'Sourcing, Production & Investors Relations', 'linkedin'=>'https://www.linkedin.com/in/marc-vazquez-6b01a794', 'image'=>'images/ieo/team/marc.jpg', 'text'=>'', ];					
-					$coreTeam[] = [	'name'=>'Ryan Quines', 'title'=>'UI/UX Visuals', 'linkedin'=>'https://www.linkedin.com/in/ryan-matthew-quines-551a85152', 'image'=>'images/ieo/team/ryan.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Ryan Quines', 'title'=>'Design Lead', 'linkedin'=>'https://www.linkedin.com/in/ryan-matthew-quines-551a85152', 'image'=>'images/ieo/team/ryan.jpg', 'text'=>'', ];
 
 					$coreTeam[] = [	'name'=>'Zain Ul Abdin', 'title'=>'Senior Architect', 'linkedin'=>'https://www.linkedin.com/in/muhammad-zain-ul-abdin-120a3612a', 'image'=>'images/ieo/team/zain.jpg', 'text'=>'', ];
 
@@ -1698,12 +1915,11 @@
 
 					$coreTeam[] = [	'name'=>'Shajudeen Yousf', 'title'=>'Lighting Design Architect', 'linkedin'=>'https://www.linkedin.com/in/shajudeen-yousf-783452146/', 'image'=>'images/ieo/team/shajudeen.jpg', 'text'=>'', ];
 					$coreTeam[] = [	'name'=>'Ammar Mohamed', 'title'=>'Lighting Design Architect', 'linkedin'=>'https://www.linkedin.com/in/ammar-mohamed-231379103/', 'image'=>'images/ieo/team/ammar.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Muhammad Younas', 'title'=>'Social Media, Community Manager', 'linkedin'=>'https://www.linkedin.com/in/muhammad-younas2023', 'image'=>'images/ieo/advisors/muhammad.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Muhammad Younas', 'title'=>'Content Lead', 'linkedin'=>'https://www.linkedin.com/in/muhammad-younas2023', 'image'=>'images/ieo/advisors/muhammad.jpg', 'text'=>'', ];
 
 					$coreTeam[] = [	'name'=>'Chad Hanson', 'title'=>'Social Media, Community Manager', 'linkedin'=>'https://www.linkedin.com/in/chad-hanson-a747a2137/', 'image'=>'images/ieo/team/chad.jpg', 'text'=>'', ];
 					
-					$coreTeam[] = [	'name'=>'Maria Carron Igloso', 'title'=>'Community Manager', 'linkedin'=>'https://www.linkedin.com/in/maria-carron-igloso-1324b5105', 'image'=>'images/ieo/team/maria.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Tiffany Anggot', 'title'=>'Cryptography Researcher', 'linkedin'=>'https://www.linkedin.com/in/tiffany-jel-a-367548147', 'image'=>'images/ieo/team/tiffany.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Maria Carron Igloso', 'title'=>'Investor relations and Public Relations Manager', 'linkedin'=>'https://www.linkedin.com/in/maria-carron-igloso-1324b5105', 'image'=>'images/ieo/team/maria.jpg', 'text'=>'', ];
 				?>
 				<div class="row pt-5 justify-content-center">
 				@foreach($coreTeam as $tm)
@@ -1726,6 +1942,54 @@
 					</div>
 				@endforeach
 				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<div class="row pt-5 justify-content-center">
+				<?php
+					$coreTeam = [];
+				$coreTeam[] = [	'name'=>'Tiffany Anggot', 'title'=>'Director Of Strategic Partnerships', 'linkedin'=>'https://www.linkedin.com/in/tiffany-jel-a-367548147', 'image'=>'images/ieo/team/tiffany.jpg', 'text'=>'', ];
+				$coreTeam[] = [	'name'=>'Juliane Schreilechner', 'title'=>'Training Consultant', 'linkedin'=>'https://www.linkedin.com/in/juliane-schreilechner-142108174/', 'image'=>'images/ieo/team/juliane.jpg', 'text'=>'', ];
+				?>
+
+				@foreach($coreTeam as $tm)
+					<div class="col-3 text-center">
+						<div class="rounded-circle team-img" style="background-image: url({{ Util::assetUrl($tm['image'])}})">							
+							@if($tm['linkedin'])
+							<a href="{{ $tm['linkedin'] }}" class="text-white linkedin" style="font-size: 20px;" target="_blank">
+								<i class="fab fa-linkedin"></i>
+							</a>
+							@endif
+						</div>						
+						<p class="header-text pt-3 mb-0">
+							<b>
+								{{ $tm['name'] }}
+							</b>
+						</p>
+						<p class="text-white pt-1 mb-1">
+							{{ $tm['title'] }}							
+						</p>
+					</div>
+				@endforeach
+				</div>
+
+
+
 
 
 				<div class="pt-5 mt-5">
@@ -1806,10 +2070,235 @@
 
 
 
+
+
+
+
+
+
 			</div>
 		</div>
 	</div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{-- partners --}}
+{{-- ////////////////////////////////////////////////////////////// --}}
+<section class="section-8" id="partners" style="background-image: url({{ Util::assetUrl('images/ieo/partners-bg.png') }});">
+	<div class="pt-0">
+			<div class="container pt-5 pb-5">
+
+				<div class="row pt-5 pb-5 mb-3 justify-content-center sponsored_fair">
+
+				{{-- <div class="pt-5 ">
+					<h3 class="text-center">
+						<strong>
+							<span class="text-white">
+								Our
+							</span>
+							<span class="text-white">
+								Partners
+							</span>
+						</strong> 
+					</h3>
+				</div> --}}
+
+
+				<?php
+					$partners = [];
+					$partners[] = [	'style'=>'', 'title'=>'Almani', 'alt'=>'Almani', 'src'=>Util::assetUrl('images/ieo/partners/almani.png'), 'link'=>'https://almani.ae'];
+					$partners[] = [	'style'=>'', 'title'=>'CamelLED', 'alt'=>'CamelLED', 'src'=>Util::assetUrl('images/ieo/partners/camel_led.png'), 'link'=>'https://camel.almani.ae'];
+					$partners[] = [	'style'=>'', 'title'=>'Dotcom Ventures', 'alt'=>'Dotcom Ventures', 'src'=>Util::assetUrl('images/ieo/partners/dotcom_ventures.png'), 'link'=>'https://dotcomv.com'];
+					$partners[] = [	'style'=>'', 'title'=>'Dubai Consult', 'alt'=>'Dubai Consult', 'src'=>Util::assetUrl('images/ieo/partners/dubai_consult.png'), 'link'=>'https://dubaiconsult.com/'];
+					$partners[] = [	'style'=>'', 'title'=>'German Embassy UAE', 'alt'=>'German Embassy UAE', 'src'=>Util::assetUrl('images/ieo/partners/german_uae.png'), 'link'=>'https://uae.diplo.de/ae-en/vertretungen/generalkonsulat1' ];
+					$partners[] = [	'style'=>'', 'title'=>'Asas', 'alt'=>'Asas', 'src'=>Util::assetUrl('images/ieo/partners/asas.png'), 'link'=>'https://asasholding.ae'];
+					// $partners[] = [	'style'=>'', 'title'=>'Light Middle East', 'alt'=>'Light Middle East', 'src'=>Util::assetUrl('images/ieo/partners/light_middles_east.png'), 'link'=>'https://light-middle-east.ae.messefrankfurt.com/dubai/en.html'];
+					$partners[] = [	'style'=>'', 'title'=>'Light Middle East', 'alt'=>'Light Middle East', 'src'=>Util::assetUrl('images/ieo/partners/madeingermany.png'), 'link'=>'https://light-middleeast.german-pavilion.com/en/home/'];
+					$partners[] = [	'style'=>'', 'title'=>'Continental Investments', 'alt'=>'Continental Investments', 'src'=>Util::assetUrl('images/ieo/partners/continental.png'), 'link'=>'http://www.continvest.net'];
+				?>
+				<div class="col-12">
+					<h2 class="text-white ml-3 mt-0">Partners</h2>
+					<div class="icons">
+						@foreach($partners as $prtnr)
+						<div class="col-3 partner">								
+							<a href="{{$prtnr['link']}}" target="_blank" title="{{ $prtnr['title'] }}" alt="{{ $prtnr['alt'] }}">
+								<img title="{{ $prtnr['title'] }}" alt="{{ $prtnr['alt'] }}" src="{{ $prtnr['src'] }}">
+							</a>
+						</div>
+						@endforeach
+					</div>
+				</div>
+		
+
+				<?php
+					$roadshows = [];					
+					$roadshows[] = [ 'style'=>"", 'title'=>"Gitex Future Stars", 'link'=>"https://www.gitexfuturestars.com/exhibitors/buy-any-light", 'src'=>"images/ieo/partners/gitexfuturestars.png", ];
+					$roadshows[] = [ 'style'=>"", 'title'=>"Malta Blockchain Summit", 'link'=>"https://maltablockchainsummit.com", 'src'=>"images/ieo/partners/maltablockchainsummit.png", ];
+					$roadshows[] = [ 'style'=>"", 'title'=>"Future Blockchain Summit", 'link'=>"https://www.futureblockchainsummit.com/", 'src'=>"images/ieo/partners/futureblockchainsummit.png", ];
+					$roadshows[] = [ 'style'=>"", 'title'=>"Light Middle East Fair", 'link'=>"https://light-middle-east.ae.messefrankfurt.com/dubai/en.html", 'src'=>"images/ieo/partners/light_middles_east_date.png", ];
+				?>
+				<div class="col-12 mt-10">
+					<h2 class="text-white ml-3 mt-0">Road Shows</h2>
+					<div class="icons">
+						@foreach($roadshows as $rdshw)
+						<div class="col-3 partner">								
+							<a href="{{$rdshw['link']}}" target="_blank" title="{{ $rdshw['title'] }}" alt="{{ $rdshw['title'] }}" >
+								<img src="{{ Util::assetUrl($rdshw['src']) }}">
+							</a>
+						</div>
+						@endforeach
+					</div>
+				</div>
+		
+		
+
+				<?php
+					
+					// $datas[] = [ 'style'=>"", 'title'=>"", 'link'=>"", 'src'=>"", ];					
+					$datas = [];
+					$datas[] = [ 'style'=>"", 'title'=>"Airdrop Village", 'link'=>"https://airdropvillage.io/airdrop/buyanylight", 'src'=>"images/ieo/marketing-partners/airdropvillage.png", ];
+					$datas[] = [ 'style'=>"", 'title'=>"Airdrop King", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/marketing-partners/airdropking.png", ];
+					$datas[] = [ 'style'=>"", 'title'=>"Webotic.ae", 'link'=>"http://webotic.ae", 'src'=>"images/ieo/marketing-partners/webotic.png", ];
+					$datas[] = [ 'style'=>"", 'title'=>"Airdrop Alert", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/marketing-partners/airdropalert.png", ];
+				?>
+				<div class="col-5 mt-10">
+					<h2 class="text-white ml-3 mt-0">Marketing Partners</h2>
+					<div class="icons">
+						@foreach($datas as $data)
+						<div class="col-6 partner small">
+							<a href="{{$data['link']}}" target="_blank" title="{{ $data['title'] }}" alt="{{ $data['title'] }}" >
+								{{-- <img src="{{ Util::assetUrl($data['src']) }}"> --}}
+								<div class="icon" style="background-image: url({{ Util::assetUrl($data['src']) }})"></div>
+							</a>
+						</div>
+						@endforeach
+					</div>
+				</div>
+				
+				<div class="col-2 mt-10">
+				</div>
+
+				<?php
+					
+					// $datas[] = [ 'style'=>"", 'title'=>"", 'link'=>"", 'src'=>"", ];					
+					$datas = [];
+					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICORATING", 'link'=>"https://icobench.com/ico/buyanylight-bal", 'src'=>"images/ieo/partners/icoholder.png", ];
+					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOHOLDER", 'link'=>"https://icobench.com/ico/buyanylight-bal", 'src'=>"images/ieo/partners/icobench.png", ];
+					//$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOSBULL", 'link'=>"https://icosbull.com/eng/ico/buyanylightbal", 'src'=>"images/ieo/partners/icosbull.png", ];
+				?>
+				<div class="col-5 mt-10">
+					<h2 class="text-white ml-3 mt-0">Audits and Ratings</h2>
+					<div class="icons">
+						@foreach($datas as $data)
+						<div class="col-6 partner">
+							<a href="{{$data['link']}}" target="_blank" title="{{ $data['title'] }}" alt="{{ $data['title'] }}" >
+								{{-- <img src="{{ Util::assetUrl($data['src']) }}"> --}}
+								<div class="icon" style="background-image: url({{ Util::assetUrl($data['src']) }})"></div>
+							</a>
+						</div>
+						@endforeach
+						
+
+						<?php $data = [ 'style'=>"", 'title'=>"BuyAnyLight ICOSBULL", 'link'=>"https://icosbull.com/eng/ico/buyanylightbal", 'src'=>"images/ieo/partners/icosbull.png", ]; ?>						
+						<div class="col-12 partner">
+							<a href="{{$data['link']}}" target="_blank" title="{{ $data['title'] }}" alt="{{ $data['title'] }}" >
+								{{-- <img src="{{ Util::assetUrl($data['src']) }}"> --}}
+								<div class="icon" style="background-image: url({{ Util::assetUrl($data['src']) }})"></div>
+							</a>
+						</div>
+
+					</div>
+				</div>
+		
+			
+				
+
+				<?php
+					
+					// $datas[] = [ 'style'=>"", 'title'=>"", 'link'=>"", 'src'=>"", ];					
+					$datas = [];
+					$datas[] = [ 'style'=>"", 'title'=>"Bitcoin Wiki", 'link'=>"https://en.bitcoinwiki.org/wiki/Buyanylight", 'src'=>"images/ieo/partners/bitcoinwiki.png", ];
+				?>
+				<div class="col-5 mt-10">
+					<h2 class="text-white ml-3 mt-0">BuyAnyLight in News and Media</h2>
+					<div class="icons">
+						@foreach($datas as $data)
+						<div class="col-12 partner">
+							<a href="{{$data['link']}}" target="_blank" title="{{ $data['title'] }}" alt="{{ $data['title'] }}" >
+								{{-- <img src="{{ Util::assetUrl($data['src']) }}"> --}}
+								<div class="icon" style="background-image: url({{ Util::assetUrl($data['src']) }})"></div>
+							</a>
+						</div>
+						@endforeach
+					</div>
+				</div>
+					
+				
+				
+				<div class="col-2 mt-10">
+				</div>
+
+
+				<div class="col-5 mt-10">
+					<h2 class="text-white ml-3 mt-0">Sponsors</h2>
+					<div class="icons">
+						<h3 class="text-white p-3">Consulate General of the Federal Republic of Germany Dubai</h3>
+					</div>
+
+				</div>
+		
+			
+
+			</div>
+
+
+
+		</div>
+	</div>
+</section>
+{{-- ////////////////////////////////////////////////////////////// --}}
+{{-- partners --}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="section-9">
 	<div class=" h-100 d-flex align-items-center">
 		<div class="container">

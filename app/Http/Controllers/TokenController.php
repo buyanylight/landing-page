@@ -15,7 +15,7 @@ use App\Mail\KYCConfirmationAdmin;
 class TokenController extends Controller
 {
 	public function token_info(){
-		$curr = $this->GetApi('https://rest.coinapi.io/v1/exchangerate/USD?apikey=B307BEFD-28DE-499C-942C-DBC5C463B1A1');
+		$curr = $this->GetApi('https://rest.coinapi.io/v1/exchangerate/USD?apikey='.env('COINAPI_KEY'));
 
 		$curr_result = json_decode($curr, true);
 	
@@ -52,7 +52,7 @@ class TokenController extends Controller
 		}
 
 		usort($all_curr, function($a, $b) {
-   			 return $a['rank'] <=> $b['rank'];
+   			return $a['rank'] <=> $b['rank'];
 		});
 
 
@@ -76,59 +76,67 @@ class TokenController extends Controller
 	}
 
 
-	public function token_info_code(){
-		$curr = $this->GetApi('https://rest.coinapi.io/v1/exchangerate/USD?apikey=B307BEFD-28DE-499C-942C-DBC5C463B1A1');
 
-		$curr_result = json_decode($curr, true);
+	public function test(){
+
+		return view('test');
+	}
+
+
+	// public function token_info_code(){
+	// 	$curr = $this->GetApi('https://rest.coinapi.io/v1/exchangerate/USD?apikey=B307BEFD-28DE-499C-942C-DBC5C463B1A1');
+
+	// 	$curr_result = json_decode($curr, true);
 	
-		// dd($curr_result);
+	// 	// dd($curr_result);
 
-		foreach ($curr_result['rates'] as $tkey => $tvalue) {
-			if ($tvalue['asset_id_quote'] == 'EUR' || $tvalue['asset_id_quote'] == 'BTC' ||  $tvalue['asset_id_quote'] == 'ETH' ||  $tvalue['asset_id_quote'] == 'USD') {
-				$all_curr[$tkey] = $tvalue;
-				$all_curr[$tkey]['bal_rate'] = number_format($tvalue['rate'] / 5, 8);
-				$all_curr[$tkey]['time'] = date('d-M-y H:i', strtotime($all_curr[$tkey]['time'])) . ' UTC' ;
-			}
+	// 	foreach ($curr_result['rates'] as $tkey => $tvalue) {
+	// 		if ($tvalue['asset_id_quote'] == 'EUR' || $tvalue['asset_id_quote'] == 'BTC' ||  $tvalue['asset_id_quote'] == 'ETH' ||  $tvalue['asset_id_quote'] == 'USD') {
+	// 			$all_curr[$tkey] = $tvalue;
+	// 			$all_curr[$tkey]['bal_rate'] = number_format($tvalue['rate'] / 5, 8);
+	// 			$all_curr[$tkey]['time'] = date('d-M-y H:i', strtotime($all_curr[$tkey]['time'])) . ' UTC' ;
+	// 		}
 
-			if ($tvalue['asset_id_quote'] == 'EUR'){
-				$all_curr[$tkey]['logo'] = '<i class="fas fa-euro-sign"></i>';
-				$all_curr[$tkey]['symbol'] = 'Euro';
-			}
-			if ($tvalue['asset_id_quote'] == 'USD'){
-				$all_curr[$tkey]['logo'] = '<i class="fas fa-dollar-sign"></i>';
-				$all_curr[$tkey]['symbol'] = 'US Dollar';
-			}
-			if ($tvalue['asset_id_quote'] == 'BTC'){
-				$all_curr[$tkey]['logo'] = '<i class="fab fa-bitcoin"></i>';	
-				$all_curr[$tkey]['symbol'] = 'Bitcoin';
-			}
-			if ($tvalue['asset_id_quote'] == 'ETH'){
-				$all_curr[$tkey]['logo'] = '<i class="fab fa-ethereum"></i>';
-				$all_curr[$tkey]['symbol'] = 'Ethereum';
-			}
+	// 		if ($tvalue['asset_id_quote'] == 'EUR'){
+	// 			$all_curr[$tkey]['logo'] = '<i class="fas fa-euro-sign"></i>';
+	// 			$all_curr[$tkey]['symbol'] = 'Euro';
+	// 		}
+	// 		if ($tvalue['asset_id_quote'] == 'USD'){
+	// 			$all_curr[$tkey]['logo'] = '<i class="fas fa-dollar-sign"></i>';
+	// 			$all_curr[$tkey]['symbol'] = 'US Dollar';
+	// 		}
+	// 		if ($tvalue['asset_id_quote'] == 'BTC'){
+	// 			$all_curr[$tkey]['logo'] = '<i class="fab fa-bitcoin"></i>';	
+	// 			$all_curr[$tkey]['symbol'] = 'Bitcoin';
+	// 		}
+	// 		if ($tvalue['asset_id_quote'] == 'ETH'){
+	// 			$all_curr[$tkey]['logo'] = '<i class="fab fa-ethereum"></i>';
+	// 			$all_curr[$tkey]['symbol'] = 'Ethereum';
+	// 		}
 
-		}
+	// 	}
 
 
-		 $agent = new Agent();
+	// 	 $agent = new Agent();
 
-        $isMobile = $agent->isMobile();
-        $isTablet = $agent->isTablet();
+ //        $isMobile = $agent->isMobile();
+ //        $isTablet = $agent->isTablet();
 
- 		if($isMobile || $isTablet) {
-            return view('mobile.test', [
-				'tokens' => $all_curr
+ // 		if($isMobile || $isTablet) {
+ //            return view('mobile.test', [
+	// 			'tokens' => $all_curr
 
-            ]);
-        } else {
-            return view('test', [
-				'tokens' => $all_curr
+ //            ]);
+ //        } else {
+ //            return view('test', [
+	// 			'tokens' => $all_curr
 
-            ]);
-        }
-	}	
+ //            ]);
+ //        }
+	// }	
 
 	public function buy_tokens(Request $r){
+
 
 
 		$curr = explode(' ', $r['currency']);
@@ -252,6 +260,8 @@ class TokenController extends Controller
 
 
 	public function kyc(Request $request){
+
+		// dd($request);
 
 		$countries = [
   			"Afghanistan",
@@ -523,11 +533,13 @@ class TokenController extends Controller
 					'name' => $transaction['name'],
 	            	'user_reference_id' => $transaction['user_reference_id'],	
 	            	'bal_amt' => $transaction['bal_amt'],
-	            	'number' => $transaction['number']	
+	            	'number' => $transaction['number'],
 	            
 				);
 
 			} else {
+				if ($request['later_bank'] !== null ) {
+					# code...
 				$transaction = $request->validate([
 	            	'receiver_id' => 'required',
 	            	'amount' => 'required',
@@ -537,6 +549,8 @@ class TokenController extends Controller
 	            	'user_reference_id' => 'required',
 	            	'bal_amt' => 'required',
 	            	'number' => 'required',
+	            	'later_bank' => 'required',
+
 
 
 
@@ -550,11 +564,50 @@ class TokenController extends Controller
 					'reference' => $transaction['reference'],
 	            	'user_reference_id' => $transaction['user_reference_id'],	
 	            	'bal_amt' => $transaction['bal_amt'],
-	            	'number' => $transaction['number']
+	            	'number' => $transaction['number'],
+	            	'later_bank' =>$transaction['later_bank']	
+
 	            	
 	           
 
 				);
+				} else {
+
+					$transaction = $request->validate([
+	            	'receiver_id' => 'required',
+	            	'amount' => 'required',
+	            	'email_id' => 'required', 
+	            	'name' => 'required',
+	            	'reference' => 'required',
+	            	'user_reference_id' => 'required',
+	            	'bal_amt' => 'required',
+	            	'number' => 'required'
+	            	,
+
+
+
+
+	        	]);
+
+				$email_details = array(
+					'amount' => $transaction['amount'],
+					'receiver_id' => $transaction['receiver_id'],
+					'email_id' => $transaction['email_id'],
+					'name' => $transaction['name'],
+					'reference' => $transaction['reference'],
+	            	'user_reference_id' => $transaction['user_reference_id'],	
+	            	'bal_amt' => $transaction['bal_amt'],
+	            	'number' => $transaction['number'],
+	  
+
+	            	
+	           
+
+				);
+
+
+
+				}
 			}
 
 		} else {
@@ -613,12 +666,12 @@ class TokenController extends Controller
 	        'user_reference_id' => $transaction['user_reference_id'],
 	        'bal_amt' => $transaction['bal_amt'],
 	        'countries' => $countries,
-	        'number' => $transaction['number']
+	        'number' => $transaction['number'],
 
 		]);
 	}
 
-	public function demo(string $uid) {
+	public function kyc_form(string $uid) {
 
 
 		// dd($_GET);

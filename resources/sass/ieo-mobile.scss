@@ -404,8 +404,8 @@ nav .dropdown-toggle::after {
 	height: 470px;
 	background-size: cover;
 	> .container {
-		// padding-bottom: 200px;
-		padding-bottom: 220px;
+		padding-bottom: 200px;
+		// padding-bottom: 220px;
 	}
 }
 
@@ -508,3 +508,60 @@ nav .dropdown-toggle::after {
 	text-align: justify;
     margin-top: 10px;
 }
+
+
+
+
+
+
+
+
+
+#partners {
+    background-size: auto;
+    background-position: center;	
+	.partner {
+		margin-top: 30px;
+		margin-bottom: 25px;
+	    display: inline-flex;
+	    justify-content: center;
+	    align-items: center;		
+		img {
+		    max-width: 90%;
+		    max-height: 100px;			
+		}
+	}
+
+	.sponsored_fair {
+		h2, h5 {
+			border-bottom: 1px solid;
+		    display: inline-flex;
+		    margin-top: 15px;		    
+		    margin-bottom: 5px;		    
+		}
+		.icons {			
+			display: flex;
+			align-items: center;
+			justify-content: space-around;		
+			flex-wrap: wrap;
+			a {
+				display: inline-flex;
+			    align-items: center;
+			    justify-content: center;				
+				width: 100%;
+				padding: 0 10px;
+				img {
+				    // width: 100%;
+					width: auto;
+					max-width: 100%;			        
+			        margin-bottom: 20px;
+				}
+			}
+		}
+		.links {
+			a {
+				color: #fff;
+			}
+		}
+	}	
+} 

@@ -5,8 +5,8 @@
 @endsection
 
 @section('meta-description')
-<meta name="description" content="BuyAnyLight (BAL) IEO is a crowdfunding campaign aimed at raising funds for the development of a decentralized,  marketplace for lighting products." />
-<meta property="og:description" content="BuyAnyLight (BAL) IEO is a crowdfunding campaign aimed at raising funds for the development of a decentralized,  marketplace for lighting products.">
+<meta name="description" content="BuyAnyLight (BAL) IEO is a crowdfunding campaign aimed at raising funds for the development of a decentralized, marketplace for lighting products." />
+<meta property="og:description" content="BuyAnyLight (BAL) IEO is a crowdfunding campaign aimed at raising funds for the development of a decentralized, marketplace for lighting products.">
 @endsection
 
 @section('css')
@@ -41,7 +41,7 @@
 
 
 			
-			$('.bal-token').blur(function() {
+			$('.bal-token').keyup(function() {
 			if (numeral($('.bal-token').val()).value() < 25000) {
 				$('.bal-alert').show()
 				$('#token-btn').attr('disabled', 'disabled')
@@ -152,6 +152,30 @@
 
 
 @section('content')
+<div style="position: relative; z-index: 5">
+       <!-- Position toasts -->
+   	<div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
+    	<div class="toast" data-autohide="false">
+        	<div class="toast-header">
+                	<strong class="mr-auto">
+                    	<img src="{{ Util::assetUrl('images/logo-black-icon.png') }}" width="25">
+                    	BuyAnyLight
+                	</strong>
+                	<button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+            	</div>
+            	@if(session('success'))
+           		<div class="toast-body">
+                	<b>Thanks for being awesome!</b>
+                	{!! session('success') !!}
+            	</div>
+           		@else
+            	<div class="toast-body">
+                	{!! session('danger') !!}
+            	</div>
+            	@endif
+        	</div>
+    	</div>    
+	</div>
 
 
 <div class="all-contents">
@@ -161,16 +185,17 @@
 	<div class="section-1-bg pt-5">
 		<div class="container text-center h-100 d-flex align-items-end justify-content-center">
 			<div class="row">
-				<div class="col-12">
-					<h3 class="text-white">
+				<div class="col-12" style="position: relative;">
+					<h3 class="text-white" style=" text-align: left; padding-left: 10px; margin-bottom: 20px;">
 						<b>BAL Initial Exchange <br> Offering (IEO)</b>
 					</h3>
 
-					<div class="pt-2">
-						{{-- <p class="small-desc text-white">
-							BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowdfunding campaign aimed at raising funds for the development of a decentralized.
-						</p> --}}
-					</div>
+					<a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
+					<img border="0" 
+					style="height: 65px; position: absolute; top: 0px; right: 30px;" 
+					src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" 
+					alt="BuyAnyLight (BAL) ICO rating"/>
+					</a>
 				</div>
 				<div class="col-12">
 					<div class="btn-group" role="group" aria-label="Basic example">
@@ -391,11 +416,11 @@
 				<div class="pt-4">
 					<div class="input-group" style="height: 75px; position: relative; right: 5px;">
 	  					<div class="input-group-prepend" style="width: 88px">
-	    					<span class="input-group-text d-flex justify-content-center btn-ieo" id="basic-addon1" style="width: 100%; border-radius: 20px; position: relative; left: 10px; z-index: 1; box-shadow: 4px 0px 5px 0px #cccccc;" data-toggle="tooltip" data-placement="right" title="BAL Token">
+	    					<span class="input-group-text d-flex justify-content-center btn-ieo" id="basic-addon1" style="width: 100%; border-radius: 20px; position: relative; left: 10px; z-index: 1; box-shadow: 4px 0px 5px 0px #cccccc;  background: -webkit-linear-gradient(right, #e4007b, #0000af);" data-toggle="tooltip" data-placement="right" title="BAL Token">
 	    						<img src="{{ Util::assetUrl('images/logo-white-mobile.png') }}" width="28">
 	    					</span>
 	  					</div>
-	  					<input  class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" min="25000" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 12px; margin-top: 3px;">
+	  					<input  class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" min="25000" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 12px; margin-top: 3px; border: 1px solid #000000;">
 	  					<br>
 					</div>
 				</div>
@@ -520,7 +545,7 @@
 												Visa, Mastercard, Bank Transfer, Bitcoin, Ethereum
 											</small>
 					</div>
-					<button type="submit" class="btn btn-ieo" id="token-btn" disabled>
+					<button type="submit" class="btn btn-ieo" id="token-btn">
 						<b>Buy Tokens</b>
 					</button>
 		
@@ -1425,21 +1450,22 @@
 					$coreTeam[] = [	'name'=>'Martin Heyen', 'title'=>'Co-Founder & CFO', 'linkedin'=>'', 'image'=>'images/ieo/team/martin.jpg', 'text'=>'', ];
 					$coreTeam[] = [	'name'=>'Leo Vicente', 'title'=>'Chief Technical Officer', 'linkedin'=>'https://www.linkedin.com/in/ljvicente', 'image'=>'images/ieo/team/leo.jpg', 'text'=>'', ];
 					$coreTeam[] = [	'name'=>'Rene Rowell dela Rama', 'title'=>'Director of Blockchain Integration', 'linkedin'=>'https://www.linkedin.com/in/rene-rowell-dela-rama-3ab529148', 'image'=>'images/ieo/team/rene.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Rizvi Iqbal', 'title'=>'Senior Blockchain Engineer', 'linkedin'=>'https://www.linkedin.com/in/rizviqbal', 'image'=>'images/ieo/team/rizvi.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Artem Gordadze', 'title'=>'Exchange Listings Specialist, IEO Negotiations', 'linkedin'=>'https://www.linkedin.com/in/artem-gordadze', 'image'=>'images/ieo/team/artem.jpg', 'text'=>'', ];	
+					$coreTeam[] = [	'name'=>'Rizvi Iqbal', 'title'=>'Blockchain & DLT Specialist', 'linkedin'=>'https://www.linkedin.com/in/rizviqbal', 'image'=>'images/ieo/team/rizvi.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Artem Gordadze', 'title'=>'Marketing Specialist', 'linkedin'=>'https://www.linkedin.com/in/artem-gordadze', 'image'=>'images/ieo/team/artem.jpg', 'text'=>'', ];	
 					$coreTeam[] = [	'name'=>'Nantha Kumar', 'title'=>'Sales Director', 'linkedin'=>'https://www.linkedin.com/in/nantha-kumar-36b92685', 'image'=>'images/ieo/team/nantha.jpg', 'text'=>'', ];
 					$coreTeam[] = [	'name'=>'Marc Vazquez', 'title'=>'Sourcing, Production & Investors Relations', 'linkedin'=>'https://www.linkedin.com/in/marc-vazquez-6b01a794', 'image'=>'images/ieo/team/marc.jpg', 'text'=>'', ];					
-					$coreTeam[] = [	'name'=>'Ryan Quines', 'title'=>'UI/UX Visuals', 'linkedin'=>'https://www.linkedin.com/in/ryan-matthew-quines-551a85152', 'image'=>'images/ieo/team/ryan.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Ryan Quines', 'title'=>'Design Lead', 'linkedin'=>'https://www.linkedin.com/in/ryan-matthew-quines-551a85152', 'image'=>'images/ieo/team/ryan.jpg', 'text'=>'', ];
 					$coreTeam[] = [	'name'=>'Zain Ul Abdin', 'title'=>'Senior Architect', 'linkedin'=>'https://www.linkedin.com/in/muhammad-zain-ul-abdin-120a3612a', 'image'=>'images/ieo/team/zain.jpg', 'text'=>'', ];
 					
 					$coreTeam[] = [	'name'=>'Ammar Mohamed', 'title'=>'Lighting Design Architect', 'linkedin'=>'https://www.linkedin.com/in/ammar-mohamed-231379103/', 'image'=>'images/ieo/team/ammar.jpg', 'text'=>'', ];
 					$coreTeam[] = [	'name'=>'Shajudeen Yousf', 'title'=>'Lighting Design Architect', 'linkedin'=>'https://www.linkedin.com/in/shajudeen-yousf-783452146/', 'image'=>'images/ieo/team/shajudeen.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Muhammad Younas', 'title'=>'Social Media, Community Manager', 'linkedin'=>'https://www.linkedin.com/in/muhammad-younas2023', 'image'=>'images/ieo/advisors/muhammad.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Muhammad Younas', 'title'=>'Content Lead', 'linkedin'=>'https://www.linkedin.com/in/muhammad-younas2023', 'image'=>'images/ieo/advisors/muhammad.jpg', 'text'=>'', ];
 					
 					$coreTeam[] = [	'name'=>'Chad Hanson', 'title'=>'Social Media, Community Manager', 'linkedin'=>'https://www.linkedin.com/in/chad-hanson-a747a2137/', 'image'=>'images/ieo/team/chad.jpg', 'text'=>'', ];
 
-					$coreTeam[] = [	'name'=>'Maria Carron Igloso', 'title'=>'Community Manager', 'linkedin'=>'https://www.linkedin.com/in/maria-carron-igloso-1324b5105', 'image'=>'images/ieo/team/maria.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Tiffany Anggot', 'title'=>'Cryptography Researcher', 'linkedin'=>'https://www.linkedin.com/in/tiffany-jel-a-367548147', 'image'=>'images/ieo/team/tiffany.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Maria Carron Igloso', 'title'=>'Investor relations and Public Relations Manager', 'linkedin'=>'https://www.linkedin.com/in/maria-carron-igloso-1324b5105', 'image'=>'images/ieo/team/maria.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Tiffany Anggot', 'title'=>'Director Of Strategic Partnerships', 'linkedin'=>'https://www.linkedin.com/in/tiffany-jel-a-367548147', 'image'=>'images/ieo/team/tiffany.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Juliane Schreilechner', 'title'=>'Training Consultant', 'linkedin'=>'https://www.linkedin.com/in/juliane-schreilechner-142108174/', 'image'=>'images/ieo/team/juliane.jpg', 'text'=>'', ];
 				
 				?>
 				<div class="row justify-content-center">
@@ -1513,6 +1539,202 @@
 
 	</div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{-- partners --}}
+{{-- ////////////////////////////////////////////////////////////// --}}
+<section class="section-8" id="partners" style="background-image: url({{ Util::assetUrl('images/ieo/partners-bg-hr.png') }});">
+	<div class="pt-0">
+		<div class="pt-0 pb-4">
+			<div class="container">
+
+				{{-- <div class="pt-5 ">
+					<h3 class="text-center">
+						<strong>
+							<span class="text-white">
+								Our
+							</span>
+							<span class="text-white">
+								Partners
+							</span>
+						</strong> 
+					</h3>
+				</div> --}}
+
+
+				<?php
+					$partners = [];
+					$partners[] = [ 'style'=>'', 'title'=>'Almani', 'alt'=>'Almani', 'src'=>Util::assetUrl('images/ieo/partners/almani.png'), 'link'=>'https://almani.ae' ];
+					$partners[] = [ 'style'=>'', 'title'=>'CamelLED', 'alt'=>'CamelLED', 'src'=>Util::assetUrl('images/ieo/partners/camel_led.png'),  'link'=>'https://camel.almani.ae'];
+					$partners[] = [ 'style'=>'', 'title'=>'Dotcom Ventures', 'alt'=>'Dotcom Ventures', 'src'=>Util::assetUrl('images/ieo/partners/dotcom_ventures.png'), 'link'=>'https://dotcomv.com'];
+					$partners[] = [ 'style'=>'', 'title'=>'Dubai Consult', 'alt'=>'Dubai Consult', 'src'=>Util::assetUrl('images/ieo/partners/dubai_consult.png'),  'link'=>'https://dubaiconsult.com/'];
+					$partners[] = [ 'style'=>'', 'title'=>'Continental Investments', 'alt'=>'Continental Investments', 'src'=>Util::assetUrl('images/ieo/partners/continental.png'), 'link'=>'http://www.continvest.net'];
+					$partners[] = [ 'style'=>'', 'title'=>'Asas', 'alt'=>'Asas', 'src'=>Util::assetUrl('images/ieo/partners/asas.png'), 'link'=>'https://asasholding.ae'];
+					$partners[] = [ 'style'=>'', 'title'=>'German UAE', 'alt'=>'German UAE', 'src'=>Util::assetUrl('images/ieo/partners/german_uae.png'), 'link'=>'https://uae.diplo.de/ae-en/vertretungen/generalkonsulat1'];
+					// $partners[] = [ 'style'=>'', 'title'=>'Light Middles East', 'alt'=>'Light Middles East', 'src'=>Util::assetUrl('images/ieo/partners/light_middles_east.png'), 'link'=>'https://light-middle-east.ae.messefrankfurt.com/dubai/en.html'];
+					$partners[] = [	'style'=>'', 'title'=>'Light Middle East', 'alt'=>'Light Middle East', 'src'=>Util::assetUrl('images/ieo/partners/madeingermany.png'), 'link'=>'https://light-middleeast.german-pavilion.com/en/home/'];
+				?>
+				<div class="row pt-4 justify-content-center partners sponsored_fair">
+					<div class="col-12 mt-3 text-center">					
+						<h2 class="text-white mb-4">Partners</h2>
+					</div>
+
+					@foreach($partners as $prtnr)
+					<div class="col-6 text-center partner">
+						<a href="{{$prtnr['link']}}" target="_blank">
+							<img title="{{ $prtnr['title'] }}" alt="{{ $prtnr['alt'] }}" src="{{ $prtnr['src'] }}">
+						</a>
+					</div>
+					@endforeach
+				</div>
+		
+
+				<div class="row pt-3 mt-5 pb-3 justify-content-center sponsored_fair">
+
+					<div class="col-12 mt-5 text-center">
+						{{-- <h2 class="text-white ml-3 mb-4">Road Shows</h2> --}}
+						<h2 class="text-white mb-4">Road Shows</h2>
+						<div class="icons">
+							<?php
+								$datas = [];					
+								$datas[] = [ 'style'=>"", 'title'=>"Gitex Future Stars", 'link'=>"https://www.gitexfuturestars.com/exhibitors/buy-any-light", 'src'=>"images/ieo/partners/gitexfuturestars.png", ];
+								$datas[] = [ 'style'=>"", 'title'=>"Light Middle East Fair", 'link'=>"https://light-middle-east.ae.messefrankfurt.com/dubai/en.html", 'src'=>"images/ieo/partners/light_middles_east_date.png", ];
+								$datas[] = [ 'style'=>"", 'title'=>"Malta Blockchain Summit", 'link'=>"https://maltablockchainsummit.com", 'src'=>"images/ieo/partners/maltablockchainsummit.png", ];
+								$datas[] = [ 'style'=>"", 'title'=>"Future Blockchain Summit", 'link'=>"https://www.futureblockchainsummit.com/", 'src'=>"images/ieo/partners/futureblockchainsummit.png", ];
+							?>							
+							@foreach($datas as $data)
+							<a href="{{ $data['link'] }}" target="_blank">
+								<img title="{{ $data['title'] }}" alt="{{ $data['title'] }}" src="{{ Util::assetUrl($data['src']) }}" style="">
+							</a>
+							@endforeach
+
+						</div>
+					</div>
+
+					<div class="col-12 mt-5 text-center">
+						{{-- <h2 class="text-white ml-3 mb-4">Marketing Partners</h2> --}}
+						<h2 class="text-white mt-5 mb-4">Marketing Partners</h2>
+						<div class="icons">
+							<?php								
+								// $datas[] = [ 'style'=>"", 'title'=>"", 'link'=>"", 'src'=>"", ];					
+								$datas = [];
+								$datas[] = [ 'style'=>"", 'title'=>"Airdrop Village", 'link'=>"https://airdropvillage.io/airdrop/buyanylight", 'src'=>"images/ieo/marketing-partners/airdropvillage.png", ];
+								$datas[] = [ 'style'=>"", 'title'=>"Airdrop King", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/marketing-partners/airdropking.png", ];
+								$datas[] = [ 'style'=>"", 'title'=>"Webotic.ae", 'link'=>"http://webotic.ae", 'src'=>"images/ieo/marketing-partners/webotic.png", ];
+								$datas[] = [ 'style'=>"", 'title'=>"Airdrop Alert", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/marketing-partners/airdropalert.png", ];
+							?>
+							@foreach($datas as $data)
+							<a href="{{ $data['link'] }}" target="_blank">
+								<img title="{{ $data['title'] }}" alt="{{ $data['title'] }}" src="{{ Util::assetUrl($data['src']) }}">
+							</a>
+							@endforeach
+
+						</div>
+
+					</div>
+
+					{{-- <div class="col-6 mt-5">
+						<div id="icoholder-widget-big-black-listed-31234"></div>
+						<script type="application/javascript" async="async" src="https://icoholder.com/en/widget/big-black-listed/31234.js?width=5"></script>
+					</div> --}}
+
+					<div class="col-12 mt-5 text-center">
+						{{-- <h2 class="text-white ml-3 mb-4">Audits & Ratings</h2> --}}
+						<h2 class="text-white mt-5 mb-4">Audits & Ratings</h2>
+						<div class="icons">
+							<a style="width: 150px;" href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">
+								<img style="" src="{{ Util::assetUrl('images/ieo/partners/icobench.png') }}" alt="BuyAnyLight (BAL) ICO rating"/>
+							</a>
+							<a style="width: 165px;" href="https://icoholder.com/en/buyanylight-31234" target="_blank"  title="BuyAnyLight ICOHolder">
+								<img style="" src="{{ Util::assetUrl('images/ieo/partners/icoholder.png') }}" alt="BuyAnyLight ICOHolder"/>
+							</a>
+							<a href="https://icosbull.com/eng/ico/buyanylightbal" target="_blank"  title="BuyAnyLight on ICOSBENCH">
+								<img src="{{ Util::assetUrl('images/ieo/partners/icosbull.png') }}" alt="BuyAnyLight ICO Bull"/>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-12 mt-5 text-center">
+						{{-- <h2 class="text-white ml-3 mb-4">BuyAnyLight in News and Media</h2> --}}
+						<h2 class="text-white mt-5 mb-4">BAL in News and Media</h2>
+						<div class="icons">
+							<a href="https://en.bitcoinwiki.org/wiki/Buyanylight" target="_blank">
+								<img style="width: 200px;" 
+								title="Bitcoin Wiki" 
+								alt="Bitcoin Wiki" 
+								src="{{ Util::assetUrl('images/ieo/bitcoinwiki.svg') }}">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-12 mt-5 text-center">
+						{{-- <h2 class="text-white ml-3">Sponsors</h2> --}}
+						<h2 class="text-white mt-5 mb-4">Sponsors</h2>
+						<div class="icons">
+							<h3 class="text-white p-3">Consulate General of the Federal Republic of Germany Dubai</h3>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</section>
+{{-- ////////////////////////////////////////////////////////////// --}}
+{{-- partners --}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <section class="section-9">
 	<div class=" h-100 d-flex align-items-center my-4">

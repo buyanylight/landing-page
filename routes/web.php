@@ -23,15 +23,16 @@ Route::get('/contact', 'PageController@contact')->name('contact');
 // Route::get('/ieo', 'PageController@ieo')->name('ieo');
 
 Route::get('/ieo', 'TokenController@token_info')->name('ieo');
-Route::get('/testcode', 'TokenController@token_info_code')->name('testcode');
+// Route::get('/testcode', 'TokenController@token_info_code')->name('testcode');
 Route::post('/buy-token', 'TokenController@buy_tokens')->name('buy-tokens');
 Route::post('/kyc', 'TokenController@kyc')->name('kyc');
+Route::get('/kyc-form/{uid}', 'TokenController@kyc_form')->name('kyc-form');
+Route::post('/thank-you', 'TokenController@kyc_confirm')->name('thank-you');
+Route::get('/test', 'TokenController@test')->name('test');
 
 Route::get('/downloads', 'PageController@downloads')->name('downloads');
 Route::get('/videos', 'PageController@videos')->name('videos');
 
-Route::post('/thank-you', 'TokenController@kyc_confirm')->name('thank-you');
-Route::get('/kyc-form/{uid}', 'TokenController@demo')->name('demo');
 Route::get('/whitepaper', 'PageController@soon')->name('whitepaper');
 Route::get('/yellowpaper', 'PageController@soon')->name('yellowpaper');
 
@@ -39,6 +40,7 @@ Route::get('/yellowpaper', 'PageController@soon')->name('yellowpaper');
 
 
 Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUsController@contactSaveData']);
+Route::post('subscribe', ['as'=>'subscribe.store','uses'=>'SubscribeController@saveData']);
 
 
 Route::get('/ieo-test', 'PageController@ieo')->name('ieo-test');

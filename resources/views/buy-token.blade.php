@@ -127,6 +127,13 @@
 
    		})
 
+        $('.later-trxn').click(function(){
+            $('#user-detail-form').append('<input type="hidden" name="reference" value="BuyAnyLight-{{ $rand }}">');
+            $('#user-detail-form').append('<input type="hidden" name="later_bank" value="1">');
+            $('#user-detail-form').submit();
+
+        })
+
 
    		   $('#investor-edit').click(function(){
    			$('.payment').slideUp();
@@ -237,6 +244,13 @@
    			$('#user-detail-form').submit();
 
    		})
+
+       $('.later-trxn').click(function(){
+            $('#user-detail-form').append('<input type="hidden" name="reference" value="BuyAnyLight-{{ $rand }}">');
+            $('#user-detail-form').append('<input type="hidden" name="later_bank" value="1">');
+            $('#user-detail-form').submit();
+
+        })
 
    });
 
@@ -678,6 +692,9 @@
 			  								<button class="btn btn-success w-100 completed-trxn">
 			  									I have sent the funds
 			  								</button>
+                                            <button class=" mt-2 btn btn-secondary w-100 later-trxn">
+                                                I'll do this later 
+                                            </button>
 			  							</div>
         							</div>
 		  						
@@ -1038,6 +1055,9 @@
 			  								<button class="btn btn-success w-100 completed-trxn">
 			  									I have sent the funds
 			  								</button>
+                                            <button class="btn btn-success w-100 later-trxn">
+                                                I'll do this later 
+                                            </button>
 			  							</div>
         							</div>
 		  						

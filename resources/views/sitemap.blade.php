@@ -82,6 +82,12 @@
 	</url>
 
 	<url> 
+		<loc>https://blog.buyanylight.com</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+
+	<url> 
 		<loc>https://buyanylight.com/m/add-ons</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
