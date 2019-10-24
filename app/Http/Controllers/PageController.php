@@ -168,8 +168,17 @@ class PageController extends Controller
         return response()
                 ->view('sitemap')
                 ->header('Content-Type', 'text/xml');
+    }
+
+    public function myhome()
+    {
+        return view('myhome');
 
     }
+
+
+
+
 
 
 }
