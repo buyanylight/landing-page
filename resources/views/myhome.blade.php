@@ -481,7 +481,7 @@
 		<div class="container">
 			<h2 class="text-white">
 				<b>
-					<span style="text-decoration:line-through;">Project fee = $1949 </span> 
+					<span style="text-decoration:line-through;">Project fee = $949 </span> 
 					<br>No Project fee on your first project
 				</b>
 			</h2>
