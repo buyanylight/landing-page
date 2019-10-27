@@ -11184,8 +11184,12 @@ nav .dropdown-toggle::after {
 .section-1 {
   height: 100%;
   background: black;
-  padding-top: 84px;
+  padding-top: 60px;
   padding-bottom: 84px;
+}
+
+.BAL-video {
+  margin-top: 30px;
 }
 
 .btn-BAL {
@@ -11275,6 +11279,31 @@ nav .dropdown-toggle::after {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.card-my-home-summary {
+  width: 370px;
+}
+
+.trial-list {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.trial-list li {
+  margin-top: 10px;
+}
+
+.bg-BAL {
+  background-color: #5555A4;
+}
+
+.center-content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  padding-top: 3rem;
 }
 
 #accordion .card .btn-link:active,
