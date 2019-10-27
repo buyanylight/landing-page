@@ -318,7 +318,7 @@
 		<div class="container text-center pt-5">
 			<a data-fancybox href="https://www.youtube.com/embed/ggLc0PPemko?rel=0&enablejsapi=1" class="btn btn-md btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a>
 			<a data-fancybox href="{{ Util::assetUrl('brochures/MyTower_BAL.pdf') }}" class="btn btn-md btn-BAL"> <i class="fas fa-file-pdf"></i> &nbsp;View Brochure</a>
-			<a href="#interested" class="btn btn-md btn-BAL">I'm Interested</a>
+			<!-- <a href="#interested" class="btn btn-md btn-BAL">I'm Interested</a> -->
 
 		</div>
 	</div>
