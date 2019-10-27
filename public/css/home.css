@@ -11351,6 +11351,10 @@ h1 {
   padding-top: 3rem;
 }
 
+.promo {
+  text-align: left;
+}
+
 .section-4 {
   background: white;
 }
