@@ -115,6 +115,30 @@
 	@endif
 @endsection
 @section('content')
+	<div style="position: relative; z-index: 5">
+            <!-- Position toasts -->
+    	<div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
+        	<div class="toast" data-autohide="false">
+            	<div class="toast-header">
+                	<strong class="mr-auto">
+                    	<img src="{{ Util::assetUrl('images/logo-black-icon.png') }}" width="25">
+                    	BuyAnyLight
+                	</strong>
+                	<button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+            	</div>
+            	@if(session('success'))
+           		<div class="toast-body">
+                	<b>Thanks for being awesome!</b>
+                	{!! session('success') !!}
+            	</div>
+           		@else
+            	<div class="toast-body">
+                	{!! session('danger') !!}
+            	</div>
+            	@endif
+        	</div>
+    	</div>    
+	</div>
 <section class="section-1">
 	<div class="container-fluid d-flex align-items-center justify-content-items h-100 section-padding">
 		<div>
@@ -140,7 +164,7 @@
 					<div class="mt-3" style="border: 1px solid white; padding: 25px; background-color: white; border-radius: 20px;">
 						<h3 class="text-dark">
 							<b>
-								<span style="text-decoration:line-through;">Project fee = $1949 </span> <br>Sign up now and get a free lighting project
+								<span style="text-decoration:line-through;">Project fee = $1949 </span> <br>Sign up now to save $1949 for your first project!
 							</b>
 						</h3>
 						<form class="pt-1" method="post" action="/subscribe">
@@ -190,50 +214,83 @@
 					<span style="color: #5555A4">My Tower</span> Advantages
 				</b>
 			</h3>
-			<div class="card-deck h-50 pt-5">
-				<div class="card card-body">
-					<i class="fas fa-tasks" style="font-size: 50px;"></i>
-					<div class="pt-3">
-						<h5><b>Convencience</b></h5>
-						<p class="pt-1"> No more long and tedious quote & sample processes with multiple suppliers. BAL is your one-stop shop. </p>
-					</div>
+			<div  class="row pt-5 pb-3">
+				<div class="col-12 col-md-6">
+					<img src="{{ Util::assetUrl('/images/mytower/tower1.jpg') }}" width="100%" style="border-radius: 25px;">
 				</div>
-				<div class="card card-body">
-					<i class="fas fa-dollar-sign" style="font-size: 50px;"></i>
-					<div class="pt-3">
-						<h5><b>The Best Prices</b></h5>
-						<p class="pt-1">Huge discounts on top brand quality (no matter what your order size), no middle men and a passion for giving everyone a great deal. </p>
+				<div class="col-12 col-md-6">
+					<div class="card card-body mt-2">
+						<div class="row">
+							<div class="col-1">
+								<i class="fas fa-tasks" style="font-size: 25px;"></i>
+							</div>
+							<div class="col-11">
+								<h5><b>Convencience</b></h5>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="card card-body">
-					<i class="fas fa-boxes" style="font-size: 50px;"></i>
-					<div class="pt-3">
-						<h5><b>Access to Variety</b></h5>
-						<p class="pt-1">We can easily meet your exact requirements from all the world’s top brands. </p>
+					<div class="card card-body mt-2">
+						<div class="row">
+							<div class="col-1">
+								<i class="fas fa-dollar-sign" style="font-size: 25px;"></i>
+							</div>
+							<div class="col-11">
+								<h5><b>The Best Prices</b></h5>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="card-deck row-two h-50" style="">
-				<div class="card card-body">
-					<i class="fas fa-boxes" style="font-size: 50px;"></i>
-					<div class="pt-3">
-						<h5><b>Flexible Quotes</b></h5>
-						<p class="pt-1">BAL helps you make a handsome profit and still give your client a winning price! </p>
+					<div class="card card-body mt-2">
+						<div class="row">
+							<div class="col-1">
+								<i class="fas fa-stopwatch" style="font-size: 25px;"></i>
+							</div>
+							<div class="col-11">
+								<h5><b>Flexible Quotes</b></h5>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="card card-body">
-					<i class="fas fa-shield-alt" style="font-size: 50px;"></i>
-					<div class="pt-3">
-						<h5><b>Secure</b></h5>
-						<p class="pt-1">Your payment is secured with BAL until you receive the goods. So your funds are safe with us. </p>
+				<!-- 	<div class="card card-body mt-2">
+						<div class="row">
+							<div class="col-1">
+								<i class="fas fa-boxes" style="font-size: 25px;"></i>
+							</div>
+							<div class="col-11">
+								<h5><b>Secure</b></h5>
+							</div>
+						</div>
+					</div> -->
+					<div class="card card-body mt-2">
+						<div class="row">
+							<div class="col-1">
+								<i class="fas fa-truck" style="font-size: 25px;"></i>
+							</div>
+							<div class="col-11">
+								<h5><b>World-class Logistics</b></h5>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="card card-body">
-					<i class="fas fa-truck" style="font-size: 50px;"></i>
-					<div class="pt-3">
-						<h5><b>World-class Logistics</b></h5>
-						<p class="pt-1">BAL makes sure that all your orders are handled with ultimate care and security with a live shipment tracker. </p>
+				<!-- 	<div class="card card-body">
+						<i class="fas fa-dollar-sign" style="font-size: 50px;"></i>
+						<div class="pt-3">
+							<h5><b>The Best Prices</b></h5>
+							<p class="pt-1">BAL LED lights are significantly cheaper than any other suppliers. </p>
+						</div>
 					</div>
+					<div class="card card-body">
+						<i class="fas fa-stopwatch" style="font-size: 50px;"></i>
+						<div class="pt-3">
+							<h5><b>Fast Turnaround</b></h5>
+							<p class="pt-1">We give you the best prices in a single quote and deliver the goods to your doorstep. It’s that simple! </p>
+						</div>
+					</div>
+					<div class="card card-body">
+						<i class="fas fa-boxes" style="font-size: 50px;"></i>
+						<div class="pt-3">
+							<h5><b>A World of Variety</b></h5>
+							<p class="pt-1">We can easily meet your exact requirements from all the world’s top brands. </p>
+						</div>
+					</div> -->
+					
 				</div>
 			</div>
 			<!-- <div class="pt-5 text-center">
@@ -248,7 +305,7 @@
 	<div class="pt-5 pb-5 container text-center">
 		<div class="row">
 			<div class="col-12 col-md-6 d-flex justify-content-center align-items-center promo">
-				<h2 class="text-white m-0"><b> Sign up now and <br>get a free lighting project </b></h2>
+				<h2 class="text-white m-0"><b> Sign up now to save <br>$1949 for your first project! </b></h2>
 			</div>
 			<div class="col-12 col-md-6">
 				<a href="#interested" class="btn btn-lg btn-danger">GET THIS DEAL NOW!</a>
@@ -327,7 +384,7 @@
 	<div class="pt-5 pb-5 container text-center">
 		<div class="row">
 			<div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-				<h2 class="text-white m-0"><b> Sign up now and get a free lighting project </b></h2>
+				<h2 class="text-white m-0"><b> Sign up now to save $1949 for your first project! </b></h2>
 			</div>
 			<div class="col-12 col-md-6">
 				<a href="#interested" class="btn btn-lg btn-light">GET THIS DEAL NOW!</a>
@@ -335,7 +392,7 @@
 		</div>
 		<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-md btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a>
 	</div>
-</div> -->
+</div>
 <section class="section-price">
 	<div class="pt-5 pb-5 h-100" style="background-color: #f7f7f7;">
 		<div class="container h-100">
@@ -410,7 +467,7 @@
 								</h5> 
 							</div>
 							<div class="text-center">
-								<!-- <a href="#interested" class="btn btn-md btn-BAL">I'm interested</a> -->
+								<a href="#interested" class="btn btn-md btn-BAL">I'm interested</a>
 							</div>
 						</div>
 					</div>
@@ -429,7 +486,7 @@
 				<a href="#interested" class="btn btn-lg btn-danger">GET THIS DEAL NOW!</a>
 			</div>
 		</div>
-		<!-- <a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-md btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a> -->
+		<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-md btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a>
 	</div>
 </div>
 <section class="section-4">
@@ -499,14 +556,14 @@
 	
 		</div>
 	</div>
-</section>
+</section> -->
 <section class="section-5" id="interested">
 	<div class="pt-5 mt-5 pb-5">
 		<div class="container">
 			<h2 class="text-white">
 				<b>
 					<span style="text-decoration:line-through;">Project fee = $1949 </span> 
-					<br>Sign up now and get a free lighting project
+					<br>Sign up now to save $1949 for your first project!
 				</b>
 
 			</h2>
