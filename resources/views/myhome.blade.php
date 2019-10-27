@@ -160,40 +160,38 @@
 					<p class="text-white">
 						We’ve got great news for you. There’s a new and innovative LED sourcing platform that gives you access to experts, saves you time and helps you make incredible savings on your lighting projects.
 					</p>
-					<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a>
+					<!-- <a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a> -->
 					<a data-fancybox href="{{ Util::assetUrl('brochures/MyHome_BAL.pdf') }}" class="btn btn-BAL"><i class="far fa-file-pdf"></i> &nbsp; View Brochure</a>
-					<div class="pt-3">
-						<h3 class="text-white">
+					<div class="mt-3" style="border: 1px solid white; padding: 25px; background-color: white; border-radius: 20px;">
+						<h3 class="text-dark">
 							<b>
-								<span style="text-decoration:line-through;">Project fee = $949 </span> <br>No Project fee on your first project
+								<span style="text-decoration:line-through;">Project fee = $949 </span> <br>Sign up now and get no project fee on your first project
 							</b>
 						</h3>
 						<form class="pt-1" method="post" action="/subscribe">
 							{{ csrf_field() }}
-								<select class="form-control" name="answer" required="required" style="background: black; color:white">
+								<select class="form-control" name="answer" required="required" style="">
 									<option selected disabled value="">Interested?</option>
 									<option value="Yes, Constructing Home">I'm looking for lights for my new home.</option>
 									<option value="Yes, Renovating Home">I'm looking for lights to renovate my home.</option>
 									<option value="Yes, Like the idea">Just interested on the idea.</option>
 								</select>
-							
-								
-									<input type="email" name="email" placeholder="Enter your email" class="form-control mt-3" required="required" style="background: black; color: white;">
-								
-				
-							<button type="submit" class=" mt-3 btn btn-BAL">I'm Interested</button>
+								<input type="email" name="email" placeholder="Enter your email" class="form-control mt-3" required="required" style="">
+
+							<button type="submit" class=" mt-3 btn btn-lg w-100 btn-danger">Sign me up!</button>
 						</form>
 					</div>
 				</div>
 			</div>
 			<div class="col-12 col-md-7">
-				<div class="card-deck slide">
+				<iframe width="100%" height="100%" class="BAL-video" src=" https://www.youtube.com/embed/YiH67TXySrY?rel=0&enablejsapi=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
+				<!-- <div class="card-deck slide">
 					<div class="card" style="background: url({{ Util::assetUrl('/images/home/home1.jpg') }}); background-size: cover; background-position: center; background-position-x: left; border-radius: 15px; background-repeat: no-repeat;"></div>
 					<div class="card" style="background: url({{ Util::assetUrl('/images/home/home2.jpg') }}); background-size: cover; background-position: center; border-radius: 15px; background-repeat: no-repeat;"></div>
 					<div class="card" style="background: url({{ Util::assetUrl('/images/home/home3.jpg') }}); background-size: cover; background-position: center; border-radius: 15px; background-repeat: no-repeat;"></div>
 					<div class="card" style="background: url({{ Util::assetUrl('/images/home/home4.jpg') }}); background-size: cover; background-position: center; border-radius: 15px; background-repeat: no-repeat;"></div>
 				</div>
-				<div class="arrows"></div>
+				<div class="arrows"></div> -->
 			</div>
 		</div>
 	</div>
@@ -201,7 +199,7 @@
 	</div>
 </section>
 <section class="section-2">
-	<div class="pt-5 mt-5 pb-3 h-100">
+	<div class="pt-5 mt-5 pb-5 h-100">
 		<div class="container h-100">
 			<h3>
 				<b>
@@ -223,13 +221,7 @@
 						<p class="pt-1">BAL LED lights are significantly cheaper than any other suppliers. </p>
 					</div>
 				</div>
-				<div class="card card-body">
-					<i class="fas fa-boxes" style="font-size: 50px;"></i>
-					<div class="pt-3">
-						<h5><b>A World of Variety</b></h5>
-						<p class="pt-1">We can easily meet your exact requirements from all the world’s top brands. </p>
-					</div>
-				</div>
+			
 			</div>
 			<div class="card-deck row-two h-50" style="">
 				<div class="card card-body">
@@ -240,29 +232,30 @@
 					</div>
 				</div>
 				<div class="card card-body">
-					<i class="fas fa-shield-alt" style="font-size: 50px;"></i>
+					<i class="fas fa-boxes" style="font-size: 50px;"></i>
 					<div class="pt-3">
-						<h5><b>Secure</b></h5>
-						<p class="pt-1">Your payment is secured with BAL until you receive the goods. So your funds are safe with us. </p>
+						<h5><b>A World of Variety</b></h5>
+						<p class="pt-1">We can easily meet your exact requirements from all the world’s top brands. </p>
 					</div>
 				</div>
-				<div class="card card-body">
-					<i class="fas fa-globe-asia" style="font-size: 50px;"></i>
-					<div class="pt-3">
-						<h5><b>World-class Logistics</b></h5>
-						<p class="pt-1">BAL makes sure that all your orders are handled with ultimate care and security with a live shipment tracker. </p>
-					</div>
-				</div>
-			</div>
-			<div class="pt-5 text-center">
-				<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-md btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a>
-				<a href="#interested" class="btn btn-md btn-BAL">I'm Interested</a>
-				
 			</div>
 		</div>
 	</div>
 </section>
-<section class="section-3 pt-5">
+<div style="background: #5555a4;">
+	<div class="pt-5 pb-5 container text-center">
+		<div class="row">
+			<div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+				<h2 class="text-white m-0"><b> Yes! I Want The Free Offer</b></h2>
+			</div>
+			<div class="col-12 col-md-6">
+				<a href="#interested" class="btn btn-lg btn-danger">GET THIS DEAL NOW!</a>
+			</div>
+		</div>
+		<!-- <a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-md btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a> -->
+	</div>
+</div>
+<section class="section-3">
 	<div class="main-bg">
 		<div class="container pt-5">
 			<h2 class="text-center text-white">
@@ -320,15 +313,29 @@
 				</div>
 			</div>
 		</div>
+<!-- 
 		<div class="container text-center pt-5">
 			<a data-fancybox href="{{ Util::assetUrl('brochures/MyHome_BAL.pdf') }}" class="btn btn-md btn-BAL"> <i class="fas fa-file-pdf"></i> &nbsp;View Brochure</a>
 			<a href="#interested" class="btn btn-md btn-BAL">I'm Interested</a>
 
 		</div>
-	</div>
+	</div> -->
 </section>
+<!-- <div style="background: #5555a4;">
+	<div class="pt-5 pb-5 container text-center">
+		<div class="row">
+			<div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+				<h2 class="text-white m-0"><b> YES! I Want The Free Offer</b></h2>
+			</div>
+			<div class="col-12 col-md-6">
+				<a href="#interested" class="btn btn-lg btn-light">GET THIS DEAL NOW!</a>
+			</div>
+		</div>
+		<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-md btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a>
+	</div>
+</div> -->
 <section class="section-price">
-	<div class="pt-5 mt-5 pb-5 mb-5 h-100" style="background-color: #f7f7f7;">
+	<div class=" pt-5 pb-5  h-100" style="background-color: #f7f7f7;">
 		<div class="container h-100">
 			<h3 class="text-center">
 				<b>
@@ -399,7 +406,7 @@
 								<h5>Free of cost on your first project</h5> 
 							</div>
 							<div class="text-center">
-								<a href="#interested" class="btn btn-md btn-BAL">I'm interested</a>
+								<!-- <a href="#interested" class="btn btn-md btn-BAL">I'm interested</a> -->
 							</div>
 						</div>
 					</div>
@@ -408,8 +415,21 @@
 
 	</div>
 </section>
+<div style="background: #5555a4;">
+	<div class="pt-5 pb-5 container text-center">
+		<div class="row">
+			<div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+				<h2 class="text-white m-0"><b> Yes! I Want The Free Offer</b></h2>
+			</div>
+			<div class="col-12 col-md-6">
+				<a href="#interested" class="btn btn-lg btn-danger">GET THIS DEAL NOW!</a>
+			</div>
+		</div>
+		<!-- <a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-md btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a> -->
+	</div>
+</div>
 <section class="section-4">
-	<div class="pt-5 pb-5 mt-5">
+	<div class=" pb-5 mt-5">
 		<div class="container">
 			<h3>
 				<b>
@@ -482,7 +502,7 @@
 			<h2 class="text-white">
 				<b>
 					<span style="text-decoration:line-through;">Project fee = $949 </span> 
-					<br>No Project fee on your first project
+					<br>Sign up now and get no Project fee on your first project
 				</b>
 			</h2>
 			<form class="pt-3" method="post" action="/subscribe">
@@ -495,7 +515,7 @@
 						<option value="Yes, Like the idea">No, but interested on the idea.</option>
 					</select>
 					<input type="email" name="email" placeholder="Enter your email" class="form-control mt-3" required="required">
-					<button type="submit" class=" mt-3 btn btn-dark">Sign me up</button>
+					<button type="submit" class=" mt-3 btn btn-lg btn-danger w-100">Sign me up</button>
 				</div>
 			</form>
 		</div>
