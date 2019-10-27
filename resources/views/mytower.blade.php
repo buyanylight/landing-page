@@ -140,7 +140,7 @@
 					<div class="mt-3" style="border: 1px solid white; padding: 25px; background-color: white; border-radius: 20px;">
 						<h3 class="text-dark">
 							<b>
-								<span style="text-decoration:line-through;">Project fee = $1949 </span> <br>Sign up now and get no project fee on your first project
+								<span style="text-decoration:line-through;">Project fee = $1949 </span> <br>Sign up now and get a free lighting project
 							</b>
 						</h3>
 						<form class="pt-1" method="post" action="/subscribe">
@@ -247,8 +247,8 @@
 <div style="background: #5555a4;">
 	<div class="pt-5 pb-5 container text-center">
 		<div class="row">
-			<div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-				<h2 class="text-white m-0"><b> Yes! I Want The Free Offer</b></h2>
+			<div class="col-12 col-md-6 d-flex justify-content-center align-items-center promo">
+				<h2 class="text-white m-0"><b> Sign up now and <br>get a free lighting project </b></h2>
 			</div>
 			<div class="col-12 col-md-6">
 				<a href="#interested" class="btn btn-lg btn-danger">GET THIS DEAL NOW!</a>
@@ -327,7 +327,7 @@
 	<div class="pt-5 pb-5 container text-center">
 		<div class="row">
 			<div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-				<h2 class="text-white m-0"><b> YES! I Want The Free Offer</b></h2>
+				<h2 class="text-white m-0"><b> Sign up now and get a free lighting project </b></h2>
 			</div>
 			<div class="col-12 col-md-6">
 				<a href="#interested" class="btn btn-lg btn-light">GET THIS DEAL NOW!</a>
@@ -422,8 +422,8 @@
 <div style="background: #5555a4;">
 	<div class="pt-5 pb-5 container text-center">
 		<div class="row">
-			<div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-				<h2 class="text-white m-0"><b> Yes! I Want The Free Offer</b></h2>
+			<div class="col-12 col-md-6 d-flex justify-content-center align-items-center promo">
+				<h2 class="text-white m-0"><b> Sign up now and <br> get a free lighting project </b></h2>
 			</div>
 			<div class="col-12 col-md-6">
 				<a href="#interested" class="btn btn-lg btn-danger">GET THIS DEAL NOW!</a>
@@ -506,7 +506,7 @@
 			<h2 class="text-white">
 				<b>
 					<span style="text-decoration:line-through;">Project fee = $1949 </span> 
-					<br>Sign up now and get no project fee on your first project
+					<br>Sign up now and get a free lighting project
 				</b>
 
 			</h2>

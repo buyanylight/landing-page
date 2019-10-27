@@ -11371,6 +11371,10 @@ h1 {
   outline: none;
 }
 
+.promo {
+  text-align: center;
+}
+
 .section-5 {
   background-color: #5555A4;
 }

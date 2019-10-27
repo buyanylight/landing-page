@@ -11281,6 +11281,10 @@ nav .dropdown-toggle::after {
   background-size: contain;
 }
 
+.promo {
+  text-align: center;
+}
+
 .card-my-home-summary {
   width: 370px;
 }
