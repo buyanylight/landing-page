@@ -441,9 +441,9 @@
 	});
 
 	function makeTimerPrivate() {
-
-	//      var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");  
-		var endTime = new Date("31 October 2019 0:00:00 GMT+04:00");          
+	     	// var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");  
+			// var endTime = new Date("31 October 2019 0:00:00 GMT+04:00");          
+			var endTime = new Date("31 January 2020 0:00:00 GMT+04:00");
 			endTime = (Date.parse(endTime) / 1000);
 
 			var now = new Date();
@@ -466,13 +466,15 @@
 			$("#seconds").html("<span style='font-size: 14px;'>" + seconds +" </span>" + "<br><span>Seconds</span>");       
 
 	}
-
 	setInterval(function() { makeTimerPrivate(); }, 1000);
 
-	function makeTimerPublic() {
 
-	//      var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");  
-		var endTime = new Date("01 December 2019 0:00:00 GMT+04:00");          
+
+
+	function makeTimerPublic() {
+	     	// var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");  
+			// var endTime = new Date("01 December 2019 0:00:00 GMT+04:00");          
+			var endTime = new Date("01 Febuary 2020 0:00:00 GMT+04:00");          
 			endTime = (Date.parse(endTime) / 1000);
 
 			var now = new Date();
@@ -495,7 +497,6 @@
 			$("#seconds1").html("<span style='font-size: 14px;'>" + seconds +" </span>" + "<br><span>Seconds</span>");       
 
 	}
-
 	setInterval(function() { makeTimerPublic(); }, 1000);
 
 

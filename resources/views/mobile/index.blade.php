@@ -37,10 +37,18 @@
 				<div class="container text-center pt-2 mt-3">
 					<a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
 					<img border="0" 
-					style="height: 110px; margin-bottom: -15px;" 
+					style="height: 100px; margin-bottom: -15px; margin-right: 5px;" 
 					src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" 
 					alt="BuyAnyLight (BAL) ICO rating"/>
 					</a>
+
+					<a href="https://icomarks.com/ico/buyanylight" target="_blank" rel="nofollow" title="BuyAnyLight ICO">
+					<img border="0" 
+					style="height: 100px; margin-bottom: -15px; margin-left: 5px;" 
+					src="https://icomarks.com/widget/b/buyanylight/square.svg" 
+					alt="BuyAnyLight ICO Rating"/>
+					</a>
+
 				</div>
 			</div>
 		</div>
