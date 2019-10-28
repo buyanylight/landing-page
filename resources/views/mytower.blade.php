@@ -210,6 +210,33 @@
 	<div class="icon-scroll" style="">
 	</div>
 </section>
+<!-- <section class="section-about">
+	<div class="pt-5 pb-5">
+		<div class="container">
+			<h3>
+				<b>
+					About <span style="color: #5555A4">BuyAnyLight</span>
+				</b>
+			</h3>
+			<div class="row pt-5 pb-3">
+				<div class="col-12 col-md-6">
+					<p>
+						BuyAnyLight (BAL) is an innovative online platform providing LED lighting solutions for your projects in record time and at unbeatable prices. Just upload your project requirements via BAL’s user‐friendly interface, then sit back while our team of experts present you with the best possible solution and an excellent quote! 
+					</p>
+					<p>
+						You pay BAL a one-time fee – but only when you decide to buy our solution or order a sample. Once you’ve placed your order with us, you can use the time and effort you’ve saved to attend to other important matters in your business. We guarantee that no local company can match BAL’s all-round top value – we’re Number One for price, quality, and service, too. 
+					</p>
+			
+					
+				</div>
+				<div class="col-12 col-md-6">
+					<img src="{{ Util::assetUrl('/images/mytower/tower2.jpg') }}" width="100%" style="border-radius: 25px;">
+				</div>
+			</div>
+		</div>
+
+	</div>	
+</section> -->
 <section class="section-2">
 	<div class="pt-5 pb-5 h-100">
 		<div class="container h-100">
@@ -220,16 +247,20 @@
 			</h3>
 			<div  class="row pt-5 pb-3">
 				<div class="col-12 col-md-6">
-					<img src="{{ Util::assetUrl('/images/mytower/tower1.jpg') }}" width="100%" style="border-radius: 25px;">
+					<img src="{{ Util::assetUrl('/images/mytower/tower1.jpg') }}"  height="100%" width="100%" style="border-radius: 25px;">
 				</div>
 				<div class="col-12 col-md-6">
+					<p>
+						BuyAnyLight (BAL) is an innovative online platform providing LED lighting solutions for your projects in record time and at unbeatable prices. Just upload your project requirements via BAL’s user‐friendly interface, then sit back while our team of experts present you with the best possible solution and an excellent quote! 
+					</p>
+
 					<div class="card card-body mt-2">
 						<div class="row">
 							<div class="col-1">
 								<i class="fas fa-tasks" style="font-size: 25px;"></i>
 							</div>
 							<div class="col-11">
-								<h5><b>Convencience</b></h5>
+								<h5><b>Convenient</b></h5>
 							</div>
 						</div>
 					</div>
@@ -574,7 +605,7 @@
 				</b>
 
 			</h2>
-			<form class="pt-3" method="post" action="/subscribe">
+			<form class="mt-2" method="post" action="/subscribe">
 				{{csrf_field()}}
 				<div>
 					<select class="form-control" name="answer" required="required">

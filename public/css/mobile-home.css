@@ -11274,7 +11274,7 @@ nav .dropdown-toggle::after {
 }
 
 .section-3 .laptop {
-  background: url(http://192.168.1.204:8004/images/home/home_laptop.png?ver=0);
+  background: url("/images/home/home_laptop.png");
   height: 165px;
   background-repeat: no-repeat;
   background-position: center;

@@ -203,7 +203,7 @@
 	</div>
 </section>
 <section class="section-2">
-	<div class="pt-5 mt-5 pb-5 h-100">
+	<div class="pt-5 pb-5 h-100">
 		<div class="container h-100">
 			<h3>
 				<b>
@@ -212,16 +212,19 @@
 			</h3>
 			<div  class="row pt-5 pb-3">
 				<div class="col-12 col-md-6">
-					<img src="{{ Util::assetUrl('/images/home/home6.jpg') }}" width="100%" style="border-radius: 25px;">
+					<img src="{{ Util::assetUrl('/images/home/home6.jpg') }}" height="100%" width="100%" style="border-radius: 25px;">
 				</div>
 				<div class="col-12 col-md-6">
+					<p>
+						BuyAnyLight (BAL) is the first platform that’s designed exclusively for sourcing LED lights. With the help of BAL, homeowners like you can now source great quality, low‐cost LED just as the experts do, thanks to our simple, no‐hassle support and intelligent system. We believe in great service that’s professional, honest, jargon‐free and super‐efficient. Simply choose a package and upload your requirements. Then just sit back and let our lighting professionals handle the rest! 
+					</p>
 					<div class="card card-body mt-2">
 						<div class="row">
 							<div class="col-1">
 								<i class="fas fa-tasks" style="font-size: 25px;"></i>
 							</div>
 							<div class="col-11">
-								<h5><b>Convencience</b></h5>
+								<h5><b>Convenient</b></h5>
 							</div>
 						</div>
 					</div>
