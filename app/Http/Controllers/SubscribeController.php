@@ -24,11 +24,14 @@ class SubscribeController extends Controller
     if ($recaptcha->success==true) {
 
         if ($recaptcha->score >=0.5) {
-            $this->validate($request, [
+            $data = $this->validate($request, [
                 'email' => 'required|email',
                 'answer' => 'required',
             ]);
-            Subscribe::create($request->all());
+
+                // dd($data);
+
+            Subscribe::create($data);
           //   \Mail::send('mail.contactus',
           //   array(
           //       'name' => $request->get('name'),
