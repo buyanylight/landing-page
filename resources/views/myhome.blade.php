@@ -144,7 +144,7 @@
         	</div>
     	</div>    
 	</div>
-<section class="section-1">
+<section class="section-1" >
 	<div class="container-fluid d-flex align-items-center justify-content-items h-100 section-padding">
 		<div class="row w-100 section-1-row">
 			<div class="col-12 col-md-5 d-flex align-items-center justify-content-items">
@@ -165,7 +165,11 @@
 					<div class="mt-3" style="border: 1px solid white; padding: 25px; background-color: white; border-radius: 20px;">
 						<h3 class="text-dark">
 							<b>
-								<span style="text-decoration:line-through;">Project fee = $949 </span> <br>Sign up now and get a free lighting project
+								<img src="{{ Util::assetUrl('images/mytower/project_fee.png') }}" class="project_img"> 
+								<br>
+								<div class="mt-3">
+									Sign up now to save $949 for your first project!
+								</div> 
 							</b>
 						</h3>
 						<form class="pt-1" method="post" action="/subscribe">
@@ -184,7 +188,7 @@
 				</div>
 			</div>
 			<div class="col-12 col-md-7">
-				<iframe width="100%" height="100%" class="BAL-video" src=" https://www.youtube.com/embed/YiH67TXySrY?rel=0&enablejsapi=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
+				<iframe width="100%" height="100%" class="BAL-video" style="border-radius: 20px;" src=" https://www.youtube.com/embed/YiH67TXySrY?rel=0&enablejsapi=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
 				<!-- <div class="card-deck slide">
 					<div class="card" style="background: url({{ Util::assetUrl('/images/home/home1.jpg') }}); background-size: cover; background-position: center; background-position-x: left; border-radius: 15px; background-repeat: no-repeat;"></div>
 					<div class="card" style="background: url({{ Util::assetUrl('/images/home/home2.jpg') }}); background-size: cover; background-position: center; border-radius: 15px; background-repeat: no-repeat;"></div>
@@ -206,39 +210,80 @@
 					<span style="color: #5555A4">My Home</span> Advantages
 				</b>
 			</h3>
-			<div class="card-deck h-50 pt-5">
-				<div class="card card-body">
-					<i class="fas fa-tasks" style="font-size: 50px;"></i>
-					<div class="pt-3">
-						<h5><b>Convencience</b></h5>
-						<p class="pt-1">The time you spend on sourcing for lights is significantly reduced. </p>
-					</div>
+			<div  class="row pt-5 pb-3">
+				<div class="col-12 col-md-6">
+					<img src="{{ Util::assetUrl('/images/home/home6.jpg') }}" width="100%" style="border-radius: 25px;">
 				</div>
-				<div class="card card-body">
-					<i class="fas fa-dollar-sign" style="font-size: 50px;"></i>
-					<div class="pt-3">
-						<h5><b>The Best Prices</b></h5>
-						<p class="pt-1">BAL LED lights are significantly cheaper than any other suppliers. </p>
+				<div class="col-12 col-md-6">
+					<div class="card card-body mt-2">
+						<div class="row">
+							<div class="col-1">
+								<i class="fas fa-tasks" style="font-size: 25px;"></i>
+							</div>
+							<div class="col-11">
+								<h5><b>Convencience</b></h5>
+							</div>
+						</div>
 					</div>
+					<div class="card card-body mt-2">
+						<div class="row">
+							<div class="col-1">
+								<i class="fas fa-dollar-sign" style="font-size: 25px;"></i>
+							</div>
+							<div class="col-11">
+								<h5><b>The Best Prices</b></h5>
+							</div>
+						</div>
+					</div>
+					<div class="card card-body mt-2">
+						<div class="row">
+							<div class="col-1">
+								<i class="fas fa-stopwatch" style="font-size: 25px;"></i>
+							</div>
+							<div class="col-11">
+								<h5><b>Fast Turnaround</b></h5>
+							</div>
+						</div>
+					</div>
+					<div class="card card-body mt-2">
+						<div class="row">
+							<div class="col-1">
+								<i class="fas fa-boxes" style="font-size: 25px;"></i>
+							</div>
+							<div class="col-11">
+								<h5><b>A World of Variety</b></h5>
+							</div>
+						</div>
+					</div>
+				<!-- 	<div class="card card-body">
+						<i class="fas fa-dollar-sign" style="font-size: 50px;"></i>
+						<div class="pt-3">
+							<h5><b>The Best Prices</b></h5>
+							<p class="pt-1">BAL LED lights are significantly cheaper than any other suppliers. </p>
+						</div>
+					</div>
+					<div class="card card-body">
+						<i class="fas fa-stopwatch" style="font-size: 50px;"></i>
+						<div class="pt-3">
+							<h5><b>Fast Turnaround</b></h5>
+							<p class="pt-1">We give you the best prices in a single quote and deliver the goods to your doorstep. It’s that simple! </p>
+						</div>
+					</div>
+					<div class="card card-body">
+						<i class="fas fa-boxes" style="font-size: 50px;"></i>
+						<div class="pt-3">
+							<h5><b>A World of Variety</b></h5>
+							<p class="pt-1">We can easily meet your exact requirements from all the world’s top brands. </p>
+						</div>
+					</div> -->
+					
 				</div>
+			</div>
 			
-			</div>
-			<div class="card-deck row-two h-50" style="">
-				<div class="card card-body">
-					<i class="fas fa-stopwatch" style="font-size: 50px;"></i>
-					<div class="pt-3">
-						<h5><b>Fast Turnaround</b></h5>
-						<p class="pt-1">We give you the best prices in a single quote and deliver the goods to your doorstep. It’s that simple! </p>
-					</div>
-				</div>
-				<div class="card card-body">
-					<i class="fas fa-boxes" style="font-size: 50px;"></i>
-					<div class="pt-3">
-						<h5><b>A World of Variety</b></h5>
-						<p class="pt-1">We can easily meet your exact requirements from all the world’s top brands. </p>
-					</div>
-				</div>
-			</div>
+			
+	
+			<!-- <div class="card-deck row-two h-50" style=""> -->
+			<!-- </div> -->
 		</div>
 	</div>
 </section>
@@ -246,7 +291,7 @@
 	<div class="pt-5 pb-5 container text-center">
 		<div class="row">
 			<div class="col-12 col-md-6 d-flex justify-content-center align-items-center promo">
-				<h2 class="text-white m-0"><b> Sign up now and <br> get a free lighting project</b></h2>
+				<h3 class="text-white m-0"><b> Sign up now to save<br>$949 for your first project!</b></h3>
 			</div>
 			<div class="col-12 col-md-6">
 				<a href="#interested" class="btn btn-lg btn-danger">GET THIS DEAL NOW!</a>
@@ -335,7 +380,7 @@
 		<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-md btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a>
 	</div>
 </div> -->
-<section class="section-price">
+<!-- <section class="section-price">
 	<div class=" pt-5 pb-5  h-100" style="background-color: #f7f7f7;">
 		<div class="container h-100">
 			<h3 class="text-center">
@@ -404,10 +449,10 @@
 							</p>
 							<hr>
 							<div class="text-center pb-2">
-								<h5>Free of cost on your first project</h5> 
+								<h5>Sign up now to save $949 for your first project!</h5> 
 							</div>
 							<div class="text-center">
-								<!-- <a href="#interested" class="btn btn-md btn-BAL">I'm interested</a> -->
+								<a href="#interested" class="btn btn-md btn-BAL">I'm interested</a>
 							</div>
 						</div>
 					</div>
@@ -415,21 +460,32 @@
 		</div>
 
 	</div>
-</section>
-<div style="background: #5555a4;">
+</section> -->
+<!-- <section style="background: #f7f7f7;">
+	<div  class="container-fluid" style="height: 50vh; " class="w-100">
+		<div class="card-deck slide w-100">
+			<div class="card" style="background: url({{ Util::assetUrl('/images/home/home1.jpg') }}); background-size: cover; background-position: center; background-position-x: left; border-radius: 15px; background-repeat: no-repeat;"></div>
+			<div class="card" style="background: url({{ Util::assetUrl('/images/home/home2.jpg') }}); background-size: cover; background-position: center; border-radius: 15px; background-repeat: no-repeat;"></div>
+			<div class="card" style="background: url({{ Util::assetUrl('/images/home/home3.jpg') }}); background-size: cover; background-position: center; border-radius: 15px; background-repeat: no-repeat;"></div>
+			<div class="card" style="background: url({{ Util::assetUrl('/images/home/home4.jpg') }}); background-size: cover; background-position: center; border-radius: 15px; background-repeat: no-repeat;"></div>
+			</div>
+		<div class="arrows"></div>
+	</div>
+</section> -->
+<!-- <div style="background: #5555a4;">
 	<div class="pt-5 pb-5 container text-center">
 		<div class="row">
 			<div class="col-12 col-md-6 d-flex justify-content-center align-items-center promo">
-				<h2 class="text-white m-0"><b> Sign up now and <br> get a free lighting project</b></h2>
+				<h2 class="text-white m-0"><b> Sign up now to save $949 for your first project!</b></h2>
 			</div>
 			<div class="col-12 col-md-6">
 				<a href="#interested" class="btn btn-lg btn-danger">GET THIS DEAL NOW!</a>
 			</div>
 		</div>
-		<!-- <a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-md btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a> -->
+		<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-md btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a>
 	</div>
-</div>
-<section class="section-4">
+</div> -->
+<!-- <section class="section-4">
 	<div class=" pb-5 mt-5">
 		<div class="container">
 			<h3>
@@ -496,14 +552,18 @@
 	
 		</div>
 	</div>
-</section>
+</section> -->
 <section class="section-5" id="interested">
 	<div class="pt-5 mt-5 pb-5">
 		<div class="container">
 			<h2 class="text-white">
 				<b>
-					<span style="text-decoration:line-through;">Project fee = $949 </span> 
-					<br>Sign up now and get a free lighting project
+					<img src="{{ Util::assetUrl('images/home/project_fee_white.png') }}" class="project_img_white">
+					<br>
+					<div class="mt-3">
+					Sign up now to save $949 for your first project!
+
+					 </div> 
 				</b>
 			</h2>
 			<form class="pt-3" method="post" action="/subscribe">
