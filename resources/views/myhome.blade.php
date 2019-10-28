@@ -216,7 +216,7 @@
 				</div>
 				<div class="col-12 col-md-6">
 					<p>
-						BuyAnyLight (BAL) is the first platform that’s designed exclusively for sourcing LED lights. With the help of BAL, homeowners like you can now source great quality, low‐cost LED just as the experts do, thanks to our simple, no‐hassle support and intelligent system. We believe in great service that’s professional, honest, super‐efficient. Simply choose a package and upload your requirements. Then just sit back and let our lighting professionals handle the rest! 
+						BuyAnyLight (BAL) is the first platform that’s designed exclusively for sourcing LED lights. With the help of BAL, homeowners like you can now source great quality, low‐cost LED just as the experts do, thanks to our simple, no‐hassle support and intelligent system. We believe in great service that’s professional, honest, super‐efficient. Simply choose our package and upload your requirements. Then just sit back and let our lighting professionals handle the rest! 
 					</p>
 					<div class="card card-body mt-2">
 						<div class="row">
