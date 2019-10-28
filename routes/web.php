@@ -39,6 +39,9 @@ Route::get('/yellowpaper', 'PageController@soon')->name('yellowpaper');
 Route::get('/myhome', 'PageController@myhome')->name('myhome');
 Route::get('/mytower', 'PageController@mytower')->name('mytower');
 
+Route::get('/myhome?thank-you', 'PageController@myhomet')->name('myhomet');
+Route::get('/mytower?thank-you', 'PageController@mytowert')->name('mytowert');
+
 
 Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUsController@contactSaveData']);
 Route::post('subscribe', ['as'=>'subscribe.store','uses'=>'SubscribeController@saveData']);
