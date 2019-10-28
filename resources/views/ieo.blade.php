@@ -312,7 +312,7 @@
 											</div>
 										</div>
 										<div class="pl-5 text-white">
-											<small><span>1 BAL = 0.25 USD</span></small>
+											<small><span>1 BAL = 0.20 USD</span></small>
 										</div>
 									</div>
 									<div class="w-100">
