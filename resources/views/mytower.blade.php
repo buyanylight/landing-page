@@ -250,7 +250,7 @@
 					<img src="{{ Util::assetUrl('/images/mytower/tower1.jpg') }}"  height="100%" width="100%" style="border-radius: 25px;">
 				</div>
 				<div class="col-12 col-md-6">
-					<p>
+					<p class="about-text">
 						BuyAnyLight (BAL) is an innovative online platform providing LED lighting solutions for your projects in record time and at unbeatable prices. Just upload your project requirements via BAL’s user‐friendly interface, then sit back while our team of experts present you with the best possible solution and an excellent quote! 
 					</p>
 
