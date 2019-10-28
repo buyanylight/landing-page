@@ -29,39 +29,37 @@
 			prevArrow: '<button type="button" class="slick-prev d-inline-block">Previous</button>',
 			nextArrow: '<button type="button" class="slick-next d-inline-block">Next</button>',
 		});
-		
-
-			
-			$('.bal-token').change(function() {
 
 
+
+
+		$('.bal-token').change(function() {
 
 			if (numeral($('.bal-token').val()).value() < 25000 && numeral($('.bal-token').val()).value() !== 9) {
 				$('.bal-alert').show()
-			
 			} else {
 				$('.bal-alert').hide()
-				
 			}	
 		})
 
-			$('.bal-token').keyup(function() {
-				if (numeral($('.bal-token').val()).value() < 25000 && numeral($('.bal-token').val()).value() !== 9) {
-				$('#token-btn').attr('disabled', 'disabled')
-			} else {
-				$('#token-btn').removeAttr('disabled')
-			}
 
-			 $('.token-price').show();
+		$('.bal-token').keyup(function() {
+			if (numeral($('.bal-token').val()).value() < 25000 && numeral($('.bal-token').val()).value() !== 9) {
+			$('#token-btn').attr('disabled', 'disabled')
+		} else {
+			$('#token-btn').removeAttr('disabled')
+		}
 
-			 $(this).val(function(index, value) {
-    			var amount = numeral(value).format('0,0');
-    			
-    			return amount
-  			});
+		 $('.token-price').show();
+
+		 $(this).val(function(index, value) {
+			var amount = numeral(value).format('0,0');
+			
+			return amount
+			});
 
 
-			 // parseFloat($(this).val().replace(/,/g , ''))
+		 // parseFloat($(this).val().replace(/,/g , ''))
 
 
 
@@ -82,10 +80,9 @@
 
 			var USD_return = (USDIEO - USDvalue).toFixed(5);
 
-			 $(".USD_return").text(USD_return);
-
-
+			$(".USD_return").text(USD_return);
 		})
+
 
 			$( window ).on('load', function() {
   				$('.bal-token').val('');
@@ -195,6 +192,15 @@
 						alt="BuyAnyLight (BAL) ICO rating"/>
 						</a>
 
+
+						<a href="https://icomarks.com/ico/buyanylight" target="_blank" rel="nofollow" title="BuyAnyLight ICO">
+						<img border="0" 
+						style="height: 80px; position: absolute; top: -5px; right: 115px;" 
+						src="https://icomarks.com/widget/b/buyanylight/square.svg" 
+						alt="BuyAnyLight ICO Rating"/>
+						</a>
+
+
 						<h3 class="" style="line-height: 1.5">
 							<strong>
 								<span class="">
@@ -293,10 +299,9 @@
 								<div class="w-100">	
 									{{-- <h4 class="text-center text-white"><b>IEO PRE SALE</b></h4> --}}
 									<div class="w-100 pt-2">
-										<h4 class="text-center text-white"><b>PRIVATE SALE LIVE NOW!</b></h4>
+										<h4 class="text-center text-white"><b>PRE -IEO SALE LIVE NOW!</b></h4>
 										<p class="text-white text-center mb-0">
-											<b>
-											Private Sale ends in:</b>
+											<b>sale ends in:</b>
 										</p>
 										<div id="timer" class="pt-2  text-center d-flex justify-content-center">
 											<div class="row justify-content-center" style="width: 90%">
@@ -307,7 +312,7 @@
 											</div>
 										</div>
 										<div class="pl-5 text-white">
-											<small><span>1 BAL = 0.2 USD</span></small>
+											<small><span>1 BAL = 0.25 USD</span></small>
 										</div>
 									</div>
 									<div class="w-100">
@@ -333,13 +338,13 @@
 										</div>
 										<div class="pt-1">
 											<div class="progress">
-		  										<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-		  											$2,000,000
+		  										<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+		  											$2,100,000
 		  										</div>
 											</div>
 										</div>
 										<div class="row pt-1" style="font-size: 10px;">
-											<p class="col-md-4 text-white">25% target raised</p>
+											<p class="col-md-4 text-white">26% target raised</p>
 											<p class="col-md-4 text-center text-white">$4,000,000</p>
 											<p class="col-md-4 text-right text-white">$8,000,000</p>
 										</div>
@@ -349,7 +354,10 @@
 									</div>
 									<div class="w-100 mt-4">
 										<div class="card-deck">
-											<div class="card text-center">
+
+
+
+											{{-- <div class="card text-center">
 												<div class="card-header text-white " style="background: #F511A9; padding:12px;">
 													<b>PRIVATE SALE</b>
 												</div>
@@ -372,7 +380,49 @@
 												<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
 													31<sup>st</sup>&nbsp; Dec 2019
 												</div>
+											</div> --}}
+
+											
+											<div class="card text-center">
+												<div class="card-header text-white" style="background: #F511A9; padding:12px;">
+													<b>PRIVATE SALE</b>
+												</div>
+												<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center" style="font-size: 11px;">
+													<div class="row">																											 
+														<div class="col-12">1<sup>st</sup> Oct 2019</div>
+														<div class="col-12">to</div>
+														<div class="col-12">31<sup>st</sup> Oct 2019</div>
+													</div>
+
+												</div>
 											</div>
+											<div class="card text-center">
+												<div class="card-header  text-white" style="background: #F511A9">
+													<b>PRE -IEO</b>
+												</div>
+												<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
+													<div class="row">														
+														<div class="col-12">1<sup>st</sup> Nov 2019</div>
+														<div class="col-12">to</div>
+														<div class="col-12">31<sup>st</sup> Jan 2020</div>
+													</div>
+												</div>
+											</div>
+											<div class="card text-center ">
+												<div class="card-header  text-white" style="background: #F511A9">
+													<b>IEO</b>
+												</div>
+												<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
+													<div class="row">
+														<div class="col-12">1<sup>st</sup> Feb 2020</div>
+														<div class="col-12">to</div>
+														<div class="col-12">29<sup>th</sup> Feb 2020</div>
+													</div>													
+												</div>
+											</div>
+
+
+
 										</div>
 									</div>
 									<div class="pt-3">
@@ -2197,13 +2247,14 @@
 					$datas = [];
 					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICORATING", 'link'=>"https://icoholder.com/en/buyanylight-31234", 'src'=>"images/ieo/partners/icoholder.png", ];
 					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOHOLDER", 'link'=>"https://icobench.com/ico/buyanylight-bal", 'src'=>"images/ieo/partners/icobench.png", ];
+					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOMARKS", 'link'=>"https://icomarks.com/ico/buyanylight", 'src'=>"https://icomarks.com/widget/b/buyanylight/square.svg", ];
 					//$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOSBULL", 'link'=>"https://icosbull.com/eng/ico/buyanylightbal", 'src'=>"images/ieo/partners/icosbull.png", ];
 				?>
 				<div class="col-5 mt-10">
-					<h2 class="text-white ml-3 mt-0">Audits and Ratings</h2>
+					<h2 class="text-white ml-3 mt-0">Ratings</h2>
 					<div class="icons">
 						@foreach($datas as $data)
-						<div class="col-6 partner">
+						<div class="col-4 partner">
 							<a href="{{$data['link']}}" target="_blank" title="{{ $data['title'] }}" alt="{{ $data['title'] }}" >
 								{{-- <img src="{{ Util::assetUrl($data['src']) }}"> --}}
 								<div class="icon" style="background-image: url({{ Util::assetUrl($data['src']) }})"></div>
@@ -2255,7 +2306,11 @@
 				<div class="col-5 mt-10">
 					<h2 class="text-white ml-3 mt-0">Sponsors</h2>
 					<div class="icons">
-						<h3 class="text-white p-3">Consulate General of the Federal Republic of Germany Dubai</h3>
+						<a href="https://light-middleeast.german-pavilion.com/en/exhibitors/80967/"
+						target="_blank" 
+						style="text-decoration: none !important;">
+							<h3 class="text-white p-3">Consulate General of the Federal Republic of Germany Dubai</h3>
+						</a>
 					</div>
 
 				</div>

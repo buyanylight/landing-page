@@ -153,29 +153,29 @@
 
 @section('content')
 <div style="position: relative; z-index: 5">
-       <!-- Position toasts -->
-   	<div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
-    	<div class="toast" data-autohide="false">
-        	<div class="toast-header">
-                	<strong class="mr-auto">
-                    	<img src="{{ Util::assetUrl('images/logo-black-icon.png') }}" width="25">
-                    	BuyAnyLight
-                	</strong>
-                	<button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
-            	</div>
-            	@if(session('success'))
-           		<div class="toast-body">
-                	<b>Thanks for being awesome!</b>
-                	{!! session('success') !!}
-            	</div>
-           		@else
-            	<div class="toast-body">
-                	{!! session('danger') !!}
-            	</div>
-            	@endif
-        	</div>
-    	</div>    
+   <!-- Position toasts -->
+	<div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
+	<div class="toast" data-autohide="false">
+    	<div class="toast-header">
+        	<strong class="mr-auto">
+            	<img src="{{ Util::assetUrl('images/logo-black-icon.png') }}" width="25">
+            	BuyAnyLight
+        	</strong>
+        	<button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+    	</div>
+    	@if(session('success'))
+   		<div class="toast-body">
+        	<b>Thanks for being awesome!</b>
+        	{!! session('success') !!}
+    	</div>
+   		@else
+    	<div class="toast-body">
+        	{!! session('danger') !!}
+    	</div>
+    	@endif
 	</div>
+	</div>    
+</div>
 
 
 <div class="all-contents">
@@ -186,16 +186,29 @@
 		<div class="container text-center h-100 d-flex align-items-end justify-content-center">
 			<div class="row">
 				<div class="col-12" style="position: relative;">
-					<h3 class="text-white" style=" text-align: left; padding-left: 10px; margin-bottom: 20px;">
-						<b>BAL Initial Exchange <br> Offering (IEO)</b>
-					</h3>
+					<div style="display: flex; align-items: flex-end;  padding-bottom: 15px;">
+						<h3 class="text-white" 
+						style=" text-align: left; padding-left: 10px; font-size: 20px; padding-right: 10px; margin-bottom: 0;">
+							<b>BAL Initial Exchange <br> Offering (IEO)</b>
+						</h3>
 
-					<a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
-					<img border="0" 
-					style="height: 65px; position: absolute; top: 0px; right: 30px;" 
-					src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" 
-					alt="BuyAnyLight (BAL) ICO rating"/>
-					</a>
+						{{-- style="height: 65px; position: absolute; top: 0px; right: 30px;"  --}}
+						<a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
+						<img border="0" 
+						style="height: 65px;" 
+						src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" 
+						alt="BuyAnyLight (BAL) ICO rating"/>
+						</a>
+
+
+						{{-- style="height: 65px; position: absolute; top: 0px; right: 50px;"  --}}
+						<a href="https://icomarks.com/ico/buyanylight" target="_blank" rel="nofollow" title="BuyAnyLight ICO">
+						<img border="0" 
+						style="height: 65px; margin-left: 5px;" 
+						src="https://icomarks.com/widget/b/buyanylight/square.svg" 
+						alt="BuyAnyLight ICO Rating"/>
+						</a>
+					</div>
 				</div>
 				<div class="col-12">
 					<div class="btn-group" role="group" aria-label="Basic example">
@@ -331,9 +344,9 @@
 					<b>IEO PRE SALE</b>
 				</h4> --}}
 				<div class="w-100 pt-2">
-					<p class="mb-0 text-white"><b>PRIVATE SALE LIVE NOW!</b></p>
+					<p class="mb-0 text-white"><b>PRE -IEO SALE LIVE NOW!</b></p>
 					<p class="text-white text-center mb-0" style="font-size: 0.9em;">
-						<b>Private Sale ends in:</b>
+						<b>sale ends in:</b>
 					</p>
 					<div id="timer" class="pt-2 pb-0 text-center d-flex justify-content-center">
 						<div class="row justify-content-center" style="width: 90%">
@@ -1663,13 +1676,16 @@
 
 					<div class="col-12 mt-5 text-center">
 						{{-- <h2 class="text-white ml-3 mb-4">Audits & Ratings</h2> --}}
-						<h2 class="text-white mt-5 mb-4">Audits & Ratings</h2>
+						<h2 class="text-white mt-5 mb-4">Ratings</h2>
 						<div class="icons">
-							<a style="width: 150px;" href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">
+							<a style="width: 150px;" href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBENCH">
 								<img style="" src="{{ Util::assetUrl('images/ieo/partners/icobench.png') }}" alt="BuyAnyLight (BAL) ICO rating"/>
 							</a>
-							<a style="width: 165px;" href="https://icoholder.com/en/buyanylight-31234" target="_blank"  title="BuyAnyLight ICOHolder">
-								<img style="" src="{{ Util::assetUrl('images/ieo/partners/icoholder.png') }}" alt="BuyAnyLight ICOHolder"/>
+							<a style="width: 150px;" href="https://icomarks.com/ico/buyanylight" target="_blank"  title="BuyAnyLight ICOMARKS">
+								<img style="" src="{{ Util::assetUrl('https://icomarks.com/widget/b/buyanylight/square.svg') }}" alt="BuyAnyLight ICOMARKS"/>
+							</a>
+							<a style="width: 165px;" href="https://icoholder.com/en/buyanylight-31234" target="_blank"  title="BuyAnyLight ICOHOLDER">
+								<img style="" src="{{ Util::assetUrl('images/ieo/partners/icoholder.png') }}" alt="BuyAnyLight ICOHOLDER"/>
 							</a>
 							<a href="https://icosbull.com/eng/ico/buyanylightbal" target="_blank"  title="BuyAnyLight on ICOSBENCH">
 								<img src="{{ Util::assetUrl('images/ieo/partners/icosbull.png') }}" alt="BuyAnyLight ICO Bull"/>
@@ -1694,7 +1710,11 @@
 						{{-- <h2 class="text-white ml-3">Sponsors</h2> --}}
 						<h2 class="text-white mt-5 mb-4">Sponsors</h2>
 						<div class="icons">
+							<a href="https://light-middleeast.german-pavilion.com/en/exhibitors/80967/"
+							target="_blank" 
+							style="text-decoration: none !important;">
 							<h3 class="text-white p-3">Consulate General of the Federal Republic of Germany Dubai</h3>
+							</a>
 						</div>
 					</div>
 
