@@ -122,7 +122,7 @@
                <b> Sign up now to save $949 for your first project!</b>
             </div>
             <div class="col-md-6">
-                <a href="#interested" class="btn btn-light btn-outline-danger">Get this Deal Now!</a>    
+                <a href="#interested" class="btn btn-light btn-outline-danger">Get This Deal Now!</a>    
             </div>
         </div> 
     </nav>
@@ -135,7 +135,7 @@
                <b> Sign up now to save $1949 for your first project! </b>
             </div>
             <div class="col-md-6">
-                <a href="#interested" class="btn btn-light text-danger">Get this Deal Now!</a>    
+                <a href="#interested" class="btn btn-light text-danger">Get This Deal Now!</a>    
             </div>
         </div>
     </nav>
