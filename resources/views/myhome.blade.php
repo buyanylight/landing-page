@@ -181,6 +181,7 @@
 									<option value="Yes, Like the idea">Just interested on the idea.</option>
 								</select>
 								<input type="email" name="email" placeholder="Enter your email" class="form-control mt-3" required="required" style="">
+								<input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
 
 							<button type="submit" class=" mt-3 btn btn-lg w-100 btn-danger">Sign me up!</button>
 						</form>
@@ -579,6 +580,7 @@
 						<option value="Yes, Like the idea">No, but interested on the idea.</option>
 					</select>
 					<input type="email" name="email" placeholder="Enter your email" class="form-control mt-3" required="required">
+					<input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
 					<button type="submit" class=" mt-3 btn btn-lg btn-danger w-100">Sign me up</button>
 				</div>
 			</form>
