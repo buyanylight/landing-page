@@ -175,8 +175,8 @@
 							{{ csrf_field() }}
 								<select class="form-control" name="answer" required="required" style="">
 									<option selected disabled value="">Interested?</option>
-									<option value="Yes, Constructing Home">I'm looking for lights for a new project.</option>
-									<option value="Yes, Renovating Home">I'm looking for lights to renovate a project.</option>
+									<option value="Yes, Constructing Tower">I'm looking for lights for a new project.</option>
+									<option value="Yes, Renovating Tower">I'm looking for lights to renovate a project.</option>
 									<option value="Yes, Like the idea">Just interested on the idea.</option>
 								</select>
 								<input type="email" name="email" placeholder="Enter your email" class="form-control mt-3" required="required" style="">
@@ -612,8 +612,8 @@
 				<div>
 					<select class="form-control" name="answer" required="required">
 						<option selected disabled value="">Looking for lights?</option>
-						<option value="Yes, Constructing Home">Yes, I'm constructing at the moment.</option>
-						<option value="Yes, Renovating Home">Yes, I'm retrofitting a project.</option>
+						<option value="Yes, Constructing Tower">Yes, I'm constructing at the moment.</option>
+						<option value="Yes, Renovating Tower">Yes, I'm retrofitting a project.</option>
 						<option value="Yes, Like the idea">No, but interested on the idea.</option>
 					</select>
 					<input type="email" name="email" placeholder="Enter your email" class="form-control mt-3" required="required">
