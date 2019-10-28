@@ -120,9 +120,9 @@
 
 
 @section('content')
-	<div style="position: relative; z-index: 1035">
+	<div style="position: relative; z-index: 1029">
             <!-- Position toasts -->
-    	<div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
+    	<div style="position: absolute; top: 145px; right: 55px; min-width: 300px;">
         	<div class="toast" data-autohide="false">
             	<div class="toast-header">
                 	<strong class="mr-auto">
