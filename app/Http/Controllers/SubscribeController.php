@@ -45,9 +45,9 @@ class SubscribeController extends Controller
           //       $message->to('info@buyanylight.com', 'Admin')->subject($request->get('subject'));
           //   });
                     if ($request->tower == 1) {
-                        return redirect('mytowert')->with('success', '<br> We will get back to you shortly.');
+                        return redirect('/mytower?thank-you')->with('success', '<br> We will get back to you shortly.');
                     } else {
-                        return view('myhomet')->with('success', '<br> We will get back to you shortly.');
+                        return view('/myhome?thank-you')->with('success', '<br> We will get back to you shortly.');
                     }
            } else {
                 return back()->with('danger', 'Please try again later!');
