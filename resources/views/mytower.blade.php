@@ -115,7 +115,7 @@
 	@endif
 @endsection
 @section('content')
-	<div style="position: relative; z-index: 5">
+	<div style="position: relative; z-index: 1035">
             <!-- Position toasts -->
     	<div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
         	<div class="toast" data-autohide="false">
@@ -160,7 +160,7 @@
 						efficiency for your business and save a fortune for project owners!
 					</p>
 					<!-- <a data-fancybox href="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" class="btn btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a> -->
-					<a data-fancybox href="{{ Util::assetUrl('brochures/MyTower_BAL.pdf') }}" class="btn btn-BAL"><i class="far fa-file-pdf"></i> &nbsp; View Brochure</a>
+					<a target="_blank" href="{{ Util::assetUrl('brochures/MyTower_BAL.pdf') }}" class="btn btn-BAL"><i class="far fa-file-pdf"></i> &nbsp; View Brochure</a>
 					<div class="mt-3" style="border: 1px solid white; padding: 25px; background-color: white; border-radius: 20px;">
 						<h3 class="text-dark">
 							<b>
@@ -409,7 +409,7 @@
 		</div>
 		<div class="container text-center pt-5">
 			<a data-fancybox href="https://www.youtube.com/embed/ggLc0PPemko?rel=0&enablejsapi=1" class="btn btn-md btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a>
-			<a data-fancybox href="{{ Util::assetUrl('brochures/MyTower_BAL.pdf') }}" class="btn btn-md btn-BAL"> <i class="fas fa-file-pdf"></i> &nbsp;View Brochure</a>
+			<a target="_blank" href="{{ Util::assetUrl('brochures/MyTower_BAL.pdf') }}" class="btn btn-md btn-BAL"> <i class="fas fa-file-pdf"></i> &nbsp;View Brochure</a>
 			<!-- <a href="#interested" class="btn btn-md btn-BAL">I'm Interested</a> -->
 
 		</div>

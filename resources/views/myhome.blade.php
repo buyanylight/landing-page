@@ -120,7 +120,7 @@
 
 
 @section('content')
-	<div style="position: relative; z-index: 5">
+	<div style="position: relative; z-index: 1035">
             <!-- Position toasts -->
     	<div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
         	<div class="toast" data-autohide="false">
@@ -161,7 +161,7 @@
 						We’ve got great news for you. There’s a new and innovative LED sourcing platform that gives you access to experts, saves you time and helps you make incredible savings on your lighting projects.
 					</p>
 					<!-- <a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a> -->
-					<a data-fancybox href="{{ Util::assetUrl('brochures/MyHome_BAL.pdf') }}" class="btn btn-BAL"><i class="far fa-file-pdf"></i> &nbsp; View Brochure</a>
+					<a target="_blank" href="{{ Util::assetUrl('brochures/MyHome_BAL.pdf') }}" class="btn btn-BAL"><i class="far fa-file-pdf"></i> &nbsp; View Brochure</a>
 					<div class="mt-3" style="border: 1px solid white; padding: 25px; background-color: white; border-radius: 20px;">
 						<h3 class="text-dark">
 							<b>
@@ -364,7 +364,7 @@
 
 		<div class="container text-center pt-5">
 			<a data-fancybox href="https://www.youtube.com/embed/YiH67TXySrY?rel=0&enablejsapi=1" class="btn btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a>
-			<a data-fancybox href="{{ Util::assetUrl('brochures/MyHome_BAL.pdf') }}" class="btn btn-md btn-BAL"> <i class="fas fa-file-pdf"></i> &nbsp;View Brochure</a>
+			<a target="_blank" href="{{ Util::assetUrl('brochures/MyHome_BAL.pdf') }}" class="btn btn-md btn-BAL"> <i class="fas fa-file-pdf"></i> &nbsp;View Brochure</a>
 			<!-- <a href="#interested" class="btn btn-md btn-BAL">I'm Interested</a> -->
 
 		</div>
