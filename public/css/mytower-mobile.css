@@ -11281,8 +11281,17 @@ nav .dropdown-toggle::after {
   background-size: contain;
 }
 
+.project_img {
+  width: 95%;
+}
+
+.project_img_white {
+  width: 83%;
+}
+
 .promo {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .card-my-home-summary {

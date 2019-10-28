@@ -1,4 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+<div class="fixed-top">
+    
+<nav class="main-navbar navbar navbar-expand-lg navbar-dark bg-black">
     <div class="container-fluid">
         <a class="navbar-brand " href="{{ route('home') }}">
             <img src="{{ Util::assetUrl('images/logo-white.png') }}" width="200" class="logo">
@@ -112,3 +114,32 @@
         </div>
     </div>
 </nav>
+
+@if(\Request::is('myhome'))
+    <nav class="promo-home-navbar navbar navbar-expand-lg pt-3 pb-3 navbar-dark bg-danger text-white">
+        <div class="row w-100">
+            <div class="col-md-6 d-flex align-items-center justify-content-end">
+               <b> Sign up now to save $949 for your first project!</b>
+            </div>
+            <div class="col-md-6">
+                <a href="#interested" class="btn btn-light btn-outline-danger">Get this Deal Now!</a>    
+            </div>
+        </div> 
+    </nav>
+@endif
+
+@if(\Request::is('mytower'))
+    <nav class="promo-tower-navbar navbar navbar-expand-lg pt-3 pb-3 navbar-dark bg-danger text-white"> 
+        <div class="row w-100">
+            <div class="col-md-6 d-flex align-items-center justify-content-end">
+               <b> Sign up now to save $1949 for your first project! </b>
+            </div>
+            <div class="col-md-6">
+                <a href="#interested" class="btn btn-light text-danger">Get this Deal Now!</a>    
+            </div>
+        </div>
+    </nav>
+@endif
+</div>
+
+
