@@ -183,6 +183,7 @@
 								<input type="email" name="email" placeholder="Enter your email" class="form-control mt-3" required="required" style="">
 								<input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
 								<input type="hidden" name="home" value="1">
+								<input type="hidden" name="tower" value="0">
 
 
 							<button type="submit" class=" mt-3 btn btn-lg w-100 btn-danger">Sign me up!</button>
@@ -584,6 +585,7 @@
 					<input type="email" name="email" placeholder="Enter your email" class="form-control mt-3" required="required">
 					<input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
 					<input type="hidden" name="home" value="1">
+					<input type="hidden" name="tower" value="0">
 
 					<button type="submit" class=" mt-3 btn btn-lg btn-danger w-100">Sign me up</button>
 				</div>
