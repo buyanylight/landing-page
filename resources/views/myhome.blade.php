@@ -165,7 +165,7 @@
 					<div class="mt-3" style="border: 1px solid white; padding: 25px; background-color: white; border-radius: 20px;">
 						<h3 class="text-dark">
 							<b>
-								<img src="{{ Util::assetUrl('images/mytower/project_fee.png') }}" class="project_img"> 
+								<img src="{{ Util::assetUrl('images/home/project_fee.png') }}" class="project_img"> 
 								<br>
 								<div class="mt-3">
 									Sign up now to save $949 for your first project!
