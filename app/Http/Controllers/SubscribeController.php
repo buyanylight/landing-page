@@ -20,6 +20,7 @@ class SubscribeController extends Controller
     $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
     $recaptcha = json_decode($recaptcha);
 
+    // dd($request);
 
     if ($recaptcha->success==true) {
 
@@ -43,10 +44,14 @@ class SubscribeController extends Controller
           //       $message->from('no-reply@buyanylight.com');
           //       $message->to('info@buyanylight.com', 'Admin')->subject($request->get('subject'));
           //   });
-               return back()->with('success', '<br> We will get back to you shortly.');
+                    if ($request->$tower == 1) {
+                        return redirect('mytowert')->with('success', '<br> We will get back to you shortly.');
+                    } else {
+                        return view('myhomet')->with('success', '<br> We will get back to you shortly.');
+                    }
            } else {
                 return back()->with('danger', 'Please try again later!');
-           }
+            }
         } else {
             return back()->with('danger', 'Please try again later! <br> Could not validate you.');
         }       
