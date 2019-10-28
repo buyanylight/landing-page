@@ -47,7 +47,7 @@ class SubscribeController extends Controller
                     if ($request->has('tower')) {
                         return redirect('/mytower?thank-you')->with('success', '<br> We will get back to you shortly.');
                     } else {
-                        return view('/myhome?thank-you')->with('success', '<br> We will get back to you shortly.');
+                        return redirect('/myhome?thank-you')->with('success', '<br> We will get back to you shortly.');
                     }
            } else {
                 return back()->with('danger', 'Please try again later!');
