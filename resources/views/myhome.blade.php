@@ -165,7 +165,11 @@
 					<div class="mt-3" style="border: 1px solid white; padding: 25px; background-color: white; border-radius: 20px;">
 						<h3 class="text-dark">
 							<b>
-								<span style="text-decoration:line-through;">Project fee = $949 </span> <br>Sign up now to save $949 for your first project!
+								<img src="{{ Util::assetUrl('images/mytower/project_fee.png') }}" class="project_img"> 
+								<br>
+								<div class="mt-3">
+									Sign up now to save $949 for your first project!
+								</div> 
 							</b>
 						</h3>
 						<form class="pt-1" method="post" action="/subscribe">
@@ -184,7 +188,7 @@
 				</div>
 			</div>
 			<div class="col-12 col-md-7">
-				<iframe width="100%" height="100%" class="BAL-video" src=" https://www.youtube.com/embed/YiH67TXySrY?rel=0&enablejsapi=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
+				<iframe width="100%" height="100%" class="BAL-video" style="border-radius: 20px;" src=" https://www.youtube.com/embed/YiH67TXySrY?rel=0&enablejsapi=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
 				<!-- <div class="card-deck slide">
 					<div class="card" style="background: url({{ Util::assetUrl('/images/home/home1.jpg') }}); background-size: cover; background-position: center; background-position-x: left; border-radius: 15px; background-repeat: no-repeat;"></div>
 					<div class="card" style="background: url({{ Util::assetUrl('/images/home/home2.jpg') }}); background-size: cover; background-position: center; border-radius: 15px; background-repeat: no-repeat;"></div>
@@ -287,7 +291,7 @@
 	<div class="pt-5 pb-5 container text-center">
 		<div class="row">
 			<div class="col-12 col-md-6 d-flex justify-content-center align-items-center promo">
-				<h2 class="text-white m-0"><b> Sign up now to save<br>$949 for your first project!</b></h2>
+				<h3 class="text-white m-0"><b> Sign up now to save<br>$949 for your first project!</b></h3>
 			</div>
 			<div class="col-12 col-md-6">
 				<a href="#interested" class="btn btn-lg btn-danger">GET THIS DEAL NOW!</a>
@@ -554,8 +558,12 @@
 		<div class="container">
 			<h2 class="text-white">
 				<b>
-					<span style="text-decoration:line-through;">Project fee = $949 </span> 
-					<br>Sign up now to save $949 for your first project!
+					<img src="{{ Util::assetUrl('images/home/project_fee_white.png') }}" class="project_img_white">
+					<br>
+					<div class="mt-3">
+					Sign up now to save $949 for your first project!
+
+					 </div> 
 				</b>
 			</h2>
 			<form class="pt-3" method="post" action="/subscribe">

@@ -11326,6 +11326,14 @@ h1 {
   height: 327px;
 }
 
+.project_img {
+  width: 50%;
+}
+
+.project_img_white {
+  width: 28%;
+}
+
 .card-my-home-summary {
   width: 370px;
 }
