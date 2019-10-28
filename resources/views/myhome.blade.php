@@ -215,7 +215,7 @@
 					<img src="{{ Util::assetUrl('/images/home/home6.jpg') }}" height="100%" width="100%" style="border-radius: 25px;">
 				</div>
 				<div class="col-12 col-md-6">
-					<p>
+					<p class="about-text">
 						BuyAnyLight (BAL) is the first platform that’s designed exclusively for sourcing LED lights. With the help of BAL, homeowners like you can now source great quality, low‐cost LED just as the experts do, thanks to our simple, no‐hassle support and intelligent system. We believe in great service that’s professional, honest, super‐efficient. Simply choose our package and upload your requirements. Then just sit back and let our lighting professionals handle the rest! 
 					</p>
 					<div class="card card-body mt-2">

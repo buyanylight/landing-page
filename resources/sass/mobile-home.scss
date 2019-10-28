@@ -83,9 +83,12 @@ nav .dropdown-toggle::after {
 
 .section-1{
     height: 100%;
-    background: black;
+    background: url('/images/home/home10.jpg');
     padding-top: 13px;
     padding-bottom: 84px;
+    background-size: cover;
+    background-position: center;
+}
 }
 
 
@@ -176,6 +179,10 @@ nav .dropdown-toggle::after {
         background-position: center;
         background-size: contain;
     }
+}
+
+.about-text{
+    margin-top: 20px;
 }
 
 .promo{
