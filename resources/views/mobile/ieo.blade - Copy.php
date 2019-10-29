@@ -40,8 +40,7 @@
 			});
 
 			
-			// const minBAL = 200;
-			const minBAL = 25000;
+			const minBAL = 200;
 
 			
 			$('.bal-token').keyup(function() {
@@ -347,8 +346,7 @@
 					<b>IEO PRE SALE</b>
 				</h4> --}}
 				<div class="w-100 pt-2">
-					{{-- <p class="mb-0 text-white"><b>PRE -IEO SALE LIVE ON NOV 1</b></p> --}}
-					<p class="mb-0 text-white"><b>PRIVATE SALE LIVE NOW!</b></p>
+					<p class="mb-0 text-white"><b>PRE -IEO SALE LIVE ON NOV 1!</b></p>
 					<p class="text-white text-center mb-0" style="font-size: 0.9em;">
 						<b>sale ends in:</b>
 					</p>
@@ -413,16 +411,6 @@
 </section>
 
 
-
-
-
-
-
-
-
-
-{{-- 
-
 <section class="section-buy-token">
 	<div class="pt-0 pb-4 container">
 		<div class="row">
@@ -480,28 +468,6 @@
 	</div>
 </section>
 
- --}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <section class="section-buy-token" id="section-bal-token">
 	<div class="pt-3 container">
@@ -533,13 +499,11 @@
 					</div>
 				</div>
 				<div>
-	  				{{-- <small>The minimum investment is 50 USD and 200 BAL</small> --}}
-	  				<small>The minimum investment is 5,000 USD and 25,000 BAL</small>
+	  				<small>The minimum investment is 50 USD and 200 BAL</small>
 	  			</div>
 				<div class="pt-4 bal-alert" style="display: none;">
 					<div class="alert alert-danger" role="alert">
-  						{{-- The minimum investment is 50 USD and 200 BAL --}}
-  						The minimum investment is 5,000 USD and 25,000 BAL
+  						The minimum investment is 50 USD and 200 BAL
 					</div>
 				</div>
 				<hr>
@@ -591,8 +555,7 @@
 												</b>
 												<br>
 												<span>1</span> BAL=
-												{{-- <span>0.25</span> USD --}}
-												<span>0.2</span> USD
+												<span>0.25</span> USD
 											</div>	
 										</div> 
 									</div>
@@ -624,8 +587,8 @@
 									</div>
 									<div class="row">
 										<div class="col">
-											 	{{-- ROI : 17.5%  --}}
-												ROI = 51.52%
+												{{-- ROI = 51.52% --}}
+											 	ROI : 17.5% 
 										</div>
 										<div class="col">
 

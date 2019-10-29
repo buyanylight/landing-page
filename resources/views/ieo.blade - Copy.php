@@ -31,8 +31,7 @@
 		});
 
 
-		// const minBAL = 200;
-		const minBAL = 25000;
+		const minBAL = 200;
 
 
 		$('.bal-token').change(function() {
@@ -41,23 +40,23 @@
 				$('.bal-alert').show()
 			} else {
 				$('.bal-alert').hide()
-			}
+			}	
 		})
 
 
 		$('.bal-token').keyup(function() {
 			if (numeral($('.bal-token').val()).value() < minBAL && numeral($('.bal-token').val()).value() !== 9) {
-				$('#token-btn').attr('disabled', 'disabled')
-			} else {
-				$('#token-btn').removeAttr('disabled')
-			}
+			$('#token-btn').attr('disabled', 'disabled')
+		} else {
+			$('#token-btn').removeAttr('disabled')
+		}
 
-			 $('.token-price').show();
+		 $('.token-price').show();
 
-			 $(this).val(function(index, value) {
-				var amount = numeral(value).format('0,0');
-				
-				return amount
+		 $(this).val(function(index, value) {
+			var amount = numeral(value).format('0,0');
+			
+			return amount
 			});
 
 
@@ -301,8 +300,7 @@
 								<div class="w-100">	
 									{{-- <h4 class="text-center text-white"><b>IEO PRE SALE</b></h4> --}}
 									<div class="w-100 pt-2">
-										{{-- <h4 class="text-center text-white"><b>PRE -IEO SALE LIVE ON NOV 1!</b></h4> --}}
-										<h4 class="text-center text-white"><b>PRIVATE SALE LIVE NOW!</b></h4>
+										<h4 class="text-center text-white"><b>PRE -IEO SALE LIVE ON NOV 1!</b></h4>
 										<p class="text-white text-center mb-0">
 											<b>sale ends in:</b>
 										</p>
@@ -315,8 +313,7 @@
 											</div>
 										</div>
 										<div class="pl-5 text-white">
-											{{-- <small><span>1 BAL = 0.25 USD</span></small> --}}
-											<small><span>1 BAL = 0.2 USD</span></small>
+											<small><span>1 BAL = 0.25 USD</span></small>
 										</div>
 									</div>
 									<div class="w-100">
@@ -491,14 +488,12 @@
 	  					<input class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 15px; border: 1px solid #000000;">
 					</div>
 	  				<div>
-	  					{{-- <small>The minimum investment is 50 USD and 200 BAL</small> --}}
-	  					<small>The minimum investment is 5,000 USD and 25,000 BAL</small>
+	  					<small>The minimum investment is 50 USD and 200 BAL</small>
 	  				</div>
 				</div>
 				<div class="pt-4 bal-alert" style="display: none;">
 					<div class="alert alert-danger" role="alert">
-  						{{-- The minimum investment is 50 USD and 200 BAL --}}
-  						The minimum investment is 5,000 USD and 25,000 BAL
+  						The minimum investment is 50 USD and 200 BAL
 					</div>
 				</div>
 				<hr/>
@@ -546,8 +541,7 @@
 												</b>
 											</h5>
 											<p style="padding-bottom: 18px;">
-												{{-- <span class="BAL_value">1</span> BAL = <span class="USD_value">0.25</span>  --}}
-												<span class="BAL_value">1</span> BAL = <span class="USD_value">0.2</span> 
+												<span class="BAL_value">1</span> BAL = <span class="USD_value">0.25</span> 
 												USD
 											</p>
 											<h5>
@@ -565,14 +559,13 @@
 												</b>
 											</h5>
 											<p class="mb-1 mt-1">
-											 	ROI : 51.52% 
-											 	{{-- ROI : 17.5%  --}}
+											 	{{-- ROI : 51.52%  --}}
+											 	ROI : 17.5% 
 											 </p>
 											 <p class="mb-0">
 											 	Profits :
 												<span class="USD_return">
-													{{-- 0.05303  --}}
-													0.10303 
+													0.05303 
 												</span>
 												USD
 											 </p> 
@@ -586,8 +579,7 @@
 												</b>
 											</h5>
 											<p style="padding-bottom: 18px;">
-												{{-- <span>1</span> BAL = <span>0.25</span>  --}}
-												<span>1</span> BAL = <span>0.2</span> 
+												<span>1</span> BAL = <span>0.25</span> 
 												USD
 											</p>
 											<h5>
