@@ -536,7 +536,10 @@
 									<span class="header-text">Profit</span> / Return on Investment
 								</b>
 							</h3>
-							<div class="card card-body" style="border-radius: 20px;">
+
+							{{-- cb --}}
+							{{-- //////////////////////// --}}
+							<div class="card card-body" style="border-radius: 20px; overflow: hidden;">
 								<div class="row">
 									<div class="col-7">
 										<div class="pt-2">
@@ -602,7 +605,14 @@
 										</div>
 									</div>
 								</div>
+								<div class="corner-ribbon bottom-right red shadow">
+									<span style="font-size: 13px;">34% Discount!</span>
+								</div>
 							</div>
+							{{-- //////////////////////// --}}
+							{{-- cb --}}
+
+
 						</div>
 					</div>
 					<div class="pt-4 row w-100">
