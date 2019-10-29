@@ -537,7 +537,7 @@
 												</b>
 											</h5>
 											<p style="padding-bottom: 18px;">
-												<span class="BAL_value">1</span> BAL = <span class="USD_value">0.2</span> 
+												<span class="BAL_value">1</span> BAL = <span class="USD_value">0.25</span> 
 												USD
 											</p>
 											<h5>
@@ -574,7 +574,7 @@
 												</b>
 											</h5>
 											<p style="padding-bottom: 18px;">
-												<span>1</span> BAL = <span>0.2</span> 
+												<span>1</span> BAL = <span>0.25</span> 
 												USD
 											</p>
 											<h5>
@@ -1579,7 +1579,7 @@
 								</tr>
 								<tr>
 									<td>Private round price:</td>
-									<td>1BAL = USD 0.2</td>
+									<td>1BAL = USD 0.25</td>
 								</tr>
 								<tr>
 									<td>IEO token price:</td>
