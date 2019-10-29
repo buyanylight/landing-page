@@ -39,10 +39,12 @@
   				}
 			});
 
+			
+			const minBAL = 200;
 
 			
 			$('.bal-token').keyup(function() {
-			if (numeral($('.bal-token').val()).value() < 25000) {
+			if (numeral($('.bal-token').val()).value() < minBAL) {
 				$('.bal-alert').show()
 				$('#token-btn').attr('disabled', 'disabled')
 			
@@ -195,8 +197,8 @@
 						{{-- style="height: 65px; position: absolute; top: 0px; right: 30px;"  --}}
 						<a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
 						<img border="0" 
-						style="height: 65px;" 
-						src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" 
+						style="height: 65px;" 						
+						src="{{ Util::assetUrl('images/ieo/partners/icobench.png') }}" 						
 						alt="BuyAnyLight (BAL) ICO rating"/>
 						</a>
 
@@ -205,7 +207,7 @@
 						<a href="https://icomarks.com/ico/buyanylight" target="_blank" rel="nofollow" title="BuyAnyLight ICO">
 						<img border="0" 
 						style="height: 65px; margin-left: 5px;" 
-						src="https://icomarks.com/widget/b/buyanylight/square.svg" 
+						src="{{ Util::assetUrl('images/ieo/icomark.png') }}" 
 						alt="BuyAnyLight ICO Rating"/>
 						</a>
 					</div>
@@ -339,12 +341,12 @@
 	<div class="countdown-ring-2">
 	<div class="countdown">
 		<div class="d-flex align-items-center h-100" style="padding: 10px;">
-			<div class="w-100" style="margin-top: -20px;">	
+			<div class="w-100" style="margin-top: -10px;">	
 				{{-- <h4 class="text-center text-white pb-0 mb-0" style="font-size: 1.2em;">
 					<b>IEO PRE SALE</b>
 				</h4> --}}
 				<div class="w-100 pt-2">
-					<p class="mb-0 text-white"><b>PRE -IEO SALE LIVE NOW!</b></p>
+					<p class="mb-0 text-white"><b>PRE -IEO SALE LIVE ON NOV 1!</b></p>
 					<p class="text-white text-center mb-0" style="font-size: 0.9em;">
 						<b>sale ends in:</b>
 					</p>
@@ -370,7 +372,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="pt-3">
+				<div class="pt-1">
 					<small>
 						<a href="{{ Util::assetUrl('bal_certificate.pdf')}}" target="_blank" class="text-white">Audited by Blockchain Consilium</a>
 					<!-- 	<br>
@@ -438,11 +440,11 @@
 					</div>
 				</div>
 				<div>
-	  				<small>The minimum investment is 5,000 USD and 25,000 BAL</small>
+	  				<small>The minimum investment is 50 USD and 200 BAL</small>
 	  			</div>
 				<div class="pt-4 bal-alert" style="display: none;">
 					<div class="alert alert-danger" role="alert">
-  						The minimum investment is 5,000 USD and 25,000 BAL
+  						The minimum investment is 50 USD and 200 BAL
 					</div>
 				</div>
 				<hr>
@@ -485,7 +487,7 @@
 												</b>
 											</div>
 											<span class="BAL_value">1</span> BAL=
-											<span class="USD_value">0.2</span> USD
+											<span class="USD_value">0.25</span> USD
 										</div>
 										<div class="col-5">
 											<div class="token-price" style="display: none;">
@@ -494,7 +496,7 @@
 												</b>
 												<br>
 												<span>1</span> BAL=
-												<span>0.2</span> USD
+												<span>0.25</span> USD
 											</div>	
 										</div> 
 									</div>
@@ -526,7 +528,8 @@
 									</div>
 									<div class="row">
 										<div class="col">
-												ROI = 51.52%
+												{{-- ROI = 51.52% --}}
+											 	ROI : 17.5% 
 										</div>
 										<div class="col">
 
@@ -534,7 +537,7 @@
 									</div>
 									<div class="row">
 										<div class="col">
-											Return = <span class="USD_return">151.515 USD
+											Return = <span class="USD_return">0.05303 USD
 											</span>		
 										</div>
 										<div class="col">
@@ -1209,7 +1212,7 @@
 				</tr>
 				<tr>
 					<td>Private round price:</td>
-					<td>1BAL = USD 0.2</td>
+					<td>1BAL = USD 0.25</td>
 				</tr>
 				<tr>
 					<td>IEO token price:</td>
@@ -1682,7 +1685,7 @@
 								<img style="" src="{{ Util::assetUrl('images/ieo/partners/icobench.png') }}" alt="BuyAnyLight (BAL) ICO rating"/>
 							</a>
 							<a style="width: 150px;" href="https://icomarks.com/ico/buyanylight" target="_blank"  title="BuyAnyLight ICOMARKS">
-								<img style="" src="{{ Util::assetUrl('https://icomarks.com/widget/b/buyanylight/square.svg') }}" alt="BuyAnyLight ICOMARKS"/>
+								<img style="" src="{{ Util::assetUrl('images/ieo/icomark.png') }}" alt="BuyAnyLight ICOMARKS"/>
 							</a>
 							<a style="width: 165px;" href="https://icoholder.com/en/buyanylight-31234" target="_blank"  title="BuyAnyLight ICOHOLDER">
 								<img style="" src="{{ Util::assetUrl('images/ieo/partners/icoholder.png') }}" alt="BuyAnyLight ICOHOLDER"/>
