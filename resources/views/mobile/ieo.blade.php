@@ -205,7 +205,7 @@
 						<a href="https://icomarks.com/ico/buyanylight" target="_blank" rel="nofollow" title="BuyAnyLight ICO">
 						<img border="0" 
 						style="height: 65px; margin-left: 5px;" 
-						src="https://icomarks.com/widget/b/buyanylight/square.svg" 
+						src="{{ Util::assetUrl('images/ieo/icomark.png') }}" 
 						alt="BuyAnyLight ICO Rating"/>
 						</a>
 					</div>
@@ -1682,7 +1682,7 @@
 								<img style="" src="{{ Util::assetUrl('images/ieo/partners/icobench.png') }}" alt="BuyAnyLight (BAL) ICO rating"/>
 							</a>
 							<a style="width: 150px;" href="https://icomarks.com/ico/buyanylight" target="_blank"  title="BuyAnyLight ICOMARKS">
-								<img style="" src="{{ Util::assetUrl('https://icomarks.com/widget/b/buyanylight/square.svg') }}" alt="BuyAnyLight ICOMARKS"/>
+								<img style="" src="{{ Util::assetUrl('images/ieo/icomark.png') }}" alt="BuyAnyLight ICOMARKS"/>
 							</a>
 							<a style="width: 165px;" href="https://icoholder.com/en/buyanylight-31234" target="_blank"  title="BuyAnyLight ICOHOLDER">
 								<img style="" src="{{ Util::assetUrl('images/ieo/partners/icoholder.png') }}" alt="BuyAnyLight ICOHOLDER"/>

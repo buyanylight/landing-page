@@ -193,11 +193,11 @@
 						</a>
 
 
-						<a href="https://icomarks.com/ico/buyanylight" target="_blank" rel="nofollow" title="BuyAnyLight ICO">
+						<a href="https://icomarks.com/ico/buyanylight" target="_blank" rel="nofollow" title="BuyAnyLight ICOMARKS">
 						<img border="0" 
 						style="height: 80px; position: absolute; top: -5px; right: 115px;" 
 						src="{{ Util::assetUrl('images/ieo/icomark.png') }}" 
-						alt="BuyAnyLight ICO Rating"/>
+						alt="BuyAnyLight ICOMARKS Rating"/>
 						</a>
 
 
