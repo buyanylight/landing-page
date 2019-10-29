@@ -196,7 +196,7 @@
 						<a href="https://icomarks.com/ico/buyanylight" target="_blank" rel="nofollow" title="BuyAnyLight ICO">
 						<img border="0" 
 						style="height: 80px; position: absolute; top: -5px; right: 115px;" 
-						src="https://icomarks.com/widget/b/buyanylight/square.svg" 
+						src="{{ Util::assetUrl('images/ieo/icomark.png') }}" 
 						alt="BuyAnyLight ICO Rating"/>
 						</a>
 
@@ -2247,7 +2247,7 @@
 					$datas = [];
 					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICORATING", 'link'=>"https://icoholder.com/en/buyanylight-31234", 'src'=>"images/ieo/partners/icoholder.png", ];
 					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOHOLDER", 'link'=>"https://icobench.com/ico/buyanylight-bal", 'src'=>"images/ieo/partners/icobench.png", ];
-					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOMARKS", 'link'=>"https://icomarks.com/ico/buyanylight", 'src'=>"https://icomarks.com/widget/b/buyanylight/square.svg", ];
+					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOMARKS", 'link'=>"https://icomarks.com/ico/buyanylight", 'src'=>"images/ieo/icomark.png", ];
 					//$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOSBULL", 'link'=>"https://icosbull.com/eng/ico/buyanylightbal", 'src'=>"images/ieo/partners/icosbull.png", ];
 				?>
 				<div class="col-5 mt-10">
