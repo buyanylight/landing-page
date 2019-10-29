@@ -633,8 +633,9 @@
 									</div>
 									<div class="row">
 										<div class="col">
-											Return = <span class="USD_return">0.05303 USD
-											</span>		
+											Return = 
+											{{-- <span class="USD_return">0.05303 USD</span>		 --}}
+											<span class="USD_return">0.10303 USD</span>		
 										</div>
 										<div class="col">
 												
