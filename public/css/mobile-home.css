@@ -11186,6 +11186,8 @@ nav .dropdown-toggle::after {
   background: url("/images/home/home10.jpg");
   padding-top: 13px;
   padding-bottom: 84px;
+  background-size: cover;
+  background-position: center;
 }
 
 .BAL-video {
