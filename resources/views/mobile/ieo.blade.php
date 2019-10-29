@@ -420,20 +420,27 @@
 
 
 
+<style>
+#sale-dates-price .card-header{
+	/*background: linear-gradient(to right, #791f50, #5555A4); */
+	/*background: linear-gradient(to right, #e4007b, #0000af); */
+	background-color: #a90c74; 
+	padding:10px;
+}	
+</style>
 
-{{-- 
 
-<section class="section-buy-token">
+<section class="section-buy-token" id="sale-dates-price">
 	<div class="pt-0 pb-4 container">
-		<div class="row">
+		<div class="row" style="padding: 10px;">
 
-			<div class="col-4">
+			<div class="col-4 p-1">
 			<div class="card text-center">
-				<div class="card-header text-white" style="background: #F511A9; padding:10px;">
+				<div class="card-header text-white" style="">
 					<b>PRIVATE SALE</b><br>
 					<span style="font-size: 11px;">0.2 USD</span>
 				</div>
-				<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center" style="font-size: 11px;">
+				<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
 					<div class="row">																											 
 						<div class="col-12">1<sup>st</sup> Oct 2019</div>
 						<div class="col-12">to</div>
@@ -444,9 +451,9 @@
 			</div>
 			</div>
 
-			<div class="col-4">
+			<div class="col-4 p-1">
 			<div class="card text-center">
-				<div class="card-header  text-white" style="background: #F511A9; padding: 10px;">
+				<div class="card-header  text-white" style="">
 					<b>PRE -IEO</b><br>
 					<span style="font-size: 11px;">0.25 USD</span>
 				</div>
@@ -460,9 +467,9 @@
 			</div>
 			</div>
 
-			<div class="col-4">
+			<div class="col-4 p-1">
 			<div class="card text-center ">
-				<div class="card-header  text-white" style="background: #F511A9; padding: 10px;">
+				<div class="card-header  text-white" style="">
 					<b>IEO</b><br>
 					<span style="font-size: 11px;">0.30303 USD</span>
 				</div>
@@ -480,7 +487,7 @@
 	</div>
 </section>
 
- --}}
+
 
 
 
