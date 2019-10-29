@@ -11665,3 +11665,10 @@ nav .dropdown-toggle::after {
   color: #fff;
 }
 
+#sale-dates-price .card-header {
+  /*background: linear-gradient(to right, #791f50, #5555A4); */
+  /*background: linear-gradient(to right, #e4007b, #0000af); */
+  background-color: #a90c74;
+  padding: 10px;
+}
+
