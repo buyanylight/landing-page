@@ -11176,7 +11176,8 @@ h1 {
 
 .section-1 {
   height: 100vh;
-  background: black;
+  background: url("/images/home/home10.jpg");
+  background-size: cover;
 }
 
 .section-padding {
@@ -11311,7 +11312,7 @@ h1 {
 }
 
 .section-3 .laptop {
-  background: url(http://192.168.1.204:8004/images/home/home_laptop.png?ver=0);
+  background: url("/images/home/home_laptop.png");
   height: 393px;
   background-repeat: no-repeat;
   background-position: center;
@@ -11324,6 +11325,19 @@ h1 {
   top: 22px;
   left: 0px;
   height: 327px;
+}
+
+.slick-prev {
+  left: -40px !important;
+}
+
+.slick-next {
+  right: -30px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px !important;
 }
 
 .project_img {

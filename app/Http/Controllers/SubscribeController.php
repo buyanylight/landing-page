@@ -20,15 +20,19 @@ class SubscribeController extends Controller
     $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
     $recaptcha = json_decode($recaptcha);
 
+    // dd($request);
 
     if ($recaptcha->success==true) {
 
         if ($recaptcha->score >=0.5) {
-            $this->validate($request, [
+            $data = $this->validate($request, [
                 'email' => 'required|email',
                 'answer' => 'required',
             ]);
-            Subscribe::create($request->all());
+
+                // dd($data);
+
+            Subscribe::create($data);
           //   \Mail::send('mail.contactus',
           //   array(
           //       'name' => $request->get('name'),
@@ -40,10 +44,14 @@ class SubscribeController extends Controller
           //       $message->from('no-reply@buyanylight.com');
           //       $message->to('info@buyanylight.com', 'Admin')->subject($request->get('subject'));
           //   });
-               return back()->with('success', '<br> We will get back to you shortly.');
+                    if ($request->get('tower') == 1) {
+                        return redirect('/mytower?thank-you')->with('success', '<br> We will get back to you shortly.');
+                    } else {
+                        return redirect('/myhome?thank-you')->with('success', '<br> We will get back to you shortly.');
+                    }
            } else {
                 return back()->with('danger', 'Please try again later!');
-           }
+            }
         } else {
             return back()->with('danger', 'Please try again later! <br> Could not validate you.');
         }       

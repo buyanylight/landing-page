@@ -83,9 +83,11 @@ nav .dropdown-toggle::after {
 
 .section-1{
     height: 100%;
-    background: black;
+      background: url('/images/mytower/tower10.jpg');
     padding-top: 60px;
     padding-bottom: 84px;
+     background-size: cover;
+    background-position: center;
 }
 
 .BAL-video{
@@ -170,7 +172,7 @@ nav .dropdown-toggle::after {
     }
 
     .laptop{
-        background: url(http://192.168.1.204:8004/images/home/home_laptop.png?ver=0);
+        background: url('/images/home/home_laptop.png');
         height: 165px;
         background-repeat: no-repeat;
         background-position: center;
@@ -178,6 +180,10 @@ nav .dropdown-toggle::after {
     }
 }
 
+
+.about-text{
+    margin-top: 20px;
+}
 
 .project_img{
     width:95%;

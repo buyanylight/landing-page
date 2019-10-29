@@ -115,9 +115,9 @@
 	@endif
 @endsection
 @section('content')
-	<div style="position: relative; z-index: 5">
+	<div style="position: relative; z-index: 1029">
             <!-- Position toasts -->
-    	<div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
+    	<div style="position: absolute; top: 145px; right: 55px; min-width: 300px;">
         	<div class="toast" data-autohide="false">
             	<div class="toast-header">
                 	<strong class="mr-auto">
@@ -160,7 +160,7 @@
 						efficiency for your business and save a fortune for project owners!
 					</p>
 					<!-- <a data-fancybox href="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" class="btn btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a> -->
-					<a data-fancybox href="{{ Util::assetUrl('brochures/MyTower_BAL.pdf') }}" class="btn btn-BAL"><i class="far fa-file-pdf"></i> &nbsp; View Brochure</a>
+					<a target="_blank" href="{{ Util::assetUrl('brochures/MyTower_BAL.pdf') }}" class="btn btn-BAL"><i class="far fa-file-pdf"></i> &nbsp; View Brochure</a>
 					<div class="mt-3" style="border: 1px solid white; padding: 25px; background-color: white; border-radius: 20px;">
 						<h3 class="text-dark">
 							<b>
@@ -175,11 +175,13 @@
 							{{ csrf_field() }}
 								<select class="form-control" name="answer" required="required" style="">
 									<option selected disabled value="">Interested?</option>
-									<option value="Yes, Constructing Home">I'm looking for lights for a new project.</option>
-									<option value="Yes, Renovating Home">I'm looking for lights to renovate a project.</option>
+									<option value="Yes, Constructing Tower">I'm looking for lights for a new project.</option>
+									<option value="Yes, Renovating Tower">I'm looking for lights to renovate a project.</option>
 									<option value="Yes, Like the idea">Just interested on the idea.</option>
 								</select>
 								<input type="email" name="email" placeholder="Enter your email" class="form-control mt-3" required="required" style="">
+								<input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
+								<input type="hidden" name="tower" value="1">
 
 							<button type="submit" class=" mt-3 btn btn-lg w-100 btn-danger">Sign me up!</button>
 						</form>
@@ -210,6 +212,33 @@
 	<div class="icon-scroll" style="">
 	</div>
 </section>
+<!-- <section class="section-about">
+	<div class="pt-5 pb-5">
+		<div class="container">
+			<h3>
+				<b>
+					About <span style="color: #5555A4">BuyAnyLight</span>
+				</b>
+			</h3>
+			<div class="row pt-5 pb-3">
+				<div class="col-12 col-md-6">
+					<p>
+						BuyAnyLight (BAL) is an innovative online platform providing LED lighting solutions for your projects in record time and at unbeatable prices. Just upload your project requirements via BAL’s user‐friendly interface, then sit back while our team of experts present you with the best possible solution and an excellent quote! 
+					</p>
+					<p>
+						You pay BAL a one-time fee – but only when you decide to buy our solution or order a sample. Once you’ve placed your order with us, you can use the time and effort you’ve saved to attend to other important matters in your business. We guarantee that no local company can match BAL’s all-round top value – we’re Number One for price, quality, and service, too. 
+					</p>
+			
+					
+				</div>
+				<div class="col-12 col-md-6">
+					<img src="{{ Util::assetUrl('/images/mytower/tower2.jpg') }}" width="100%" style="border-radius: 25px;">
+				</div>
+			</div>
+		</div>
+
+	</div>	
+</section> -->
 <section class="section-2">
 	<div class="pt-5 pb-5 h-100">
 		<div class="container h-100">
@@ -220,16 +249,20 @@
 			</h3>
 			<div  class="row pt-5 pb-3">
 				<div class="col-12 col-md-6">
-					<img src="{{ Util::assetUrl('/images/mytower/tower1.jpg') }}" width="100%" style="border-radius: 25px;">
+					<img src="{{ Util::assetUrl('/images/mytower/tower1.jpg') }}"  height="100%" width="100%" style="border-radius: 25px;">
 				</div>
 				<div class="col-12 col-md-6">
+					<p class="about-text">
+						BuyAnyLight (BAL) is an innovative online platform providing LED lighting solutions for your projects in record time and at unbeatable prices. Just upload your project requirements via BAL’s user‐friendly interface, then sit back while our team of experts present you with the best possible solution and an excellent quote! 
+					</p>
+
 					<div class="card card-body mt-2">
 						<div class="row">
 							<div class="col-1">
 								<i class="fas fa-tasks" style="font-size: 25px;"></i>
 							</div>
 							<div class="col-11">
-								<h5><b>Convencience</b></h5>
+								<h5><b>Convenient</b></h5>
 							</div>
 						</div>
 					</div>
@@ -378,7 +411,7 @@
 		</div>
 		<div class="container text-center pt-5">
 			<a data-fancybox href="https://www.youtube.com/embed/ggLc0PPemko?rel=0&enablejsapi=1" class="btn btn-md btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a>
-			<a data-fancybox href="{{ Util::assetUrl('brochures/MyTower_BAL.pdf') }}" class="btn btn-md btn-BAL"> <i class="fas fa-file-pdf"></i> &nbsp;View Brochure</a>
+			<a target="_blank" href="{{ Util::assetUrl('brochures/MyTower_BAL.pdf') }}" class="btn btn-md btn-BAL"> <i class="fas fa-file-pdf"></i> &nbsp;View Brochure</a>
 			<!-- <a href="#interested" class="btn btn-md btn-BAL">I'm Interested</a> -->
 
 		</div>
@@ -574,16 +607,19 @@
 				</b>
 
 			</h2>
-			<form class="pt-3" method="post" action="/subscribe">
+			<form class="mt-2" method="post" action="/subscribe">
 				{{csrf_field()}}
 				<div>
 					<select class="form-control" name="answer" required="required">
 						<option selected disabled value="">Looking for lights?</option>
-						<option value="Yes, Constructing Home">Yes, I'm constructing at the moment.</option>
-						<option value="Yes, Renovating Home">Yes, I'm retrofitting a project.</option>
+						<option value="Yes, Constructing Tower">Yes, I'm constructing at the moment.</option>
+						<option value="Yes, Renovating Tower">Yes, I'm retrofitting a project.</option>
 						<option value="Yes, Like the idea">No, but interested on the idea.</option>
 					</select>
 					<input type="email" name="email" placeholder="Enter your email" class="form-control mt-3" required="required">
+					<input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
+					<input type="hidden" name="tower" value="1">
+
 					<button type="submit" class=" mt-3 btn btn-danger btn-lg w-100">Sign me up</button>
 				</div>
 			</form>

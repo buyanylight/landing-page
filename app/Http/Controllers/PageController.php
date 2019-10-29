@@ -201,6 +201,33 @@ class PageController extends Controller
 
     }
 
+    public function myhomet()
+    {
+        return view('myhomet');
+
+    }
+
+     public function mytowert ()
+    {
+
+        $agent = new Agent();
+
+        $isMobile = $agent->isMobile();
+        $isTablet = $agent->isTablet();
+
+    
+        if($isMobile || $isTablet) {
+            $layout = 'layouts.mobile-layout';
+            $isDesktop = false;
+        } else {
+            $layout = 'layouts.main-layout';
+            $isDesktop = true;
+        }
+
+        return view('mytowert')->with('layout', $layout)->with('isDesktop', $isDesktop);
+
+    }
+
 
 
 

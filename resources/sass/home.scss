@@ -86,7 +86,8 @@ h1{
 
 .section-1{
 	height: 100vh;
-	background: black;
+	background: url('/images/home/home10.jpg');
+  background-size: cover;
 }
 
 
@@ -207,7 +208,7 @@ h1{
     }
 
     .laptop{
-        background: url(http://192.168.1.204:8004/images/home/home_laptop.png?ver=0); height: 393px; background-repeat: no-repeat; background-position: center; background-size:contain;
+        background: url('/images/home/home_laptop.png'); height: 393px; background-repeat: no-repeat; background-position: center; background-size:contain;
     }
 
     .works-img{
@@ -217,6 +218,18 @@ h1{
         left: 0px;
         height: 327px;
     }
+}
+
+.slick-prev {
+    left: -40px !important;
+}
+
+.slick-next {
+    right: -30px !important;
+}
+
+.slick-prev:before, .slick-next:before{
+    font-size: 30px !important;
 }
 
 .project_img{

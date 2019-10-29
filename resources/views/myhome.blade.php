@@ -120,9 +120,9 @@
 
 
 @section('content')
-	<div style="position: relative; z-index: 5">
+	<div style="position: relative; z-index: 1029">
             <!-- Position toasts -->
-    	<div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
+    	<div style="position: absolute; top: 145px; right: 55px; min-width: 300px;">
         	<div class="toast" data-autohide="false">
             	<div class="toast-header">
                 	<strong class="mr-auto">
@@ -161,7 +161,7 @@
 						We’ve got great news for you. There’s a new and innovative LED sourcing platform that gives you access to experts, saves you time and helps you make incredible savings on your lighting projects.
 					</p>
 					<!-- <a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a> -->
-					<a data-fancybox href="{{ Util::assetUrl('brochures/MyHome_BAL.pdf') }}" class="btn btn-BAL"><i class="far fa-file-pdf"></i> &nbsp; View Brochure</a>
+					<a target="_blank" href="{{ Util::assetUrl('brochures/MyHome_BAL.pdf') }}" class="btn btn-BAL"><i class="far fa-file-pdf"></i> &nbsp; View Brochure</a>
 					<div class="mt-3" style="border: 1px solid white; padding: 25px; background-color: white; border-radius: 20px;">
 						<h3 class="text-dark">
 							<b>
@@ -181,6 +181,10 @@
 									<option value="Yes, Like the idea">Just interested on the idea.</option>
 								</select>
 								<input type="email" name="email" placeholder="Enter your email" class="form-control mt-3" required="required" style="">
+								<input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
+								<input type="hidden" name="home" value="1">
+								<input type="hidden" name="tower" value="0">
+
 
 							<button type="submit" class=" mt-3 btn btn-lg w-100 btn-danger">Sign me up!</button>
 						</form>
@@ -203,7 +207,7 @@
 	</div>
 </section>
 <section class="section-2">
-	<div class="pt-5 mt-5 pb-5 h-100">
+	<div class="pt-5 pb-5 h-100">
 		<div class="container h-100">
 			<h3>
 				<b>
@@ -212,16 +216,19 @@
 			</h3>
 			<div  class="row pt-5 pb-3">
 				<div class="col-12 col-md-6">
-					<img src="{{ Util::assetUrl('/images/home/home6.jpg') }}" width="100%" style="border-radius: 25px;">
+					<img src="{{ Util::assetUrl('/images/home/home6.jpg') }}" height="100%" width="100%" style="border-radius: 25px;">
 				</div>
 				<div class="col-12 col-md-6">
+					<p class="about-text">
+						BuyAnyLight (BAL) is the first platform that’s designed exclusively for sourcing LED lights. With the help of BAL, homeowners like you can now source great quality, low‐cost LED just as the experts do, thanks to our simple, no‐hassle support and intelligent system. We believe in great service that’s professional, honest, super‐efficient. Simply choose our package and upload your requirements. Then just sit back and let our lighting professionals handle the rest! 
+					</p>
 					<div class="card card-body mt-2">
 						<div class="row">
 							<div class="col-1">
 								<i class="fas fa-tasks" style="font-size: 25px;"></i>
 							</div>
 							<div class="col-11">
-								<h5><b>Convencience</b></h5>
+								<h5><b>Convenient</b></h5>
 							</div>
 						</div>
 					</div>
@@ -361,7 +368,7 @@
 
 		<div class="container text-center pt-5">
 			<a data-fancybox href="https://www.youtube.com/embed/YiH67TXySrY?rel=0&enablejsapi=1" class="btn btn-BAL"><i class="fas fa-play"></i> &nbsp; Watch Video</a>
-			<a data-fancybox href="{{ Util::assetUrl('brochures/MyHome_BAL.pdf') }}" class="btn btn-md btn-BAL"> <i class="fas fa-file-pdf"></i> &nbsp;View Brochure</a>
+			<a target="_blank" href="{{ Util::assetUrl('brochures/MyHome_BAL.pdf') }}" class="btn btn-md btn-BAL"> <i class="fas fa-file-pdf"></i> &nbsp;View Brochure</a>
 			<!-- <a href="#interested" class="btn btn-md btn-BAL">I'm Interested</a> -->
 
 		</div>
@@ -576,6 +583,10 @@
 						<option value="Yes, Like the idea">No, but interested on the idea.</option>
 					</select>
 					<input type="email" name="email" placeholder="Enter your email" class="form-control mt-3" required="required">
+					<input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
+					<input type="hidden" name="home" value="1">
+					<input type="hidden" name="tower" value="0">
+
 					<button type="submit" class=" mt-3 btn btn-lg btn-danger w-100">Sign me up</button>
 				</div>
 			</form>
