@@ -483,7 +483,15 @@
 			</div>
 			</div>
 
-		</div>		
+		</div>
+
+		<div class="row justify-content-center align-items-center">
+			<p class="ribbon">
+			  	<span class="text">
+			  		<strong class="bold">34% OFF</strong> until IEO Sale!
+			  	</span>
+			</p>			
+		</div>
 	</div>
 </section>
 
@@ -577,7 +585,7 @@
 
 							{{-- cb --}}
 							{{-- ///////////////////////////////////// --}}
-							<div class="card card-body" style="overflow: hidden;">
+							<div class="card card-body" style="z-index: 0;">
 								<h5>
 									<b>
 										<span>Profit / Return on Investment:</span>
@@ -653,9 +661,14 @@
 										</div>
 									</div>
 								</div>
-								<div class="corner-ribbon bottom-right red shadow">
+								{{-- <div class="corner-ribbon bottom-right red shadow">
 									<span style="font-size: 13px;">34% Discount!</span>
-								</div>
+								</div> --}}
+								<p class="ribbon small mt-4">
+								  	<span class="text">
+								  		<strong class="bold">34% OFF</strong> until IEO Sale!
+								  	</span>
+								</p>									
 							</div>
 							{{-- ///////////////////////////////// --}}
 							{{-- cb --}}

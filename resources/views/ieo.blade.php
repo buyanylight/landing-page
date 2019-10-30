@@ -356,7 +356,7 @@
 									<div class="w-100">
 										<img class="countdown-bottom-img" src="{{ Util::assetUrl('images/ieo/countdown-bottom.png') }}" alt="">
 									</div>
-									<div class="w-100 mt-4">
+									<div class="w-100 mt-2">
 										<div class="card-deck">
 
 
@@ -390,7 +390,7 @@
 											<div class="card text-center">
 												<div class="card-header text-white" style="background: #F511A9; padding:10px;">
 													<b>PRIVATE SALE</b><br>
-													{{-- <span style="font-size: 11px; text-decoration: line-through;">0.30303 USD</span><br> --}}
+													<span style="font-size: 11px; text-decoration: line-through;">0.30303 USD</span><br>
 													<span style="font-size: 11px;">0.2 USD</span>
 												</div>
 												<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center" style="font-size: 11px;">
@@ -405,7 +405,7 @@
 											<div class="card text-center">
 												<div class="card-header  text-white" style="background: #F511A9; padding: 10px;">
 													<b>PRE -IEO</b><br>
-													{{-- <span style="font-size: 11px; text-decoration: line-through;">0.30303 USD</span><br> --}}
+													<span style="font-size: 11px; text-decoration: line-through;">0.30303 USD</span><br>
 													<span style="font-size: 11px;">0.25 USD</span>
 												</div>
 												<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
@@ -419,8 +419,8 @@
 											<div class="card text-center ">
 												<div class="card-header  text-white" style="background: #F511A9; padding: 10px;">
 													<b>IEO</b><br>
-													{{-- <span style="font-size: 11px; text-decoration: line-through;"> </span><br> --}}
-													<span style="font-size: 11px;">0.30303 USD</span>
+													<span style="font-size: 11px;">0.30303 USD</span><br>
+													<span style="font-size: 11px;">&nbsp;</span>
 												</div>
 												<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
 													<div class="row">
@@ -435,16 +435,21 @@
 
 										</div>
 									</div>
+
 									<div class="pt-3">
-										<small>
-											<a href="{{ Util::assetUrl('bal_certificate.pdf')}}" target="_blank" class="text-white">Audited by Blockchain Consilium</a>
-										</small>
-										
-										{{-- <p class="ribbon">
+										<div style="font-size: 80%; font-weight: 400; width: 123px; display: inline-block; line-height: 16px;">
+											<a href="{{ Util::assetUrl('bal_certificate.pdf')}}" target="_blank" class="text-white">
+												Audited by
+												Blockchain Consilium
+											</a>
+										</div>
+
+										<p class="ribbon small">
 										  	<span class="text">
-										  		<strong class="bold">34%</strong> off before IEO Sale!
+										  		<strong class="bold">34% OFF</strong> until IEO Sale!
 										  	</span>
-										</p>	 --}}										
+										</p>											
+
 									</div>
 								</div>
 							</div>
@@ -622,7 +627,7 @@
 								</div> --}}
 								<p class="ribbon">
 								  	<span class="text">
-								  		<strong class="bold">34%</strong> off before IEO Sale!
+								  		<strong class="bold">34% OFF</strong> until IEO Sale!
 								  	</span>
 								</p>								
 							</div>

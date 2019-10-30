@@ -387,7 +387,8 @@ footer{
 	.countdown{
 		height: auto;
 		width: 400px;
-		border: white 1px solid;
+		// border: white 1px solid;
+		border: transparent 1px solid;
 		border-radius: 20px;
 		
 		margin-top: 60px;
@@ -881,6 +882,7 @@ footer{
     border-width: 1.1em 2.1em 1.1em 0.5em;
     border-color: #d00600 #d00600 #d00600 transparent;
     z-index: 0;
+    display: none;
 }
 
 .text:before {
@@ -895,7 +897,8 @@ footer{
     top: 100%;
     right: 0;
     // border-width: .5em 2em 0 0;
-    border-width: 0.6em 1em 0 0;
+    // border-width: 0.6em 1em 0 0;
+    border-width: 0.5em 1em 0 0;
     border-color: #2f0100  transparent transparent transparent;
 
     z-index: -1;
@@ -903,14 +906,14 @@ footer{
 
 .ribbon:after,
 .bold:before {
-    top: 0.5em;
+    // top: 0.5em;
     // right: -2em;
-    right: -13px;
-    border-width: 1.1em 0.3em 1.1em 3em;
+    top: 8px;
+    right: -8px;
+    border-width: 24px 0em 1.1em 27px;
     border-color: #b70500 transparent #b70500 #b70500;
-    z-index: -1;
-
     z-index: -2;
+    border-radius: 0px 3px 3px 0px;
 }
 
 .bold:before {
@@ -918,6 +921,20 @@ footer{
     top: 0.7em;
     right: -2.3em;
     display: none;
+}
+
+
+.ribbon.small {
+    right: 40px;
+    font-size: 16px;
+    bottom: 10px;
+}
+.ribbon.small:before {
+	border-width: 17px 1.1em 1.1em 0.5em;
+}
+.ribbon.small:after {
+	border-width: 20px 0em 1.1em 25px;
+	top: 6px;
 }
 ///////////////////////////////////////
 /* ribbon 2 */

@@ -655,3 +655,122 @@ nav .dropdown-toggle::after {
 
 ///////////////////////////////////////
 /* The ribbons */
+
+
+
+
+
+
+
+
+
+
+/* ribbon 2 */
+///////////////////////////////////////
+.ribbon {
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    // margin:5em;
+    text-align: center;
+    // position: absolute;
+    // bottom: 0;
+    // right: -13px;
+}
+
+.text {
+    display: inline-block;
+    padding: 0.5em 1em;
+    // min-width:20em;
+    line-height: 1.2em;
+    background: #d00600;
+    position: relative;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.ribbon:after,
+.ribbon:before,
+.text:before,
+.text:after,
+.bold:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+}
+
+// .ribbon:before {
+//     top: 0.3em;
+//     left: 0.2em;
+//     width: 100%;
+//     height: 100%;
+//     border: none;
+//     background: #EBECED;
+
+//     z-index: -2;
+//     display: none;
+// }
+
+.text:before {
+    top: 100%;
+    left: 0;
+    border-width: 0 1em 0.5em 0;
+    border-color: transparent #000000 transparent transparent;
+
+    z-index: -1;
+}
+
+.text:after {
+    top: 100%;
+    right: 0;
+    // border-width: .5em 2em 0 0;
+    // border-width: 0.6em 1em 0 0;
+    border-width: 0 0 0.5em 1em;
+    // border-color: #000000  transparent transparent transparent;
+    border-color: transparent transparent transparent #000;
+
+    z-index: -1;
+}
+
+.ribbon:before {
+    top: 8px;
+    left: -17px;
+    border-width: 24px 0em 1.1em 36px;
+    border-color: #b70500 transparent #b70500 #b70500;
+    z-index: -2;
+    border-radius: 3px 0px 0px 3px;
+}
+.ribbon:after {
+    // top: 0.5em;
+    // right: -2em;
+    top: 8px;
+    right: -17px;
+    border-width: 24px 0em 1.1em 36px;
+    border-color: #b70500 transparent #b70500 #b70500;
+    z-index: -2;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.bold:before {
+    border-color: #EBECED transparent #EBECED #EBECED;
+    top: 0.7em;
+    right: -2.3em;
+    display: none;
+}
+
+
+.ribbon.small {
+    font-size: 16px;
+}
+.ribbon.small:before {
+	top: 8px;
+    left: 30px;
+	border-width: 17px 0em 1.1em 36px;
+}
+.ribbon.small:after {
+	top: 8px;
+    right: 30px;
+	border-width: 17px 0em 1.1em 36px;    
+}
+///////////////////////////////////////
+/* ribbon 2 */
