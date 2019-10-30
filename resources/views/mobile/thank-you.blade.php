@@ -28,7 +28,7 @@
 							<li>User selfie verification image: Received</li>
 						</ul>
 						<p>
-							<i>In case we face issues with your payment or KYC, we will contact you via Email or Mobile</i>
+							<i>In case we face issues with your payment or KYC, we will contact you via Email or Mobile.</i>
 						</p>
 						<p>
 							Once your payment was received and after successful KYC passing, you will receive your {{ $u_details['bal_amt'] }} BAL Tokens into the following ETH address: {{ $u_details['receiver_id'] }}
