@@ -20,7 +20,7 @@
 							<li>Reference ID : {{ $u_details['user_reference_id'] }}</li>
 							<li>Name: {{ $u_details['user_name'] }}</li>
 							<li>Email: {{ $u_details['email_id'] }}</li>
-							<li>Mobile: {{ $u_details['number] }}</li>
+							<li>Mobile: {{ $u_details['number'] }}</li>
 							<li>BAL Tokens purchased: {{ $u_details['bal_amt'] }} BAL</li>
 							<li>Amount Paid: {{ $u_details['amount'] }}</li>
 							<li>Country: {{ $u_details['country'] }}</li>
