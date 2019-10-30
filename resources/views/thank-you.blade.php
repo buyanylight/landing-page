@@ -55,7 +55,7 @@
 					<li>User selfie verification image: Received</li>
 				</ul>
 				<p>
-					<i>In case we face issues with your payment or KYC, we will contact you via Email or Mobile</i>
+					<i>In case we face issues with your payment or KYC, we will contact you via Email or Mobile.</i>
 					
 				</p>
 				<p>
