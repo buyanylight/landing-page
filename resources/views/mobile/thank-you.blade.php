@@ -5,7 +5,7 @@
 <section style="min-height: 100vh;">
 	<div class="pt-5 mt-5 mb-3">
 		<div class="container">
-			<div class=" d-flex align-items-center justify-content-center" style="height: 100vh">
+			<div class=" d-flex align-items-center justify-content-center" style="height: 150vh">
 				<div>
 					<h3 class="text-center">
 						<b>
