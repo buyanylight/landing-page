@@ -40,8 +40,7 @@
 			});
 
 			
-			// const minBAL = 200;
-			const minBAL = 25000;
+			const minBAL = 200;
 
 			
 			$('.bal-token').keyup(function() {
@@ -347,8 +346,7 @@
 					<b>IEO PRE SALE</b>
 				</h4> --}}
 				<div class="w-100 pt-2">
-					{{-- <p class="mb-0 text-white"><b>PRE -IEO SALE LIVE ON NOV 1</b></p> --}}
-					<p class="mb-0 text-white"><b>PRIVATE SALE LIVE NOW!</b></p>
+					<p class="mb-0 text-white"><b>PRE -IEO SALE LIVE ON NOV 1!</b></p>
 					<p class="text-white text-center mb-0" style="font-size: 0.9em;">
 						<b>sale ends in:</b>
 					</p>
@@ -413,35 +411,17 @@
 </section>
 
 
-
-
-
-
-
-
-
-<style>
-#sale-dates-price .card-header{
-	/*background: linear-gradient(to right, #791f50, #5555A4); */
-	/*background: linear-gradient(to right, #e4007b, #0000af); */
-	background-color: #a90c74; 
-	padding:10px;
-}	
-</style>
-
-
-<section class="section-buy-token" id="sale-dates-price">
+<section class="section-buy-token">
 	<div class="pt-0 pb-4 container">
-		<div class="row" style="padding: 10px;">
+		<div class="row">
 
-			<div class="col-4 p-1">
+			<div class="col-4">
 			<div class="card text-center">
-				<div class="card-header text-white" style="">
+				<div class="card-header text-white" style="background: #F511A9; padding:10px;">
 					<b>PRIVATE SALE</b><br>
-					<span style="font-size: 11px; text-decoration: line-through;">0.30303 USD</span><br>
 					<span style="font-size: 11px;">0.2 USD</span>
 				</div>
-				<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
+				<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center" style="font-size: 11px;">
 					<div class="row">																											 
 						<div class="col-12">1<sup>st</sup> Oct 2019</div>
 						<div class="col-12">to</div>
@@ -452,11 +432,10 @@
 			</div>
 			</div>
 
-			<div class="col-4 p-1">
+			<div class="col-4">
 			<div class="card text-center">
-				<div class="card-header  text-white" style="">
+				<div class="card-header  text-white" style="background: #F511A9; padding: 10px;">
 					<b>PRE -IEO</b><br>
-					<span style="font-size: 11px; text-decoration: line-through;">0.30303 USD</span><br>
 					<span style="font-size: 11px;">0.25 USD</span>
 				</div>
 				<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
@@ -469,12 +448,11 @@
 			</div>
 			</div>
 
-			<div class="col-4 p-1">
+			<div class="col-4">
 			<div class="card text-center ">
-				<div class="card-header  text-white" style="">
+				<div class="card-header  text-white" style="background: #F511A9; padding: 10px;">
 					<b>IEO</b><br>
-					<span style="font-size: 11px;">0.30303 USD</span><br>
-					<span style="font-size: 11px;">&nbsp;</span>
+					<span style="font-size: 11px;">0.30303 USD</span>
 				</div>
 				<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
 					<div class="row">
@@ -486,39 +464,9 @@
 			</div>
 			</div>
 
-		</div>
-
-		<div class="row justify-content-center align-items-center" >
-			<p class="ribbon">
-			  	<span class="text">
-			  		<strong class="bold">34% OFF</strong> until IEO Sale!
-			  	</span>
-			</p>			
-		</div>
+		</div>		
 	</div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <section class="section-buy-token" id="section-bal-token">
@@ -551,13 +499,11 @@
 					</div>
 				</div>
 				<div>
-	  				{{-- <small>The minimum investment is 50 USD and 200 BAL</small> --}}
-	  				<small>The minimum investment is 5,000 USD and 25,000 BAL</small>
+	  				<small>The minimum investment is 50 USD and 200 BAL</small>
 	  			</div>
 				<div class="pt-4 bal-alert" style="display: none;">
 					<div class="alert alert-danger" role="alert">
-  						{{-- The minimum investment is 50 USD and 200 BAL --}}
-  						The minimum investment is 5,000 USD and 25,000 BAL
+  						The minimum investment is 50 USD and 200 BAL
 					</div>
 				</div>
 				<hr>
@@ -585,10 +531,7 @@
 							@endforeach
 						</div>
 						<div class="col-12 col-md-6">
-
-							{{-- cb --}}
-							{{-- ///////////////////////////////////// --}}
-							<div class="card card-body" style="z-index: 0;">
+							<div class="card card-body">
 								<h5>
 									<b>
 										<span>Profit / Return on Investment:</span>
@@ -603,8 +546,7 @@
 												</b>
 											</div>
 											<span class="BAL_value">1</span> BAL=
-											{{-- <span class="USD_value">0.25</span> USD --}}
-											<span class="USD_value">0.2</span> USD
+											<span class="USD_value">0.25</span> USD
 										</div>
 										<div class="col-5">
 											<div class="token-price" style="display: none;">
@@ -613,8 +555,7 @@
 												</b>
 												<br>
 												<span>1</span> BAL=
-												{{-- <span>0.25</span> USD --}}
-												<span>0.2</span> USD
+												<span>0.25</span> USD
 											</div>	
 										</div> 
 									</div>
@@ -646,8 +587,8 @@
 									</div>
 									<div class="row">
 										<div class="col">
-											 	{{-- ROI : 17.5%  --}}
-												ROI = 51.52%
+												{{-- ROI = 51.52% --}}
+											 	ROI : 17.5% 
 										</div>
 										<div class="col">
 
@@ -655,53 +596,35 @@
 									</div>
 									<div class="row">
 										<div class="col">
-											Return = 
-											{{-- <span class="USD_return">0.05303 USD</span>		 --}}
-											<span class="USD_return">0.10303 USD</span>		
+											Return = <span class="USD_return">0.05303 USD
+											</span>		
 										</div>
 										<div class="col">
 												
 										</div>
 									</div>
 								</div>
-								{{-- <div class="corner-ribbon bottom-right red shadow">
-									<span style="font-size: 13px;">34% Discount!</span>
-								</div> --}}
-								
-								<div class="row mt-4 justify-content-center" style="height: 50px;">
-								<p class="ribbon small">
-								  	<span class="text">
-								  		<strong class="bold">34% OFF</strong> until IEO Sale!
-								  	</span>
-								</p>									
-								</div>
 							</div>
-							{{-- ///////////////////////////////// --}}
-							{{-- cb --}}
-
-
-
-
-							<div class="pt-4">
-								<div class="form-group">
-									<label> <b>Step 1:</b> Select Currency to buy BAL Tokens</label>
-									<select name="currency" class="form-control" required>
-										@foreach($tokens as $token)
-											<option value="" class="{{ $token['asset_id_quote'] }}_value">{{ $token['asset_id_quote'] }}</option>
-										@endforeach
-									</select>
-									<small class="pt-3">
-															<b>
-																We accept: 
-															</b>
-															Visa, Mastercard, Bank Transfer, Bitcoin, Ethereum
-														</small>
-								</div>
-								<button type="submit" class="btn btn-ieo" id="token-btn">
-									<b>Buy Tokens</b>
-								</button>
-					
-							</div>
+								<div class="pt-4">
+					<div class="form-group">
+						<label> <b>Step 1:</b> Select Currency to buy BAL Tokens</label>
+						<select name="currency" class="form-control" required>
+							@foreach($tokens as $token)
+								<option value="" class="{{ $token['asset_id_quote'] }}_value">{{ $token['asset_id_quote'] }}</option>
+							@endforeach
+						</select>
+						<small class="pt-3">
+												<b>
+													We accept: 
+												</b>
+												Visa, Mastercard, Bank Transfer, Bitcoin, Ethereum
+											</small>
+					</div>
+					<button type="submit" class="btn btn-ieo" id="token-btn">
+						<b>Buy Tokens</b>
+					</button>
+		
+				</div>
 						</div>
 						<div class="card card-body mt-2">
 			  				How to add a Custom ERC20 Token / our BAL Token to your Ethereum wallet? <br>

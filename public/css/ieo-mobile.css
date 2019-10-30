@@ -11500,7 +11500,7 @@ nav .dropdown-toggle::after {
 
 .section-1 {
   height: 100vh;
-  min-height: 720px;
+  min-height: 680px;
 }
 
 .section-1-bg {
@@ -11664,4 +11664,206 @@ nav .dropdown-toggle::after {
 #partners .sponsored_fair .links a {
   color: #fff;
 }
+
+#sale-dates-price .card-header {
+  /*background: linear-gradient(to right, #791f50, #5555A4); */
+  /*background: linear-gradient(to right, #e4007b, #0000af); */
+  background-color: #a90c74;
+  padding: 10px;
+}
+
+/* The ribbons */
+
+.corner-ribbon {
+  width: 200px;
+  background: #e43;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Custom styles */
+
+.corner-ribbon.sticky {
+  position: fixed;
+}
+
+.corner-ribbon.shadow {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Different positions */
+
+.corner-ribbon.top-left {
+  top: 25px;
+  left: -50px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.corner-ribbon.top-right {
+  top: 25px;
+  right: -50px;
+  left: auto;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.corner-ribbon.bottom-left {
+  top: auto;
+  bottom: 25px;
+  left: -50px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.corner-ribbon.bottom-right {
+  top: auto;
+  right: -50px;
+  bottom: 25px;
+  left: auto;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Colors */
+
+.corner-ribbon.white {
+  background: #f0f0f0;
+  color: #555;
+}
+
+.corner-ribbon.black {
+  background: #333;
+}
+
+.corner-ribbon.grey {
+  background: #999;
+}
+
+.corner-ribbon.blue {
+  background: #39d;
+}
+
+.corner-ribbon.green {
+  background: #2c7;
+}
+
+.corner-ribbon.turquoise {
+  background: #1b9;
+}
+
+.corner-ribbon.purple {
+  background: #95b;
+}
+
+.corner-ribbon.red {
+  background: #e01400;
+}
+
+.corner-ribbon.orange {
+  background: #e82;
+}
+
+.corner-ribbon.yellow {
+  background: #ec0;
+}
+
+/* The ribbons */
+
+/* ribbon 2 */
+
+.ribbon {
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.text {
+  display: inline-block;
+  padding: 0.5em 1em;
+  line-height: 1.2em;
+  background: #d00600;
+  position: relative;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.ribbon:after,
+.ribbon:before,
+.text:before,
+.text:after,
+.bold:before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+}
+
+.text:before {
+  top: 100%;
+  left: 0;
+  border-width: 0 1em 0.5em 0;
+  border-color: transparent #000000 transparent transparent;
+  z-index: -1;
+}
+
+.text:after {
+  top: 100%;
+  right: 0;
+  border-width: 0 0 0.5em 1em;
+  border-color: transparent transparent transparent #000;
+  z-index: -1;
+}
+
+.ribbon:before {
+  top: 8px;
+  left: -17px;
+  border-width: 24px 0em 1.1em 36px;
+  border-color: #b70500 transparent #b70500 #b70500;
+  z-index: -2;
+  border-radius: 3px 0px 0px 3px;
+}
+
+.ribbon:after {
+  top: 8px;
+  right: -17px;
+  border-width: 24px 0em 1.1em 36px;
+  border-color: #b70500 transparent #b70500 #b70500;
+  z-index: -2;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.bold:before {
+  border-color: #EBECED transparent #EBECED #EBECED;
+  top: 0.7em;
+  right: -2.3em;
+  display: none;
+}
+
+.ribbon.small {
+  font-size: 16px;
+  width: 305px;
+  position: absolute;
+}
+
+.ribbon.small:before {
+  top: 8px;
+  left: 30px;
+  border-width: 17px 0em 1.1em 36px;
+}
+
+.ribbon.small:after {
+  top: 8px;
+  right: 30px;
+  border-width: 17px 0em 1.1em 36px;
+}
+
+/* ribbon 2 */
 

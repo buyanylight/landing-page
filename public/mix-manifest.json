@@ -6,11 +6,11 @@
     "/css/mytower-mobile.css": "/css/mytower-mobile.css",
     "/css/ieo.css": "/css/ieo.css",
     "/css/home.css": "/css/home.css",
-    "/css/mobile-home.css": "/css/mobile-home.css",
     "/css/ieo-mobile.css": "/css/ieo-mobile.css",
     "/css/slick.css": "/css/slick.css",
     "/css/slick-theme.css": "/css/slick-theme.css",
     "/css/preloaders.css": "/css/preloaders.css",
     "/css/mobile.css": "/css/mobile.css",
-    "/js/mobile.js": "/js/mobile.js"
+    "/js/mobile.js": "/js/mobile.js",
+    "/css/mobile-home.css": "/css/mobile-home.css"
 }
