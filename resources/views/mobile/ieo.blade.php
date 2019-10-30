@@ -592,7 +592,7 @@
 												</b>
 											</div>
 											<span class="BAL_value">1</span> BAL=
-											<span class="USD_value">0.25</span> USD
+											<span class="USD_value">0.2</span> USD
 										</div>
 										<div class="col-5">
 											<div class="token-price" style="display: none;">
