@@ -11849,6 +11849,8 @@ nav .dropdown-toggle::after {
 
 .ribbon.small {
   font-size: 16px;
+  width: 305px;
+  position: absolute;
 }
 
 .ribbon.small:before {

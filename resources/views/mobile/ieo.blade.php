@@ -438,6 +438,7 @@
 			<div class="card text-center">
 				<div class="card-header text-white" style="">
 					<b>PRIVATE SALE</b><br>
+					<span style="font-size: 11px; text-decoration: line-through;">0.30303 USD</span><br>
 					<span style="font-size: 11px;">0.2 USD</span>
 				</div>
 				<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
@@ -455,6 +456,7 @@
 			<div class="card text-center">
 				<div class="card-header  text-white" style="">
 					<b>PRE -IEO</b><br>
+					<span style="font-size: 11px; text-decoration: line-through;">0.30303 USD</span><br>
 					<span style="font-size: 11px;">0.25 USD</span>
 				</div>
 				<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
@@ -471,7 +473,8 @@
 			<div class="card text-center ">
 				<div class="card-header  text-white" style="">
 					<b>IEO</b><br>
-					<span style="font-size: 11px;">0.30303 USD</span>
+					<span style="font-size: 11px;">0.30303 USD</span><br>
+					<span style="font-size: 11px;">&nbsp;</span>
 				</div>
 				<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
 					<div class="row">
@@ -485,7 +488,7 @@
 
 		</div>
 
-		<div class="row justify-content-center align-items-center">
+		<div class="row justify-content-center align-items-center" >
 			<p class="ribbon">
 			  	<span class="text">
 			  		<strong class="bold">34% OFF</strong> until IEO Sale!
@@ -664,11 +667,14 @@
 								{{-- <div class="corner-ribbon bottom-right red shadow">
 									<span style="font-size: 13px;">34% Discount!</span>
 								</div> --}}
-								<p class="ribbon small mt-4">
+								
+								<div class="row mt-4 justify-content-center" style="height: 50px;">
+								<p class="ribbon small">
 								  	<span class="text">
 								  		<strong class="bold">34% OFF</strong> until IEO Sale!
 								  	</span>
 								</p>									
+								</div>
 							</div>
 							{{-- ///////////////////////////////// --}}
 							{{-- cb --}}
