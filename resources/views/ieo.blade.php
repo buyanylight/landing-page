@@ -440,11 +440,11 @@
 											<a href="{{ Util::assetUrl('bal_certificate.pdf')}}" target="_blank" class="text-white">Audited by Blockchain Consilium</a>
 										</small>
 										
-										<p class="ribbon">
+										{{-- <p class="ribbon">
 										  	<span class="text">
 										  		<strong class="bold">34%</strong> off before IEO Sale!
 										  	</span>
-										</p>											
+										</p>	 --}}										
 									</div>
 								</div>
 							</div>
