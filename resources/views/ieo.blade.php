@@ -390,6 +390,7 @@
 											<div class="card text-center">
 												<div class="card-header text-white" style="background: #F511A9; padding:10px;">
 													<b>PRIVATE SALE</b><br>
+													{{-- <span style="font-size: 11px; text-decoration: line-through;">0.30303 USD</span><br> --}}
 													<span style="font-size: 11px;">0.2 USD</span>
 												</div>
 												<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center" style="font-size: 11px;">
@@ -404,6 +405,7 @@
 											<div class="card text-center">
 												<div class="card-header  text-white" style="background: #F511A9; padding: 10px;">
 													<b>PRE -IEO</b><br>
+													{{-- <span style="font-size: 11px; text-decoration: line-through;">0.30303 USD</span><br> --}}
 													<span style="font-size: 11px;">0.25 USD</span>
 												</div>
 												<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
@@ -417,6 +419,7 @@
 											<div class="card text-center ">
 												<div class="card-header  text-white" style="background: #F511A9; padding: 10px;">
 													<b>IEO</b><br>
+													{{-- <span style="font-size: 11px; text-decoration: line-through;"> </span><br> --}}
 													<span style="font-size: 11px;">0.30303 USD</span>
 												</div>
 												<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
@@ -436,6 +439,12 @@
 										<small>
 											<a href="{{ Util::assetUrl('bal_certificate.pdf')}}" target="_blank" class="text-white">Audited by Blockchain Consilium</a>
 										</small>
+										
+										<p class="ribbon">
+										  	<span class="text">
+										  		<strong class="bold">34%</strong> off before IEO Sale!
+										  	</span>
+										</p>											
 									</div>
 								</div>
 							</div>
@@ -539,7 +548,7 @@
 
 							{{-- cb --}}
 							{{-- //////////////////////// --}}
-							<div class="card card-body" style="border-radius: 20px; overflow: hidden;">
+							<div class="card card-body" style="border-radius: 20px; ">
 								<div class="row">
 									<div class="col-7">
 										<div class="pt-2">
@@ -605,9 +614,17 @@
 										</div>
 									</div>
 								</div>
-								<div class="corner-ribbon bottom-right red shadow">
+								{{-- <div class="corner-ribbon bottom-right red shadow">
 									<span style="font-size: 13px;">34% Discount!</span>
-								</div>
+								</div> --}}
+								{{-- <div class="ribbon">
+									<span class="text" style="font-size: 13px;">34% Discount!</span>
+								</div> --}}
+								<p class="ribbon">
+								  	<span class="text">
+								  		<strong class="bold">34%</strong> off before IEO Sale!
+								  	</span>
+								</p>								
 							</div>
 							{{-- //////////////////////// --}}
 							{{-- cb --}}

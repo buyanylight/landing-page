@@ -11820,3 +11820,78 @@ footer {
 
 /* The ribbons */
 
+/* ribbon 2 */
+
+.ribbon {
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: -13px;
+}
+
+.text {
+  display: inline-block;
+  padding: 0.5em 1em;
+  line-height: 1.2em;
+  background: #d00600;
+  position: relative;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.ribbon:after,
+.ribbon:before,
+.text:before,
+.text:after,
+.bold:before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+}
+
+.ribbon:before {
+  top: 0em;
+  left: -10px;
+  border-width: 1.1em 2.1em 1.1em 0.5em;
+  border-color: #d00600 #d00600 #d00600 transparent;
+  z-index: 0;
+}
+
+.text:before {
+  bottom: 100%;
+  left: 0;
+  border-width: 0.5em 0.7em 0 0;
+  border-color: transparent #ff0700 transparent transparent;
+  display: none;
+}
+
+.text:after {
+  top: 100%;
+  right: 0;
+  border-width: 0.6em 1em 0 0;
+  border-color: #2f0100 transparent transparent transparent;
+  z-index: -1;
+}
+
+.ribbon:after,
+.bold:before {
+  top: 0.5em;
+  right: -13px;
+  border-width: 1.1em 0.3em 1.1em 3em;
+  border-color: #b70500 transparent #b70500 #b70500;
+  z-index: -1;
+  z-index: -2;
+}
+
+.bold:before {
+  border-color: #EBECED transparent #EBECED #EBECED;
+  top: 0.7em;
+  right: -2.3em;
+  display: none;
+}
+
+/* ribbon 2 */
+
