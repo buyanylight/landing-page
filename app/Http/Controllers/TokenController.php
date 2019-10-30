@@ -1557,7 +1557,7 @@ class TokenController extends Controller
         $isTablet = $agent->isTablet();
 
  		if($isMobile || $isTablet) {
-				return redirect('mobile.thank-you',[
+				return view('mobile.thank-you',[
 					'u_details' => $data
 				]);
 			}else{
