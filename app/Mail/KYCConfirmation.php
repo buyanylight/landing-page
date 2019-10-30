@@ -22,6 +22,7 @@ class KYCConfirmation extends Mailable
      */
     public function __construct(Request $request)
     {
+        // dd($request);
         $this->kyc_details = $request;
     }
 
@@ -50,7 +51,8 @@ class KYCConfirmation extends Mailable
                         'bal_amt' => $this->kyc_details->bal_amt,
                         'reference' => $this->kyc_details->reference,
                         'country' => $this->kyc_details->country,
-                        'number' => $this->kyc_details->number
+                        'number' => $this->kyc_details->number,
+                        'later_bank' => $this->kyc_details->later_bank
                      ]);
 
     }

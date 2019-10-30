@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use Jenssegers\Agent\Agent;
+
 
 // use Illuminate\Support\Facades\Mail;
 use App\Mail\BuyingConfirmation;
@@ -259,7 +261,7 @@ class TokenController extends Controller
 	}
 
 
-	public function kyc(Request $request){
+	public function kyc_post(Request $request){
 
 		// dd($request);
 
@@ -534,6 +536,7 @@ class TokenController extends Controller
 	            	'user_reference_id' => $transaction['user_reference_id'],	
 	            	'bal_amt' => $transaction['bal_amt'],
 	            	'number' => $transaction['number'],
+	            	'countries' => $countries,
 	            
 				);
 
@@ -565,7 +568,8 @@ class TokenController extends Controller
 	            	'user_reference_id' => $transaction['user_reference_id'],	
 	            	'bal_amt' => $transaction['bal_amt'],
 	            	'number' => $transaction['number'],
-	            	'later_bank' =>$transaction['later_bank']	
+	            	'later_bank' => $transaction['later_bank'],
+	            	'countries' => $countries	
 
 	            	
 	           
@@ -581,8 +585,7 @@ class TokenController extends Controller
 	            	'reference' => 'required',
 	            	'user_reference_id' => 'required',
 	            	'bal_amt' => 'required',
-	            	'number' => 'required'
-	            	,
+	            	'number' => 'required',
 
 
 
@@ -598,11 +601,7 @@ class TokenController extends Controller
 	            	'user_reference_id' => $transaction['user_reference_id'],	
 	            	'bal_amt' => $transaction['bal_amt'],
 	            	'number' => $transaction['number'],
-	  
-
-	            	
-	           
-
+	            	'countries' => $countries
 				);
 
 
@@ -620,11 +619,7 @@ class TokenController extends Controller
             	'name' => 'required',
 	            'user_reference_id' => 'required',
 	            'bal_amt' => 'required',
-	            	'number' => 'required',
-
-
-
-
+	            'number' => 'required',
         	]);
 
 			$email_details = array(
@@ -635,8 +630,9 @@ class TokenController extends Controller
 				'name' => $transaction['name'],
 	            'user_reference_id' => $transaction['user_reference_id'],
 	            'bal_amt' => $transaction['bal_amt'],
-	            'number' => $transaction['number']
-	            
+	            'number' => $transaction['number'],
+	            'countries' => $countries
+
 			);
 
 		}
@@ -647,7 +643,7 @@ class TokenController extends Controller
 
 		
 
-	        \Mail::to('info@buyanylight.com')->send(new BuyingConfirmationAdmin($request));
+	        \Mail::to('rizvi.almanilighting@gmail.com')->send(new BuyingConfirmationAdmin($request));
 
 
 	        \Mail::to($request->get('email_id'))->send(new BuyingConfirmation($request));
@@ -658,15 +654,283 @@ class TokenController extends Controller
 		// dd($transaction['email_id']);
 
 
+		return view('kyc', $email_details);
+	}
+
+		public function kyc_get(){
+
+		// dd(session()->get('data'));
+
+		$countries = [
+  			"Afghanistan",
+  			"Albania",
+			"Algeria",
+			"American Samoa",
+			"Andorra",
+			"Angola",
+			"Anguilla",
+			"Antarctica",
+			"Antigua and Barbuda",
+			"Argentina",
+			"Armenia",
+			"Aruba",
+			"Australia",
+			"Austria",
+			"Azerbaijan",
+			"Bahamas",
+			"Bahrain",
+			"Bangladesh",
+			"Barbados",
+			"Belarus",
+			"Belgium",
+			"Belize",
+			"Benin",
+			"Bermuda",
+			"Bhutan",
+			"Bolivia",
+			"Bosnia and Herzegovina",
+			"Botswana",
+			"Bouvet Island",
+			"Brazil",
+			"British Indian Ocean Territory",
+			"Brunei",
+			"Bulgaria",
+			"Burkina Faso",
+			"Burundi",
+			"Cambodia",
+			"Cameroon",
+			"Canada",
+			"Cape Verde",
+			"Cayman Islands",
+			"Central African Republic",
+			"Chad",
+			"Chile",
+			"China",
+			"Christmas Island",
+			"Cocos (Keeling) Islands",
+			"Colombia",
+			"Comoros",
+			"Congo",
+			"The Democratic Republic of Congo",
+			"Cook Islands",
+			"Costa Rica",
+			"Ivory Coast",
+			"Croatia",
+			"Cuba",
+			"Cyprus",
+			"Czech Republic",
+			"Denmark",
+			"Djibouti",
+			"Dominica",
+			"Dominican Republic",
+			"East Timor",
+			"Ecuador",
+			"Egypt",
+			"England",
+			"El Salvador",
+			"Equatorial Guinea",
+			"Eritrea",
+			"Estonia",
+			"Ethiopia",
+			"Falkland Islands",
+			"Faroe Islands",
+			"Fiji Islands",
+			"Finland",
+			"France",
+			"French Guiana",
+			"French Polynesia",
+			"French Southern territories",
+			"Gabon",
+			 "Gambia",
+			"Georgia",
+			 "Germany",
+			"Ghana",
+			"Gibraltar",
+			"Greece",
+			"Greenland",
+			"Grenada",
+			"Guadeloupe",
+			"Guam",
+			"Guatemala",
+			"Guinea",
+			"Guinea-Bissau",
+			"Guyana",
+			"Haiti",
+			"Heard Island and McDonald Islands",
+			"Holy See (Vatican City State)",
+			"Honduras",
+			"Hong Kong",
+			"Hungary",
+			"Iceland",
+			"India",
+			"Indonesia",
+      		"Iran",
+      		"Iraq",
+      		"Ireland",
+      		"Israel",
+      		"Italy",
+      		"Jamaica",
+      		"Japan",
+      		"Jordan",
+      		"Kazakstan",
+      		"Kenya",
+      		"Kiribati",
+      		"Kuwait",
+      		"Kyrgyzstan",
+      		"Laos",
+      		"Latvia",
+      		"Lebanon",
+      		"Lesotho",
+      		"Liberia",
+      		"Libyan Arab Jamahiriya",
+      		"Liechtenstein",
+      		"Lithuania",
+      		"Luxembourg",
+      		"Macao",
+      		"North Macedonia",
+      		"Madagascar",
+      		"Malawi",
+      		"Malaysia",
+      		"Maldives",
+      		"Mali",
+      		"Malta",
+      		"Marshall Islands",
+      		"Martinique",
+      		"Mauritania",
+      		"Mauritius",
+      		"Mayotte",
+      		"Mexico",
+      		"Microne, Federated States of",
+      		"Moldova",
+      		"Monaco",
+      		"Mongolia",
+      		"Montserrat",
+      		"Morocco",
+      		"Mozambique",
+      		"Myanmar",
+      		"Namibia",
+      		"Nauru",
+      		"Nepal",
+      		"Netherlands",
+      		"Netherlands Antilles",
+      		"New Caledonia",
+      		"New Zealand",
+      		"Nicaragua",
+      		"Niger",
+      		"Nigeria",
+      		"Niue",
+      		"Norfolk Island",
+      		"North Korea",
+      		"Northern Ireland",
+      		"Northern Mariana Islands",
+      		"Norway",
+      		"Oman",
+      		"Pakistan",
+      		"Palau",
+      		"Palestine",
+      		"Panama",
+      		"Papua New Guinea",
+      		"Paraguay",
+      		"Peru",
+      		"Philippines",
+      		"Pitcairn",
+      		"Poland",
+      		"Portugal",
+      		"Puerto Rico",
+      		"Qatar",
+      		"Reunion",
+      		"Romania",
+      		"Russian Federation",
+      		"Rwanda",
+      		"Saint Helena",
+      		"Saint Kitts and Nevis",
+      		"Saint Lucia",
+      		"Saint Pierre and Miquelon",
+      		"Saint Vincent and the Grenadines",
+      		"Samoa",
+      		"San Marino",
+      		"Sao Tome and Principe",
+      		"Saudi Arabia",
+      		"Scotland",
+      		"Senegal",
+      		"Seychelles",
+      		"Sierra Leone",
+      		"Singapore",
+      		"Slovakia",
+      		"Slovenia",
+      		"Solomon Islands",
+      		"Somalia",
+      		"South Africa",
+      		"South Georgia and the South Sandwich Islands",
+      		"South Korea",
+      		"South Sudan",
+      		"Spain",
+      		"SriLanka",
+      		"Sudan",
+      		"Suriname",
+      		"Svalbard and Jan Mayen",
+      		"Swaziland",
+      		"Sweden",
+      		"Switzerland",
+      		"Syria",
+      		"Tajikistan",
+      		"Tanzania",
+      		"Thailand",
+      		"Togo",
+      		"Tokelau",
+      		"Tonga",
+      		"Trinidad and Tobago",
+      		"Tunisia",
+      		"Turkey",
+      		"Turkmenistan",
+      		"Turks and Caicos Islands",
+      		"Tuvalu",
+      		"Uganda",
+      		"Ukraine",
+      		"United Arab Emirates",
+      		"United Kingdom",
+      		"United States",
+      		"United States Minor Outlying Islands",
+      		"Uruguay",
+      		"Uzbekistan",
+      		"Vanuatu",
+      		"Venezuela",
+      		"Vietnam",
+      		"Virgin Islands, British",
+      		"Virgin Islands, U.S.",
+      		"Wales",
+      		"Wallis and Futuna",
+      		"Western Sahara",
+      		"Yemen",
+      		"Yugoslavia",
+      		"Zambia",
+      		"Zimbabwe"
+		];
+
+
+
+		// dd($request['reference']);
+
+			// dd($email_details);
+
+	
+
+		// dd($transaction['email_id']);
+
+
 		return view('kyc', [
-			'amount' => $transaction['amount'],
-			'receiver_id' => $transaction['receiver_id'],
-			'email_id' => $transaction['email_id'],
-			'name' => $transaction['name'],
-	        'user_reference_id' => $transaction['user_reference_id'],
-	        'bal_amt' => $transaction['bal_amt'],
-	        'countries' => $countries,
-	        'number' => $transaction['number'],
+			'user_reference_id' => session()->get('data')['user_reference_id'], 
+			'name' => session()->get('data')['name'],
+			'email_id' => session()->get('data')['email_id'],
+			'receiver_id' => session()->get('data')['receiver_id'],
+			'bal_amt' => session()->get('data')['bal_amt'],
+			'amount' => session()->get('data')['amount'],
+			'number' => session()->get('data')['number'],
+			'countries' => session()->get('data')['countries'],
+			'later_bank' => (!empty(session()->get('data')['later_bank'])) ? session()->get('data')['later_bank'] : '',
+			'reference' => (!empty(session()->get('data')['reference'])) ? session()->get('data')['reference']: '',
+
+
 
 		]);
 	}
@@ -941,63 +1205,369 @@ class TokenController extends Controller
 
 	public function kyc_confirm(Request $request){
 
+		// 	dd($request);
 
-		// dd($request);
 
-		$validated_attr = request()->validate([
+		// 	dd($request->validate([
+  //           'user_name' => ['required', 'min:3'],
+  //           'email_id' => ['required', 'min:3'],
+  //           'country' => ['required'],
+  //           'receiver_id' => ['required'],
+  //           'bal_amt' => ['required'],
+  //           'amount' => ['required'],
+  //           'number' => ['required'],
+  //           'later_bank' => (!empty($request->get('later_bank'))) ? ['required'] : '',
+  //           'reference' => (!empty($request->get('reference'))) ? ['required'] : '',
+  //           'user_id' => 'required|mimetypes:image/jpeg',
+  //           'user_selfie_id' => ['required', 'mimes:jpeg,png,pdf', 'max:7168'],
+  //           'user_reference_id' => ['required']
+  //       ]));
+
+
+
+		// $validated_attr = $request->validate([
+  //           'user_name' => ['required', 'min:3'],
+  //           'email_id' => ['required', 'min:3'],
+  //           'country' => ['required'],
+  //           'receiver_id' => ['required'],
+  //           'bal_amt' => ['required'],
+  //           'amount' => ['required'],
+  //           'number' => ['required'],
+  //           'later_bank' => (!empty($request->get('later_bank'))) ? ['required'] : '',
+  //           'reference' => (!empty($request->get('reference'))) ? ['required'] : '',
+  //           'user_id' => 'required|mimetypes:image/jpeg',
+  //           'user_selfie_id' => ['required', 'mimes:jpeg,png,pdf', 'max:7168'],
+  //           'user_reference_id' => ['required']
+  //       ]);
+
+		// dd($validated_attr);
+
+		$countries = [
+  			"Afghanistan",
+  			"Albania",
+			"Algeria",
+			"American Samoa",
+			"Andorra",
+			"Angola",
+			"Anguilla",
+			"Antarctica",
+			"Antigua and Barbuda",
+			"Argentina",
+			"Armenia",
+			"Aruba",
+			"Australia",
+			"Austria",
+			"Azerbaijan",
+			"Bahamas",
+			"Bahrain",
+			"Bangladesh",
+			"Barbados",
+			"Belarus",
+			"Belgium",
+			"Belize",
+			"Benin",
+			"Bermuda",
+			"Bhutan",
+			"Bolivia",
+			"Bosnia and Herzegovina",
+			"Botswana",
+			"Bouvet Island",
+			"Brazil",
+			"British Indian Ocean Territory",
+			"Brunei",
+			"Bulgaria",
+			"Burkina Faso",
+			"Burundi",
+			"Cambodia",
+			"Cameroon",
+			"Canada",
+			"Cape Verde",
+			"Cayman Islands",
+			"Central African Republic",
+			"Chad",
+			"Chile",
+			"China",
+			"Christmas Island",
+			"Cocos (Keeling) Islands",
+			"Colombia",
+			"Comoros",
+			"Congo",
+			"The Democratic Republic of Congo",
+			"Cook Islands",
+			"Costa Rica",
+			"Ivory Coast",
+			"Croatia",
+			"Cuba",
+			"Cyprus",
+			"Czech Republic",
+			"Denmark",
+			"Djibouti",
+			"Dominica",
+			"Dominican Republic",
+			"East Timor",
+			"Ecuador",
+			"Egypt",
+			"England",
+			"El Salvador",
+			"Equatorial Guinea",
+			"Eritrea",
+			"Estonia",
+			"Ethiopia",
+			"Falkland Islands",
+			"Faroe Islands",
+			"Fiji Islands",
+			"Finland",
+			"France",
+			"French Guiana",
+			"French Polynesia",
+			"French Southern territories",
+			"Gabon",
+			 "Gambia",
+			"Georgia",
+			 "Germany",
+			"Ghana",
+			"Gibraltar",
+			"Greece",
+			"Greenland",
+			"Grenada",
+			"Guadeloupe",
+			"Guam",
+			"Guatemala",
+			"Guinea",
+			"Guinea-Bissau",
+			"Guyana",
+			"Haiti",
+			"Heard Island and McDonald Islands",
+			"Holy See (Vatican City State)",
+			"Honduras",
+			"Hong Kong",
+			"Hungary",
+			"Iceland",
+			"India",
+			"Indonesia",
+      		"Iran",
+      		"Iraq",
+      		"Ireland",
+      		"Israel",
+      		"Italy",
+      		"Jamaica",
+      		"Japan",
+      		"Jordan",
+      		"Kazakstan",
+      		"Kenya",
+      		"Kiribati",
+      		"Kuwait",
+      		"Kyrgyzstan",
+      		"Laos",
+      		"Latvia",
+      		"Lebanon",
+      		"Lesotho",
+      		"Liberia",
+      		"Libyan Arab Jamahiriya",
+      		"Liechtenstein",
+      		"Lithuania",
+      		"Luxembourg",
+      		"Macao",
+      		"North Macedonia",
+      		"Madagascar",
+      		"Malawi",
+      		"Malaysia",
+      		"Maldives",
+      		"Mali",
+      		"Malta",
+      		"Marshall Islands",
+      		"Martinique",
+      		"Mauritania",
+      		"Mauritius",
+      		"Mayotte",
+      		"Mexico",
+      		"Microne, Federated States of",
+      		"Moldova",
+      		"Monaco",
+      		"Mongolia",
+      		"Montserrat",
+      		"Morocco",
+      		"Mozambique",
+      		"Myanmar",
+      		"Namibia",
+      		"Nauru",
+      		"Nepal",
+      		"Netherlands",
+      		"Netherlands Antilles",
+      		"New Caledonia",
+      		"New Zealand",
+      		"Nicaragua",
+      		"Niger",
+      		"Nigeria",
+      		"Niue",
+      		"Norfolk Island",
+      		"North Korea",
+      		"Northern Ireland",
+      		"Northern Mariana Islands",
+      		"Norway",
+      		"Oman",
+      		"Pakistan",
+      		"Palau",
+      		"Palestine",
+      		"Panama",
+      		"Papua New Guinea",
+      		"Paraguay",
+      		"Peru",
+      		"Philippines",
+      		"Pitcairn",
+      		"Poland",
+      		"Portugal",
+      		"Puerto Rico",
+      		"Qatar",
+      		"Reunion",
+      		"Romania",
+      		"Russian Federation",
+      		"Rwanda",
+      		"Saint Helena",
+      		"Saint Kitts and Nevis",
+      		"Saint Lucia",
+      		"Saint Pierre and Miquelon",
+      		"Saint Vincent and the Grenadines",
+      		"Samoa",
+      		"San Marino",
+      		"Sao Tome and Principe",
+      		"Saudi Arabia",
+      		"Scotland",
+      		"Senegal",
+      		"Seychelles",
+      		"Sierra Leone",
+      		"Singapore",
+      		"Slovakia",
+      		"Slovenia",
+      		"Solomon Islands",
+      		"Somalia",
+      		"South Africa",
+      		"South Georgia and the South Sandwich Islands",
+      		"South Korea",
+      		"South Sudan",
+      		"Spain",
+      		"SriLanka",
+      		"Sudan",
+      		"Suriname",
+      		"Svalbard and Jan Mayen",
+      		"Swaziland",
+      		"Sweden",
+      		"Switzerland",
+      		"Syria",
+      		"Tajikistan",
+      		"Tanzania",
+      		"Thailand",
+      		"Togo",
+      		"Tokelau",
+      		"Tonga",
+      		"Trinidad and Tobago",
+      		"Tunisia",
+      		"Turkey",
+      		"Turkmenistan",
+      		"Turks and Caicos Islands",
+      		"Tuvalu",
+      		"Uganda",
+      		"Ukraine",
+      		"United Arab Emirates",
+      		"United Kingdom",
+      		"United States",
+      		"United States Minor Outlying Islands",
+      		"Uruguay",
+      		"Uzbekistan",
+      		"Vanuatu",
+      		"Venezuela",
+      		"Vietnam",
+      		"Virgin Islands, British",
+      		"Virgin Islands, U.S.",
+      		"Wales",
+      		"Wallis and Futuna",
+      		"Western Sahara",
+      		"Yemen",
+      		"Yugoslavia",
+      		"Zambia",
+      		"Zimbabwe"
+		];
+
+
+		$validator = Validator::make($request->all(), [
             'user_name' => ['required', 'min:3'],
-            'email_id' => ['required', 'min:3'],
+            'email_id' => ['required'],
             'country' => ['required'],
             'receiver_id' => ['required'],
             'bal_amt' => ['required'],
             'amount' => ['required'],
             'number' => ['required'],
-            'user_id' => ['required'],
-            'user_id.*' => ['mimes:jpeg,png,jpg,pdf' , 'max:7168'],
-            'user_selfie_id' => ['required'],
-            'user_selfie_id.*' => ['mimes:jpeg,png,jpg,pdf', 'max:7168'],
+            'later_bank' => (!empty($request->get('later_bank'))) ? ['required'] : '',
+            'reference' => (!empty($request->get('reference'))) ? ['required'] : '',
+            'user_id_pic' => 'required|mimes:png,jpg,jpeg,pdf|max:5120',
+            'selfie_id_pic' => 'required|mimes:png,jpg,jpeg,pdf|max:5120',
             'user_reference_id' => ['required']
         ]);
 
-		// dd($validated_attr);
+        $data_get = [
+       		'user_reference_id' => $request['user_reference_id'],
+       		'name' => $request['user_name'],
+       		'email_id' => $request['email_id'],
+       		'receiver_id' => $request['receiver_id'],
+       		'bal_amt' => $request['bal_amt'],
+       		'amount' => $request['amount'],
+       		'number' => $request['number'],
+       		'countries' => $countries,
+       		'later_bank' => (!empty($request->get('later_bank'))) ? 1 : '',
+       		'reference' => (!empty($request->get('reference'))) ? 1 : '',	
+        ];
+
+          $data = [
+       		'user_reference_id' => $request['user_reference_id'],
+       		'user_name' => $request['user_name'],
+       		'email_id' => $request['email_id'],
+       		'receiver_id' => $request['receiver_id'],
+       		'bal_amt' => $request['bal_amt'],
+       		'amount' => $request['amount'],
+       		'number' => $request['number'],
+       		'country' => $request['country'],
+       		'later_bank' => (!empty($request->get('later_bank'))) ? 1 : '',
+       		'reference' => (!empty($request->get('reference'))) ? 1 : '',	
+       		'user_id_pic' => $request['user_id_pic'],
+       		'selfie_id_pic' => $request['selfie_id_pic'],
+        ];
+
+        
+
+			// dd($data);
 
 
+        if ($validator->fails()) {
 
-        \Mail::to($request->get('email_id'))->send(new KYCConfirmation($request));
+			// dd($validator->customMessages);
 
-        \Mail::to('info@buyanylight.com')->send(new KYCConfirmationAdmin($request));
+            return redirect('/kyc')
+                        ->withErrors($validator->errors())
+                        ->with(['data' => $data_get]);
+        } else {
 
+        	\Mail::to($request->get('email_id'))->send(new KYCConfirmation($request));
 
-
-
+        	\Mail::to('rizvi.almanilighting@gmail.com')->send(new KYCConfirmationAdmin($request));
 
         $agent = new Agent();
 
         $isMobile = $agent->isMobile();
         $isTablet = $agent->isTablet();
 
-
-
-
  		if($isMobile || $isTablet) {
-          
-        	return view('mobile.thank-you', [
-        		'u_details' => $validated_attr
-        	]);
-        } else {
-        	  return view('thank-you', [
-        	'u_details' => $validated_attr
-        ]);
-           
+				return redirect('mobile.thank-you',[
+					'u_details' => $data
+				]);
+			}else{
+	       		return view('/thank-you',[
+	       			'u_details' => $data
+	       		]);
+
+			}
+
         }
 
-
-
-
-
-
 	}
-
-
 
 }

@@ -54,19 +54,25 @@
 					<li>User verification ID  image: Received</li>
 					<li>User selfie verification image: Received</li>
 				</ul>
-				<p>You will receive your {{ $u_details['bal_amt'] }} BAL Tokens very soon. We will send them to the following ETH address: {{ $u_details['receiver_id'] }}</p>
+				<p>
+					<i>In case we face issues with your payment or KYC, we will contact you via Email or Mobile</i>
+					
+				</p>
+				<p>
+					Once your payment was received and after successful KYC passing, you will receive your {{ $u_details['bal_amt'] }} BAL Tokens into the following ETH address: {{ $u_details['receiver_id'] }}
+				</p>
 				<p>
 					For any further queries, please contact us at 
 					<a href="mailto:invest@buyanylight.com">invest@buyanylight.com</a> or call us at +971 (0) 488 732 65.
 				</p>
 
 				<p>
-					Thanks again for your trust, support and BAL Token investment during our private sale.
+					Thanks again for your trust, support and BAL Token investment during our PRE-IEO sale.
 				</p>
 
 				<p>Thank You!
 					<br>
-					Team BuyAnyLight
+					BuyAnyLight Team
 				</p>
 				
 			</div>
