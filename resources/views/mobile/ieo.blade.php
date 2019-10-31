@@ -40,8 +40,8 @@
 			});
 
 			
-			// const minBAL = 200;
-			const minBAL = 25000;
+			const minBAL = 200;
+			// const minBAL = 25000;
 
 			
 			$('.bal-token').keyup(function() {
@@ -347,8 +347,8 @@
 					<b>IEO PRE SALE</b>
 				</h4> --}}
 				<div class="w-100 pt-2">
-					{{-- <p class="mb-0 text-white"><b>PRE -IEO SALE LIVE ON NOV 1</b></p> --}}
-					<p class="mb-0 text-white"><b>PRIVATE SALE LIVE NOW!</b></p>
+					<p class="mb-0 text-white"><b>PRE -IEO SALE LIVE NOW!</b></p>
+					{{-- <p class="mb-0 text-white"><b>PRIVATE SALE LIVE NOW!</b></p> --}}
 					<p class="text-white text-center mb-0" style="font-size: 0.9em;">
 						<b>sale ends in:</b>
 					</p>
@@ -491,7 +491,7 @@
 		<div class="row justify-content-center align-items-center" >
 			<p class="ribbon">
 			  	<span class="text">
-			  		<strong class="bold">34% OFF</strong> until IEO Sale!
+			  		<strong class="bold">17.5% OFF</strong> until IEO Sale!
 			  	</span>
 			</p>			
 		</div>
@@ -551,13 +551,13 @@
 					</div>
 				</div>
 				<div>
-	  				{{-- <small>The minimum investment is 50 USD and 200 BAL</small> --}}
-	  				<small>The minimum investment is 5,000 USD and 25,000 BAL</small>
+	  				<small>The minimum investment is 50 USD and 200 BAL</small>
+	  				{{-- <small>The minimum investment is 5,000 USD and 25,000 BAL</small> --}}
 	  			</div>
 				<div class="pt-4 bal-alert" style="display: none;">
 					<div class="alert alert-danger" role="alert">
-  						{{-- The minimum investment is 50 USD and 200 BAL --}}
-  						The minimum investment is 5,000 USD and 25,000 BAL
+  						The minimum investment is 50 USD and 200 BAL
+  						{{-- The minimum investment is 5,000 USD and 25,000 BAL --}}
 					</div>
 				</div>
 				<hr>
@@ -603,8 +603,8 @@
 												</b>
 											</div>
 											<span class="BAL_value">1</span> BAL=
-											{{-- <span class="USD_value">0.25</span> USD --}}
-											<span class="USD_value">0.2</span> USD
+											<span class="USD_value">0.25</span> USD
+											{{-- <span class="USD_value">0.2</span> USD --}}
 										</div>
 										<div class="col-5">
 											<div class="token-price" style="display: none;">
@@ -613,8 +613,8 @@
 												</b>
 												<br>
 												<span>1</span> BAL=
-												{{-- <span>0.25</span> USD --}}
-												<span>0.2</span> USD
+												<span>0.25</span> USD
+												{{-- <span>0.2</span> USD --}}
 											</div>	
 										</div> 
 									</div>
@@ -646,8 +646,8 @@
 									</div>
 									<div class="row">
 										<div class="col">
-											 	{{-- ROI : 17.5%  --}}
-												ROI = 51.52%
+											 	ROI : 17.5% 
+												{{-- ROI = 51.52% --}}
 										</div>
 										<div class="col">
 
@@ -656,8 +656,8 @@
 									<div class="row">
 										<div class="col">
 											Return = 
-											{{-- <span class="USD_return">0.05303 USD</span>		 --}}
-											<span class="USD_return">0.10303 USD</span>		
+											<span class="USD_return">0.05303 USD</span>		
+											{{-- <span class="USD_return">0.10303 USD</span>		 --}}
 										</div>
 										<div class="col">
 												
@@ -665,13 +665,13 @@
 									</div>
 								</div>
 								{{-- <div class="corner-ribbon bottom-right red shadow">
-									<span style="font-size: 13px;">34% Discount!</span>
+									<span style="font-size: 13px;">17.5% Discount!</span>
 								</div> --}}
 								
 								<div class="row mt-4 justify-content-center" style="height: 50px;">
 								<p class="ribbon small">
 								  	<span class="text">
-								  		<strong class="bold">34% OFF</strong> until IEO Sale!
+								  		<strong class="bold">17.5% OFF</strong> until IEO Sale!
 								  	</span>
 								</p>									
 								</div>
