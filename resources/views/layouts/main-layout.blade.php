@@ -440,8 +440,8 @@
 		});
 	});
 
-	function makeTimerPrivate() {
-			var endTime = new Date("31 October 2019 0:00:00 GMT+04:00");
+	function makeTimerPrivate() {			
+			var endTime = new Date("1 November 2019 0:00:00 GMT+04:00");
 			// var endTime = new Date("31 January 2020 0:00:00 GMT+04:00");
 			endTime = (Date.parse(endTime) / 1000);
 
@@ -583,6 +583,8 @@
 		if(detectOldIE()){
 			//if IE 11 or <
 			$('.preloader').css("display", "none");
+			
+			popUpIEO();
 		} 
 		else { 
 			//if not IE 11
@@ -591,15 +593,109 @@
 				$('.preloader').addClass('completed');
 				setTimeout(function(){
 					$('.preloader').css("display", "none");
+
+					popUpIEO();
+
 				},1100);
 			});			
 		}
 	{{-- ////////////////////////////////////////////////////////////// --}}
 	{{-- preloader --}}
 
-
-
 	</script>
+
+
+
+
+
+
+
+
+
+	{{-- ieo-popup --}}
+	{{-- ////////////////////////////////////////////////////////////// --}}
+	<script>
+	function setCookie(name,value,days) {
+	    var expires = "";
+	    if (days) {
+	        var date = new Date();
+	        date.setTime(date.getTime() + (days*24*60*60*1000));
+	        // date.setTime(date.getTime() + (60*1000));
+	        expires = "; expires=" + date.toUTCString();
+	    }
+	    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+	}
+	function getCookie(name) {
+	    var nameEQ = name + "=";
+	    var ca = document.cookie.split(';');
+	    for(var i=0;i < ca.length;i++) {
+	        var c = ca[i];
+	        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	    }
+	    return null;
+	}
+	function eraseCookie(name) {
+	    document.cookie = name+'=; Max-Age=-99999999;';  
+	}
+
+
+	function popUpIEO() {
+		console.log('popUpIEO',getCookie('ieo-popup'));
+
+		if(getCookie('ieo-popup')!='1')
+		$('#ieo-popup').modal('show');
+	}
+
+	$(document).ready(function(){
+		$('#ieo-popup .closeIEOPopUp').click((data)=>{
+			setCookie('ieo-popup','1',1);
+			console.log('closeIEOPopUp click = '+getCookie('ieo-popup'));
+		});
+
+
+	});
+	</script>
+
+
+
+	<div id="ieo-popup" 
+	class="modal fade" 
+	tabindex="-1" 
+	role="dialog" 
+	aria-labelledby="BAL Token Sale" 
+	aria-hidden="true">
+	    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+	        <div style="background-image: url({{ Util::assetUrl('images/popup-bg3.png') }}); background-size: cover; background-position: center;"
+	        class="modal-content">
+	            <div class="modal-header" style="border-bottom: 0;">
+	            	<div class="d-flex align-items-center justify-content-center" style="width: 100%;">
+		            	<img style="height: 180px; margin: 20px;" 
+		            	src="{{ Util::assetUrl('images/logos/logo-black3.png') }}"/>
+	            	</div>
+	                <button type="button" class="btn closeIEOPopUp" aria-label="Close" data-dismiss="modal"
+	                style="position: absolute; right: 20px; top: 10px; padding: 0px 0px 10px 10px; outline: none; margin: 0px 0px 10px 10px; font-size: 25px;">
+	                    <i class="fas fa-times"></i>
+	                </button>
+	            </div>
+	            <div class="modal-body pt-2 pr-5 pb-5 pl-5 mb-4" style="">
+	            	<div style="text-align: center;">
+		                <h1 class="modal-title pt-0 pb-4">
+		                	BAL TOKEN PRE-IEO SALE IS LIVE!
+		                </h1>
+	            		<h3>            			
+			                Get your 17.5% 
+			                <a class="closeIEOPopUp" href="{{ route('ieo') }}#section-bal-token">
+			                DISCOUNT NOW!</a>
+	            		</h3>
+	            	</div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	{{-- ////////////////////////////////////////////////////////////// --}}
+	{{-- ieo-popup --}}
+
 	
 	{{-- mylivechat.com --}}
 	{{-- //////////////////////////////////////////////////////// --}}
