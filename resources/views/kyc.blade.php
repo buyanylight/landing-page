@@ -186,7 +186,7 @@
 						@if(!empty($later_bank))
 						<hr>
 						<p class="m-0">
-							Your BAL Tokens will be send to you after submitting your bank transfer slip to <a href="mailto:invest@buyanylight.com">invest@buyanylight.com</a> and successful passing of KYC.
+							For our verification and security purposes, we are requesting your bank wire slip copy to be emailed to <a href="mailto:invest@buyanylight.com">invest@buyanylight.com</a> so we can verify it and confirm the receipt of your deposits immediately.
 						</p>
 						@endif
 					</div>

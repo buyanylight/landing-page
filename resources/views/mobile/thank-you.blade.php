@@ -17,15 +17,15 @@
 						<p>Thank you for completing the Know Your Customer (KYC) form.</p>
 						<p>We have received the following details:</p>
 						<ul>
-							<li>Reference ID : {{ $u_details['user_reference_id'] }}</li>
-							<li>Name: {{ $u_details['user_name'] }}</li>
-							<li>Email: {{ $u_details['email_id'] }}</li>
-							<li>Mobile: {{ $u_details['number'] }}</li>
-							<li>BAL Tokens purchased: {{ $u_details['bal_amt'] }} BAL</li>
-							<li>Amount Paid: {{ $u_details['amount'] }}</li>
-							<li>Country: {{ $u_details['country'] }}</li>
-							<li>User verification ID  image: Received</li>
-							<li>User selfie verification image: Received</li>
+							<li><b>Reference ID</b> : {{ $u_details['user_reference_id'] }}</li>
+							<li><b>Name:</b> {{ $u_details['user_name'] }}</li>
+							<li><b>Email:</b> {{ $u_details['email_id'] }}</li>
+							<li><b>Mobile:</b> {{ $u_details['number'] }}</li>
+							<li><b>BAL Tokens purchased:</b> {{ $u_details['bal_amt'] }} BAL</li>
+							<li><b>Amount Paid:</b> {{ $u_details['amount'] }}</li>
+							<li><b>Country:</b> {{ $u_details['country'] }}</li>
+							<li><b>User verification ID image:</b> Received</li>
+							<li><b>User selfie verification image:</b> Received</li>
 						</ul>
 						<p>
 							<i>In case we face issues with your payment or KYC, we will contact you via Email or Mobile.</i>

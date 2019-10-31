@@ -43,7 +43,9 @@ class BuyingConfirmationAdmin extends Mailable
                         'bal_amt' => $this->buyer_details->bal_amt,
                         'reference' => $this->buyer_details->reference,
                         'number' => $this->buyer_details->number,
-                        'later_bank' => $this->buyer_details->later_bank
+                        'later_bank' => $this->buyer_details->later_bank,
+                        'transaction_id' => $this->buyer_details->transaction_id
+
                      ]);
     }
 }
