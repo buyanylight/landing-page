@@ -658,6 +658,26 @@
 	});
 	</script>
 
+	<style>
+		a.btn.closeIEOPopUp {
+		    background-color: #5555A4;
+		    border-color: #5555A4;
+		}
+		a.btn.closeIEOPopUp:hover {
+			background-color: #000;
+			border-color: #000;			
+		}
+		a.btn.closeIEOPopUp:not(:disabled):not(.disabled):active {
+		    color: #000;
+		    background-color: #ffffff;
+		    border-color: #000000;		
+		}
+		a.btn.closeIEOPopUp:not(:disabled):not(.disabled):active:focus,
+		a.btn.closeIEOPopUp.focus,
+		a.btn.closeIEOPopUp:focus {
+			box-shadow: none;
+		}
+	</style>
 
 
 	<div id="ieo-popup" 
@@ -669,10 +689,9 @@
 	    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
 	        <div style="background-image: url({{ Util::assetUrl('images/popup-bg3.png') }}); background-size: cover; background-position: center;"
 	        class="modal-content">
-	            <div class="modal-header" style="border-bottom: 0;">
+	            <div class="modal-header" style="border-bottom: 0; padding-bottom: 10px;">
 	            	<div class="d-flex align-items-center justify-content-center" style="width: 100%;">
-		            	<img style="height: 180px; margin: 20px;" 
-		            	src="{{ Util::assetUrl('images/logos/logo-black3.png') }}"/>
+		            	<img style="height: 180px; margin: 20px; margin-bottom: 0px;" src="{{ Util::assetUrl('images/logos/logo-black3.png') }}"/>
 	            	</div>
 	                <button type="button" class="btn closeIEOPopUp" aria-label="Close" data-dismiss="modal"
 	                style="position: absolute; right: 20px; top: 10px; padding: 0px 0px 10px 10px; outline: none; margin: 0px 0px 10px 10px; font-size: 25px;">
@@ -685,9 +704,12 @@
 		                	BAL TOKEN PRE-IEO SALE IS LIVE!
 		                </h1>
 	            		<h3>            			
-			                Get your 17.5% 
-			                <a class="closeIEOPopUp" href="{{ route('ieo') }}#section-bal-token">
-			                DISCOUNT NOW!</a>
+			                <a class="closeIEOPopUp btn btn-success btn-lg" 
+			                style="font-size: 1em; padding: 0.25em 1em;" 
+			                href="{{ route('ieo') }}#section-bal-token">
+				                Get your <strong>17.5%</strong>
+				                DISCOUNT NOW!
+			            	</a>			            	
 	            		</h3>
 	            	</div>
 	            </div>
