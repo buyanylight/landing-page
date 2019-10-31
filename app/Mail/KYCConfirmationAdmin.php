@@ -33,16 +33,16 @@ class KYCConfirmationAdmin extends Mailable
     public function build()
     {
 
-         if (request()->hasFile('user_selfie_id')) {
+         if (request()->hasFile('selfie_id_pic')) {
             $name = explode(' ', $this->kyc_details->user_name);
-            $file_name = date('YmdHis') . '-' .$name[0].'-'.request()->file('user_selfie_id')->getClientOriginalName() ;
-            request()->file('user_selfie_id')->move(public_path() . '/uploads/', $file_name);  
+            $file_name = date('YmdHis') . '-' .$name[0].'-'.request()->file('selfie_id_pic')->getClientOriginalName() ;
+            request()->file('selfie_id_pic')->move(public_path() . '/uploads/', $file_name);  
         }
 
-        if (request()->hasFile('user_id')) {
+        if (request()->hasFile('user_id_pic')) {
             $name = explode(' ', $this->kyc_details->user_name);
-            $selfie_file_name = date('YmdHis') . '-' .$name[0].'-'. request()->file('user_id')->getClientOriginalName();
-            request()->file('user_id')->move(public_path() . '/uploads/', $file_name);  
+            $selfie_file_name = date('YmdHis') . '-' .$name[0].'-'. request()->file('user_id_pic')->getClientOriginalName();
+            request()->file('user_id_pic')->move(public_path() . '/uploads/', $file_name);  
         }
 
 
@@ -58,6 +58,7 @@ class KYCConfirmationAdmin extends Mailable
                         'reference' => $this->kyc_details->reference,
                         'country' => $this->kyc_details->country,
                         'number' => $this->kyc_details->number,
+                        'later_bank' => $this->kyc_details->later_bank,
                         'user_id' => url('uploads/'. $file_name),
                         'selfie_user_id' => url('uploads/'. $selfie_file_name),
                      ]);

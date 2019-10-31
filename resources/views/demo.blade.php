@@ -46,9 +46,15 @@
 
 
 				</div>
-			<div class="alert alert-success mt-2 alert-dismissable" role="alert">
- 				Thank you for your payment!
-			</div>
+			@if ($errors->any())
+    		<div class="alert alert-danger mt-3">
+        		<ul class="m-0">
+            	@foreach ($errors->all() as $error)
+                	<li>{{ $error }}</li>
+           		 @endforeach
+        		</ul>
+    		</div>
+			@endif
 			<div class="card mt-3">
 				<div class="card-body">
 					<div>
@@ -106,7 +112,7 @@
 									</label>
 									<div class="col-sm-9">
 										<div class="custom-file">
-			    							<input type="file" class="custom-file-input"  name="user_id" id="validatedCustomFile" required>
+			    							<input type="file" class="custom-file-input"  name="user_id_pic" id="validatedCustomFile" required>
 			    							<label class="custom-file-label" for="validatedCustomFile">Choose file</label>
                                     		<small>
 		    									<b>
@@ -132,7 +138,7 @@
 									</label>
 									<div class="col-sm-9">
 										<div class="custom-file">
-			    							<input type="file" class="custom-file-input" name="user_selfie_id" required>
+			    							<input type="file" class="custom-file-input" name="selfie_id_pic" required>
 			    							<label class="custom-file-label" for="validatedCustomFile">Choose file</label>
 			    							<small>
 		    									<b>

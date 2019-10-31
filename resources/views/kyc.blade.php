@@ -44,15 +44,29 @@
 
 
 				</div>
-			<div class="alert alert-warning alert-dismissible fade show mt-3" role="alert" style="margin-bottom: 0px;">
+			@if ($errors->any())
+    		<div class="alert alert-danger mt-3">
+        		<ul class="m-0">
+            	@foreach ($errors->all() as $error)
+                	<li>{{ $error }}</li>
+           		 @endforeach
+        		</ul>
+    		</div>
+    		@else
+    		<div class="alert alert-warning alert-dismissible fade show mt-3" role="alert" style="margin-bottom: 0px;">
  				An email has been sent to you, if not received please check your spam or junk folder.
   				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
     				<span aria-hidden="true">&times;</span>
   				</button>
 			</div>
-			<div class="alert alert-success mt-2" role="alert" >
- 				Thank you for your payment!
+			<div class="alert alert-success mt-2" role="alert">
+				@if(!empty($later_bank))
+ 					In order to finish your bank transfer later, all details have been emailed to you.
+ 				@else
+ 					Thank you for your payment!
+ 				@endif
 			</div>
+			@endif
 			<div class="card mt-3">
 				<div class="card-body">
 					<div>
@@ -64,7 +78,7 @@
 						</p>
 
 						<hr>
-						<form action="/thank-you" method="post" enctype="multipart/form-data">
+						<form action="{{ route('thank-you') }}" method="post" enctype="multipart/form-data">
 		  					@csrf()
 		  					<div class="form-group row">
 		  						<label class="col-sm-3 col-form-label"><b>Reference ID:</b></label>
@@ -110,7 +124,7 @@
 								</label>
 								<div class="col-sm-9">
 									<div class="custom-file">
-		    							<input type="file" class="custom-file-input"  name="user_id" id="validatedCustomFile" required>
+		    							<input type="file" class="custom-file-input"  name="user_id_pic" id="validatedCustomFile" required>
 		    							<label class="custom-file-label" for="validatedCustomFile">Choose file</label>
 		    							<small>
 		    								<b>
@@ -135,7 +149,7 @@
 								</label>
 								<div class="col-sm-9">
 									<div class="custom-file">
-		    							<input type="file" class="custom-file-input" name="user_selfie_id" required>
+		    							<input type="file" class="custom-file-input" name="selfie_id_pic" required>
 		    							<label class="custom-file-label" for="validatedCustomFile">Choose file</label>
 		    							<small>
 		    								<b>
@@ -154,12 +168,27 @@
 								<div class="col-12">
 									<input type="hidden" name="user_reference_id" value="{{$user_reference_id }}">
 									<input type="hidden" name="receiver_id" value="{{ $receiver_id }}">
-									<input type="hidden" name="bal_amt" value="{{$bal_amt }}">
-									<input type="hidden" name="amount" value="{{$amount }}">
+									<input type="hidden" name="bal_amt" value="{{$bal_amt}}">
+									<input type="hidden" name="amount" value="{{$amount}}">
+									@if(!empty($transaction_id))
+										<input type="hidden" name="transaction_id" value="{{ $transaction_id }}">
+									@endif
+									@if(!empty($reference))
+										<input type="hidden" name="reference" value="{{ $reference}}">
+										@if(!empty($later_bank))
+											<input type="hidden" name="later_bank" value="1">
+										@endif
+									@endif
 									<button type="submit" class="btn text-white w-100" style="background-color: #510091;"> Submit and Complete the process </button>
 								</div>
 							</div>
 						</form>
+						@if(!empty($later_bank))
+						<hr>
+						<p class="m-0">
+							Your BAL Tokens will be send to you after submitting your bank transfer slip to <a href="mailto:invest@buyanylight.com">invest@buyanylight.com</a> and successful passing of KYC.
+						</p>
+						@endif
 					</div>
 				</div>
 			</div>
@@ -169,6 +198,8 @@
 			</div>
 		</div>
 	</div>
+
+
 </section>
 
 @endsection

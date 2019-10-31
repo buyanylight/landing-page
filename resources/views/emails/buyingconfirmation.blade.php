@@ -11,8 +11,12 @@
 	</p>
 	<ul style=" color: black; list-style: none;">
 		<li><b>Reference ID:</b> {{ $user_reference_id }}</li>
-		<li style="padding-top: 5px;"><b>BAL Tokens Total Value:</b> {{ $bal_amt }}</li>
+		<li style="padding-top: 5px;"><b>Total BAL Tokens:</b> {{ $bal_amt }} BAL</li>
+		@if(!empty($later_bank))
+		<li style="padding-top: 5px;"><b>Amount to be paid:</b> {{ $amount }}</li>
+		@else
 		<li style="padding-top: 5px;"><b>Amount Paid:</b> {{ $amount }}</li>
+		@endif
 		@if(!empty($reference))
 		<li style="padding-top: 5px;"><b>Bank Transfer Reference:</b> {{ $reference }}</li>
 		@endif
@@ -21,15 +25,20 @@
 		@endif
 		<li style="padding-top: 5px;"><b>Your ETH address:</b> {{ $receiver_id }}</li>
 	</ul>
+		@if(!empty($reference))
 		@if(!empty($later_bank))
-	<p>
-		You may complete the bank transfer with the following reference No. {{ $reference }}. Send the transfer slip image directly to invest@buyanylight.com so we can facilitate the transaction immediately
-	</p>
-
+		<p style="color: black; font-size: 14px !important;">
+			You may complete the bank transfer with the following reference no. {{ $reference }}. Send the transfer slip image directly to invest@buyanylight.com so we can facilitate the transaction immediately.
+		</p>
+		@else
+		<p style="color: black; font-size: 14px !important;">
+			Please send the transfer slip image directly to invest@buyanylight.com so we can facilitate the transaction immediately.
+		</p>
+		@endif
 		@if(strpos($amount, 'USD') !== false)
 		<p style="color: black; font-size: 14px !important">Bank Details:</p>
 		<ul style="color: black; list-style:none;">
-			<li style="padding-top: 5px;"><b>Account Holder:</b> Ms Dotcom Ventures FZE</li>
+			<li style="padding-top: 5px;"><b>Account Holder:</b> Dotcom Ventures FZE</li>
 			<li style="padding-top: 5px;"><b>Holder Address:</b> <span>UAQ Free Trade Zone,
 				  											P.O. Box 7073,
 				  											Umm Al Quwain,
@@ -43,9 +52,9 @@
 				  											Dubai, United Arab Emirates</span></li>
 		</ul>
 		@else
-		<p style="color: black; font-size: 14px !important">Bank Details:</p>
+		<p style="color: black; font-size: 14px !important"><b>Bank Details:</b></p>
 		<ul>
-			<li style="padding-top: 5px;"><b>Account Holder:</b>Ms Dotcom Ventures FZE</li>
+			<li style="padding-top: 5px;"><b>Account Holder:</b> Dotcom Ventures FZE</li>
 			<li style="padding-top: 5px;"><b>Holder Address:</b> <span>UAQ Free Trade Zone,
 				  											P.O. Box 7073,
 				  											Umm Al Quwain,
@@ -59,22 +68,23 @@
 				  											Dubai, United Arab Emirates</span></li>
 		</ul>
 		@endif
+		<p style="color: black; font-size: 14px !important">
+			BuyAnyLight is a project operated by <a href="https://buyanylight.com/terms">Dotcom Ventures FZE</a>.
+		</p>
 
 		@endif
 
-
-
-
-
-
 	<p style="color: black; font-size: 14px !important">
-		In case you haven’t finished the step yet, you may click on the link below for completion:
+		In case you haven’t finished the KYC step yet, you may click on the link below for completion:
 	</p>
 	<p>
 		<a href="https://buyanylight.com/kyc-form/{{ $user_reference_id }}?amount={{ $amount }}&bal={{$bal_amt}}&receiver_id={{$receiver_id}}&name={{$name}}&email={{$email}}&number={{$number}}">KYC Form</a>
 	</p>
 	<p style="color: black; font-size: 14px !important">
-		Attached in this email is the Token Sale Agreement for your reference. If we can be of further service, feel free to contact us in all our avenues. Again, we value doing business with you.
+		Attached in this email is the Token Sale Agreement for your reference. If we can be of further service, feel free to contact us via our social media platforms.
+	</p>
+		<p style="color: black; font-size: 14px">
+		Thanks for your support, trust and investment.
 	</p>
 	<p style=" color: black; font-size: 14px;">
 	Sincerely,<br><br>

@@ -527,7 +527,7 @@
 				  											</b>
 				  										</div>
 				  										<div class="col-8">
-				  											Ms Dotcom Ventures FZE
+				  											Dotcom Ventures FZE
 				  										</div>
 				  									</div>
 				  									<div class="row pt-3">
@@ -612,7 +612,7 @@
 			  											</b>
 			  										</div>
 			  										<div class="col-8">
-			  											Ms Dotcom Ventures FZE
+			  											Dotcom Ventures FZE
 			  										</div>
 			  									</div>
 			  									<div class="row pt-3">
@@ -890,7 +890,7 @@
 				  											</b>
 				  										</div>
 				  										<div class="col-8">
-				  											Ms Dotcom Ventures FZE
+				  											Dotcom Ventures FZE
 				  										</div>
 				  									</div>
 				  									<div class="row pt-3">
@@ -975,7 +975,7 @@
 			  											</b>
 			  										</div>
 			  										<div class="col-8">
-			  											Ms Dotcom Ventures FZE
+			  											Dotcom Ventures FZE
 			  										</div>
 			  									</div>
 			  									<div class="row pt-3">
