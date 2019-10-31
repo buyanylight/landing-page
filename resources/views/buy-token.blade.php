@@ -688,7 +688,12 @@
 			  								</div>
 			  								@endif
 			  							</div>
-			  							<div class="mt-3 col-12">
+                                         <p class="pt-3">
+                                            <i>
+                                                BuyAnyLight is a project operated by <a href="https://buyanylight.com/terms">Dotcom Ventures FZE</a>.
+                                            </i>
+                                        </p>
+			  							<div class="mt-3 col-12 p-0">
 			  								<button class="btn btn-success w-100 completed-trxn">
 			  									I have sent the funds
 			  								</button>
@@ -1051,7 +1056,12 @@
 			  								</div>
 			  								@endif
 			  							</div>
-			  							<div class="mt-3 col-12">
+                                        <p>
+                                            <i>
+                                                BuyAnyLight is a project operated by <a href="https://buyanylight.com/terms">Dotcom Ventures FZE</a>.
+                                            </i>
+                                        </p>
+			  							<div class="mt-3 col-12 p-0">
 			  								<button class="btn btn-success w-100 completed-trxn">
 			  									I have sent the funds
 			  								</button>
@@ -1121,7 +1131,7 @@
 				  						<div class="card-body">
 				  							<div class="card-title">
 				  								<p>
-				  									You are buying <b>{{ $bal_amt }} BAL</b>
+				  									You are buying <b>{{ $bal_amt }} BAL Tokens</b>
 				  								</p>
 				  								<p>
 				  									Please tranfer the amount of <b>{{ $amt }} BTC</b> to our Bitcoin address shown below:
@@ -1173,7 +1183,7 @@
 				  									<div class="form-group row">
 				  										<label class="col-sm-3 col-form-label">
 				  											<b>Transaction Hash:</b>
-				  											<span class="" data-toggle="tooltip" data-placement="bottom" title="A transaction hash or transaction ID is a unique 64 characters identifier that is generated whenever a transaction is executed." style="font-size: 12px; ">
+				  											<span class="" name="transaction_id" data-toggle="tooltip" data-placement="bottom" title="A transaction hash or transaction ID is a unique 64 characters identifier that is generated whenever a transaction is executed." style="font-size: 12px; ">
                                                             <i class="fas fa-info-circle"></i>
                                                         </span>
 				  										</label>
@@ -1223,7 +1233,7 @@
 									</div>
 			  						<div class="card-body">
 			  							<p>
-				  							You are buying <b>{{ $bal_amt }} BAL</b>
+				  							You are buying <b>{{ $bal_amt }} BAL Tokens</b>
 				  						</p>
 				  						<p>
 				  							

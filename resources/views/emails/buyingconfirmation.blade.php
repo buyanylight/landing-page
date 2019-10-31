@@ -4,7 +4,7 @@
 		Greetings {{ $name }}!
 	</p>
 	<p style="color: black; font-size: 14px !important">
-		We appreciate the trust you confer to BuyAnyLight.com. First and foremost, we would like to congratulate you on your initiative towards a profitable investment with us. We thank you for participating in our private BAL token sale.
+		We appreciate the trust you confer to BuyAnyLight.com. First and foremost, we would like to congratulate you on your initiative towards a profitable investment with us. We thank you for participating in our PRE-IEO BAL token sale.
 	</p>
 	<p style="color: black; font-size: 14px !important">
 		Below are the transaction details of your electronic purchase:
@@ -26,15 +26,9 @@
 		<li style="padding-top: 5px;"><b>Your ETH address:</b> {{ $receiver_id }}</li>
 	</ul>
 		@if(!empty($reference))
-		@if(!empty($later_bank))
 		<p style="color: black; font-size: 14px !important;">
-			You may complete the bank transfer with the following reference no. {{ $reference }}. Send the transfer slip image directly to invest@buyanylight.com so we can facilitate the transaction immediately.
+			For our verification and security purposes, we are requesting your bank wire slip copy to be emailed to <a href="mailto:invest@buyanylight.com">invest@buyanylight.com</a> so we can verify it and confirm the receipt of your deposits immediately.
 		</p>
-		@else
-		<p style="color: black; font-size: 14px !important;">
-			Please send the transfer slip image directly to invest@buyanylight.com so we can facilitate the transaction immediately.
-		</p>
-		@endif
 		@if(strpos($amount, 'USD') !== false)
 		<p style="color: black; font-size: 14px !important">Bank Details:</p>
 		<ul style="color: black; list-style:none;">
@@ -69,7 +63,9 @@
 		</ul>
 		@endif
 		<p style="color: black; font-size: 14px !important">
-			BuyAnyLight is a project operated by <a href="https://buyanylight.com/terms">Dotcom Ventures FZE</a>.
+			<i>
+				BuyAnyLight is a project operated by <a href="https://buyanylight.com/terms">Dotcom Ventures FZE</a>.
+			</i>
 		</p>
 
 		@endif
@@ -81,9 +77,9 @@
 		<a href="https://buyanylight.com/kyc-form/{{ $user_reference_id }}?amount={{ $amount }}&bal={{$bal_amt}}&receiver_id={{$receiver_id}}&name={{$name}}&email={{$email}}&number={{$number}}">KYC Form</a>
 	</p>
 	<p style="color: black; font-size: 14px !important">
-		Attached in this email is the Token Sale Agreement for your reference. If we can be of further service, feel free to contact us via our social media platforms.
+		Attached in this email is the Token Sale Agreement for your reference. If we can be of further service, feel free to contact us at <a href="mailto:invest@buyanylight.com">invest@buyanylight.com</a>.
 	</p>
-		<p style="color: black; font-size: 14px">
+	<p style="color: black; font-size: 14px">
 		Thanks for your support, trust and investment.
 	</p>
 	<p style=" color: black; font-size: 14px;">
