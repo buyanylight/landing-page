@@ -32,7 +32,7 @@
 		</p>
 		@else
 		<p style="color: black; font-size: 14px !important;">
-			Send the transfer slip image directly to invest@buyanylight.com so we can facilitate the transaction immediately.
+			Please send the transfer slip image directly to invest@buyanylight.com so we can facilitate the transaction immediately.
 		</p>
 		@endif
 		@if(strpos($amount, 'USD') !== false)
@@ -73,11 +73,6 @@
 		</p>
 
 		@endif
-
-
-
-
-
 
 	<p style="color: black; font-size: 14px !important">
 		In case you haven’t finished the KYC step yet, you may click on the link below for completion:
