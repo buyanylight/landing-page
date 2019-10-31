@@ -341,8 +341,8 @@
 
 		 function makeTimerPrivate() {
 
-			var endTime = new Date("1 November 2019 0:00:00 GMT+04:00");          
-			// var endTime = new Date("31 January 2020 0:00:00 GMT+04:00");
+			// var endTime = new Date("1 November 2019 0:00:00 GMT+04:00");          
+			var endTime = new Date("31 January 2020 0:00:00 GMT+04:00");
 			endTime = (Date.parse(endTime) / 1000);
 
 			var now = new Date();
@@ -370,7 +370,6 @@
 
 		function makeTimerPublic() {
 
-			// var endTime = new Date("01 December 2019 0:00:00 GMT+04:00");
 			var endTime = new Date("01 Febuary 2020 0:00:00 GMT+04:00");
 			endTime = (Date.parse(endTime) / 1000);
 

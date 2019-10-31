@@ -26,8 +26,8 @@ class TokenController extends Controller
 		foreach ($curr_result['rates'] as $tkey => $tvalue) {
 			if ($tvalue['asset_id_quote'] == 'EUR' || $tvalue['asset_id_quote'] == 'BTC' ||  $tvalue['asset_id_quote'] == 'ETH' ||  $tvalue['asset_id_quote'] == 'USD') {
 				$all_curr[$tkey] = $tvalue;
-				$all_curr[$tkey]['bal_rate'] = number_format($tvalue['rate'] / 5, 8);
-				// $all_curr[$tkey]['bal_rate'] = number_format($tvalue['rate'] / 4, 8);
+				// $all_curr[$tkey]['bal_rate'] = number_format($tvalue['rate'] / 5, 8);
+				$all_curr[$tkey]['bal_rate'] = number_format($tvalue['rate'] / 4, 8);
 				$all_curr[$tkey]['time'] = date('d-M-y H:i', strtotime($all_curr[$tkey]['time'])) . ' UTC' ;
 			}
 
