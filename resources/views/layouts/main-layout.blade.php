@@ -30,15 +30,6 @@
 
 
 
-		
-		{{-- progress bar --}}
-		{{-- /////////////////////////////////////////////////////////////////////////////////////////// --}}
-		<script src="{{ Util::assetUrl('js/pace.1.0.0.min.js') }}" charset="utf-8"></script>	
-		<link rel="stylesheet" href="{{ Util::assetUrl('css/progress-bar.css') }}">
-		{{-- /////////////////////////////////////////////////////////////////////////////////////////// --}}
-		{{-- progress bar --}}		
-
-
 	    <?php
 	        //disable fb pixel and google analytics for develpment or url is not loseweightorgetpaid.com	        
 	        $is_live = false;
@@ -131,6 +122,15 @@
 
 
 
+
+
+		
+		{{-- progress bar --}}
+		{{-- /////////////////////////////////////////////////////////////////////////////////////////// --}}
+		<script src="{{ Util::assetUrl('js/pace.1.0.0.min.js') }}" charset="utf-8"></script>	
+		<link rel="stylesheet" href="{{ Util::assetUrl('css/progress-bar.css') }}">
+		{{-- /////////////////////////////////////////////////////////////////////////////////////////// --}}
+		{{-- progress bar --}}		
 
 	</head>
 
@@ -609,12 +609,19 @@
 				$('.preloader').addClass('completed');
 				setTimeout(function(){
 					$('.preloader').css("display", "none");
-
 					popUpIEO();
-
 				},1100);
 			});			
 		}
+
+		setTimeout(function(){
+			$('.preloader > div').fadeOut();
+			$('.preloader').addClass('completed');
+			setTimeout(function(){
+				$('.preloader').css("display", "none");				
+			},1100);
+		},13000);
+
 	{{-- ////////////////////////////////////////////////////////////// --}}
 	{{-- preloader --}}
 
