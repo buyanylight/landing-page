@@ -3,6 +3,42 @@
 	<head>
 
 
+		<!-- Meta -->
+		<!-- //////////////////////////////////////////////////////////////////////// -->
+		<meta name="author" content="Buyanylight.com">
+		<meta name="keywords" content="Light, chandelier, lamp, led strip lights, ceiling lights, pendant lighting, outdoor lights, led strip, wall lights, light fixtures, Cheapest lights, cheapest place to buy lights, LED lights, online lighting store, kitchen lights, bathroom lights, bedroom lights, led panel, flood lights, lighting design, architectural lighting, home lighting, smart home, find light, light finder, get light quotes, search lights online, buy lights online, Sourcing reinvented, project management, lighting mangement, lighting consultancy, lighting solutions, lighting project, lighting companies, lighting consultant, innovation, switch to led, sourcing solution" />
+
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://buyanylight.com">
+		<meta property="og:image" content="{{ Util::assetUrl('images/bal-logo-share.png') }}">
+
+
+
+		@section('meta-title')
+		<meta name="title" content="BuyAnyLight.com | Sourcing Reinvented - The global marketplace for LED Lighting">
+		<meta property="og:title" content="BuyAnyLight.com | Sourcing Reinvented - The global marketplace for LED Lighting">
+		@show
+
+		@section('meta-description')
+		<meta name="description" content="BUY ANY LIGHT (BAL) has pioneered an innovation that changes the procedure of sourcing lights forever! The BAL platform benefits users with the best possible prices for any light, increased efficiency of lights procurement, access to the actual manufacturers of top global brands, increased profits, automation functions, and many other excellent features." />
+		<meta property="og:description" content="BUY ANY LIGHT (BAL) has pioneered an innovation that changes the procedure of sourcing lights forever! The BAL platform benefits users with the best possible prices for any light, increased efficiency of lights procurement, access to the actual manufacturers of top global brands, increased profits, automation functions, and many other excellent features.">
+		@show
+
+		<!-- //////////////////////////////////////////////////////////////////////// -->
+		<!-- Meta -->
+
+
+
+
+		
+		{{-- progress bar --}}
+		{{-- /////////////////////////////////////////////////////////////////////////////////////////// --}}
+		<script src="{{ Util::assetUrl('js/pace.1.0.0.min.js') }}" charset="utf-8"></script>	
+		<link rel="stylesheet" href="{{ Util::assetUrl('css/progress-bar.css') }}">
+		{{-- /////////////////////////////////////////////////////////////////////////////////////////// --}}
+		{{-- progress bar --}}		
+
+
 	    <?php
 	        //disable fb pixel and google analytics for develpment or url is not loseweightorgetpaid.com	        
 	        $is_live = false;
@@ -77,45 +113,35 @@
 		@yield('head-css')
 
 
-	@yield('meta')
+		@yield('meta')
 
-	<!-- Meta -->
-	<!-- //////////////////////////////////////////////////////////////////////// -->
-	<meta name="author" content="Buyanylight.com">
-	<meta name="keywords" content="Light, chandelier, lamp, led strip lights, ceiling lights, pendant lighting, outdoor lights, led strip, wall lights, light fixtures, Cheapest lights, cheapest place to buy lights, LED lights, online lighting store, kitchen lights, bathroom lights, bedroom lights, led panel, flood lights, lighting design, architectural lighting, home lighting, smart home, find light, light finder, get light quotes, search lights online, buy lights online, Sourcing reinvented, project management, lighting mangement, lighting consultancy, lighting solutions, lighting project, lighting companies, lighting consultant, innovation, switch to led, sourcing solution" />
+		<script src="{{ Util::assetUrl('js/init.js') }}" charset="utf-8"></script>
+		
 
-	<meta property="og:type" content="article">
-	<meta property="og:url" content="https://buyanylight.com">
-	<meta property="og:image" content="{{ Util::assetUrl('images/bal-logo-share.png') }}">
+		@yield('head-javascript')
+		
+		{{-- preloader --}}
+		{{-- ////////////////////////////////////////////////////////////// --}}
+		<link rel="stylesheet" href="{{ Util::assetUrl('css/preloaders.css') }}">	
+		{{-- ////////////////////////////////////////////////////////////// --}}
+		{{-- preloader --}}
 
-
-
-	@section('meta-title')
-	<meta name="title" content="BuyAnyLight.com | Sourcing Reinvented - The global marketplace for LED Lighting">
-	<meta property="og:title" content="BuyAnyLight.com | Sourcing Reinvented - The global marketplace for LED Lighting">
-	@show
-
-	@section('meta-description')
-	<meta name="description" content="BUY ANY LIGHT (BAL) has pioneered an innovation that changes the procedure of sourcing lights forever! The BAL platform benefits users with the best possible prices for any light, increased efficiency of lights procurement, access to the actual manufacturers of top global brands, increased profits, automation functions, and many other excellent features." />
-	<meta property="og:description" content="BUY ANY LIGHT (BAL) has pioneered an innovation that changes the procedure of sourcing lights forever! The BAL platform benefits users with the best possible prices for any light, increased efficiency of lights procurement, access to the actual manufacturers of top global brands, increased profits, automation functions, and many other excellent features.">
-	@show
-
-	<!-- //////////////////////////////////////////////////////////////////////// -->
-	<!-- Meta -->
-
-	@yield('head-javascript')
-	
-	{{-- preloader --}}
-	{{-- ////////////////////////////////////////////////////////////// --}}
-	<link rel="stylesheet" href="{{ Util::assetUrl('css/preloaders.css') }}">	
-	{{-- ////////////////////////////////////////////////////////////// --}}
-	{{-- preloader --}}
+		{{-- mylivechat --}}
+		{{-- <script type="text/javascript">function add_chatinline(){var hccid=42898044;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);} add_chatinline(); </script> --}}
 
 
-	{{-- mylivechat --}}
-	{{-- <script type="text/javascript">function add_chatinline(){var hccid=42898044;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);} add_chatinline(); </script> --}}
+
 
 	</head>
+
+
+
+
+
+
+
+
+
 	<body class="eupopup eupopup-bottom">
     	@if($is_live)
 		<!-- Google Tag Manager (noscript) -->
@@ -124,25 +150,10 @@
 		<!-- End Google Tag Manager (noscript) -->
 		@endif
 
+
+
+
 		<div class="preloader">
-			{{-- <div class="sk-folding-cube">
-				<div class="sk-cube1 sk-cube"></div>
-				<div class="sk-cube2 sk-cube"></div>
-				<div class="sk-cube4 sk-cube"></div>
-				<div class="sk-cube3 sk-cube"></div>
-			</div> --}}
-
-			{{-- <div class="lds-ripple"><div></div><div></div></div> --}}
-
-			{{-- <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> --}}
-			
-			{{-- <div class="bal-loading-logo">
-				<div class="ld ld-shadow">
-					<img src="{{ Util::assetUrl('images/logos/logo-white2.png') }}" 
-					alt="BuyAnyLight">
-				</div>
-			</div> --}}
-
 			<div style="z-index: 1032; 
 			display: inline-flex;
 		    justify-content: center;
@@ -160,6 +171,10 @@
 				</div>
 			</div>
 		</div>
+
+
+
+
 		@include('includes.navbar')
 		@yield('content')
 
