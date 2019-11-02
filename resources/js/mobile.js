@@ -1,4 +1,4 @@
-require('./bootstrap');
+// require('./bootstrap');
 
 // $(window).scroll(function(){
 //     $('nav').toggleClass('bg-black', $(this).scrollTop() > 500);

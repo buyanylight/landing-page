@@ -114,8 +114,67 @@
 		{{-- preloader --}}
 		{{-- ////////////////////////////////////////////////////////////// --}}
 		<link rel="stylesheet" href="{{ Util::assetUrl('css/preloaders.css') }}">	
+		<script>
+			function detectOldIE() {
+			    var ua = window.navigator.userAgent;
+
+			    var msie = ua.indexOf('MSIE ');
+			    if (msie > 0) {
+			        // IE 10 or older => return version number
+			        // return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+			        return true;
+			    }
+
+			    var trident = ua.indexOf('Trident/');
+			    if (trident > 0) {
+			        // IE 11 => return version number
+			        var rv = ua.indexOf('rv:');
+			        // return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+			        return true;
+			    }
+
+			    var edge = ua.indexOf('Edge/');
+			    if (edge > 0) {
+			       	// Edge (IE 12+) => return version number
+			       	// return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+				    return false;
+			    }
+
+			    // other browser
+			    return false;
+			}
+
+			if(detectOldIE()){
+				//if IE 11 or <
+				$('.preloader').css("display", "none");
+				
+				popUpIEO();
+			} 
+			else { 
+				//if not IE 11
+				$(window).on('load',function(){
+					$('.preloader > div').fadeOut();
+					$('.preloader').addClass('completed');
+					setTimeout(function(){
+						$('.preloader').css("display", "none");
+						popUpIEO();
+					},1100);
+				});			
+			}
+
+			setTimeout(function(){
+				$('.preloader > div').fadeOut();
+				$('.preloader').addClass('completed');
+				setTimeout(function(){
+					$('.preloader').css("display", "none");				
+				},1100);
+			},13000);
+		</script>
 		{{-- ////////////////////////////////////////////////////////////// --}}
 		{{-- preloader --}}
+
+
+
 
 		{{-- mylivechat --}}
 		{{-- <script type="text/javascript">function add_chatinline(){var hccid=42898044;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);} add_chatinline(); </script> --}}
@@ -560,72 +619,7 @@
 	});
 	//////////////////////////////////////////////////////////////// 
 	// if coreteam is in url 
-
-
-	{{-- preloader --}}
-	{{-- ////////////////////////////////////////////////////////////// --}}
-		function detectOldIE() {
-		    var ua = window.navigator.userAgent;
-
-		    var msie = ua.indexOf('MSIE ');
-		    if (msie > 0) {
-		        // IE 10 or older => return version number
-		        // return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
-		        return true;
-		    }
-
-		    var trident = ua.indexOf('Trident/');
-		    if (trident > 0) {
-		        // IE 11 => return version number
-		        var rv = ua.indexOf('rv:');
-		        // return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
-		        return true;
-		    }
-
-		    var edge = ua.indexOf('Edge/');
-		    if (edge > 0) {
-		       	// Edge (IE 12+) => return version number
-		       	// return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
-			    return false;
-		    }
-
-		    // other browser
-		    return false;
-		}
-
-		if(detectOldIE()){
-			//if IE 11 or <
-			$('.preloader').css("display", "none");
-			
-			popUpIEO();
-		} 
-		else { 
-			//if not IE 11
-			$(window).on('load',function(){
-				$('.preloader > div').fadeOut();
-				$('.preloader').addClass('completed');
-				setTimeout(function(){
-					$('.preloader').css("display", "none");
-					popUpIEO();
-				},1100);
-			});			
-		}
-
-		setTimeout(function(){
-			$('.preloader > div').fadeOut();
-			$('.preloader').addClass('completed');
-			setTimeout(function(){
-				$('.preloader').css("display", "none");				
-			},1100);
-		},13000);
-
-	{{-- ////////////////////////////////////////////////////////////// --}}
-	{{-- preloader --}}
-
 	</script>
-
-
-
 
 
 
