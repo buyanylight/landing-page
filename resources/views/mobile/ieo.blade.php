@@ -646,7 +646,7 @@
 									</div>
 									<div class="row">
 										<div class="col">
-											 	ROI : 17.5% 
+											 	ROI : 21.21% 
 												{{-- ROI = 51.52% --}}
 										</div>
 										<div class="col">

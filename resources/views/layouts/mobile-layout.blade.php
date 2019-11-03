@@ -2,6 +2,26 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 
+	 <!-- Meta -->
+	<!-- //////////////////////////////////////////////////////////////////////// -->
+	<meta name="description" content="BuyAnyLight is the new global marketplace for LED lighting. Offering quality LED from the top sellers at the lowest prices. With BAL, everyone wins!" />
+	<meta name="author" content="Buyanylight.com">
+	<meta name="title" content="BuyAnyLight.com | Sourcing Reinvented - The global marketplace for LED Lighting">
+	<meta name="keywords" content="Light, chandelier, lamp, led strip lights, ceiling lights, pendant lighting, outdoor lights, led strip, wall lights, light fixtures, Cheapest lights, cheapest place to buy lights, LED lights, online lighting store, kitchen lights, bathroom lights, bedroom lights, led panel, flood lights, lighting design, architectural lighting, home lighting, smart home, find light, light finder, get light quotes, search lights online, buy lights online, Sourcing reinvented, project management, lighting mangement, lighting consultancy, lighting solutions, lighting project, lighting companies, lighting consultant, innovation, switch to led, sourcing solution" />
+
+
+	<meta property="og:title" content="Sourcing Reinvented - The global marketplace for LED Lighting | BuyAnyLight.com">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://buyanylight.com">
+	{{-- <meta property="og:image" content="https://buyanylight.com/images/logo-white.png"> --}}
+	<meta property="og:image" content="{{ Util::assetUrl('images/bal-logo-share.png') }}">
+	<meta property="og:description" content="BUY ANY LIGHT (BAL) has pioneered an innovation that changes the procedure of sourcing lights forever! The BAL platform benefits users with the best possible prices for any light, increased efficiency of lights procurement, access to the actual manufacturers of top global brands, increased profits, automation functions, and many other excellent features.">
+
+
+	<!-- //////////////////////////////////////////////////////////////////////// -->
+	<!-- Meta -->
+
+
 	@if(strpos(Request::url(), 'buyanylight.com') !== false)
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143361165-1"></script>
@@ -59,35 +79,76 @@
 	<link rel="stylesheet" href="{{ Util::assetUrl('css/slick-theme.css') }}"/>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
-
 	@yield('head-css')
 
-	 <!-- Meta -->
-	<!-- //////////////////////////////////////////////////////////////////////// -->
-	<meta name="description" content="BuyAnyLight is the new global marketplace for LED lighting. Offering quality LED from the top sellers at the lowest prices. With BAL, everyone wins!" />
-	<meta name="author" content="Buyanylight.com">
-	<meta name="title" content="BuyAnyLight.com | Sourcing Reinvented - The global marketplace for LED Lighting">
-	<meta name="keywords" content="Light, chandelier, lamp, led strip lights, ceiling lights, pendant lighting, outdoor lights, led strip, wall lights, light fixtures, Cheapest lights, cheapest place to buy lights, LED lights, online lighting store, kitchen lights, bathroom lights, bedroom lights, led panel, flood lights, lighting design, architectural lighting, home lighting, smart home, find light, light finder, get light quotes, search lights online, buy lights online, Sourcing reinvented, project management, lighting mangement, lighting consultancy, lighting solutions, lighting project, lighting companies, lighting consultant, innovation, switch to led, sourcing solution" />
+
+	<script src="{{ Util::assetUrl('js/init.js') }}" charset="utf-8"></script>
 
 
-	<meta property="og:title" content="Sourcing Reinvented - The global marketplace for LED Lighting | BuyAnyLight.com">
-	<meta property="og:type" content="article">
-	<meta property="og:url" content="https://buyanylight.com">
-	{{-- <meta property="og:image" content="https://buyanylight.com/images/logo-white.png"> --}}
-	<meta property="og:image" content="{{ Util::assetUrl('images/bal-logo-share.png') }}">
-	<meta property="og:description" content="BUY ANY LIGHT (BAL) has pioneered an innovation that changes the procedure of sourcing lights forever! The BAL platform benefits users with the best possible prices for any light, increased efficiency of lights procurement, access to the actual manufacturers of top global brands, increased profits, automation functions, and many other excellent features.">
-
-
-	<!-- //////////////////////////////////////////////////////////////////////// -->
-	<!-- Meta -->
 	{{-- preloader --}}
 	{{-- ////////////////////////////////////////////////////////////// --}}
 	{{-- <link rel="stylesheet" href="https://loading.io/css/loading.css"> --}}
 	<link rel="stylesheet" href="{{ Util::assetUrl('css/preloaders.css') }}">
+	<script>
+	$(window).on('load',function(){
+		// $('.preloader > div').css("display", "none");
+		$('.preloader > div').fadeOut();
+		$('.preloader').addClass('completed');
+		setTimeout(()=>{
+			$('.preloader').css("display", "none");
+			popUpIEO();
+		},1100);
+	});
+	setTimeout(function(){
+		$('.preloader > div').fadeOut();
+		$('.preloader').addClass('completed');
+		setTimeout(function(){
+			$('.preloader').css("display", "none");				
+		},1100);
+	},13000);	
+	</script>
 	{{-- ////////////////////////////////////////////////////////////// --}}
 	{{-- preloader --}}
 
+
+
+
+
+
+		
+	{{-- progress bar --}}
+	{{-- /////////////////////////////////////////////////////////////////////////////////////////// --}}
+	<script src="{{ Util::assetUrl('js/pace.1.0.0.min.js') }}" charset="utf-8"></script>	
+	<link rel="stylesheet" href="{{ Util::assetUrl('css/progress-bar.css') }}">
+	{{-- /////////////////////////////////////////////////////////////////////////////////////////// --}}
+	{{-- progress bar --}}		
+
+
+
+
+
 </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <body class="eupopup eupopup-bottom">
 
 	<div class="preloader">
@@ -370,7 +431,7 @@
 
 		function makeTimerPublic() {
 
-			var endTime = new Date("01 Febuary 2020 0:00:00 GMT+04:00");
+			var endTime = new Date("01 February 2020 0:00:00 GMT+04:00");
 			endTime = (Date.parse(endTime) / 1000);
 
 			var now = new Date();
@@ -436,23 +497,7 @@
 	});
 	//////////////////////////////////////////////////////////////// 
 	// if coreteam is in url 
-
-	// preloader
-	//////////////////////////////////////////////////////////////// 	
-	$(window).on('load',function(){
-		// $('.preloader > div').css("display", "none");
-		$('.preloader > div').fadeOut();
-		$('.preloader').addClass('completed');
-		setTimeout(()=>{
-			$('.preloader').css("display", "none");
-			popUpIEO();
-		},1100);
-	});
-	//////////////////////////////////////////////////////////////
-	// preloader
 	</script>
-
-
 
 
 

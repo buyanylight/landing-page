@@ -3,6 +3,33 @@
 	<head>
 
 
+		<!-- Meta -->
+		<!-- //////////////////////////////////////////////////////////////////////// -->
+		<meta name="author" content="Buyanylight.com">
+		<meta name="keywords" content="Light, chandelier, lamp, led strip lights, ceiling lights, pendant lighting, outdoor lights, led strip, wall lights, light fixtures, Cheapest lights, cheapest place to buy lights, LED lights, online lighting store, kitchen lights, bathroom lights, bedroom lights, led panel, flood lights, lighting design, architectural lighting, home lighting, smart home, find light, light finder, get light quotes, search lights online, buy lights online, Sourcing reinvented, project management, lighting mangement, lighting consultancy, lighting solutions, lighting project, lighting companies, lighting consultant, innovation, switch to led, sourcing solution" />
+
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://buyanylight.com">
+		<meta property="og:image" content="{{ Util::assetUrl('images/bal-logo-share.png') }}">
+
+
+
+		@section('meta-title')
+		<meta name="title" content="BuyAnyLight.com | Sourcing Reinvented - The global marketplace for LED Lighting">
+		<meta property="og:title" content="BuyAnyLight.com | Sourcing Reinvented - The global marketplace for LED Lighting">
+		@show
+
+		@section('meta-description')
+		<meta name="description" content="BUY ANY LIGHT (BAL) has pioneered an innovation that changes the procedure of sourcing lights forever! The BAL platform benefits users with the best possible prices for any light, increased efficiency of lights procurement, access to the actual manufacturers of top global brands, increased profits, automation functions, and many other excellent features." />
+		<meta property="og:description" content="BUY ANY LIGHT (BAL) has pioneered an innovation that changes the procedure of sourcing lights forever! The BAL platform benefits users with the best possible prices for any light, increased efficiency of lights procurement, access to the actual manufacturers of top global brands, increased profits, automation functions, and many other excellent features.">
+		@show
+
+		<!-- //////////////////////////////////////////////////////////////////////// -->
+		<!-- Meta -->
+
+
+
+
 	    <?php
 	        //disable fb pixel and google analytics for develpment or url is not loseweightorgetpaid.com	        
 	        $is_live = false;
@@ -77,45 +104,103 @@
 		@yield('head-css')
 
 
-	@yield('meta')
+		@yield('meta')
 
-	<!-- Meta -->
-	<!-- //////////////////////////////////////////////////////////////////////// -->
-	<meta name="author" content="Buyanylight.com">
-	<meta name="keywords" content="Light, chandelier, lamp, led strip lights, ceiling lights, pendant lighting, outdoor lights, led strip, wall lights, light fixtures, Cheapest lights, cheapest place to buy lights, LED lights, online lighting store, kitchen lights, bathroom lights, bedroom lights, led panel, flood lights, lighting design, architectural lighting, home lighting, smart home, find light, light finder, get light quotes, search lights online, buy lights online, Sourcing reinvented, project management, lighting mangement, lighting consultancy, lighting solutions, lighting project, lighting companies, lighting consultant, innovation, switch to led, sourcing solution" />
+		<script src="{{ Util::assetUrl('js/init.js') }}" charset="utf-8"></script>
+		
 
-	<meta property="og:type" content="article">
-	<meta property="og:url" content="https://buyanylight.com">
-	<meta property="og:image" content="{{ Util::assetUrl('images/bal-logo-share.png') }}">
+		@yield('head-javascript')
+		
+		{{-- preloader --}}
+		{{-- ////////////////////////////////////////////////////////////// --}}
+		<link rel="stylesheet" href="{{ Util::assetUrl('css/preloaders.css') }}">	
+		<script>
+			function detectOldIE() {
+			    var ua = window.navigator.userAgent;
+
+			    var msie = ua.indexOf('MSIE ');
+			    if (msie > 0) {
+			        // IE 10 or older => return version number
+			        // return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+			        return true;
+			    }
+
+			    var trident = ua.indexOf('Trident/');
+			    if (trident > 0) {
+			        // IE 11 => return version number
+			        var rv = ua.indexOf('rv:');
+			        // return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+			        return true;
+			    }
+
+			    var edge = ua.indexOf('Edge/');
+			    if (edge > 0) {
+			       	// Edge (IE 12+) => return version number
+			       	// return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+				    return false;
+			    }
+
+			    // other browser
+			    return false;
+			}
+
+			if(detectOldIE()){
+				//if IE 11 or <
+				$('.preloader').css("display", "none");
+				
+				popUpIEO();
+			} 
+			else { 
+				//if not IE 11
+				$(window).on('load',function(){
+					$('.preloader > div').fadeOut();
+					$('.preloader').addClass('completed');
+					setTimeout(function(){
+						$('.preloader').css("display", "none");
+						popUpIEO();
+					},1100);
+				});			
+			}
+
+			setTimeout(function(){
+				$('.preloader > div').fadeOut();
+				$('.preloader').addClass('completed');
+				setTimeout(function(){
+					$('.preloader').css("display", "none");				
+				},1100);
+			},13000);
+		</script>
+		{{-- ////////////////////////////////////////////////////////////// --}}
+		{{-- preloader --}}
 
 
 
-	@section('meta-title')
-	<meta name="title" content="BuyAnyLight.com | Sourcing Reinvented - The global marketplace for LED Lighting">
-	<meta property="og:title" content="BuyAnyLight.com | Sourcing Reinvented - The global marketplace for LED Lighting">
-	@show
 
-	@section('meta-description')
-	<meta name="description" content="BUY ANY LIGHT (BAL) has pioneered an innovation that changes the procedure of sourcing lights forever! The BAL platform benefits users with the best possible prices for any light, increased efficiency of lights procurement, access to the actual manufacturers of top global brands, increased profits, automation functions, and many other excellent features." />
-	<meta property="og:description" content="BUY ANY LIGHT (BAL) has pioneered an innovation that changes the procedure of sourcing lights forever! The BAL platform benefits users with the best possible prices for any light, increased efficiency of lights procurement, access to the actual manufacturers of top global brands, increased profits, automation functions, and many other excellent features.">
-	@show
-
-	<!-- //////////////////////////////////////////////////////////////////////// -->
-	<!-- Meta -->
-
-	@yield('head-javascript')
-	
-	{{-- preloader --}}
-	{{-- ////////////////////////////////////////////////////////////// --}}
-	<link rel="stylesheet" href="{{ Util::assetUrl('css/preloaders.css') }}">	
-	{{-- ////////////////////////////////////////////////////////////// --}}
-	{{-- preloader --}}
+		{{-- mylivechat --}}
+		{{-- <script type="text/javascript">function add_chatinline(){var hccid=42898044;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);} add_chatinline(); </script> --}}
 
 
-	{{-- mylivechat --}}
-	{{-- <script type="text/javascript">function add_chatinline(){var hccid=42898044;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);} add_chatinline(); </script> --}}
+
+
+
+		
+		{{-- progress bar --}}
+		{{-- /////////////////////////////////////////////////////////////////////////////////////////// --}}
+		<script src="{{ Util::assetUrl('js/pace.1.0.0.min.js') }}" charset="utf-8"></script>	
+		<link rel="stylesheet" href="{{ Util::assetUrl('css/progress-bar.css') }}">
+		{{-- /////////////////////////////////////////////////////////////////////////////////////////// --}}
+		{{-- progress bar --}}		
 
 	</head>
+
+
+
+
+
+
+
+
+
 	<body class="eupopup eupopup-bottom">
     	@if($is_live)
 		<!-- Google Tag Manager (noscript) -->
@@ -124,25 +209,10 @@
 		<!-- End Google Tag Manager (noscript) -->
 		@endif
 
+
+
+
 		<div class="preloader">
-			{{-- <div class="sk-folding-cube">
-				<div class="sk-cube1 sk-cube"></div>
-				<div class="sk-cube2 sk-cube"></div>
-				<div class="sk-cube4 sk-cube"></div>
-				<div class="sk-cube3 sk-cube"></div>
-			</div> --}}
-
-			{{-- <div class="lds-ripple"><div></div><div></div></div> --}}
-
-			{{-- <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> --}}
-			
-			{{-- <div class="bal-loading-logo">
-				<div class="ld ld-shadow">
-					<img src="{{ Util::assetUrl('images/logos/logo-white2.png') }}" 
-					alt="BuyAnyLight">
-				</div>
-			</div> --}}
-
 			<div style="z-index: 1032; 
 			display: inline-flex;
 		    justify-content: center;
@@ -160,6 +230,10 @@
 				</div>
 			</div>
 		</div>
+
+
+
+
 		@include('includes.navbar')
 		@yield('content')
 
@@ -442,8 +516,8 @@
 
 	
 	function makeTimerPrivate() {
-			var endTime = new Date("01 November 2019 0:00:00 GMT+04:00");
-			// var endTime = new Date("31 January 2020 0:00:00 GMT+04:00");
+			// var endTime = new Date("01 November 2019 0:00:00 GMT+04:00");
+			var endTime = new Date("31 January 2020 0:00:00 GMT+04:00");
 			endTime = (Date.parse(endTime) / 1000);
 
 			var now = new Date();
@@ -469,35 +543,32 @@
 	setInterval(function() { makeTimerPrivate(); }, 1000);
 
 
-
-
 	function makeTimerPublic() {
-			// var endTime = new Date("01 December 2019 0:00:00 GMT+04:00");
-			var endTime = new Date("01 Febuary 2020 0:00:00 GMT+04:00");
-			endTime = (Date.parse(endTime) / 1000);
 
-			var now = new Date();
-			now = (Date.parse(now) / 1000);
+		var endTime = new Date("01 February 2020 0:00:00 GMT+04:00");
+		endTime = (Date.parse(endTime) / 1000);
 
-			var timeLeft = endTime - now;
+		var now = new Date();
+		now = (Date.parse(now) / 1000);
 
-			var days = Math.floor(timeLeft / 86400); 
-			var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
-			var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
-			var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
-  
-			if (hours < "10") { hours = "0" + hours; }
-			if (minutes < "10") { minutes = "0" + minutes; }
-			if (seconds < "10") { seconds = "0" + seconds; }
+		var timeLeft = endTime - now;
 
-			$("#days1").html("<span style='font-size: 14px;'>" + days +" </span>" + "<br><span>Days</span>");
-			$("#hours1").html("<span style='font-size: 14px;'>" + hours +" </span>" + "<br><span>Hours</span>");
-			$("#minutes1").html("<span style='font-size: 14px;'>" + minutes +" </span>" + "<br><span>Minutes</span>");
-			$("#seconds1").html("<span style='font-size: 14px;'>" + seconds +" </span>" + "<br><span>Seconds</span>");       
+		var days = Math.floor(timeLeft / 86400); 
+		var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+		var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+		var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+		if (hours < "10") { hours = "0" + hours; }
+		if (minutes < "10") { minutes = "0" + minutes; }
+		if (seconds < "10") { seconds = "0" + seconds; }
+
+		$("#days1").html("<span style='font-size: 14px;'>" + days +" </span>" + "<br><span>Days</span>");
+		$("#hours1").html("<span style='font-size: 14px;'>" + hours +" </span>" + "<br><span>Hours</span>");
+		$("#minutes1").html("<span style='font-size: 14px;'>" + minutes +" </span>" + "<br><span>Minutes</span>");
+		$("#seconds1").html("<span style='font-size: 14px;'>" + seconds +" </span>" + "<br><span>Seconds</span>");       
 
 	}
 	setInterval(function() { makeTimerPublic(); }, 1000);
-
 
 
 
@@ -548,65 +619,7 @@
 	});
 	//////////////////////////////////////////////////////////////// 
 	// if coreteam is in url 
-
-
-	{{-- preloader --}}
-	{{-- ////////////////////////////////////////////////////////////// --}}
-		function detectOldIE() {
-		    var ua = window.navigator.userAgent;
-
-		    var msie = ua.indexOf('MSIE ');
-		    if (msie > 0) {
-		        // IE 10 or older => return version number
-		        // return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
-		        return true;
-		    }
-
-		    var trident = ua.indexOf('Trident/');
-		    if (trident > 0) {
-		        // IE 11 => return version number
-		        var rv = ua.indexOf('rv:');
-		        // return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
-		        return true;
-		    }
-
-		    var edge = ua.indexOf('Edge/');
-		    if (edge > 0) {
-		       	// Edge (IE 12+) => return version number
-		       	// return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
-			    return false;
-		    }
-
-		    // other browser
-		    return false;
-		}
-
-		if(detectOldIE()){
-			//if IE 11 or <
-			$('.preloader').css("display", "none");
-			
-			popUpIEO();
-		} 
-		else { 
-			//if not IE 11
-			$(window).on('load',function(){
-				$('.preloader > div').fadeOut();
-				$('.preloader').addClass('completed');
-				setTimeout(function(){
-					$('.preloader').css("display", "none");
-
-					popUpIEO();
-
-				},1100);
-			});			
-		}
-	{{-- ////////////////////////////////////////////////////////////// --}}
-	{{-- preloader --}}
-
 	</script>
-
-
-
 
 
 
