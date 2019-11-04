@@ -69,12 +69,12 @@ class TokenController extends Controller
             return view('mobile.ieo', [
 				'tokens' => $all_curr
 
-            ]);
+            ])->with('showpopup',true);
         } else {
             return view('ieo', [
 				'tokens' => $all_curr
 
-            ]);
+            ])->with('showpopup',true);
         }
 	}
 

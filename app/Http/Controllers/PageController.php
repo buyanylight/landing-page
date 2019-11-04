@@ -18,9 +18,9 @@ class PageController extends Controller
 
     
         if($isMobile || $isTablet) {
-            return view('mobile.index');
+            return view('mobile.index')->with('showpopup',true);
         } else {
-            return view('welcome');
+            return view('welcome')->with('showpopup',true);
         }
 
     }
