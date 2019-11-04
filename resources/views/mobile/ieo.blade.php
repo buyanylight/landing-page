@@ -1797,10 +1797,11 @@
 								$datas[] = [ 'style'=>"", 'title'=>"Airdrop King", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/marketing-partners/airdropking.png", ];
 								$datas[] = [ 'style'=>"", 'title'=>"Webotic.ae", 'link'=>"http://webotic.ae", 'src'=>"images/ieo/marketing-partners/webotic.png", ];
 								$datas[] = [ 'style'=>"", 'title'=>"Airdrop Alert", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/marketing-partners/airdropalert.png", ];
+								$datas[] = [ 'style'=>"max-width: 180px;", 'title'=>"Vitro Services", 'link'=>"https://vitor-services.company", 'src'=>"images/ieo/marketing-partners/vitor-services2.png", ];
 							?>
 							@foreach($datas as $data)
 							<a href="{{ $data['link'] }}" target="_blank">
-								<img title="{{ $data['title'] }}" alt="{{ $data['title'] }}" src="{{ Util::assetUrl($data['src']) }}">
+								<img title="{{ $data['title'] }}" alt="{{ $data['title'] }}" src="{{ Util::assetUrl($data['src']) }}" style="{{ $data['style'] }}">
 							</a>
 							@endforeach
 
