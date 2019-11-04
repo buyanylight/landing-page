@@ -96,7 +96,9 @@
 		$('.preloader').addClass('completed');
 		setTimeout(()=>{
 			$('.preloader').css("display", "none");
+			@if(isset($showpopup) && $showpopup)
 			popUpIEO();
+			@endif
 		},1100);
 	});
 	setTimeout(function(){
