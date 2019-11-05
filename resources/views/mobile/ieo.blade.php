@@ -195,8 +195,7 @@
 							<b>BAL Initial Exchange <br> Offering (IEO)</b>
 						</h3>
 
-						{{-- style="height: 65px; position: absolute; top: 0px; right: 30px;"  --}}
-						<a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
+						{{-- <a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
 						<img border="0" 
 						style="height: 65px;" 						
 						src="{{ Util::assetUrl('images/ieo/partners/icobench.png') }}" 						
@@ -204,13 +203,29 @@
 						</a>
 
 
-						{{-- style="height: 65px; position: absolute; top: 0px; right: 50px;"  --}}
 						<a href="https://icomarks.com/ico/buyanylight" target="_blank" rel="nofollow" title="BuyAnyLight ICO">
 						<img border="0" 
 						style="height: 65px; margin-left: 5px;" 
 						src="{{ Util::assetUrl('images/ieo/icomark.png') }}" 
 						alt="BuyAnyLight ICO Rating"/>
+						</a> --}}
+
+
+
+						<a href="https://icobench.com/ico/buyanylight-bal" 
+						target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICObench">
+							<img border="0" src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" 
+							style="height: 65px;" 						
+							alt="BuyAnyLight (BAL) ICO rating"/>
 						</a>
+						
+						<a href="https://icomarks.com/ico/buyanylight" 
+						target="_blank" rel="nofollow" title="BuyAnyLight ICO">
+							<img border="0" src="https://icomarks.com/widget/b/buyanylight/square.svg"
+							style="height: 65px; margin-left: 5px;" 
+							alt="BuyAnyLight ICO Rating"/>
+						</a>
+
 					</div>
 				</div>
 				<div class="col-12">
@@ -1828,10 +1843,10 @@
 						<h2 class="text-white mt-5 mb-4">Ratings</h2>
 						<div class="icons">
 							<a style="width: 150px;" href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBENCH">
-								<img style="" src="{{ Util::assetUrl('images/ieo/partners/icobench.png') }}" alt="BuyAnyLight (BAL) ICO rating"/>
+								<img style="" src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" alt="BuyAnyLight (BAL) ICO rating"/>
 							</a>
 							<a style="width: 150px;" href="https://icomarks.com/ico/buyanylight" target="_blank"  title="BuyAnyLight ICOMARKS">
-								<img style="" src="{{ Util::assetUrl('images/ieo/icomark.png') }}" alt="BuyAnyLight ICOMARKS"/>
+								<img style="" src="https://icomarks.com/widget/b/buyanylight/square.svg" alt="BuyAnyLight ICOMARKS"/>
 							</a>
 							<a style="width: 165px;" href="https://icoholder.com/en/buyanylight-31234" target="_blank"  title="BuyAnyLight ICOHOLDER">
 								<img style="" src="{{ Util::assetUrl('images/ieo/partners/icoholder.png') }}" alt="BuyAnyLight ICOHOLDER"/>
