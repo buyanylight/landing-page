@@ -1634,11 +1634,21 @@
 								</tr>
 								<tr>
 									<td>IEO Round token sale date:</td>
-									<td>December 1<sup>st</sup>, 2019</td>
+									<td>February 1<sup>st</sup>, 2020</td>									
 								</tr>
 							</table>
 						</div>
 					</div>
+					{{-- <div class="col-md-6 offset-md-3">
+						<div>
+							<table class="text-left w-100" id="token-info"> 
+								<tr>
+									<td>Pre-IEO Round date:</td>
+									<td>November 1<sup>st</sup>, 2019</td>
+								</tr>
+							</table>
+						</div>
+					</div> --}}
 				</div>
 			</div>
 		</div>
