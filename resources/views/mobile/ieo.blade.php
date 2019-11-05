@@ -1296,7 +1296,7 @@
 	<div class="container pt-5 pb-5">
 		<h3 class="pb-3 text-center">
 			<b>
-				<span class="header-text">Custom Token</span>
+				<span class="header-text">BAL Crowd Sale</span>
 				<span >Information</span>
 			</b>
 		</h3>
@@ -1327,7 +1327,8 @@
 					<td>Yes</td>
 				</tr>
 				<tr>
-					<td>Supply reserved for Private Round:</td>
+					{{-- <td>Supply reserved for Private Round:</td> --}}
+					<td>Supply reserved for Private & <br>Pre-IEO Sale Round combined:</td>
 					<td>5.5 Million (10% of the total supply)</td>
 				</tr>
 				<tr>
@@ -1347,24 +1348,32 @@
 					<td>BTC, ETH, EUR, USD</td>
 				</tr>
 				<tr>
-					<td>Private round price:</td>
-					<td>1BAL = USD 0.25</td>
-				</tr>
-				<tr>
-					<td>IEO token price:</td>
-					<td>1BAL = USD 0.30303</td>
-				</tr>
-				<tr>
-					<td>Seed Round date:</td>
+					<td>Seed Round Date:</td>
 					<td>Febuary 1<sup>st</sup>, 2019 (Sold out)</td>
 				</tr>
 				<tr>
-					<td>Private Round date:</td>
+					<td>Private Starting Date:</td>
 					<td>October 1<sup>st</sup>, 2019</td>
 				</tr>
 				<tr>
-					<td>IEO Round token sale date:</td>
+					<td>Private Sale Price:</td>
+					<td>1BAL = USD 0.2</td>
+				</tr>
+				<tr>
+					<td>Pre-IEO Starting Date:</td>
+					<td>November 1<sup>st</sup>, 2019</td>									
+				</tr>
+				<tr>
+					<td>Pre-IEO Sale Price:</td>
+					<td>1BAL = USD 0.25</td>
+				</tr>
+				<tr>
+					<td>IEO Starting Date:</td>
 					<td>February 1<sup>st</sup>, 2020</td>
+				</tr>
+				<tr>
+					<td>IEO Sale Price:</td>
+					<td>1BAL = USD 0.30303</td>
 				</tr>
 			</table>
 		</div>

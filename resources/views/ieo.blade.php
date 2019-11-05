@@ -1547,14 +1547,21 @@
 	</div>
 </section>
 
+<style>
+#custom-token-info table td {
+    min-height: 55px;
+    height: 55px;
+    padding: 0 15px;
+}
+</style>
 
-<section class="section-7">
+<section class="section-7" id="custom-token-info">
 	<div class="pt-5">
 		<div class="container pt-5 pb-5">
 			<h3 class="text-center">
 				<strong>
 					<span class="header-text">
-						Custom Token
+						BAL Crowd Sale
 					</span>
 					<span class="text-dark">
 						Information
@@ -1583,21 +1590,26 @@
 									<td>Ethereum</td>
 								</tr>
 								<tr>
+									<td>Accepts:</td>
+									<td>BTC, ETH, EUR, USD</td>
+								</tr>								
+								<tr>
 									<td>Total supply:</td>
 									<td>55 Million (100%)</td>
 								</tr>
 								<tr>
-									<td>Know Your Customer (KYC):</td>
-									<td>Yes</td>
+									<td>Private Sale price:</td>
+									<td>1BAL = USD 0.2</td>
 								</tr>
 								<tr>
-									<td>Supply reserved for Private Round:</td>
-									<td>5.5 Million (10% of the total supply)</td>
+									<td>Pre-IEO Sale price:</td>
+									<td>1BAL = USD 0.25</td>
 								</tr>
 								<tr>
-									<td>Supply reserved for IEO:</td>
-									<td>16.5 Million (30% of the total supply)</td>
-								</tr>								
+									<td>IEO Sale price:</td>
+									<td>1BAL = USD 0.30303</td>
+								</tr>
+
 							</table>
 						</div>
 					</div>
@@ -1613,42 +1625,43 @@
 									<td>8 Million USD</td>
 								</tr>
 								<tr>
-									<td>Accepts:</td>
-									<td>BTC, ETH, EUR, USD</td>
+									<td>Know Your Customer (KYC):</td>
+									<td>Yes</td>
 								</tr>
 								<tr>
-									<td>Private round price:</td>
-									<td>1BAL = USD 0.25</td>
+									<td>Supply reserved for Private & <br>Pre-IEO Sale Round combined:</td>
+									<td>5.5 Million (10% of the total supply)</td>
 								</tr>
 								<tr>
-									<td>IEO token price:</td>
-									<td>1BAL = USD 0.30303</td>
+									<td>Supply reserved for IEO:</td>
+									<td>16.5 Million (30% of the total supply)</td>
 								</tr>
 								<tr>
 									<td>Seed Round date:</td>
 									<td>Febuary 1<sup>st</sup>, 2019 (Sold out)</td>
 								</tr>
 								<tr>
-									<td>Private Round date:</td>
+									<td>Private Starting Date:</td>
 									<td>October 1<sup>st</sup>, 2019</td>
 								</tr>
 								<tr>
-									<td>IEO Round token sale date:</td>
-									<td>February 1<sup>st</sup>, 2020</td>									
+									<td>Pre-IEO Starting Date:</td>
+									<td>November 1<sup>st</sup>, 2019</td>									
 								</tr>
+								<tr>
+									<td>IEO Starting Date:</td>
+									<td>February 1<sup>st</sup>, 2020</td>
+								</tr>
+
 							</table>
 						</div>
 					</div>
-					{{-- <div class="col-md-6 offset-md-3">
+					<div class="col-md-6 offset-md-3">
 						<div>
 							<table class="text-left w-100" id="token-info"> 
-								<tr>
-									<td>Pre-IEO Round date:</td>
-									<td>November 1<sup>st</sup>, 2019</td>
-								</tr>
 							</table>
 						</div>
-					</div> --}}
+					</div>
 				</div>
 			</div>
 		</div>
