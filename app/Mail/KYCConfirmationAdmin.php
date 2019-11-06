@@ -35,14 +35,14 @@ class KYCConfirmationAdmin extends Mailable
 
          if (request()->hasFile('selfie_id_pic')) {
             $name = explode(' ', $this->kyc_details->user_name);
-            $file_name = date('YmdHis') . '-' .$name[0].'-'.request()->file('selfie_id_pic')->getClientOriginalName() ;
-            request()->file('selfie_id_pic')->move(public_path() . '/uploads/', $file_name);  
+            $selfie_file_name = date('YmdHis') . '-' .$name[0].'-'.request()->file('selfie_id_pic')->getClientOriginalName() ;
+            request()->file('selfie_id_pic')->move(public_path() . '/uploads/', $selfie_file_name);  
         }
 
         if (request()->hasFile('user_id_pic')) {
             $name = explode(' ', $this->kyc_details->user_name);
-            $selfie_file_name = date('YmdHis') . '-' .$name[0].'-'. request()->file('user_id_pic')->getClientOriginalName();
-            request()->file('user_id_pic')->move(public_path() . '/uploads/', $selfie_file_name);  
+            $file_name = date('YmdHis') . '-' .$name[0].'-'. request()->file('user_id_pic')->getClientOriginalName();
+            request()->file('user_id_pic')->move(public_path() . '/uploads/', $file_name);  
         }
 
 
