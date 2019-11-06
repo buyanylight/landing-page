@@ -148,7 +148,9 @@
 				//if IE 11 or <
 				$('.preloader').css("display", "none");
 				
+				@if(isset($showpopup) && $showpopup)
 				popUpIEO();
+				@endif
 			} 
 			else { 
 				//if not IE 11
@@ -157,7 +159,9 @@
 					$('.preloader').addClass('completed');
 					setTimeout(function(){
 						$('.preloader').css("display", "none");
+						@if(isset($showpopup) && $showpopup)
 						popUpIEO();
+						@endif
 					},1100);
 				});			
 			}

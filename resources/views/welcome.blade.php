@@ -80,7 +80,7 @@
 
 
 
-			<a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
+			{{-- <a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">
 			<img border="0" 
 			style="height: 85px; position: absolute; bottom: 0px; right: -55px;" 
 			src="{{ Util::assetUrl('images/ieo/partners/icobench.png') }}" 
@@ -92,7 +92,23 @@
 			style="height: 85px; position: absolute; bottom: 0px; right: -155px;" 
 			src="{{ Util::assetUrl('images/ieo/icomark.png') }}" 
 			alt="BuyAnyLight ICO Rating"/>
+			</a> --}}
+
+			<a href="https://icobench.com/ico/buyanylight-bal" 
+			target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICObench">
+				<img border="0" src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" 
+				style="height: 85px; position: absolute; bottom: 0px; right: -55px;" 
+				alt="BuyAnyLight (BAL) ICO rating"/>
 			</a>
+			
+			<a href="https://icomarks.com/ico/buyanylight" 
+			target="_blank" rel="nofollow" title="BuyAnyLight ICO">
+				<img border="0" src="https://icomarks.com/widget/b/buyanylight/square.svg"
+				style="height: 85px; position: absolute; bottom: 0px; right: -155px;" 
+				alt="BuyAnyLight ICO Rating"/>
+			</a>
+
+
 
 			<?php /*
 			<div class="mt-1">
@@ -133,12 +149,7 @@
 			*/ ?>
 		</div>
 
-		{{-- <div class="text-white" style="height: 100%; width: 160px; position: relative;">
-			<img border="0" 
-			style="height: 100px; position: absolute; bottom: 65px;" 
-			src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" 
-			alt="BuyAnyLight (BAL) ICO rating"/>
-		</div> --}}
+
 	</div>
 </section>
 <section class="section-2" style="{{ ($agent->is('IE')) ? '' : 'height: auto' }}">  

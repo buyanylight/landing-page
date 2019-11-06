@@ -195,8 +195,7 @@
 							<b>BAL Initial Exchange <br> Offering (IEO)</b>
 						</h3>
 
-						{{-- style="height: 65px; position: absolute; top: 0px; right: 30px;"  --}}
-						<a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
+						{{-- <a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
 						<img border="0" 
 						style="height: 65px;" 						
 						src="{{ Util::assetUrl('images/ieo/partners/icobench.png') }}" 						
@@ -204,13 +203,29 @@
 						</a>
 
 
-						{{-- style="height: 65px; position: absolute; top: 0px; right: 50px;"  --}}
 						<a href="https://icomarks.com/ico/buyanylight" target="_blank" rel="nofollow" title="BuyAnyLight ICO">
 						<img border="0" 
 						style="height: 65px; margin-left: 5px;" 
 						src="{{ Util::assetUrl('images/ieo/icomark.png') }}" 
 						alt="BuyAnyLight ICO Rating"/>
+						</a> --}}
+
+
+
+						<a href="https://icobench.com/ico/buyanylight-bal" 
+						target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICObench">
+							<img border="0" src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" 
+							style="height: 65px;" 						
+							alt="BuyAnyLight (BAL) ICO rating"/>
 						</a>
+						
+						<a href="https://icomarks.com/ico/buyanylight" 
+						target="_blank" rel="nofollow" title="BuyAnyLight ICO">
+							<img border="0" src="https://icomarks.com/widget/b/buyanylight/square.svg"
+							style="height: 65px; margin-left: 5px;" 
+							alt="BuyAnyLight ICO Rating"/>
+						</a>
+
 					</div>
 				</div>
 				<div class="col-12">
@@ -1296,7 +1311,7 @@
 	<div class="container pt-5 pb-5">
 		<h3 class="pb-3 text-center">
 			<b>
-				<span class="header-text">Custom Token</span>
+				<span class="header-text">BAL Crowd Sale</span>
 				<span >Information</span>
 			</b>
 		</h3>
@@ -1327,7 +1342,8 @@
 					<td>Yes</td>
 				</tr>
 				<tr>
-					<td>Supply reserved for Private Round:</td>
+					{{-- <td>Supply reserved for Private Round:</td> --}}
+					<td>Supply reserved for Private & <br>Pre-IEO Sale Round combined:</td>
 					<td>5.5 Million (10% of the total supply)</td>
 				</tr>
 				<tr>
@@ -1347,24 +1363,32 @@
 					<td>BTC, ETH, EUR, USD</td>
 				</tr>
 				<tr>
-					<td>Private round price:</td>
-					<td>1BAL = USD 0.25</td>
-				</tr>
-				<tr>
-					<td>IEO token price:</td>
-					<td>1BAL = USD 0.30303</td>
-				</tr>
-				<tr>
-					<td>Seed Round date:</td>
+					<td>Seed Round Date:</td>
 					<td>Febuary 1<sup>st</sup>, 2019 (Sold out)</td>
 				</tr>
 				<tr>
-					<td>Private Round date:</td>
+					<td>Private Starting Date:</td>
 					<td>October 1<sup>st</sup>, 2019</td>
 				</tr>
 				<tr>
-					<td>IEO Round token sale date:</td>
-					<td>December 1<sup>st</sup>, 2019</td>
+					<td>Private Sale Price:</td>
+					<td>1BAL = USD 0.2</td>
+				</tr>
+				<tr>
+					<td>Pre-IEO Starting Date:</td>
+					<td>November 1<sup>st</sup>, 2019</td>									
+				</tr>
+				<tr>
+					<td>Pre-IEO Sale Price:</td>
+					<td>1BAL = USD 0.25</td>
+				</tr>
+				<tr>
+					<td>IEO Starting Date:</td>
+					<td>February 1<sup>st</sup>, 2020</td>
+				</tr>
+				<tr>
+					<td>IEO Sale Price:</td>
+					<td>1BAL = USD 0.30303</td>
 				</tr>
 			</table>
 		</div>
@@ -1797,10 +1821,11 @@
 								$datas[] = [ 'style'=>"", 'title'=>"Airdrop King", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/marketing-partners/airdropking.png", ];
 								$datas[] = [ 'style'=>"", 'title'=>"Webotic.ae", 'link'=>"http://webotic.ae", 'src'=>"images/ieo/marketing-partners/webotic.png", ];
 								$datas[] = [ 'style'=>"", 'title'=>"Airdrop Alert", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/marketing-partners/airdropalert.png", ];
+								$datas[] = [ 'style'=>"max-width: 180px;", 'title'=>"Vitro Services", 'link'=>"https://vitor-services.company", 'src'=>"images/ieo/marketing-partners/vitor-services2.png", ];
 							?>
 							@foreach($datas as $data)
 							<a href="{{ $data['link'] }}" target="_blank">
-								<img title="{{ $data['title'] }}" alt="{{ $data['title'] }}" src="{{ Util::assetUrl($data['src']) }}">
+								<img title="{{ $data['title'] }}" alt="{{ $data['title'] }}" src="{{ Util::assetUrl($data['src']) }}" style="{{ $data['style'] }}">
 							</a>
 							@endforeach
 
@@ -1818,10 +1843,10 @@
 						<h2 class="text-white mt-5 mb-4">Ratings</h2>
 						<div class="icons">
 							<a style="width: 150px;" href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBENCH">
-								<img style="" src="{{ Util::assetUrl('images/ieo/partners/icobench.png') }}" alt="BuyAnyLight (BAL) ICO rating"/>
+								<img style="" src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" alt="BuyAnyLight (BAL) ICO rating"/>
 							</a>
 							<a style="width: 150px;" href="https://icomarks.com/ico/buyanylight" target="_blank"  title="BuyAnyLight ICOMARKS">
-								<img style="" src="{{ Util::assetUrl('images/ieo/icomark.png') }}" alt="BuyAnyLight ICOMARKS"/>
+								<img style="" src="https://icomarks.com/widget/b/buyanylight/square.svg" alt="BuyAnyLight ICOMARKS"/>
 							</a>
 							<a style="width: 165px;" href="https://icoholder.com/en/buyanylight-31234" target="_blank"  title="BuyAnyLight ICOHOLDER">
 								<img style="" src="{{ Util::assetUrl('images/ieo/partners/icoholder.png') }}" alt="BuyAnyLight ICOHOLDER"/>
