@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -97,14 +97,14 @@ eval("// require('./bootstrap');\n// $(window).scroll(function(){\n//     $('nav
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!**************************************!*\
   !*** multi ./resources/js/mobile.js ***!
   \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\js\mobile.js */"./resources/js/mobile.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\js\mobile.js */"./resources/js/mobile.js");
 
 
 /***/ })

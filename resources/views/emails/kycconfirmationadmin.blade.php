@@ -16,7 +16,7 @@
 		<li style="padding-top: 10px;"><b>Name:</b> {{ $name }}</li>
 		<li style="padding-top: 10px;"><b>Email:</b> {{ $email }}</li>
 		<li style="padding-top: 10px;"><b>Mobile:</b> {{ $number }}</li>
-		<li style="padding-top: 10px;"><b>BAL Tokens Total Value:</b> {{ $bal_amt }} BAL</li>
+		<li style="padding-top: 10px;"><b>Total BAL Tokens:</b> {{ $bal_amt }} BAL</li>
 		@if(!empty($later_bank))
 		<li style="padding-top: 10px;"><b>Amount Paid*:</b> {{ $amount }}</li>
 		@else
