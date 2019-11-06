@@ -1848,6 +1848,9 @@
 							<a style="width: 150px;" href="https://icomarks.com/ico/buyanylight" target="_blank"  title="BuyAnyLight ICOMARKS">
 								<img style="" src="https://icomarks.com/widget/b/buyanylight/square.svg" alt="BuyAnyLight ICOMARKS"/>
 							</a>
+							<a style="width: 150px;" href="https://coincodex.com/ieo/buyanylight/" target="_blank" rel="nofollow" title="BuyAnyLight COINCODEX">
+								<img style="" src="{{ Util::assetUrl('images/ieo/partners/coincodex.png') }}" alt="BuyAnyLight COINCODEX"/>
+							</a>
 							<a style="width: 165px;" href="https://icoholder.com/en/buyanylight-31234" target="_blank"  title="BuyAnyLight ICOHOLDER">
 								<img style="" src="{{ Util::assetUrl('images/ieo/partners/icoholder.png') }}" alt="BuyAnyLight ICOHOLDER"/>
 							</a>
