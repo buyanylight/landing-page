@@ -1,7 +1,5 @@
 {
     "/js/app.js": "/js/app.js",
-    "/js/init.js": "/js/init.js",
-    "/css/progress-bar.css": "/css/progress-bar.css",
     "/css/app.css": "/css/app.css",
     "/css/privacy.css": "/css/privacy.css",
     "/css/mytower.css": "/css/mytower.css",
@@ -14,6 +12,5 @@
     "/css/slick-theme.css": "/css/slick-theme.css",
     "/css/preloaders.css": "/css/preloaders.css",
     "/css/mobile.css": "/css/mobile.css",
-    "/js/mobile.js": "/js/mobile.js",
-    "/js/progress-bar.js": "/js/progress-bar.js"
+    "/js/mobile.js": "/js/mobile.js"
 }
