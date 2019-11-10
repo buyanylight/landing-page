@@ -83,7 +83,7 @@
 			$downloads[] = [ "link"=>"brochures/MyTower_BAL.pdf", "title"=>"My Tower Brochures", ];
 
 			$downloads[] = [ "link"=>"one-pagers/BuyAnyLight-IEO.pdf", "title"=>"IEO One Pager", ];
-			$downloads[] = [ "link"=>"papers/Whitepaper_1.0.pdf", "title"=>"White Paper", ];
+			$downloads[] = [ "link"=>"papers/Whitepaper_1.1.pdf", "title"=>"White Paper", ];
 			$downloads[] = [ "link"=>"papers/Yellowpaper_1.0.pdf", "title"=>"Yellow Paper", ];
 			$downloads[] = [ "link"=>"BAL_Token_Sale_Agreement.pdf", "title"=>"Token Sale Agreement", ];            
 		?>  

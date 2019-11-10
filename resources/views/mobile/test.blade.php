@@ -177,7 +177,7 @@
 						type="button" 
 						target="_blank" 
 						class="btn btn-ieo-middle">
-							<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" 
+							<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" 
 							target="_blank">
 								White Paper
 							</a>
