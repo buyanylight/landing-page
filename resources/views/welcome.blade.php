@@ -445,7 +445,7 @@
 						</div>
 					</div>    
 				</div>
-				<div class="card bg-dark mr-2">
+		<!-- 		<div class="card bg-dark mr-2">
 					<div class="card-body p-0">
 						<img class="" src="{{ Util::assetUrl('images/products/light3.jpg') }}" alt="" width="100%">
 						<div class="card-text text-white p-2 pt-3">
@@ -469,7 +469,7 @@
 							</div>
 						</div>
 					</div>    
-				</div>
+				</div> -->
 				<div class="card bg-dark mr-2">
 					<div class="card-body p-0">
 						<img class="" src="{{ Util::assetUrl('images/products/light4.jpg') }}" alt="" width="100%">
