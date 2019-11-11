@@ -365,7 +365,7 @@
 							&nbsp;
 					One Pager
 				</a>
-				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
+				<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
 					<i class="far fa-file-pdf"></i>
 					&nbsp;
 					White Paper
@@ -641,7 +641,7 @@
 							&nbsp;
 					One Pager
 				</a>
-				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
+				<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
 					<i class="far fa-file-pdf"></i>
 					&nbsp;
 					White Paper
@@ -1979,7 +1979,7 @@
 							&nbsp;
 					One Pager
 				</a>
-				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
+				<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
 					<i class="far fa-file-pdf"></i>
 					&nbsp;
 					White Paper

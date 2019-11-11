@@ -203,7 +203,7 @@
 		
 
 			$downloads_ieo[] = [ "link"=>"one-pagers/BuyAnyLight-IEO.pdf", "title"=>"BuyAnyLight <br> IEO One Pager", ];
-			$downloads_ieo[] = [ "link"=>"papers/Whitepaper_1.0.pdf", "title"=>"BuyAnyLight <br> White Paper", ];
+			$downloads_ieo[] = [ "link"=>"papers/Whitepaper_1.1.pdf", "title"=>"BuyAnyLight <br> White Paper", ];
 			$downloads_ieo[] = [ "link"=>"papers/Yellowpaper_1.0.pdf", "title"=>"BuyAnyLight <br> Yellow Paper", ];
 			$downloads_ieo[] = [ "link"=>"BAL_Token_Sale_Agreement.pdf", "title"=>"Token Sale <br>Agreement", ];			
 		?>
