@@ -926,7 +926,7 @@
 					<h4 class="card-title pt-1 pb-3">
 						<b><span class="text-BAL">Light</span>Finder</b>
 					</h4>
-					<a data-fancybox href="https://www.youtube.com/embed/OBm3CPqiXt8?rel=0&enablejsapi=1" class=" text-white package-link">
+					<a data-fancybox href="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" class=" text-white package-link">
 					<div class="package-one">
 						<div class="d-flex align-items-end pb-2 pl-2 h-100">
 							<div>
