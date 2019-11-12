@@ -8,9 +8,6 @@
                         <li class="mt-3">
                             <a href="{{ route('home') }}#ninety" class="text-white">How it works</a>
                         </li>
-                        <li class="mt-3">
-                            <a href="{{ route('home') }}#balvsretail" class="text-white">BAL vs. retail</a>
-                         </li>
                          <li class="mt-3">
                             <a href="{{ route('home') }}#package" class="text-white">Packages</a>
                          </li>
