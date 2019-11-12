@@ -19,7 +19,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="{{ route('home') }}#ninety">How it works</a>
-                        <a class="dropdown-item" href="{{ route('home') }}#balvsretail">BAL vs. retail</a>
+                  <!--       <a class="dropdown-item" href="{{ route('home') }}#balvsretail">BAL vs. retail</a> -->
                         <a class="dropdown-item" href="{{ route('home') }}#about">About BAL</a>
                         <a class="dropdown-item" href="{{ route('home') }}#why-bal">Why BAL</a>
                     </div>
