@@ -365,7 +365,7 @@
 							&nbsp;
 					One Pager
 				</a>
-				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
+				<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
 					<i class="far fa-file-pdf"></i>
 					&nbsp;
 					White Paper
@@ -388,6 +388,202 @@
 		</div>
 	</div>
 </section>
+<!-- <section class="section-5" id="balvsretail">
+	<div class="section-5-container bg-black h-100">
+		<div class="container pt-5">
+			<h3 class="text-white">
+				<b><span class="text-BAL">BUYANYLIGHT</span> PRICE COMPARISON</b>
+			</h3>
+		</div>
+		<div class="container p-5 pl-0">
+			<div class="center">
+				<div class="card bg-dark mr-2">
+					<div class="card-body p-0">
+						<img class="" src="{{ Util::assetUrl('images/products/light2.jpg') }}" alt="" width="100%">
+						<div class="card-text text-white p-2 pt-3">
+							<div class="row">
+								<div class="col-md-6 d-inline-flex flex-column justify-content-between">
+									<img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="" width="100%" style="{{ ($agent->is('IE')) ? 'height:100%' : '' }}">
+									<p class="font-weight-bold text-center pt-4">
+										$102
+									</p>       
+								</div>
+								{{-- <div class="col-md-1">|</div> --}}
+								<div class="col-md-6 d-inline-flex flex-column justify-content-between">
+									{{-- <img class="card-img" src="{{ Util::assetUrl('images/retails/flos.png') }}" alt=""> --}}
+									<p class="other-inter-brands text-center">Other International Brands</p>
+									<p class="font-weight-bold text-center pt-4">
+										$3501
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-dark mr-2">
+					<div class="card-body p-0">
+						<img class="" src="{{ Util::assetUrl('images/products/light1.jpg') }}" alt="" width="100%">
+						<div class="card-text text-white p-2 pt-3">
+							<div class="row">
+								<div class="col-md-6 d-inline-flex flex-column justify-content-between">
+								{{-- <div class="col-md-5"> --}}
+									<img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="" style="{{ ($agent->is('IE')) ? 'height: 100%' : '' }}">
+									<p class="font-weight-bold text-center pt-4">
+										$6
+									</p>        
+								</div>
+								{{-- <div class="col-md-2">|</div> --}}
+								<div class="col-md-6 d-inline-flex flex-column justify-content-between">
+								{{-- <div class="col-md-5"> --}}
+									{{-- <img class="card-img" src="{{ Util::assetUrl('images/retails/ledvance.png') }}" alt=""> --}}
+									<p class="other-inter-brands text-center">Other International Brands</p>
+									<p class="font-weight-bold text-center pt-4">
+										$28
+									</p>
+								</div>    
+							</div>
+						</div>
+					</div>    
+				</div>
+				<div class="card bg-dark mr-2">
+					<div class="card-body p-0">
+						<img class="" src="{{ Util::assetUrl('images/products/light3.jpg') }}" alt="" width="100%">
+						<div class="card-text text-white p-2 pt-3">
+							<div class="row">
+								<div class="col-md-6 d-inline-flex flex-column justify-content-between">
+								{{-- <div class="col-md-5"> --}}
+									<img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="" style="{{ ($agent->is('IE')) ? 'height: 100%' : '' }}">           
+									<p class="font-weight-bold text-center pt-4">
+										$25
+									</p> 
+								</div>
+								{{-- <div class="col-md-2">|</div> --}}
+								<div class="col-md-6 d-inline-flex flex-column justify-content-between">
+								{{-- <div class="col-md-5"> --}}
+									{{-- <img class="card-img" src="{{ Util::assetUrl('images/retails/bega.jpg') }}" alt="">  --}}
+									<p class="other-inter-brands text-center">Other International Brands</p>
+									<p class="font-weight-bold text-center pt-4">
+										$444
+									</p>   
+								</div> 
+							</div>
+						</div>
+					</div>    
+				</div>
+				<div class="card bg-dark mr-2">
+					<div class="card-body p-0">
+						<img class="" src="{{ Util::assetUrl('images/products/light4.jpg') }}" alt="" width="100%">
+						<div class="card-text text-white p-2 pt-3">
+							<div class="row">
+								<div class="col-md-6 d-inline-flex flex-column justify-content-between">
+								{{-- <div class="col-md-5"> --}}
+									<img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="" style="{{ ($agent->is('IE')) ? 'height: 100%' : '' }}">
+									<p class="font-weight-bold text-center pt-4">
+										$3
+									</p>        
+								</div>
+								{{-- <div class="col-md-2">|</div> --}}
+								<div class="col-md-6 d-inline-flex flex-column justify-content-between">
+								{{-- <div class="col-md-5"> --}}
+									{{-- <img class="card-img" src="{{ Util::assetUrl('images/retails/slv_logo.png') }}" alt=""> --}}
+									<p class="other-inter-brands text-center">Other International Brands</p>
+									<p class="font-weight-bold text-center pt-4">
+										$25
+									</p>
+								</div>    
+							</div>
+						</div>
+					</div>    
+				</div>
+				<div class="card bg-dark mr-2">
+					<div class="card-body p-0">
+						<img class="" src="{{ Util::assetUrl('images/products/light5.jpg') }}" alt="" width="100%">
+						<div class="card-text text-white p-2 pt-3">
+							<div class="row">
+								<div class="col-md-6 d-inline-flex flex-column justify-content-between">
+								{{-- <div class="col-md-5"> --}}
+									<img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="" style="{{ ($agent->is('IE')) ? 'height: 100%' : '' }}">           
+									<p class="font-weight-bold text-center pt-4">
+										$8
+									</p>
+								</div>
+								{{-- <div class="col-md-2">|</div> --}}
+								<div class="col-md-6 d-inline-flex flex-column justify-content-between">
+								{{-- <div class="col-md-5"> --}}
+									{{-- <img class="card-img" src="{{ Util::assetUrl('images/retails/philips.png') }}" alt="">  --}}
+									<p class="other-inter-brands text-center">Other International Brands</p>
+									<p class="font-weight-bold text-center pt-4">
+										$40
+									</p>    
+								</div>
+							</div>
+						</div>
+					</div>    
+				</div>
+				<div class="card bg-dark mr-2">
+					<div class="card-body p-0">
+						<img class="" src="{{ Util::assetUrl('images/products/light6.jpg') }}" alt="" width="100%">
+						<div class="card-text text-white p-2 pt-3">
+							<div class="row">
+								<div class="col-md-6 d-inline-flex flex-column justify-content-between">
+								{{-- <div class="col-md-5"> --}}
+									<img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="" style="{{ ($agent->is('IE')) ? 'height: 100%' : '' }}">
+									<p class="font-weight-bold text-center pt-4">
+										$67
+									</p>           
+								</div>
+								{{-- <div class="col-md-2">|</div> --}}
+								<div class="col-md-6 d-inline-flex flex-column justify-content-between">
+								{{-- <div class="col-md-5"> --}}
+									{{-- <img class="card-img" src="{{ Util::assetUrl('images/retails/et2.png') }}" alt="">  --}}
+									<p class="other-inter-brands text-center">Other International Brands</p>
+									<p class="font-weight-bold text-center pt-4">
+										$446
+									</p>
+								</div>    
+							</div>
+						</div>
+					</div>    
+				</div>
+				<div class="card bg-dark mr-2">
+					<div class="card-body p-0">
+						<img class="" src="{{ Util::assetUrl('images/products/light7.jpg') }}" alt="" width="100%">
+						<div class="card-text text-white p-2 pt-3">
+							<div class="row">
+								<div class="col-md-6 d-inline-flex flex-column justify-content-between">
+								{{-- <div class="col-md-5"> --}}
+								<img class="card-img" src="{{ Util::assetUrl('images/retails/logo.png') }}" alt="" style="{{ ($agent->is('IE')) ? 'height: 100%' : '' }}">
+									<p class="font-weight-bold text-center pt-4">
+										$12
+									</p>           
+								</div>
+								{{-- <div class="col-md-2">|</div> --}}
+								<div class="col-md-6 d-inline-flex flex-column justify-content-between">
+								{{-- <div class="col-md-5"> --}}
+									{{-- <img class="card-img" src="{{ Util::assetUrl('images/retails/marset_logo.png') }}" alt=""> --}}
+									<p class="other-inter-brands text-center">Other International Brands</p>
+									<p class="font-weight-bold text-center pt-4">
+										$529
+									</p>
+								</div>    
+							</div>
+						</div>
+					</div>    
+				</div>
+			  </div>
+			<div class="pt-5 text-white text-center font-15">
+				<p>
+					Get your Free Quote        
+				</p> 
+				<a href="#all-packages" class="text-white btn btn-BAL" >
+
+					Click Here <br>
+					<i class="fas fa-chevron-down"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</section> -->
 <section class="section-6" id="ninety">
 	<div class="container pt-5 pb-5">
 		<div class="row align-items-center">
@@ -445,7 +641,7 @@
 							&nbsp;
 					One Pager
 				</a>
-				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
+				<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
 					<i class="far fa-file-pdf"></i>
 					&nbsp;
 					White Paper
@@ -1783,7 +1979,7 @@
 							&nbsp;
 					One Pager
 				</a>
-				<a href="{{ Util::assetUrl('papers/Whitepaper_1.0.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
+				<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
 					<i class="far fa-file-pdf"></i>
 					&nbsp;
 					White Paper
