@@ -23,7 +23,7 @@
                     <a href="https://www.reddit.com/r/BuyAnyLight/" class="text-dark" target="_blank"><i class="fab fa-reddit-alien"></i></a>
                 </div>
                 <div class="col one-link">
-                    <a href="https://bitcointalk.org/index.php?action=profile;u=2636303;sa=summary" class="text-dark" target="_blank"><i class="fab fa-bitcoin"></i></a>
+                    <a href="https://bitcointalk.org/index.php?topic=5193049.0;topicseen" class="text-dark" target="_blank"><i class="fab fa-bitcoin"></i></a>
                 </div>
                 <div class="col one-link">
                     <a href="https://t.me/buyanylight" class="text-dark" target="_blank"><i class="fab fa-telegram-plane"></i></a>
