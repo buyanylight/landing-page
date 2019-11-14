@@ -155,8 +155,8 @@
 
 
 @section('content')
-<div style="position: relative; z-index: 5">
-   <!-- Position toasts -->
+<!-- <div style="position: relative; z-index: 5">
+   Position toasts
 	<div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
 	<div class="toast" data-autohide="false">
     	<div class="toast-header">
@@ -178,8 +178,7 @@
     	@endif
 	</div>
 	</div>    
-</div>
-
+</div> -->
 
 <div class="all-contents">
 
