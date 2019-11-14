@@ -193,8 +193,8 @@
 	</div>
 
 	@include('includes.mobile-navbar')
-	<div style="position: relative;  z-index: 5">
-			<!-- Position toasts -->
+<!-- 	<div style="position: relative;  z-index: 5">
+			Position toasts
 		<div style="position: absolute; top: 70px; left:10px; min-width: 300px;">
 			<div class="toast" data-autohide="false">
 				<div class="toast-header">
@@ -216,7 +216,38 @@
 				@endif
 			</div>
 		</div>    
+	</div> -->
+	<div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+ 		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+      			<div class="modal-header" style="padding-top: 0.5rem; padding-bottom: 0.5rem">
+        			<h5 class="modal-title" id="exampleModalLongTitle">		
+        				<img src="{{ Util::assetUrl('images/logo-black-icon.png') }}" width="25">
+						BuyAnyLight
+					</h5>
+        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        			</button>
+      			</div>
+      			<div class="modal-body">
+      			 			@if(session('success'))
+				<div class="toast-body">
+					<b>Thanks for being awesome!</b>
+					{!! session('success') !!}
+				</div>
+				@else
+				<div class="toast-body">
+					{!! session('danger') !!}
+				</div>
+				@endif
+      			</div>
+    		</div>
+  		</div>
 	</div>
+
+
+
+
 	@yield('content')
 	
 	@include('includes.mobile-footer')
@@ -225,22 +256,12 @@
 	<script src="{{ Util::assetUrl('js/mobile.js') }}" charset="utf-8"></script>
 	<script src="{{ Util::assetUrl('js/validator.min.js') }}" charset="utf-8"></script>
 
-	@if (session('kyc-success'))
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('.kyc-toast').toast('show');
-		});
-	</script>
-
-
-	@endif
 
 
 	@if (session('success') || session('danger'))
 	<script type="text/javascript">
 	$( document ).ready(function() {
-		$('.toast').toast('show')
+		$('#ContactModal').modal('show')
 	});
 	  
 	</script>
