@@ -8,6 +8,7 @@ use Jenssegers\Agent\Agent;
 
 
 // use Illuminate\Support\Facades\Mail;
+use App\TokenBuyer;
 use App\Mail\BuyingConfirmation;
 use App\Mail\BuyingConfirmationAdmin;
 use App\Mail\KYCConfirmation;
@@ -560,6 +561,8 @@ class TokenController extends Controller
 
 	        	]);
 
+
+
 				$email_details = array(
 					'amount' => $transaction['amount'],
 					'receiver_id' => $transaction['receiver_id'],
@@ -638,11 +641,9 @@ class TokenController extends Controller
 
 		}
 
-
-
 			// dd($email_details);
+			TokenBuyer::create($email_details);
 
-		
 
 	        \Mail::to('info@buyanylight.com')->send(new BuyingConfirmationAdmin($request));
 
@@ -1534,8 +1535,20 @@ class TokenController extends Controller
         ];
 
         
+        if (request()->hasFile('selfie_id_pic')) {
+            $name = explode(' ', request()->user_name);
+            $selfie_file_name = date('YmdHis') . '-' .$name[0].'-'.request()->file('selfie_id_pic')->getClientOriginalName();
+          
+        }
 
-			// dd($data);
+        if (request()->hasFile('user_id_pic')) {
+            $name = explode(' ', request()->user_name);
+            $file_name = date('YmdHis') . '-' .$name[0].'-'. request()->file('user_id_pic')->getClientOriginalName();
+          
+        }
+
+
+		// dd(request()->file('selfie_id_pic')->getClientOriginalName());
 
 
         if ($validator->fails()) {
@@ -1546,6 +1559,12 @@ class TokenController extends Controller
                         ->withErrors($validator->errors())
                         ->with(['data' => $data_get]);
         } else {
+        	
+	      	TokenBuyer::where('user_reference_id', 'LIKE', '%'. $request['user_reference_id'].'%')->update([
+	      		'user_id_pic' => $file_name,
+	      		'selfie_id_pic' => $selfie_file_name,
+	      		'country' => $request['country'],
+	      	]);
 
         	\Mail::to($request->get('email_id'))->send(new KYCConfirmation($request));
 
