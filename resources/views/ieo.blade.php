@@ -251,11 +251,17 @@
 							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo" target="_blank">
 								<i class="far fa-file-pdf"></i>
 	            				&nbsp;
-								Yellow Paper<a href="https://t.me/buyanylight" class="btn btn-ieo ml-3" target="_blank">
-					<i class="fab fa-telegram-plane"></i>
-	            			&nbsp;
-					Join Our Community
-				</a>
+								Yellow Paper
+							</a>
+							<a href="{{ Util::assetUrl('BuyAnyLight_Pitch_Deck.pdf') }}" class="btn btn-ieo" target="_blank">
+								<i class="fab fa-telegram-plane"></i>
+	            				&nbsp;
+								Pitch Deck
+							</a>
+							<a href="https://t.me/buyanylight" class="btn btn-ieo mt-3" target="_blank" style="width: 86%;">
+								<i class="fab fa-telegram-plane"></i>
+	            				&nbsp;
+								Join Our Community
 							</a>
 						</div>
 						<!-- <div class="pt-3">

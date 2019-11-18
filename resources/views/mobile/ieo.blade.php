@@ -234,11 +234,9 @@
 							target="_blank">
 	            			<i class="far fa-file-pdf"></i>
 	            			&nbsp;
-
 								One Pager								
 							</a>
 						</button>
-						
 						<button 
 						type="button" 
 						target="_blank" 
@@ -250,10 +248,9 @@
 								White Paper
 							</a>
 						</button>
-
 						<button 
 						type="button" 
-						class="btn btn-ieo-right">
+						class="btn btn-ieo-middle">
 							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" 
 							target="_blank">
 							<i class="far fa-file-pdf"></i>
@@ -261,7 +258,16 @@
 								Yellow Paper
 							</a>
 						</button>
-
+						<button 
+						type="button" 
+						class="btn btn-ieo-right">
+							<a href="{{ Util::assetUrl('BuyAnyLight_Pitch_Deck.pdf') }}" 
+							target="_blank">
+							<i class="far fa-file-pdf"></i>
+	            			&nbsp;						
+								Pitch Deck
+							</a>
+						</button>
 					</div>
 				</div>
 				<div class="col-12 pt-3">
