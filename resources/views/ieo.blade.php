@@ -254,7 +254,7 @@
 								Yellow Paper
 							</a>
 							<a href="{{ Util::assetUrl('BuyAnyLight_Pitch_Deck.pdf') }}" class="btn btn-ieo" target="_blank">
-								<i class="fab fa-telegram-plane"></i>
+								<i class="far fa-file-pdf"></i>
 	            				&nbsp;
 								Pitch Deck
 							</a>
