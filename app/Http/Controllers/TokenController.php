@@ -83,7 +83,7 @@ class TokenController extends Controller
 
 	public function get_token(){
 
-		header("Access-Control-Allow-Origin: http://192.168.1.204:1985");
+		header("Access-Control-Allow-Origin: http://192.168.1.204:1985/lightfinder");
 		header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 		header("Access-Control-Allow-Headers: Content-Type, Authorization");
 
