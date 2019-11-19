@@ -180,6 +180,7 @@ return [
         
 
 		Laravel\Socialite\SocialiteServiceProvider::class,
+        Barryvdh\Cors\ServiceProvider::class
     ],
 
     /*
@@ -231,9 +232,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Agent' => Jenssegers\Agent\Facades\Agent::class,
-        
         'Util' => App\Util::class,
-		
 		'Socialite' => Laravel\Socialite\Facades\Socialite::class,
     ],
 
