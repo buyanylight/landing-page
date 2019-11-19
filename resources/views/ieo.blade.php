@@ -1143,7 +1143,7 @@
 </section >
 
 
-<section class="section-6">
+<section class="section-6" id="roadmap">
 	<div class="bg-black pt-5 pb-5">
 		<div class="container pt-5 pb-5 text-center">
 			<h3>
