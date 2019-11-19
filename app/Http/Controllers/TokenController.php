@@ -81,9 +81,9 @@ class TokenController extends Controller
 
 
 
-	public function test(){
+	public function get_token(){
 
-		return view('test');
+		return response('test');
 	}
 
 
