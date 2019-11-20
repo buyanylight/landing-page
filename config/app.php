@@ -180,7 +180,7 @@ return [
         
 
 		Laravel\Socialite\SocialiteServiceProvider::class,
-        // Barryvdh\Cors\ServiceProvider::class
+        Barryvdh\Cors\ServiceProvider::class
     ],
 
     /*
