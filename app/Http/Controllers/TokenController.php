@@ -83,7 +83,7 @@ class TokenController extends Controller
 
 	public function get_token(){
 
-		return response('test');
+		return 'test';
 	}
 
 
