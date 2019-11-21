@@ -30,7 +30,10 @@ Route::get('/kyc', 'TokenController@kyc_get')->name('kyc_get');
 Route::post('/kyc', 'TokenController@kyc_post')->name('kyc_post');
 Route::get('/kyc-form/{uid}', 'TokenController@kyc_form')->name('kyc-form');
 Route::post('/thank-you', 'TokenController@kyc_confirm')->name('thank-you');
-Route::any('/get-tokens', 'TokenController@get_token')->name('get-token');
+Route::get('/get-tokens', 'TokenController@get_token')->name('get-token');
+Route::options('{any}', ['middleware' => ['cors'], function () {
+return response(['status' => 'success']);
+}])->where('any', '.*');
 
 Route::get('/downloads', 'PageController@downloads')->name('downloads');
 Route::get('/videos', 'PageController@videos')->name('videos');
