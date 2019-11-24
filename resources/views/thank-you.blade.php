@@ -7,11 +7,7 @@
 
 @endsection
 
-
-
-
-@section('content')
-
+@section('body-end-javascript')
 <script type="text/javascript">
 	$('.print-page').click(function(){
 		window.print();
@@ -24,29 +20,29 @@
 	var emailId = "{{ $u_details['email_id'] }}"
 	var firstName = "{{ $u_details['user_name'] }}"
 	var passWord = "{{ $u_details['password'] }}"
-	var token = $('#recaptchaResponse').val();
+	var token = $('.recaptchaResponse').val();
+	var token2 = $('.testDiv').val();
 
-	console.log($('.recaptchaResponse2').val());
-
+	console.log(token);
+	console.log(token2);
 
 	$.ajax({
 		type: "POST",
-		url: "https://api.buyanylight.com/v1/validate-email",
+		url: "http://192.168.1.200:8000/v1/validate-email",
 		data: {email: emailId},
 	}).done(function(data){
 			console.log('xxxxx' + data)
 			if (data == 0) {
 				$.ajax({
 					type: "POST",
-					url: "https://api.buyanylight.com/v1/buyer/register",
+					url: "http://192.168.1.200:8000/v1/buyer/register",
 					data: {
 						first_name: firstName,
 						last_name: '  ',
 						email: emailId,
 						password: passWord,
 						confirm_password: passWord,
-						main_interest: 'my-home',
-						token: token
+						main_interest: 'my-home'
 					},
 					success: function(data){
 						$('.account-confirm').html('We have created an BuyAnyLight account for you to check your BAL Tokens <br> Here are the account details: <br><br> <strong>Email:</strong>' + emailId + '<br><strong> Password: </strong>' + passWord)
@@ -65,6 +61,9 @@
 
 </script>
 
+@endsection
+
+@section('content')
 <style type="text/css">
 	@media print {
     .print-page {
@@ -100,7 +99,7 @@
 					<li><b>User verification ID image:</b> Received</li>
 					<li><b>User selfie verification image:</b> Received</li>
 					<input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse" class="recaptchaResponse">
-					<input type="hidden" value="12345" name="recaptcha_response" id="recaptchaResponse" class="recaptchaResponse2">
+					<input type="hidden" value="1233455" class="testDiv">
 				</ul>
 				<p class="account-confirm">
 				
