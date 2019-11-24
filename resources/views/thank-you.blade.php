@@ -10,10 +10,53 @@
 @section('body-end-javascript')
 <script type="text/javascript">
 	$('.print-page').click(function(){
-
 		window.print();
-
 	})
+
+
+	// console.log("{{ $u_details['email_id'] }}")
+
+
+	var emailId = "{{ $u_details['email_id'] }}"
+	var firstName = "{{ $u_details['user_name'] }}"
+	var passWord = "{{ $u_details['password'] }}"
+	var token = $('#recaptchaResponse').val();
+
+
+	$.ajax({
+		type: "POST",
+		url: "https://api.buyanylight.com/v1/validate-email",
+		data: {email: emailId},
+	}).done(function(data){
+			console.log('xxxxx' + data)
+			if (data == 0) {
+				$.ajax({
+					type: "POST",
+					url: "https://api.buyanylight.com/v1/buyer/register",
+					data: {
+						first_name: firstName,
+						last_name: '  ',
+						email: emailId,
+						password: passWord,
+						confirm_password: passWord,
+						main_interest: 'my-home',
+						token: token
+					},
+					success: function(data){
+						$('.account-confirm').html('We have created an BuyAnyLight account for you to check your BAL Tokens <br> Here are the account details: <br><br> <strong>Email:</strong>' + emailId + '<br><strong> Password: </strong>' + passWord)
+					}
+				})
+			} else {
+				$('.account-confirm').text('Please use your BuyAnyLight account to check your BAL Tokens');
+				console.log('email exists')
+			}
+		}).fail(function(data){
+			console.log(data + 'ssssss')
+		})
+	
+
+
+
 </script>
 
 @endsection
@@ -53,10 +96,13 @@
 					<li><b>Country:</b> {{ $u_details['country'] }}</li>
 					<li><b>User verification ID image:</b> Received</li>
 					<li><b>User selfie verification image:</b> Received</li>
+					 <input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
 				</ul>
+				<p class="account-confirm">
+				
+				</p>
 				<p>
 					<i>In case we face issues with your payment or KYC, we will contact you via Email or Mobile.</i>
-					
 				</p>
 				<p>
 					Once your payment was received and after successful KYC passing, you will receive your {{ $u_details['bal_amt'] }} BAL Tokens into the following ETH address: {{ $u_details['receiver_id'] }}
