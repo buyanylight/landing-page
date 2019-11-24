@@ -83,7 +83,12 @@ class TokenController extends Controller
 
 	public function get_token(){
 
-		return response('test');
+		$tknbyer = TokenBuyer::where('email_id', 'LIKE', '%'.$_GET['email'].'%')->sum('bal_amt');
+
+
+		// dd($tknbyer);
+
+		return response($tknbyer);
 	}
 
 
@@ -1519,7 +1524,19 @@ class TokenController extends Controller
        		'reference' => (!empty($request->get('reference'))) ? 1 : '',	
         ];
 
-          $data = [
+
+
+        function generateRandomString($length) {
+    		$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    		$charactersLength = strlen($characters);
+    		$randomString = '';
+    		for ($i = 0; $i < $length; $i++) {
+        		$randomString .= $characters[rand(0, $charactersLength - 1)];
+    		}
+    		return $randomString;
+		}
+
+        $data = [
        		'user_reference_id' => $request['user_reference_id'],
        		'user_name' => $request['user_name'],
        		'email_id' => $request['email_id'],
@@ -1529,7 +1546,8 @@ class TokenController extends Controller
        		'number' => $request['number'],
        		'country' => $request['country'],
        		'later_bank' => (!empty($request->get('later_bank'))) ? 1 : '',
-       		'reference' => (!empty($request->get('reference'))) ? 1 : '',	
+       		'reference' => (!empty($request->get('reference'))) ? 1 : '',
+       		'password' => generateRandomString(6),	
        		'user_id_pic' => $request['user_id_pic'],
        		'selfie_id_pic' => $request['selfie_id_pic'],
         ];
@@ -1560,6 +1578,7 @@ class TokenController extends Controller
                         ->with(['data' => $data_get]);
         } else {
         	
+       
 	      	TokenBuyer::where('user_reference_id', 'LIKE', '%'. $request['user_reference_id'].'%')->update([
 	      		'user_id_pic' => $file_name,
 	      		'selfie_id_pic' => $selfie_file_name,
