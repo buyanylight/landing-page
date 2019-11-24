@@ -47,7 +47,7 @@
 									password: passWord,
 									confirm_password: passWord,
 									main_interest: 'my-home',
-									token: grecaptcha_token
+									google_token: grecaptcha_token
 								},
 								success: function(data){
 									$('p.account-confirm').html('We have created an BuyAnyLight account for you to check your BAL Tokens <br> Here are the account details: <br><br> <strong>Email:</strong>' + emailId + '<br><strong> Password: </strong>' + passWord)
