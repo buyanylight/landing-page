@@ -650,10 +650,10 @@ class TokenController extends Controller
 			TokenBuyer::create($email_details);
 
 
-	        // \Mail::to('info@buyanylight.com')->send(new BuyingConfirmationAdmin($request));
+	        \Mail::to('info@buyanylight.com')->send(new BuyingConfirmationAdmin($request));
 
 
-	        // \Mail::to($request->get('email_id'))->send(new BuyingConfirmation($request));
+	        \Mail::to($request->get('email_id'))->send(new BuyingConfirmation($request));
 
 
 
