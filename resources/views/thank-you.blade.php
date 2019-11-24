@@ -26,7 +26,7 @@
 	var passWord = "{{ $u_details['password'] }}"
 	var token = $('#recaptchaResponse').val();
 
-	console.log($('.recaptchaResponse').val());
+	console.log($('.recaptchaResponse2').val());
 
 
 	$.ajax({
@@ -99,7 +99,8 @@
 					<li><b>Country:</b> {{ $u_details['country'] }}</li>
 					<li><b>User verification ID image:</b> Received</li>
 					<li><b>User selfie verification image:</b> Received</li>
-					 <input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse" class="recaptchaResponse">
+					<input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse" class="recaptchaResponse">
+					<input type="hidden" value="12345" name="recaptcha_response" id="recaptchaResponse" class="recaptchaResponse2">
 				</ul>
 				<p class="account-confirm">
 				
