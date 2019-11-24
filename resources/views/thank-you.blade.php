@@ -7,7 +7,11 @@
 
 @endsection
 
-@section('body-end-javascript')
+
+
+
+@section('content')
+
 <script type="text/javascript">
 	$('.print-page').click(function(){
 		window.print();
@@ -61,9 +65,6 @@
 
 </script>
 
-@endsection
-
-@section('content')
 <style type="text/css">
 	@media print {
     .print-page {
