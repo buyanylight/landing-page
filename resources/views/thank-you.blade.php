@@ -20,40 +20,41 @@
 				var recaptchaResponse = document.getElementById('recaptchaResponse2');
 				recaptchaResponse.value = token;
 
-				console.log(token)
+				// console.log(token)
 
 				var emailId = "{{ $u_details['email_id'] }}"
 				var firstName = "{{ $u_details['user_name'] }}"
 				var passWord = "{{ $u_details['password'] }}"
 				var grecaptcha_token = $('.recaptchaResponse').val();
 
-				console.log(grecaptcha_token);
+				// console.log(grecaptcha_token);
 	
 
 				$.ajax({
 					type: "POST",
-					url: "http://192.168.1.200:8000/v1/validate-email",
+					url: "https://api.buyanylight.com/v1/validate-email",
 					data: {email: emailId},
 				}).done(function(data){
 						console.log('xxxxx' + data)
 						if (data == 0) {
 							$.ajax({
 								type: "POST",
-								url: "http://192.168.1.200:8000/v1/buyer/register",
+								url: "https://api.buyanylight.com/v1/buyer/register",
 								data: {
 									first_name: firstName,
 									last_name: '  ',
 									email: emailId,
 									password: passWord,
 									confirm_password: passWord,
-									main_interest: 'my-home'
+									main_interest: 'my-home',
+									token: grecaptcha_token
 								},
 								success: function(data){
-									$('.account-confirm').html('We have created an BuyAnyLight account for you to check your BAL Tokens <br> Here are the account details: <br><br> <strong>Email:</strong>' + emailId + '<br><strong> Password: </strong>' + passWord)
+									$('p.account-confirm').html('We have created an BuyAnyLight account for you to check your BAL Tokens <br> Here are the account details: <br><br> <strong>Email:</strong>' + emailId + '<br><strong> Password: </strong>' + passWord)
 								}
 							})
 						} else {
-							$('.account-confirm').text('Please use your BuyAnyLight account to check your BAL Tokens');
+							$('p.account-confirm').text('Please use your BuyAnyLight account to check your BAL Tokens');
 							console.log('email exists')
 						}
 					}).fail(function(data){
