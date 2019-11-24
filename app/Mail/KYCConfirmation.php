@@ -40,7 +40,7 @@ class KYCConfirmation extends Mailable
 
         curl_setopt_array($curl, [
             CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_URL => 'http://192.168.1.200:8000/v1/validate-email',
+            CURLOPT_URL => 'https://api.buyanylight.com/v1/validate-email',
             CURLOPT_USERAGENT => 'cURL Request',
             CURLOPT_POST => 1,
             CURLOPT_POSTFIELDS => [
