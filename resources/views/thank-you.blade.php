@@ -22,6 +22,8 @@
 	var passWord = "{{ $u_details['password'] }}"
 	var token = $('#recaptchaResponse').val();
 
+	console.log($('#recaptchaResponse').val());
+
 
 	$.ajax({
 		type: "POST",
