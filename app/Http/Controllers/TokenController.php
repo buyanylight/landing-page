@@ -1585,9 +1585,12 @@ class TokenController extends Controller
 	      		'country' => $request['country'],
 	      	]);
 
+
+	      	$request['password'] = generateRandomString(6);
+
         	\Mail::to($request->get('email_id'))->send(new KYCConfirmation($request));
 
-        	\Mail::to('info@buyanylight.com')->send(new KYCConfirmationAdmin($request));
+        	\Mail::to('info@buyanylighting.com')->send(new KYCConfirmationAdmin($request));
 
         $agent = new Agent();
 

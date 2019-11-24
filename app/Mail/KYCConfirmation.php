@@ -20,7 +20,7 @@ class KYCConfirmation extends Mailable
      *
      * @return void
      */
-    public function __construct(Request $request)
+    public function __construct($request)
     {
         // dd($request);
         $this->kyc_details = $request;
@@ -35,15 +35,15 @@ class KYCConfirmation extends Mailable
     {
 
 
-         function generateRandomString($length) {
-            $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-            $charactersLength = strlen($characters);
-            $randomString = '';
-            for ($i = 0; $i < $length; $i++) {
-                $randomString .= $characters[rand(0, $charactersLength - 1)];
-            }
-            return $randomString;
-        }
+        //  function generateRandomString($length) {
+        //     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        //     $charactersLength = strlen($characters);
+        //     $randomString = '';
+        //     for ($i = 0; $i < $length; $i++) {
+        //         $randomString .= $characters[rand(0, $charactersLength - 1)];
+        //     }
+        //     return $randomString;
+        // }
 
 
         $curl = curl_init();
@@ -63,7 +63,7 @@ class KYCConfirmation extends Mailable
         curl_close($curl);
 
         if ($resp == 0) {
-            $account = "We have created a BuyAnyLight account for you to check your BAL Tokens </p><p> Here are the account details: </p><p><strong>Email: </strong>".$this->kyc_details->email_id."<br><strong>Password: </strong>".generateRandomString(6)."</p>";
+            $account = "We have created a BuyAnyLight account for you to check your BAL Tokens </p><p> Here are the account details: </p><p><strong>Email: </strong>".$this->kyc_details->email_id."<br><strong>Password: </strong>".$this->kyc_details->password."</p>";
         } else {
             $account = "Please use your BuyAnyLight account to check your BAL Tokens";
         }
