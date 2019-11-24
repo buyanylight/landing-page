@@ -27,8 +27,8 @@
 				var passWord = "{{ $u_details['password'] }}"
 				var grecaptcha_token = $('.recaptchaResponse').val();
 
-				console.log(token);
-				console.log(token2);
+				console.log(grecaptcha_token);
+	
 
 				$.ajax({
 					type: "POST",
