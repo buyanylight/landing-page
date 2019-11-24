@@ -650,10 +650,10 @@ class TokenController extends Controller
 			TokenBuyer::create($email_details);
 
 
-	        \Mail::to('info@buyanylight.com')->send(new BuyingConfirmationAdmin($request));
+	        // \Mail::to('info@buyanylight.com')->send(new BuyingConfirmationAdmin($request));
 
 
-	        \Mail::to($request->get('email_id'))->send(new BuyingConfirmation($request));
+	        // \Mail::to($request->get('email_id'))->send(new BuyingConfirmation($request));
 
 
 
@@ -1585,9 +1585,9 @@ class TokenController extends Controller
 	      		'country' => $request['country'],
 	      	]);
 
-        	\Mail::to($request->get('email_id'))->send(new KYCConfirmation($request));
+        	// \Mail::to($request->get('email_id'))->send(new KYCConfirmation($request));
 
-        	\Mail::to('info@buyanylight.com')->send(new KYCConfirmationAdmin($request));
+        	// \Mail::to('info@buyanylight.com')->send(new KYCConfirmationAdmin($request));
 
         $agent = new Agent();
 
