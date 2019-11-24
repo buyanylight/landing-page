@@ -119,7 +119,7 @@
 					<input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse2" class="recaptchaResponse">
 				</ul>
 				<p class="account-confirm">
-				
+				 <b> Please wait while we check for your account. </b>
 				</p>
 				<p>
 					<i>In case we face issues with your payment or KYC, we will contact you via Email or Mobile.</i>
