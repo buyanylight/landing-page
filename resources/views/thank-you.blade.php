@@ -50,7 +50,7 @@
 									google_token: grecaptcha_token
 								},
 								success: function(data){
-									$('p.account-confirm').html('We have created an BuyAnyLight account for you to check your BAL Tokens <br> Here are the account details: <br><br> <strong>Email:</strong>' + emailId + '<br><strong> Password: </strong>' + passWord)
+									$('p.account-confirm').html('We have created an BuyAnyLight account for you to check your BAL Tokens <br><br> Here are the account details: <br><br> <strong>Email: </strong>' + emailId + '<br><strong> Password: </strong>' + passWord)
 								}
 							})
 						} else {
