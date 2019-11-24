@@ -20,7 +20,7 @@ class KYCConfirmation extends Mailable
      *
      * @return void
      */
-    public function __construct(Request $request)
+    public function __construct($request)
     {
         // dd($request);
         $this->kyc_details = $request;
@@ -35,8 +35,38 @@ class KYCConfirmation extends Mailable
     {
 
 
+        //  function generateRandomString($length) {
+        //     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        //     $charactersLength = strlen($characters);
+        //     $randomString = '';
+        //     for ($i = 0; $i < $length; $i++) {
+        //         $randomString .= $characters[rand(0, $charactersLength - 1)];
+        //     }
+        //     return $randomString;
+        // }
 
-       
+
+        $curl = curl_init();
+
+        curl_setopt_array($curl, [
+            CURLOPT_RETURNTRANSFER => 1,
+            CURLOPT_URL => 'http://192.168.1.200:8000/v1/validate-email',
+            CURLOPT_USERAGENT => 'cURL Request',
+            CURLOPT_POST => 1,
+            CURLOPT_POSTFIELDS => [
+                'email' => $this->kyc_details->email_id,
+            ]
+       ]);
+
+        $resp = curl_exec($curl);
+
+        curl_close($curl);
+
+        if ($resp == 0) {
+            $account = "We have created a BuyAnyLight account for you to check your BAL Tokens </p><p> Here are the account details: </p><p><strong>Email: </strong>".$this->kyc_details->email_id."<br><strong>Password: </strong>".$this->kyc_details->password."</p>";
+        } else {
+            $account = "Please use your BuyAnyLight account to check your BAL Tokens";
+        }
 
 
         return $this->markdown('emails.kycconfirmation')
@@ -52,7 +82,8 @@ class KYCConfirmation extends Mailable
                         'reference' => $this->kyc_details->reference,
                         'country' => $this->kyc_details->country,
                         'number' => $this->kyc_details->number,
-                        'later_bank' => $this->kyc_details->later_bank
+                        'later_bank' => $this->kyc_details->later_bank,
+                        'account' => $account
                      ]);
 
     }
