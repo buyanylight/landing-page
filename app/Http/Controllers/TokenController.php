@@ -1536,6 +1536,9 @@ class TokenController extends Controller
     		return $randomString;
 		}
 
+		$passwordString = generateRandomString(6);
+
+
         $data = [
        		'user_reference_id' => $request['user_reference_id'],
        		'user_name' => $request['user_name'],
@@ -1547,7 +1550,7 @@ class TokenController extends Controller
        		'country' => $request['country'],
        		'later_bank' => (!empty($request->get('later_bank'))) ? 1 : '',
        		'reference' => (!empty($request->get('reference'))) ? 1 : '',
-       		'password' => generateRandomString(6),	
+       		'password' => $passwordString,	
        		'user_id_pic' => $request['user_id_pic'],
        		'selfie_id_pic' => $request['selfie_id_pic'],
         ];
@@ -1586,7 +1589,7 @@ class TokenController extends Controller
 	      	]);
 
 
-	      	$request['password'] = generateRandomString(6);
+	      	$request['password'] = $passwordString;
 
         	\Mail::to($request->get('email_id'))->send(new KYCConfirmation($request));
 
