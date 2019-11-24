@@ -18,6 +18,19 @@
 @section('body-end-javascript')
 	<script>
 
+				grecaptcha.ready(function() {
+		grecaptcha.execute( '{{ env('CAPTCHA_KEY') }}' , { action: 'contact' } )
+		   .then(function(token) {
+				var recaptchaResponse = document.getElementById('recaptchaResponse');
+				recaptchaResponse.value = token;
+				$('.send-message').removeAttr('disabled','disabled');
+			});
+	 });
+
+
+
+		
+
 		$('.roadmap').slick({
 			centerMode: true,
 			adaptiveHeight: true,
