@@ -25,7 +25,7 @@
 				var emailId = "{{ $u_details['email_id'] }}"
 				var firstName = "{{ $u_details['user_name'] }}"
 				var passWord = "{{ $u_details['password'] }}"
-				var grecaptcha_token = $('.recaptchaResponse').val();
+				var grecaptcha_token = token;
 
 				// console.log(grecaptcha_token);
 	
