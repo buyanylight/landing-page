@@ -30,6 +30,9 @@
 	</p>
 	@endif
 	<p style="color: black; font-size: 14px">
+		{!! $account !!}
+	</p>
+	<p style="color: black; font-size: 14px">
 		After verification of your payment and successful KYC passing, we will send {{ $bal_amt }} BAL tokens to the following ETH address: {{ $receiver_id }}. To add our custom BAL token to your ETH wallet, please check <a href=" https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/">here</a>.
 	</p>
 	<p style="color: black; font-size: 14px">
