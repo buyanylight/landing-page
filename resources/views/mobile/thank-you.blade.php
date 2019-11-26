@@ -1,6 +1,80 @@
 @extends(($agent->isMobile()) ? 'layouts.mobile-layout' : 'layouts.main-layout')
 
 
+@section('body-end-javascript')
+<script type="text/javascript">
+	$('.print-page').click(function(){
+		window.print();
+	})
+
+
+		grecaptcha.ready(function() {
+		grecaptcha.execute( '{{ env('CAPTCHA_KEY') }}' , { action: 'contact' } )
+		   .then(function(token) {
+				var recaptchaResponse = document.getElementById('recaptchaResponse2');
+				recaptchaResponse.value = token;
+
+				// console.log(token)
+
+				var emailId = "{{ $u_details['email_id'] }}"
+				var firstName = "{{ $u_details['user_name'] }}"
+				var passWord = "{{ $u_details['password'] }}"
+				var grecaptcha_token = token;
+
+				// console.log(grecaptcha_token);
+	
+
+				$.ajax({
+					type: "POST",
+					url: "https://api.buyanylight.com/v1/validate-email",
+					data: {email: emailId},
+				}).done(function(data){
+						console.log('xxxxx' + data)
+						if (data == 0) {
+							$.ajax({
+								type: "POST",
+								url: "https://api.buyanylight.com/v1/buyer/register",
+								data: {
+									first_name: firstName,
+									last_name: '  ',
+									email: emailId,
+									password: passWord,
+									confirm_password: passWord,
+									main_interest: 'my-home',
+									google_token: grecaptcha_token
+								},
+								success: function(data){
+									$('p.account-confirm').html('<p>We have created an BuyAnyLight account for you to check your BAL Tokens </p><p> Here are the account details:</p><p> <strong>Email: </strong>' + emailId + '<br><strong> Password: </strong>' + passWord +'</p>')
+								}
+							})
+						} else {
+							$('p.account-confirm').text('Please use your BuyAnyLight account to check your BAL Tokens');
+							console.log('email exists')
+						}
+					}).fail(function(data){
+						console.log(data + 'ssssss')
+					})
+
+			});
+	 	});
+
+
+
+
+
+
+
+	// console.log("{{ $u_details['email_id'] }}")
+
+
+	
+
+
+
+</script>
+
+@endsection
+
 @section('content')
 <section style="min-height: 100vh;">
 	<div class="pt-5 mt-5 mb-3">
@@ -26,7 +100,12 @@
 							<li><b>Country:</b> {{ $u_details['country'] }}</li>
 							<li><b>User verification ID image:</b> Received</li>
 							<li><b>User selfie verification image:</b> Received</li>
+					<input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse2" class="recaptchaResponse">
+							
 						</ul>
+							<p class="account-confirm">
+				 <b> Please wait while we check for your account. </b>
+				</p>
 						<p>
 							<i>In case we face issues with your payment or KYC, we will contact you via Email or Mobile.</i>
 						</p>
