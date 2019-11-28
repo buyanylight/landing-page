@@ -44,11 +44,11 @@
 									google_token: grecaptcha_token
 								},
 								success: function(data){
-									$('p.account-confirm').html('<p>We have created an BuyAnyLight account for you to check your BAL Tokens </p><p> Here are the account details:</p><p> <strong>Email: </strong>' + emailId + '<br><strong> Password: </strong>' + passWord +'</p>')
+									$('p.account-confirm').html('<p>We have created an BuyAnyLight account for you to check your BAL Tokens. </p><p> Here are the account details:</p><p> <strong>Email: </strong>' + emailId + '<br><strong> Password: </strong>' + passWord +'</p>')
 								}
 							})
 						} else {
-							$('p.account-confirm').text('Please use your BuyAnyLight account to check your BAL Tokens');
+							$('p.account-confirm').text('Please use your BuyAnyLight account to check your BAL Tokens.');
 							console.log('email exists')
 						}
 					}).fail(function(data){
@@ -101,7 +101,7 @@
 							<li><b>User verification ID image:</b> Received</li>
 							<li><b>User selfie verification image:</b> Received</li>
 					<input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse2" class="recaptchaResponse">
-							
+
 						</ul>
 							<p class="account-confirm">
 				 <b> Please wait while we check for your account. </b>
