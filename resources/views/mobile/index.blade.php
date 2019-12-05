@@ -265,6 +265,10 @@
 			</a>
 		</div>
 	</div>
+	<section class="pt-3">
+	<img src="{{ Util::assetUrl('images/FULL.jpg') }}" width="100%">
+
+</section>
 </div>
 @endsection
 
