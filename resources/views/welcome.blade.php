@@ -2164,4 +2164,7 @@
 		</div>
 	</div>
 </section>
+<section>
+	<img src="{{ Util::assetUrl('images/HALF.jpg') }}" width="100%">
+</section>
 @endsection
