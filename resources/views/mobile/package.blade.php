@@ -90,7 +90,7 @@
 					BAL will transform your LED projects! Watch the video to find out how.
 				</p>
 				 <div class="embed-responsive embed-responsive-16by9 mb-3">
-                    <iframe width="640" height="360" src="https://www.youtube.com/embed/OBm3CPqiXt8?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                 </div> 
                 <p>
                     With a choice of valuable subscription options, the LightFinder package saves time, effort and stress for consultants, homeowners or companies who want to buy quality LED direct from the manufacturer. Best of all, BAL cuts costs by up to 90%. 
