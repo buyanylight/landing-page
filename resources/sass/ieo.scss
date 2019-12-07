@@ -92,6 +92,23 @@ nav{
 	border-bottom-right-radius: 20px;
 }
 
+@keyframes mymove {
+  0% {right: 0%;}
+  25% {right: 35%;}
+  75% {right: -3%;}
+  100% {right: 0%;}
+}
+
+
+.ticker-scroll::-webkit-scrollbar {
+
+	display: none;
+}
+
+.single-coin{
+	  -webkit-animation: mymove 20s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 20s infinite;
+}
 
 
 
@@ -103,6 +120,7 @@ nav{
   align-items: center;
   justify-content: center;
 }
+
 .li {
 
   transition: all 200ms ease-in;

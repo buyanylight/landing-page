@@ -433,7 +433,9 @@
 												</div>
 					  							<input type="hidden" name="amount" value="{{ $amt }}">
 					  							<input type="hidden" name="user_reference_id" value="{{ $user_reference_id }}">
-					  							<input type="hidden" name="bal_amt" value="{{ $bal_amt }}">
+                          <input type="hidden" name="bal_amt" value="{{ $bal_amt }}">
+					  							<input type="hidden" name="referral_code" value="{{ $code }}">
+
 						  						<div class="btn btn-primary mt-2 col-12" id="form-submit" style="background-color: #5555A4; cursor: pointer;">
 						  							Submit and proceed to select your desired payment method
 						  						</div>
@@ -824,7 +826,8 @@
 												</div>
 					  							<input type="hidden" name="amount" value="{{ $amt }}">
 					  							<input type="hidden" name="user_reference_id" value="{{ $user_reference_id }}">
-					  							<input type="hidden" name="bal_amt" value="{{ $bal_amt }}">
+                                                <input type="hidden" name="bal_amt" value="{{ $bal_amt }}">
+					  							<input type="hidden" name="referral_code" value="{{ $code }}">
 						  						<div class="btn btn-primary mt-2 col-12" id="form-submit" style="background-color: #5555A4; cursor: pointer;">
 						  							Submit and proceed to select your desired payment method
 						  						</div>
@@ -1205,7 +1208,8 @@
 													</div>
 				  									<input type="hidden" name="user_reference_id" value="{{ $user_reference_id }}">
 				  									<input type="hidden" name="amount" value="{{ $amt }} BTC">
-				  									<input type="hidden" name="bal_amt" value="{{ $bal_amt }}">
+                                                    <input type="hidden" name="bal_amt" value="{{ $bal_amt }}">
+				  									<input type="hidden" name="referral_code" value="{{ $code }}">
 				  									<button type="submit" class="btn  btn-primary mt-2 col-12" style="background-color: #5555A4;">
 					  									Submit
 					  								</button>
@@ -1311,6 +1315,8 @@
 		  									<input type="hidden" name="bal_amt" value="{{ $bal_amt }}">
 
 		  									<input type="hidden" name="amount" value="{{ $amt }} ETH">
+                                            <input type="hidden" name="referral_code" value="{{ $code }}">
+
 		  									<button type="submit" class="btn  btn-primary mt-2 col-12" style="background-color: #5555A4;">
 			  									Submit
 			  								</button>
