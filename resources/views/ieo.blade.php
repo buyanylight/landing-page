@@ -29,7 +29,7 @@
 
 
 
-		
+
 
 		$('.roadmap').slick({
 			centerMode: true,
@@ -42,6 +42,9 @@
 			prevArrow: '<button type="button" class="slick-prev d-inline-block">Previous</button>',
 			nextArrow: '<button type="button" class="slick-next d-inline-block">Next</button>',
 		});
+
+
+
 
 
 		const minBAL = 200;
@@ -169,29 +172,53 @@
 
 @section('content')
 <div style="position: relative; z-index: 5">
-            <!-- Position toasts -->
-    	<div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
-        	<div class="toast" data-autohide="false">
-            	<div class="toast-header">
-                	<strong class="mr-auto">
-                    	<img src="{{ Util::assetUrl('images/logo-black-icon.png') }}" width="25">
-                    	BuyAnyLight
-                	</strong>
-                	<button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
-            	</div>
-            	@if(session('success'))
-           		<div class="toast-body">
-                	<b>Thanks for being awesome!</b>
-                	{!! session('success') !!}
-            	</div>
-           		@else
-            	<div class="toast-body">
-                	{!! session('danger') !!}
-            	</div>
-            	@endif
-        	</div>
-    	</div>    
+    <!-- Position toasts -->
+    <div style="position: absolute; top: 70px; right: 55px; min-width: 300px;">
+        <div class="toast" data-autohide="false">
+            <div class="toast-header">
+                <strong class="mr-auto">
+                    <img src="{{ Util::assetUrl('images/logo-black-icon.png') }}" width="25">
+                    BuyAnyLight
+                </strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+            </div>
+            @if(session('success'))
+           	<div class="toast-body">
+                <b>Thanks for being awesome!</b>
+                {!! session('success') !!}
+            </div>
+           	@else
+            <div class="toast-body">
+                {!! session('danger') !!}
+            </div>
+           	@endif
+        </div>
+    </div>    
+</div>
+<!-- <section class="mt-5 pt-4">
+	<div class="ticker-scroll" style="overflow: auto; white-space: nowrap;">
+		@foreach ($ticker as $tckr)
+			<div class="single-coin d-inline-block card card-body" style="width: 12%">
+				<div class="row">
+					<div class="col-3">
+						<b>Coin:</b> 
+					</div>
+					<div class="col-6">
+						{{ $tckr['asset_id_quote'] }} 
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-3">
+						<b>Rate:</b> 
+					</div>
+					<div class="col-6">
+						{{ 1 / $tckr['rate'] }} 
+					</div>
+				</div>
+			</div>
+		@endforeach
 	</div>
+</section> -->
 <section class="section-1" id="section-1" style="background-image : url({{ Util::assetUrl('/images/ieo/ieo-bg1.png') }})">
 	<div class="container h-100">
 		<div class="d-flex align-items-center h-100">
@@ -690,6 +717,9 @@
 										</small>
 									</div>
 									<div class="col-md-6 col-12">
+										@if(!empty($code))
+											<input type="hidden" name="referral_code" value="{{ $code }}">
+										@endif
 										<button type="submit" class="btn btn-ieo w-100" style="border-radius: 10px;" id="token-btn"><b>Buy Tokens Now!</b></button>
 									</div>
 								</div>

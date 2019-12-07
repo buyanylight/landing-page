@@ -18,13 +18,20 @@ use App\Mail\KYCConfirmationAdmin;
 class TokenController extends Controller
 {
 	public function token_info(){
+
 		$curr = $this->GetApi('https://rest.coinapi.io/v1/exchangerate/USD?apikey='.env('COINAPI_KEY'));
 
 		$curr_result = json_decode($curr, true);
 	
-		// dd($curr_result);
+		// dd($curr_result['rates']);
+
 
 		foreach ($curr_result['rates'] as $tkey => $tvalue) {
+
+			if ($tvalue['asset_id_quote'] == 'XMR' || $tvalue['asset_id_quote'] == 'BTC' || $tvalue['asset_id_quote'] == 'ETH' || $tvalue['asset_id_quote'] == 'BNB' || $tvalue['asset_id_quote'] == 'LINK' || $tvalue['asset_id_quote'] == 'QNT' || $tvalue['asset_id_quote'] == 'REN' || $tvalue['asset_id_quote'] == 'LTC' || $tvalue['asset_id_quote'] == 'EOS' || $tvalue['asset_id_quote'] == 'ZCN' || $tvalue['asset_id_quote'] == 'ADA' ) {
+					$ticker[] = $tvalue;
+			}
+
 			if ($tvalue['asset_id_quote'] == 'EUR' || $tvalue['asset_id_quote'] == 'BTC' ||  $tvalue['asset_id_quote'] == 'ETH' ||  $tvalue['asset_id_quote'] == 'USD') {
 				$all_curr[$tkey] = $tvalue;
 				// $all_curr[$tkey]['bal_rate'] = number_format($tvalue['rate'] / 5, 8);
@@ -54,10 +61,20 @@ class TokenController extends Controller
 			}
 
 		}
+				// dd($ticker);
 
 		usort($all_curr, function($a, $b) {
    			return $a['rank'] <=> $b['rank'];
 		});
+
+
+		if (!empty($_GET['code'])) {
+			$code = $_GET['code'];
+		} else {
+			$code = '';
+		}
+
+
 
 
 
@@ -68,13 +85,15 @@ class TokenController extends Controller
 
  		if($isMobile || $isTablet) {
             return view('mobile.ieo', [
+            	'code' => $code,
+            	'ticker' => $ticker,
 				'tokens' => $all_curr
-
             ])->with('showpopup',true);
         } else {
             return view('ieo', [
+            	'code' => $code,
+            	'ticker' => $ticker,
 				'tokens' => $all_curr
-
             ])->with('showpopup',true);
         }
 	}
@@ -92,57 +111,16 @@ class TokenController extends Controller
 	}
 
 
-	// public function token_info_code(){
-	// 	$curr = $this->GetApi('https://rest.coinapi.io/v1/exchangerate/USD?apikey=B307BEFD-28DE-499C-942C-DBC5C463B1A1');
+		public function get_trxn(){
 
-	// 	$curr_result = json_decode($curr, true);
-	
-	// 	// dd($curr_result);
-
-	// 	foreach ($curr_result['rates'] as $tkey => $tvalue) {
-	// 		if ($tvalue['asset_id_quote'] == 'EUR' || $tvalue['asset_id_quote'] == 'BTC' ||  $tvalue['asset_id_quote'] == 'ETH' ||  $tvalue['asset_id_quote'] == 'USD') {
-	// 			$all_curr[$tkey] = $tvalue;
-	// 			$all_curr[$tkey]['bal_rate'] = number_format($tvalue['rate'] / 5, 8);
-	// 			$all_curr[$tkey]['time'] = date('d-M-y H:i', strtotime($all_curr[$tkey]['time'])) . ' UTC' ;
-	// 		}
-
-	// 		if ($tvalue['asset_id_quote'] == 'EUR'){
-	// 			$all_curr[$tkey]['logo'] = '<i class="fas fa-euro-sign"></i>';
-	// 			$all_curr[$tkey]['symbol'] = 'Euro';
-	// 		}
-	// 		if ($tvalue['asset_id_quote'] == 'USD'){
-	// 			$all_curr[$tkey]['logo'] = '<i class="fas fa-dollar-sign"></i>';
-	// 			$all_curr[$tkey]['symbol'] = 'US Dollar';
-	// 		}
-	// 		if ($tvalue['asset_id_quote'] == 'BTC'){
-	// 			$all_curr[$tkey]['logo'] = '<i class="fab fa-bitcoin"></i>';	
-	// 			$all_curr[$tkey]['symbol'] = 'Bitcoin';
-	// 		}
-	// 		if ($tvalue['asset_id_quote'] == 'ETH'){
-	// 			$all_curr[$tkey]['logo'] = '<i class="fab fa-ethereum"></i>';
-	// 			$all_curr[$tkey]['symbol'] = 'Ethereum';
-	// 		}
-
-	// 	}
+		$codebyer = TokenBuyer::where('referred_code', 'LIKE', '%'.$_GET['code'].'%')->get();
 
 
-	// 	 $agent = new Agent();
+		// dd($codebyer);
 
- //        $isMobile = $agent->isMobile();
- //        $isTablet = $agent->isTablet();
+		return response($codebyer);
+	}
 
- // 		if($isMobile || $isTablet) {
- //            return view('mobile.test', [
-	// 			'tokens' => $all_curr
-
- //            ]);
- //        } else {
- //            return view('test', [
-	// 			'tokens' => $all_curr
-
- //            ]);
- //        }
-	// }	
 
 	public function buy_tokens(Request $r){
 
@@ -161,107 +139,111 @@ class TokenController extends Controller
     		return $randomString;
 		}
 
-
+		if (!empty($r['referral_code'])) {
+			$code = $r['referral_code'];
+		} else {
+			$code = '';
+		}
 
 		if ($curr[1] == 'USD' || $curr[1] == 'EUR') {
-		// dd($curr[1]);
-			// $faloosi = [];
+
+			// dd($r['referral_code']);
+
 			$test_url = "https://www.foloosi.com/";
-			// dd(get_headers($test_url)[0]);
 
 			if (strpos(get_headers($test_url)[0] , "200") !== false) {
-				# code...
-			$client = new \GuzzleHttp\Client();
-			$url = "https://foloosi.com/api/v1/api/initialize-setup";
 
+				$client = new \GuzzleHttp\Client();
+				$url = "https://foloosi.com/api/v1/api/initialize-setup";
 
-			$myBody = array(
-				'redirect_url' => '/buy-token', 
-				'transaction_amount' => $curr[0],
-				'currency' => $curr[1]
-			);	
+				$myBody = array(
+					'redirect_url' => '/buy-token', 
+					'transaction_amount' => $curr[0],
+					'currency' => $curr[1]
+				);	
 
-			$request = $client->request('POST', $url, [
-				'headers' =>  [
-					'merchant_key' => env('FOLOOSI_MERCHANT_KEY'),
-				],
-				'form_params' => $myBody
-			]);
-
-
-			$response = json_decode($request->getBody(), true);
-			$response_data = $response['data'];
-
-			
-			if ($curr[1] == 'USD') {
-				return view('buy-token', [
-					'bal_amt' => $r['bal'],
-					'user_reference_id' => strtotime('now').''.generateRandomString(3), 
-					'response' => $response_data['reference_token'],
-					'curr' => 'credit',
-					'amt' => $r['currency'],
-					'amount' => $curr[0],
-					'dcurr' => $curr[1],
-					'rand' => generateRandomString(4),
-					'usd' => 1
-				]);
-			} else {
-				return view('buy-token', [
-					'bal_amt' => $r['bal'],
-					'user_reference_id' => strtotime('now').''.generateRandomString(3), 
-					'response' => $response_data['reference_token'],
-					'curr' => 'credit',
-					'amt' => $r['currency'],
-					'amount' => $curr[0],
-					'dcurr' => $curr[1],
-					'rand' => generateRandomString(4),
-					'usd' => 0
+				$request = $client->request('POST', $url, [
+					'headers' =>  [
+						'merchant_key' => env('FOLOOSI_MERCHANT_KEY'),
+					],
+					'form_params' => $myBody
 				]);
 
-			}
+				$response = json_decode($request->getBody(), true);
+				$response_data = $response['data'];
 
+				if ($curr[1] == 'USD') {
+					return view('buy-token', [
+						'bal_amt' => $r['bal'],
+						'user_reference_id' => strtotime('now').''.generateRandomString(3), 
+						'response' => $response_data['reference_token'],
+						'curr' => 'credit',
+						'amt' => $r['currency'],
+						'amount' => $curr[0],
+						'dcurr' => $curr[1],
+						'rand' => generateRandomString(4),
+						'usd' => 1,
+						'code' => $code
+					]);
+				} else {
+					return view('buy-token', [
+						'bal_amt' => $r['bal'],
+						'user_reference_id' => strtotime('now').''.generateRandomString(3), 
+						'response' => $response_data['reference_token'],
+						'curr' => 'credit',
+						'amt' => $r['currency'],
+						'amount' => $curr[0],
+						'dcurr' => $curr[1],
+						'rand' => generateRandomString(4),
+						'usd' => 0,
+						'code' => $code
+					]);
+
+				}
 			} else {
 				if ($curr[1] == 'USD') {
-				return view('buy-token', [
-					'bal_amt' => $r['bal'],
-					'user_reference_id' => strtotime('now').''.generateRandomString(3), 
-					'curr' => 'nocredit',
-					'amt' => $r['currency'],
-					'amount' => $curr[0],
-					'dcurr' => $curr[1],
-					'rand' => generateRandomString(4),
-					'usd' => 1
-				]);
-			} else {
-				return view('buy-token', [
-					'bal_amt' => $r['bal'],
-					'user_reference_id' => strtotime('now').''.generateRandomString(3), 
-					'curr' => 'nocredit',
-					'amt' => $r['currency'],
-					'amount' => $curr[0],
-					'dcurr' => $curr[1],
-					'rand' => generateRandomString(4),
-					'usd' => 0
-				]);
+					return view('buy-token', [
+						'bal_amt' => $r['bal'],
+						'user_reference_id' => strtotime('now').''.generateRandomString(3), 
+						'curr' => 'nocredit',
+						'amt' => $r['currency'],
+						'amount' => $curr[0],
+						'dcurr' => $curr[1],
+						'rand' => generateRandomString(4),
+						'usd' => 1,
+						'code' => $code
+					]);
+				} else {
+					return view('buy-token', [
+						'bal_amt' => $r['bal'],
+						'user_reference_id' => strtotime('now').''.generateRandomString(3), 
+						'curr' => 'nocredit',
+						'amt' => $r['currency'],
+						'amount' => $curr[0],
+						'dcurr' => $curr[1],
+						'rand' => generateRandomString(4),
+						'usd' => 0,
+						'code' => $code
 
+					]);
+				}
 			}
-
-			}
-
-
 		} elseif ($curr[1] == 'BTC') {
 			return view('buy-token', [
 				'bal_amt' => $r['bal'],
 				'user_reference_id' => strtotime('now').''.generateRandomString(3), 
 				'amt' => $curr[0],
-				'curr' => 'BTC'
+				'curr' => 'BTC',
+				'code' => $code
 			]);
 		} else {
 			return view('buy-token', [
 				'bal_amt' => $r['bal'],
 				'user_reference_id' => strtotime('now').''.generateRandomString(3),
 				'amt' => $curr[0],
-				'curr' => 'ETH'
+				'curr' => 'ETH',
+				'code' => $code
+
 			]);
 		}
 
@@ -519,6 +501,12 @@ class TokenController extends Controller
 		];
 
 
+		if (!empty($request['referral_code'])) {
+			$code = $request['referral_code'];
+		} else {
+			$code = '';
+		}
+
 
 		// dd($request['reference']);
 
@@ -544,6 +532,8 @@ class TokenController extends Controller
 	            	'bal_amt' => $transaction['bal_amt'],
 	            	'number' => $transaction['number'],
 	            	'countries' => $countries,
+	            	'referred_code' => $code,
+	            	'is_verified' => 'No'
 	            
 				);
 
@@ -560,10 +550,6 @@ class TokenController extends Controller
 	            	'bal_amt' => 'required',
 	            	'number' => 'required',
 	            	'later_bank' => 'required',
-
-
-
-
 	        	]);
 
 
@@ -578,14 +564,11 @@ class TokenController extends Controller
 	            	'bal_amt' => $transaction['bal_amt'],
 	            	'number' => $transaction['number'],
 	            	'later_bank' => $transaction['later_bank'],
-	            	'countries' => $countries	
-
-	            	
-	           
-
+	            	'countries' => $countries,
+	            	'referred_code' => $code,
+	            	'is_verified' => 'No'	
 				);
-				} else {
-
+			} else {
 					$transaction = $request->validate([
 	            	'receiver_id' => 'required',
 	            	'amount' => 'required',
@@ -595,10 +578,6 @@ class TokenController extends Controller
 	            	'user_reference_id' => 'required',
 	            	'bal_amt' => 'required',
 	            	'number' => 'required',
-
-
-
-
 	        	]);
 
 				$email_details = array(
@@ -610,7 +589,9 @@ class TokenController extends Controller
 	            	'user_reference_id' => $transaction['user_reference_id'],	
 	            	'bal_amt' => $transaction['bal_amt'],
 	            	'number' => $transaction['number'],
-	            	'countries' => $countries
+	            	'countries' => $countries,
+	            	'referred_code' => $code,
+	            	'is_verified' => 'No'
 				);
 
 
@@ -640,8 +621,9 @@ class TokenController extends Controller
 	            'user_reference_id' => $transaction['user_reference_id'],
 	            'bal_amt' => $transaction['bal_amt'],
 	            'number' => $transaction['number'],
-	            'countries' => $countries
-
+	            'countries' => $countries,
+	            'referred_code' => $code,
+	            'is_verified' => 'No'
 			);
 
 		}

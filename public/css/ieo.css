@@ -11171,6 +11171,52 @@ nav {
   border-bottom-right-radius: 20px;
 }
 
+@-webkit-keyframes mymove {
+  0% {
+    right: 0%;
+  }
+
+  25% {
+    right: 35%;
+  }
+
+  75% {
+    right: -3%;
+  }
+
+  100% {
+    right: 0%;
+  }
+}
+
+@keyframes mymove {
+  0% {
+    right: 0%;
+  }
+
+  25% {
+    right: 35%;
+  }
+
+  75% {
+    right: -3%;
+  }
+
+  100% {
+    right: 0%;
+  }
+}
+
+.ticker-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.single-coin {
+  -webkit-animation: mymove 20s infinite;
+  /* Safari 4.0 - 8.0 */
+  animation: mymove 20s infinite;
+}
+
 .timeline {
   list-style-type: none;
   display: -webkit-box;

@@ -31,6 +31,7 @@ Route::post('/kyc', 'TokenController@kyc_post')->name('kyc_post');
 Route::get('/kyc-form/{uid}', 'TokenController@kyc_form')->name('kyc-form');
 Route::post('/thank-you', 'TokenController@kyc_confirm')->name('thank-you');
 Route::get('/get-tokens', 'TokenController@get_token')->name('get-token');
+Route::get('/get-trxn', 'TokenController@get_trxn')->name('get-trxn');
 Route::options('{any}', ['middleware' => ['cors'], function () {
 return response(['status' => 'success']);
 }])->where('any', '.*');

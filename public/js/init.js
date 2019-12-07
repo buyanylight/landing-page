@@ -634,20 +634,20 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\js\init.js */"./resources/js/init.js");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\progress-bar.scss */"./resources/sass/progress-bar.scss");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\app.scss */"./resources/sass/app.scss");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\privacy.scss */"./resources/sass/privacy.scss");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\mytower.scss */"./resources/sass/mytower.scss");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\mytower-mobile.scss */"./resources/sass/mytower-mobile.scss");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\ieo.scss */"./resources/sass/ieo.scss");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\home.scss */"./resources/sass/home.scss");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\mobile-home.scss */"./resources/sass/mobile-home.scss");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\ieo-mobile.scss */"./resources/sass/ieo-mobile.scss");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\slick\slick.scss */"./resources/sass/slick/slick.scss");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\slick\slick-theme.scss */"./resources/sass/slick/slick-theme.scss");
-__webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\preloaders.scss */"./resources/sass/preloaders.scss");
-module.exports = __webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\sass\mobile.scss */"./resources/sass/mobile.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\js\init.js */"./resources/js/init.js");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\progress-bar.scss */"./resources/sass/progress-bar.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\privacy.scss */"./resources/sass/privacy.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\mytower.scss */"./resources/sass/mytower.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\mytower-mobile.scss */"./resources/sass/mytower-mobile.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\ieo.scss */"./resources/sass/ieo.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\home.scss */"./resources/sass/home.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\mobile-home.scss */"./resources/sass/mobile-home.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\ieo-mobile.scss */"./resources/sass/ieo-mobile.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\slick\slick.scss */"./resources/sass/slick/slick.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\slick\slick-theme.scss */"./resources/sass/slick/slick-theme.scss");
+__webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\preloaders.scss */"./resources/sass/preloaders.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\sass\mobile.scss */"./resources/sass/mobile.scss");
 
 
 /***/ })
