@@ -2045,6 +2045,10 @@
 							<a href="{{ $tm['linkedin'] }}" class="text-white linkedin" style="font-size: 20px;" target="_blank">
 								<i class="fab fa-linkedin"></i>
 							</a>
+							@else
+								<span class="text-white linkedin" style="font-size: 20px;">
+									<i class="fab fa-linkedin"></i>
+								</span>
 							@endif
 						</div>						
 						<p class="header-text pt-3 mb-0">
@@ -2078,6 +2082,10 @@
 							<a href="{{ $tm['linkedin'] }}" class="text-white linkedin" style="font-size: 20px;" target="_blank">
 								<i class="fab fa-linkedin"></i>
 							</a>
+							@else
+								<span class="text-white linkedin" style="font-size: 20px;">
+									<i class="fab fa-linkedin"></i>
+								</span>
 							@endif
 						</div>						
 						<p class="header-text pt-3 mb-0">
@@ -2111,6 +2119,10 @@
 							<a href="{{ $tm['linkedin'] }}" class="text-white linkedin" style="font-size: 20px;" target="_blank">
 								<i class="fab fa-linkedin"></i>
 							</a>
+							@else
+								<span class="text-white linkedin" style="font-size: 20px;">
+									<i class="fab fa-linkedin"></i>
+								</span>
 							@endif
 						</div>						
 						<p class="header-text pt-3 mb-0">
@@ -2156,6 +2168,10 @@
 							<a href="{{ $tm['linkedin'] }}" class="text-white linkedin" style="font-size: 20px;" target="_blank">
 								<i class="fab fa-linkedin"></i>
 							</a>
+							@else
+								<span class="text-white linkedin" style="font-size: 20px;">
+									<i class="fab fa-linkedin"></i>
+								</span>
 							@endif
 						</div>						
 						<p class="header-text pt-3 mb-0">
@@ -2207,6 +2223,10 @@
 							<a href="{{ $tm['linkedin'] }}" class="text-white linkedin" style="font-size: 20px;" target="_blank">
 								<i class="fab fa-linkedin"></i>
 							</a>
+							@else
+								<span class="text-white linkedin" style="font-size: 20px;">
+									<i class="fab fa-linkedin"></i>
+								</span>
 							@endif
 						</div>						
 						<p class="header-text pt-3 mb-0">
@@ -2236,6 +2256,10 @@
 							<a href="{{ $tm['linkedin'] }}" class="text-white linkedin" style="font-size: 20px;" target="_blank">
 								<i class="fab fa-linkedin"></i>
 							</a>
+							@else
+								<span class="text-white linkedin" style="font-size: 20px;">
+									<i class="fab fa-linkedin"></i>
+								</span>
 							@endif
 						</div>						
 						<p class="header-text pt-3 mb-0">
