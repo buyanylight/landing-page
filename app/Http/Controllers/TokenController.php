@@ -123,10 +123,13 @@ class TokenController extends Controller
 			$test[$cbkey] = $cbvalue;	
 			if ($cbvalue['bal_amt'] < 5000) {
 				$test[$cbkey]['expected_bal_amt'] = ($cbvalue['bal_amt'] * 0.1 );
+				$test[$cbkey]['expected_bal_amt_per'] = '10%';
 			} elseif ($cbvalue['bal_amt'] < 10000) {
 				$test[$cbkey]['expected_bal_amt'] = ($cbvalue['bal_amt'] * 0.075 );
+				$test[$cbkey]['expected_bal_amt_per'] = '7.5%';
 			} else {
 				$test[$cbkey]['expected_bal_amt'] = ($cbvalue['bal_amt'] * 0.05 );
+				$test[$cbkey]['expected_bal_amt_per'] = '5%';
 			}
 			
 			$curr = $this->GetApi('https://rest.coinapi.io/v1/exchangerate/USD?apikey='.env('COINAPI_KEY'));
@@ -134,10 +137,10 @@ class TokenController extends Controller
 			foreach ($curr_result['rates'] as $tkkey => $tkvalue){
 				if ($tkvalue['asset_id_quote'] == 'BTC' || $tkvalue['asset_id_quote'] == 'ETH') {
 					if ($tkvalue['asset_id_quote'] == 'BTC') {
-						$test[$cbkey]['BTC'] = ($tkvalue['rate'] / 4) * $cbvalue['bal_amt'];
+						$test[$cbkey]['BTC'] = ($tkvalue['rate'] / 4) * $test[$cbkey]['expected_bal_amt'];
 					}
 					if ($tkvalue['asset_id_quote'] == 'ETH') {
-						$test[$cbkey]['ETH'] = ($tkvalue['rate'] / 4) * $cbvalue['bal_amt'];
+						$test[$cbkey]['ETH'] = ($tkvalue['rate'] / 4) * $test[$cbkey]['expected_bal_amt'];
 					}
 				}
 			}
