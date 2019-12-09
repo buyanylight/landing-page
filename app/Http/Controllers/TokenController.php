@@ -102,7 +102,9 @@ class TokenController extends Controller
 
 	public function get_token(){
 
-		$tknbyer = TokenBuyer::where('email_id', 'LIKE', '%'.$_GET['email'].'%')->sum('bal_amt');
+		$tknbyer = TokenBuyer::where('email_id', 'LIKE', '%'.$_GET['email'].'%')
+			->where('is_verified' ,'=', 'Yes')
+			->sum('bal_amt');
 
 
 		// dd($tknbyer);
