@@ -113,14 +113,46 @@ class TokenController extends Controller
 	}
 
 
-		public function get_trxn(){
+	public function get_trxn(){
 
 		$codebyer = TokenBuyer::where('referred_code', 'LIKE', '%'.$_GET['code'].'%')->get();
 
+		$test = [];
 
-		// dd($codebyer);
+		foreach ($codebyer as $cbkey => $cbvalue) {
+			$test[$cbkey] = $cbvalue;	
+			if ($cbvalue['bal_amt'] < 5000) {
+				$test[$cbkey]['expected_bal_amt'] = ($cbvalue['bal_amt'] * 0.1 );
+			} elseif ($cbvalue['bal_amt'] < 10000) {
+				$test[$cbkey]['expected_bal_amt'] = ($cbvalue['bal_amt'] * 0.075 );
+			} else {
+				$test[$cbkey]['expected_bal_amt'] = ($cbvalue['bal_amt'] * 0.05 );
+			}
+			
+			$curr = $this->GetApi('https://rest.coinapi.io/v1/exchangerate/USD?apikey='.env('COINAPI_KEY'));
+			$curr_result = json_decode($curr, true);
+			foreach ($curr_result['rates'] as $tkkey => $tkvalue){
+				if ($tkvalue['asset_id_quote'] == 'BTC' || $tkvalue['asset_id_quote'] == 'ETH') {
+					if ($tkvalue['asset_id_quote'] == 'BTC') {
+						$test[$cbkey]['BTC'] = ($tkvalue['rate'] / 4) * $cbvalue['bal_amt'];
+					}
+					if ($tkvalue['asset_id_quote'] == 'ETH') {
+						$test[$cbkey]['ETH'] = ($tkvalue['rate'] / 4) * $cbvalue['bal_amt'];
+					}
+				}
+			}
+		}
 
-		return response($codebyer);
+
+		// $test[''] = $codebyer[0];
+
+		// dd($test); die();
+
+
+
+		return response($test);
+	
+
 	}
 
 
