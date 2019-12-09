@@ -508,6 +508,9 @@ class TokenController extends Controller
 		}
 
 
+		$bal_amt = str_replace( ',', '', $request['bal_amt']);
+
+
 		// dd($request['reference']);
 
 		if ($request['transaction_id'] == null) {
@@ -529,7 +532,7 @@ class TokenController extends Controller
 					'email_id' => $transaction['email_id'],
 					'name' => $transaction['name'],
 	            	'user_reference_id' => $transaction['user_reference_id'],	
-	            	'bal_amt' => $transaction['bal_amt'],
+	            	'bal_amt' => $bal_amt,
 	            	'number' => $transaction['number'],
 	            	'countries' => $countries,
 	            	'referred_code' => $code,
@@ -561,7 +564,7 @@ class TokenController extends Controller
 					'name' => $transaction['name'],
 					'reference' => $transaction['reference'],
 	            	'user_reference_id' => $transaction['user_reference_id'],	
-	            	'bal_amt' => $transaction['bal_amt'],
+	            	'bal_amt' => $bal_amt,
 	            	'number' => $transaction['number'],
 	            	'later_bank' => $transaction['later_bank'],
 	            	'countries' => $countries,
@@ -587,15 +590,12 @@ class TokenController extends Controller
 					'name' => $transaction['name'],
 					'reference' => $transaction['reference'],
 	            	'user_reference_id' => $transaction['user_reference_id'],	
-	            	'bal_amt' => $transaction['bal_amt'],
+	            	'bal_amt' => $bal_amt,
 	            	'number' => $transaction['number'],
 	            	'countries' => $countries,
 	            	'referred_code' => $code,
 	            	'is_verified' => 'No'
 				);
-
-
-
 				}
 			}
 
@@ -619,7 +619,7 @@ class TokenController extends Controller
 				'email_id' => $transaction['email_id'],
 				'name' => $transaction['name'],
 	            'user_reference_id' => $transaction['user_reference_id'],
-	            'bal_amt' => $transaction['bal_amt'],
+	            'bal_amt' => $bal_amt,
 	            'number' => $transaction['number'],
 	            'countries' => $countries,
 	            'referred_code' => $code,
