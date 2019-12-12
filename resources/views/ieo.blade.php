@@ -198,24 +198,18 @@
 <!-- <section class="mt-5 pt-4">
 	<div class="ticker-scroll" style="overflow: auto; white-space: nowrap;">
 		@foreach ($ticker as $tckr)
-			<div class="single-coin d-inline-block card card-body" style="width: 12%">
-				<div class="row">
-					<div class="col-3">
-						<b>Coin:</b> 
-					</div>
-					<div class="col-6">
-						{{ $tckr['asset_id_quote'] }} 
-					</div>
+		<div class="single-coins">
+			<div class="single-coins__item d-inline-block">
+				<div>
+					<b>Coin:</b> 
+					{{ $tckr['asset_id_quote'] }} 
 				</div>
-				<div class="row">
-					<div class="col-3">
-						<b>Rate:</b> 
-					</div>
-					<div class="col-6">
-						{{ 1 / $tckr['rate'] }} 
-					</div>
+				<div>
+					<b>Rate:</b> 
+					{{ number_format(1 / $tckr['rate'], 6) }}
 				</div>
 			</div>
+		</div>
 		@endforeach
 	</div>
 </section> -->
