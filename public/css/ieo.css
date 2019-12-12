@@ -11207,14 +11207,58 @@ nav {
   }
 }
 
-.ticker-scroll::-webkit-scrollbar {
-  display: none;
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
 }
 
-.single-coin {
-  -webkit-animation: mymove 20s infinite;
-  /* Safari 4.0 - 8.0 */
-  animation: mymove 20s infinite;
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-scroll {
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  overflow: hidden;
+  height: 4rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding-left: 4%;
+  box-sizing: content-box;
+}
+
+.ticker-scroll .single-coins {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 3%;
+  box-sizing: content-box;
+}
+
+.ticker-scroll .single-coins__item {
+  display: inline-block;
+  padding: 0 0rem;
+  color: black;
+}
+
+.ticker-scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .timeline {
