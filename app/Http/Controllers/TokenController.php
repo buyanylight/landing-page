@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Jenssegers\Agent\Agent;
+use Cache;
 
 
 // use Illuminate\Support\Facades\Mail;
@@ -18,52 +19,115 @@ use App\Mail\KYCConfirmationAdmin;
 class TokenController extends Controller
 {
 	public function token_info(){
+		// dd('Hello');
 
-		die();
+		// $curr = $this->GetApi('https://rest.coinapi.io/v1/exchangerate/USD?apikey='.env('COINAPI_KEY'));
+
+		$curr = 'https://api.coinbase.com/v2/exchange-rates?currency=USD';
 
 
-		$curr = $this->GetApi('https://rest.coinapi.io/v1/exchangerate/USD?apikey='.env('COINAPI_KEY'));
+		if (Cache::has('currency')) {
+			$curr_all = json_decode(Cache::get('currency'), true);
+			
+		} else {
+			$curr_result = file_get_contents($curr);
+			$curr_all = json_decode($curr_result, true);
+			Cache::put('currency', $curr_result, 2);
+		}
 
-		$curr_result = json_decode($curr, true);
+
+
+
 	
+		// dd($curr_all['data']);
+
+
+		foreach($curr_all['data']['rates'] as $tkey => $tvalue) {
+			if ($tkey == 'BTC' || $tkey == 'ETH' || $tkey == 'EUR' || $tkey == 'USD') {
+				// dd('hello');
+				$all_curr[$tkey][] = $tvalue;
+				foreach ($all_curr as $tkkey => $tkvalue) {
+
+					// dd($tkvalue[0]);
+					$all_curr[$tkkey]['base'] = $tkkey;
+
+			
+					if ($tkkey == 'BTC') {
+						$all_curr[$tkkey]['logo'] = '<i class="fab fa-bitcoin"></i>';	
+						$all_curr[$tkkey]['symbol'] = 'Bitcoin';
+						$all_curr[$tkkey]['rank'] = 3;	
+					$all_curr[$tkkey]['bal_rate'] = number_format($tkvalue[0] / 4, 8);
+					}
+
+					if ($tkkey == 'ETH') {
+						$all_curr[$tkkey]['logo'] = '<i class="fab fa-ethereum"></i>';
+						$all_curr[$tkkey]['symbol'] = 'Ethereum';
+						$all_curr[$tkkey]['rank'] = 4;
+					$all_curr[$tkkey]['bal_rate'] = number_format($tkvalue[0] / 4, 8);
+					}
+
+					if ($tkkey == 'EUR') {
+						$all_curr[$tkkey]['logo'] = '<i class="fas fa-euro-sign"></i>';
+						$all_curr[$tkkey]['symbol'] = 'Euro';
+						$all_curr[$tkkey]['rank'] = 2;
+					$all_curr[$tkkey]['bal_rate'] = number_format($tkvalue[0] / 4, 2);
+					}
+
+					if ($tkkey == 'USD') {
+						$all_curr[$tkkey]['logo'] = '<i class="fas fa-dollar-sign"></i>';
+						$all_curr[$tkkey]['rank'] = 1;
+						$all_curr[$tkkey]['symbol'] = 'US Dollar';
+					$all_curr[$tkkey]['bal_rate'] = number_format($tkvalue[0] / 4, 2);
+					}
+				}
+			}
+		}
+
+		// dd($all_curr);
+
+
+
+
+		// Quick Fix for the Attack
+
 		// dd($curr_result['rates']);
 
 
-		foreach ($curr_result['rates'] as $tkey => $tvalue) {
+		// foreach ($curr_result['rates'] as $tkey => $tvalue) {
 
-			if ($tvalue['asset_id_quote'] == 'XMR' || $tvalue['asset_id_quote'] == 'BTC' || $tvalue['asset_id_quote'] == 'ETH' || $tvalue['asset_id_quote'] == 'BNB' || $tvalue['asset_id_quote'] == 'LINK' || $tvalue['asset_id_quote'] == 'QNT' || $tvalue['asset_id_quote'] == 'REN' || $tvalue['asset_id_quote'] == 'LTC' || $tvalue['asset_id_quote'] == 'EOS' || $tvalue['asset_id_quote'] == 'ZCN' || $tvalue['asset_id_quote'] == 'ADA' ) {
-					$ticker[] = $tvalue;
-			}
+		// 	if ($tvalue['asset_id_quote'] == 'XMR' || $tvalue['asset_id_quote'] == 'BTC' || $tvalue['asset_id_quote'] == 'ETH' || $tvalue['asset_id_quote'] == 'BNB' || $tvalue['asset_id_quote'] == 'LINK' || $tvalue['asset_id_quote'] == 'QNT' || $tvalue['asset_id_quote'] == 'REN' || $tvalue['asset_id_quote'] == 'LTC' || $tvalue['asset_id_quote'] == 'EOS' || $tvalue['asset_id_quote'] == 'ZCN' || $tvalue['asset_id_quote'] == 'ADA' ) {
+		// 			$ticker[] = $tvalue;
+		// 	}
 
-			if ($tvalue['asset_id_quote'] == 'EUR' || $tvalue['asset_id_quote'] == 'BTC' ||  $tvalue['asset_id_quote'] == 'ETH' ||  $tvalue['asset_id_quote'] == 'USD') {
-				$all_curr[$tkey] = $tvalue;
-				// $all_curr[$tkey]['bal_rate'] = number_format($tvalue['rate'] / 5, 8);
-				$all_curr[$tkey]['bal_rate'] = number_format($tvalue['rate'] / 4, 8);
-				$all_curr[$tkey]['time'] = date('d-M-y H:i', strtotime($all_curr[$tkey]['time'])) . ' UTC' ;
-			}
+		// 	if ($tvalue['asset_id_quote'] == 'EUR' || $tvalue['asset_id_quote'] == 'BTC' ||  $tvalue['asset_id_quote'] == 'ETH' ||  $tvalue['asset_id_quote'] == 'USD') {
+		// 		$all_curr[$tkey] = $tvalue;
+		// 		// $all_curr[$tkey]['bal_rate'] = number_format($tvalue['rate'] / 5, 8);
+		// 		$all_curr[$tkey]['bal_rate'] = number_format($tvalue['rate'] / 4, 8);
+		// 		$all_curr[$tkey]['time'] = date('d-M-y H:i', strtotime($all_curr[$tkey]['time'])) . ' UTC' ;
+		// 	}
 
-			if ($tvalue['asset_id_quote'] == 'EUR'){
-				$all_curr[$tkey]['logo'] = '<i class="fas fa-euro-sign"></i>';
-				$all_curr[$tkey]['symbol'] = 'Euro';
-				$all_curr[$tkey]['rank'] = 2;
-			}
-			if ($tvalue['asset_id_quote'] == 'USD'){
-				$all_curr[$tkey]['logo'] = '<i class="fas fa-dollar-sign"></i>';
-				$all_curr[$tkey]['symbol'] = 'US Dollar';
-				$all_curr[$tkey]['rank'] = 1;
-			}
-			if ($tvalue['asset_id_quote'] == 'BTC'){
-				$all_curr[$tkey]['logo'] = '<i class="fab fa-bitcoin"></i>';	
-				$all_curr[$tkey]['symbol'] = 'Bitcoin';
-				$all_curr[$tkey]['rank'] = 3;
-			}
-			if ($tvalue['asset_id_quote'] == 'ETH'){
-				$all_curr[$tkey]['logo'] = '<i class="fab fa-ethereum"></i>';
-				$all_curr[$tkey]['symbol'] = 'Ethereum';
-				$all_curr[$tkey]['rank'] = 4;
-			}
+		// 	if ($tvalue['asset_id_quote'] == 'EUR'){
+		// 		$all_curr[$tkey]['logo'] = '<i class="fas fa-euro-sign"></i>';
+		// 		$all_curr[$tkey]['symbol'] = 'Euro';
+		// 		$all_curr[$tkey]['rank'] = 2;
+		// 	}
+		// 	if ($tvalue['asset_id_quote'] == 'USD'){
+		// 		$all_curr[$tkey]['logo'] = '<i class="fas fa-dollar-sign"></i>';
+		// 		$all_curr[$tkey]['symbol'] = 'US Dollar';
+		// 		$all_curr[$tkey]['rank'] = 1;
+		// 	}
+		// 	if ($tvalue['asset_id_quote'] == 'BTC'){
+		// 		$all_curr[$tkey]['logo'] = '<i class="fab fa-bitcoin"></i>';	
+		// 		$all_curr[$tkey]['symbol'] = 'Bitcoin';
+		// 		$all_curr[$tkey]['rank'] = 3;
+		// 	}
+		// 	if ($tvalue['asset_id_quote'] == 'ETH'){
+		// 		$all_curr[$tkey]['logo'] = '<i class="fab fa-ethereum"></i>';
+		// 		$all_curr[$tkey]['symbol'] = 'Ethereum';
+		// 		$all_curr[$tkey]['rank'] = 4;
+		// 	}
 
-		}
+		// }
 				// dd($ticker);
 
 		usort($all_curr, function($a, $b) {
@@ -89,13 +153,13 @@ class TokenController extends Controller
  		if($isMobile || $isTablet) {
             return view('mobile.ieo', [
             	'code' => $code,
-            	'ticker' => $ticker,
+            	// 'ticker' => $ticker,
 				'tokens' => $all_curr
             ])->with('showpopup',true);
         } else {
             return view('ieo', [
             	'code' => $code,
-            	'ticker' => $ticker,
+            	// 'ticker' => $ticker,
 				'tokens' => $all_curr
             ])->with('showpopup',true);
         }

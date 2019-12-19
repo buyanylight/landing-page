@@ -593,10 +593,10 @@
     								<div class="col-md-9 col-9">
       									<div class="card-body card-body d-flex align-items-center justify-content-end" style="height: 70px;">
         									<p class="card-text text-right mb-0">
-        										<span class="{{ $token['asset_id_quote'] }}_value" data-value="{{ $token['bal_rate'] }}">
+        										<span class="{{ $token['base'] }}_value" data-value="{{ $token['bal_rate'] }}">
         											0
-        										</span> <span>{{ $token['asset_id_quote'] }}</span><br>
-        										<small class="text-muted">1 BAL = {{ $token['bal_rate'] }} {{ $token['asset_id_quote'] }} </small>
+        										</span> <span>{{ $token['base'] }}</span><br>
+        										<small class="text-muted">1 BAL = {{ $token['bal_rate'] }} {{ $token['base'] }} </small>
         									</p>
       									</div>
     								</div>
@@ -707,7 +707,7 @@
 									<label> <b>Step 1:</b> Select Currency to buy BAL Tokens</label>
 									<select name="currency" class="form-control" required>
 										@foreach($tokens as $token)
-											<option value="" class="{{ $token['asset_id_quote'] }}_value">{{ $token['asset_id_quote'] }}</option>
+											<option value="" class="{{ $token['base'] }}_value">{{ $token['base'] }}</option>
 										@endforeach
 									</select>
 									<small class="pt-3">
