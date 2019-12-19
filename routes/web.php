@@ -23,6 +23,7 @@ Route::get('/phpinfo', 'PageController@phpinfo')->name('php');
 Route::get('/contact', 'PageController@contact')->name('contact');
 // Route::get('/ieo', 'PageController@ieo')->name('ieo');
 
+Route::get('/ieo-page', 'TokenController@token_info')->name('ieo');
 Route::get('/ieo', 'TokenController@token_info')->name('ieo');
 // Route::get('/testcode', 'TokenController@token_info_code')->name('testcode');
 Route::post('/buy-token', 'TokenController@buy_tokens')->name('buy-tokens');
