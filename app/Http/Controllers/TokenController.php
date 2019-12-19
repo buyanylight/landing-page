@@ -19,6 +19,9 @@ class TokenController extends Controller
 {
 	public function token_info(){
 
+		die();
+
+
 		$curr = $this->GetApi('https://rest.coinapi.io/v1/exchangerate/USD?apikey='.env('COINAPI_KEY'));
 
 		$curr_result = json_decode($curr, true);
