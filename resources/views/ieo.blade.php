@@ -195,24 +195,7 @@
         </div>
     </div>    
 </div>
-<!-- <section class="mt-5 pt-4">
-	<div class="ticker-scroll" style="overflow: auto; white-space: nowrap;">
-		@foreach ($ticker as $tckr)
-		<div class="single-coins">
-			<div class="single-coins__item d-inline-block">
-				<div>
-					<b>Coin:</b> 
-					{{ $tckr['asset_id_quote'] }} 
-				</div>
-				<div>
-					<b>Rate:</b> 
-					{{ number_format(1 / $tckr['rate'], 6) }}
-				</div>
-			</div>
-		</div>
-		@endforeach
-	</div>
-</section> -->
+
 <section class="section-1" id="section-1" style="background-image : url({{ Util::assetUrl('/images/ieo/ieo-bg1.png') }})">
 	<div class="container h-100">
 		<div class="d-flex align-items-center h-100">
@@ -590,10 +573,10 @@
     								<div class="col-md-9">
       									<div class="card-body card-body d-flex align-items-center justify-content-end" style="height: 60px;">
         									<p class="card-text text-right mb-0">
-        										<span class="{{ $token['asset_id_quote'] }}_value" data-value="{{ $token['bal_rate'] }}">
+        										<span class="{{ $token['base'] }}_value" data-value="{{ $token['bal_rate'] }}">
         											0
-        										</span> <span>{{ $token['asset_id_quote'] }}</span><br>
-        										<small class="text-muted">1 BAL = {{ $token['bal_rate'] }} {{ $token['asset_id_quote'] }} </small>
+        										</span> <span>{{ $token['base'] }}</span><br>
+        										<small class="text-muted">1 BAL = {{ $token['bal_rate'] }} {{ $token['base'] }} </small>
         									</p>
       									</div>
     								</div>
@@ -700,7 +683,7 @@
 									<div class="col-md-6 col-12">
 										<select name="currency" class="form-control" required>
 											@foreach($tokens as $token)
-											<option value="" class="{{ $token['asset_id_quote'] }}_value">{{ $token['asset_id_quote'] }}</option>
+											<option value="" class="{{ $token['base'] }}_value">{{ $token['base'] }}</option>
 											@endforeach
 										</select>
 										<small class="pt-3">
