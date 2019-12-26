@@ -11149,6 +11149,8 @@ nav {
 .btn-ieo {
   background: -webkit-linear-gradient(right, #E23D96, #5555A4);
   color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .btn-ieo:hover {
@@ -11526,21 +11528,10 @@ footer {
 }
 
 .section-1 .videos {
-  display: -webkit-box;
-  display: flex;
-}
-
-.section-1 .videos a {
-  width: 50%;
-  height: 170px;
-  overflow: hidden;
-  margin-right: 10px;
-  padding: 0;
-  border: 0;
-}
-
-.section-1 .videos a .video {
-  width: 100%;
+  background-color: white;
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 25px;
 }
 
 .section-1 .countdown {
@@ -11597,7 +11588,7 @@ footer {
 
 .section-1 .progress .progress-bar {
   border-radius: 28px;
-  background: #F511A9;
+  background: #df3d96;
 }
 
 .vision-mission .video {
@@ -11608,6 +11599,30 @@ footer {
 .whychoosebaltoken-item > div > img {
   height: 70px;
   width: auto;
+}
+
+.buyer-card {
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 7px 7px 5px #eaeaea;
+}
+
+.all-videos {
+  display: -webkit-box;
+  display: flex;
+}
+
+.all-videos a {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-right: 10px;
+  padding: 0;
+  border: 0;
+}
+
+.all-videos a .video {
+  width: 100%;
 }
 
 .inputBox {
