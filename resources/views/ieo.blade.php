@@ -229,7 +229,7 @@
 						
 						<a href="https://icomarks.com/ico/buyanylight" 
 						target="_blank" rel="nofollow" title="BuyAnyLight ICO">
-							<img border="0" src="https://icomarks.com/widget/b/buyanylight/square.svg"
+							<img border="0" src="{{ Util::assetUrl('images/ieo/partners/icomarks.svg')}}"
 							style="height: 80px; position: absolute; top: -5px; right: 115px;" 
 							alt="BuyAnyLight ICO Rating"/>
 						</a>
@@ -2382,7 +2382,7 @@
 					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICORATING", 'link'=>"https://icoholder.com/en/buyanylight-31234", 'src'=>Util::assetUrl("images/ieo/partners/icoholder.png"), ];
 					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight COINCODEX", 'link'=>"https://coincodex.com/ieo/buyanylight/", 'src'=>Util::assetUrl("images/ieo/partners/coincodex.png"), ];
 					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOHOLDER", 'link'=>"https://icobench.com/ico/buyanylight-bal", 'src'=>"https://icobench.com/rated/buyanylight-bal?shape=square&size=m", ];
-					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOMARKS", 'link'=>"https://icomarks.com/ico/buyanylight", 'src'=>"https://icomarks.com/widget/b/buyanylight/square.svg", ];
+					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOMARKS", 'link'=>"https://icomarks.com/ico/buyanylight", 'src'=>Util::assetUrl("images/ieo/partners/icomarks.svg"), ];
 					//$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOSBULL", 'link'=>"https://icosbull.com/eng/ico/buyanylightbal", 'src'=>"images/ieo/partners/icosbull.png", ];
 				?>
 				<div class="col-5 mt-10">

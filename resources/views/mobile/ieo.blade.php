@@ -220,7 +220,7 @@
 						
 						<a href="https://icomarks.com/ico/buyanylight" 
 						target="_blank" rel="nofollow" title="BuyAnyLight ICO">
-							<img border="0" src="https://icomarks.com/widget/b/buyanylight/square.svg"
+							<img border="0" src="{{ Util::assetUrl('images/ieo/partners/icomarks.svg') }}"
 							style="height: 65px; margin-left: 5px;" 
 							alt="BuyAnyLight ICO Rating"/>
 						</a>
@@ -1863,7 +1863,7 @@
 								<img style="" src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" alt="BuyAnyLight (BAL) ICO rating"/>
 							</a>
 							<a style="width: 150px;" href="https://icomarks.com/ico/buyanylight" target="_blank"  title="BuyAnyLight ICOMARKS">
-								<img style="" src="https://icomarks.com/widget/b/buyanylight/square.svg" alt="BuyAnyLight ICOMARKS"/>
+								<img style="" src="{{ Util::assetUrl('images/ieo/partners/icomarks.svg') }}" alt="BuyAnyLight ICOMARKS"/>
 							</a>
 							<a style="width: 150px;" href="https://coincodex.com/ieo/buyanylight/" target="_blank" rel="nofollow" title="BuyAnyLight COINCODEX">
 								<img style="" src="{{ Util::assetUrl('images/ieo/partners/coincodex.png') }}" alt="BuyAnyLight COINCODEX"/>
