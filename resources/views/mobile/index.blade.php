@@ -59,7 +59,7 @@
 					
 					<a href="https://icomarks.com/ico/buyanylight" 
 					target="_blank" rel="nofollow" title="BuyAnyLight ICO">
-						<img border="0" src="https://icomarks.com/widget/b/buyanylight/square.svg"
+						<img border="0" src="{{Util::assetUrl('images/ieo/partners/icomarks.svg')}}"
 						style="height: 100px; margin-bottom: -15px; margin-left: 5px;" 
 						alt="BuyAnyLight ICO Rating"/>
 					</a>
