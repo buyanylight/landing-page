@@ -24,7 +24,7 @@
 		    adaptiveHeight: true,
             centerPadding: '0px',
             slidesToShow: 1,
-            initialSlide:5,
+            initialSlide: 0,
             infinite: false,
             arrows: true,
 		    prevArrow: '<button type="button" class="slick-prev d-inline-block">Previous</button>',
@@ -923,6 +923,84 @@
 	<img src="{{ Util::assetUrl('images/HALF.jpg') }}" width="100%">
 
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="section-5 bg-black" id="roadmap">
 	<div class="container pt-5 pb-5">
 		<h3 class="pb-3 text-center">
@@ -947,11 +1025,20 @@
 		<div class="container text-center text-white">
 		
 
+
+
+
+
+
+
+
+
+			
 				
 
 				{{-- roadmap --}}
 				{{-- ////////////////////////////////////////////////////////////////// --}}
-				<ul class="roadmap">
+				{{-- <ul class="roadmap">
   					<li class="li complete">
 
 	  					<div>
@@ -1299,17 +1386,222 @@
 	    					</div>
     					</div>
   					</li>
- 				</ul>  
+ 				</ul>   
+				<div class="arrows pt-3"></div> --}}
+
+
+
+				<?php
+
+					$timeline = [];
+					$timeline[] = [
+						'name' => '2014',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'style' => '',
+						'items' => [
+							'Foundation Almani Lighting Gmbh',
+						],
+					];
+					$timeline[] = [
+						'name' => '2015',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'style' => '',
+						'items' => [
+							'Foundation of Almani Lighting LLC, Dubai,',
+							'Strategic Partnerships',
+						],
+					];
+					$timeline[] = [
+						'name' => '2016',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'style' => '',
+						'items' => [
+							'BAL Idea Inception, Research and Feasibility and',
+							'Development team recruitment',
+						],
+					];
+					$timeline[] = [
+						'name' => '2017',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'style' => '',
+						'items' => [
+							'51% Ownershio Acquisition of Almani Lighting LLC by',
+							'Asas Holding, Warehouse expansion,',
+							'BAL Light Finder development and testing',
+						],
+					];
+					$timeline[] = [
+						'name' => '2018',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'style' => '',
+						'items' => [
+							'Team Expansion, Product range extended to 600+',
+							'Fiat Partner Collaboration, Major Sheikh Palace Contracts in UAE',
+						],
+					];
+					$timeline[] = [
+						'name' => '2019',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'style' => '',
+						'items' => [
+							'BAL Beta Version release,',
+							'Documentation and drafting,',
+							'Website Development and launch,',
+							'Seed round finished and Public Token sale',
+							'Marketing Kickstart',
+						],
+					];
+					$timeline[] = [
+						'name' => '2020',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'style' => 'height: 350px;',
+						'items' => [
+							'IEO Sale and Listing on exchanges',
+							'Blockchain development team expansion',
+							'Blockchain based platform development Initiated',
+							'Smart Contracts Development, Wallet development with cross-chain',
+							'Asset exchange',
+							'Traceable Logistic partnerships and development initiated',
+						],
+					];
+					$timeline[] = [
+						'name' => '2021',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'style' => '',
+						'items' => [
+							'Traceable logistic functionality implementation',
+							'Alpha version release',
+							'Mobile apps release',
+						],
+					];
+					$timeline[] = [
+						'name' => '2022',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'style' => '',
+						'items' => [
+							'On-chain logistic fully implemented',
+							'AI-Based Smart Contracts Implementation',
+							'BAL Custodial Platform development',
+						],
+					];
+					$timeline[] = [
+						'name' => '2023',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'style' => '',
+						'items' => [
+							'Expansion into construction industry',
+							'BAL Tokenization Platform Development',
+							'Smart Contract Notary Service Launch',
+						],
+					];
+					$timeline[] = [
+						'name' => '2023',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'style' => '',
+						'items' => [
+							'Expansion into construction industry',
+							'BAL Tokenization Platform Development',
+							'Smart Contract Notary Service Launch',
+						],
+					];
+
+				?>
+
+				<div class="ps-timeline-sec">
+					<div class="container">
+						<ol class="ps-timeline">
+						@foreach ($timeline as $key2 => $tml)
+							<li style="{{ $tml['style'] }}">										
+								<div class="img-handler img-handler-top">
+									<img src="{{ $tml['icon'] }}" alt=""/>
+								</div>
+
+
+								<div class="ps-top">
+									@foreach($tml['items'] as $item)
+										<p>{{ $item }}</p>									
+									@endforeach
+								</div>
+								<span class="ps-sp-top">{{ $tml['name'] }}</span>
+							</li>
+						@endforeach
+						</ol>
+					</div>
+				</div>	
+		
+
 				{{-- ////////////////////////////////////////////////////////////////// --}}
 				{{-- roadmap --}}
 
 
 
-				<div class="arrows pt-3"></div> 
 
 		</div>
 	</div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

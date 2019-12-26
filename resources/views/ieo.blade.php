@@ -36,7 +36,7 @@
 			adaptiveHeight: true,
 			centerPadding: '0px',
 			slidesToShow: 1,
-			initialSlide: 1,
+			initialSlide: 0,
 			infinite: false,
 			appendArrows: $('.arrows'),
 			prevArrow: '<button type="button" class="slick-prev d-inline-block">Previous</button>',
@@ -1532,8 +1532,7 @@ $newsdatas = [];
 
 				
 
-				
-
+				<?php /*
 				
 
 				{{-- roadmap --}}
@@ -1599,11 +1598,10 @@ $newsdatas = [];
 									<div class="card mb-2"><div class="card-body">Establishment of a state-of-the-art Dubai showroom</div></div>
 									<div class="card mb-2"><div class="card-body">Warehouse expansion</div></div>
 									<div class="card mb-2"><div class="card-body">Several prestigious projects in UAE completed</div></div>
-									<div class="card mb-2"><div class="card-body">Product range covering 250 products in architectural, residential, commercial and decorative lighting</div>
-									<div class="card mb-2"><div class="card-body">BAL LightFinder and My Home Features testing</div>
+									<div class="card mb-2"><div class="card-body">Product range covering 250 products in architectural, residential, commercial and decorative lighting</div></div>
+									<div class="card mb-2"><div class="card-body">BAL LightFinder and My Home Features testing</div></div>
 								</div>
 									
-								</div>
 							</div>
 						</div>
 
@@ -1912,23 +1910,275 @@ $newsdatas = [];
 				{{-- ////////////////////////////////////////////////////////////////// --}}
 				{{-- roadmap --}}
 
-
-
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
 				<div class="arrows pt-3"></div>   
+
+
+				*/ ?>
+
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+	
+				
+				
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+				
+				
+				
+				
+				
+				{{-- roadmap --}}
+				{{-- ////////////////////////////////////////////////////////////////// --}}
+
+				<?php
+					$timelines = [];
+
+					$timeline = [];
+					$timeline[] = [
+						'name' => '2014',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'items' => [
+							'Foundation Almani Lighting Gmbh',
+						],
+					];
+					$timeline[] = [
+						'name' => '2015',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'items' => [
+							'Foundation of Almani Lighting LLC, Dubai,',
+							'Strategic Partnerships',
+						],
+					];
+					$timeline[] = [
+						'name' => '2016',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'items' => [
+							'BAL Idea Inception, Research and Feasibility and',
+							'Development team recruitment',
+						],
+					];
+					$timeline[] = [
+						'name' => '2017',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'items' => [
+							'51% Ownershio Acquisition of Almani Lighting LLC by',
+							'Asas Holding, Warehouse expansion,',
+							'BAL Light Finder development and testing',
+						],
+					];
+					$timelines[] = $timeline;
+					
+
+
+
+					$timeline = [];
+					$timeline[] = [
+						'name' => '2018',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'items' => [
+							'Team Expansion, Product range extended to 600+',
+							'Fiat Partner Collaboration, Major Sheikh Palace Contracts in UAE',
+						],
+					];
+					$timeline[] = [
+						'name' => '2019',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'items' => [
+							'BAL Beta Version release,',
+							'Documentation and drafting,',
+							'Website Development and launch,',
+							'Seed round finished and Public Token sale',
+							'Marketing Kickstart',
+						],
+					];
+					$timeline[] = [
+						'name' => '2020',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'items' => [
+							'IEO Sale and Listing on exchanges',
+							'Blockchain development team expansion',
+							'Blockchain based platform development Initiated',
+							'Smart Contracts Development, Wallet development with cross-chain',
+							'Asset exchange',
+							'Traceable Logistic partnerships and development initiated',
+						],
+					];
+					$timelines[] = $timeline;
+
+
+
+
+					$timeline = [];
+					$timeline[] = [
+						'name' => '2021',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'items' => [
+							'Traceable logistic functionality implementation',
+							'Alpha version release',
+							'Mobile apps release',
+						],
+					];
+					$timeline[] = [
+						'name' => '2022',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'items' => [
+							'On-chain logistic fully implemented',
+							'AI-Based Smart Contracts Implementation',
+							'BAL Custodial Platform development',
+						],
+					];
+					$timeline[] = [
+						'name' => '2023',
+						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'items' => [
+							'Expansion into construction industry',
+							'BAL Tokenization Platform Development',
+							'Smart Contract Notary Service Launch',
+						],
+					];
+					$timelines[] = $timeline;
+
+				?>
+
+				<ul class="roadmap">
+					@foreach($timelines as $key => $tmls)
+					<?php  
+						if($key == 0)
+						$dot = 'first-item';
+						else if($key == count($timelines)-1)
+						$dot = 'last-item';
+						else
+						$dot = '';
+					?>
+
+					<li class="li complete">
+						<div class="ps-timeline-sec">
+							<div class="container">
+								<ol class="ps-timeline {{ $dot }}">
+								@foreach ($tmls as $key2 => $tml)
+									<li style="width:{{ 100/count($tmls) }}%;">
+										<?php  $pos = ($key2%2 == 0)?'top':'bot'; ?>							
+										<?php  $pos2 = ($key2%2 == 0)?'bot':'top'; ?>
+										
+										<div class="img-handler-{{ $pos }}">
+											<img src="{{ $tml['icon'] }}" alt=""/>
+										</div>
+
+
+										<div class="ps-{{ $pos2 }}">
+											@foreach($tml['items'] as $item)
+												<p>{{ $item }}</p>									
+											@endforeach
+										</div>
+										<span class="ps-sp-{{ $pos }}">{{ $tml['name'] }}</span>
+									</li>
+								@endforeach
+								</ol>
+							</div>
+						</div>		
+					</li>
+					@endforeach
+				</ul>
+				<div class="arrows pt-3"></div>   
+
+				{{-- ////////////////////////////////////////////////////////////////// --}}
+				{{-- roadmap --}}
+
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 			</div>
 		</div>
 	</div>
