@@ -355,7 +355,7 @@
 								<div class="row" style="font-size: 10px;">
 									<p class="col-md-4 m-0 d-flex align-items-center"><b>Start</b></p>
 									<p class="col-md-4 text-center m-0 d-flex align-items-center justify-content-center"><b>Soft Cap</b></p>
-									<p class="col-md-4 text-right m-0 d-flex align-items-center justify-content-end"><b>Hard Cap<b></p>
+									<p class="col-md-4 text-right m-0 d-flex align-items-center justify-content-end"><b>Hard Cap</b></p>
 								</div>
 								<div class="pt-1">
 									<div class="progress">
@@ -884,16 +884,16 @@
 </section>
 <?php
 $newsdatas = [];
-					$newsdatas[] = [ 'style'=>"", 'title'=>"Airdrop Village", 'link'=>"https://airdropvillage.io/airdrop/buyanylight", 'src'=>"images/ieo/partners/ccn.png", ];
-					$newsdatas[] = [ 'style'=>"", 'title'=>"Airdrop King", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/partners/yfinance.png", ];
-					$newsdatas[] = [ 'style'=>"", 'title'=>"Webotic.ae", 'link'=>"http://webotic.ae", 'src'=>"images/ieo/partners/digital.png", ];
-					$newsdatas[] = [ 'style'=>"", 'title'=>"Airdrop Alert", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/partners/icobench2.png", ];
-					$newsdatas[] = [ 'style'=>"", 'title'=>"Vitro Services", 'link'=>"https://vitor-services.company", 'src'=>"images/ieo/partners/bitcoinwiki.png", ];
+					$newsdatas[] = [ 'style'=>"", 'title'=>"CCN", 'link'=>"https://lnkd.in/evx2GWH", 'src'=>"images/ieo/partners/ccn.png", ];
+					$newsdatas[] = [ 'style'=>"", 'title'=>"Yahoo Finance", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/partners/yfinance.png", ];
+					$newsdatas[] = [ 'style'=>"", 'title'=>"Digital Journal", 'link'=>"http://webotic.ae", 'src'=>"images/ieo/partners/digital.png", ];
+					$newsdatas[] = [ 'style'=>"", 'title'=>"ICOBench", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/partners/icobench2.png", ];
+					$newsdatas[] = [ 'style'=>"", 'title'=>"bitcoinwiki", 'link'=>"https://vitor-services.company", 'src'=>"images/ieo/partners/bitcoinwiki.png", ];
 
 ?>
 
 <section class="BAL-news" style="background-color: #f7f7f7; height: 35vh;">
-	<h3 class="text-center pt-5"><strong>BuyAnyLight in the News</strong></h3>
+	<h3 class="text-center pt-5"><strong>BuyAnyLight in the News and Media</strong></h3>
 	<div class="container d-flex align-items-center" style="height: 75%">
 		<div class="">
 			<div class="news-channels text-center">
@@ -1318,21 +1318,6 @@ $newsdatas = [];
 		<div class="container pt-5 pb-5">
 			<div class="row d-flex align-items-center">
 				<div class="col-md-6">
-					<h3>
-						<strong>
-							<span class="header-text">
-								Our
-							</span>
-							<span class="text-white">
-								Vision
-							</span>
-						</strong> 
-					</h3>
-					<p class="text-white">
-						Our vision is to become the leading global platform for buyers and sellers dealing in LED lighting. Through BAL Marketplace, we aim to democratize access to the sourcing of lighting products, without the interference of a centralized authority or intermediary.
-					</p>
-				</div>
-				<div class="col-md-6 text-center">
 					<div class="vision-mission">
 						{{-- <a  data-fancybox href="https://www.youtube.com/embed/o8CAwwz6tIM">							
 							<img src="{{asset('images/mv-img.png')}}" alt="..." class="rounded-circle mv-img" width="35%">							
@@ -1357,34 +1342,20 @@ $newsdatas = [];
 							
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="container pt-5 pb-5">
-			<div class="row d-flex align-items-center">
-				<div class="col-md-6 text-center">
-					{{-- <a data-fancybox href="https://www.youtube.com/embed/5nMkricvzfc" >
-						<img src="{{asset('images/mv-img.png')}}" alt="..." class="rounded-circle mv-img" width="35%">
-						<div class="text-dark yt">
-							<i class="fab fa-youtube "></i>
-						</div>
-					</a> --}}
-					<div class="vision-mission">
-						<a data-fancybox 
-						href="https://www.youtube-nocookie.com/embed/5nMkricvzfc?rel=0" 
-						class="">
-							<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}" alt="">
-							<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="position: relative; bottom: 35px;     left: 50px;">
-                            <div>
-                                <i class="fab fa-youtube"></i> 
-                                <span>
-                                    Play video
-                                </span>
-                            </div>
-                        </div>
-						</a>
-					</div>
-				</div>
 				<div class="col-md-6">
+					<h3>
+						<strong>
+							<span class="header-text">
+								Our
+							</span>
+							<span class="text-white">
+								Vision
+							</span>
+						</strong> 
+					</h3>
+					<p class="text-white">
+						We envision to revolutionize the entire sourcing process by harnessing the power of blockchain, AI, Big Data and Smart Contracts. Starting from the LED Lighting Industry, we aim to expand BAL Network into other industries including but not limited to Construction, Pharma, Food and Precious Metal Industry. 
+					</p>
 					<h3>
 						<strong>
 							<span class="header-text">
@@ -1396,7 +1367,7 @@ $newsdatas = [];
 						</strong> 
 					</h3>
 					<p class="text-white">
-						We aim to create a modern platform for lighting products by fully harnessing the technological power offered by blockchain, smart contracts, and cryptographic technology. Principled, honest and focused, we leverage the world’s best suppliers and deliver the most significant value LED products, the most exceptional service and advice, and first-rate customer satisfaction – every time.
+						Our mission is to become the leading platform of choice for individuals and businesses and manufacturers. Principled, honest and focused, we leverage the world’s best suppliers and deliver the most significant value LED products, the most exceptional service and advice, and first-rate customer satisfaction – every time.
 					</p>
 				</div>
 			</div>
@@ -1425,7 +1396,7 @@ $newsdatas = [];
 							<b>Decentralization</b>
 						</h5>
 						<p class="pt-1">
-							Unlike traditional marketplaces and payment networks, there is no single point of failure. All transactional activities happening within the BAL ecosystem are open and transparent to the whole community.
+							BAL is decentralized and community owned
 						</p>
 					</div>
 				</div>
@@ -1438,7 +1409,7 @@ $newsdatas = [];
 							<b>Security</b>
 						</h5>
 						<p class="pt-1">
-							BAL Token uses an Ethereum blockchain based proof of work consensus for confirming transactions, which makes it completely decentralized and one of the most secure digital assets. All of your transactional data is encrypted, and your digital assets are reserved in a wallet only you can access.
+							All transactions in BAL are secured by Smart Contracts.
 						</p>
 					</div>
 				</div>
@@ -1451,7 +1422,7 @@ $newsdatas = [];
 							<b>Utility</b>
 						</h5>
 						<p class="pt-1">
-							BAL Token has inherent utility within the BAL marketplace, a leading marketplace based in Dubai, UAE, allowing it to be accepted as a mode of payment for lighting products.
+							BAL Token is the native token within the BAL Ecosystem.
 						</p>
 					</div>
 				</div>
@@ -1463,10 +1434,10 @@ $newsdatas = [];
 					<img src="{{ Util::assetUrl('images/ieo/6-4.png') }}" width="20%">
 					<div class="pt-3">
 						<h5>
-							<b>Liquidity and Easy Transaction</b>
+							<b>Liquidity</b>
 						</h5>	
 						<p class="pt-1">
-							Easily liquidate or transfer your BAL Token to anyone, anywhere in the world through a secure, encrypted digital wallet.
+							Exchange or transfer value as simple as sending an email.
 						</p>
 					</div>
 				</div>
@@ -1479,7 +1450,7 @@ $newsdatas = [];
 							<b>Nominal Transactional Fee</b>
 						</h5>
 						<p class="pt-1">
-							BAL Marketplace deducts significantly lower fees than any other major online payment system. This allows users to send, receive or perform any transactional activity at minimal costs.
+							Transfer up to a million dollar in a single digit fee.
 						</p>
 					</div>
 				</div>
@@ -1492,7 +1463,7 @@ $newsdatas = [];
 							<b>Transparency</b>
 						</h5>
 						<p class="pt-1">
-							Deployment of all transactional records on a transparent blockchain ensures visibility and eliminates fraud.
+							All transactions are transparent and auditable.
 						</p>
 						
 					</div>
@@ -2211,40 +2182,40 @@ $newsdatas = [];
 						<div>
 							<table class="text-left w-100" cellpadding="10" id="token-info">
 								<tr>
-									<td>Token name:</td>
+									<td><b>Token name:</b></td>
 									<td>BAL Token</td>
 								</tr>
 								<tr>
-									<td>Ticker:</td>
+									<td><b>Ticker:</b></td>
 									<td>BAL</td>
 								</tr>
 								<tr>
-									<td>Token type:</td>
-									<td>ERC-20</td>
-								</tr>
-								<tr>
-									<td>Blockchain deployed:</td>
+									<td><b>Network:</b></td>
 									<td>Ethereum</td>
 								</tr>
 								<tr>
-									<td>Accepts:</td>
-									<td>BTC, ETH, EUR, USD</td>
+									<td><b>Soft Cap:</b></td>
+									<td>4 Million USD</td>
+								</tr>
+								<tr>
+									<td><b>Hard Cap:</b></td>
+									<td>5 Million USD</td>
 								</tr>								
 								<tr>
-									<td>Total supply:</td>
-									<td>55 Million (100%)</td>
+									<td><b>Total supply:</b></td>
+									<td>55 Million BAL</td>
 								</tr>
 								<tr>
-									<td>Private Sale price:</td>
-									<td>1BAL = USD 0.2</td>
+									<td><b>IEO price:</b></td>
+									<td>1BAL = USD 0.30303 (Upcoming)</td>
 								</tr>
 								<tr>
-									<td>Pre-IEO Sale price:</td>
-									<td>1BAL = USD 0.25</td>
+									<td><b>Pre-IEO Sale price:</b></td>
+									<td>1BAL = USD 0.25 (Live)</td>
 								</tr>
 								<tr>
-									<td>IEO Sale price:</td>
-									<td>1BAL = USD 0.30303</td>
+									<td><b>Private Round price:</b></td>
+									<td>1BAL = USD 0.20</td>
 								</tr>
 
 							</table>
@@ -2252,52 +2223,24 @@ $newsdatas = [];
 					</div>
 					<div class="col-md-6">
 						<div>
-							<table class="text-left w-100" id="token-info"> 
-								<tr>
-									<td>Soft Cap:</td>
-									<td>4 Million USD</td>
+							<h4 class="text-left"> <b>Crowd Sales Plan</b></h4>
+							<table class="text-left mt-3 w-100" id="token-info"> 
+								<tr height="100px">
+									<td><b>Private Round Sale:</b></td>
+									<td>1st October 2019 - 31st October 2019</td>
 								</tr>
-								<tr>
-									<td>Hard Cap:</td>
-									<td>8 Million USD</td>
+								<tr height="100px">
+									<td><b>PRE-IEO Sale:</b></td>
+									<td>1st November 2019 - 31st January 2020</td>
 								</tr>
-								<tr>
-									<td>Know Your Customer (KYC):</td>
-									<td>Yes</td>
+								<tr height="100px">
+									<td><b>IEO Sale:</b></td>
+									<td>1st Feburary 2020 - 29th Feburary 2020</td>
 								</tr>
-								<tr>
-									<td>Supply reserved for Private & <br>Pre-IEO Sale Round combined:</td>
-									<td>5.5 Million (10% of the total supply)</td>
-								</tr>
-								<tr>
-									<td>Supply reserved for IEO:</td>
-									<td>16.5 Million (30% of the total supply)</td>
-								</tr>
-								<tr>
-									<td>Seed Round date:</td>
-									<td>Febuary 1<sup>st</sup>, 2019 (Sold out)</td>
-								</tr>
-								<tr>
-									<td>Private Starting Date:</td>
-									<td>October 1<sup>st</sup>, 2019</td>
-								</tr>
-								<tr>
-									<td>Pre-IEO Starting Date:</td>
-									<td>November 1<sup>st</sup>, 2019</td>									
-								</tr>
-								<tr>
-									<td>IEO Starting Date:</td>
-									<td>February 1<sup>st</sup>, 2020</td>
-								</tr>
-
 							</table>
 						</div>
 					</div>
 					<div class="col-md-6 offset-md-3">
-						<div>
-							<table class="text-left w-100" id="token-info"> 
-							</table>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -2597,11 +2540,11 @@ $newsdatas = [];
 
 				<?php
 					$coreTeam = [];
-					$coreTeam[] = [	'name'=>'Johannes Eidens', 'title'=>'CEO & Founder', 'linkedin'=>'https://www.linkedin.com/in/dotcomv', 'image'=>'images/ieo/team/joh.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Martin Heyen', 'title'=>'Co-Founder & CFO', 'linkedin'=>'', 'image'=>'images/ieo/team/martin.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Leo Vicente', 'title'=>'Chief Technical Officer', 'linkedin'=>'https://www.linkedin.com/in/ljvicente', 'image'=>'images/ieo/team/leo.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Rene Rowell dela Rama', 'title'=>'Director of Blockchain Integration', 'linkedin'=>'https://www.linkedin.com/in/rene-rowell-dela-rama-3ab529148', 'image'=>'images/ieo/team/rene.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Rizvi Iqbal', 'title'=>'Blockchain & DLT Specialist', 'linkedin'=>'https://www.linkedin.com/in/rizviqbal', 'image'=>'images/ieo/team/rizvi.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Johannes Eidens', 'title'=>'CEO & Founder', 'linkedin'=>'https://www.linkedin.com/in/dotcomv', 'image'=>'images/ieo/team/joh.jpg', 'text'=>'CEO', 'model_no' => 1 ];
+					$coreTeam[] = [	'name'=>'Martin Heyen', 'title'=>'Co-Founder & CFO', 'linkedin'=>'', 'image'=>'images/ieo/team/martin.jpg', 'text'=>'CTO', 'model_no' => 2 ];
+					$coreTeam[] = [	'name'=>'Leo Vicente', 'title'=>'Chief Technical Officer', 'linkedin'=>'https://www.linkedin.com/in/ljvicente', 'image'=>'images/ieo/team/leo.jpg', 'text'=>'dasda', 'model_no' => 3];
+					$coreTeam[] = [	'name'=>'Rene Rowell dela Rama', 'title'=>'Director of Blockchain Integration', 'linkedin'=>'https://www.linkedin.com/in/rene-rowell-dela-rama-3ab529148', 'image'=>'images/ieo/team/rene.jpg', 'text'=>'hjkhjkh', 'model_no' => 4];
+					$coreTeam[] = [	'name'=>'Rizvi Iqbal', 'title'=>'Blockchain & DLT Specialist', 'linkedin'=>'https://www.linkedin.com/in/rizviqbal', 'image'=>'images/ieo/team/rizvi.jpg', 'text'=>'pop', 'model_no' => 5];
 
 				?>
 				<div class="row pt-5 justify-content-center">
@@ -2626,18 +2569,37 @@ $newsdatas = [];
 						<p class="text-white pt-1 mb-1">
 							{{ $tm['title'] }}							
 						</p>
+						<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button>
+						<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModalLabel" aria-hidden="true">
+  							<div class="modal-dialog" role="document">
+    							<div class="modal-content">
+     								<div class="modal-header">
+        								<h5 class="modal-title" id="TeamModalLabel">Modal title</h5>
+        								<button type="button" class="close" data-dismiss="modal" 	aria-label="Close">	
+        								  <span aria-hidden="true">&times;</span>
+        								</button>
+      								</div>
+      								<div class="modal-body">
+        								{{ $tm['text'] }}	
+      								</div>
+      								<div class="modal-footer">
+        								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      								</div>
+    							</div>
+  							</div>
+						</div>
 					</div>
 				@endforeach
 				</div>
 
 				<?php
 					$coreTeam = [];
-					$coreTeam[] = [	'name'=>'Artem Gordadze', 'title'=>'Marketing Specialist', 'linkedin'=>'https://www.linkedin.com/in/artem-gordadze', 'image'=>'images/ieo/team/artem.jpg', 'text'=>'', ];	
-					$coreTeam[] = [	'name'=>'Nantha Kumar', 'title'=>'Sales Director', 'linkedin'=>'https://www.linkedin.com/in/nantha-kumar-36b92685', 'image'=>'images/ieo/team/nantha.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Marc Vazquez', 'title'=>'Sourcing, Production & Investors Relations', 'linkedin'=>'https://www.linkedin.com/in/marc-vazquez-6b01a794', 'image'=>'images/ieo/team/marc.jpg', 'text'=>'', ];					
-					$coreTeam[] = [	'name'=>'Ryan Quines', 'title'=>'Design Lead', 'linkedin'=>'https://www.linkedin.com/in/ryan-matthew-quines-551a85152', 'image'=>'images/ieo/team/ryan.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Artem Gordadze', 'title'=>'Marketing Specialist', 'linkedin'=>'https://www.linkedin.com/in/artem-gordadze', 'image'=>'images/ieo/team/artem.jpg', 'text'=>'', 'model_no' => 6];	
+					$coreTeam[] = [	'name'=>'Nantha Kumar', 'title'=>'Sales Director', 'linkedin'=>'https://www.linkedin.com/in/nantha-kumar-36b92685', 'image'=>'images/ieo/team/nantha.jpg', 'text'=>'', 'model_no' => 7];
+					$coreTeam[] = [	'name'=>'Marc Vazquez', 'title'=>'Sourcing, Production & Investors Relations', 'linkedin'=>'https://www.linkedin.com/in/marc-vazquez-6b01a794', 'image'=>'images/ieo/team/marc.jpg', 'text'=>'', 'model_no' => 8];					
+					$coreTeam[] = [	'name'=>'Ryan Quines', 'title'=>'Design Lead', 'linkedin'=>'https://www.linkedin.com/in/ryan-matthew-quines-551a85152', 'image'=>'images/ieo/team/ryan.jpg', 'text'=>'', 'model_no' => 9];
 
-					$coreTeam[] = [	'name'=>'Zain Ul Abdin', 'title'=>'Senior Architect', 'linkedin'=>'https://www.linkedin.com/in/muhammad-zain-ul-abdin-120a3612a', 'image'=>'images/ieo/team/zain.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Zain Ul Abdin', 'title'=>'Senior Architect', 'linkedin'=>'https://www.linkedin.com/in/muhammad-zain-ul-abdin-120a3612a', 'image'=>'images/ieo/team/zain.jpg', 'text'=>'', 'model_no' => 10];
 
 					
 				?>
@@ -2663,6 +2625,25 @@ $newsdatas = [];
 						<p class="text-white pt-1 mb-1">
 							{{ $tm['title'] }}							
 						</p>
+						<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button>
+						<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModal{{$tm['model_no']}}Label" aria-hidden="true">
+  							<div class="modal-dialog" role="document">
+    							<div class="modal-content">
+     								<div class="modal-header">
+        								<h5 class="modal-title" id="TeamModal{{$tm['model_no']}}Label">Modal title</h5>
+        								<button type="button" class="close" data-dismiss="modal" 	aria-label="Close">	
+        								  <span aria-hidden="true">&times;</span>
+        								</button>
+      								</div>
+      								<div class="modal-body">
+        								...
+      								</div>
+      								<div class="modal-footer">
+        								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      								</div>
+    							</div>
+  							</div>
+						</div>
 					</div>
 				@endforeach
 				</div>
@@ -2670,13 +2651,13 @@ $newsdatas = [];
 				<?php
 					$coreTeam = [];
 
-					$coreTeam[] = [	'name'=>'Shajudeen Yousf', 'title'=>'Lighting Design Architect', 'linkedin'=>'https://www.linkedin.com/in/shajudeen-yousf-783452146/', 'image'=>'images/ieo/team/shajudeen.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Ammar Mohamed', 'title'=>'Lighting Design Architect', 'linkedin'=>'https://www.linkedin.com/in/ammar-mohamed-231379103/', 'image'=>'images/ieo/team/ammar.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Muhammad Younas', 'title'=>'Content Lead', 'linkedin'=>'https://www.linkedin.com/in/muhammad-younas2023', 'image'=>'images/ieo/advisors/muhammad.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Shajudeen Yousf', 'title'=>'Lighting Design Architect', 'linkedin'=>'https://www.linkedin.com/in/shajudeen-yousf-783452146/', 'image'=>'images/ieo/team/shajudeen.jpg', 'text'=>'', 'model_no' => 11];
+					$coreTeam[] = [	'name'=>'Ammar Mohamed', 'title'=>'Lighting Design Architect', 'linkedin'=>'https://www.linkedin.com/in/ammar-mohamed-231379103/', 'image'=>'images/ieo/team/ammar.jpg', 'text'=>'', 'model_no' => 12];
+					$coreTeam[] = [	'name'=>'Muhammad Younas', 'title'=>'Content Lead', 'linkedin'=>'https://www.linkedin.com/in/muhammad-younas2023', 'image'=>'images/ieo/advisors/muhammad.jpg', 'text'=>'', 'model_no' => 13];
 
-					$coreTeam[] = [	'name'=>'Chad Hanson', 'title'=>'Social Media, Community Manager', 'linkedin'=>'https://www.linkedin.com/in/chad-hanson-a747a2137/', 'image'=>'images/ieo/team/chad.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Chad Hanson', 'title'=>'Social Media, Community Manager', 'linkedin'=>'https://www.linkedin.com/in/chad-hanson-a747a2137/', 'image'=>'images/ieo/team/chad.jpg', 'text'=>'', 'model_no' => 14];
 					
-					$coreTeam[] = [	'name'=>'Maria Carron Igloso', 'title'=>'Investor relations and Public Relations Manager', 'linkedin'=>'https://www.linkedin.com/in/maria-carron-igloso-1324b5105', 'image'=>'images/ieo/team/maria.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Maria Carron Igloso', 'title'=>'Investor relations and Public Relations Manager', 'linkedin'=>'https://www.linkedin.com/in/maria-carron-igloso-1324b5105', 'image'=>'images/ieo/team/maria.jpg', 'text'=>'', 'model_no' => 15];
 				?>
 				<div class="row pt-5 justify-content-center">
 				@foreach($coreTeam as $tm)
@@ -2700,6 +2681,25 @@ $newsdatas = [];
 						<p class="text-white pt-1 mb-1">
 							{{ $tm['title'] }}							
 						</p>
+						<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button>
+						<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModal{{$tm['model_no']}}Label" aria-hidden="true">
+  							<div class="modal-dialog" role="document">
+    							<div class="modal-content">
+     								<div class="modal-header">
+        								<h5 class="modal-title" id="TeamModal{{$tm['model_no']}}Label">Modal title</h5>
+        								<button type="button" class="close" data-dismiss="modal" 	aria-label="Close">	
+        								  <span aria-hidden="true">&times;</span>
+        								</button>
+      								</div>
+      								<div class="modal-body">
+        								...
+      								</div>
+      								<div class="modal-footer">
+        								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      								</div>
+    							</div>
+  							</div>
+						</div>
 					</div>
 				@endforeach
 				</div>
@@ -2724,8 +2724,8 @@ $newsdatas = [];
 				<div class="row pt-5 justify-content-center">
 				<?php
 					$coreTeam = [];
-				$coreTeam[] = [	'name'=>'Tiffany Anggot', 'title'=>'Director Of Strategic Partnerships', 'linkedin'=>'https://www.linkedin.com/in/tiffany-jel-a-367548147', 'image'=>'images/ieo/team/tiffany.jpg', 'text'=>'', ];
-				$coreTeam[] = [	'name'=>'Juliane Schreilechner', 'title'=>'Training Consultant', 'linkedin'=>'https://www.linkedin.com/in/juliane-schreilechner-142108174/', 'image'=>'images/ieo/team/juliane.jpg', 'text'=>'', ];
+				$coreTeam[] = [	'name'=>'Tiffany Anggot', 'title'=>'Director Of Strategic Partnerships', 'linkedin'=>'https://www.linkedin.com/in/tiffany-jel-a-367548147', 'image'=>'images/ieo/team/tiffany.jpg', 'text'=>'', 'model_no' => 16];
+				$coreTeam[] = [	'name'=>'Juliane Schreilechner', 'title'=>'Training Consultant', 'linkedin'=>'https://www.linkedin.com/in/juliane-schreilechner-142108174/', 'image'=>'images/ieo/team/juliane.jpg', 'text'=>'', 'model_no' => 17];
 				?>
 
 				@foreach($coreTeam as $tm)
@@ -2749,6 +2749,25 @@ $newsdatas = [];
 						<p class="text-white pt-1 mb-1">
 							{{ $tm['title'] }}							
 						</p>
+						<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button>
+						<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModal{{$tm['model_no']}}Label" aria-hidden="true">
+  							<div class="modal-dialog" role="document">
+    							<div class="modal-content">
+     								<div class="modal-header">
+        								<h5 class="modal-title" id="TeamModal{{$tm['model_no']}}Label">Modal title</h5>
+        								<button type="button" class="close" data-dismiss="modal" 	aria-label="Close">	
+        								  <span aria-hidden="true">&times;</span>
+        								</button>
+      								</div>
+      								<div class="modal-body">
+        								...
+      								</div>
+      								<div class="modal-footer">
+        								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      								</div>
+    							</div>
+  							</div>
+						</div>
 					</div>
 				@endforeach
 				</div>
@@ -2775,11 +2794,11 @@ $newsdatas = [];
 
 				<?php
 					$coreTeam = [];
-					$coreTeam[] = [	'name'=>'Khalid Almutawa', 'title'=>'Partner and Chairman ASAS Holding Group', 'linkedin'=>'', 'image'=>'images/ieo/advisors/khalid.jpg', 'text'=>'Investor. Serial Entrepreneur. Early Investor in Almani Lighting, Amazon and Nvidia.', ];
-					$coreTeam[] = [	'name'=>'Sebastijan Eder', 'title'=>'Partner, 0C Ventures', 'linkedin'=>'https://www.linkedin.com/in/sebastijan-eder-a8235028/', 'image'=>'images/ieo/advisors/sebastijan.jpg', 'text'=>'Entrepreneur, Investor, Blockchain & Crypto enthusiast and Tech fan.', ];
-					$coreTeam[] = [	'name'=>'Ralph Kattan ', 'title'=>'Team leader Accounting & Regulatory Information Santander Consumer Bank AG, Germany*', 'linkedin'=>'https://www.linkedin.com/in/ralph-kattan-709103191/', 'image'=>'images/ieo/advisors/ralph.jpg', 'text'=>'Early BAL Investor. Fintech, Blockchain researcher & Digital Assets expert.', ];
-					$coreTeam[] = [	'name'=>'Alexander Vogt', 'title'=>'International Key Account Manager, CustomBiotech EMEA/LATAM at Roche Diagnostic Germany', 'linkedin'=>'https://www.linkedin.com/in/alexander-vogt-b5b80858/', 'image'=>'images/ieo/advisors/alexander.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Dr. Moritz Eidens', 'title'=>'CEO PharmGenomics GmbH', 'linkedin'=>'https://www.linkedin.com/in/dr-moritz-eidens-80550910/', 'image'=>'images/ieo/advisors/moritz.jpg', 'text'=>'Founder PharmGenomics. Investor and Blockchain Enthusiast since 2014.', ];
+					$coreTeam[] = [	'name'=>'Khalid Almutawa', 'title'=>'Partner and Chairman ASAS Holding Group', 'linkedin'=>'', 'image'=>'images/ieo/advisors/khalid.jpg', 'text'=>'Investor. Serial Entrepreneur. Early Investor in Almani Lighting, Amazon and Nvidia.', 'model_no' => 18];
+					$coreTeam[] = [	'name'=>'Sebastijan Eder', 'title'=>'Partner, 0C Ventures', 'linkedin'=>'https://www.linkedin.com/in/sebastijan-eder-a8235028/', 'image'=>'images/ieo/advisors/sebastijan.jpg', 'text'=>'Entrepreneur, Investor, Blockchain & Crypto enthusiast and Tech fan.', 'model_no' => 19];
+					$coreTeam[] = [	'name'=>'Ralph Kattan ', 'title'=>'Team leader Accounting & Regulatory Information Santander Consumer Bank AG, Germany*', 'linkedin'=>'https://www.linkedin.com/in/ralph-kattan-709103191/', 'image'=>'images/ieo/advisors/ralph.jpg', 'text'=>'Early BAL Investor. Fintech, Blockchain researcher & Digital Assets expert.', 'model_no' => 20];
+					$coreTeam[] = [	'name'=>'Alexander Vogt', 'title'=>'International Key Account Manager, CustomBiotech EMEA/LATAM at Roche Diagnostic Germany', 'linkedin'=>'https://www.linkedin.com/in/alexander-vogt-b5b80858/', 'image'=>'images/ieo/advisors/alexander.jpg', 'text'=>'', 'model_no' => 21];
+					$coreTeam[] = [	'name'=>'Dr. Moritz Eidens', 'title'=>'CEO PharmGenomics GmbH', 'linkedin'=>'https://www.linkedin.com/in/dr-moritz-eidens-80550910/', 'image'=>'images/ieo/advisors/moritz.jpg', 'text'=>'Founder PharmGenomics. Investor and Blockchain Enthusiast since 2014.', 'model_no' => 22];
 					//$coreTeam[] = [	'name'=>'Dr. Stefan Freh', 'title'=>'Specialist Solicitor Industrial Law', 'linkedin'=>'', 'image'=>'images/ieo/advisors/stefan.jpg', 'text'=>'The best time to plant a tree was 20 years ago. The second best time is now.', ];
 				?>
 				<div class="row pt-5 justify-content-center">
@@ -2804,6 +2823,25 @@ $newsdatas = [];
 						<p class="text-white pt-1 mb-1">
 							{{ $tm['title'] }}							
 						</p>
+						<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button>
+						<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModal{{$tm['model_no']}}Label" aria-hidden="true">
+  							<div class="modal-dialog" role="document">
+    							<div class="modal-content">
+     								<div class="modal-header">
+        								<h5 class="modal-title" id="TeamModal{{$tm['model_no']}}Label">Modal title</h5>
+        								<button type="button" class="close" data-dismiss="modal" 	aria-label="Close">	
+        								  <span aria-hidden="true">&times;</span>
+        								</button>
+      								</div>
+      								<div class="modal-body">
+        								...
+      								</div>
+      								<div class="modal-footer">
+        								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      								</div>
+    							</div>
+  							</div>
+						</div>
 					</div>
 				@endforeach
 				</div>
@@ -2811,9 +2849,9 @@ $newsdatas = [];
 
 				<?php
 					$coreTeam = [];
-					$coreTeam[] = [	'name'=>'Mohsin Irshad', 'title'=>'Sr. UI/UX Designer at EXCEED IT Services', 'linkedin'=>'https://www.linkedin.com/in/mohsin-irshad-8b982532', 'image'=>'images/ieo/advisors/mohsin.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Mohsin Irshad', 'title'=>'Sr. UI/UX Designer at EXCEED IT Services', 'linkedin'=>'https://www.linkedin.com/in/mohsin-irshad-8b982532', 'image'=>'images/ieo/advisors/mohsin.jpg', 'text'=>'', 'model_no' => 23];
 					
-					$coreTeam[] = [	'name'=>'Janis Leitans', 'title'=>'Scientific Assistant, Latvian Biomedical Research Centre', 'linkedin'=>'https://www.linkedin.com/in/janis-leitans-16297269/', 'image'=>'images/ieo/team/janis.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Janis Leitans', 'title'=>'Scientific Assistant, Latvian Biomedical Research Centre', 'linkedin'=>'https://www.linkedin.com/in/janis-leitans-16297269/', 'image'=>'images/ieo/team/janis.jpg', 'text'=>'', 'model_no' => 24];
 				?>
 				<div class="row pt-5 justify-content-center">
 				@foreach($coreTeam as $tm)
@@ -2837,6 +2875,25 @@ $newsdatas = [];
 						<p class="text-white pt-1 mb-1">
 							{{ $tm['title'] }}							
 						</p>
+						<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button>
+						<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModal{{$tm['model_no']}}Label" aria-hidden="true">
+  							<div class="modal-dialog" role="document">
+    							<div class="modal-content">
+     								<div class="modal-header">
+        								<h5 class="modal-title" id="TeamModal{{$tm['model_no']}}Label">Modal title</h5>
+        								<button type="button" class="close" data-dismiss="modal" 	aria-label="Close">	
+        								  <span aria-hidden="true">&times;</span>
+        								</button>
+      								</div>
+      								<div class="modal-body">
+        								...
+      								</div>
+      								<div class="modal-footer">
+        								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      								</div>
+    							</div>
+  							</div>
+						</div>
 					</div>
 				@endforeach
 				</div>
