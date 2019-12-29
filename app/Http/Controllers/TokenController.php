@@ -196,16 +196,31 @@ class TokenController extends Controller
 				$test[$cbkey]['expected_bal_amt'] = ($cbvalue['bal_amt'] * 0.05 );
 				$test[$cbkey]['expected_bal_amt_per'] = '5%';
 			}
+
+
+			$curr = 'https://api.coinbase.com/v2/exchange-rates?currency=USD';
+
+			$curr_result = file_get_contents($curr);
+			$curr_all = json_decode($curr_result, true);
+
 			
-			$curr = $this->GetApi('https://rest.coinapi.io/v1/exchangerate/USD?apikey='.env('COINAPI_KEY'));
-			$curr_result = json_decode($curr, true);
-			foreach ($curr_result['rates'] as $tkkey => $tkvalue){
-				if ($tkvalue['asset_id_quote'] == 'BTC' || $tkvalue['asset_id_quote'] == 'ETH') {
-					if ($tkvalue['asset_id_quote'] == 'BTC') {
-						$test[$cbkey]['BTC'] = ($tkvalue['rate'] / 4) * $test[$cbkey]['expected_bal_amt'];
+			// $curr = $this->GetApi('https://rest.coinapi.io/v1/exchangerate/USD?apikey='.env('COINAPI_KEY'));
+			// $curr_result = json_decode($curr, true);
+
+
+
+
+			foreach ($curr_all['data']['rates'] as $tkkey => $tkvalue){
+
+				// dd($tkvalue);
+
+
+				if ($tkkey == 'BTC' || $tkkey == 'ETH') {
+					if ($tkkey == 'BTC') {
+						$test[$cbkey]['BTC'] = ($tkvalue / 4) * $test[$cbkey]['expected_bal_amt'];
 					}
-					if ($tkvalue['asset_id_quote'] == 'ETH') {
-						$test[$cbkey]['ETH'] = ($tkvalue['rate'] / 4) * $test[$cbkey]['expected_bal_amt'];
+					if ($tkkey == 'ETH') {
+						$test[$cbkey]['ETH'] = ($tkvalue / 4) * $test[$cbkey]['expected_bal_amt'];
 					}
 				}
 			}
@@ -214,7 +229,7 @@ class TokenController extends Controller
 
 		// $test[''] = $codebyer[0];
 
-		// dd($test); die();
+		// dd($test);
 
 
 
