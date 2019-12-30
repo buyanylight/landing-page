@@ -56,10 +56,39 @@ nav{
 
 
 .header-text{
-	background: -webkit-linear-gradient(right, #E23D96, #5555A4);
+	background-color: #5555A4;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+.buy-btn{
+	background: #5555A4;
+	color: white;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.buy-btn:hover{
+	background:#33447d;
+	color: white;
+
+}
+
+.btn-BAL{
+    color: #5555A4;
+    border: 1px solid #5555A4;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-weight: bold;
+}
+
+
+.btn-BAL:hover{
+	background:#33447d;
+	color: #fff;
+}
+
+
 
 .btn{
 	border-radius: 1.5rem;
@@ -568,7 +597,7 @@ footer{
 
 	.progress .progress-bar{
 		border-radius:28px;
-		background: #df3d96;
+		background: #5555A4;
 	}
 }
 

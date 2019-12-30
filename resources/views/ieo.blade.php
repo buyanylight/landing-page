@@ -228,41 +228,41 @@
 						</div>
 						<div class="mt-3 pagers-paper row">
 							<div class="col pr-1">
-								<a href="#meet_bal" class="btn btn-ieo w-100">
+								<a href="#meet_bal" class="btn btn-BAL w-100">
 						        	<i class="fas fa-link"></i>
 						            &nbsp;
 									Meet BAL
 								</a>
 							</div>
 							<div class="col pr-1 pl-1">
-								<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}"  target="_blank" class="btn btn-ieo w-100">
+								<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}"  target="_blank" class="btn btn-BAL w-100">
 									<i class="far fa-file-pdf"></i>
 						            &nbsp;
 									White Paper
 								</a>
 							</div>
 							<div class="col pr-1 pl-1">
-								<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo w-100" target="_blank">
+								<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL w-100" target="_blank">
 									<i class="far fa-file-pdf"></i>
 						            &nbsp;
 									Yellow Paper
 								</a>
 							</div>
 							<div class="col pr-1 pl-1">
-								<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo w-100">
+								<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL w-100">
 						        	<i class="far fa-file-pdf"></i>
 						            &nbsp;
 									One Pager
 								</a>					
 							</div>
 							<div class="col pl-1 ">
-								<a href="{{ Util::assetUrl('BuyAnyLight_Pitch_Deck.pdf') }}" class="btn btn-ieo w-100" target="_blank">
+								<a href="{{ Util::assetUrl('BuyAnyLight_Pitch_Deck.pdf') }}" class="btn btn-BAL w-100" target="_blank">
 									<i class="far fa-file-pdf"></i>
 						            &nbsp;
 									Pitch Deck
 								</a>
 							</div>
-					<!-- 		<a href="https://t.me/buyanylight" class="btn btn-ieo" target="_blank">
+					<!-- 		<a href="https://t.me/buyanylight" class="btn btn-BAL" target="_blank">
 								<i class="fab fa-telegram-plane"></i>
 					            &nbsp;
 								Join Our Community
@@ -301,14 +301,14 @@
 	                            </div>
 						</div>
 						<div class="mt-3">
-							<a href="#section-bal-token" class="btn btn-ieo w-100">
+							<a href="#section-bal-token" class="btn btn-BAL w-100">
 								<i class="fas fa-coins"></i>
 					            &nbsp;
 								Get 17.5% discount Now!
 							</a>
 						</div>
 						<div class="mt-3">
-							<div class="card card-body" style=" border: 2px white solid; background-color: #df3d96 ;border-radius: 25px;">
+							<div class="card card-body" style=" border: 2px white solid; background-color:#5555A4;  border-radius: 25px;">
 								<div class="row">
 									<div class="col-6">
 										<h5 class="mb-0 text-white"><b>IEO - BAL TOKEN</b></h5>
@@ -322,7 +322,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-6 d-flex justify-content-center align-items-center" style="border: 1px solid; border-radius: 25px 0px 0px 25px;background-color: #af3076; border-right: 0px; position: relative; left: 5px;">
+									<div class="col-6 d-flex justify-content-center align-items-center" style="border: 1px solid; border-radius: 25px 0px 0px 25px;background-color: #3a3a77;  border-right: 0px; position: relative; left: 5px;">
 										<div>
 											<h5 class="text-white">Available soon in platforms</h5>
 										</div>
@@ -434,27 +434,27 @@
 						</h3>
 
 						<div class="pt-1 pagers-paper">
-							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">
+							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL">
 	            				<i class="far fa-file-pdf"></i>
 	            				&nbsp;
 								One Pager
 							</a>					
-							<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}"  target="_blank" class="btn btn-ieo">
+							<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}"  target="_blank" class="btn btn-BAL">
 								<i class="far fa-file-pdf"></i>
 	            				&nbsp;
 								White Paper
 							</a>
-							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo" target="_blank">
+							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL" target="_blank">
 								<i class="far fa-file-pdf"></i>
 	            				&nbsp;
 								Yellow Paper
 							</a>
-							<a href="{{ Util::assetUrl('BuyAnyLight_Pitch_Deck.pdf') }}" class="btn btn-ieo" target="_blank">
+							<a href="{{ Util::assetUrl('BuyAnyLight_Pitch_Deck.pdf') }}" class="btn btn-BAL" target="_blank">
 								<i class="far fa-file-pdf"></i>
 	            				&nbsp;
 								Pitch Deck
 							</a>
-							<a href="https://t.me/buyanylight" class="btn btn-ieo mt-3" target="_blank" style="width: 86%;">
+							<a href="https://t.me/buyanylight" class="btn btn-BAL mt-3" target="_blank" style="width: 86%;">
 								<i class="fab fa-telegram-plane"></i>
 	            				&nbsp;
 								Join Our Community
@@ -465,10 +465,10 @@
 								View on Etherscan
 							</h5>
 							<div class="pt-2">
-								<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-ieo" target="_blank">Token Contract</a>
-								<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-ieo" target="_blank">Token Owner </a>
-								<a href="#allocation" class="btn btn-ieo">Token Allocation</a>
-								<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn btn-ieo" target="_blank">Token Sale Agreement</a>
+								<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL" target="_blank">Token Contract</a>
+								<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-BAL" target="_blank">Token Owner </a>
+								<a href="#allocation" class="btn btn-BAL">Token Allocation</a>
+								<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn btn-BAL" target="_blank">Token Sale Agreement</a>
 							</div>
 						</div>
 						<div class="videos mt-4">
@@ -506,10 +506,10 @@
 								View on Etherscan
 							</h4>
 							<div class="pt-2">
-								<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-ieo" target="_blank">Token Contract</a>
-								<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-ieo" target="_blank">Token Owner </a>
-								<a href="#allocation" class="btn btn-ieo">Token Allocation</a>
-								<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn btn-ieo" target="_blank">Token Sale Agreement</a>
+								<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL" target="_blank">Token Contract</a>
+								<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-BAL" target="_blank">Token Owner </a>
+								<a href="#allocation" class="btn btn-BAL">Token Allocation</a>
+								<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn btn-BAL" target="_blank">Token Sale Agreement</a>
 							</div>
 						</div>
 						
@@ -930,7 +930,7 @@ $newsdatas = [];
 				<div class="pt-4">
 					<div class="input-group" style="height: 70px; position: relative; right: 13px;">
 	  					<div class="input-group-prepend" style="width: 135px">
-	    					<span class="input-group-text d-flex justify-content-center btn-ieo" id="basic-addon1" style="width: 100%; border-radius: 20px; position: relative; left: 15px; z-index: 1; box-shadow: 4px 0px 5px 0px #cccccc; background: -webkit-linear-gradient(right, #e4007b, #0000af);" data-toggle="tooltip" data-placement="right" title="BAL Token">
+	    					<span class="input-group-text d-flex justify-content-center btn-BAL" id="basic-addon1" style="width: 100%; border-radius: 20px; position: relative; left: 15px; z-index: 1; box-shadow: 4px 0px 5px 0px #cccccc; background-color: #5555A4;" data-toggle="tooltip" data-placement="right" title="BAL Token">
 	    						<img src="{{ Util::assetUrl('images/logo-white-mobile.png') }}" width="28">
 	    					</span>
 	  					</div>
@@ -959,7 +959,7 @@ $newsdatas = [];
 						@foreach($tokens as $token)
 							<div class="card mb-3" style="border-radius: 20px; height: 60px;">
   								<div class="row no-gutters">
-    								<div class="col-md-3 d-flex align-items-center justify-content-center btn-ieo" style="border-radius: 20px; box-shadow: 4px 0px 5px 0px #cccccc; height: 60px;" data-toggle="tooltip" data-placement="right" title="{{ $token['symbol'] }}">
+    								<div class="col-md-3 d-flex align-items-center justify-content-center btn-BAL" style="border-radius: 20px; box-shadow: 4px 0px 5px 0px #cccccc; height: 60px;" data-toggle="tooltip" data-placement="right" title="{{ $token['symbol'] }}">
       									<p class="mb-0" style="font-size: 20px;">{!! $token['logo'] !!}</p>
     								</div>
     								<div class="col-md-9">
@@ -1089,7 +1089,7 @@ $newsdatas = [];
 										@if(!empty($code))
 											<input type="hidden" name="referral_code" value="{{ $code }}">
 										@endif
-										<button type="submit" class="btn btn-ieo w-100" style="border-radius: 10px;" id="token-btn"><b>Buy Tokens Now!</b></button>
+										<button type="submit" class="btn btn-BAL buy-btn w-100" style="border-radius: 10px; color: #fff;" id="token-btn"><b>Buy Tokens Now!</b></button>
 									</div>
 								</div>
 							</div>
@@ -1284,17 +1284,17 @@ $newsdatas = [];
 				Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
 			</p>
 			<div class="buttons pt-3">
-				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">
+				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL">
 					<i class="far fa-file-pdf"></i>
 	            			&nbsp;
 					One Pager
 				</a>
-				<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-ieo ml-3">
+				<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
 					<i class="far fa-file-pdf"></i>
 	            	&nbsp;
 					White Paper
 				</a>
-				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">
+				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL ml-3" target="_blank">
 					<i class="far fa-file-pdf"></i>
 	            			&nbsp;
 					Yellow Paper
@@ -1302,8 +1302,8 @@ $newsdatas = [];
 
 			</div>
 			<div class="pt-3">
-				<a href="#contact" class="btn btn-ieo m-2">Schedule a meeting</a>
-				<a href="#section-bal-token" class="btn btn-ieo m-2 buy-btn">
+				<a href="#contact" class="btn btn-BAL m-2">Schedule a meeting</a>
+				<a href="#section-bal-token" class="btn btn-BAL m-2">
 					<b>
 						BUY BAL TOKENS NOW!
 					</b>
@@ -2476,25 +2476,25 @@ $newsdatas = [];
 				Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
 			</p>
 			<div class="buttons pt-3">
-				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">
+				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL">
 					<i class="far fa-file-pdf"></i>
 	            			&nbsp;
 					One Pager
 				</a>
-				<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-ieo ml-3">
+				<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
 					<i class="far fa-file-pdf"></i>
 	            			&nbsp;
 					White Paper
 				</a>
-				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">
+				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL ml-3" target="_blank">
 					<i class="far fa-file-pdf"></i>
 	            			&nbsp;
 					Yellow Paper
 				</a>
 			</div>
 			<div class="pt-3">
-				<a href="#contact" class="btn btn-ieo m-2">Schedule a meeting</a>
-				<a href="#section-bal-token" class="btn btn-ieo m-2 buy-btn">
+				<a href="#contact" class="btn btn-BAL m-2">Schedule a meeting</a>
+				<a href="#section-bal-token" class="btn btn-BAL m-2">
 					<b>
 						BUY BAL TOKENS NOW!
 					</b>					
@@ -2562,11 +2562,11 @@ $newsdatas = [];
 								</span>
 							@endif
 						</div>						
-						<p class="header-text pt-3 mb-0">
+						<div class="header-text pt-3 mb-0">
 							<b>
 								{{ $tm['name'] }}
 							</b>
-						</p>
+						</div>
 						<p class="text-white pt-1 mb-1">
 							{{ $tm['title'] }}							
 						</p>
@@ -3152,7 +3152,7 @@ $newsdatas = [];
 								<form  action="https://buyanylight.us3.list-manage.com/subscribe/post?u=22d8456f8db4bacaef7a16d53&amp;id=7b85cd9f3f" method="post" class="input-group mt-3" name="mc-embedded-subscribe-form" novalidate target="_blank">
 								<input type="email" name="EMAIL" class="form-control" placeholder="Your Email Address">
 									<div class="input-group-append">
-										<button type="submit" class="btn btn-ieo">
+										<button type="submit" class="btn btn-BAL">
 											Subscribe now
 										</button>
 									</div>
@@ -3236,7 +3236,7 @@ $newsdatas = [];
 		                                <div class="row">
 		                                    <div class="col-sm-12">
 		                                        <input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
-		                                        <input type="submit" class="btn btn-ieo w-100 send-message" value="Send Message" disabled="disabled">
+		                                        <input type="submit" class="btn btn-BAL w-100 send-message" value="Send Message" disabled="disabled">
 		                                    </div>
 		                                </div>
 		                            </form>
