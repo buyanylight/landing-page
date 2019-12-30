@@ -12012,7 +12012,7 @@ footer {
 
 @media screen and (max-width: 767px) {
   .ps-timeline-sec .container ol:before {
-    background: #348e80;
+    background: #5555A4;
     content: "";
     width: 10px;
     height: 10px;
@@ -12023,7 +12023,7 @@ footer {
   }
 
   .ps-timeline-sec .container ol:after {
-    background: #348e80;
+    background: #5555A4;
     content: "";
     width: 10px;
     height: 10px;
@@ -12035,7 +12035,7 @@ footer {
 
   .ps-timeline-sec .container ol.ps-timeline {
     margin: 130px 0 !important;
-    border-left: 2px solid #348e80;
+    border-left: 2px solid #5555A4;
     padding-left: 0 !important;
     padding-top: 120px !important;
     border-top: 0 !important;
@@ -12141,7 +12141,7 @@ footer {
 }
 
 .ps-timeline-sec .container ol:before {
-  background: #348e80;
+  background: #5555A4;
   content: "";
   width: 10px;
   height: 10px;
@@ -12152,7 +12152,7 @@ footer {
 }
 
 .ps-timeline-sec .container ol:after {
-  background: #348e80;
+  background: #5555A4;
   content: "";
   width: 10px;
   height: 10px;
@@ -12165,7 +12165,7 @@ footer {
 .ps-timeline-sec .container ol.ps-timeline {
   margin: 390px 0;
   padding: 0;
-  border-top: 2px solid #348e80;
+  border-top: 2px solid #5555A4;
   list-style: none;
 }
 
@@ -12181,7 +12181,7 @@ footer {
   height: 50px;
   margin-left: -25px;
   background: #fff;
-  border: 4px solid #348e80;
+  border: 4px solid #5555A4;
   border-radius: 50%;
   box-shadow: 0 0 0 0px #fff;
   text-align: center;
@@ -12196,10 +12196,10 @@ footer {
 
 .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before {
   content: "";
-  color: #348e80;
+  color: #5555A4;
   width: 2px;
   height: 50px;
-  background: #348e80;
+  background: #5555A4;
   position: absolute;
   top: -50px;
   left: 50%;
@@ -12207,10 +12207,10 @@ footer {
 
 .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:after {
   content: "";
-  color: #348e80;
+  color: #5555A4;
   width: 8px;
   height: 8px;
-  background: #348e80;
+  background: #5555A4;
   position: absolute;
   bottom: 90px;
   left: 44%;
@@ -12219,10 +12219,10 @@ footer {
 
 .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:before {
   content: "";
-  color: #348e80;
+  color: #5555A4;
   width: 2px;
   height: 50px;
-  background: #348e80;
+  background: #5555A4;
   position: absolute;
   bottom: -50px;
   left: 50%;
@@ -12230,10 +12230,10 @@ footer {
 
 .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:after {
   content: "";
-  color: #348e80;
+  color: #5555A4;
   width: 8px;
   height: 8px;
-  background: #348e80;
+  background: #5555A4;
   position: absolute;
   top: 90px;
   left: 44%;
@@ -12313,5 +12313,41 @@ footer {
 .ps-timeline-sec .container ol.ps-timeline li span {
   font-size: 1em;
   line-height: 2.9em;
+}
+
+i.timeline-icon {
+  font-size: 70px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #5555A4;
+}
+
+.ps-timeline-sec .container ol.ps-timeline {
+  border-top: 2px solid #fff;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span {
+  border-color: #fff;
+  background: #5555A4;
+  color: #fff;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:after,
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:before,
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:after,
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before {
+  color: #fff;
+  background: #fff;
+}
+
+.ps-timeline-sec .container ol.last-item:after,
+.ps-timeline-sec .container ol.first-item:before {
+  background: #fff;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .ps-top {
+  width: 100%;
 }
 
