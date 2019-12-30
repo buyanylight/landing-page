@@ -1939,14 +1939,14 @@ $newsdatas = [];
 					$timeline = [];
 					$timeline[] = [
 						'name' => '2014',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'fas fa-archway',
 						'items' => [
 							'Foundation Almani Lighting Gmbh',
 						],
 					];
 					$timeline[] = [
 						'name' => '2015',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'far fa-handshake',
 						'items' => [
 							'Foundation of Almani Lighting LLC, Dubai,',
 							'Strategic Partnerships',
@@ -1954,7 +1954,7 @@ $newsdatas = [];
 					];
 					$timeline[] = [
 						'name' => '2016',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'fas fa-users',
 						'items' => [
 							'BAL Idea Inception, Research and Feasibility and',
 							'Development team recruitment',
@@ -1962,7 +1962,7 @@ $newsdatas = [];
 					];
 					$timeline[] = [
 						'name' => '2017',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'fas fa-warehouse',
 						'items' => [
 							'51% Ownershio Acquisition of Almani Lighting LLC by',
 							'Asas Holding, Warehouse expansion,',
@@ -1977,7 +1977,7 @@ $newsdatas = [];
 					$timeline = [];
 					$timeline[] = [
 						'name' => '2018',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'fas fa-sitemap',
 						'items' => [
 							'Team Expansion, Product range extended to 600+',
 							'Fiat Partner Collaboration, Major Sheikh Palace Contracts in UAE',
@@ -1985,7 +1985,7 @@ $newsdatas = [];
 					];
 					$timeline[] = [
 						'name' => '2019',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'fas fa-at',
 						'items' => [
 							'BAL Beta Version release,',
 							'Documentation and drafting,',
@@ -1996,7 +1996,7 @@ $newsdatas = [];
 					];
 					$timeline[] = [
 						'name' => '2020',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'fas fa-link',
 						'items' => [
 							'IEO Sale and Listing on exchanges',
 							'Blockchain development team expansion',
@@ -2014,7 +2014,7 @@ $newsdatas = [];
 					$timeline = [];
 					$timeline[] = [
 						'name' => '2021',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'fas fa-mobile',
 						'items' => [
 							'Traceable logistic functionality implementation',
 							'Alpha version release',
@@ -2023,7 +2023,7 @@ $newsdatas = [];
 					];
 					$timeline[] = [
 						'name' => '2022',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'fas fa-brain',
 						'items' => [
 							'On-chain logistic fully implemented',
 							'AI-Based Smart Contracts Implementation',
@@ -2032,7 +2032,7 @@ $newsdatas = [];
 					];
 					$timeline[] = [
 						'name' => '2023',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'fas fa-file',
 						'items' => [
 							'Expansion into construction industry',
 							'BAL Tokenization Platform Development',
@@ -2064,7 +2064,8 @@ $newsdatas = [];
 										<?php  $pos2 = ($key2%2 == 0)?'bot':'top'; ?>
 										
 										<div class="img-handler-{{ $pos }}">
-											<img src="{{ $tml['icon'] }}" alt=""/>
+											{{-- <img src="{{ $tml['icon'] }}" alt=""/> --}}
+											<i style="" class="{{ $tml['icon'] }} timeline-icon"></i>
 										</div>
 
 

@@ -1396,7 +1396,7 @@
 					$timeline = [];
 					$timeline[] = [
 						'name' => '2014',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'fas fa-archway',
 						'style' => '',
 						'items' => [
 							'Foundation Almani Lighting Gmbh',
@@ -1404,7 +1404,7 @@
 					];
 					$timeline[] = [
 						'name' => '2015',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'far fa-handshake',
 						'style' => '',
 						'items' => [
 							'Foundation of Almani Lighting LLC, Dubai,',
@@ -1413,7 +1413,7 @@
 					];
 					$timeline[] = [
 						'name' => '2016',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'fas fa-users',
 						'style' => '',
 						'items' => [
 							'BAL Idea Inception, Research and Feasibility and',
@@ -1422,7 +1422,7 @@
 					];
 					$timeline[] = [
 						'name' => '2017',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'fas fa-warehouse',
 						'style' => '',
 						'items' => [
 							'51% Ownershio Acquisition of Almani Lighting LLC by',
@@ -1432,7 +1432,7 @@
 					];
 					$timeline[] = [
 						'name' => '2018',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'fas fa-sitemap',
 						'style' => '',
 						'items' => [
 							'Team Expansion, Product range extended to 600+',
@@ -1441,7 +1441,7 @@
 					];
 					$timeline[] = [
 						'name' => '2019',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'fas fa-at',
 						'style' => '',
 						'items' => [
 							'BAL Beta Version release,',
@@ -1453,8 +1453,8 @@
 					];
 					$timeline[] = [
 						'name' => '2020',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
-						'style' => 'height: 350px;',
+						'icon' => 'fas fa-link',
+						'style' => '',
 						'items' => [
 							'IEO Sale and Listing on exchanges',
 							'Blockchain development team expansion',
@@ -1466,7 +1466,7 @@
 					];
 					$timeline[] = [
 						'name' => '2021',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'fas fa-mobile',
 						'style' => '',
 						'items' => [
 							'Traceable logistic functionality implementation',
@@ -1476,7 +1476,7 @@
 					];
 					$timeline[] = [
 						'name' => '2022',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'fas fa-brain',
 						'style' => '',
 						'items' => [
 							'On-chain logistic fully implemented',
@@ -1486,17 +1486,7 @@
 					];
 					$timeline[] = [
 						'name' => '2023',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
-						'style' => '',
-						'items' => [
-							'Expansion into construction industry',
-							'BAL Tokenization Platform Development',
-							'Smart Contract Notary Service Launch',
-						],
-					];
-					$timeline[] = [
-						'name' => '2023',
-						'icon' => 'http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png',
+						'icon' => 'fas fa-file',
 						'style' => '',
 						'items' => [
 							'Expansion into construction industry',
@@ -1512,8 +1502,11 @@
 						<ol class="ps-timeline">
 						@foreach ($timeline as $key2 => $tml)
 							<li style="{{ $tml['style'] }}">										
+								<span class="ps-sp-top">{{ $tml['name'] }}</span>
+
 								<div class="img-handler img-handler-top">
-									<img src="{{ $tml['icon'] }}" alt=""/>
+									{{-- <img src="{{ $tml['icon'] }}" alt=""/> --}}
+									<i style="" class="{{ $tml['icon'] }} timeline-icon"></i>
 								</div>
 
 
@@ -1522,7 +1515,6 @@
 										<p>{{ $item }}</p>									
 									@endforeach
 								</div>
-								<span class="ps-sp-top">{{ $tml['name'] }}</span>
 							</li>
 						@endforeach
 						</ol>

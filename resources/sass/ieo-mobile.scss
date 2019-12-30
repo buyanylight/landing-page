@@ -791,17 +791,28 @@ nav .dropdown-toggle::after {
 
 // Timeline
 ////////////////////////////////////////////////////////////////
+$timeline-color: #5555A4;
+$timeline-color2: #fff;
+
+i.timeline-icon {
+	font-size: 40px; 
+  color: $timeline-color2;
+  border: 2px solid $timeline-color2;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: $timeline-color;
+}
 
 .ps-timeline-sec {
 	position: relative;
-	background: #fff;
+	background: $timeline-color2;
   }
   .ps-timeline-sec .container {
 	position: relative;
   }
   @media screen and (max-width: 767px) {
 	.ps-timeline-sec .container ol:before {
-	  background: #348e80;
+	  background: $timeline-color;
 	  content: "";
 	  width: 10px;
 	  height: 10px;
@@ -811,7 +822,7 @@ nav .dropdown-toggle::after {
 	  left: 36px !important;
 	}
 	.ps-timeline-sec .container ol:after {
-	  background: #348e80;
+	  background: $timeline-color;
 	  content: "";
 	  width: 10px;
 	  height: 10px;
@@ -823,7 +834,7 @@ nav .dropdown-toggle::after {
   
 	.ps-timeline-sec .container ol.ps-timeline {
 	  margin: 130px 0 !important;
-	  border-left: 2px solid #348e80;
+	  border-left: 2px solid $timeline-color;
 	  padding-left: 0 !important;
 	  padding-top: 120px !important;
 	  border-top: 0 !important;
@@ -911,7 +922,7 @@ nav .dropdown-toggle::after {
 	}
   }
   .ps-timeline-sec .container ol:before {
-	background: #348e80;
+	background: $timeline-color;
 	content: "";
 	width: 10px;
 	height: 10px;
@@ -921,7 +932,7 @@ nav .dropdown-toggle::after {
 	top: 49.5%;
   }
   .ps-timeline-sec .container ol:after {
-	background: #348e80;
+	background: $timeline-color;
 	content: "";
 	width: 10px;
 	height: 10px;
@@ -933,7 +944,7 @@ nav .dropdown-toggle::after {
   .ps-timeline-sec .container ol.ps-timeline {
 	margin: 390px 0;
 	padding: 0;
-	border-top: 2px solid #348e80;
+	border-top: 2px solid $timeline-color;
 	list-style: none;
   }
   .ps-timeline-sec .container ol.ps-timeline li {
@@ -947,7 +958,7 @@ nav .dropdown-toggle::after {
 	height: 50px;
 	margin-left: -25px;
 	background: #fff;
-	border: 4px solid #348e80;
+	border: 4px solid $timeline-color;
 	border-radius: 50%;
 	box-shadow: 0 0 0 0px #fff;
 	text-align: center;
@@ -961,20 +972,20 @@ nav .dropdown-toggle::after {
   }
   .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before {
 	content: '';
-	color: #348e80;
+	color: $timeline-color;
 	width: 2px;
 	height: 50px;
-	background: #348e80;
+	background: $timeline-color;
 	position: absolute;
 	top: -50px;
 	left: 50%;
   }
   .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:after {
 	content: '';
-	color: #348e80;
+	color: $timeline-color;
 	width: 8px;
 	height: 8px;
-	background: #348e80;
+	background: $timeline-color;
 	position: absolute;
 	bottom: 90px;
 	left: 44%;
@@ -982,20 +993,20 @@ nav .dropdown-toggle::after {
   }
   .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:before {
 	content: '';
-	color: #348e80;
+	color: $timeline-color;
 	width: 2px;
 	height: 50px;
-	background: #348e80;
+	background: $timeline-color;
 	position: absolute;
 	bottom: -50px;
 	left: 50%;
   }
   .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:after {
 	content: '';
-	color: #348e80;
+	color: $timeline-color;
 	width: 8px;
 	height: 8px;
-	background: #348e80;
+	background: $timeline-color;
 	position: absolute;
 	top: 90px;
 	left: 44%;
@@ -1125,7 +1136,70 @@ nav .dropdown-toggle::after {
     .img-handler {
       bottom: 20px !important;      
     }
+    .img-handler-top {
+      // margin-left: -25px !important;
+    }
   }
+
+
+
+
+///////////////////////////////
+//////////////////////////////////////////////
+.ps-timeline-sec .container ol.ps-timeline {
+  padding-top: 10px !important;
+  border-left: 2px solid $timeline-color2;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-top {
+  position: relative !important;
+  top: 0;
+  bottom: 0 !important;
+  margin-bottom: 0 !important;  
+  margin-left: 10px !important;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .ps-top {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  margin-bottom: 0 !important;  
+  margin-left: 10px !important;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span {
+  position: relative;
+  bottom: 0;
+  top: 0;  
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;  
+  width: 52px;
+  height: 50px;
+  background-color: $timeline-color;
+  color: $timeline-color2;
+  border-color: $timeline-color2;
+}
+.ps-timeline-sec .container ol.ps-timeline li:last-child {
+  height: auto;
+}
+
+.ps-timeline-sec .container ol:after,
+.ps-timeline-sec .container ol:before {
+  background-color: $timeline-color2;
+}
+//////////////////////////////////////////////
+///////////////////////////////
+
+
 
   
 
