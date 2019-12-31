@@ -6,7 +6,7 @@
 		<div class="h-100 d-flex align-items-center justify-content-center container text-white">
 			<div class="w-100 text-center">
 				<h1 class="header-phrase"><b>SOURCING REINVENTED</b></h1>
-				<p class="header-sentence">The global marketplace for LED Lighting</p>
+				<p class="header-sentence">The global platform for LED Lighting</p>
 				<div class="container text-center">
 					<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-dark header-link">Start your free trial today</a>
 				</div>
