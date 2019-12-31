@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins&display=swap);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -11105,8 +11105,8 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15.5px;
   background-color: white;
 }
 
@@ -11137,9 +11137,7 @@ nav {
 }
 
 .header-text {
-  background-color: #5555A4;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #5555A4;
 }
 
 .buy-btn {
@@ -11388,8 +11386,25 @@ nav {
 }
 
 #token-info tr:nth-child(odd) {
-  background: -webkit-linear-gradient(right, #e23d966e, #5555a46e);
+  background-color: #5555A4;
   border-radius: 10px;
+  color: white;
+}
+
+#token-info td:first-child {
+  border-top-left-radius: 10px;
+}
+
+#token-info td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+#token-info td:last-child {
+  border-top-right-radius: 10px;
+}
+
+#token-info td:last-child {
+  border-bottom-right-radius: 10px;
 }
 
 .token-list {
@@ -12203,7 +12218,7 @@ footer {
 }
 
 .ps-timeline-sec .container ol.ps-timeline {
-  margin: 390px 0;
+  margin: 295px 0;
   padding: 0;
   border-top: 2px solid #5555A4;
   list-style: none;

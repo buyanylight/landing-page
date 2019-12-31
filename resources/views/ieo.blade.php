@@ -238,14 +238,14 @@
 								<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}"  target="_blank" class="btn btn-BAL w-100">
 									<i class="far fa-file-pdf"></i>
 						            &nbsp;
-									White Paper
+									Whitepaper
 								</a>
 							</div>
 							<div class="col pr-1 pl-1">
 								<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL w-100" target="_blank">
 									<i class="far fa-file-pdf"></i>
 						            &nbsp;
-									Yellow Paper
+									Yellowpaper
 								</a>
 							</div>
 							<div class="col pr-1 pl-1">
@@ -1292,12 +1292,12 @@ $newsdatas = [];
 				<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
 					<i class="far fa-file-pdf"></i>
 	            	&nbsp;
-					White Paper
+					Whitepaper
 				</a>
 				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL ml-3" target="_blank">
 					<i class="far fa-file-pdf"></i>
 	            			&nbsp;
-					Yellow Paper
+					Yellowpaper
 				</a>				
 
 			</div>
@@ -2179,9 +2179,10 @@ $newsdatas = [];
 			</h3>
 			<div class="text-center pt-5">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-5">
 						<div>
-							<table class="text-left w-100" cellpadding="10" id="token-info">
+							<h4 class="text-left"> <b>Token Information</b></h4>
+							<table class="text-left w-100 mt-3" cellpadding="10" id="token-info">
 								<tr>
 									<td><b>Token name:</b></td>
 									<td>BAL Token</td>
@@ -2222,23 +2223,33 @@ $newsdatas = [];
 							</table>
 						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-7">
 						<div>
 							<h4 class="text-left"> <b>Crowd Sales Plan</b></h4>
-							<table class="text-left mt-3 w-100" id="token-info"> 
-								<tr height="100px">
-									<td><b>Private Round Sale:</b></td>
-									<td>1st October 2019 - 31st October 2019</td>
-								</tr>
-								<tr height="100px">
-									<td><b>PRE-IEO Sale:</b></td>
-									<td>1st November 2019 - 31st January 2020</td>
-								</tr>
-								<tr height="100px">
-									<td><b>IEO Sale:</b></td>
-									<td>1st Feburary 2020 - 29th Feburary 2020</td>
-								</tr>
-							</table>
+							<div class="row mt-3 text-left">
+								<div class="col-md-12">
+									<div class="card card-body" style="border: 1px solid #5555A4; border-radius: 10px;">
+										<small><i class=" header-text far fa-calendar-alt"></i> 1st October 2019 - 31st October 2019</small>
+										<b>Private Round Sale</b>
+										<small><i class=" header-text fas fa-dollar-sign"></i> 0.25</small>
+									</div>
+									<div class="card card-body mt-3" style="border: 1px solid #5555A4; border-radius: 10px;">
+										<small><i class="far fa-calendar-alt"></i> 1st November 2019 - 31st January 2020</small>
+										<b>PRE-IEO Sale</b>
+										<small><i class=" header-text fas fa-dollar-sign"></i> 0.20</small>
+									</div>	
+									<div class="card card-body mt-3" style="border: 1px solid #5555A4; border-radius: 10px;">
+										<small><i class="far fa-calendar-alt"></i> 1st Feburary 2020 - 29th Feburary 2020</small>
+										<b>IEO Sale</b>
+										<small><i class=" header-text fas fa-dollar-sign"></i> 0.20</small>
+									</div>	
+									<div class="card card-body mt-3" style="border: 1px solid #5555A4; border-radius: 10px;">
+										<small><i class="far fa-calendar-alt"></i> Q1 2020</small>
+										<b>Listing</b>
+										<small class="header-text">Available in platforms soon</small>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-6 offset-md-3">
@@ -2484,12 +2495,12 @@ $newsdatas = [];
 				<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
 					<i class="far fa-file-pdf"></i>
 	            			&nbsp;
-					White Paper
+					Whitepaper
 				</a>
 				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL ml-3" target="_blank">
 					<i class="far fa-file-pdf"></i>
 	            			&nbsp;
-					Yellow Paper
+					Yellowpaper
 				</a>
 			</div>
 			<div class="pt-3">
