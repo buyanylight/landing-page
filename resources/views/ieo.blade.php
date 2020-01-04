@@ -228,7 +228,7 @@
 						</div>
 						<div class="mt-3 pagers-paper row">
 							<div class="col pr-1">
-								<a href="#meet_bal" class="btn btn-BAL w-100">
+								<a href="#meet-bal" class="btn btn-BAL w-100">
 						        	<i class="fas fa-link"></i>
 						            &nbsp;
 									Meet BAL
@@ -2260,12 +2260,12 @@ $newsdatas = [];
 									<div class="card card-body" style="border: 1px solid #5555A4; border-radius: 10px;">
 										<small><i class=" header-text far fa-calendar-alt"></i> 1st October 2019 - 31st October 2019</small>
 										<b>Private Round Sale</b>
-										<small><i class=" header-text fas fa-dollar-sign"></i> 0.25</small>
+										<small><i class=" header-text fas fa-dollar-sign"></i> 0.20</small>
 									</div>
 									<div class="card card-body mt-3" style="border: 1px solid #5555A4; border-radius: 10px;">
 										<small><i class="far fa-calendar-alt"></i> 1st November 2019 - 31st January 2020</small>
 										<b>PRE-IEO Sale</b>
-										<small><i class=" header-text fas fa-dollar-sign"></i> 0.20</small>
+										<small><i class=" header-text fas fa-dollar-sign"></i> 0.25</small>
 									</div>	
 									<div class="card card-body mt-3" style="border: 1px solid #5555A4; border-radius: 10px;">
 										<small><i class="far fa-calendar-alt"></i> 1st Feburary 2020 - 29th Feburary 2020</small>
