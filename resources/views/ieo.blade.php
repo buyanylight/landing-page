@@ -36,12 +36,24 @@
 			adaptiveHeight: true,
 			centerPadding: '0px',
 			slidesToShow: 1,
-			initialSlide: 1,
+			initialSlide: 0,
 			infinite: false,
 			appendArrows: $('.arrows'),
 			prevArrow: '<button type="button" class="slick-prev d-inline-block">Previous</button>',
 			nextArrow: '<button type="button" class="slick-next d-inline-block">Next</button>',
 		});
+
+
+
+		// $('.roadmap').slick({
+		// 	centerMode: true,
+		// 	adaptiveHeight: true,
+		// 	centerPadding: '0px',
+		// 	slidesToShow: 1,
+		// 	initialSlide: 1,
+		// 	infinite: false,
+		// });
+
 
 
 
@@ -196,15 +208,234 @@
     </div>    
 </div>
 
-<section class="section-1" id="section-1" style="background-image : url({{ Util::assetUrl('/images/ieo/ieo-bg1.png') }})">
-	<div class="container h-100">
+<section class="section-1" id="section-1" style="background-image : url({{ Util::assetUrl('/images/ieo/ieo-bg.png')}})">
+	<div class="container-fluid h-100 pr-5 pl-5">
+		<div class=" d-flex align-items-center h-100">
+			<div class="row w-100">
+				<div class="col-5 d-flex align-items-center">
+					<div>
+						<h1 class="display-4">
+							<b>
+								LED Sourcing <br><span class="header-text">Revolutionized!</span> 
+							</b>
+						</h1>
+						<div>
+							Do you need led products for your newly constructed villa, your building, tower, or real-estate project?
+							<br>
+							Do you worry about the sky-high pricings and have trust issues with suppliers?
+							<br>
+							Do you hate delayed deliveries and want to get secured payments?
+						</div>
+						<div class="mt-3 pagers-paper row">
+							<div class="col pr-1">
+								<a href="#meet_bal" class="btn btn-BAL w-100">
+						        	<i class="fas fa-link"></i>
+						            &nbsp;
+									Meet BAL
+								</a>
+							</div>
+							<div class="col pr-1 pl-1">
+								<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}"  target="_blank" class="btn btn-BAL w-100">
+									<i class="far fa-file-pdf"></i>
+						            &nbsp;
+									Whitepaper
+								</a>
+							</div>
+							<div class="col pr-1 pl-1">
+								<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL w-100" target="_blank">
+									<i class="far fa-file-pdf"></i>
+						            &nbsp;
+									Yellowpaper
+								</a>
+							</div>
+							<div class="col pr-1 pl-1">
+								<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL w-100">
+						        	<i class="far fa-file-pdf"></i>
+						            &nbsp;
+									One Pager
+								</a>					
+							</div>
+							<div class="col pl-1 ">
+								<a href="{{ Util::assetUrl('BuyAnyLight_Pitch_Deck.pdf') }}" class="btn btn-BAL w-100" target="_blank">
+									<i class="far fa-file-pdf"></i>
+						            &nbsp;
+									Pitch Deck
+								</a>
+							</div>
+					<!-- 		<a href="https://t.me/buyanylight" class="btn btn-BAL" target="_blank">
+								<i class="fab fa-telegram-plane"></i>
+					            &nbsp;
+								Join Our Community
+							</a> -->
+						</div>
+						<div class="mt-3 row text-center">
+							 <div class="col one-link">
+	                                <a href="http://www.youtube.com/c/BuyAnyLight" class="text-dark" target="_blank"><i class="fab fa-youtube"></i></a>
+	                            </div>
+	                            <div class="col one-link">
+	                                <a href="https://twitter.com/BuyAnyLight" class="text-dark" target="_blank"><i class="fab fa-twitter"></i></a>
+	                            </div>
+	                            <div class="col one-link">
+	                                <a href="https://www.instagram.com/buyanylight/" class="text-dark" target="_blank"><i class="fab fa-instagram"></i></a>
+	                            </div>
+	                            <div class="col one-link">
+	                                <a href="https://www.facebook.com/BuyAnyLight/" class="text-dark" target="_blank"><i class="fab fa-facebook-f"></i></a>
+	                            </div>
+	                            <div class="col one-link">
+	                                <a href="https://github.com/buyanylight" class="text-dark" target="_blank"><i class="fab fa-github"></i></a>
+	                            </div>
+	                            <div class="col one-link">
+	                                <a href="https://www.reddit.com/r/BuyAnyLight/" class="text-dark" target="_blank"><i class="fab fa-reddit-alien"></i></a>
+	                            </div>
+	                            <div class="col one-link">
+	                                <a href="https://bitcointalk.org/index.php?topic=5193049.0;topicseen" class="text-dark" target="_blank"><i class="fab fa-bitcoin"></i></a>
+	                            </div>
+	                            <div class="col one-link">
+	                                <a href="https://t.me/buyanylight" class="text-dark" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+	                            </div>
+	                            <div class="col one-link">
+	                                <a href="https://medium.com/buyanylight" class="text-dark" target="_blank"><i class="fab fa-medium-m"></i></a>
+	                            </div>
+	                            <div class="col one-link">
+	                                <a href="https://www.linkedin.com/company/buyanylight/" class="text-dark" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+	                            </div>
+						</div>
+						<div class="mt-3">
+							<a href="#section-bal-token" class="btn btn-BAL w-100">
+								<i class="fas fa-coins"></i>
+					            &nbsp;
+								Get 17.5% discount Now!
+							</a>
+						</div>
+						<div class="mt-3">
+							<div class="card card-body" style=" background-color:#5555A4;  border-radius: 25px; box-shadow: 7px 7px 10px #d2d2d2;">
+								<div class="row">
+									<div class="col-6">
+										<h5 class="mb-0 text-white"><b>IEO - BAL TOKEN</b></h5>
+										<p class="mb-1 text-white">
+											The IEO of BAL Token starts in:
+										</p>
+											<div id="timer" class=" pt-1">
+												<div class="text-white" style="">
+												<div id="days1" class="timer-item d-inline-block mr-3 text-center"></div>
+												<div id="hours1" class="timer-item d-inline-block mr-3 text-center"></div>
+												<div id="minutes1" class="timer-item d-inline-block mr-3 text-center"></div>
+												<div id="seconds1" class="timer-item d-inline-block text-center"></div>
+											</div>
+										</div>
+									</div>
+									<div class="col-6 d-flex justify-content-center align-items-center" style="border: 1px solid; border-radius: 25px 0px 0px 25px;background-color: #3a3a77;  border-right: 0px; position: relative; left: 5px;">
+										<div>
+											<h5 class="text-white">Available soon in platforms</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-2"></div>
+				<div class="col-5">
+					<div class="videos mt-4" style="box-shadow: 7px 7px 10px #3c3c3c;">
+						<a data-fancybox href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0">
+							<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="" width="100%">
+							<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark video-btn">
+		                        <div>
+		                            <i class="fab fa-youtube"></i> 
+		                            <span>
+		                            	Play video
+		                            </span>
+		                        </div>
+		                    </div>
+						</a>
+					</div>
+					<div class="mt-3">
+						<div class="card card-body" style="border-radius:25px; box-shadow: 7px 7px 10px #3c3c3c;">
+							<h4 class="pb-3"><strong>Token Sale</strong></h4>
+							<div class="l">
+								<div class="row" style="font-size: 10px;">
+									<p class="col-md-4 m-0 d-flex align-items-center"><b>Start</b></p>
+									<p class="col-md-4 text-center m-0 d-flex align-items-center justify-content-center"><b>Soft Cap</b></p>
+									<p class="col-md-4 text-right m-0 d-flex align-items-center justify-content-end"><b>Hard Cap</b></p>
+								</div>
+								<div class="pt-1">
+									<div class="progress">
+			  							<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="35" aria-valuemin="0" aria-valuemax	="100">
+			  									$2,100,000
+			  							</div>
+									</div>
+								</div>
+								<div class="row pt-1" style="font-size: 10px;">
+									<p class="col-md-4 mb-0"><b>26% target raised</b></p>
+									<p class="col-md-4 text-center mb-0"><b>$4,000,000</b></p>
+									<p class="col-md-4 text-right mb-0"><b>$8,000,000</b></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="padding: 10px;">
+						<div class="col-4 p-1">
+							<div class="card text-center">
+								<div class="card-header" style="border-bottom: 1px solid #5555A4;font-size: 12px; color: #5555A4;">
+									<b>PRIVATE SALE</b><br>
+									<span style="font-size: 11px; text-decoration: line-through;">0.30303 USD</span><br>
+									<span style="font-size: 11px;">0.2 USD</span>
+								</div>
+								<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
+									<div class="row" style="font-size: 12px;">											
+										<div class="col-12">1<sup>st</sup> Oct 2019</div>
+										<div class="col-12">to</div>
+										<div class="col-12">31<sup>st</sup> Oct 2019</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4 p-1">
+							<div class="card text-center">
+								<div class="card-header" style=" border-bottom: 1px solid #5555A4; font-size: 12px; color: #5555A4;">
+									<b>PRE -IEO</b><br>
+									<span style="font-size: 11px; text-decoration: line-through;">0.30303 USD</span><br>
+									<span style="font-size: 11px;">0.25 USD</span>
+								</div>
+								<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
+									<div class="row" style="font-size: 12px;">
+										<div class="col-12">1<sup>st</sup> Nov 2019</div>
+										<div class="col-12">to</div>
+										<div class="col-12">31<sup>st</sup> Jan 2020</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4 p-1">
+							<div class="card text-center ">
+								<div class="card-header" style="border-bottom: 1px solid #5555A4;font-size: 12px; color: #5555A4;">
+									<b>IEO</b><br>
+									<span style="font-size: 11px;">0.30303 USD</span><br>
+									<span style="font-size: 11px;">&nbsp;</span>
+								</div>
+								<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
+									<div class="row" style="font-size: 12px;">
+										<div class="col-12">1<sup>st</sup> Feb 2020</div>
+										<div class="col-12">to</div>
+										<div class="col-12">29<sup>th</sup> Feb 2020</div>
+									</div>													
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="container h-100">
 		<div class="d-flex align-items-center h-100">
 			<div>
-				
 				<div class="row w-100 h-100 d-flex align-items-center ">
 					<div class="col-md-7 bal-ieo-text" style="position: relative;">
 
-						{{-- <a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
+						 <a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
 						<img border="0" 
 						style="height: 80px; position: absolute; top: -5px; right: 25px;" 
 						src="{{ Util::assetUrl('images/ieo/partners/icobench.png') }}" 
@@ -255,49 +486,49 @@
 						</h3>
 
 						<div class="pt-1 pagers-paper">
-							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">
+							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL">
 	            				<i class="far fa-file-pdf"></i>
 	            				&nbsp;
 								One Pager
 							</a>					
-							<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}"  target="_blank" class="btn btn-ieo">
+							<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}"  target="_blank" class="btn btn-BAL">
 								<i class="far fa-file-pdf"></i>
 	            				&nbsp;
 								White Paper
 							</a>
-							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo" target="_blank">
+							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL" target="_blank">
 								<i class="far fa-file-pdf"></i>
 	            				&nbsp;
 								Yellow Paper
 							</a>
-							<a href="{{ Util::assetUrl('BuyAnyLight_Pitch_Deck.pdf') }}" class="btn btn-ieo" target="_blank">
+							<a href="{{ Util::assetUrl('BuyAnyLight_Pitch_Deck.pdf') }}" class="btn btn-BAL" target="_blank">
 								<i class="far fa-file-pdf"></i>
 	            				&nbsp;
 								Pitch Deck
 							</a>
-							<a href="https://t.me/buyanylight" class="btn btn-ieo mt-3" target="_blank" style="width: 86%;">
+							<a href="https://t.me/buyanylight" class="btn btn-BAL mt-3" target="_blank" style="width: 86%;">
 								<i class="fab fa-telegram-plane"></i>
 	            				&nbsp;
 								Join Our Community
 							</a>
 						</div>
-						<!-- <div class="pt-3">
+						<div class="pt-3">
 							<h5>
 								View on Etherscan
 							</h5>
 							<div class="pt-2">
-								<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-ieo" target="_blank">Token Contract</a>
-								<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-ieo" target="_blank">Token Owner </a>
-								<a href="#allocation" class="btn btn-ieo">Token Allocation</a>
-								<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn btn-ieo" target="_blank">Token Sale Agreement</a>
+								<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL" target="_blank">Token Contract</a>
+								<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-BAL" target="_blank">Token Owner </a>
+								<a href="#allocation" class="btn btn-BAL">Token Allocation</a>
+								<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn btn-BAL" target="_blank">Token Sale Agreement</a>
 							</div>
-						</div> -->
+						</div>
 						<div class="videos mt-4">
 							<a data-fancybox 
 							style="background-image: url({{ Util::assetUrl('/images/ieo/bal-ieo.png') }}); background-size: 100%; border: solid 3px black" 
 							href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0" 
 							class="video-link" >
-								<!-- <img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="" > -->
+								<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="" >
 								<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark">
 		                            <div>
 		                                <i class="fab fa-youtube"></i> 
@@ -311,7 +542,7 @@
 							style="background-image: url({{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}); background-size: 100%; border: solid 3px black"
 							href="https://www.youtube-nocookie.com/embed/5nMkricvzfc?rel=0" 
 							class="">
-								<!-- <img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}" alt="" style="border: solid 3px black"> -->
+								<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}" alt="" style="border: solid 3px black">
 								<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark">
 		                            <div>
 		                                <i class="fab fa-youtube"></i> 
@@ -327,10 +558,10 @@
 								View on Etherscan
 							</h4>
 							<div class="pt-2">
-								<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-ieo" target="_blank">Token Contract</a>
-								<!-- <a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-ieo" target="_blank">Token Owner </a> -->
-								<a href="#allocation" class="btn btn-ieo">Token Allocation</a>
-								<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn btn-ieo" target="_blank">Token Sale Agreement</a>
+								<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL" target="_blank">Token Contract</a>
+								<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" class="btn btn-BAL" target="_blank">Token Owner </a>
+								<a href="#allocation" class="btn btn-BAL">Token Allocation</a>
+								<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn btn-BAL" target="_blank">Token Sale Agreement</a>
 							</div>
 						</div>
 						
@@ -356,7 +587,7 @@
 										</div>
 										<div class="pl-5 text-white">
 											<small><span>1 BAL = 0.25 USD</span></small>
-											{{-- <small><span>1 BAL = 0.2 USD</span></small> --}}
+											<small><span>1 BAL = 0.2 USD</span></small>
 										</div>
 									</div>
 									<div class="w-100">
@@ -512,6 +743,217 @@
 				</div>
 			</div>
 		</div>
+	</div> -->
+</section>
+
+
+	<?php
+			// $datas[] = [ 'style'=>"", 'title'=>"", 'link'=>"", 'src'=>"", ];					
+		$datas = [];
+		$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICORATING", 'link'=>"https://icoholder.com/en/buyanylight-31234", 'src'=>Util::assetUrl("images/ieo/partners/icoholder.png"), ];
+		$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight COINCODEX", 'link'=>"https://coincodex.com/ieo/buyanylight/", 'src'=>Util::assetUrl("images/ieo/partners/coincodex.png"), ];
+		$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOHOLDER", 'link'=>"https://icobench.com/ico/buyanylight-bal", 'src'=>"https://icobench.com/rated/buyanylight-bal?shape=square&size=m", ];
+		$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOMARKS", 'link'=>"https://icomarks.com/ico/buyanylight", 'src'=>"https://icomarks.com/widget/b/buyanylight/square.svg", ];
+		$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOSBULL", 'link'=>"https://icosbull.com/eng/ico/buyanylightbal", 'src'=>"images/ieo/partners/icosbull.png", ];
+	?>
+
+
+
+<section class="section-2 bg-black pt-3 pb-3">
+	<div class="w-100 container">
+		<div class="row">
+			<div class="col-3 d-flex align-items-center">
+				<div class="text-white">
+					<span style="font-size: 18px;">Ratings</span>
+					<br> 
+					by ICO Experts
+				</div>
+			</div>
+			<div class="col-9">
+				@foreach($datas as $data)
+				<div class="d-inline-block mr-3">
+					<a href="{{$data['link']}}" target="_blank" title="{{ $data['title'] }}" alt="{{ $data['title'] }}" >
+						<img class="icon" src="{{ $data['src'] }}" style="height: 85px;">
+					</a>
+				</div>
+				@endforeach
+			</div>
+		</div>
+	</div>
+
+<!-- 	<div class="pt-5 pb-5">
+		<div class="container">
+			<div class="row d-flex align-items-center">
+				<div class="col-md-6">
+					<h3>
+						<strong>
+							<span class="header-text">
+								What is BAL  
+							</span>
+							<span>
+								Token?
+							</span>
+						</strong> 
+					</h3>
+					<p>
+						{{-- BAL is an ERC 20 compliant digital asset deployed on Ethereum blockchain. It allows peer to peer mode of payment store and exchange of value and is specifically designed for supporting larger volumes of transactions and creation of a complete financial ecosystem. It offers quick, secure and efficient transfer of value with high confirmation speed. --}}
+						BAL is an ERC-20 compliant digital token deployed on the Ethereum blockchain that allows a peer-to-peer mode of payment, storage, and exchange of value seamlessly and securely. The BAL Token is specifically designed to support large volumes of transactions within the BAL ecosystem. It offers quick, secure, and efficient transfer of value with high confirmation speed.						
+					</p>
+				</div>
+				<div class="col-md-6 text-center">	
+					<img src="{{ Util::assetUrl('images/ieo/3.png')}}" width="80%">		
+				</div>
+			</div>
+		</div>
+	</div> -->
+</section>
+
+<section>
+	<div class="container pt-5 pb-5">
+		<div class="row pt-5" id="meet-bal">
+			<div class="col-6">
+				<img src="{{ Util::assetUrl('images/ieo/2.png')}}" width="80%">		
+			</div>
+			<div class="col-6 d-flex align-items-center">
+				<div>
+					<h3>
+						<strong>
+							<span class="header-text">
+								Meet 
+							</span> 
+							<span class="text-dark">
+								BuyAnyLight
+							</span> 
+						</strong> 
+					</h3>
+					<div class="pt-3">
+						<p>
+							BuyAnyLight help you source quality LED products for all of your lighting needs. Using blockchain, AI, Big Data and Smart Contracts, it presents your inquiries before the right manufacturers and ensure that you get the products you had ordered. 
+						</p>
+					</div>
+					<div class="all-videos mt-4">
+						<a data-fancybox="" style="background-image: url({{ Util::assetUrl('images/ieo/bal.jpeg')}}); background-size: cover; border: solid 3px black" href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" class="video-link">
+							<img class="video" src="{{ Util::assetUrl('images/ieo/bal.jpeg')}}" alt="" >
+							<div class="d-flex align-items-end justify-content-center h-100" style="position: absolute; bottom: 35px; color: #FF0000; left: 130px; font-size: 20px;">
+		                        <div>
+		                            <i class="fab fa-youtube"></i> 
+		                        </div>
+		                    </div>
+						</a>
+						<a data-fancybox="" style="background-image: url(Util::assetUrl('images/ieo/lightfinder.jpeg')}}); background-size: cover; border: solid 3px black" href="https://www.youtube-nocookie.com/embed/k-zrKcgJf0Q?rel=0" class="">
+							<img class="video" src="{{ Util::assetUrl('images/ieo/lightfinder.jpeg')}}" alt="" >
+							<div class="d-flex align-items-end justify-content-center h-100" style="position: absolute; bottom: 35px; color: #FF0000; left: 405px;font-size: 20px;">
+		                        <div>
+		                       		<i class="fab fa-youtube"></i> 
+		                        </div>
+		                    </div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pt-5 pb-5 mt-5">
+			<div class="card-deck pt-5">
+				<div class="card buyer-card">
+					<div class="card-body text-center">
+						<div class="card-title ">
+							<h2><i class="fas fa-stopwatch"></i></h2>
+						</div> 
+						<h5 class="">
+							<b class="text-BAL">SEAMLESS ORDERS</b>
+						</h5>
+						Submit your lighting requirements as simple as sharing an image and receive the best quotations. 
+					</div>
+				</div>
+				<div class="card buyer-card">
+					<div class="card-body text-center">
+						<div class="card-title ">
+							<h2><i class="fas fa-wallet"></i></h2>
+						</div> 
+						<h5 class="">
+							<b class="text-BAL">TRUSTLESS PAYMENTS</b>
+						</h5>
+						With blockchain deployed self-enforceable smart contracts, your payments are trustless and 100% secured.
+					</div>
+				</div>	
+				<div class="card buyer-card">
+					<div class="card-body text-center">
+						<div class="card-title ">
+							<h2><i class="fas fa-globe-asia"></i></h2>
+						</div> 
+						<h5 class="">
+							<b class="text-BAL">TRACEABLE LOGISTICS</b>
+						</h5>
+						All your order details, right from the manufacturer to the shipper and then to you are added to a traceable blockchain network.  
+
+					</div>
+				</div>
+			</div>
+			<div class="card-deck mt-4">
+				<div class="card buyer-card">
+					<div class="card-body text-center">
+						<div class="card-title ">
+							<h2><i class="fas fa-thumbs-up"></i></h2>
+						</div> 
+						<h5 class="">
+							<b class="text-BAL">EXPERT CONSULTATION</b>
+						</h5>
+						Get free of cost consultation from experts who are available for your support 24/7.
+					</div>
+				</div>
+				<div class="card buyer-card">
+					<div class="card-body text-center">
+						<div class="card-title ">
+							<h2><i class="fas fa-dollar-sign"></i></h2>
+						</div> 
+						<h5 class="">
+							<b class="text-BAL">NOMINAL PRICES</b>
+						</h5>
+						Compared to big brands, you get products of similar quality and design, for up to 75% lower price.
+					</div>
+				</div>	
+				<div class="card buyer-card">
+					<div class="card-body text-center">
+						<div class="card-title ">
+							<h2><i class="fas fa-boxes"></i></h2>
+						</div> 
+						<h5 class="">
+							<b class="text-BAL">NO MORE MIDDLEMAN</b>
+						</h5>
+						Avoid hectic order processing and the costs when you buy from retailers. Get direct access to manufacturers.  
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<?php
+$newsdatas = [];
+	$newsdatas[] = [ 'style'=>"", 'title'=>"CCN", 'link'=>"https://lnkd.in/evx2GWH", 'src'=>"images/ieo/partners/ccn.png", ];
+	$newsdatas[] = [ 'style'=>"", 'title'=>"Yahoo Finance", 'link'=>"https://au.finance.yahoo.com/news/blockpass-buyanylight-announce-partnership-bring-110000232.html", 'src'=>"images/ieo/partners/yfinance.png", ];
+	// $newsdatas[] = [ 'style'=>"", 'title'=>"Digital Journal", 'link'=>"http://webotic.ae", 'src'=>"images/ieo/partners/digital.png", ];
+	// $newsdatas[] = [ 'style'=>"", 'title'=>"ICOBench", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/partners/icobench2.png", ];
+	$newsdatas[] = [ 'style'=>"", 'title'=>"bitcoinwiki", 'link'=>"https://en.bitcoinwiki.org/wiki/Buyanylight", 'src'=>"images/ieo/partners/bitcoinwiki.png", ];
+	$newsdatas[] = [ 'style'=>"", 'title'=>"asiaone", 'link'=>"https://www.asiaone.com/business/blockpass-and-buyanylight-announce-partnership-bring-pass-rebate-blockpass-users", 'src'=>"images/ieo/partners/asiaone.png", ];
+	// $newsdatas[] = [ 'style'=>"", 'title'=>"acnnewswire", 'link'=>"https://www.asiaone.com/business/blockpass-and-buyanylight-announce-partnership-bring-pass-rebate-blockpass-users", 'src'=>"images/ieo/partners/acnnews.png", ];
+
+?>
+
+?>
+
+<section class="BAL-news" style="background-color: #f7f7f7; height: 100%;">
+	<h3 class="text-center pt-5"><strong>BuyAnyLight in the News and Media</strong></h3>
+	<div class="container d-flex align-items-center pt-3 pb-5" style="">
+		<div class="">
+			<div class="news-channels text-center">
+				@foreach($newsdatas as $nd)
+				<a href="{{ $nd['link'] }}" class="mr-4">
+					<img src="{{ $nd['src'] }}" width="15%">
+				</a>
+				@endforeach
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -538,7 +980,7 @@
 				<div class="pt-4">
 					<div class="input-group" style="height: 70px; position: relative; right: 13px;">
 	  					<div class="input-group-prepend" style="width: 135px">
-	    					<span class="input-group-text d-flex justify-content-center btn-ieo" id="basic-addon1" style="width: 100%; border-radius: 20px; position: relative; left: 15px; z-index: 1; box-shadow: 4px 0px 5px 0px #cccccc; background: -webkit-linear-gradient(right, #e4007b, #0000af);" data-toggle="tooltip" data-placement="right" title="BAL Token">
+	    					<span class="input-group-text d-flex justify-content-center btn-BAL" id="basic-addon1" style="width: 100%; border-radius: 20px; position: relative; left: 15px; z-index: 1; box-shadow: 4px 0px 5px 0px #cccccc; background-color: #5555A4;" data-toggle="tooltip" data-placement="right" title="BAL Token">
 	    						<img src="{{ Util::assetUrl('images/logo-white-mobile.png') }}" width="28">
 	    					</span>
 	  					</div>
@@ -567,7 +1009,7 @@
 						@foreach($tokens as $token)
 							<div class="card mb-3" style="border-radius: 20px; height: 60px;">
   								<div class="row no-gutters">
-    								<div class="col-md-3 d-flex align-items-center justify-content-center btn-ieo" style="border-radius: 20px; box-shadow: 4px 0px 5px 0px #cccccc; height: 60px;" data-toggle="tooltip" data-placement="right" title="{{ $token['symbol'] }}">
+    								<div class="col-md-3 d-flex align-items-center justify-content-center btn-BAL" style="border-radius: 20px; box-shadow: 4px 0px 5px 0px #cccccc; height: 60px;" data-toggle="tooltip" data-placement="right" title="{{ $token['symbol'] }}">
       									<p class="mb-0" style="font-size: 20px;">{!! $token['logo'] !!}</p>
     								</div>
     								<div class="col-md-9">
@@ -697,7 +1139,7 @@
 										@if(!empty($code))
 											<input type="hidden" name="referral_code" value="{{ $code }}">
 										@endif
-										<button type="submit" class="btn btn-ieo w-100" style="border-radius: 10px;" id="token-btn"><b>Buy Tokens Now!</b></button>
+										<button type="submit" class="btn btn-BAL buy-btn w-100" style="border-radius: 10px; color: #fff;" id="token-btn"><b>Buy Tokens Now!</b></button>
 									</div>
 								</div>
 							</div>
@@ -863,59 +1305,7 @@
 
 
 
-<section class="section-2 pt-5">
-	<div class="container pt-5 pb-5">
-		<div class="row">
-			<div class="col-md-6">
-					<img src="{{ Util::assetUrl('images/ieo/2.png')}}" width="80%">		
-			</div>
-			<div class="col-md-6">
-				<h3>
-					<strong>
-						<span class="header-text">
-							About BAL Initial Exchange
-						</span> 
-						<span class="text-dark">
-							 Offering (IEO)
-						</span> 
-					</strong> 
-				</h3>
-				<div class="pt-3">
-					<p>
-						The BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowdfunding campaign to raise funds for the development of a blockchain deployed, decentralized marketplace for lighting products, and the expansion of the existing BAL Network. It is a framework for addressing the unique challenges faced by lighting contractors, manufacturers, and buyers that combines revolutionary technologies such as blockchain and cryptography, smart contracts, fintech, and tokenization.
-					</p>
-					<p>We understand and embrace the new blockchain-powered technologies that can optimize sourcing in the lighting industry and create the digital infrastructure for smarter light sourcing in a seamless, cost-effective way.						
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="pt-5 pb-5">
-		<div class="container">
-			<div class="row d-flex align-items-center">
-				<div class="col-md-6">
-					<h3>
-						<strong>
-							<span class="header-text">
-								What is BAL  
-							</span>
-							<span>
-								Token?
-							</span>
-						</strong> 
-					</h3>
-					<p>
-						{{-- BAL is an ERC 20 compliant digital asset deployed on Ethereum blockchain. It allows peer to peer mode of payment store and exchange of value and is specifically designed for supporting larger volumes of transactions and creation of a complete financial ecosystem. It offers quick, secure and efficient transfer of value with high confirmation speed. --}}
-						BAL is an ERC-20 compliant digital token deployed on the Ethereum blockchain that allows a peer-to-peer mode of payment, storage, and exchange of value seamlessly and securely. The BAL Token is specifically designed to support large volumes of transactions within the BAL ecosystem. It offers quick, secure, and efficient transfer of value with high confirmation speed.						
-					</p>
-				</div>
-				<div class="col-md-6 text-center">	
-					<img src="{{ Util::assetUrl('images/ieo/3.png')}}" width="80%">		
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+
 
 
 
@@ -944,26 +1334,26 @@
 				Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
 			</p>
 			<div class="buttons pt-3">
-				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">
+				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL">
 					<i class="far fa-file-pdf"></i>
 	            			&nbsp;
 					One Pager
 				</a>
-				<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-ieo ml-3">
+				<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
 					<i class="far fa-file-pdf"></i>
 	            	&nbsp;
-					White Paper
+					Whitepaper
 				</a>
-				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">
+				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL ml-3" target="_blank">
 					<i class="far fa-file-pdf"></i>
 	            			&nbsp;
-					Yellow Paper
+					Yellowpaper
 				</a>				
 
 			</div>
 			<div class="pt-3">
-				<a href="#contact" class="btn btn-ieo m-2">Schedule a meeting</a>
-				<a href="#section-bal-token" class="btn btn-ieo m-2 buy-btn">
+				<a href="#contact" class="btn btn-BAL m-2">Schedule a meeting</a>
+				<a href="#section-bal-token" class="btn btn-BAL m-2">
 					<b>
 						BUY BAL TOKENS NOW!
 					</b>
@@ -978,6 +1368,11 @@
 		<div class="container pt-5 pb-5">
 			<div class="row d-flex align-items-center">
 				<div class="col-md-6">
+					<div class="vision-mission">
+						<img class="video" src="{{ Util::assetUrl('/images/ieo/visionmission.png') }}" alt="">
+					</div>
+				</div>
+				<div class="col-md-6">
 					<h3>
 						<strong>
 							<span class="header-text">
@@ -989,62 +1384,8 @@
 						</strong> 
 					</h3>
 					<p class="text-white">
-						Our vision is to become the leading global platform for buyers and sellers dealing in LED lighting. Through BAL Marketplace, we aim to democratize access to the sourcing of lighting products, without the interference of a centralized authority or intermediary.
+						We envision to revolutionize the entire sourcing process by harnessing the power of blockchain, AI, Big Data and Smart Contracts. Starting from the LED Lighting Industry, we aim to expand BAL Network into other industries including but not limited to Construction, Pharma, Food and Precious Metal Industry. 
 					</p>
-				</div>
-				<div class="col-md-6 text-center">
-					<div class="vision-mission">
-						{{-- <a  data-fancybox href="https://www.youtube.com/embed/o8CAwwz6tIM">							
-							<img src="{{asset('images/mv-img.png')}}" alt="..." class="rounded-circle mv-img" width="35%">							
-							<div class="text-dark yt">
-								<i class="fab fa-youtube"></i>
-							</div>
-						</a> --}}
-
-						<a data-fancybox 
-						href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0" 
-						class="">
-							<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="">
-							<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="position: relative; bottom: 35px; left: 50px;">
-                            <div>
-                                <i class="fab fa-youtube"></i> 
-                                <span>
-                                    Play video
-                                </span>
-                            </div>
-                        </div>
-						</a>
-							
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container pt-5 pb-5">
-			<div class="row d-flex align-items-center">
-				<div class="col-md-6 text-center">
-					{{-- <a data-fancybox href="https://www.youtube.com/embed/5nMkricvzfc" >
-						<img src="{{asset('images/mv-img.png')}}" alt="..." class="rounded-circle mv-img" width="35%">
-						<div class="text-dark yt">
-							<i class="fab fa-youtube "></i>
-						</div>
-					</a> --}}
-					<div class="vision-mission">
-						<a data-fancybox 
-						href="https://www.youtube-nocookie.com/embed/5nMkricvzfc?rel=0" 
-						class="">
-							<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}" alt="">
-							<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="position: relative; bottom: 35px;     left: 50px;">
-                            <div>
-                                <i class="fab fa-youtube"></i> 
-                                <span>
-                                    Play video
-                                </span>
-                            </div>
-                        </div>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-6">
 					<h3>
 						<strong>
 							<span class="header-text">
@@ -1056,7 +1397,7 @@
 						</strong> 
 					</h3>
 					<p class="text-white">
-						We aim to create a modern platform for lighting products by fully harnessing the technological power offered by blockchain, smart contracts, and cryptographic technology. Principled, honest and focused, we leverage the world’s best suppliers and deliver the most significant value LED products, the most exceptional service and advice, and first-rate customer satisfaction – every time.
+						Our mission is to become the leading platform of choice for individuals and businesses and manufacturers. Principled, honest and focused, we leverage the world’s best suppliers and deliver the most significant value LED products, the most exceptional service and advice, and first-rate customer satisfaction – every time.
 					</p>
 				</div>
 			</div>
@@ -1085,7 +1426,7 @@
 							<b>Decentralization</b>
 						</h5>
 						<p class="pt-1">
-							Unlike traditional marketplaces and payment networks, there is no single point of failure. All transactional activities happening within the BAL ecosystem are open and transparent to the whole community.
+							BAL is decentralized and community owned
 						</p>
 					</div>
 				</div>
@@ -1098,7 +1439,7 @@
 							<b>Security</b>
 						</h5>
 						<p class="pt-1">
-							BAL Token uses an Ethereum blockchain based proof of work consensus for confirming transactions, which makes it completely decentralized and one of the most secure digital assets. All of your transactional data is encrypted, and your digital assets are reserved in a wallet only you can access.
+							All transactions in BAL are secured by Smart Contracts.
 						</p>
 					</div>
 				</div>
@@ -1111,7 +1452,7 @@
 							<b>Utility</b>
 						</h5>
 						<p class="pt-1">
-							BAL Token has inherent utility within the BAL marketplace, a leading marketplace based in Dubai, UAE, allowing it to be accepted as a mode of payment for lighting products.
+							BAL Token is the native token within the BAL Ecosystem.
 						</p>
 					</div>
 				</div>
@@ -1123,10 +1464,10 @@
 					<img src="{{ Util::assetUrl('images/ieo/6-4.png') }}" width="20%">
 					<div class="pt-3">
 						<h5>
-							<b>Liquidity and Easy Transaction</b>
+							<b>Liquidity</b>
 						</h5>	
 						<p class="pt-1">
-							Easily liquidate or transfer your BAL Token to anyone, anywhere in the world through a secure, encrypted digital wallet.
+							Exchange or transfer value as simple as sending an email.
 						</p>
 					</div>
 				</div>
@@ -1139,7 +1480,7 @@
 							<b>Nominal Transactional Fee</b>
 						</h5>
 						<p class="pt-1">
-							BAL Marketplace deducts significantly lower fees than any other major online payment system. This allows users to send, receive or perform any transactional activity at minimal costs.
+							Transfer up to a million dollar in a single digit fee.
 						</p>
 					</div>
 				</div>
@@ -1152,7 +1493,7 @@
 							<b>Transparency</b>
 						</h5>
 						<p class="pt-1">
-							Deployment of all transactional records on a transparent blockchain ensures visibility and eliminates fraud.
+							All transactions are transparent and auditable.
 						</p>
 						
 					</div>
@@ -1192,8 +1533,7 @@
 
 				
 
-				
-
+				<?php /*
 				
 
 				{{-- roadmap --}}
@@ -1259,11 +1599,10 @@
 									<div class="card mb-2"><div class="card-body">Establishment of a state-of-the-art Dubai showroom</div></div>
 									<div class="card mb-2"><div class="card-body">Warehouse expansion</div></div>
 									<div class="card mb-2"><div class="card-body">Several prestigious projects in UAE completed</div></div>
-									<div class="card mb-2"><div class="card-body">Product range covering 250 products in architectural, residential, commercial and decorative lighting</div>
-									<div class="card mb-2"><div class="card-body">BAL LightFinder and My Home Features testing</div>
+									<div class="card mb-2"><div class="card-body">Product range covering 250 products in architectural, residential, commercial and decorative lighting</div></div>
+									<div class="card mb-2"><div class="card-body">BAL LightFinder and My Home Features testing</div></div>
 								</div>
 									
-								</div>
 							</div>
 						</div>
 
@@ -1572,23 +1911,275 @@
 				{{-- ////////////////////////////////////////////////////////////////// --}}
 				{{-- roadmap --}}
 
-
-
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
 				<div class="arrows pt-3"></div>   
+
+
+				*/ ?>
+
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+	
+				
+				
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+				
+				
+				
+				
+				
+				{{-- roadmap --}}
+				{{-- ////////////////////////////////////////////////////////////////// --}}
+
+				<?php
+					$timelines = [];
+
+					$timeline = [];
+					$timeline[] = [
+						'name' => '2014',
+						'icon' => 'fas fa-archway',
+						'items' => [
+							'Foundation Almani Lighting Gmbh.',
+						],
+					];
+					$timeline[] = [
+						'name' => '2015',
+						'icon' => 'far fa-handshake',
+						'items' => [
+							'Foundation of Almani Lighting LLC, Dubai.',
+							'Strategic Partnerships.',
+						],
+					];
+					$timeline[] = [
+						'name' => '2016',
+						'icon' => 'fas fa-users',
+						'items' => [
+							'BAL Idea Inception, Research and Feasibility and Development team recruitment.',
+						],
+					];
+					$timeline[] = [
+						'name' => '2017',
+						'icon' => 'fas fa-warehouse',
+						'items' => [
+							'51% Ownership Acquisition of Almani Lighting LLC by Asas Holding, Warehouse expansion.',
+							'BAL Light Finder development and testing.',
+						],
+					];
+					$timelines[] = $timeline;
+					
+
+
+
+					$timeline = [];
+					$timeline[] = [
+						'name' => '2018',
+						'icon' => 'fas fa-sitemap',
+						'items' => [
+							'Team Expansion, Product range extended to 600+.',
+							'Fiat Partner Collaboration, Major Sheikh Palace Contracts in UAE.',
+						],
+					];
+					$timeline[] = [
+						'name' => '2019',
+						'icon' => 'fas fa-at',
+						'items' => [
+							'BAL Beta Version release,',
+							'Documentation and drafting,',
+							'Website Development and launch,',
+							'Seed round finished and Public Token sale.',
+							'Marketing Kickstart.',
+						],
+					];
+					$timeline[] = [
+						'name' => '2020',
+						'icon' => 'fas fa-link',
+						'items' => [
+							'IEO Sale and Listing on exchanges.',
+							// 'Blockchain development team expansion',
+							'Blockchain based platform development Initiated',
+							'Smart Contracts Development, Wallet development with cross-chain.',
+							'Asset exchange.',
+							'Traceable Logistic partnerships and development initiated.',
+						],
+					];
+					$timelines[] = $timeline;
+
+
+
+					$timeline = [];
+					$timeline[] = [
+						'name' => '2021',
+						'icon' => 'fas fa-mobile',
+						'items' => [
+							'Traceable logistic functionality implementation.',
+							'Alpha version release.',
+							'Mobile apps release.',
+						],
+					];
+					$timeline[] = [
+						'name' => '2022',
+						'icon' => 'fas fa-brain',
+						'items' => [
+							'On-chain logistic fully implemented.',
+							'AI-Based Smart Contracts Implementation.',
+							'BAL Custodial Platform development.',
+						],
+					];
+					$timeline[] = [
+						'name' => '2023',
+						'icon' => 'fas fa-file',
+						'items' => [
+							'Expansion into construction industry.',
+							'BAL Tokenization Platform Development.',
+							'Smart Contract Notary Service Launch.',
+						],
+					];
+
+					$timelines[] = $timeline;
+
+
+				?>
+
+				<ul class="roadmap">
+					@foreach($timelines as $key => $tmls)
+					<?php  
+						if($key == 0)
+						$dot = 'first-item';
+						else if($key == count($timelines)-1)
+						$dot = 'last-item';
+						else
+						$dot = '';
+					?>
+
+					<li class="li complete">
+						<div class="ps-timeline-sec">
+							<div class="container">
+								<ol class="ps-timeline {{ $dot }}">
+								@foreach ($tmls as $key2 => $tml)
+									<li style="width:{{ 100/count($tmls) }}%;">
+										<?php  $pos = ($key2%2 == 0)?'top':'bot'; ?>							
+										<?php  $pos2 = ($key2%2 == 0)?'bot':'top'; ?>
+										
+										<div class="img-handler-{{ $pos }}">
+											{{-- <img src="{{ $tml['icon'] }}" alt=""/> --}}
+											<i style="" class="{{ $tml['icon'] }} timeline-icon"></i>
+										</div>
+
+
+										<div class="ps-{{ $pos2 }}">
+											@foreach($tml['items'] as $item)
+												<p>{{ $item }}</p>									
+											@endforeach
+										</div>
+										<span class="ps-sp-{{ $pos }}">{{ $tml['name'] }}</span>
+									</li>
+								@endforeach
+								</ol>
+							</div>
+						</div>		
+					</li>
+					@endforeach
+				</ul>
+				<div class="arrows pt-3"></div>   
+
+				{{-- ////////////////////////////////////////////////////////////////// --}}
+				{{-- roadmap --}}
+
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 			</div>
 		</div>
 	</div>
@@ -1617,97 +2208,80 @@
 			</h3>
 			<div class="text-center pt-5">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-5">
 						<div>
-							<table class="text-left w-100" cellpadding="10" id="token-info">
+							<h4 class="text-left"> <b>Token Information</b></h4>
+							<table class="text-left w-100 mt-3" cellpadding="10" id="token-info">
 								<tr>
-									<td>Token name:</td>
+									<td><b>Token name:</b></td>
 									<td>BAL Token</td>
 								</tr>
 								<tr>
-									<td>Ticker:</td>
+									<td><b>Ticker:</b></td>
 									<td>BAL</td>
 								</tr>
 								<tr>
-									<td>Token type:</td>
-									<td>ERC-20</td>
-								</tr>
-								<tr>
-									<td>Blockchain deployed:</td>
+									<td><b>Network:</b></td>
 									<td>Ethereum</td>
 								</tr>
 								<tr>
-									<td>Accepts:</td>
-									<td>BTC, ETH, EUR, USD</td>
-								</tr>								
-								<tr>
-									<td>Total supply:</td>
-									<td>55 Million (100%)</td>
-								</tr>
-								<tr>
-									<td>Private Sale price:</td>
-									<td>1BAL = USD 0.2</td>
-								</tr>
-								<tr>
-									<td>Pre-IEO Sale price:</td>
-									<td>1BAL = USD 0.25</td>
-								</tr>
-								<tr>
-									<td>IEO Sale price:</td>
-									<td>1BAL = USD 0.30303</td>
-								</tr>
-
-							</table>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div>
-							<table class="text-left w-100" id="token-info"> 
-								<tr>
-									<td>Soft Cap:</td>
+									<td><b>Soft Cap:</b></td>
 									<td>4 Million USD</td>
 								</tr>
 								<tr>
-									<td>Hard Cap:</td>
-									<td>8 Million USD</td>
+									<td><b>Hard Cap:</b></td>
+									<td>5 Million USD</td>
+								</tr>								
+								<tr>
+									<td><b>Total supply:</b></td>
+									<td>55 Million BAL</td>
 								</tr>
 								<tr>
-									<td>Know Your Customer (KYC):</td>
-									<td>Yes</td>
+									<td><b>IEO price:</b></td>
+									<td>1BAL = USD 0.30303 (Upcoming)</td>
 								</tr>
 								<tr>
-									<td>Supply reserved for Private & <br>Pre-IEO Sale Round combined:</td>
-									<td>5.5 Million (10% of the total supply)</td>
+									<td><b>Pre-IEO Sale price:</b></td>
+									<td>1BAL = USD 0.25 (Live)</td>
 								</tr>
 								<tr>
-									<td>Supply reserved for IEO:</td>
-									<td>16.5 Million (30% of the total supply)</td>
-								</tr>
-								<tr>
-									<td>Seed Round date:</td>
-									<td>Febuary 1<sup>st</sup>, 2019 (Sold out)</td>
-								</tr>
-								<tr>
-									<td>Private Starting Date:</td>
-									<td>October 1<sup>st</sup>, 2019</td>
-								</tr>
-								<tr>
-									<td>Pre-IEO Starting Date:</td>
-									<td>November 1<sup>st</sup>, 2019</td>									
-								</tr>
-								<tr>
-									<td>IEO Starting Date:</td>
-									<td>February 1<sup>st</sup>, 2020</td>
+									<td><b>Private Round price:</b></td>
+									<td>1BAL = USD 0.20</td>
 								</tr>
 
 							</table>
 						</div>
 					</div>
-					<div class="col-md-6 offset-md-3">
+					<div class="col-md-7">
 						<div>
-							<table class="text-left w-100" id="token-info"> 
-							</table>
+							<h4 class="text-left"> <b>Crowd Sales Plan</b></h4>
+							<div class="row mt-3 text-left">
+								<div class="col-md-12">
+									<div class="card card-body" style="border: 1px solid #5555A4; border-radius: 10px;">
+										<small><i class=" header-text far fa-calendar-alt"></i> 1st October 2019 - 31st October 2019</small>
+										<b>Private Round Sale</b>
+										<small><i class=" header-text fas fa-dollar-sign"></i> 0.25</small>
+									</div>
+									<div class="card card-body mt-3" style="border: 1px solid #5555A4; border-radius: 10px;">
+										<small><i class="far fa-calendar-alt"></i> 1st November 2019 - 31st January 2020</small>
+										<b>PRE-IEO Sale</b>
+										<small><i class=" header-text fas fa-dollar-sign"></i> 0.20</small>
+									</div>	
+									<div class="card card-body mt-3" style="border: 1px solid #5555A4; border-radius: 10px;">
+										<small><i class="far fa-calendar-alt"></i> 1st Feburary 2020 - 29th Feburary 2020</small>
+										<b>IEO Sale</b>
+										<small><i class=" header-text fas fa-dollar-sign"></i> 0.30303</small>
+									</div>	
+									<div class="card card-body mt-3" style="border: 1px solid #5555A4; border-radius: 10px;">
+										<small><i class="far fa-calendar-alt"></i> Q1 2020</small>
+										<b>Listing</b>
+										<small class="header-text">Available in platforms soon</small>
+									</div>
+								</div>
+							</div>
 						</div>
+					</div>
+					<div class="col-md-6 offset-md-3">
 					</div>
 				</div>
 			</div>
@@ -1942,25 +2516,25 @@
 				Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
 			</p>
 			<div class="buttons pt-3">
-				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-ieo">
+				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL">
 					<i class="far fa-file-pdf"></i>
 	            			&nbsp;
 					One Pager
 				</a>
-				<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-ieo ml-3">
+				<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-BAL ml-3">
 					<i class="far fa-file-pdf"></i>
 	            			&nbsp;
-					White Paper
+					Whitepaper
 				</a>
-				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-ieo ml-3" target="_blank">
+				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL ml-3" target="_blank">
 					<i class="far fa-file-pdf"></i>
 	            			&nbsp;
-					Yellow Paper
+					Yellowpaper
 				</a>
 			</div>
 			<div class="pt-3">
-				<a href="#contact" class="btn btn-ieo m-2">Schedule a meeting</a>
-				<a href="#section-bal-token" class="btn btn-ieo m-2 buy-btn">
+				<a href="#contact" class="btn btn-BAL m-2">Schedule a meeting</a>
+				<a href="#section-bal-token" class="btn btn-BAL m-2">
 					<b>
 						BUY BAL TOKENS NOW!
 					</b>					
@@ -2007,11 +2581,11 @@
 
 				<?php
 					$coreTeam = [];
-					$coreTeam[] = [	'name'=>'Johannes Eidens', 'title'=>'CEO & Founder', 'linkedin'=>'https://www.linkedin.com/in/dotcomv', 'image'=>'images/ieo/team/joh.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Martin Heyen', 'title'=>'Co-Founder & CFO', 'linkedin'=>'', 'image'=>'images/ieo/team/martin.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Leo Vicente', 'title'=>'Chief Technical Officer', 'linkedin'=>'https://www.linkedin.com/in/ljvicente', 'image'=>'images/ieo/team/leo.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Rene Rowell dela Rama', 'title'=>'Director of Blockchain Integration', 'linkedin'=>'https://www.linkedin.com/in/rene-rowell-dela-rama-3ab529148', 'image'=>'images/ieo/team/rene.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Rizvi Iqbal', 'title'=>'Blockchain & DLT Specialist', 'linkedin'=>'https://www.linkedin.com/in/rizviqbal', 'image'=>'images/ieo/team/rizvi.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Johannes Eidens', 'title'=>'CEO & Founder', 'linkedin'=>'https://www.linkedin.com/in/dotcomv', 'image'=>'images/ieo/team/joh.jpg', 'text'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue sem id euismod scelerisque. Pellentesque egestas condimentum sapien id mattis. Duis ut tortor sagittis, rutrum tortor vitae, euismod justo. Mauris finibus dolor non velit laoreet faucibus. Etiam pharetra leo quis iaculis mollis. Phasellus ac ex vel magna bibendum gravida. Phasellus lacinia, libero quis blandit condimentum, augue ante varius nulla, non tincidunt neque mauris a metus. Proin dignissim, dui in accumsan viverra, orci orci fermentum eros, in imperdiet libero elit at tortor. Donec massa nisi, facilisis ac porttitor quis, porttitor at lacus. Mauris lobortis iaculis tellus. In dictum, arcu facilisis volutpat consectetur, urna ante tristique dolor, ac accumsan enim lorem id dolor. Ut posuere ante nisl, fringilla rhoncus libero ullamcorper venenatis. Mauris sit amet orci accumsan, imperdiet libero quis, dapibus nulla. Proin viverra commodo venenatis.', 'model_no' => 1 ];
+					$coreTeam[] = [	'name'=>'Martin Heyen', 'title'=>'Co-Founder & CFO', 'linkedin'=>'', 'image'=>'images/ieo/team/martin.jpg', 'text'=>'CTO', 'model_no' => 2 ];
+					$coreTeam[] = [	'name'=>'Leo Vicente', 'title'=>'Chief Technical Officer', 'linkedin'=>'https://www.linkedin.com/in/ljvicente', 'image'=>'images/ieo/team/leo.jpg', 'text'=>'dasda', 'model_no' => 3];
+					$coreTeam[] = [	'name'=>'Rene Rowell dela Rama', 'title'=>'Director of Blockchain Integration', 'linkedin'=>'https://www.linkedin.com/in/rene-rowell-dela-rama-3ab529148', 'image'=>'images/ieo/team/rene.jpg', 'text'=>'hjkhjkh', 'model_no' => 4];
+					$coreTeam[] = [	'name'=>'Rizvi Iqbal', 'title'=>'Blockchain & DLT Specialist', 'linkedin'=>'https://www.linkedin.com/in/rizviqbal', 'image'=>'images/ieo/team/rizvi.jpg', 'text'=>'pop', 'model_no' => 5];
 
 				?>
 				<div class="row pt-5 justify-content-center">
@@ -2028,26 +2602,42 @@
 								</span>
 							@endif
 						</div>						
-						<p class="header-text pt-3 mb-0">
+						<div class="header-text pt-3 mb-0">
 							<b>
 								{{ $tm['name'] }}
 							</b>
-						</p>
+						</div>
 						<p class="text-white pt-1 mb-1">
 							{{ $tm['title'] }}							
 						</p>
+						<!-- <button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button> -->
+						<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModalLabel" aria-hidden="true">
+  							<div class="modal-dialog" role="document">
+    							<div class="modal-content">
+      								<div class="modal-body text-left">
+	        							<button type="button" class="close" data-dismiss="modal" 	aria-label="Close">	
+	        								<span aria-hidden="true">&times;</span>
+	        							</button>
+        								{{ $tm['text'] }}	
+      								</div>
+      							<!-- 	<div class="modal-footer">
+        								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      								</div> -->
+    							</div>
+  							</div>
+						</div>
 					</div>
 				@endforeach
 				</div>
 
 				<?php
 					$coreTeam = [];
-					$coreTeam[] = [	'name'=>'Artem Gordadze', 'title'=>'Marketing Specialist', 'linkedin'=>'https://www.linkedin.com/in/artem-gordadze', 'image'=>'images/ieo/team/artem.jpg', 'text'=>'', ];	
-					$coreTeam[] = [	'name'=>'Nantha Kumar', 'title'=>'Sales Director', 'linkedin'=>'https://www.linkedin.com/in/nantha-kumar-36b92685', 'image'=>'images/ieo/team/nantha.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Marc Vazquez', 'title'=>'Sourcing, Production & Investors Relations', 'linkedin'=>'https://www.linkedin.com/in/marc-vazquez-6b01a794', 'image'=>'images/ieo/team/marc.jpg', 'text'=>'', ];					
-					$coreTeam[] = [	'name'=>'Ryan Quines', 'title'=>'Design Lead', 'linkedin'=>'https://www.linkedin.com/in/ryan-matthew-quines-551a85152', 'image'=>'images/ieo/team/ryan.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Artem Gordadze', 'title'=>'Marketing Specialist', 'linkedin'=>'https://www.linkedin.com/in/artem-gordadze', 'image'=>'images/ieo/team/artem.jpg', 'text'=>'', 'model_no' => 6];	
+					$coreTeam[] = [	'name'=>'Nantha Kumar', 'title'=>'Sales Director', 'linkedin'=>'https://www.linkedin.com/in/nantha-kumar-36b92685', 'image'=>'images/ieo/team/nantha.jpg', 'text'=>'', 'model_no' => 7];
+					$coreTeam[] = [	'name'=>'Marc Vazquez', 'title'=>'Sourcing, Production & Investors Relations', 'linkedin'=>'https://www.linkedin.com/in/marc-vazquez-6b01a794', 'image'=>'images/ieo/team/marc.jpg', 'text'=>'', 'model_no' => 8];					
+					$coreTeam[] = [	'name'=>'Ryan Quines', 'title'=>'Design Lead', 'linkedin'=>'https://www.linkedin.com/in/ryan-matthew-quines-551a85152', 'image'=>'images/ieo/team/ryan.jpg', 'text'=>'', 'model_no' => 9];
 
-					$coreTeam[] = [	'name'=>'Zain Ul Abdin', 'title'=>'Senior Architect', 'linkedin'=>'https://www.linkedin.com/in/muhammad-zain-ul-abdin-120a3612a', 'image'=>'images/ieo/team/zain.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Zain Ul Abdin', 'title'=>'Senior Architect', 'linkedin'=>'https://www.linkedin.com/in/muhammad-zain-ul-abdin-120a3612a', 'image'=>'images/ieo/team/zain.jpg', 'text'=>'', 'model_no' => 10];
 
 					
 				?>
@@ -2073,6 +2663,25 @@
 						<p class="text-white pt-1 mb-1">
 							{{ $tm['title'] }}							
 						</p>
+						<!-- <button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button> -->
+						<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModal{{$tm['model_no']}}Label" aria-hidden="true">
+  							<div class="modal-dialog" role="document">
+    							<div class="modal-content">
+     								<div class="modal-header">
+        								<h5 class="modal-title" id="TeamModal{{$tm['model_no']}}Label">Modal title</h5>
+        								<button type="button" class="close" data-dismiss="modal" 	aria-label="Close">	
+        								  <span aria-hidden="true">&times;</span>
+        								</button>
+      								</div>
+      								<div class="modal-body">
+        								...
+      								</div>
+      								<div class="modal-footer">
+        								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      								</div>
+    							</div>
+  							</div>
+						</div>
 					</div>
 				@endforeach
 				</div>
@@ -2080,13 +2689,13 @@
 				<?php
 					$coreTeam = [];
 
-					$coreTeam[] = [	'name'=>'Shajudeen Yousf', 'title'=>'Lighting Design Architect', 'linkedin'=>'https://www.linkedin.com/in/shajudeen-yousf-783452146/', 'image'=>'images/ieo/team/shajudeen.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Ammar Mohamed', 'title'=>'Lighting Design Architect', 'linkedin'=>'https://www.linkedin.com/in/ammar-mohamed-231379103/', 'image'=>'images/ieo/team/ammar.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Muhammad Younas', 'title'=>'Content Lead', 'linkedin'=>'https://www.linkedin.com/in/muhammad-younas2023', 'image'=>'images/ieo/advisors/muhammad.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Shajudeen Yousf', 'title'=>'Lighting Design Architect', 'linkedin'=>'https://www.linkedin.com/in/shajudeen-yousf-783452146/', 'image'=>'images/ieo/team/shajudeen.jpg', 'text'=>'', 'model_no' => 11];
+					$coreTeam[] = [	'name'=>'Ammar Mohamed', 'title'=>'Lighting Design Architect', 'linkedin'=>'https://www.linkedin.com/in/ammar-mohamed-231379103/', 'image'=>'images/ieo/team/ammar.jpg', 'text'=>'', 'model_no' => 12];
+					$coreTeam[] = [	'name'=>'Muhammad Younas', 'title'=>'Content Lead', 'linkedin'=>'https://www.linkedin.com/in/muhammad-younas2023', 'image'=>'images/ieo/advisors/muhammad.jpg', 'text'=>'', 'model_no' => 13];
 
-					$coreTeam[] = [	'name'=>'Chad Hanson', 'title'=>'Social Media, Community Manager', 'linkedin'=>'https://www.linkedin.com/in/chad-hanson-a747a2137/', 'image'=>'images/ieo/team/chad.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Chad Hanson', 'title'=>'Social Media, Community Manager', 'linkedin'=>'https://www.linkedin.com/in/chad-hanson-a747a2137/', 'image'=>'images/ieo/team/chad.jpg', 'text'=>'', 'model_no' => 14];
 					
-					$coreTeam[] = [	'name'=>'Maria Carron Igloso', 'title'=>'Investor relations and Public Relations Manager', 'linkedin'=>'https://www.linkedin.com/in/maria-carron-igloso-1324b5105', 'image'=>'images/ieo/team/maria.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Maria Carron Igloso', 'title'=>'Investor relations and Public Relations Manager', 'linkedin'=>'https://www.linkedin.com/in/maria-carron-igloso-1324b5105', 'image'=>'images/ieo/team/maria.jpg', 'text'=>'', 'model_no' => 15];
 				?>
 				<div class="row pt-5 justify-content-center">
 				@foreach($coreTeam as $tm)
@@ -2110,6 +2719,25 @@
 						<p class="text-white pt-1 mb-1">
 							{{ $tm['title'] }}							
 						</p>
+						<!-- <button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button> -->
+						<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModal{{$tm['model_no']}}Label" aria-hidden="true">
+  							<div class="modal-dialog" role="document">
+    							<div class="modal-content">
+     								<div class="modal-header">
+        								<h5 class="modal-title" id="TeamModal{{$tm['model_no']}}Label">Modal title</h5>
+        								<button type="button" class="close" data-dismiss="modal" 	aria-label="Close">	
+        								  <span aria-hidden="true">&times;</span>
+        								</button>
+      								</div>
+      								<div class="modal-body">
+        								...
+      								</div>
+      								<div class="modal-footer">
+        								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      								</div>
+    							</div>
+  							</div>
+						</div>
 					</div>
 				@endforeach
 				</div>
@@ -2134,8 +2762,8 @@
 				<div class="row pt-5 justify-content-center">
 				<?php
 					$coreTeam = [];
-				$coreTeam[] = [	'name'=>'Tiffany Anggot', 'title'=>'Director Of Strategic Partnerships', 'linkedin'=>'https://www.linkedin.com/in/tiffany-jel-a-367548147', 'image'=>'images/ieo/team/tiffany.jpg', 'text'=>'', ];
-				$coreTeam[] = [	'name'=>'Juliane Schreilechner', 'title'=>'Training Consultant', 'linkedin'=>'https://www.linkedin.com/in/juliane-schreilechner-142108174/', 'image'=>'images/ieo/team/juliane.jpg', 'text'=>'', ];
+				$coreTeam[] = [	'name'=>'Tiffany Anggot', 'title'=>'Director Of Strategic Partnerships', 'linkedin'=>'https://www.linkedin.com/in/tiffany-jel-a-367548147', 'image'=>'images/ieo/team/tiffany.jpg', 'text'=>'', 'model_no' => 16];
+				$coreTeam[] = [	'name'=>'Juliane Schreilechner', 'title'=>'Training Consultant', 'linkedin'=>'https://www.linkedin.com/in/juliane-schreilechner-142108174/', 'image'=>'images/ieo/team/juliane.jpg', 'text'=>'', 'model_no' => 17];
 				?>
 
 				@foreach($coreTeam as $tm)
@@ -2159,6 +2787,25 @@
 						<p class="text-white pt-1 mb-1">
 							{{ $tm['title'] }}							
 						</p>
+						<!-- <button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button> -->
+						<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModal{{$tm['model_no']}}Label" aria-hidden="true">
+  							<div class="modal-dialog" role="document">
+    							<div class="modal-content">
+     								<div class="modal-header">
+        								<h5 class="modal-title" id="TeamModal{{$tm['model_no']}}Label">Modal title</h5>
+        								<button type="button" class="close" data-dismiss="modal" 	aria-label="Close">	
+        								  <span aria-hidden="true">&times;</span>
+        								</button>
+      								</div>
+      								<div class="modal-body">
+        								...
+      								</div>
+      								<div class="modal-footer">
+        								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      								</div>
+    							</div>
+  							</div>
+						</div>
 					</div>
 				@endforeach
 				</div>
@@ -2185,11 +2832,11 @@
 
 				<?php
 					$coreTeam = [];
-					$coreTeam[] = [	'name'=>'Khalid Almutawa', 'title'=>'Partner and Chairman ASAS Holding Group', 'linkedin'=>'', 'image'=>'images/ieo/advisors/khalid.jpg', 'text'=>'Investor. Serial Entrepreneur. Early Investor in Almani Lighting, Amazon and Nvidia.', ];
-					$coreTeam[] = [	'name'=>'Sebastijan Eder', 'title'=>'Partner, 0C Ventures', 'linkedin'=>'https://www.linkedin.com/in/sebastijan-eder-a8235028/', 'image'=>'images/ieo/advisors/sebastijan.jpg', 'text'=>'Entrepreneur, Investor, Blockchain & Crypto enthusiast and Tech fan.', ];
-					$coreTeam[] = [	'name'=>'Ralph Kattan ', 'title'=>'Team leader Accounting & Regulatory Information Santander Consumer Bank AG, Germany*', 'linkedin'=>'https://www.linkedin.com/in/ralph-kattan-709103191/', 'image'=>'images/ieo/advisors/ralph.jpg', 'text'=>'Early BAL Investor. Fintech, Blockchain researcher & Digital Assets expert.', ];
-					$coreTeam[] = [	'name'=>'Alexander Vogt', 'title'=>'International Key Account Manager, CustomBiotech EMEA/LATAM at Roche Diagnostic Germany', 'linkedin'=>'https://www.linkedin.com/in/alexander-vogt-b5b80858/', 'image'=>'images/ieo/advisors/alexander.jpg', 'text'=>'', ];
-					$coreTeam[] = [	'name'=>'Dr. Moritz Eidens', 'title'=>'CEO PharmGenomics GmbH', 'linkedin'=>'https://www.linkedin.com/in/dr-moritz-eidens-80550910/', 'image'=>'images/ieo/advisors/moritz.jpg', 'text'=>'Founder PharmGenomics. Investor and Blockchain Enthusiast since 2014.', ];
+					$coreTeam[] = [	'name'=>'Khalid Almutawa', 'title'=>'Partner and Chairman ASAS Holding Group', 'linkedin'=>'', 'image'=>'images/ieo/advisors/khalid.jpg', 'text'=>'Investor. Serial Entrepreneur. Early Investor in Almani Lighting, Amazon and Nvidia.', 'model_no' => 18];
+					$coreTeam[] = [	'name'=>'Sebastijan Eder', 'title'=>'Partner, 0C Ventures', 'linkedin'=>'https://www.linkedin.com/in/sebastijan-eder-a8235028/', 'image'=>'images/ieo/advisors/sebastijan.jpg', 'text'=>'Entrepreneur, Investor, Blockchain & Crypto enthusiast and Tech fan.', 'model_no' => 19];
+					$coreTeam[] = [	'name'=>'Ralph Kattan ', 'title'=>'Team leader Accounting & Regulatory Information Santander Consumer Bank AG, Germany*', 'linkedin'=>'https://www.linkedin.com/in/ralph-kattan-709103191/', 'image'=>'images/ieo/advisors/ralph.jpg', 'text'=>'Early BAL Investor. Fintech, Blockchain researcher & Digital Assets expert.', 'model_no' => 20];
+					$coreTeam[] = [	'name'=>'Alexander Vogt', 'title'=>'International Key Account Manager, CustomBiotech EMEA/LATAM at Roche Diagnostic Germany', 'linkedin'=>'https://www.linkedin.com/in/alexander-vogt-b5b80858/', 'image'=>'images/ieo/advisors/alexander.jpg', 'text'=>'', 'model_no' => 21];
+					$coreTeam[] = [	'name'=>'Dr. Moritz Eidens', 'title'=>'CEO PharmGenomics GmbH', 'linkedin'=>'https://www.linkedin.com/in/dr-moritz-eidens-80550910/', 'image'=>'images/ieo/advisors/moritz.jpg', 'text'=>'Founder PharmGenomics. Investor and Blockchain Enthusiast since 2014.', 'model_no' => 22];
 					//$coreTeam[] = [	'name'=>'Dr. Stefan Freh', 'title'=>'Specialist Solicitor Industrial Law', 'linkedin'=>'', 'image'=>'images/ieo/advisors/stefan.jpg', 'text'=>'The best time to plant a tree was 20 years ago. The second best time is now.', ];
 				?>
 				<div class="row pt-5 justify-content-center">
@@ -2214,6 +2861,25 @@
 						<p class="text-white pt-1 mb-1">
 							{{ $tm['title'] }}							
 						</p>
+						<!-- <button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button> -->
+						<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModal{{$tm['model_no']}}Label" aria-hidden="true">
+  							<div class="modal-dialog" role="document">
+    							<div class="modal-content">
+     								<div class="modal-header">
+        								<h5 class="modal-title" id="TeamModal{{$tm['model_no']}}Label">Modal title</h5>
+        								<button type="button" class="close" data-dismiss="modal" 	aria-label="Close">	
+        								  <span aria-hidden="true">&times;</span>
+        								</button>
+      								</div>
+      								<div class="modal-body">
+        								...
+      								</div>
+      								<div class="modal-footer">
+        								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      								</div>
+    							</div>
+  							</div>
+						</div>
 					</div>
 				@endforeach
 				</div>
@@ -2221,9 +2887,9 @@
 
 				<?php
 					$coreTeam = [];
-					$coreTeam[] = [	'name'=>'Mohsin Irshad', 'title'=>'Sr. UI/UX Designer at EXCEED IT Services', 'linkedin'=>'https://www.linkedin.com/in/mohsin-irshad-8b982532', 'image'=>'images/ieo/advisors/mohsin.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Mohsin Irshad', 'title'=>'Sr. UI/UX Designer at EXCEED IT Services', 'linkedin'=>'https://www.linkedin.com/in/mohsin-irshad-8b982532', 'image'=>'images/ieo/advisors/mohsin.jpg', 'text'=>'', 'model_no' => 23];
 					
-					$coreTeam[] = [	'name'=>'Janis Leitans', 'title'=>'Scientific Assistant, Latvian Biomedical Research Centre', 'linkedin'=>'https://www.linkedin.com/in/janis-leitans-16297269/', 'image'=>'images/ieo/team/janis.jpg', 'text'=>'', ];
+					$coreTeam[] = [	'name'=>'Janis Leitans', 'title'=>'Scientific Assistant, Latvian Biomedical Research Centre', 'linkedin'=>'https://www.linkedin.com/in/janis-leitans-16297269/', 'image'=>'images/ieo/team/janis.jpg', 'text'=>'', 'model_no' => 24];
 				?>
 				<div class="row pt-5 justify-content-center">
 				@foreach($coreTeam as $tm)
@@ -2247,6 +2913,25 @@
 						<p class="text-white pt-1 mb-1">
 							{{ $tm['title'] }}							
 						</p>
+						<!-- <button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button> -->
+						<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModal{{$tm['model_no']}}Label" aria-hidden="true">
+  							<div class="modal-dialog" role="document">
+    							<div class="modal-content">
+     								<div class="modal-header">
+        								<h5 class="modal-title" id="TeamModal{{$tm['model_no']}}Label">Modal title</h5>
+        								<button type="button" class="close" data-dismiss="modal" 	aria-label="Close">	
+        								  <span aria-hidden="true">&times;</span>
+        								</button>
+      								</div>
+      								<div class="modal-body">
+        								...
+      								</div>
+      								<div class="modal-footer">
+        								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      								</div>
+    							</div>
+  							</div>
+						</div>
 					</div>
 				@endforeach
 				</div>
@@ -2504,7 +3189,7 @@
 								<form  action="https://buyanylight.us3.list-manage.com/subscribe/post?u=22d8456f8db4bacaef7a16d53&amp;id=7b85cd9f3f" method="post" class="input-group mt-3" name="mc-embedded-subscribe-form" novalidate target="_blank">
 								<input type="email" name="EMAIL" class="form-control" placeholder="Your Email Address">
 									<div class="input-group-append">
-										<button type="submit" class="btn btn-ieo">
+										<button type="submit" class="btn btn-BAL">
 											Subscribe now
 										</button>
 									</div>
@@ -2588,7 +3273,7 @@
 		                                <div class="row">
 		                                    <div class="col-sm-12">
 		                                        <input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
-		                                        <input type="submit" class="btn btn-ieo w-100 send-message" value="Send Message" disabled="disabled">
+		                                        <input type="submit" class="btn btn-BAL w-100 send-message" value="Send Message" disabled="disabled">
 		                                    </div>
 		                                </div>
 		                            </form>

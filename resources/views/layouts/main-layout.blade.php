@@ -559,10 +559,10 @@
 		if (minutes < "10") { minutes = "0" + minutes; }
 		if (seconds < "10") { seconds = "0" + seconds; }
 
-		$("#days1").html("<span style='font-size: 14px;'>" + days +" </span>" + "<br><span>Days</span>");
-		$("#hours1").html("<span style='font-size: 14px;'>" + hours +" </span>" + "<br><span>Hours</span>");
-		$("#minutes1").html("<span style='font-size: 14px;'>" + minutes +" </span>" + "<br><span>Minutes</span>");
-		$("#seconds1").html("<span style='font-size: 14px;'>" + seconds +" </span>" + "<br><span>Seconds</span>");       
+		$("#days1").html("<span style='font-size:10px;'>Days</span><br><span style='font-size: 24px;'>" + days +" </span>");
+		$("#hours1").html("<span style='font-size:10px;'>Hours</span><br><span style='font-size: 24px;'>" + hours +" </span>" );
+		$("#minutes1").html("<span style='font-size:10px;'>Minutes</span> <br><span style='font-size: 24px;'>" + minutes +" </span>");
+		$("#seconds1").html("<span style='font-size:10px;'>Seconds</span><br><span style='font-size: 24px;'>" + seconds +" </span>" );       
 
 	}
 	setInterval(function() { makeTimerPublic(); }, 1000);

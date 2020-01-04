@@ -104,7 +104,7 @@ eval("/**\r\n * First we will load all of this project's JavaScript dependencies
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\js\app.js */"./resources/js/app.js");
 
 
 /***/ })
