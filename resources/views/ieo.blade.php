@@ -950,11 +950,11 @@ $newsdatas = [];
 			<div class="news-channels text-center">
 				@foreach($newsdatas as $nd)
 					@if($nd['title'] == 'fn')
-					<a href="{{ $nd['link'] }}" class="mr-4">
+					<a href="{{ $nd['link'] }}" class="mr-4" target="_blank">
 						<img src="{{ $nd['src'] }}" width="15%">
 					</a>
 					@else
-					<a href="{{ $nd['link'] }}" class="mr-4 pt-4">
+					<a href="{{ $nd['link'] }}" class="mr-4 pt-4" target="_blank">
 						<img src="{{ $nd['src'] }}" width="10%">
 					</a>
 					@endif
