@@ -936,7 +936,8 @@ $newsdatas = [];
 	// $newsdatas[] = [ 'style'=>"", 'title'=>"ICOBench", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/partners/icobench2.png", ];
 	$newsdatas[] = [ 'style'=>"", 'title'=>"bitcoinwiki", 'link'=>"https://en.bitcoinwiki.org/wiki/Buyanylight", 'src'=>"images/ieo/partners/bitcoinwiki.png", ];
 	$newsdatas[] = [ 'style'=>"", 'title'=>"asiaone", 'link'=>"https://www.asiaone.com/business/blockpass-and-buyanylight-announce-partnership-bring-pass-rebate-blockpass-users", 'src'=>"images/ieo/partners/asiaone.png", ];
-	// $newsdatas[] = [ 'style'=>"", 'title'=>"acnnewswire", 'link'=>"https://www.asiaone.com/business/blockpass-and-buyanylight-announce-partnership-bring-pass-rebate-blockpass-users", 'src'=>"images/ieo/partners/acnnews.png", ];
+	$newsdatas[] = [ 'style'=>"", 'title'=>"fn", 'link'=>"https://www.finanznachrichten.de/nachrichten-2020-01/48525766-blockpass-and-buyanylight-announce-partnership-to-bring-pass-rebate-to-blockpass-users-011.htm", 'src'=>"images/ieo/partners/fn_logo.svg", ];
+	$newsdatas[] = [ 'style'=>"", 'title'=>"scoop", 'link'=>"https://www.scoop.co.nz/stories/WO2001/S00014/blockpass-and-buyanylight-announce-partnership.htm", 'src'=>"images/ieo/partners/scoop.png", ];
 
 ?>
 
@@ -944,13 +945,19 @@ $newsdatas = [];
 
 <section class="BAL-news" style="background-color: #f7f7f7; height: 100%;">
 	<h3 class="text-center pt-5"><strong>BuyAnyLight in the News and Media</strong></h3>
-	<div class="container d-flex align-items-center pt-3 pb-5" style="">
+	<div class="container d-flex align-items-center pt-4 pb-5" style="">
 		<div class="">
 			<div class="news-channels text-center">
 				@foreach($newsdatas as $nd)
-				<a href="{{ $nd['link'] }}" class="mr-4">
-					<img src="{{ $nd['src'] }}" width="15%">
-				</a>
+					@if($nd['title'] == 'fn')
+					<a href="{{ $nd['link'] }}" class="mr-4">
+						<img src="{{ $nd['src'] }}" width="15%">
+					</a>
+					@else
+					<a href="{{ $nd['link'] }}" class="mr-4 pt-4">
+						<img src="{{ $nd['src'] }}" width="10%">
+					</a>
+					@endif
 				@endforeach
 			</div>
 		</div>
@@ -2993,12 +3000,14 @@ $newsdatas = [];
 					$partners[] = [	'style'=>'', 'title'=>'Dubai Consult', 'alt'=>'Dubai Consult', 'src'=>Util::assetUrl('images/ieo/partners/dubai_consult.png'), 'link'=>'https://dubaiconsult.com/'];
 					$partners[] = [	'style'=>'', 'title'=>'German Embassy UAE', 'alt'=>'German Embassy UAE', 'src'=>Util::assetUrl('images/ieo/partners/german_uae.png'), 'link'=>'https://uae.diplo.de/ae-en/vertretungen/generalkonsulat1' ];
 					$partners[] = [	'style'=>'', 'title'=>'Asas', 'alt'=>'Asas', 'src'=>Util::assetUrl('images/ieo/partners/asas.png'), 'link'=>'https://asasholding.ae'];
+
 					// $partners[] = [	'style'=>'', 'title'=>'Light Middle East', 'alt'=>'Light Middle East', 'src'=>Util::assetUrl('images/ieo/partners/light_middles_east.png'), 'link'=>'https://light-middle-east.ae.messefrankfurt.com/dubai/en.html'];
 					$partners[] = [	'style'=>'', 'title'=>'Light Middle East', 'alt'=>'Light Middle East', 'src'=>Util::assetUrl('images/ieo/partners/madeingermany.png'), 'link'=>'https://light-middleeast.german-pavilion.com/en/home/'];
 					$partners[] = [	'style'=>'', 'title'=>'Continental Investments', 'alt'=>'Continental Investments', 'src'=>Util::assetUrl('images/ieo/partners/continental.png'), 'link'=>'http://www.continvest.net'];
+					$partners[] = [	'style'=>'', 'title'=>'Blockpass', 'alt'=>'Asas', 'src'=>Util::assetUrl('images/ieo/partners/blockpass.png'), 'link'=>'https://www.blockpass.org/buyanylight/'];
 				?>
 				<div class="col-12">
-					<h2 class="text-white ml-3 mt-0">Partners</h2>
+					<h2 class="text-white ml-3 mt-0">Strategic Partners</h2>
 					<div class="icons">
 						@foreach($partners as $prtnr)
 						<div class="col-3 partner">								
@@ -3070,7 +3079,7 @@ $newsdatas = [];
 					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOMARKS", 'link'=>"https://icomarks.com/ico/buyanylight", 'src'=>Util::assetUrl("images/ieo/partners/icomarks.svg"), ];
 					//$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOSBULL", 'link'=>"https://icosbull.com/eng/ico/buyanylightbal", 'src'=>"images/ieo/partners/icosbull.png", ];
 				?>
-				<div class="col-5 mt-10">
+	<!-- 			<div class="col-5 mt-10">
 					<h2 class="text-white ml-3 mt-0">Ratings</h2>
 					<div class="icons">
 						@foreach($datas as $data)
@@ -3090,7 +3099,7 @@ $newsdatas = [];
 						</div>
 
 					</div>
-				</div>
+				</div> -->
 		
 			
 				
@@ -3101,7 +3110,7 @@ $newsdatas = [];
 					$datas = [];
 					$datas[] = [ 'style'=>"", 'title'=>"Bitcoin Wiki", 'link'=>"https://en.bitcoinwiki.org/wiki/Buyanylight", 'src'=>"images/ieo/partners/bitcoinwiki.png", ];
 				?>
-				<div class="col-5 mt-10">
+<!-- 				<div class="col-5 mt-10">
 					<h2 class="text-white ml-3 mt-0">BuyAnyLight in News and Media</h2>
 					<div class="icons">
 						@foreach($datas as $data)
@@ -3113,12 +3122,12 @@ $newsdatas = [];
 						</div>
 						@endforeach
 					</div>
-				</div>
+				</div> -->
 					
 				
-				
+	<!-- 			
 				<div class="col-2 mt-10">
-				</div>
+				</div> -->
 
 
 				<div class="col-5 mt-10">

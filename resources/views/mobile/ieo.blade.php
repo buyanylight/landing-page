@@ -550,7 +550,8 @@ $newsdatas = [];
 	// $newsdatas[] = [ 'style'=>"", 'title'=>"ICOBench", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/partners/icobench2.png", ];
 	$newsdatas[] = [ 'style'=>"", 'title'=>"bitcoinwiki", 'link'=>"https://en.bitcoinwiki.org/wiki/Buyanylight", 'src'=>"images/ieo/partners/bitcoinwiki.png", ];
 	$newsdatas[] = [ 'style'=>"", 'title'=>"asiaone", 'link'=>"https://www.asiaone.com/business/blockpass-and-buyanylight-announce-partnership-bring-pass-rebate-blockpass-users", 'src'=>"images/ieo/partners/asiaone.png", ];
-	// $newsdatas[] = [ 'style'=>"", 'title'=>"acnnewswire", 'link'=>"https://www.asiaone.com/business/blockpass-and-buyanylight-announce-partnership-bring-pass-rebate-blockpass-users", 'src'=>"images/ieo/partners/acnnews.png", ];
+	$newsdatas[] = [ 'style'=>"", 'title'=>"fn", 'link'=>"https://www.finanznachrichten.de/nachrichten-2020-01/48525766-blockpass-and-buyanylight-announce-partnership-to-bring-pass-rebate-to-blockpass-users-011.htm", 'src'=>"images/ieo/partners/fn_logo.svg", ];
+	$newsdatas[] = [ 'style'=>"", 'title'=>"scoop", 'link'=>"https://www.scoop.co.nz/stories/WO2001/S00014/blockpass-and-buyanylight-announce-partnership.htm", 'src'=>"images/ieo/partners/scoop.png", ];
 
 ?>
 
@@ -560,9 +561,15 @@ $newsdatas = [];
 		<div class="">
 			<div class="news-channels text-center">
 				@foreach($newsdatas as $nd)
-				<a href="{{ $nd['link'] }}" class="mr-4">
-					<img src="{{ $nd['src'] }}" width="23%">
-				</a>
+				@if($nd['title'] == 'fn')
+					<a href="{{ $nd['link'] }}" class="mr-4">
+						<img src="{{ $nd['src'] }}" width="31.19%">
+					</a>
+					@else
+					<a href="{{ $nd['link'] }}" class="mr-4 pt-4">
+						<img src="{{ $nd['src'] }}" width="23%">
+					</a>
+					@endif
 				@endforeach
 			</div>
 		</div>
@@ -2027,10 +2034,12 @@ $newsdatas = [];
 					$partners[] = [ 'style'=>'', 'title'=>'German UAE', 'alt'=>'German UAE', 'src'=>Util::assetUrl('images/ieo/partners/german_uae.png'), 'link'=>'https://uae.diplo.de/ae-en/vertretungen/generalkonsulat1'];
 					// $partners[] = [ 'style'=>'', 'title'=>'Light Middles East', 'alt'=>'Light Middles East', 'src'=>Util::assetUrl('images/ieo/partners/light_middles_east.png'), 'link'=>'https://light-middle-east.ae.messefrankfurt.com/dubai/en.html'];
 					$partners[] = [	'style'=>'', 'title'=>'Light Middle East', 'alt'=>'Light Middle East', 'src'=>Util::assetUrl('images/ieo/partners/madeingermany.png'), 'link'=>'https://light-middleeast.german-pavilion.com/en/home/'];
+					$partners[] = [	'style'=>'', 'title'=>'Blockpass', 'alt'=>'Asas', 'src'=>Util::assetUrl('images/ieo/partners/blockpass.png'), 'link'=>'https://www.blockpass.org/buyanylight/'];
+					
 				?>
 				<div class="row pt-4 justify-content-center partners sponsored_fair">
 					<div class="col-12 mt-3 text-center">					
-						<h2 class="text-white mb-4">Partners</h2>
+						<h2 class="text-white mb-4">Strategic Partners</h2>
 					</div>
 
 					@foreach($partners as $prtnr)
@@ -2093,7 +2102,7 @@ $newsdatas = [];
 						<script type="application/javascript" async="async" src="https://icoholder.com/en/widget/big-black-listed/31234.js?width=5"></script>
 					</div> --}}
 
-					<div class="col-12 mt-5 text-center">
+		<!-- 			<div class="col-12 mt-5 text-center">
 						{{-- <h2 class="text-white ml-3 mb-4">Audits & Ratings</h2> --}}
 						<h2 class="text-white mt-5 mb-4">Ratings</h2>
 						<div class="icons">
@@ -2113,9 +2122,10 @@ $newsdatas = [];
 								<img src="{{ Util::assetUrl('images/ieo/partners/icosbull.png') }}" alt="BuyAnyLight ICO Bull"/>
 							</a>
 						</div>
-					</div>
+					</div> -->
 
-					<div class="col-12 mt-5 text-center">
+
+				<!-- 	<div class="col-12 mt-5 text-center">
 						{{-- <h2 class="text-white ml-3 mb-4">BuyAnyLight in News and Media</h2> --}}
 						<h2 class="text-white mt-5 mb-4">BAL in News and Media</h2>
 						<div class="icons">
@@ -2126,7 +2136,7 @@ $newsdatas = [];
 								src="{{ Util::assetUrl('images/ieo/bitcoinwiki.svg') }}">
 							</a>
 						</div>
-					</div>
+					</div> -->
 
 					<div class="col-12 mt-5 text-center">
 						{{-- <h2 class="text-white ml-3">Sponsors</h2> --}}
