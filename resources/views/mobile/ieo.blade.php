@@ -2203,7 +2203,7 @@ $newsdatas = [];
 								target="_blank">
 								<input type="email" name="EMAIL" class="form-control" placeholder="Your Email Address">
 									<div class="input-group-append">
-										<button type="submit" class="btn btn-ieo">
+										<button type="submit" class="btn buy-btn">
 											Subscribe now
 										</button>
 									</div>
