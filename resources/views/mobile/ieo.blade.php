@@ -562,11 +562,11 @@ $newsdatas = [];
 			<div class="news-channels text-center">
 				@foreach($newsdatas as $nd)
 				@if($nd['title'] == 'fn')
-					<a href="{{ $nd['link'] }}" class="mr-4">
+					<a href="{{ $nd['link'] }}" class="mr-4" target="_blank">
 						<img src="{{ $nd['src'] }}" width="31.19%">
 					</a>
 					@else
-					<a href="{{ $nd['link'] }}" class="mr-4 pt-4">
+					<a href="{{ $nd['link'] }}" class="mr-4 pt-4" target="_blank">
 						<img src="{{ $nd['src'] }}" width="23%">
 					</a>
 					@endif
@@ -2035,7 +2035,7 @@ $newsdatas = [];
 					// $partners[] = [ 'style'=>'', 'title'=>'Light Middles East', 'alt'=>'Light Middles East', 'src'=>Util::assetUrl('images/ieo/partners/light_middles_east.png'), 'link'=>'https://light-middle-east.ae.messefrankfurt.com/dubai/en.html'];
 					$partners[] = [	'style'=>'', 'title'=>'Light Middle East', 'alt'=>'Light Middle East', 'src'=>Util::assetUrl('images/ieo/partners/madeingermany.png'), 'link'=>'https://light-middleeast.german-pavilion.com/en/home/'];
 					$partners[] = [	'style'=>'', 'title'=>'Blockpass', 'alt'=>'Asas', 'src'=>Util::assetUrl('images/ieo/partners/blockpass.png'), 'link'=>'https://www.blockpass.org/buyanylight/'];
-					
+
 				?>
 				<div class="row pt-4 justify-content-center partners sponsored_fair">
 					<div class="col-12 mt-3 text-center">					
