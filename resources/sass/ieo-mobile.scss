@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
 
 // Variables
 @import 'variables';
@@ -16,7 +16,7 @@ html{	scroll-behavior: smooth;
 }
 
 body{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	font-size: 13px;
 	background-color: white;
 }
@@ -88,12 +88,14 @@ nav .dropdown-toggle::after {
 }
 
 .btn-ieo{
-  background: -webkit-linear-gradient(right, #E23D96, #5555A4);
-  color: white
+  border: 1px solid #5555A4;
+  color: #5555A4;
+  width:170px;
+  border-radius:1.5rem
 }
 
 .btn-ieo:hover{
-  background: -webkit-linear-gradient(right, #ea8bbf, #8e8ed4);
+  background: #8e8ed4;
   color: white;
 }
 
@@ -102,9 +104,8 @@ nav .dropdown-toggle::after {
 }
 
 .header-text{
-	background: -webkit-linear-gradient( right, #E23D96, #5555A4);
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
+	color: #5555A4;
+
 }
 
 .bg-ieo{
@@ -170,9 +171,21 @@ nav .dropdown-toggle::after {
 }
 
 #token-info tr:nth-child(odd){
-    background:-webkit-linear-gradient(right, #e23d966e, #5555a46e);
-    border-radius:10px;
+	background-color:#5555A4;
+	border-radius:10px;
+	color: white;
+
 }
+
+
+#token-info{
+	 td:first-child { border-top-left-radius: 10px; }
+	 td:first-child { border-bottom-left-radius: 10px; }
+
+	 td:last-child { border-top-right-radius: 10px; }
+	 td:last-child { border-bottom-right-radius: 10px; }
+}
+
 
 
 .token-list {
@@ -338,6 +351,34 @@ nav .dropdown-toggle::after {
 
 
 
+.videos{
+		background-color: white;
+		border: 2px solid;
+		padding: 10px;
+		border-radius:25px;
+		.video-btn {
+			// position: absolute;
+			// bottom:110px;
+		}
+	}
+
+
+.text-BAL{
+	color: #5555A4;
+}
+
+
+.buy-btn{
+	background: #5555A4;
+	color: white;
+}
+
+.buy-btn:hover{
+	background:#33447d;
+	color: white;
+
+}
+
 .vision-mission {
 	.video {
 		width: 90%;
@@ -394,18 +435,18 @@ nav .dropdown-toggle::after {
 }
 
 .section-1 {
-	height: 100vh;
+	// height: 100vh;
 	// min-height: 720px;
-	min-height: 680px;
+	// min-height: 680px;
 }
 
 .section-1-bg {
-	background: url('/images/mobile_bg/ieo/1.png');
+	// background: url('/images/mobile_bg/ieo/1.png');
 	// height: 100vh;
-	height: 470px;
+	height: 100%;
 	background-size: cover;
 	> .container {
-		padding-bottom: 200px;
+		// padding-bottom: 200px;
 		// padding-bottom: 220px;
 	}
 }
@@ -572,11 +613,14 @@ nav .dropdown-toggle::after {
 #sale-dates-price .card-header{
 	/*background: linear-gradient(to right, #791f50, #5555A4); */
 	/*background: linear-gradient(to right, #e4007b, #0000af); */
-	background-color: #a90c74; 
+	background-color: #5555A4; 
 	padding:10px;
 }
 
-
+.progress .progress-bar{
+	border-radius:28px;
+	background: #5555A4;
+}
 
 
 

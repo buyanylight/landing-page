@@ -181,279 +181,159 @@
 </div> -->
 
 <div class="all-contents">
-
-
 <section class="section-1 mb-3">
-	<div class="section-1-bg pt-5">
-		<div class="container text-center h-100 d-flex align-items-end justify-content-center">
+	<div class="section-1-bg" style="margin-top: 4rem;">
+		<div class="container h-100">
 			<div class="row">
-				<div class="col-12" style="position: relative;">
-					<div style="display: flex; align-items: flex-end;  padding-bottom: 15px;">
-						<h3 class="text-white" 
-						style=" text-align: left; padding-left: 10px; font-size: 20px; padding-right: 10px; margin-bottom: 0;">
-							<b>BAL Initial Exchange <br> Offering (IEO)</b>
-						</h3>
-
-						{{-- <a href="https://icobench.com/ico/buyanylight-bal" target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICOBench">			
-						<img border="0" 
-						style="height: 65px;" 						
-						src="{{ Util::assetUrl('images/ieo/partners/icobench.png') }}" 						
-						alt="BuyAnyLight (BAL) ICO rating"/>
-						</a>
-
-
-						<a href="https://icomarks.com/ico/buyanylight" target="_blank" rel="nofollow" title="BuyAnyLight ICO">
-						<img border="0" 
-						style="height: 65px; margin-left: 5px;" 
-						src="{{ Util::assetUrl('images/ieo/icomark.png') }}" 
-						alt="BuyAnyLight ICO Rating"/>
-						</a> --}}
-
-
-
-						<a href="https://icobench.com/ico/buyanylight-bal" 
-						target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICObench">
-							<img border="0" src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" 
-							style="height: 65px;" 						
-							alt="BuyAnyLight (BAL) ICO rating"/>
-						</a>
-						
-						<a href="https://icomarks.com/ico/buyanylight" 
-						target="_blank" rel="nofollow" title="BuyAnyLight ICO">
-							<img border="0" src="{{ Util::assetUrl('images/ieo/partners/icomarks.svg') }}"
-							style="height: 65px; margin-left: 5px;" 
-							alt="BuyAnyLight ICO Rating"/>
-						</a>
-
-					</div>
-				</div>
 				<div class="col-12">
-					<div class="btn-group" role="group" aria-label="Basic example">
-						<button type="button"class="btn btn-ieo-left">
-							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" 
-							target="_blank">
-	            			<i class="far fa-file-pdf"></i>
-	            			&nbsp;
-								One Pager								
-							</a>
-						</button>
-						<button 
-						type="button" 
-						target="_blank" 
-						class="btn btn-ieo-middle">
-							<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" 
-							target="_blank">
-							<i class="far fa-file-pdf"></i>
-	            			&nbsp;
-								White Paper
-							</a>
-						</button>
-						<button 
-						type="button" 
-						class="btn btn-ieo-middle">
-							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" 
-							target="_blank">
-							<i class="far fa-file-pdf"></i>
-	            			&nbsp;						
-								Yellow Paper
-							</a>
-						</button>
-						<button 
-						type="button" 
-						class="btn btn-ieo-right">
-							<a href="{{ Util::assetUrl('BuyAnyLight_Pitch_Deck.pdf') }}" 
-							target="_blank">
-							<i class="far fa-file-pdf"></i>
-	            			&nbsp;						
-								Pitch Deck
-							</a>
-						</button>
+					<h1>
+						<b>
+							LED Sourcing <br><span class="header-text">Revolutionized!</span> 
+						</b>
+					</h1>
+					<div>
+						Do you need led products for your newly constructed villa, your building, tower, or real-estate project?
+						<br>
+						Do you worry about the sky-high pricings and have trust issues with suppliers?
+						<br>
+						Do you hate delayed deliveries and want to get secured payments?
 					</div>
 				</div>
-				<div class="col-12 pt-3">
-					<div class="btn-group" role="group" aria-label="Basic example">
-						<button type="button"class="btn btn-ieo-left">
-							<a href="https://etherscan.io/token/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" 
-							target="_blank">
-								Token Contract								
-							</a>
-						</button>
-						
-						<!-- <button 
-						type="button" 
-						target="_blank" 
-						class="btn btn-ieo-middle">
-							<a href="https://etherscan.io/address/0xE9F5c250D03B8ff13119a3529D59771224FDDc19" 
-							target="_blank">
-								Token Owner
-							</a>
-						</button> -->
-
-						<button 
-						type="button" 
-						target="_blank" 
-						class="btn btn-ieo-middle">
-							<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" 
-							target="_blank">
-								Token Sale Agreement
-							</a>
-						</button>
-
-						<button 
-						type="button" 
-						class="btn btn-ieo-right">
-							<a href="#allocation">						
-								Token Allocation
-							</a>
-						</button>
+				<div class="col-12 text-center">
+					<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" 
+						target="_blank" class="btn btn-ieo mt-3 ">
+	            		<i class="fas fa-link"></i>
+	            		&nbsp;
+						Meet BAL								
+					</a>
+					<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" 
+						target="_blank" class="btn btn-ieo mt-3">
+	            		<i class="far fa-file-pdf"></i>
+	            		&nbsp;
+						Yellow Paper								
+					</a>
+					<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" 
+						target="_blank" class="btn btn-ieo mt-2">
+	            		<i class="far fa-file-pdf"></i>
+	            		&nbsp;
+						White Paper								
+					</a>
+				
+					<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" 
+						target="_blank" class="btn btn-ieo mt-2">
+	            		<i class="far fa-file-pdf"></i>
+	            		&nbsp;
+						One Pager								
+					</a>
+					<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" 
+						target="_blank" class="btn btn-ieo mt-2">
+	            		<i class="far fa-file-pdf"></i>
+	            		&nbsp;
+						Pitch Deck								
+					</a>
+				</div>
+				<div class="col-12 text-center mt-3">
+					<div class="row">
+						<div class="col one-link">
+		                	<a href="http://www.youtube.com/c/BuyAnyLight" class="text-dark" target="_blank"><i class="fab fa-youtube"></i></a>
+		                </div>
+		               	<div class="col one-link">
+		                    <a href="https://twitter.com/BuyAnyLight" class="text-dark" target="_blank"><i class="fab fa-twitter"></i></a>
+		                </div>
+		                <div class="col one-link">
+		                    <a href="https://www.instagram.com/buyanylight/" class="text-dark" target="_blank"><i class="fab fa-instagram"></i></a>
+		                </div>
+		               	<div class="col one-link">
+		                    <a href="https://www.facebook.com/BuyAnyLight/" class="text-dark" target="_blank"><i class="fab fa-facebook-f"></i></a>
+		                </div>
+		                <div class="col one-link">
+		                 	<a href="https://github.com/buyanylight" class="text-dark" target="_blank"><i class="fab fa-github"></i></a>
+		                </div>
+					</div>
+				</div>
+				<div class="col-12 text-center mt-2">
+					<div class="row">
+	                    <div class="col one-link">
+	                        <a href="https://www.reddit.com/r/BuyAnyLight/" class="text-dark" target="_blank"><i class="fab fa-reddit-alien"></i></a>
+	                    </div>
+	                    <div class="col one-link">
+	                        <a href="https://bitcointalk.org/index.php?topic=5193049.0;topicseen" class="text-dark" target="_blank"><i class="fab fa-bitcoin"></i></a>
+	                   	</div>
+	                    <div class="col one-link">
+	                        <a href="https://t.me/buyanylight" class="text-dark" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+	                    </div>
+	                    <div class="col one-link">
+	                        <a href="https://medium.com/buyanylight" class="text-dark" target="_blank"><i class="fab fa-medium-m"></i></a>
+	                    </div>
+	                    <div class="col one-link">
+	                    	<a href="https://www.linkedin.com/company/buyanylight/" class="text-dark" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+	                    </div>
+					</div>
+				</div>
+				<div class="mt-3 col-12">
+					<a href="#section-bal-token" class="btn btn-ieo w-100">
+						<i class="fas fa-coins"></i>
+					    &nbsp;
+						Get 17.5% discount Now!
+					</a>
+				</div>
+				<div class="mt-3 col-12">
+					<div class="card card-body" style=" background-color:#5555A4;  border-radius: 25px; box-shadow: 7px 7px 10px #3c3c3c;">
+						<div class="row text-center">
+							<div class="col-12">
+								<h5 class="mb-0 text-white"><b>IEO - BAL TOKEN</b></h5>
+								<p class="mb-1 text-white">
+									The IEO of BAL Token starts in:
+								</p>
+								<div id="timer" class=" pt-1">
+									<div class="text-white" style="">
+										<div id="days1" class="timer-item d-inline-block mr-3 text-center text-white"></div>
+										<div id="hours1" class="timer-item d-inline-block mr-3 text-center text-white"></div>
+										<div id="minutes1" class="timer-item d-inline-block mr-3 text-center text-white"></div>
+										<div id="seconds1" class="timer-item d-inline-block text-center text-white"></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 mt-3 d-flex justify-content-center align-items-center" style="border: 1px solid; border-radius: 25px;background-color: #3a3a77;  border-right: 0px;">
+								<div>
+									<p class="text-white m-3">Available soon in platforms</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 mt-3">
+					<div class="card card-body" style="border-radius:25px; box-shadow: 7px 7px 10px #3c3c3c;">
+						<h4 class="pb-3"><strong>Token Sale</strong></h4>
+						<div class="l">
+							<div class="row" style="font-size: 10px;">
+								<p class="col-4 m-0 d-flex align-items-center"><b>Start</b></p>
+								<p class="col-4 text-center m-0 d-flex align-items-center justify-content-center"><b>Soft Cap</b></p>
+								<p class="col-4 text-right m-0 d-flex align-items-center justify-content-end"><b>Hard Cap</b></p>
+							</div>
+							<div class="pt-1">
+								<div class="progress">
+			  						<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="35" aria-valuemin="0" aria-valuemax	="100">
+			  								$2,100,000
+			  						</div>
+								</div>
+							</div>
+							<div class="row pt-1" style="font-size: 10px;">
+								<p class="col-4 mb-0"><b>26% target raised</b></p>
+								<p class="col-4 text-center mb-0"><b>$4,000,000</b></p>
+								<p class="col-4 text-right mb-0"><b>$8,000,000</b></p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	{{-- <div class="bg-ieo countdown rounded-circle">
-		<div class="d-flex align-items-center h-100" style="padding: 20px; padding-bottom: 5rem;">
-			<div class="w-100">	
-				<h4 class="text-center text-white"><b>IEO PRE SALE</b></h4>
-				<div class="w-100 pt-2">
-					<p class="text-white text-center mb-0"><b>Private Sale starts in:</b></p>
-					<div id="timer" class="pt-2 pb-2 bg-white text-center d-flex justify-content-center">
-						<div class="row" style="width: 90%">
-							<div class="col p-0 text-center">
-		  						<div id="days" class="d-inline-block"></div>
-							</div>
-							<div class="col p-0 text-center">
-		  						<div id="hours" class=" d-inline-block"></div>
-							</div>
-							<div class="col p-0 text-center">
-		  						<div id="minutes" class=" d-inline-block"></div>
-							</div>
-							<div class="col p-0 text-center">
-		  						<div id="seconds" class=" d-inline-block"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="w-100">
-					<p class="text-white text-center pt-3 mb-0"><b>Public Sale starts in:</b></p>
-					<div id="timer" class=" pt-2 pb-2 bg-white text-center d-flex justify-content-center">
-						<div class="row" style="width: 90%">
-							<div class="col p-0 text-center">
-		 						<div id="days1" class="d-inline-block"></div>
-							</div>
-							<div class="col p-0 text-center">
-		 						<div id="hours1" class=" d-inline-block"></div>
-							</div>
-							<div class="col  p-0 text-center">
-		 						<div id="minutes1" class=" d-inline-block"></div>
-							</div>
-							<div class="col p-0 text-center">
-		 						<div id="seconds1" class=" d-inline-block"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> --}}
-
-	<div class="countdown-ring-cont">
-	<div class="countdown-ring-1">
-	<div class="countdown-ring-2">
-	<div class="countdown">
-		<div class="d-flex align-items-center h-100" style="padding: 10px;">
-			<div class="w-100" style="margin-top: -10px;">	
-				{{-- <h4 class="text-center text-white pb-0 mb-0" style="font-size: 1.2em;">
-					<b>IEO PRE SALE</b>
-				</h4> --}}
-				<div class="w-100 pt-2">
-					<p class="mb-0 text-white"><b>PRE -IEO SALE LIVE NOW!</b></p>
-					{{-- <p class="mb-0 text-white"><b>PRIVATE SALE LIVE NOW!</b></p> --}}
-					<p class="text-white text-center mb-0" style="font-size: 0.9em;">
-						<b>sale ends in:</b>
-					</p>
-					<div id="timer" class="pt-2 pb-0 text-center d-flex justify-content-center">
-						<div class="row justify-content-center" style="width: 90%">
-							<div id="days" class="timer-item d-inline-block"></div>
-							<div id="hours" class="timer-item d-inline-block"></div>
-							<div id="minutes" class="timer-item d-inline-block"></div>
-							<div id="seconds" class="timer-item d-inline-block"></div>
-						</div>
-					</div>
-				</div>
-				<div class="w-100">
-					<p class="text-white text-center pt-2 mb-0" style="font-size: 0.9em;">
-						<b>IEO Sale starts in:</b>
-					</p>
-					<div id="timer" class=" pt-2 pb-2 text-center d-flex justify-content-center">
-						<div class="row justify-content-center" style="width: 90%">
-							<div id="days1" class="timer-item d-inline-block"></div>
-							<div id="hours1" class="timer-item d-inline-block"></div>
-							<div id="minutes1" class="timer-item d-inline-block"></div>
-							<div id="seconds1" class="timer-item d-inline-block"></div>
-						</div>
-					</div>
-				</div>
-				<div class="pt-1">
-					<small>
-						<a href="{{ Util::assetUrl('bal_certificate.pdf')}}" target="_blank" class="text-white">Audited by Blockchain Consilium</a>
-					<!-- 	<br>
-						<a href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" 
-							target="_blank" class="text-white">						
-								Token Sale Agreement
-							</a> -->
-					</small>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
-	</div>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="row justify-content-center">
-					<div class="btn-group" role="group" aria-label="Basic example">
-						<a href=" #section-bal-token" class="btn "> 
-							<div class="header-text">
-								<b>
-									Buy BAL Tokens Now!
-								</b>
-							</div>
-							<i class="fas fa-chevron-down"></i>
-						</a>
-					</div>				
-				</div>
-			</div>
-		</div>
-	</div>
-
 </section>
-
-
-
-
-
-
-
-
-
-<style>
-#sale-dates-price .card-header{
-	/*background: linear-gradient(to right, #791f50, #5555A4); */
-	/*background: linear-gradient(to right, #e4007b, #0000af); */
-	background-color: #a90c74; 
-	padding:10px;
-}	
-</style>
-
 
 <section class="section-buy-token" id="sale-dates-price">
 	<div class="pt-0 pb-4 container">
 		<div class="row" style="padding: 10px;">
-
 			<div class="col-4 p-1">
 			<div class="card text-center">
 				<div class="card-header text-white" style="">
@@ -517,32 +397,181 @@
 		</div>
 	</div>
 </section>
+<?php
+			// $datas[] = [ 'style'=>"", 'title'=>"", 'link'=>"", 'src'=>"", ];					
+		$datas = [];
+		$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICORATING", 'link'=>"https://icoholder.com/en/buyanylight-31234", 'src'=>Util::assetUrl("images/ieo/partners/icoholder.png"), ];
+		$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight COINCODEX", 'link'=>"https://coincodex.com/ieo/buyanylight/", 'src'=>Util::assetUrl("images/ieo/partners/coincodex.png"), ];
+		$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOHOLDER", 'link'=>"https://icobench.com/ico/buyanylight-bal", 'src'=>"https://icobench.com/rated/buyanylight-bal?shape=square&size=m", ];
+		$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOMARKS", 'link'=>"https://icomarks.com/ico/buyanylight", 'src'=>"https://icomarks.com/widget/b/buyanylight/square.svg", ];
+		$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOSBULL", 'link'=>"https://icosbull.com/eng/ico/buyanylightbal", 'src'=>"images/ieo/partners/icosbull.png", ];
+	?>
 
+<section>
+	<div class="w-100 container bg-black">
+		<div class="row pt-3 pb-3">
+			<div class="col-12 text-center">
+				<div class="text-white">
+					<span style="font-size: 18px;">Ratings</span>
+					<br> 
+					by ICO Experts
+				</div>
+			</div>
+			<div class="col-12 mt-3 text-center">
+				@foreach($datas as $data)
+				<div class="d-inline-block mr-3">
+					<a href="{{$data['link']}}" target="_blank" title="{{ $data['title'] }}" alt="{{ $data['title'] }}" >
+						<img class="icon" src="{{ $data['src'] }}" style="height: 60px;">
+					</a>
+				</div>
+				@endforeach
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section-2 pt-5">
+	<div class="container pb-3">
+		<h3 class="text-center pb-3">
+			<b>
+				<span class="header-text">Meet</span> BuyAnyLight
+			</b>
+		</h3>
+		<div class="text-justify">
+			<p>
+				BuyAnyLight help you source quality LED products for all of your lighting needs. Using blockchain, AI, Big Data and Smart Contracts, it presents your inquiries before the right manufacturers and ensure that you get the products you had ordered. 
+			</p>
+		</div>
+		<div class="row">
+			<div class="col">
+				<a data-fancybox="" style="background-image: url({{ Util::assetUrl('images/ieo/bal.jpeg')}}); background-size: cover; width:100%" href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" class="video-link">
+				<img class="video" src="{{ Util::assetUrl('images/ieo/bal.jpeg')}}" alt="" width="100%" style="border:1px solid black;">
+					<div class="d-flex align-items-end justify-content-center h-100" style="position: absolute; bottom: 10%; color: #FF0000; left: 43%; font-size: 20px;">
+		                <div>
+		                    <i class="fab fa-youtube"></i> 
+		                </div>
+		            </div>
+				</a>
+			</div>
+			<div class="col">
+				<a data-fancybox="" style="background-image: url({{ Util::assetUrl('images/ieo/bal.jpeg')}}); background-size: cover; width:100%" href="https://www.youtube-nocookie.com/embed/k-zrKcgJf0Q?rel=0" class="video-link">
+				<img class="video" src="{{ Util::assetUrl('images/ieo/lightfinder.jpeg')}}" alt="" width="100%" style="border:1px solid black;">
+					<div class="d-flex align-items-end justify-content-center h-100" style=" position: absolute; bottom: 10%; color: #FF0000; left: 43%; font-size: 20px;">
+		                <div>
+		                    <i class="fab fa-youtube"></i> 
+		                </div>
+		            </div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="pt-3 pb-5">
+			<div class="card-deck pt-5">
+				<div class="card buyer-card">
+					<div class="card-body text-center">
+						<div class="card-title ">
+							<h2><i class="fas fa-stopwatch"></i></h2>
+						</div> 
+						<h5 class="">
+							<b class="text-BAL">SEAMLESS ORDERS</b>
+						</h5>
+						Submit your lighting requirements as simple as sharing an image and receive the best quotations. 
+					</div>
+				</div>
+				<div class="card buyer-card">
+					<div class="card-body text-center">
+						<div class="card-title ">
+							<h2><i class="fas fa-wallet"></i></h2>
+						</div> 
+						<h5 class="">
+							<b class="text-BAL">TRUSTLESS PAYMENTS</b>
+						</h5>
+						With blockchain deployed self-enforceable smart contracts, your payments are trustless and 100% secured.
+					</div>
+				</div>	
+				<div class="card buyer-card">
+					<div class="card-body text-center">
+						<div class="card-title ">
+							<h2><i class="fas fa-globe-asia"></i></h2>
+						</div> 
+						<h5 class="">
+							<b class="text-BAL">TRACEABLE LOGISTICS</b>
+						</h5>
+						All your order details, right from the manufacturer to the shipper and then to you are added to a traceable blockchain network.  
 
+					</div>
+				</div>
+			</div>
+			<div class="card-deck">
+				<div class="card buyer-card">
+					<div class="card-body text-center">
+						<div class="card-title ">
+							<h2><i class="fas fa-thumbs-up"></i></h2>
+						</div> 
+						<h5 class="">
+							<b class="text-BAL">EXPERT CONSULTATION</b>
+						</h5>
+						Get free of cost consultation from experts who are available for your support 24/7.
+					</div>
+				</div>
+				<div class="card buyer-card">
+					<div class="card-body text-center">
+						<div class="card-title ">
+							<h2><i class="fas fa-dollar-sign"></i></h2>
+						</div> 
+						<h5 class="">
+							<b class="text-BAL">NOMINAL PRICES</b>
+						</h5>
+						Compared to big brands, you get products of similar quality and design, for up to 75% lower price.
+					</div>
+				</div>	
+				<div class="card buyer-card">
+					<div class="card-body text-center">
+						<div class="card-title ">
+							<h2><i class="fas fa-boxes"></i></h2>
+						</div> 
+						<h5 class="">
+							<b class="text-BAL">NO MORE MIDDLEMAN</b>
+						</h5>
+						Avoid hectic order processing and the costs when you buy from retailers. Get direct access to manufacturers.  
 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
+<?php
+$newsdatas = [];
+	$newsdatas[] = [ 'style'=>"", 'title'=>"CCN", 'link'=>"https://lnkd.in/evx2GWH", 'src'=>"images/ieo/partners/ccn.png", ];
+	$newsdatas[] = [ 'style'=>"", 'title'=>"Yahoo Finance", 'link'=>"https://au.finance.yahoo.com/news/blockpass-buyanylight-announce-partnership-bring-110000232.html", 'src'=>"images/ieo/partners/yfinance.png", ];
+	// $newsdatas[] = [ 'style'=>"", 'title'=>"Digital Journal", 'link'=>"http://webotic.ae", 'src'=>"images/ieo/partners/digital.png", ];
+	// $newsdatas[] = [ 'style'=>"", 'title'=>"ICOBench", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/partners/icobench2.png", ];
+	$newsdatas[] = [ 'style'=>"", 'title'=>"bitcoinwiki", 'link'=>"https://en.bitcoinwiki.org/wiki/Buyanylight", 'src'=>"images/ieo/partners/bitcoinwiki.png", ];
+	$newsdatas[] = [ 'style'=>"", 'title'=>"asiaone", 'link'=>"https://www.asiaone.com/business/blockpass-and-buyanylight-announce-partnership-bring-pass-rebate-blockpass-users", 'src'=>"images/ieo/partners/asiaone.png", ];
+	// $newsdatas[] = [ 'style'=>"", 'title'=>"acnnewswire", 'link'=>"https://www.asiaone.com/business/blockpass-and-buyanylight-announce-partnership-bring-pass-rebate-blockpass-users", 'src'=>"images/ieo/partners/acnnews.png", ];
 
+?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<section class="BAL-news" style="background-color: #f7f7f7; height: 100%;">
+	<h3 class="text-center pt-4"><strong>BuyAnyLight in the News and Media</strong></h3>
+	<div class="container d-flex align-items-center pb-4" style="">
+		<div class="">
+			<div class="news-channels text-center">
+				@foreach($newsdatas as $nd)
+				<a href="{{ $nd['link'] }}" class="mr-4">
+					<img src="{{ $nd['src'] }}" width="23%">
+				</a>
+				@endforeach
+			</div>
+		</div>
+	</div>
+</section>
 
 
 <section class="section-buy-token" id="section-bal-token">
-	<div class="pt-3 container">
+	<div class="pt-3 mt-3 container">
 		<h3>
 			<strong>
 				<span>
@@ -562,7 +591,7 @@
 				<div class="pt-4">
 					<div class="input-group" style="height: 75px; position: relative; right: 5px;">
 	  					<div class="input-group-prepend" style="width: 88px">
-	    					<span class="input-group-text d-flex justify-content-center btn-ieo" id="basic-addon1" style="width: 100%; border-radius: 20px; position: relative; left: 10px; z-index: 1; box-shadow: 4px 0px 5px 0px #cccccc;  background: -webkit-linear-gradient(right, #e4007b, #0000af);" data-toggle="tooltip" data-placement="right" title="BAL Token">
+	    					<span class="input-group-text d-flex justify-content-center btn-ieo" id="basic-addon1" style="width: 100%; border-radius: 20px; position: relative; left: 10px; z-index: 1; box-shadow: 4px 0px 5px 0px #cccccc;  background: #5555A4;" data-toggle="tooltip" data-placement="right" title="BAL Token">
 	    						<img src="{{ Util::assetUrl('images/logo-white-mobile.png') }}" width="28">
 	    					</span>
 	  					</div>
@@ -717,7 +746,7 @@
 															Visa, Mastercard, Bank Transfer, Bitcoin, Ethereum
 														</small>
 								</div>
-								<button type="submit" class="btn btn-ieo" id="token-btn">
+								<button type="submit" class="btn buy-btn" id="token-btn">
 									<b>Buy Tokens</b>
 								</button>
 					
@@ -735,46 +764,9 @@
 
 </section>
 
-<section class="section-2 pt-5">
-	<div class="container pb-3">
-		<h3 class="text-center pb-3">
-			<b>
-				<span class="header-text">BAL Initial Exchange</span>
-				<br>
-				<span>Offering (IEO)</span>
-			</b>
-		</h3>
-		<div class="text-justify">
-				<p>
-					The BuyAnyLight (BAL) Initial Exchange Offering (IEO) is a crowdfunding campaign to raise funds for the development of a blockchain deployed, decentralized marketplace for lighting products, and the expansion of the existing BAL Network. It is a framework for addressing the unique challenges faced by lighting contractors, manufacturers, and buyers that combines revolutionary technologies such as blockchain and cryptography, smart contracts, fintech, and tokenization.
-				</p>
-				<p>
-					We understand and embrace the new blockchain-powered technologies that can optimize sourcing in the lighting industry and create the digital infrastructure for smarter light sourcing in a seamless, cost-effective way.			
-				</p>
 
-
- 
-
-		</div>
-	</div>
-	<div class="container pt-3">
-		<h3 class="text-center pb-3">
-			<b>
-				<span class="header-text">What is BAL</span> Token?
-			</b>
-		</h3>
-		<div>
-			<p class="text-justify">
-				BAL is an ERC-20 compliant digital token deployed on the Ethereum blockchain that allows a peer-to-peer mode of payment, storage, and exchange of value seamlessly and securely. The BAL Token is specifically designed to support large volumes of transactions within the BAL ecosystem. It offers quick, secure, and efficient transfer of value with high confirmation speed.
-			</p>
-		</div>
-	</div>
-	{{-- <div class="container pt-3 pb-5">
-		<img src="{{ Util::assetUrl('images/mobile_bg/ieo/2.png')}}" width="100%">
-	</div> --}}
-</section>
 <section class="section-3 bg-black">
-	<div class="container pt-5 pb-5">
+	<div class="container pt-5 pb-5 mt-5">
 		<div class="text-justify">
 			<h3 class="text-center">
 				<b>
@@ -783,31 +775,8 @@
 				</b>
 			</h3>
 			<p class="pt-2 text-white">
-				Our vision is to become the leading global platform for buyers and sellers dealing in LED lighting. Through BAL Marketplace, we aim to democratize access to the sourcing of lighting products, without the interference of a centralized authority or intermediary.
+				We envision to revolutionize the entire sourcing process by harnessing the power of blockchain, AI, Big Data and Smart Contracts. Starting from the LED Lighting Industry, we aim to expand BAL Network into other industries including but not limited to Construction, Pharma, Food and Precious Metal Industry. 
 			</p>
-			<div class="text-center pt-3 vision-mission mb-5">
-				{{-- <a  data-fancybox href="https://www.youtube.com/embed/o8CAwwz6tIM">
-					<img src="{{asset('images/mv-img.png')}}" alt="..." class="rounded-circle mv-img" width="35%">
-					<div class="text-dark yt">
-						<i class="fab fa-youtube"></i>
-					</div>	
-				</a> --}}
-
-				<a data-fancybox 
-				href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0" 
-				class="">
-					<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="">
-					<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="position: relative; bottom: 30px; left: 30px; width: 50%;">
-                        <div>
-                        	<i class="fab fa-youtube"></i> 
-                            <span>
-                            	Play video
-                            </span>
-                        </div>
-                    </div>
-				</a>
-
-			</div>
 		</div>
 		<div class=" text-justify pt-3">
 			<h3 class="text-center">
@@ -817,20 +786,15 @@
 				</b>
 			</h3>
 			<p class="pt-2 text-white">
-				We aim to create a modern platform for lighting products by fully harnessing the technological power offered by blockchain, smart contracts, and cryptographic technology. Principled, honest and focused, we leverage the world’s best suppliers and deliver the most significant value LED products, the most exceptional service and advice, and first-rate customer satisfaction – every time.
+				Our mission is to become the leading platform of choice for individuals and businesses and manufacturers. Principled, honest and focused, we leverage the world’s best suppliers and deliver the most significant value LED products, the most exceptional service and advice, and first-rate customer satisfaction – every time.
 			</p>
 			<div class="text-center pt-3 vision-mission">
-				{{-- <a data-fancybox href="https://www.youtube.com/embed/5nMkricvzfc" >
-					<img src="{{asset('images/mv-img.png')}}" alt="..." class="rounded-circle mv-img" width="35%">
-					<div class="text-dark yt">
-						<i class="fab fa-youtube "></i>
-					</div>
-				</a> --}}
+	
 
 				<a data-fancybox 
-				href="https://www.youtube-nocookie.com/embed/5nMkricvzfc?rel=0" 
+				href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0" 
 				class="">
-					<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo-vs-ico.png') }}" alt="">
+					<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="">
 					<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark" style="position: relative; bottom: 30px; left: 30px; width: 50%;">
                         <div>
                         	<i class="fab fa-youtube"></i> 
@@ -853,67 +817,67 @@
 		</h3>
 		<div class="pt-3">
 			<div class="text-center">
-				<img src="{{ Util::assetUrl('images/ieo/6-1.png') }}" width="25%">
+				<img src="{{ Util::assetUrl('images/ieo/6-1.png') }}" width="15%">
 			</div>
 			<h5 class="text-center pt-3"><b>Decentralization</b></h5>
-			<div class="text-justify pt-2">
+			<div class="text-center pt-2">
 				<p>
-					Unlike traditional marketplaces and payment networks, there is no single point of failure. All transactional activities happening within the BAL ecosystem are open and transparent to the whole community.
+					BAL is decentralized and community owned.
 				</p>
 			</div>
 		</div>
 		<div class="pt-3">
 			<div class="text-center">
-				<img src="{{ Util::assetUrl('images/ieo/6-2.png') }}" width="25%">
+				<img src="{{ Util::assetUrl('images/ieo/6-2.png') }}" width="15%">
 			</div>
 			<h5 class="text-center pt-3"><b>Security</b></h5>
-			<div class="text-justify pt-2">
+			<div class="text-center pt-2">
 				<p>
-					BAL Token uses an Ethereum blockchain based proof of work consensus for confirming transactions, which makes it completely decentralized and one of the most secure digital assets. All of your transactional data is encrypted, and your digital assets are reserved in a wallet only you can access.
+					All transactions in BAL are secured by Smart Contracts.
 				</p>
 			</div>
 		</div>
 		<div class="pt-3">
 			<div class="text-center">
-				<img src="{{ Util::assetUrl('images/ieo/6-3.png') }}" width="25%">
+				<img src="{{ Util::assetUrl('images/ieo/6-3.png') }}" width="15%">
 			</div>
 			<h5 class="text-center pt-3"><b>Utility</b></h5>
-			<div class="text-justify pt-2">
+			<div class="text-center pt-2">
 				<p>
-					BAL Token has inherent utility within the BAL marketplace, a leading marketplace based in Dubai, UAE, allowing it to be accepted as a mode of payment for lighting products.
+					BAL Token is the native token within the BAL Ecosystem.
 				</p>
 			</div>
 		</div>
 		<div class="pt-3">
 			<div class="text-center">
-				<img src="{{ Util::assetUrl('images/ieo/6-4.png') }}" width="25%">
+				<img src="{{ Util::assetUrl('images/ieo/6-4.png') }}" width="15%">
 			</div>
-			<h5 class="text-center pt-3"><b>Liquidity and Easy Transactions</b></h5>
-			<div class="text-justify pt-2">
+			<h5 class="text-center pt-3"><b>Liquidity</b></h5>
+			<div class="text-center pt-2">
 				<p>
-					Easily liquidate or transfer your BAL Token to anyone, anywhere in the world through a secure, encrypted digital wallet.
+					Exchange or transfer value as simple as sending an email.
 				</p>
 			</div>
 		</div>
 		<div class="pt-3">
 			<div class="text-center">
-				<img src="{{ Util::assetUrl('images/ieo/6-5.png') }}" width="25%">
+				<img src="{{ Util::assetUrl('images/ieo/6-5.png') }}" width="15%">
 			</div>
 			<h5 class="text-center pt-3"><b>Nominal Transactional Fee</b></h5>
-			<div class="text-justify pt-2">
+			<div class="text-center pt-2">
 				<p>
-					BAL Marketplace deducts significantly lower fees than any other major online payment system. This allows users to send, receive or perform any transactional activity at minimal costs.
+					Transfer up to a million dollar in a single digit fee.
 				</p>
 			</div>
 		</div>
 		<div class="pt-3">
 			<div class="text-center">
-				<img src="{{ Util::assetUrl('images/ieo/6-6.png') }}" width="25%">
+				<img src="{{ Util::assetUrl('images/ieo/6-6.png') }}" width="15%">
 			</div>
 			<h5 class="text-center pt-3"><b>Transparency</b></h5>
-			<div class="text-justify pt-2">
+			<div class="text-center pt-2">
 				<p>
-					Deployment of all transactional records on a transparent blockchain ensures visibility and eliminates fraud.
+					All transactions are transparent and auditable.
 				</p>
 			</div>
 		</div>
@@ -1399,7 +1363,7 @@
 						'icon' => 'fas fa-archway',
 						'style' => '',
 						'items' => [
-							'Foundation Almani Lighting Gmbh',
+							'Foundation Almani Lighting Gmbh.',
 						],
 					];
 					$timeline[] = [
@@ -1407,8 +1371,8 @@
 						'icon' => 'far fa-handshake',
 						'style' => '',
 						'items' => [
-							'Foundation of Almani Lighting LLC, Dubai,',
-							'Strategic Partnerships',
+							'Foundation of Almani Lighting LLC, Dubai.',
+							'Strategic Partnerships.',
 						],
 					];
 					$timeline[] = [
@@ -1416,8 +1380,7 @@
 						'icon' => 'fas fa-users',
 						'style' => '',
 						'items' => [
-							'BAL Idea Inception, Research and Feasibility and',
-							'Development team recruitment',
+							'BAL Idea Inception, Research and Feasibility and Development team recruitment.',
 						],
 					];
 					$timeline[] = [
@@ -1425,9 +1388,9 @@
 						'icon' => 'fas fa-warehouse',
 						'style' => '',
 						'items' => [
-							'51% Ownershio Acquisition of Almani Lighting LLC by',
+							'51% Ownership Acquisition of Almani Lighting LLC by',
 							'Asas Holding, Warehouse expansion,',
-							'BAL Light Finder development and testing',
+							'BAL Light Finder development and testing.',
 						],
 					];
 					$timeline[] = [
@@ -1436,7 +1399,7 @@
 						'style' => '',
 						'items' => [
 							'Team Expansion, Product range extended to 600+',
-							'Fiat Partner Collaboration, Major Sheikh Palace Contracts in UAE',
+							'Fiat Partner Collaboration, Major Sheikh Palace Contracts in UAE.',
 						],
 					];
 					$timeline[] = [
@@ -1448,7 +1411,7 @@
 							'Documentation and drafting,',
 							'Website Development and launch,',
 							'Seed round finished and Public Token sale',
-							'Marketing Kickstart',
+							'Marketing Kickstart.',
 						],
 					];
 					$timeline[] = [
@@ -1456,12 +1419,12 @@
 						'icon' => 'fas fa-link',
 						'style' => '',
 						'items' => [
-							'IEO Sale and Listing on exchanges',
-							'Blockchain development team expansion',
-							'Blockchain based platform development Initiated',
-							'Smart Contracts Development, Wallet development with cross-chain',
-							'Asset exchange',
-							'Traceable Logistic partnerships and development initiated',
+							'IEO Sale and Listing on exchanges.',
+							'Blockchain development team expansion.',
+							'Blockchain based platform development Initiated.',
+							'Smart Contracts Development, Wallet development with cross-chain.',
+							'Asset exchange.',
+							'Traceable Logistic partnerships and development initiated.',
 						],
 					];
 					$timeline[] = [
@@ -1469,9 +1432,9 @@
 						'icon' => 'fas fa-mobile',
 						'style' => '',
 						'items' => [
-							'Traceable logistic functionality implementation',
-							'Alpha version release',
-							'Mobile apps release',
+							'Traceable logistic functionality implementation.',
+							'Alpha version release.',
+							'Mobile apps release.',
 						],
 					];
 					$timeline[] = [
@@ -1479,9 +1442,9 @@
 						'icon' => 'fas fa-brain',
 						'style' => '',
 						'items' => [
-							'On-chain logistic fully implemented',
-							'AI-Based Smart Contracts Implementation',
-							'BAL Custodial Platform development',
+							'On-chain logistic fully implemented.',
+							'AI-Based Smart Contracts Implementation.',
+							'BAL Custodial Platform development.',
 						],
 					];
 					$timeline[] = [
@@ -1489,9 +1452,9 @@
 						'icon' => 'fas fa-file',
 						'style' => '',
 						'items' => [
-							'Expansion into construction industry',
-							'BAL Tokenization Platform Development',
-							'Smart Contract Notary Service Launch',
+							'Expansion into construction industry.',
+							'BAL Tokenization Platform Development.',
+							'Smart Contract Notary Service Launch.',
 						],
 					];
 
@@ -1609,81 +1572,72 @@
 			</b>
 		</h3>
 		<div>
+			<h4 class="text-left"> <b>Token Information</b></h4>
 			<table class="text-left w-100" cellpadding="10" id="token-info">
 				<tr>
-					<td>Token name:</td>
+					<td><b>Token name:</b></td>
 					<td>BAL Token</td>
 				</tr>
 				<tr>
-					<td>Ticker:</td>
+					<td><b>Ticker:</b></td>
 					<td>BAL</td>
 				</tr>
 				<tr>
-					<td>Token type:</td>
-					<td>ERC-20</td>
-				</tr>
-				<tr>
-					<td>Blockchain deployed:</td>
+					<td><b>Network:</b></td>
 					<td>Ethereum</td>
 				</tr>
 				<tr>
-					<td>Total supply:</td>
-					<td>55 Million (100%)</td>
-				</tr>
-				<tr>
-					<td>Know Your Customer (KYC):</td>
-					<td>Yes</td>
-				</tr>
-				<tr>
-					{{-- <td>Supply reserved for Private Round:</td> --}}
-					<td>Supply reserved for Private & <br>Pre-IEO Sale Round combined:</td>
-					<td>5.5 Million (10% of the total supply)</td>
-				</tr>
-				<tr>
-					<td>Supply reserved for IEO:</td>
-					<td>16.5 Million (30% of the total supply)</td>
-				</tr>								
-				<tr>
-					<td>Soft Cap:</td>
+					<td><b>Soft Cap:</b></td>
 					<td>4 Million USD</td>
 				</tr>
 				<tr>
-					<td>Hard Cap:</td>
-					<td>8 Million USD</td>
+					<td><b>Hard Cap:</b></td>
+					<td>5 Million USD</td>
+				</tr>								
+				<tr>
+					<td><b>Total supply:</b></td>
+					<td>55 Million BAL</td>
 				</tr>
 				<tr>
-					<td>Accepts:</td>
-					<td>BTC, ETH, EUR, USD</td>
+					<td><b>IEO price:</b></td>
+					<td>1BAL = USD 0.30303 (Upcoming)</td>
 				</tr>
 				<tr>
-					<td>Seed Round Date:</td>
-					<td>Febuary 1<sup>st</sup>, 2019 (Sold out)</td>
+					<td><b>Pre-IEO Sale price:</b></td>
+					<td>1BAL = USD 0.25 (Live)</td>
 				</tr>
 				<tr>
-					<td>Private Starting Date:</td>
-					<td>October 1<sup>st</sup>, 2019</td>
-				</tr>
-				<tr>
-					<td>Private Sale Price:</td>
-					<td>1BAL = USD 0.2</td>
-				</tr>
-				<tr>
-					<td>Pre-IEO Starting Date:</td>
-					<td>November 1<sup>st</sup>, 2019</td>									
-				</tr>
-				<tr>
-					<td>Pre-IEO Sale Price:</td>
-					<td>1BAL = USD 0.25</td>
-				</tr>
-				<tr>
-					<td>IEO Starting Date:</td>
-					<td>February 1<sup>st</sup>, 2020</td>
-				</tr>
-				<tr>
-					<td>IEO Sale Price:</td>
-					<td>1BAL = USD 0.30303</td>
+					<td><b>Private Round price:</b></td>
+					<td>1BAL = USD 0.20</td>
 				</tr>
 			</table>
+		</div>
+		<div>
+			<h4 class="text-left mt-3"> <b>Crowd Sales Plan</b></h4>
+			<div class="row mt-3 text-left">
+				<div class="col-md-12">
+					<div class="card card-body" style="border: 1px solid #5555A4; border-radius: 10px;">
+						<small><i class=" header-text far fa-calendar-alt"></i> 1st October 2019 - 31st October 2019</small>
+						<b>Private Round Sale</b>
+						<small><i class=" header-text fas fa-dollar-sign"></i> 0.25</small>
+					</div>
+					<div class="card card-body mt-3" style="border: 1px solid #5555A4; border-radius: 10px;">
+						<small><i class="far fa-calendar-alt"></i> 1st November 2019 - 31st January 2020</small>
+						<b>PRE-IEO Sale</b>
+						<small><i class=" header-text fas fa-dollar-sign"></i> 0.20</small>
+					</div>	
+					<div class="card card-body mt-3" style="border: 1px solid #5555A4; border-radius: 10px;">
+						<small><i class="far fa-calendar-alt"></i> 1st Feburary 2020 - 29th Feburary 2020</small>
+						<b>IEO Sale</b>
+						<small><i class=" header-text fas fa-dollar-sign"></i> 0.30303</small>
+					</div>	
+					<div class="card card-body mt-3" style="border: 1px solid #5555A4; border-radius: 10px;">
+						<small><i class="far fa-calendar-alt"></i> Q1 2020</small>
+						<b>Listing</b>
+						<small class="header-text">Available in platforms soon</small>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="pt-5">
 			<h3 class="text-center">

@@ -47,11 +47,12 @@ nav{
 
 
 .section-1{
-	background: url('/images/ieo/ieo-bg1.png');
+	background: url('/images/ieo/ieo-bg.png');
 	background-position-y: bottom;
 	height: 66vh;
 	background-repeat: no-repeat;
 	background-size: cover;	
+	background-position: center;
 }
 
 
@@ -712,8 +713,8 @@ footer{
 
 @media  screen and (max-width: 1366px) {
 		.section-1{
-			padding-top: 225px;
-			margin-bottom: 170px;
+			// padding-top: 225px;
+			// margin-bottom: 170px;
 		}
 
 
