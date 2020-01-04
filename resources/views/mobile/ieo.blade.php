@@ -337,12 +337,12 @@
 			<div class="col-4 p-1">
 			<div class="card text-center">
 				<div class="card-header text-white" style="">
-					<b>PRIVATE SALE</b><br>
+					<b style="font-size: 12px;">PRIVATE SALE</b><br>
 					<span style="font-size: 11px; text-decoration: line-through;">0.30303 USD</span><br>
 					<span style="font-size: 11px;">0.2 USD</span>
 				</div>
 				<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
-					<div class="row">																											 
+					<div class="row" style="font-size: 12px;">																											 
 						<div class="col-12">1<sup>st</sup> Oct 2019</div>
 						<div class="col-12">to</div>
 						<div class="col-12">31<sup>st</sup> Oct 2019</div>
@@ -355,12 +355,12 @@
 			<div class="col-4 p-1">
 			<div class="card text-center">
 				<div class="card-header  text-white" style="">
-					<b>PRE -IEO</b><br>
+					<b style="font-size: 12px;">PRE -IEO</b><br>
 					<span style="font-size: 11px; text-decoration: line-through;">0.30303 USD</span><br>
 					<span style="font-size: 11px;">0.25 USD</span>
 				</div>
 				<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
-					<div class="row">														
+					<div class="row" style="font-size: 12px;">														
 						<div class="col-12">1<sup>st</sup> Nov 2019</div>
 						<div class="col-12">to</div>
 						<div class="col-12">31<sup>st</sup> Jan 2020</div>
@@ -372,12 +372,12 @@
 			<div class="col-4 p-1">
 			<div class="card text-center ">
 				<div class="card-header  text-white" style="">
-					<b>IEO</b><br>
+					<b style="font-size: 12px;">IEO</b><br>
 					<span style="font-size: 11px;">0.30303 USD</span><br>
 					<span style="font-size: 11px;">&nbsp;</span>
 				</div>
 				<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
-					<div class="row">
+					<div class="row" style="font-size: 12px;">
 						<div class="col-12">1<sup>st</sup> Feb 2020</div>
 						<div class="col-12">to</div>
 						<div class="col-12">29<sup>th</sup> Feb 2020</div>
