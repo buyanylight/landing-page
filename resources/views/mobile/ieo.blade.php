@@ -429,7 +429,7 @@
 		</div>
 	</div>
 </section>
-<section class="section-2 pt-5">
+<section class="section-2 pt-5" id="meet-bal">
 	<div class="container pb-3">
 		<h3 class="text-center pb-3">
 			<b>

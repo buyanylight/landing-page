@@ -228,7 +228,7 @@
 						</div>
 						<div class="mt-3 pagers-paper row">
 							<div class="col pr-1">
-								<a href="#meet_bal" class="btn btn-BAL w-100">
+								<a href="#meet-bal" class="btn btn-BAL w-100">
 						        	<i class="fas fa-link"></i>
 						            &nbsp;
 									Meet BAL
