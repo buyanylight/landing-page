@@ -3000,12 +3000,14 @@ $newsdatas = [];
 					$partners[] = [	'style'=>'', 'title'=>'Dubai Consult', 'alt'=>'Dubai Consult', 'src'=>Util::assetUrl('images/ieo/partners/dubai_consult.png'), 'link'=>'https://dubaiconsult.com/'];
 					$partners[] = [	'style'=>'', 'title'=>'German Embassy UAE', 'alt'=>'German Embassy UAE', 'src'=>Util::assetUrl('images/ieo/partners/german_uae.png'), 'link'=>'https://uae.diplo.de/ae-en/vertretungen/generalkonsulat1' ];
 					$partners[] = [	'style'=>'', 'title'=>'Asas', 'alt'=>'Asas', 'src'=>Util::assetUrl('images/ieo/partners/asas.png'), 'link'=>'https://asasholding.ae'];
+
 					// $partners[] = [	'style'=>'', 'title'=>'Light Middle East', 'alt'=>'Light Middle East', 'src'=>Util::assetUrl('images/ieo/partners/light_middles_east.png'), 'link'=>'https://light-middle-east.ae.messefrankfurt.com/dubai/en.html'];
 					$partners[] = [	'style'=>'', 'title'=>'Light Middle East', 'alt'=>'Light Middle East', 'src'=>Util::assetUrl('images/ieo/partners/madeingermany.png'), 'link'=>'https://light-middleeast.german-pavilion.com/en/home/'];
 					$partners[] = [	'style'=>'', 'title'=>'Continental Investments', 'alt'=>'Continental Investments', 'src'=>Util::assetUrl('images/ieo/partners/continental.png'), 'link'=>'http://www.continvest.net'];
+					$partners[] = [	'style'=>'', 'title'=>'Blockpass', 'alt'=>'Asas', 'src'=>Util::assetUrl('images/ieo/partners/blockpass.png'), 'link'=>'https://www.blockpass.org/buyanylight/'];
 				?>
 				<div class="col-12">
-					<h2 class="text-white ml-3 mt-0">Partners</h2>
+					<h2 class="text-white ml-3 mt-0">Strategic Partners</h2>
 					<div class="icons">
 						@foreach($partners as $prtnr)
 						<div class="col-3 partner">								
@@ -3077,7 +3079,7 @@ $newsdatas = [];
 					$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOMARKS", 'link'=>"https://icomarks.com/ico/buyanylight", 'src'=>Util::assetUrl("images/ieo/partners/icomarks.svg"), ];
 					//$datas[] = [ 'style'=>"", 'title'=>"BuyAnyLight ICOSBULL", 'link'=>"https://icosbull.com/eng/ico/buyanylightbal", 'src'=>"images/ieo/partners/icosbull.png", ];
 				?>
-				<div class="col-5 mt-10">
+	<!-- 			<div class="col-5 mt-10">
 					<h2 class="text-white ml-3 mt-0">Ratings</h2>
 					<div class="icons">
 						@foreach($datas as $data)
@@ -3097,7 +3099,7 @@ $newsdatas = [];
 						</div>
 
 					</div>
-				</div>
+				</div> -->
 		
 			
 				
@@ -3128,7 +3130,7 @@ $newsdatas = [];
 				</div> -->
 
 
-				<div class="col-6 mt-10">
+				<div class="col-5 mt-10">
 					<h2 class="text-white ml-3 mt-0">Sponsors</h2>
 					<div class="icons">
 						<a href="https://light-middleeast.german-pavilion.com/en/exhibitors/80967/"

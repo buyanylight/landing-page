@@ -2034,10 +2034,12 @@ $newsdatas = [];
 					$partners[] = [ 'style'=>'', 'title'=>'German UAE', 'alt'=>'German UAE', 'src'=>Util::assetUrl('images/ieo/partners/german_uae.png'), 'link'=>'https://uae.diplo.de/ae-en/vertretungen/generalkonsulat1'];
 					// $partners[] = [ 'style'=>'', 'title'=>'Light Middles East', 'alt'=>'Light Middles East', 'src'=>Util::assetUrl('images/ieo/partners/light_middles_east.png'), 'link'=>'https://light-middle-east.ae.messefrankfurt.com/dubai/en.html'];
 					$partners[] = [	'style'=>'', 'title'=>'Light Middle East', 'alt'=>'Light Middle East', 'src'=>Util::assetUrl('images/ieo/partners/madeingermany.png'), 'link'=>'https://light-middleeast.german-pavilion.com/en/home/'];
+					$partners[] = [	'style'=>'', 'title'=>'Blockpass', 'alt'=>'Asas', 'src'=>Util::assetUrl('images/ieo/partners/blockpass.png'), 'link'=>'https://www.blockpass.org/buyanylight/'];
+					
 				?>
 				<div class="row pt-4 justify-content-center partners sponsored_fair">
 					<div class="col-12 mt-3 text-center">					
-						<h2 class="text-white mb-4">Partners</h2>
+						<h2 class="text-white mb-4">Strategic Partners</h2>
 					</div>
 
 					@foreach($partners as $prtnr)
@@ -2100,7 +2102,7 @@ $newsdatas = [];
 						<script type="application/javascript" async="async" src="https://icoholder.com/en/widget/big-black-listed/31234.js?width=5"></script>
 					</div> --}}
 
-					<div class="col-12 mt-5 text-center">
+		<!-- 			<div class="col-12 mt-5 text-center">
 						{{-- <h2 class="text-white ml-3 mb-4">Audits & Ratings</h2> --}}
 						<h2 class="text-white mt-5 mb-4">Ratings</h2>
 						<div class="icons">
@@ -2120,10 +2122,10 @@ $newsdatas = [];
 								<img src="{{ Util::assetUrl('images/ieo/partners/icosbull.png') }}" alt="BuyAnyLight ICO Bull"/>
 							</a>
 						</div>
-					</div>
-					
+					</div> -->
 
-		<!-- 			<div class="col-12 mt-5 text-center">
+
+				<!-- 	<div class="col-12 mt-5 text-center">
 						{{-- <h2 class="text-white ml-3 mb-4">BuyAnyLight in News and Media</h2> --}}
 						<h2 class="text-white mt-5 mb-4">BAL in News and Media</h2>
 						<div class="icons">
