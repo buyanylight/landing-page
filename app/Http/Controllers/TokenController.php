@@ -167,6 +167,13 @@ class TokenController extends Controller
 
 
 
+	public function cancel(){
+
+		$curr = $this->GetApi('https://rest.coinapi.io/v1/subscription/cancel?apikey='.env('COINAPI_KEY'));
+
+		return response ($curr);
+	}
+
 	public function get_token(){
 
 		$tknbyer = TokenBuyer::where('email_id', 'LIKE', '%'.$_GET['email'].'%')->get();
