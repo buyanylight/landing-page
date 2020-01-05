@@ -340,12 +340,10 @@
 					<div class="videos mt-4" style="box-shadow: 7px 7px 10px #3c3c3c;">
 						<a data-fancybox href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0">
 							<img class="video" src="{{ Util::assetUrl('/images/ieo/bal-ieo.png') }}" alt="" width="100%">
-							<div class="d-flex align-items-end pb-2 pl-2 h-100 text-dark video-btn">
+							<div class="d-flex align-items-end pb-2 pl-2 h-100 video-btn" style=" position: absolute; bottom: 495px; color: #FF0000;  left: 340px; font-size: 30px;">
 		                        <div>
 		                            <i class="fab fa-youtube"></i> 
-		                            <span>
-		                            	Play video
-		                            </span>
+		       
 		                        </div>
 		                    </div>
 						</a>
