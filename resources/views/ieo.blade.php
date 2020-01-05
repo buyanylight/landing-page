@@ -355,21 +355,27 @@
 							<h4 class="pb-3"><strong>Token Sale</strong></h4>
 							<div class="l">
 								<div class="row" style="font-size: 10px;">
-									<p class="col-md-4 m-0 d-flex align-items-center"><b>Start</b></p>
-									<p class="col-md-4 text-center m-0 d-flex align-items-center justify-content-center"><b>Soft Cap</b></p>
-									<p class="col-md-4 text-right m-0 d-flex align-items-center justify-content-end"><b>Hard Cap</b></p>
+									<p class="col-md-1 m-0 d-flex align-items-center"><b>Start</b></p>
+
+									<p class="col-md-2 text-center m-0"><b></b></p>
+									<p class="col-md-2 text-center m-0"><b>Soft Cap</b></p>
+									<!-- <p class="col-md-1 text-right m-0"><b>Soft Cap</b></p> -->
+									<!-- <p class="col-md-1 text-right m-0"><b>Soft Cap</b></p> -->
+									<p class="col-md-7 text-right m-0 d-flex align-items-center justify-content-end"><b>Hard Cap</b></p>
 								</div>
 								<div class="pt-1">
 									<div class="progress">
-			  							<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="35" aria-valuemin="0" aria-valuemax	="100">
+			  							<div class="progress-bar" role="progressbar" style="width: 38%" aria-valuenow="35" aria-valuemin="0" aria-valuemax	="100">
 			  									$2,100,000
 			  							</div>
 									</div>
 								</div>
 								<div class="row pt-1" style="font-size: 10px;">
-									<p class="col-md-4 mb-0"><b>26% target raised</b></p>
-									<p class="col-md-4 text-center mb-0"><b>$4,000,000</b></p>
-									<p class="col-md-4 text-right mb-0"><b>$8,000,000</b></p>
+									<p class="col-md-1 mb-0"><b>$0</b></p>
+									<!-- <p class="col-md-2 mb-0"><b>$1,000,000</b></p> -->
+									<p class="col-md-2 text-center mb-0"><b></b></p>
+									<p class="col-md-2 text-center mb-0"><b>$2,000,000</b></p>
+									<p class="col-md-7 text-right mb-0"><b>$8,000,000</b></p>
 								</div>
 							</div>
 						</div>
@@ -2233,7 +2239,7 @@ $newsdatas = [];
 								</tr>
 								<tr>
 									<td><b>Soft Cap:</b></td>
-									<td>4 Million USD</td>
+									<td>2 Million USD</td>
 								</tr>
 								<tr>
 									<td><b>Hard Cap:</b></td>
