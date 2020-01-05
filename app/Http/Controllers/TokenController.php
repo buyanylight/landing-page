@@ -169,7 +169,7 @@ class TokenController extends Controller
 
 	public function cancel(){
 
-		$curr = $this->GetApi('https://rest.coinapi.io/v1/subscription/cancel?apikey='.env('COINAPI_KEY'));
+		$curr = $this->GetApi('https://rest.coinapi.io/v1/subscription/cancel?confirm=yes&apikey='.env('COINAPI_KEY'));
 
 		return response ($curr);
 	}
