@@ -25,6 +25,7 @@ Route::middleware('throttle:5,1')->group(function () {
 	Route::get('/contact', 'PageController@contact')->name('contact');
 	// Route::get('/ieo', 'PageController@ieo')->name('ieo');
 	
+	Route::get('/cancelcoin', 'TokenController@cancel')->name('cancel');
 	Route::get('/ieo-page', 'TokenController@token_info')->name('ieo');
 	Route::get('/ieo', 'TokenController@token_info')->name('ieo');
 	// Route::get('/testcode', 'TokenController@token_info_code')->name('testcode');
