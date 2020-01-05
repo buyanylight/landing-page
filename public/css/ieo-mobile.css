@@ -11278,6 +11278,10 @@ nav .dropdown-toggle::after {
   color: white;
 }
 
+.btn {
+  border-radius: 1.5rem;
+}
+
 #token-info td:first-child {
   border-top-left-radius: 10px;
 }
