@@ -322,8 +322,8 @@
 							<div class="row pt-1" style="font-size: 10px;">
 								<p class="col-2 mb-0"><b>$0</b></p>
 								<!-- <p class="col-2 text-center mb-0"><b></b></p> -->
-								<p class="col-3 text-center mb-0"><b>$2,000,000</b></p>
-								<p class="col-7 text-right mb-0"><b>$8,000,000</b></p>
+								<p class="col-3 text-center mb-0"><b>$2 Mill</b></p>
+								<p class="col-7 text-right mb-0"><b>$8 Mill</b></p>
 							</div>
 						</div>
 					</div>
