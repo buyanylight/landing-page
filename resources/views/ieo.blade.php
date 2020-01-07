@@ -2125,6 +2125,20 @@ $newsdatas = [];
 				</ul>
 				<div class="arrows pt-3"></div>   
 
+
+				<div>
+					<span class="text-white">
+						To view the full roadmap, Check our white paper
+					</span>
+					<div class="mt-2">
+						<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}"  target="_blank" class="btn buy-btn">
+							<i class="far fa-file-pdf"></i>
+						    &nbsp;
+							Whitepaper
+						</a>
+					</div>
+				</div>
+
 				{{-- ////////////////////////////////////////////////////////////////// --}}
 				{{-- roadmap --}}
 
