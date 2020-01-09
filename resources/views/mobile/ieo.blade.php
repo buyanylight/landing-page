@@ -609,7 +609,7 @@ $newsdatas = [];
 					</div>
 				</div>
 				<div>
-	  				<small>The minimum investment is 50 USD and 200 BAL</small>
+	  				<small>The minimum purchasing threshold is 50 USD and 200 BAL</small>
 	  				{{-- <small>The minimum investment is 5,000 USD and 25,000 BAL</small> --}}
 	  			</div>
 				<div class="pt-4 bal-alert" style="display: none;">
@@ -649,7 +649,7 @@ $newsdatas = [];
 							<div class="card card-body" style="z-index: 0;">
 								<h5>
 									<b>
-										<span>Profit / Return on Investment:</span>
+										<span> Purchase today and get lucrative gains.</span>
 									</b>
 								</h5>
 								<div class="pt-2">
@@ -700,7 +700,7 @@ $newsdatas = [];
 								</div>
 								<div class="pt-2">
 									<div>
-										<b>Profits investing today</b>
+										<b>Gain on purchasing the token now!</b>
 									</div>
 									<div class="row">
 										<div class="col">
