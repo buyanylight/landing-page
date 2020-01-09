@@ -998,7 +998,7 @@ $newsdatas = [];
 	  					<input class="form-control bal-token pl-4" placeholder="Enter an amount you want to buy" name="bal" required="required" style="height: 70px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-size: 15px; border: 1px solid #000000;">
 					</div>
 	  				<div>
-	  					<small>The minimum investment is 50 USD and 200 BAL</small>
+	  					<small>The minimum purchasing threshold is 50 USD and 200 BAL</small>
 	  					{{-- <small>The minimum investment is 5,000 USD and 25,000 BAL</small> --}}
 	  				</div>
 				</div>
@@ -1040,7 +1040,7 @@ $newsdatas = [];
 						<div class="col-6">
 							<h3 class="pb-3">
 								<b>
-									<span class="header-text">Profit</span> / Return on Investment
+									<span class=""> Purchase today and get lucrative gains.
 								</b>
 							</h3>
 
@@ -1071,7 +1071,7 @@ $newsdatas = [];
 											</p>
 											<h5>
 												<b>
-													<u>Profits investing today</u>
+													<u>Gain on purchasing the token now!</u>
 												</b>
 											</h5>
 											<p class="mb-1 mt-1">
