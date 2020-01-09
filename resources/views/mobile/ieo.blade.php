@@ -704,7 +704,7 @@ $newsdatas = [];
 									</div>
 									<div class="row">
 										<div class="col">
-											 	ROI : 21.21% 
+											 	Gain Ratio : 21.21% 
 												{{-- ROI = 51.52% --}}
 										</div>
 										<div class="col">
@@ -713,7 +713,7 @@ $newsdatas = [];
 									</div>
 									<div class="row">
 										<div class="col">
-											Return = 
+											Gain Made in USD :
 											<span class="USD_return">0.05303 USD</span>		
 											{{-- <span class="USD_return">0.10303 USD</span>		 --}}
 										</div>

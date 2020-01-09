@@ -1076,10 +1076,10 @@ $newsdatas = [];
 											</h5>
 											<p class="mb-1 mt-1">
 											 	{{-- ROI : 51.52%  --}}
-											 	ROI : 21.21% 
+											 	Gain Ratio  : 21.21% 
 											 </p>
 											 <p class="mb-0">
-											 	Profits :
+											 	Gain Made in USD :
 												<span class="USD_return">
 													{{-- 0.10303  --}}
 													0.05303 
