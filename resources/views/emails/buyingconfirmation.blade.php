@@ -4,7 +4,7 @@
 		Greetings {{ $name }}!
 	</p>
 	<p style="color: black; font-size: 14px !important">
-		We appreciate the trust you confer to BuyAnyLight.com. First and foremost, we would like to congratulate you on your initiative towards a profitable investment with us. We thank you for participating in our PRE-IEO BAL token sale.
+		We appreciate the trust you confer to BuyAnyLight.com. First and foremost, we would like to congratulate you on your initiative towards Supportin a project with great potential to grow and revolutionize the LED Light sourcing industry. We thank you for participating in our PRE-IEO BAL token sale.
 	</p>
 	<p style="color: black; font-size: 14px !important">
 		Below are the transaction details of your electronic purchase:
