@@ -315,7 +315,7 @@
 							<div class="pt-1">
 								<div class="progress">
 			  						<div class="progress-bar" role="progressbar" style="width: 38%" aria-valuenow="35" aria-valuemin="0" aria-valuemax	="100">
-			  								$2,100,000
+			  								<!-- $2,100,000 -->
 			  						</div>
 								</div>
 							</div>
