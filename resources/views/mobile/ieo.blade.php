@@ -296,7 +296,7 @@
 							</div>
 							<div class="col-12 mt-3 d-flex justify-content-center align-items-center" style="border: 1px solid; border-radius: 25px;background-color: #3a3a77;  border-right: 0px;">
 								<div>
-									<p class="text-white m-3">Available soon in platforms</p>
+									<p class="text-white m-3">Soon On Leading IEO Launchpads</p>
 								</div>
 							</div>
 						</div>
