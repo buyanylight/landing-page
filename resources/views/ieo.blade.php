@@ -405,7 +405,7 @@
 									<div class="row" style="font-size: 12px;">
 										<div class="col-12">1<sup>st</sup> Nov 2019</div>
 										<div class="col-12">to</div>
-										<div class="col-12">31<sup>st</sup> Jan 2020</div>
+										<div class="col-12">06<sup>th</sup> April 2020</div>
 									</div>
 								</div>
 							</div>
@@ -419,9 +419,9 @@
 								</div>
 								<div class="card-text p-2 h-100 d-flex align-items-center justify-content-center">
 									<div class="row" style="font-size: 12px;">
-										<div class="col-12">1<sup>st</sup> Feb 2020</div>
+										<div class="col-12">07<sup>th</sup> April 2020</div>
 										<div class="col-12">to</div>
-										<div class="col-12">29<sup>th</sup> Feb 2020</div>
+										<div class="col-12">30<sup>th</sup> April 2020</div>
 									</div>													
 								</div>
 							</div>
@@ -2287,12 +2287,12 @@ $newsdatas = [];
 										<small><i class=" header-text fas fa-dollar-sign"></i> 0.20</small>
 									</div>
 									<div class="card card-body mt-3" style="border: 1px solid #5555A4; border-radius: 10px;">
-										<small><i class="far fa-calendar-alt"></i> 1st November 2019 - 31st January 2020</small>
+										<small><i class="far fa-calendar-alt"></i> 1st November 2019 - 6th April 2020</small>
 										<b>PRE-IEO Sale</b>
 										<small><i class=" header-text fas fa-dollar-sign"></i> 0.25</small>
 									</div>	
 									<div class="card card-body mt-3" style="border: 1px solid #5555A4; border-radius: 10px;">
-										<small><i class="far fa-calendar-alt"></i> 1st Feburary 2020 - 29th Feburary 2020</small>
+										<small><i class="far fa-calendar-alt"></i> 7th April 2020 - 30th April 2020</small>
 										<b>IEO Sale</b>
 										<small><i class=" header-text fas fa-dollar-sign"></i> 0.30303</small>
 									</div>	
