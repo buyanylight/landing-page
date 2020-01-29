@@ -454,7 +454,7 @@
 
 		function makeTimerPublic() {
 
-			var endTime = new Date("01 February 2020 0:00:00 GMT+04:00");
+			var endTime = new Date("07 April 2020 0:00:00 GMT+04:00");
 			endTime = (Date.parse(endTime) / 1000);
 
 			var now = new Date();
@@ -467,14 +467,15 @@
 			var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
 			var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
   
+			if (days < "10") { days = "0" + days; }
 			if (hours < "10") { hours = "0" + hours; }
 			if (minutes < "10") { minutes = "0" + minutes; }
 			if (seconds < "10") { seconds = "0" + seconds; }
 
-			$("#days1").html("<span style='font-size: 14px;'>" + days +" </span>" + "<br><span>Days</span>");
-			$("#hours1").html("<span style='font-size: 14px;'>" + hours +" </span>" + "<br><span>Hours</span>");
-			$("#minutes1").html("<span style='font-size: 14px;'>" + minutes +" </span>" + "<br><span>Minutes</span>");
-			$("#seconds1").html("<span style='font-size: 14px;'>" + seconds +" </span>" + "<br><span>Seconds</span>");       
+			$("#days1").html("<span style='font-size:10px;'>Days</span><br><span style='font-size: 24px;'>" + days +" </span>");
+			$("#hours1").html("<span style='font-size:10px;'>Hours</span><br><span style='font-size: 24px;'>" + hours +" </span>");
+			$("#minutes1").html("<span style='font-size:10px;'>Minutes</span> <br><span style='font-size: 24px;'>" + minutes +" </span>");
+			$("#seconds1").html("<span style='font-size:10px;'>Seconds</span><br><span style='font-size: 24px;'>" + seconds +" </span>");       
 
 		}
 
