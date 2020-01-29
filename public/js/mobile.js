@@ -104,7 +104,7 @@ eval("// require('./bootstrap');\n// $(window).scroll(function(){\n//     $('nav
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\js\mobile.js */"./resources/js/mobile.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\js\mobile.js */"./resources/js/mobile.js");
 
 
 /***/ })

@@ -104,7 +104,7 @@ eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! G:\xampp-php7.2\htdocs\BAL-Landing_Page\resources\js\progress-bar.js */"./resources/js/progress-bar.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\BAL_Landing\resources\js\progress-bar.js */"./resources/js/progress-bar.js");
 
 
 /***/ })

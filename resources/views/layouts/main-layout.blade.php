@@ -99,6 +99,7 @@
 		<link rel="stylesheet" href="{{ Util::assetUrl('css/privacy.css') }}">
 		<link rel="stylesheet" href="{{ Util::assetUrl('css/slick.css') }}">
 		<link rel="stylesheet" href="{{ Util::assetUrl('css/slick-theme.css') }}">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	
 		@yield('head-css')
@@ -236,8 +237,6 @@
 		</div>
 
 
-
-
 		@include('includes.navbar')
 		@yield('content')
 
@@ -247,6 +246,10 @@
 		<script src="{{ Util::assetUrl('js/validator.min.js') }}" charset="utf-8"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		  AOS.init();
+		</script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	 	<script src="https://www.google.com/recaptcha/api.js?render={{ env('CAPTCHA_KEY') }}"></script>
  
@@ -288,17 +291,7 @@
 			infinite: true,
 		});
 
-		$('.timeline').slick({
-		    centerMode: false,
-		    adaptiveHeight: true,
-		    centerPadding: '0px',
-		    slidesToShow: 4,
-		    initialSlide:0,
-		    infinite: false,
-		    appendArrows: $('.arrows'),
-		    prevArrow: '<button type="button" class="slick-prev d-inline-block">Previous</button>',
-		    nextArrow: '<button type="button" class="slick-next d-inline-block">Next</button>',
-		});
+
 
 		// $('.timeline').slick({
 		// 	dots: true,
@@ -555,6 +548,7 @@
 		var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
 		var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
 
+		if (days < "10") { days = "0" + days; }
 		if (hours < "10") { hours = "0" + hours; }
 		if (minutes < "10") { minutes = "0" + minutes; }
 		if (seconds < "10") { seconds = "0" + seconds; }
