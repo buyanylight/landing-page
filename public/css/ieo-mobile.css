@@ -11358,6 +11358,7 @@ nav .dropdown-toggle::after {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   font-size: 15px;
+  color: white;
 }
 
 .section7 .bal-profit {
