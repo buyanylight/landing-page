@@ -283,7 +283,7 @@
 							</div>
 						</div>
 						<div class="pt-3">
-							<a href="" class="btn btn-light rounded" style="color:#3D75F1; font-size:11.892px">
+							<a href="#section-bal-token" class="btn btn-light rounded" style="color:#3D75F1; font-size:11.892px">
 								<b>BUY TOKENS NOW!</b>	
 							</a>
 							<p class="m-0 mt-2 ">
@@ -335,7 +335,7 @@
 									</a>
 								</div>
 								<div class="col-12 text-left">
-									<a href="" class="btn btn-outline-light">Get 17.5% Discount Now!</a>
+									<a href="#section-bal-token" class="btn btn-outline-light">Get 17.5% Discount Now!</a>
 								</div>
 							</div>
 						</div>
@@ -1440,7 +1440,7 @@ $newsdatas = [];
 								{{ $tm['name'] }}
 							</b>
 						</p>
-						<p class="text-white pt-1 mb-1">
+						<p class="text-dark pt-1 mb-1">
 							{{ $tm['title'] }}							
 						</p>
 						<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button>
