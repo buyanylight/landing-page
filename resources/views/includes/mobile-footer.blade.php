@@ -325,10 +325,12 @@
             			</a>
             		</div>
 				</div>
-				<div class="row">
-					<p style="font-size: 10px;">
-						RISK WARNING: Trading and investing in cryptocurrencies involves substantial risk of loss and is not suitable for all types of investors. Please make sure you are investing mindfully after understanding the nature, complexity and risks inherent in the trading of cryptocurrency. You should not purchase cryptocurrency unless you understand the extent of your exposure to potential loss. Cryptocurrencies price can be affected by many factors, including, but not limited to, national and international economic, financial, regulatory, political, terrorist, military, and other events. Extreme changes in price may occur at any time, resulting in a potential loss of value of your entire investment in cryptocurrencies, complete or partial loss of purchasing power, and difficulty or a complete inability to sell or exchange your currency. Please make sure you are not risking funds you can not afford to lose. In no event shall Billboard.ly will be liable to any loss or damage of any kind incurred as a result of the use of this site or the services found at this site. Licence number 5539. DOTCOM VENTURES FZE, UAQ Free Trade Zone, United Arab Emirates. Copyright © 2020 Buyanylight.com. All rights Reserved.
-					</p>
+				<div class="row mt-3">
+					<div class="col-12">
+						<p class="text-left" style="font-size: 10px;">
+							RISK WARNING: Trading and investing in cryptocurrencies involves substantial risk of loss and is not suitable for all types of investors. Please make sure you are investing mindfully after understanding the nature, complexity and risks inherent in the trading of cryptocurrency. You should not purchase cryptocurrency unless you understand the extent of your exposure to potential loss. Cryptocurrencies price can be affected by many factors, including, but not limited to, national and international economic, financial, regulatory, political, terrorist, military, and other events. Extreme changes in price may occur at any time, resulting in a potential loss of value of your entire investment in cryptocurrencies, complete or partial loss of purchasing power, and difficulty or a complete inability to sell or exchange your currency. Please make sure you are not risking funds you can not afford to lose. In no event shall Billboard.ly will be liable to any loss or damage of any kind incurred as a result of the use of this site or the services found at this site. Licence number 5539. DOTCOM VENTURES FZE, UAQ Free Trade Zone, United Arab Emirates. Copyright © 2020 Buyanylight.com. All rights Reserved.
+						</p>
+					</div>
 				</div>
             </div>
        	</div>
