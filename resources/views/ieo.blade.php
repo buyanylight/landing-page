@@ -2146,7 +2146,7 @@ $newsdatas = [];
 					$partners[] = [ 'style'=>"", 'title'=>"Webotic.ae", 'link'=>"http://webotic.ae", 'src'=>"images/ieo/marketing-partners/webotic.png", ];
 					$partners[] = [ 'style'=>"", 'title'=>"Airdrop Alert", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/marketing-partners/airdropalert.png", ];
 					$partners[] = [ 'style'=>"", 'title'=>"Vitro Services", 'link'=>"https://vitor-services.company", 'src'=>"images/ieo/marketing-partners/vitor-services2.png", ];
-					$partners[] = [ 'style'=>"", 'title'=>"Consulate General of the Federal Republic of Germany Dubai", 'link'=>"https://vitor-services.company", 'src'=>"Consulate General of the Federal Republic of Germany Dubai", ];
+					$partners[] = [ 'style'=>"", 'title'=>"Consulate General of the Federal Republic of Germany Dubai", 'link'=>"https://uae.diplo.de/ae-en/vertretungen/generalkonsulat1", 'src'=>"Consulate General of the Federal Republic of Germany Dubai", ];
 				?>
 				<div class="col-12 text-center">
 					<h2 class=" ml-3 mt-0"> 
