@@ -1104,7 +1104,7 @@ $newsdatas = [];
 				<img src="{{ Util::assetUrl('images/ieo/bal-token.png') }}" width="75%">
 			</div>
 			<div class="row pt-3">
-				<div class="col-5">
+				<div class="col-6">
 					<div>
 						<b>Token name:</b>
 					</div>
@@ -1133,7 +1133,7 @@ $newsdatas = [];
 						<b>Private Round price:</b>
 					</div>
 				</div>
-				<div class="col-7">
+				<div class="col-6">
 					<div>
 						BAL Token
 					</div>
@@ -1440,14 +1440,14 @@ $newsdatas = [];
 								{{ $tm['name'] }}
 							</b>
 						</p>
-						<p class="text-dark pt-1 mb-1">
+						<p class="text-white pt-1 mb-1">
 							{{ $tm['title'] }}							
 						</p>
 						<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button>
 						<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModalLabel" aria-hidden="true">
   							<div class="modal-dialog" role="document">
     							<div class="modal-content">
-      								<div class="modal-body text-left">
+      								<div class="modal-body text-left text-dark">
 	        							<button type="button" class="close" data-dismiss="modal" 	aria-label="Close">	
 	        								<span aria-hidden="true">&times;</span>
 	        							</button>
@@ -1513,7 +1513,7 @@ $newsdatas = [];
 							<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModalLabel" aria-hidden="true">
   								<div class="modal-dialog" role="document">
     								<div class="modal-content">
-      									<div class="modal-body text-left">
+      									<div class="modal-body text-left text-dark">
 	        								<button type="button" class="close" data-dismiss="modal" 	aria-label="Close">	
 	        									<span aria-hidden="true">&times;</span>
 	     		   							</button>
@@ -1598,7 +1598,7 @@ $newsdatas = [];
 					$partners[] = [ 'style'=>"", 'title'=>"Webotic.ae", 'link'=>"http://webotic.ae", 'src'=>"images/ieo/marketing-partners/webotic.png", ];
 					$partners[] = [ 'style'=>"", 'title'=>"Airdrop Alert", 'link'=>"https://airdropalert.com/buyanylight-airdrop", 'src'=>"images/ieo/marketing-partners/airdropalert.png", ];
 					$partners[] = [ 'style'=>"max-width: 180px;", 'title'=>"Vitro Services", 'link'=>"https://vitor-services.company", 'src'=>"images/ieo/marketing-partners/vitor-services2.png", ];
-					$partners[] = [ 'style'=>"", 'title'=>"Consulate General of the Federal Republic of Germany Dubai", 'link'=>"https://vitor-services.company", 'src'=>"Consulate General of the Federal Republic of Germany Dubai", ];
+					$partners[] = [ 'style'=>"", 'title'=>"Consulate General of the Federal Republic of Germany Dubai", 'link'=>"https://uae.diplo.de/ae-en/vertretungen/generalkonsulat1", 'src'=>"Consulate General of the Federal Republic of Germany Dubai", ];
 				?>
 				<div class="row pt-4 justify-content-center partners sponsored_fair">
 					<div class="col-12 mt-3 text-center">					
