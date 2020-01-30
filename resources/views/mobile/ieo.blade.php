@@ -1440,14 +1440,14 @@ $newsdatas = [];
 								{{ $tm['name'] }}
 							</b>
 						</p>
-						<p class="text-dark pt-1 mb-1">
+						<p class="text-white pt-1 mb-1">
 							{{ $tm['title'] }}							
 						</p>
 						<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button>
 						<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModalLabel" aria-hidden="true">
   							<div class="modal-dialog" role="document">
     							<div class="modal-content">
-      								<div class="modal-body text-left">
+      								<div class="modal-body text-left text-dark">
 	        							<button type="button" class="close" data-dismiss="modal" 	aria-label="Close">	
 	        								<span aria-hidden="true">&times;</span>
 	        							</button>
@@ -1513,7 +1513,7 @@ $newsdatas = [];
 							<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModalLabel" aria-hidden="true">
   								<div class="modal-dialog" role="document">
     								<div class="modal-content">
-      									<div class="modal-body text-left">
+      									<div class="modal-body text-left text-dark">
 	        								<button type="button" class="close" data-dismiss="modal" 	aria-label="Close">	
 	        									<span aria-hidden="true">&times;</span>
 	     		   							</button>
