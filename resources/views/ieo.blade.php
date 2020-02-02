@@ -1783,7 +1783,7 @@ $newsdatas = [];
 			<div class="container">
 				<h3 class="text-center">
 					<strong>
-						 <div class="team-text">Meet Our Team</div> <div class="advisor-text"> Meet Our Advisors</div>
+						Meet Our <span class="team-text">Team</span> <span class="advisor-text">Advisors</span>
 					</strong> 
 				</h3>
 				<ul class="nav nav-pills mt-5 mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
