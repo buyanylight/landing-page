@@ -1379,7 +1379,7 @@ $newsdatas = [];
 						'name' => '2020',
 						'icon' => 'fas fa-link',
 						'items' => [
-							'IEO Sale and listing on exchanges.',
+							'IEO sale and listing on exchanges.',
 							// 'Blockchain development team expansion',
 							'Blockchain based platform development initiated.',
 							'Smart contracts development, wallet development with cross-chain.',
