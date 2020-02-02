@@ -7,7 +7,7 @@
                         <div>
                             <img src="{{ Util::assetUrl('images/logo-white.png')}}" alt="" width="50%">
                         </div>
-                        <p class="mt-3" style="font-size: 13px;">
+                        <p class="mt-4" style="font-size: 13px;">
                             An innovative platform that revolutionizes the procurement process of LED lights by harnessing the power of blockchain, AI, Big Data and Smart Contracts.
                         </p>
                         <!-- <h5 class="text-white font-weight-bold">Connect with our newsletter</h5>
@@ -20,7 +20,7 @@
                                 </button>
                             </div>
                         </form> -->
-                        <div class="row social-links mt-3">
+                        <div class="row social-links mt-4">
                             <div class="col-sm-1 one-link">
                                 <a href="http://www.youtube.com/c/BuyAnyLight" class="text-grey" target="_blank"><i class="fab fa-youtube"></i></a>
                             </div>
@@ -54,8 +54,7 @@
                         </div>
                     </div>
                     <div class="payments mt-4">
-                        <h5 class="text-white">Accepted Payments</h5>
-                        <div class="row mt-3">
+                        <div class="row">
                             <div class="col">
                                 <img src=" {{ Util::assetUrl('images/payment.png') }}" width="69%">
                             </div>
@@ -67,7 +66,7 @@
                             <img src="{{ Util::assetUrl('images/dv_white.png') }}" width="14%">
                         </a>
                     </div>
-                    <!-- <div class="payments mt-3">
+                    <!-- <div class="payments ">
                         <h5 class="text-white">Visit Us</h5>
                         <div class="row mt-3">
                             <div class="col">
@@ -143,7 +142,7 @@
                      </ul>
                 </div>
                 <div class="col-md-12 mt-5">
-                    <p style="font-size: 10px;;">
+                    <p style="font-size: 10px;">
                         RISK WARNING: Trading and investing in cryptocurrencies involves substantial risk of loss and is not suitable for all types of investors. Please make sure you are investing mindfully after understanding the nature, complexity and risks inherent in the trading of cryptocurrency. You should not purchase cryptocurrency unless you understand the extent of your exposure to potential loss. Cryptocurrencies price can be affected by many factors, including, but not limited to, national and international economic, financial, regulatory, political, terrorist, military, and other events. Extreme changes in price may occur at any time, resulting in a potential loss of value of your entire investment in cryptocurrencies, complete or partial loss of purchasing power, and difficulty or a complete inability to sell or exchange your currency. Please make sure you are not risking funds you can not afford to lose. In no event shall Billboard.ly will be liable to any loss or damage of any kind incurred as a result of the use of this site or the services found at this site. Licence number 5539. DOTCOM VENTURES FZE, UAQ Free Trade Zone, United Arab Emirates. Copyright © 2020 Buyanylight.com. All rights Reserved.
                     </p>
                 </div>
