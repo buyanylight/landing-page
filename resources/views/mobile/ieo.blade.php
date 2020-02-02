@@ -187,44 +187,58 @@
 			<div class="col-12">
 				<h1>
 					<b>
-						LED Sourcing <br>Revolutionized! 
+						Light Sourcing, <br>Revolutionized! 
 					</b>
 				</h1>
 				<div>
-					Do you need led products for your newly constructed villa, your building, tower, or real-estate project?
+					Do you need lighting products for your villa, building, tower, or real-estate project? <br>
+					Do you worry about paying sky-high prices and have trust issues with suppliers? <br>
+					Do you hate delayed deliveries and want secured payments? 
 				</div>
 			</div>
 			<div class="col-12 text-center pt-4">
-				<a href="#meet-bal" 
-					target="_blank" class="btn btn-BAL mt-3 ">
-	            	<i class="fas fa-link"></i>
-	            	&nbsp;
-					Meet BAL								
-				</a>
-				<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" 
-					target="_blank" class="btn btn-BAL mt-3">
-	            	<i class="far fa-file-pdf"></i>
-	            	&nbsp;
-					Yellow Paper								
-				</a>
-				<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" 
-					target="_blank" class="btn btn-BAL mt-3">
-	            	<i class="far fa-file-pdf"></i>
-	            	&nbsp;
-					White Paper								
-				</a>
-				<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" 
-					target="_blank" class="btn btn-BAL mt-2">
-	            	<i class="far fa-file-pdf"></i>
-	            	&nbsp;
-					One Pager								
-				</a>
-				<a href="{{ Util::assetUrl('BuyAnyLight_Pitch_Deck.pdf') }}" 
-					target="_blank" class="btn btn-BAL mt-2">
-	            	<i class="far fa-file-pdf"></i>
-	            	&nbsp;
-					Pitch Deck								
-				</a>
+				<div class="row">
+					<div class="col-12">
+						<a href="#meet-bal" 
+							class="btn btn-BAL w-100 mt-3 ">
+							<i class="fas fa-link"></i>
+							&nbsp;
+							Meet BuyAnyLight								
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" 
+							target="_blank" class="btn btn-BAL w-100 mt-2">
+							<i class="far fa-file-pdf"></i>
+							&nbsp;
+							White Paper								
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" 
+							target="_blank" class="btn btn-BAL w-100 mt-2">
+							<i class="far fa-file-pdf"></i>
+							&nbsp;
+							Yellow Paper								
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" 
+							target="_blank" class="btn btn-BAL w-100 mt-2">
+							<i class="far fa-file-pdf"></i>
+							&nbsp;
+							One Pager								
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="{{ Util::assetUrl('BuyAnyLight_Pitch_Deck.pdf') }}" 
+							target="_blank" class="btn btn-BAL w-100 mt-2">
+							<i class="far fa-file-pdf"></i>
+							&nbsp;
+							Pitch Deck								
+						</a>
+					</div>
+				</div>
 			</div>
 			<div class="pt-4">
 				<img src="{{ Util::assetUrl('images/ieo/ieo-bg(1).png') }}" alt="" width="100%">
@@ -420,7 +434,7 @@
 			<div class="col-12 d-flex justify-content-center flex-column">
 				<div class="pt-3">
 					<p class="">
-						BuyAnyLight help you source quality LED products for all of your lighting needs. Using blockchain, AI, Big Data and Smart Contracts, it presents your inquiries before the right manufacturers and ensure that you get the products you had ordered. 
+						BuyAnyLight helps you source quality LED products for all of your lighting needs. Using blockchain, AI, big data and smart contracts, it gets your inquiries before the right manufacturers and ensures that you receive the products you ordered.
 					</p>
 				</div>
 				<div class="all-videos mt-4">
@@ -478,7 +492,7 @@
 								SEAMLESS ORDERS
 							</h5>
 							<div class="benefit-text">
-								Submit your lighting requirements as simple as sharing an image and receive the best quotations. 
+								Submit your lighting requirements as easy as sharing an image, then receive the best quotations. 
 							</div>
 						</div>
 					</div>
@@ -516,7 +530,7 @@
 								TRACEABLE LOGISTICS
 							</h5>
 							<div class="benefit-text">
-								All your order details, right from the manufacturer to the shipper and then to you are added to a traceable blockchain network. 
+								All your order details from the manufacturer to the shipper and then to you are added to a traceable blockchain network. 
 							</div>
 						</div>
 					</div>
@@ -535,7 +549,7 @@
 								EXPERT CONSULTATION
 							</h5>
 							<div class="benefit-text">
-								Get free of cost consultation from experts who are available for your support 24/7. 
+								Get free consultation from experts, who support you 24/7. 
 							</div>
 						</div>
 					</div>
@@ -554,7 +568,7 @@
 								NOMINAL PRICES
 							</h5>
 							<div class="benefit-text">
-								Compared to big brands, you get products of similar quality and design, for up to 75% lower price.
+								Choose from products of similar quality and design to the big brands, for up to 90% lower prices.
 							</div>
 						</div>
 					</div>
@@ -573,7 +587,7 @@
 								NO MORE MIDDLEMAN
 							</h5>
 							<div class="benefit-text">
-								Avoid hectic order processing and the costs when you buy from retailers. Get direct access to manufacturers. 
+								Avoid hectic order processing and higher costs when you buy from retailers. Get direct access to manufacturers. 
 							</div>
 						</div>
 					</div>
@@ -827,7 +841,7 @@ $newsdatas = [];
 				<img class="video" src="{{ Util::assetUrl('/images/ieo/meetbal.png') }}" width="50%">
 			</div>
 			<p class="pt-3 text-white">
-				We envision to revolutionize the entire sourcing process by harnessing the power of blockchain, AI, Big Data and Smart Contracts. Starting from the LED Lighting Industry, we aim to expand BAL Network into other industries including but not limited to Construction, Pharma, Food and Precious Metal Industry. 
+				We want to revolutionize the entire sourcing process by harnessing the power of blockchain, AI, big data, and smart contracts. Starting from the LED lighting industry, we aim to expand the BAL Network into other industries, among them the construction and precious metal industries. 
 			</p>
 		</div>
 		<div class=" text-justify pt-3">
@@ -841,7 +855,7 @@ $newsdatas = [];
 				<img class="video" src="{{ Util::assetUrl('/images/ieo/mission.png') }}" width="50%">
 			</div>
 			<p class="pt-3 text-white">
-				Our mission is to become the leading platform of choice for individuals and businesses and manufacturers. Principled, honest and focused, we leverage the world’s best suppliers and deliver the most significant value LED products, the most exceptional service and advice, and first-rate customer satisfaction – every time.
+				Our mission is to become the platform of choice for individuals, businesses, and manufacturers. Principled, honest, and focused, we leverage the world’s best suppliers and deliver the most significant value LED products, with the most exceptional service and advice, and first-rate customer satisfaction – every time.
 			</p>
 		</div>
 	</div>
@@ -871,7 +885,7 @@ $newsdatas = [];
 			<h5 class="text-center pt-3"><b>Security</b></h5>
 			<div class="text-center pt-2">
 				<p>
-					All transactions in BAL are secured by Smart Contracts.
+					All transactions in BAL are secured by smart contracts.
 				</p>
 			</div>
 		</div>
@@ -882,7 +896,7 @@ $newsdatas = [];
 			<h5 class="text-center pt-3"><b>Utility</b></h5>
 			<div class="text-center pt-2">
 				<p>
-					BAL Token is the native token within the BAL Ecosystem.
+					BAL token is the native token within the BAL ecosystem.
 				</p>
 			</div>
 		</div>
@@ -904,7 +918,7 @@ $newsdatas = [];
 			<h5 class="text-center pt-3"><b>Nominal Transactional Fee</b></h5>
 			<div class="text-center pt-2">
 				<p>
-					Transfer up to a million dollar in a single digit fee.
+					Transfer up to a million dollars for only a single digit fee.
 				</p>
 			</div>
 		</div>
@@ -934,13 +948,7 @@ $newsdatas = [];
 
 		<div>
 			<p class="text-white text-justify">
-				The BAL Platform has an established business with a ready platform. 
-				To expand our operations across the globe and to decentralize our existing 
-				business model by implementing this on blockchain, 
-				we have devised a concrete plan and an ambitious roadmap, 
-				with the right team and expertise, all set to expand globally. 
-				Our ability to rapidly deploy a solution once the technology has been 
-				developed makes the realization of our financial business case more tangible.
+				The BAL Platform is an established business with a ready platform. To expand our operations and decentralize our business model through blockchain we have devised a solid plan and an ambitious roadmap, with an expert team, and we are positioned to expand globally. Our ability to rapidly deploy a solution once the technology has been developed makes our financial goal more achievable.
 			</p>
 		</div>
 		
@@ -956,7 +964,7 @@ $newsdatas = [];
 						'icon' => 'fas fa-archway',
 						'style' => '',
 						'items' => [
-							'Foundation Almani Lighting Gmbh.',
+							'Foundation of Almani Lighting Gmbh.',
 						],
 					];
 					$timeline[] = [
@@ -973,7 +981,7 @@ $newsdatas = [];
 						'icon' => 'fas fa-users',
 						'style' => '',
 						'items' => [
-							'BAL Idea Inception, Research and Feasibility and Development team recruitment.',
+							'BAL Idea inception. Research and feasibility and development team recruitment.',
 						],
 					];
 					$timeline[] = [
@@ -981,8 +989,7 @@ $newsdatas = [];
 						'icon' => 'fas fa-warehouse',
 						'style' => '',
 						'items' => [
-							'51% Ownership Acquisition of Almani Lighting LLC by',
-							'Asas Holding, Warehouse expansion,',
+							'51% Ownership Acquisition of Almani Lighting LLC by Asas Holding, Warehouse expansion.',
 							'BAL Light Finder development and testing.',
 						],
 					];
@@ -991,8 +998,8 @@ $newsdatas = [];
 						'icon' => 'fas fa-sitemap',
 						'style' => '',
 						'items' => [
-							'Team Expansion, Product range extended to 600+',
-							'Fiat Partner Collaboration, Major Sheikh Palace Contracts in UAE.',
+							'Team Expansion, Product range extended to 600+.',
+							'Fiat Partner Collaboration, major Sheikh palace contracts in UAE.',
 						],
 					];
 					$timeline[] = [
@@ -1000,11 +1007,11 @@ $newsdatas = [];
 						'icon' => 'fas fa-at',
 						'style' => '',
 						'items' => [
-							'BAL Beta Version release,',
-							'Documentation and drafting,',
-							'Website Development and launch,',
-							'Seed round finished and Public Token sale',
-							'Marketing Kickstart.',
+							'BAL Beta version release,',
+							'documentation and drafting,',
+							'website development and launch,',
+							'seed round finished and public token sale.',
+							'Marketing kickstart.',
 						],
 					];
 					$timeline[] = [
@@ -1013,13 +1020,13 @@ $newsdatas = [];
 						'style' => '',
 						'items' => [
 							'IEO Sale and Listing on exchanges.',
-							'Blockchain development team expansion.',
-							'Blockchain based platform development Initiated.',
-							'Smart Contracts Development, Wallet development with cross-chain.',
+							// 'Blockchain development team expansion',
+							'Blockchain based platform development initiated.',
+							'Smart contracts development, wallet development with cross-chain.',
 							'Asset exchange.',
 							'Traceable Logistic partnerships and development initiated.',
-						],
-					];
+							]
+						];
 					$timeline[] = [
 						'name' => '2021',
 						'icon' => 'fas fa-mobile',
@@ -1046,8 +1053,8 @@ $newsdatas = [];
 						'style' => '',
 						'items' => [
 							'Expansion into construction industry.',
-							'BAL Tokenization Platform Development.',
-							'Smart Contract Notary Service Launch.',
+							'BAL tokenization platform development.',
+							'Smart contract notary service launch.',
 						],
 					];
 
@@ -1176,7 +1183,7 @@ $newsdatas = [];
 		</h3>
 		<div class="text-justify pt-3">
 			<p class="text-justify">
-				Our aim is to make BAL Platform the leading marketplace for sourcing light products across the globe, and we have devised a plan to make our dream a reality. The proceeds from the token sale will fund the decentralized platform launch, continued platform development, user acquisition, and marketing:
+				Our aim is to make BAL Platform the leading marketplace for sourcing light products around the world, and we have devised a plan to make our dream a reality. The proceeds from the token sale will fund the decentralized platform launch, continued platform development, user acquisition, and marketing:
 			</p>
 			<div class="pt-3">
 				<div>
