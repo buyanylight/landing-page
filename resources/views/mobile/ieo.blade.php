@@ -941,14 +941,14 @@ $newsdatas = [];
 	<div class="container pt-5 pb-5">
 		<h3 class="pb-3 text-center">
 			<b>
-				<span class="header-text">BAL Road</span>
-				<span class="text-white">map</span>
+				<span class="header-text">BAL</span>
+				<span class="text-white">Roadmap</span>
 			</b>
 		</h3>
 
 		<div>
 			<p class="text-white text-justify">
-				The BAL Platform is an established business with a ready platform. To expand our operations and decentralize our business model through blockchain we have devised a solid plan and an ambitious roadmap, with an expert team, and we are positioned to expand globally. Our ability to rapidly deploy a solution once the technology has been developed makes our financial goal more achievable.
+				The BAL platform is an established business with a ready platform. To expand our operations and decentralize our business model through blockchain we have devised a solid plan and an ambitious roadmap, with an expert team, and we are positioned to expand globally. Our ability to rapidly deploy a solution once the technology has been developed makes our financial goal more achievable.
 			</p>
 		</div>
 		
@@ -989,7 +989,7 @@ $newsdatas = [];
 						'icon' => 'fas fa-warehouse',
 						'style' => '',
 						'items' => [
-							'51% Ownership Acquisition of Almani Lighting LLC by Asas Holding, Warehouse expansion.',
+							'51% Ownership acquisition of Almani Lighting LLC by ASAS Holding, warehouse expansion.',
 							'BAL Light Finder development and testing.',
 						],
 					];
@@ -998,8 +998,8 @@ $newsdatas = [];
 						'icon' => 'fas fa-sitemap',
 						'style' => '',
 						'items' => [
-							'Team Expansion, Product range extended to 600+.',
-							'Fiat Partner Collaboration, major Sheikh palace contracts in UAE.',
+							'Team expansion, product range extended to 600+.',
+							'Fiat partner collaboration, major Sheikh palace contracts in UAE.',
 						],
 					];
 					$timeline[] = [
@@ -1009,7 +1009,7 @@ $newsdatas = [];
 						'items' => [
 							'BAL Beta version release,',
 							'documentation and drafting,',
-							'website development and launch,',
+							'Website development and launch,',
 							'seed round finished and public token sale.',
 							'Marketing kickstart.',
 						],
@@ -1024,7 +1024,7 @@ $newsdatas = [];
 							'Blockchain based platform development initiated.',
 							'Smart contracts development, wallet development with cross-chain.',
 							'Asset exchange.',
-							'Traceable Logistic partnerships and development initiated.',
+							'Traceable logistic partnerships and development initiated.',
 							]
 						];
 					$timeline[] = [
@@ -1043,8 +1043,8 @@ $newsdatas = [];
 						'style' => '',
 						'items' => [
 							'On-chain logistic fully implemented.',
-							'AI-Based Smart Contracts Implementation.',
-							'BAL Custodial Platform development.',
+							'AI-based smart contracts implementation.',
+							'BAL custodial platform development.',
 						],
 					];
 					$timeline[] = [
