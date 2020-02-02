@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div class="text-left mt-4">
-                        Brought to you by:&nbsp; 
+                       <span class="text-white">Brought to you by:&nbsp;</span>  
                         <a href="https://dotcomv.com" target="_blank">
                             <img src="{{ Util::assetUrl('images/dv_white.png') }}" width="14%">
                         </a>
