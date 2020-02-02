@@ -56,7 +56,7 @@
                     <div class="payments mt-4">
                         <div class="row">
                             <div class="col">
-                                <img src=" {{ Util::assetUrl('images/payment.png') }}" width="69%">
+                                <img src=" {{ Util::assetUrl('images/payment.png') }}" width="59.5%">
                             </div>
                         </div>
                     </div>
