@@ -1068,7 +1068,7 @@ $newsdatas = [];
 	<div class="container h-100 d-flex justify-content-center align-items-center flex-column">
 		<div class="pt-1 text-center">
 			<h3>
-				<b>Do you want to know more?</b>
+				<b>Want to know more?</b>
 			</h3>
 			<p class="pt-3">
 				Download to know more about us, <br>our project, and how can you participate in our token sale.
@@ -1222,7 +1222,7 @@ $newsdatas = [];
 								<b>Utility</b>
 							</h5>
 							<p class="pt-1">
-								BAL token is the native token within the BAL ecosystem
+								BAL token is the native token within the BAL ecosystem.
 							</p>
 						</div>
 					</div>
@@ -1302,7 +1302,7 @@ $newsdatas = [];
 
 			<div>
 				<p class="">
-					The BAL Platform is an established business with a ready platform. To expand our operations and decentralize our business model through blockchain we have devised a solid plan and an ambitious roadmap, with the most expert team, and we are positioned to expand globally. Our ability to rapidly deploy a solution once the technology has been developed makes our financial goal more achievable.
+					The BAL platform is an established business with a ready platform. To expand our operations and decentralize our business model through blockchain we have devised a solid plan and an ambitious roadmap, with an expert team, and we are positioned to expand globally. Our ability to rapidly deploy a solution once the technology has been developed makes our financial goal more achievable.
 				</p>
 			</div>
 
@@ -1338,7 +1338,7 @@ $newsdatas = [];
 						'name' => '2017',
 						'icon' => 'fas fa-warehouse',
 						'items' => [
-							'51% Ownership Acquisition of Almani Lighting LLC by Asas Holding, Warehouse expansion.',
+							'51% Ownership acquisition of Almani Lighting LLC by ASAS Holding, warehouse expansion.',
 							'BAL Light Finder development and testing.',
 						],
 					];
@@ -1352,8 +1352,8 @@ $newsdatas = [];
 						'name' => '2018',
 						'icon' => 'fas fa-sitemap',
 						'items' => [
-							'Team Expansion, Product range extended to 600+.',
-							'Fiat Partner Collaboration, major Sheikh palace contracts in UAE.',
+							'Team expansion, product range extended to 600+.',
+							'Fiat partner collaboration, major Sheikh palace contracts in UAE.',
 						],
 					];
 					$timeline[] = [
@@ -1362,7 +1362,7 @@ $newsdatas = [];
 						'items' => [
 							'BAL Beta version release,',
 							'documentation and drafting,',
-							'Website Development and launch,',
+							'Website development and launch,',
 							'seed round finished and public token sale.',
 							'Marketing kickstart.',
 						],
@@ -1376,7 +1376,7 @@ $newsdatas = [];
 							'Blockchain based platform development initiated.',
 							'Smart contracts development, wallet development with cross-chain.',
 							'Asset exchange.',
-							'Traceable Logistic partnerships and development initiated.',
+							'Traceable logistic partnerships and development initiated.',
 						],
 					];
 					$timelines[] = $timeline;
@@ -1398,8 +1398,8 @@ $newsdatas = [];
 						'icon' => 'fas fa-brain',
 						'items' => [
 							'On-chain logistic fully implemented.',
-							'AI-Based Smart Contracts Implementation.',
-							'BAL Custodial Platform development.',
+							'AI-based smart contracts implementation.',
+							'BAL custodial platform development.',
 						],
 					];
 					$timeline[] = [
@@ -1722,10 +1722,10 @@ $newsdatas = [];
 	<div class="container h-100 d-flex justify-content-center align-items-center flex-column">
 		<div class="pt-1 text-center">
 			<h3>
-				<b>Do you want to know more?</b>
+				<b>Want to know more?</b>
 			</h3>
 			<p class="pt-3">
-				Download to know more about us, <br>our project, and how can you participate in our token sale.
+				Download to learn more about us, <br>our project, and how you can participate in our token sale.
 			</p>
 			<div class="buttons pt-3 ">
 				<div class="row w-100">
