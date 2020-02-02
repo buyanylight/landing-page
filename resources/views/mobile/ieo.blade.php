@@ -462,7 +462,7 @@
 			<b>Benefits of using BuyAnyLight</b>	
 		</h2>
 		<p class="text-center pt-2">
-			Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+			BuyAnyLight revolutionizes LED Light sourcing by deploying the entire procurement process on blockchain. <br>By adopting its innovative model, it offers the following benefits:
 		</p>
 		<div class="row pt-3">
 			<div class="col-12 pt-3">

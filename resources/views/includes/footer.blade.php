@@ -7,6 +7,9 @@
                         <div>
                             <img src="{{ Util::assetUrl('images/logo-white.png')}}" alt="" width="50%">
                         </div>
+                        <p class="mt-3" style="font-size: 13px;">
+                            An innovative platform that revolutionizes the procurement process of LED lights by harnessing the power of blockchain, AI, Big Data and Smart Contracts.
+                        </p>
                         <!-- <h5 class="text-white font-weight-bold">Connect with our newsletter</h5>
 
                         <form  action="https://buyanylight.us3.list-manage.com/subscribe/post?u=22d8456f8db4bacaef7a16d53&amp;id=7b85cd9f3f" method="post" class="input-group mt-3" name="mc-embedded-subscribe-form" novalidate target="_blank">
@@ -60,8 +63,8 @@
                     </div>
                     <div class="text-left mt-5">
                         Brought to you by:&nbsp; 
-                        <a href="https://almani.ae">
-                            <img src="{{ Util::assetUrl('images/almani-logo.png') }}" width="14%">
+                        <a href="https://dotcomv.com" target="_blank">
+                            <img src="{{ Util::assetUrl('images/dv_white.png') }}" width="14%">
                         </a>
                     </div>
                     <!-- <div class="payments mt-3">

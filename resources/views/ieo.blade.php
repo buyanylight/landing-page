@@ -539,9 +539,9 @@
 			<h2 class="text-center">
 				<b>Benefits of using BuyAnyLight</b>	
 			</h2>
-			<!-- <p class="text-center pt-2">
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-			</p> -->
+			<p class="text-center pt-2">
+				BuyAnyLight revolutionizes LED Light sourcing by deploying the entire procurement process on blockchain. <br>By adopting its innovative model, it offers the following benefits:
+			</p>
 			<div class="row pt-5" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 				<div class="col-6">
 					<div class="card card-body d-flex justify-content-center flex-column">
@@ -2333,7 +2333,7 @@ $newsdatas = [];
 		</div>
 	</div>
 </section>
-<section class="section19 moveup">
+<section class="section19" style="position: relative; bottom: 175px;">
 	<div class="container" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 		<h3 class="text-center">
 			<b>Stay Connected!</b>	

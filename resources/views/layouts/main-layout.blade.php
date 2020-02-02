@@ -664,11 +664,11 @@
 
 	<style>
 		a.btn.closeIEOPopUp {
-		    background-color: #5555A4;
-		    border-color: #5555A4;
+		    background-color: black;
+			border-color: #5555A4;
 		}
 		a.btn.closeIEOPopUp:hover {
-			background-color: #000;
+			background-color: rgb(37, 37, 37);
 			border-color: #000;			
 		}
 		a.btn.closeIEOPopUp:not(:disabled):not(.disabled):active {
@@ -695,7 +695,7 @@
 	        class="modal-content">
 	            <div class="modal-header" style="border-bottom: 0; padding-bottom: 10px;">
 	            	<div class="d-flex align-items-center justify-content-center" style="width: 100%;">
-		            	<img style="height: 180px; margin: 20px; margin-bottom: 0px;" src="{{ Util::assetUrl('images/logos/logo-black3.png') }}"/>
+		            	<img style="height: 180px; margin: 20px; margin-bottom: 0px;" src="{{ Util::assetUrl('images/logos/logo-white.png') }}"/>
 	            	</div>
 	                <button type="button" class="btn closeIEOPopUp" aria-label="Close" data-dismiss="modal"
 	                style="position: absolute; right: 20px; top: 10px; padding: 0px 0px 10px 10px; outline: none; margin: 0px 0px 10px 10px; font-size: 25px;">
