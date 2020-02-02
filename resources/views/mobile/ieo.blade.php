@@ -1160,13 +1160,13 @@ $newsdatas = [];
 						55 Million BAL
 					</div>
 					<div class="pt-2">
-						1BAL = USD 0.30303
+						1BAL = 0.30303 USD
 					</div>
 					<div class="pt-2">
-						1BAL = USD 0.25
+						1BAL = 0.25 USD
 					</div>
 					<div class="pt-2">
-						1BAL = USD 0.20
+						1BAL = 0.20 USD
 					</div>
 				</div>
 			</div>
