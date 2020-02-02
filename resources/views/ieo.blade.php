@@ -56,7 +56,15 @@
 
 
 
+		$('#pills-advisory-tab').click(function(){
+			$(this).closest('.section15').find('.advisor-text').fadeIn();
+			$(this).closest('.section15').find('.team-text').hide();
+		})
 
+		$('#pills-team-tab').click(function(){
+			$(this).closest('.section15').find('.advisor-text').hide();
+			$(this).closest('.section15').find('.team-text').fadeIn();
+		})
 
 
 		const minBAL = 200;
@@ -1775,7 +1783,7 @@ $newsdatas = [];
 			<div class="container">
 				<h3 class="text-center">
 					<strong>
-						Meet Our Team
+						Meet Our <span class="team-text">Team</span> <span class="advisor-text">Advisors</span>
 					</strong> 
 				</h3>
 				<ul class="nav nav-pills mt-5 mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
@@ -1999,19 +2007,6 @@ $newsdatas = [];
 						</div>
 					</div>
 					<div class="tab-pane fade" id="pills-advisory" role="tabpanel" aria-labelledby="pills-advisory-tab">
-
-						<div class="pt-5 mt-5">
-							<h3 class="text-center">
-								<strong>
-									<span class="header-text">
-										Our Advisory
-									</span>
-									<span class="">
-										Board
-									</span>
-								</strong> 
-							</h3>
-						</div>
 	
 						<?php
 							$coreTeam = [];

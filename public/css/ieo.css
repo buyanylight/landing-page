@@ -11536,6 +11536,10 @@ section {
   position: relative;
 }
 
+.section15 .advisor-text {
+  display: none;
+}
+
 .moveup {
   position: relative;
   bottom: 300px;
