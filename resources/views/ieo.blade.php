@@ -214,45 +214,49 @@
 			<div class="col-md-6">
 				<div>
 					<h1 class="" style="font-size: 66.7px">
-						<span style="font-weight: 100;">LED Sourcing</span><br>
+						<span style="font-weight: 100;">Light Sourcing,</span><br>
 						<strong>Revolutionized!</strong>
 					</h1>
 					<p class=" pt-3">
-						Do you need led products for your newly constructed villa, your building, <br> tower, or real-estate project?
+						Do you need lighting products for your villa, building, tower, or real-estate project? <br>
+						Do you worry about paying sky-high prices and have trust issues with suppliers? <br>
+						Do you hate delayed deliveries and want secured payments? 
+					</p>
+					<p>
 					</p>
 					<div class="pt-3 row ">
 						<div class="col pr-1">
 							<a href="#meet-bal" class="btn btn-BAL w-100">
 								<i class="fas fa-link"></i>
-								&nbsp;
-								Meet BAL
+								<br>
+								Meet BuyAnyLight
 							</a>
 						</div>
 						<div class="col pr-1 pl-1">
 							<a href="https://buyanylight.com/papers/Whitepaper_1.1.pdf?ver=20200112"  target="_blank" class="btn btn-BAL w-100">
 								<i class="far fa-file-pdf"></i>
-								&nbsp;
+								<br>
 								White Paper
 							</a>
 						</div>
 						<div class="col pr-1 pl-1">
 							<a href="https://buyanylight.com/papers/Yellowpaper_1.0.pdf?ver=20200112" class="btn btn-BAL w-100" target="_blank">
 								<i class="far fa-file-pdf"></i>
-								&nbsp;
+								<br>
 								Yellow Paper
 							</a>
 						</div>
 						<div class="col pr-1 pl-1">
 							<a href="https://buyanylight.com/one-pagers/BuyAnyLight-IEO.pdf?ver=20200112" target="_blank" class="btn btn-BAL w-100">
 								<i class="far fa-file-pdf"></i>
-								&nbsp;
+								<br>
 								One Pager
 							</a>					
 						</div>
 						<div class="col pl-1" style="z-index:100">
 							<a href="https://buyanylight.com/BuyAnyLight_Pitch_Deck.pdf?ver=20200112" class="btn btn-BAL w-100" target="_blank">
 								<i class="far fa-file-pdf"></i>
-								&nbsp;
+								<br>
 								Pitch Deck
 							</a>
 						</div>
@@ -492,7 +496,7 @@
 				</h3>
 				<div class="pt-3">
 					<p class="">
-						BuyAnyLight help you source quality LED products for all of your lighting needs. Using blockchain, AI, Big Data and Smart Contracts, it presents your inquiries before the right manufacturers and ensure that you get the products you had ordered. 
+						BuyAnyLight helps you source quality LED products for all of your lighting needs. Using blockchain, AI, big data and smart contracts, it gets your inquiries before the right manufacturers and ensures that you receive the products you ordered.
 					</p>
 				</div>
 				<div class="all-videos mt-4">
@@ -556,7 +560,7 @@
 									SEAMLESS ORDERS
 								</h5>
 								<div class="benefit-text">
-									Submit your lighting requirements as simple as sharing an image and receive the best quotations. 
+									Submit your lighting requirements as easy as sharing an image, then receive the best quotations.
 								</div>
 							</div>
 						</div>
@@ -596,7 +600,7 @@
 									TRACEABLE LOGISTICS
 								</h5>
 								<div class="benefit-text">
-									All your order details, right from the manufacturer to the shipper and then to you are added to a traceable blockchain network. 
+									All your order details from the manufacturer to the shipper and then to you are added to a traceable blockchain network. 
 								</div>
 							</div>
 						</div>
@@ -615,7 +619,7 @@
 									EXPERT CONSULTATION
 								</h5>
 								<div class="benefit-text">
-									Get free of cost consultation from experts who are available for your support 24/7. 
+									Get free consultation from experts, who support you 24/7. 
 								</div>
 							</div>
 						</div>
@@ -636,7 +640,7 @@
 									NOMINAL PRICES
 								</h5>
 								<div class="benefit-text">
-									Compared to big brands, you get products of similar quality and design, for up to 75% lower price.
+									Choose from products of similar quality and design to the big brands, for up to 90% lower prices.
 								</div>
 							</div>
 						</div>
@@ -655,7 +659,7 @@
 									NO MORE MIDDLEMAN
 								</h5>
 								<div class="benefit-text">
-									Avoid hectic order processing and the costs when you buy from retailers. Get direct access to manufacturers. 
+									Avoid hectic order processing and higher costs when you buy from retailers. Get direct access to manufacturers. 
 								</div>
 							</div>
 						</div>
@@ -1067,7 +1071,7 @@ $newsdatas = [];
 				<b>Do you want to know more?</b>
 			</h3>
 			<p class="pt-3">
-				Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
+				Download to know more about us, <br>our project, and how can you participate in our token sale.
 			</p>
 			<div class="buttons pt-3 ">
 				<div class="row w-100">
@@ -1128,7 +1132,7 @@ $newsdatas = [];
 						</strong> 
 					</h3>
 					<p class="">
-						We envision to revolutionize the entire sourcing process by harnessing the power of blockchain, AI, Big Data and Smart Contracts. Starting from the LED Lighting Industry, we aim to expand BAL Network into other industries including but not limited to Construction, Pharma, Food and Precious Metal Industry. 
+						We want to revolutionize the entire sourcing process by harnessing the power of blockchain, AI, big data, and smart contracts. Starting from the LED lighting industry, we aim to expand the BAL Network into other industries, among them the construction and precious metal industries. 
 					</p>
 				</div>
 				<div class="col-md-6">
@@ -1155,7 +1159,7 @@ $newsdatas = [];
 						</strong> 
 					</h3>
 					<p class="">
-						Our mission is to become the leading platform of choice for individuals and businesses and manufacturers. Principled, honest and focused, we leverage the world’s best suppliers and deliver the most significant value LED products, the most exceptional service and advice, and first-rate customer satisfaction – every time.
+						Our mission is to become the platform of choice for individuals, businesses, and manufacturers. Principled, honest, and focused, we leverage the world’s best suppliers and deliver the most significant value LED products, with the most exceptional service and advice, and first-rate customer satisfaction – every time.
 					</p>
 				</div>
 			</div>
@@ -1199,7 +1203,7 @@ $newsdatas = [];
 								<b>Security</b>
 							</h5>
 							<p class="pt-1">
-								All transactions in BAL are secured by Smart Contracts.
+								All transactions in BAL are secured by smart contracts.
 							</p>
 						</div>
 					</div>
@@ -1218,7 +1222,7 @@ $newsdatas = [];
 								<b>Utility</b>
 							</h5>
 							<p class="pt-1">
-								BAL Token is the native token within the BAL Ecosystem.
+								BAL token is the native token within the BAL ecosystem
 							</p>
 						</div>
 					</div>
@@ -1235,7 +1239,7 @@ $newsdatas = [];
 								<b>Liquidity</b>
 							</h5>
 							<p class="pt-1">
-								Exchange or transfer value as simple as sending an email.
+								To exchange or transfer value is as simple as sending an email.
 							</p>
 						</div>
 					</div>
@@ -1254,7 +1258,7 @@ $newsdatas = [];
 								<b>Nominal Transactional Fee</b>
 							</h5>
 							<p class="pt-1">
-								Transfer up to a million dollar in a single digit fee.
+								Transfer up to a million dollars for only a single digit fee.
 							</p>
 						</div>
 					</div>
@@ -1298,7 +1302,7 @@ $newsdatas = [];
 
 			<div>
 				<p class="">
-					The BAL Platform is an established business with a ready platform. To expand our operations and decentralize our business model through blockchain we have devised a solid plan and an ambitious roadmap, with the most expert team, and we are positioned to expand globally. Our ability to rapidly deploy a solution once the technology has been developed makes our financial goal more attainable.
+					The BAL Platform is an established business with a ready platform. To expand our operations and decentralize our business model through blockchain we have devised a solid plan and an ambitious roadmap, with the most expert team, and we are positioned to expand globally. Our ability to rapidly deploy a solution once the technology has been developed makes our financial goal more achievable.
 				</p>
 			</div>
 
@@ -1312,7 +1316,7 @@ $newsdatas = [];
 						'name' => '2014',
 						'icon' => 'fas fa-archway',
 						'items' => [
-							'Foundation Almani Lighting Gmbh.',
+							'Foundation of Almani Lighting Gmbh.',
 						],
 					];
 					$timeline[] = [
@@ -1327,7 +1331,7 @@ $newsdatas = [];
 						'name' => '2016',
 						'icon' => 'fas fa-users',
 						'items' => [
-							'BAL Idea Inception, Research and Feasibility and Development team recruitment.',
+							'BAL Idea inception. Research and feasibility and development team recruitment.',
 						],
 					];
 					$timeline[] = [
@@ -1349,18 +1353,18 @@ $newsdatas = [];
 						'icon' => 'fas fa-sitemap',
 						'items' => [
 							'Team Expansion, Product range extended to 600+.',
-							'Fiat Partner Collaboration, Major Sheikh Palace Contracts in UAE.',
+							'Fiat Partner Collaboration, major Sheikh palace contracts in UAE.',
 						],
 					];
 					$timeline[] = [
 						'name' => '2019',
 						'icon' => 'fas fa-at',
 						'items' => [
-							'BAL Beta Version release,',
-							'Documentation and drafting,',
+							'BAL Beta version release,',
+							'documentation and drafting,',
 							'Website Development and launch,',
-							'Seed round finished and Public Token sale.',
-							'Marketing Kickstart.',
+							'seed round finished and public token sale.',
+							'Marketing kickstart.',
 						],
 					];
 					$timeline[] = [
@@ -1369,8 +1373,8 @@ $newsdatas = [];
 						'items' => [
 							'IEO Sale and Listing on exchanges.',
 							// 'Blockchain development team expansion',
-							'Blockchain based platform development Initiated',
-							'Smart Contracts Development, Wallet development with cross-chain.',
+							'Blockchain based platform development initiated.',
+							'Smart contracts development, wallet development with cross-chain.',
 							'Asset exchange.',
 							'Traceable Logistic partnerships and development initiated.',
 						],
@@ -1403,8 +1407,8 @@ $newsdatas = [];
 						'icon' => 'fas fa-file',
 						'items' => [
 							'Expansion into construction industry.',
-							'BAL Tokenization Platform Development.',
-							'Smart Contract Notary Service Launch.',
+							'BAL tokenization platform development.',
+							'Smart contract notary service launch.',
 						],
 					];
 
@@ -1501,13 +1505,13 @@ $newsdatas = [];
 										55 Million BAL
 									</div>
 									<div class="pt-2">
-										1BAL = USD 0.30303 (Upcoming)
+										1BAL =  0.30303 USD (Upcoming)
 									</div>
 									<div class="pt-2">
-										1BAL = USD 0.25 (Live)
+										1BAL =  0.25 USD (Live)
 									</div>
 									<div class="pt-2">
-										1BAL = USD 0.20
+										1BAL =  0.20 USD
 									</div>
 								</div>
 							</div>
@@ -1528,7 +1532,7 @@ $newsdatas = [];
 			</h3>
 			<div class="pt-3">
 				<p>
-					Our aim is to make BAL Platform the leading marketplace for sourcing light products across the globe, and we have devised a plan to make our dream a reality. The proceeds from the token sale will fund the decentralized platform launch, continued platform development, user acquisition, and marketing:					
+					Our aim is to make BAL Platform the leading marketplace for sourcing light products around the world, and we have devised a plan to make our dream a reality. The proceeds from the token sale will fund the decentralized platform launch, continued platform development, user acquisition, and marketing:				
 				</p>
 			</div>
 			<div class="pt-3">
@@ -1721,7 +1725,7 @@ $newsdatas = [];
 				<b>Do you want to know more?</b>
 			</h3>
 			<p class="pt-3">
-				Download to know more about us, <br>our project and how can you participate in our upcoming token sale.
+				Download to know more about us, <br>our project, and how can you participate in our token sale.
 			</p>
 			<div class="buttons pt-3 ">
 				<div class="row w-100">
