@@ -1280,7 +1280,8 @@ $newsdatas = [];
 									</span>
 									<br>	 
 									<span>
-										Private Round, Angel Investor<br>
+										Private & Pre-IEO Sale
+										<br>
 										<a target="_blank" href="https://etherscan.io/address/0x56d700c93184F1A440eF49A366f5532AB2611b4D#tokentxns">View Allocation</a>
 									</span>	
 								</div>
