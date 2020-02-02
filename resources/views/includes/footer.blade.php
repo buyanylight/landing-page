@@ -53,7 +53,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="payments mt-3 ">
+                    <div class="payments mt-4">
                         <h5 class="text-white">Accepted Payments</h5>
                         <div class="row mt-3">
                             <div class="col">
@@ -61,7 +61,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-left mt-5">
+                    <div class="text-left mt-4">
                         Brought to you by:&nbsp; 
                         <a href="https://dotcomv.com" target="_blank">
                             <img src="{{ Util::assetUrl('images/dv_white.png') }}" width="14%">
