@@ -147,6 +147,17 @@
 		}
 
 
+		$('#pills-advisory-tab').click(function(){
+			$(this).closest('.section14').find('.advisor-text').fadeIn();
+			$(this).closest('.section14').find('.team-text').hide();
+		})
+
+		$('#pills-team-tab').click(function(){
+			$(this).closest('.section14').find('.advisor-text').hide();
+			$(this).closest('.section14').find('.team-text').fadeIn();
+		})
+
+
 
 
 		
@@ -1394,8 +1405,7 @@ $newsdatas = [];
 	<div class="container pt-5 pb-5">
 		<h3 class="text-center">
 			<b>
-				<span class="header-text">Meet Our</span>
-				<span  class="text-white">Team</span>
+				Meet Our <span class="team-text">Team</span> <span class="advisor-text">Advisors</span>
 			</b>
 		</h3>
 		<ul class="nav nav-pills mt-5 mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
@@ -1476,13 +1486,8 @@ $newsdatas = [];
 			</div>
 		
 			<div class="tab-pane fade" id="pills-advisory" role="tabpanel" aria-labelledby="pills-advisory-tab">
-					<div class="container pt-5 pb-5"	>
-					<h3 class="text-ce	nter">
-						<b>
-							<span class="header-text">Our</span>
-							<span  class="text-white">Advisors</span>
-						</b>
-					</h3>
+					<div class="container pb-5">
+				
 					<?php
 						$coreTeam = [];
 						$coreTeam[] = [	'name'=>'Khalid Almutawa', 'title'=>'Partner and Chairman ASAS Holding Group', 'linkedin'=>'', 'image'=>'images/ieo/advisors/khalid.jpg', 'text'=>'My participation with BuyAnyLight is not limited to leadership and governance alone, I pledge my full dedication with the BAL project to make it a success. I am responsible for creating an effective and harmonious step by step transition of the project. I ensure an effective relationship with everyone who participates in the BuyAnyLight project by allowing a constructive exchange of theories and opinions. I also ensure that every strategies and policy are lawfully implemented within the organization.', 'model_no' => 18];

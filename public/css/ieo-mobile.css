@@ -11570,6 +11570,10 @@ nav .dropdown-toggle::after {
   bottom: -15px;
 }
 
+.section14 .advisor-text {
+  display: none;
+}
+
 .map-list {
   list-style: none;
 }
