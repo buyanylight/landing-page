@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap');
 
 // Variables
 @import 'variables';
@@ -7,13 +7,18 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+$primaryBg: linear-gradient(to right, #CC00CC 47.02%, #6600FF);
+$primaryBtn: linear-gradient(to right, #3F41E2 47.02%, #7917F8);
+
+
 html{	scroll-behavior: smooth;
 }
 
 body{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	font-size: 14px;
 	background-color: white;
+	letter-spacing: 1px;
 }
 
  
@@ -33,147 +38,231 @@ nav{
   display: block;
 }
 
-.section-1{
-	background: url('/images/section_1_bg.png'), url('/images/hexagon2.png');
-    height: 50vh;
-    background-size: 23%, 115%;
-    background-position-y: 30px, bottom;
-    background-position-x: 70%, center;
-    background-repeat: no-repeat;
-    background-color: #f7f7ff;
-}
-
-.section-1 .sub-title{
-	font-size: 19px;
+b, strong{
+	font-weight: 800;
 }
 
 
-.link-text{
-	display: inline-block;
-}
-
-.link-icon{
-	display: inline-block;
-    position: relative;
-    top: 2px;
-    font-size: 15px;
+section{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 
 
-.section-2{
-	height: 50vh;
-    background-color: #f7f7ff;
-}
-
-.card-top{
-	width:35px;
-}
-
-.all-cards{
-	position: relative;
-    top: -70px;
-    box-shadow: 0px 4px 10px #c3c3c3;
-}
 
 .btn-BAL{
-	background-color: #5555A4;
-	color: #fff;
+	background-image: $primaryBtn;
+	color: white;
+	border-radius: 0.5rem;
+	&:hover{
+		color: white ;
+		font-weight: bolder;
+	}
 }
+
+.section1{
+	height: 100vh;
+	background-image: url('/images/main-bg.png'), $primaryBg;
+	.container {
+		max-width: 1500px;
+	}
+	.video-text{
+		vertical-align: super;
+	}
+
+
+}
+
+
+.section2{
+	background-color: #ffffff;
+	.card-contents{
+		margin-top: 1.5rem;
+		h5{
+			background: $primaryBtn;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+}
+
+
+.section3{
+	height: 100vh;
+	background-image: url('/images/trial-bg.png');
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 3rem !important;
+
+}
+
+
+.section4{
+	h4{
+		background: $primaryBtn;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+
+.section5{
+	background-color: #F4F9FF;
+}
+
+
+.section6{
+	h4{
+		background: $primaryBtn;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+
+.section7{
+	background-image: $primaryBtn;
+}
+
+
+
+.downloadsection {
+	background-image: url('/images/download-bg.png');
+	background-size: 100%;
+	background-position: center;
+	height: 500px;
+	.buttons{
+		width: 600px;
+	}
+	.btn{
+		border-radius: 0.5rem;
+	}
+	.btn-BAL{
+		background: $primaryBtn;
+		color: white;
+		font-size: 14px;
+		height: 50px;
+		width: 100%;
+		padding-top: 12px;
+		&:hover {
+			color: white;
+		}
+	}
+}
+
+
+.section8{
+	.col-9{
+		p{
+			font-size: 12px;
+		}
+	}
+
+	.buyer {
+		border-radius: 10px 0px 0px 10px;
+	}
+	.seller {
+		border-radius: 0px 10px 10px 0px;
+	}
+	
+	.nav-link.active{
+		background-image: $primaryBtn;
+		color: white;
+	}
+	
+	.nav-link{
+		border: 3px solid #7917F8;
+		text-align: center;
+		color: black;
+	}
+}
+
+.section9{
+	h3, h4{
+		background: $primaryBtn;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	
+	.card{
+		border: 3px solid #7917F8;
+	}
+	
+	.pricing-header {
+		border-radius: 0px;
+		background-image: $primaryBtn;
+	}
+
+	.nav-link.active{
+		background-color: white;
+		color: black;
+	}
+
+	.nav-link{
+		color: white;
+	}
+}
+
+
+
 
 .bg-BAL{
-	background-color: #5555A4;
+	background-image: $primaryBtn;
 
 }
 
-.btn-BAL:hover{
-	background:#33447d;
-	color: #fff;
+.section10{
+	.nav-pills .nav-link {
+		border-radius: 0px;
+	}
+
+	.nav-link.active{
+		background-image: $primaryBtn;
+		color: white;
+	}
+	
+	.nav-link{
+		border: 3px solid #7917F8;
+		text-align: center;
+		color: black;
+	}
+	
+	.trial {
+		border-radius: 10px 0px 0px 10px !important;
+	}
+	.home{
+		border-radius: 0px;
+	}
+	.tower{
+		border-radius: 0px;
+	}
+	.finder {
+		border-radius: 0px 10px 10px 0px !important;
+	}
 }
 
-
-.trial-btn-link{
-	// position:relative;
-	// top: -5%;
-}
-
-.section-3{
-	// background: linear-gradient(to right, #000000 0%,#000000 50%,#ffffff 50%,#ffffff 100%);
-	// background: linear-gradient(to right, #000000 0%,#ffffff 50%,#ffffff 50%,#1D2951 100%);
-	background: #5555A4;
-	background: linear-gradient(to right, black, #1D2951, #5555A4);
-
-}
-
-
-.video{
-	border: 5px solid #5555A4;
-   	padding: 0px;
-}
-
-
-.section-4{
-	background: url('/images/section4.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -165px;
-    background-position-x: center;
-    position: relative;
-}
-
-.about-img{
-	position: absolute;
-    width: 50%;
-    // top: 110%;
-    top: 4%;
-    left: 22%;
-}
-
-
-.section-5{
-	height: 100%;
-}
-
-
-// .slick-next{
-// 	right: 0px !important;
-// 	z-index:10
-// }
-
-// .slick-prev{
-// 	left: 0px !important;
-// 	z-index:10
-// }
-
-
-.section-6{
-	background: url('/images/section6.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: center;
-    background-position-x: center;
+.section11{
+	h3, h5{
+		background: $primaryBtn;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.btn-BAL{
+		width: 100%;
+		border: 3px solid #7917F8;
+		background-image: none;
+		color: #7917F8;
+		border-radius: 0.5rem;
+		&:hover{
+			background-color: #7917F8;
+			color: white;
+			font-weight: bolder;
+		}
+	}
 }
 
 
 
-.font-15{
-	font-size: 15px;
-}
-
-
-.section-7 {
-	background:#f7f7ff;
-	// background: linear-gradient(to right, #00000024, #1d295124, #5555a424);
-}
-
-.section-8{
-		
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff !important;
-    background-color: #5555A4;
-
-}
 
 .package-link{
 	text-decoration: none;
@@ -236,31 +325,15 @@ nav{
     width: 100%;
 }
 
-.section-8-hr{
-	background-color: black;
-	margin-right: 438px;
-
-}
 
 .trial-list {
   list-style: none;
   padding-left: 15px;
-
- 
 }
 
 .trial-list li{
  margin-top: 10px;
 
-}
-
-
-
-.section-9{
-	height: 100%;
-	background-position-x: center;
-    background-position-y: -800px;
-    background-size: 104%;
 }
 
 
@@ -445,6 +518,7 @@ textarea{
 .videos{
 	background: #5555a40a;
 }
+
 .english{
 	height: 150px;
 	background:url('/images/english.jpg');
