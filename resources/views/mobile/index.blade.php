@@ -396,7 +396,7 @@
 										As a LightFinder user you have the choice of Mini, Standard, and Premium subscriptions, depending on the volumes you need. Like all BAL users, you can leverage the platform’s power to find the finest global suppliers and the best value for a fraction of the usual cost - all from the comfort of your own home or office.
 									</div>
 								</div>
-								<button class="btn w-100 text-left pl-0 pricing" type="button" data-toggle="collapse" data-target="#pricing" aria-expanded="false" aria-controls="pricing">
+								<button class="btn w-100 text-left pl-0 pricing" type="button" data-toggle="collapse" data-target="#pricing1" aria-expanded="false" aria-controls="pricing">
 									<b>Pricing</b>
 									<div class="pricing-down float-right">
 										<i class="fas fa-angle-down"></i>
@@ -405,7 +405,7 @@
 										<i class="fas fa-angle-up"></i>
 									</div>
 								</button>
-								<div class="collapse" id="pricing">
+								<div class="collapse" id="pricing1">
 									<div class="ml-0 pl-0 border-0">
 										<div class="card m-0 text-left" style="padding-bottom: 15px;">
 											<div class="card-header pricing-header">
@@ -708,7 +708,7 @@
 										To take advantage of these huge savings and benefits, we charge only a one-time project subscription fee and 10% commission on the total product cost. That’s quite simply how we earn our revenue. Plus, you don’t pay anything until you’ve decided to commit to our quote, so there is ZERO RISK to you when trying us out!
 									</div>
 								</div>
-								<button class="btn w-100 text-left pl-0 pricing" type="button" data-toggle="collapse" data-target="#pricing" aria-expanded="false" aria-controls="pricing">
+								<button class="btn w-100 text-left pl-0 pricing" type="button" data-toggle="collapse" data-target="#pricing2" aria-expanded="false" aria-controls="pricing">
 									<b>Pricing</b>
 									<div class="pricing-down float-right">
 										<i class="fas fa-angle-down"></i>
@@ -717,7 +717,7 @@
 										<i class="fas fa-angle-up"></i>
 									</div>
 								</button>
-								<div class="collapse" id="pricing">
+								<div class="collapse" id="pricing2">
 									<div class="ml-0 pl-0 border-0">
 									   <div class="card m-0 card-my-home">
 										   <div class="card-header pricing-header text-center text-white">
@@ -869,7 +869,7 @@
 										DID YOU KNOW? Our Markup Feature (exclusive to BAL corporate users) - is a fantastic BAL feature, allowing you to add markups to the quotes, quickly and easily. It means you can offer your customers lower prices than local suppliers while also boosting your profits - a win-win for everyone!
 									</div>
 								</div>
-								<button class="btn w-100 text-left pl-0 pricing" type="button" data-toggle="collapse" data-target="#pricing" aria-expanded="false" aria-controls="pricing">
+								<button class="btn w-100 text-left pl-0 pricing" type="button" data-toggle="collapse" data-target="#pricing3" aria-expanded="false" aria-controls="pricing">
 									<b>Pricing</b>
 									<div class="pricing-down float-right">
 										<i class="fas fa-angle-down"></i>
@@ -878,7 +878,7 @@
 										<i class="fas fa-angle-up"></i>
 									</div>
 								</button>
-								<div class="collapse" id="pricing">
+								<div class="collapse" id="pricing3">
 									<div class="ml-0 pl-0 border-0">
 									   <div class="card m-0 card-my-tower text-dark">
 											<div class="card-header text-center pricing-header text-white">
