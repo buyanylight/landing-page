@@ -2118,7 +2118,7 @@ $newsdatas = [];
 		</div>
 	</div>
 </section>
-<section class="section16 moveup">
+<section class="section16 moveup" style="z-index: -100;">
 	<img src="{{ Util::assetUrl('images/ieo/ieo-bg(5).png') }}" alt="" width="100%">
 </section>
 {{-- partners --}}
