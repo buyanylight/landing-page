@@ -1145,7 +1145,7 @@ $newsdatas = [];
 				</div>
 				<div class="col-md-6">
 					<div class="vision-mission text-right">
-						<img class="video" src="{{ Util::assetUrl('/images/ieo/meetbal.png') }}" alt="">
+						<img class="video" src="{{ Util::assetUrl('/images/ieo/meetbal(1).png') }}" alt="">
 					</div>
 				</div>
 			</div>
