@@ -537,7 +537,7 @@
 				</div>
 			</div>
 			<div class="col-6 text-right">
-				<img src="{{ Util::assetUrl('images/ieo/meetbal.png')}}" width="80%">		
+				<img src="{{ Util::assetUrl('images/ieo/meetbal(1).png')}}" width="80%">		
 			</div>
 		</div>	
 	</div>
@@ -1145,7 +1145,7 @@ $newsdatas = [];
 				</div>
 				<div class="col-md-6">
 					<div class="vision-mission text-right">
-						<img class="video" src="{{ Util::assetUrl('/images/ieo/meetbal(1).png') }}" alt="">
+						<img class="video" src="{{ Util::assetUrl('/images/ieo/meetbal.png') }}" alt="">
 					</div>
 				</div>
 			</div>
