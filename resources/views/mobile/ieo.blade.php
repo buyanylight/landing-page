@@ -849,7 +849,7 @@ $newsdatas = [];
 				</b>
 			</h3>
 			<div class="text-center mt-3">
-				<img class="video" src="{{ Util::assetUrl('/images/ieo/meetbal.png') }}" width="50%">
+				<img class="video" src="{{ Util::assetUrl('/images/ieo/meetbal(1).png') }}" width="50%">
 			</div>
 			<p class="pt-3 text-white">
 				We want to revolutionize the entire sourcing process by harnessing the power of blockchain, AI, big data, and smart contracts. Starting from the LED lighting industry, we aim to expand the BAL Network into other industries, among them the construction and precious metal industries. 
