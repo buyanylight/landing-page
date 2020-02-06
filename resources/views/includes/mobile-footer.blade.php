@@ -135,7 +135,7 @@
                     <div class="accordion-inner">
                         <ul class="footer-list m-0 text-white">
                             <li class="mt-3">
-                                <a href="{{ route('home') }}#works" class="text-white">
+                                <a href="{{ route('m-home') }}#works" class="text-white">
                                     How it works                                    
                                 </a>
                             </li>
@@ -143,14 +143,14 @@
                                 <a href="">BAL vs. retail</a>
                             </li> -->
                             <li class="mt-3">
-                                <a href="{{ route('m-package') }}" class="text-white" >Packages</a>
+                                <a href="{{ route('m-home') }}#packages" class="text-white" >Packages</a>
                             
                             </li>
                             <li class="mt-3">
-                                <a href="{{ route('m-about') }}" class="text-white">About us</a>
+                                <a href="{{ route('m-home') }}#about" class="text-white">About us</a>
                             </li>
                             <li class="mt-3 mb-3">
-                                <a href="{{ route('m-why-us') }}" class="text-white">
+                                <a href="{{ route('m-home') }}#why-bal" class="text-white">
                                     Why BAL
                                 </a>
                             </li>

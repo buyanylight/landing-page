@@ -20,8 +20,8 @@
                     </button>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="{{ route('m-home') }}#works">How it works</a>
-                        <a class="dropdown-item" href="{{ route('m-about') }}">About BAL</a>
-                        <a class="dropdown-item" href="{{ route('m-why-us') }}">Why BAL</a>
+                        <a class="dropdown-item" href="{{ route('m-home') }}#about">About BAL</a>
+                        <a class="dropdown-item" href="{{ route('m-home') }}#why-bal">Why BAL</a>
                         <!-- <a class="dropdown-item" href="{{ route('downloads') }}">Media</a> -->
                     </div>
                 </li>
@@ -30,11 +30,11 @@
                     Packages
                     </button>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{{ route('m-package') }}#trial">Free Trial</a>
-                        <a class="dropdown-item" href="{{ route('m-package') }}#home">My Home</a>
-                        <a class="dropdown-item" href="{{ route('m-package') }}#tower">My Tower</a>
-                        <a class="dropdown-item" href="{{ route('m-package') }}#finder">LightFinder</a>
-                        <a class="dropdown-item" href="{{ route('m-add-ons') }}">Add-ons</a>
+                        <a class="dropdown-item" href="{{ route('m-home') }}#trial">Free Trial</a>
+                        <a class="dropdown-item" href="{{ route('m-home') }}#home">My Home</a>
+                        <a class="dropdown-item" href="{{ route('m-home') }}#tower">My Tower</a>
+                        <a class="dropdown-item" href="{{ route('m-home') }}#finder">LightFinder</a>
+                        <a class="dropdown-item" href="{{ route('m-home') }}#add-ons">Add-ons</a>
                     </div>
                 </li>
                 <hr class="border-white w-100 m-2">
