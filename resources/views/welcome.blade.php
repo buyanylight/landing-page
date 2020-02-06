@@ -467,7 +467,7 @@
 							<div class="col-4">
 								<div class="row">
 									<div class="col-3 d-flex justify-content-center flex-column">
-										<img src="{{ Util::assetUrl('images/whychoose(1).png') }}" alt="" width="100%">
+										<img src="{{ Util::assetUrl('images/whychoose(2).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9">
 										<b>Free registration</b>
@@ -480,7 +480,7 @@
 							<div class="col-4">
 								<div class="row">
 									<div class="col-3 d-flex justify-content-center flex-column">
-										<img src="{{ Util::assetUrl('images/whychoose(1).png') }}" alt="" width="100%">
+										<img src="{{ Util::assetUrl('images/whychoose(3).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9">
 										<b>Cost-saving</b>
@@ -495,7 +495,7 @@
 							<div class="col-4">
 								<div class="row">
 									<div class="col-3 d-flex justify-content-center flex-column">
-										<img src="{{ Util::assetUrl('images/whychoose(1).png') }}" alt="" width="100%">
+										<img src="{{ Util::assetUrl('images/whychoose(4).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9">
 										<b>Flexible pricing</b>
@@ -508,7 +508,7 @@
 							<div class="col-4">
 								<div class="row">
 									<div class="col-3 d-flex justify-content-center flex-column">
-										<img src="{{ Util::assetUrl('images/whychoose(1).png') }}" alt="" width="100%">
+										<img src="{{ Util::assetUrl('images/whychoose(5).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9">
 										<b>Secure platform</b>
@@ -521,7 +521,7 @@
 							<div class="col-4">
 								<div class="row">
 									<div class="col-3 d-flex justify-content-center flex-column">
-										<img src="{{ Util::assetUrl('images/whychoose(1).png') }}" alt="" width="100%">
+										<img src="{{ Util::assetUrl('images/whychoose(6).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9">
 										<b>Completely free</b>
@@ -536,7 +536,7 @@
 							<div class="col-4">
 								<div class="row">
 									<div class="col-3 d-flex justify-content-center flex-column">
-										<img src="{{ Util::assetUrl('images/whychoose(1).png') }}" alt="" width="100%">
+										<img src="{{ Util::assetUrl('images/whychoose(7).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9">
 										<b>Provide samples</b>
@@ -549,7 +549,7 @@
 							<div class="col-4">
 								<div class="row">
 									<div class="col-3 d-flex justify-content-center flex-column">
-										<img src="{{ Util::assetUrl('images/whychoose(1).png') }}" alt="" width="100%">
+										<img src="{{ Util::assetUrl('images/whychoose(8).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9">
 										<b>Hassle-free supply</b>
@@ -562,7 +562,7 @@
 							<div class="col-4">
 								<div class="row">
 									<div class="col-3 d-flex justify-content-center flex-column">
-										<img src="{{ Util::assetUrl('images/whychoose(1).png') }}" alt="" width="100%">
+										<img src="{{ Util::assetUrl('images/whychoose(9).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9">
 										<b>Easy to use</b>
