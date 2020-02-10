@@ -178,7 +178,7 @@
 					<div class="pt-3 text-center">
 						<b>A private homeowner?</b>
 						<p class="pt-2 text-justify">
-							Use BAL to make your home a greener, more stylish and cost-efficient zone by switching to LED lights. The energy bill savings are huge!
+							A typical homeowner does not have the technical expertise to understand lux calculations, wattages, IP or IK ratings, lumen per watt, and the same applies to lighting setup and design aesthetics. Use BuyAnyLight to make your home a greener, more stylish and energy-efficient zone by switching to LED Lights. The difference in prices are huge and so will be your energy bill savings.
 						</p>
 					</div>
 				</div>
@@ -200,7 +200,7 @@
 					<div class="pt-3 text-center">
 						<b>Researching LED prices and products?</b>
 						<p class="pt-2 text-justify">
-							Because it’s focused purely on LED lights, BuyAnyLight allows you to do this in record time. BAL provides the best value in product quality, costs, and service.
+							Whether you just want to get an idea of the market or aim to outsource your lighting needs for any of your project, we have got you covered. Our LightFinder platform makes this as easy as submitting an online form. Simply sign up and submit your RFQ (request for quotation). That’s it! Our AI based system will find the right lighting products specially catered for your lighting needs while ensuring the best value in product quality, costs, and service.
 						</p>
 					</div>
 				</div>
@@ -322,7 +322,7 @@
 						<b>Free Trial</b>
 					</h4>
 					<p class="text-justify">
-						To start finding out about all the benefits you can enjoy with us, simply register for the free trial. This enables you to explore many of BAL’s tools and functions before choosing the right subscription package for you or your organisation. It’s also useful if you want to make an enquiry and receive quotes quickly and simply. You may subscribe to one of the LightFinder packages to request for samples or confirm an order.
+						Register now and experience yourself the variety of tools and packages offered by BAL. 
 					</p>
 					<div class="text-center">
 						<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-BAL">
