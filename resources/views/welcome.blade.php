@@ -20,6 +20,10 @@
 						<div class="col-4">
 							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" class="btn btn-BAL">BAL IEO One Pager</a>
 						</div>
+						<div class="col-7">
+							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" class="btn btn-BAL mt-2" style="width: 89%;">IEO</a>
+
+						</div>
 					</div>
 					<div class="mt-3">
 						<a data-fancybox href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" class="text-white">
