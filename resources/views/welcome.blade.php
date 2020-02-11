@@ -224,7 +224,7 @@
 		</div>
 	</div>
 </section>
-<section class="section7">
+<section class="section7" id="ninety">
 	<div class="container" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 		<div class="row text-white">
 			<div class="col-6">
