@@ -359,8 +359,19 @@
 										</div>
 									</a>
 								</div>
-								<div class="col-12 text-left">
-									<a href="#section-bal-token" class="btn btn-outline-light">Get 17.5% Discount Now!</a>
+								<div class="col-12">
+									<a data-fancybox href="https://www.youtube-nocookie.com/embed/5nMkricvzfc?rel=0">
+										<div class="row">
+											<div class="col-2">
+												<span style="font-size:30px;" class="text-white">
+													<i class="far fa-play-circle"></i>
+												</span>
+											</div>
+											<div class="col-10 text-white pt-2">
+												<p class="mb-0">IEO vs ICO</p>
+											</div>
+										</div>
+									</a>
 								</div>
 							</div>
 						</div>
