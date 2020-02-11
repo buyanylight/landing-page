@@ -21,7 +21,7 @@
 							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" class="btn btn-BAL">BAL IEO One Pager</a>
 						</div>
 						<div class="col-7">
-							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" class="btn btn-BAL mt-2" style="width: 89%;">IEO</a>
+							<a href="{{ route('ieo') }}" class="btn btn-BAL mt-2" style="width: 89%;">IEO</a>
 
 						</div>
 					</div>
