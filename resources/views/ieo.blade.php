@@ -371,7 +371,7 @@
 						</div>
 						<div class="pt-3">
 							<a href="#section-bal-token" class="btn btn-light rounded" style="color:#3D75F1; font-size:11.892px">
-								<b>BUY TOKENS NOW!</b>	
+								<b>GET 17.5% DISCOUNT NOW!</b>	
 							</a>
 							<p class="m-0 mt-2 ">
 								<b>Soon on Leading IEO Launchpads</b>	
@@ -408,7 +408,7 @@
 						</div>
 						<div class="pt-4">
 							<div class="row">
-								<div class="col-5">
+								<div class="col-4">
 									<a data-fancybox href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0">
 										<div class="row">
 											<div class="col-2">
@@ -423,8 +423,19 @@
 										</div>
 									</a>
 								</div>
-								<div class="col-7 text-right">
-									<a href="#section-bal-token" class="btn btn-outline-light">Get 17.5% Discount Now!</a>
+								<div class="col-4">
+									<a data-fancybox href="https://www.youtube-nocookie.com/embed/5nMkricvzfc?rel=0">
+										<div class="row">
+											<div class="col-2">
+												<span style="font-size:30px;" class="text-white">
+													<i class="far fa-play-circle"></i>
+												</span>
+											</div>
+											<div class="col-10 text-white pt-2">
+												<p class="mb-0">IEO vs ICO</p>
+											</div>
+										</div>
+									</a>
 								</div>
 							</div>
 						</div>
