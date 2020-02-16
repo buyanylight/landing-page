@@ -45,14 +45,14 @@
 							<div class="col-12 pt-3">
 								<a href="https://icobench.com/ico/buyanylight-bal" 
 					target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICObench">					
-						<img border="0" src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" 						
+						<img border="0" async src="https://icobench.com/rated/buyanylight-bal?shape=square&size=m" 						
 						style="height: 60px; margin-bottom: -15px; margin-right: 5px;" 
 						alt="BuyAnyLight (BAL) ICO rating"/>
 					</a>
 					
 					<a href="https://icomarks.com/ico/buyanylight" 
 					target="_blank" rel="nofollow" title="BuyAnyLight ICO">
-						<img border="0" src="{{Util::assetUrl('images/ieo/partners/icomarks.svg')}}"
+						<img border="0" async src="{{Util::assetUrl('images/ieo/partners/icomarks.svg')}}"
 						style="height: 60px; margin-bottom: -15px; margin-left: 5px;" 
 						alt="BuyAnyLight ICO Rating"/>
 					</a>
