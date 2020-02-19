@@ -237,7 +237,7 @@
 							<a href="#meet-bal" class="btn btn-BAL w-100">
 								<i class="fas fa-link"></i>
 								<br>
-								Meet BuyAnyLight
+								Meet BAL
 							</a>
 						</div>
 						<div class="col pr-1 pl-1">
