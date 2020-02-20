@@ -349,7 +349,7 @@
 		</div>
 	</div>
 </section>
-<section class="section3">
+<section class="section3" id="token-sale">
 	<div class="container" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 		<div class="row">
 			<div class="col-md-4">
@@ -556,7 +556,7 @@
 <section class="section5">
 	<img src="{{ Util::assetUrl('images/ieo/ieo-bg(2).png') }}" alt="" width="100%">
 </section>
-<section class="section6">
+<section class="section6" id="benefits">
 	<div class="">
 		<div class="container">
 			<h2 class="text-center">
@@ -1186,7 +1186,7 @@ $newsdatas = [];
 	</div>
 </section>
 
-<section class="section10">
+<section class="section10" id="why-token">
 	<div class="container">
 		<h3 class="text-center">
 			<strong>
