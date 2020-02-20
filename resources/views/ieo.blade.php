@@ -241,28 +241,28 @@
 							</a>
 						</div>
 						<div class="col pr-1 pl-1">
-							<a href="https://buyanylight.com/papers/Whitepaper_1.1.pdf?ver=20200112"  target="_blank" class="btn btn-BAL w-100">
+							<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}"  target="_blank" class="btn btn-BAL w-100">
 								<i class="far fa-file-pdf"></i>
 								<br>
 								White Paper
 							</a>
 						</div>
 						<div class="col pr-1 pl-1">
-							<a href="https://buyanylight.com/papers/Yellowpaper_1.0.pdf?ver=20200112" class="btn btn-BAL w-100" target="_blank">
+							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL w-100" target="_blank">
 								<i class="far fa-file-pdf"></i>
 								<br>
 								Yellow Paper
 							</a>
 						</div>
 						<div class="col pr-1 pl-1">
-							<a href="https://buyanylight.com/one-pagers/BuyAnyLight-IEO.pdf?ver=20200112" target="_blank" class="btn btn-BAL w-100">
+							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL w-100">
 								<i class="far fa-file-pdf"></i>
 								<br>
 								One Pager
 							</a>					
 						</div>
 						<div class="col pl-1" style="z-index:100">
-							<a href="https://buyanylight.com/BuyAnyLight_Pitch_Deck.pdf?ver=20200112" class="btn btn-BAL w-100" target="_blank">
+							<a href="{{ Util::assetUrl('BuyAnyLight_Pitch_Deck.pdf') }}" class="btn btn-BAL w-100" target="_blank">
 								<i class="far fa-file-pdf"></i>
 								<br>
 								Pitch Deck
