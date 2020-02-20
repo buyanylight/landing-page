@@ -287,7 +287,7 @@
 		</div>
 	</div>
 </section>
-<section class="section3">
+<section class="section3" id="token-sale">
 	<div class="container h-100">
 		<div class="row">
 			<div class="mt-3 col-12">
@@ -492,7 +492,7 @@
 	</div>
 </section>
 
-<section class="section5 pt-5">
+<section class="section5 pt-5" id="benefits">
 	<div class="container">
 		<h2 class="text-center">
 			<b>Benefits of using BuyAnyLight</b>	
@@ -882,7 +882,7 @@ $newsdatas = [];
 		</div>
 	</div>
 </section>
-<section class="section9">
+<section class="section9" id="why-token">
 	<div class="container pt-5 pb-5">
 		<h3 class="pb-3 text-center">
 			<b>
