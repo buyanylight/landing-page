@@ -239,7 +239,7 @@
 				</div>
 				<div class="pt-3 text-center">
 					<b>A consultant, contractor or project owner?</b>
-					<a data-fancybox href="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
+					<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
 						<i class="fas fa-play"></i>&nbsp;<b>My Home</b>	
 					</a>
 					<p class="pt-2 text-justify">
