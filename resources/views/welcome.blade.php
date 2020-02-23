@@ -5,7 +5,7 @@
 <section class="section1">
 	<div class="container h-100 d-flex align-items-center">
 		<div class="row w-100">
-			<div class="col-6 text-white">
+			<div class="col-5 text-white">
 				<div class="d-flex justify-content-center flex-column h-100">
 					<h1 class="display-4">
 						<b>Sourcing Reinvented!</b>	
@@ -14,15 +14,19 @@
 						The global platform for LED lighting
 					</h4>
 					<div class="row mt-3">
-						<div class="col-3">
+						<div class="col-4">
 							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" class="btn btn-BAL w-100">BAL One Pager</a>
 						</div>
 						<div class="col-4">
-							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" class="btn btn-BAL">BAL IEO One Pager</a>
+							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" class="btn btn-BAL w-100">BAL IEO One Pager</a>
 						</div>
-						<div class="col-7">
-							<a href="{{ route('ieo') }}" class="btn btn-BAL mt-2" style="width: 89%;">IEO</a>
-
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<a href="{{ route('ieo') }}" class="btn btn-BAL mt-2 w-100">IEO</a>
+						</div>
+						<div class="col-4">
+							<a href="{{ route('ieo') }}#section-bal-token" class="btn btn-BAL mt-2 w-100">Buy BAL Tokens</a>
 						</div>
 					</div>
 					<div class="mt-3">
@@ -64,6 +68,40 @@
 			<div class="col-6">
 				<img src="{{ Util::assetUrl('images/main-image.png') }}" alt="" width="100%">
 			</div>
+			<div class="col-1">
+				<div class="row mt-4 text-center justify-content-center align-items-center h-100">
+					<div class="col-12 mt-2">
+						<a href="http://www.youtube.com/c/BuyAnyLight" style="color: white;" target="_blank"><i class="fab fa-youtube"></i></a>
+					</div>
+					<div class="col-12 mt-2">
+						<a href="https://twitter.com/BuyAnyLight" style="color: white;" target="_blank"><i class="fab fa-twitter"></i></a>
+					</div>
+					<div class="col-12 mt-2">
+						<a href="https://www.instagram.com/buyanylight/" style="color: white;" target="_blank"><i class="fab fa-instagram"></i></a>
+					</div>
+					<div class="col-12 mt-2">
+						<a href="https://www.facebook.com/BuyAnyLight/" style="color: white;" target="_blank"><i class="fab fa-facebook-f"></i></a>
+					</div>
+					<div class="col-12 mt-2">
+						<a href="https://github.com/buyanylight" style="color: white;" target="_blank"><i class="fab fa-github"></i></a>
+					</div>
+					<div class="col-12 mt-2">
+						<a href="https://www.reddit.com/r/BuyAnyLight/" style="color: white;" target="_blank"><i class="fab fa-reddit-alien"></i></a>
+					</div>
+					<div class="col-12 mt-2">
+						<a href="https://bitcointalk.org/index.php?topic=5193049.0;topicseen" style="color: white;" target="_blank"><i class="fab fa-bitcoin"></i></a>
+					</div>
+					<div class="col-12 mt-2">
+						<a href="https://t.me/buyanylight" style="color: white;" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+					</div>
+					<div class="col-12 mt-2">
+						<a href="https://medium.com/buyanylight" style="color: white;" target="_blank"><i class="fab fa-medium-m"></i></a>
+					</div>
+					<div class="col-12 mt-2">
+						<a href="https://www.linkedin.com/company/buyanylight/" style="color: white;" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -82,9 +120,12 @@
 						<p>B2B & B2C</p>
 						<p> LightFinder users are businesses such as lighting companies, consultants or homeowners who prefer to source LED lights personally and directly from
 							manufacturers... </p>
-							<a href="#all-packages" class="btn btn-BAL" style="font-size: 13px;">
-								<b>Cut LED cost, not quality</b>	
-							</a>
+						<a data-fancybox href="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
+							<i class="fas fa-play"></i>&nbsp;<b>Play Video</b>	
+						</a>
+						<a href="#all-packages" class="btn btn-BAL" style="font-size: 13px;">
+							<b>Cut LED cost, not quality</b>	
+						</a>
 							
 						</div>
 					</div>
@@ -100,6 +141,9 @@
 							</h5>
 							<p>Private homes, villas, and palaces</p>
 							<p>Generic lights don’t belong in stylish, 21st century homes… Custom LED saves energy and costs, helps protect our planet and gives far greater aesthetic and design opportunities...</p>
+							<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
+								<i class="fas fa-play"></i>&nbsp;<b>Play Video</b>	
+							</a>
 							<a href="#all-packages" class="btn btn-BAL" style="font-size: 13px;">
 								<b>Find dream home LED at dreamy prices</b>
 							</a>
@@ -117,6 +161,9 @@
 						</h5>
 						<p>Consultants, contractors, clients</p>
 						<p>My Tower users leverage our expertise to get the best products in the market, save a fortune, and improve their project delivery. When starting a project, you subscribe to our package...</p>
+						<a data-fancybox href="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
+							<i class="fas fa-play"></i>&nbsp;<b>Play Video</b>	
+						</a>
 						<a href="#all-packages" class="btn btn-BAL" style="font-size: 13px;">
 							<b>Get the best quality and prices ever</b>
 						</a>
@@ -158,6 +205,10 @@
 				<p>
 					Whether you have lots of experience with LED lights or none at all, we have a package to help you achieve all your objectives.
 				</p>
+				<a data-fancybox href="https://www.youtube.com/embed/aaJQLTaSgLk?rel=0&enablejsapi=1" class="btn btn-video text-left pl-0" style="font-size: 13px;">
+					<i class="fas fa-play"></i>&nbsp;<b>Introduction to BuyAnyLight</b>	
+				</a>
+				
 			</div>
 			<div class="col-6">
 				<img src="{{ Util::assetUrl('images/about-img.png') }}" alt="" width="100%">
@@ -173,7 +224,10 @@
 					<img src="{{ Util::assetUrl('images/about(1).png') }}" alt="" width="50%">
 				</div>
 				<div class="pt-3 text-center">
-					<b>A private homeowner?</b>
+					<b>A private homeowner?</b> <br>
+					<a data-fancybox href="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
+						<i class="fas fa-play"></i>&nbsp;<b>LightFinder</b>	
+					</a>
 					<p class="pt-2 text-justify">
 						A typical homeowner does not have the technical expertise to understand lux calculations, wattages, IP or IK ratings, lumen per watt, and the same applies to lighting setup and design aesthetics. Use BuyAnyLight to make your home a greener, more stylish and energy-efficient zone by switching to LED Lights. The difference in prices are huge and so will be your energy bill savings.
 					</p>
@@ -185,6 +239,9 @@
 				</div>
 				<div class="pt-3 text-center">
 					<b>A consultant, contractor or project owner?</b>
+					<a data-fancybox href="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
+						<i class="fas fa-play"></i>&nbsp;<b>My Home</b>	
+					</a>
 					<p class="pt-2 text-justify">
 						We've got you covered! We save you time, money and add even more value with the finest technical expertise to specify the ideal LED lights for your project. Your own BAL expert will help you through your project, every step of the way ensuring that you get the best prices, designs and products anywhere in the world. BAL allows contractors and consultants to provide outstanding services for their clients, achieve project objectives and maximise profits. With BAL, it's always a win-win situation!
 					</p>
@@ -196,6 +253,9 @@
 				</div>
 				<div class="pt-3 text-center">
 					<b>Researching LED prices and products?</b>
+					<a data-fancybox href="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
+						<i class="fas fa-play"></i>&nbsp;<b>My Tower</b>	
+					</a>
 					<p class="pt-2 text-justify">
 						Whether you just want to get an idea of the market or aim to outsource your lighting needs for any of your project, we have got you covered. Our LightFinder platform makes this as easy as submitting an online form. Simply sign up and submit your RFQ (request for quotation). That’s it! Our AI based system will find the right lighting products specially catered for your lighting needs while ensuring the best value in product quality, costs, and service.
 					</p>
@@ -613,7 +673,7 @@
 			<div class="card mr-2">
 				<div class="card-body">
 					<h4 class="card-title pt-1 pb-3">
-						<b><span class="text-BAL">Light</span>Finder</b>
+						<b>LightFinder</b>
 					</h4>
 					<a data-fancybox href="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" class=" text-white package-link">
 					<div class="package-one">
@@ -920,7 +980,7 @@
 			<div class="card mr-2 ml-2">
 				<div class="card-body">
 					<h4 class="card-title pt-1 pb-3">
-						<b><span class="text-BAL">My</span> Home</b>
+						<b>My Home</b>
 					</h4>
 					<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="text-white package-link">
 					<div class="package-two">
@@ -1084,7 +1144,7 @@
 			<div class="card ml-2">
 				<div class="card-body">
 					<h4 class="card-title pt-1 pb-3">
-						<b><span class="text-BAL">My</span> Tower</b>
+						<b>My Tower</b>
 					</h4>
 					<a data-fancybox href="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" class="text-white package-link">
 					<div class="package-three">

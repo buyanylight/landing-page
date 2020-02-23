@@ -275,36 +275,36 @@
 				<img src="{{ Util::assetUrl('images/ieo/ieo-bg(1).png') }}" alt="">
 			</div>
 			<div class="col-md-1">
-				<div class="row social-links mt-4 text-center justify-content-center">
+				<div class="row social-links text-center justify-content-center w-100">
 					<div class="col-12 mt-2">
-						<a href="http://www.youtube.com/c/BuyAnyLight" style="color: #A789DD;" target="_blank"><i class="fab fa-youtube"></i></a>
+						<a href="http://www.youtube.com/c/BuyAnyLight" style="color: white" target="_blank"><i class="fab fa-youtube"></i></a>
 					</div>
 					<div class="col-12 mt-2">
-						<a href="https://twitter.com/BuyAnyLight" style="color: #A789DD;" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="https://twitter.com/BuyAnyLight" style="color: white" target="_blank"><i class="fab fa-twitter"></i></a>
 					</div>
 					<div class="col-12 mt-2">
-						<a href="https://www.instagram.com/buyanylight/" style="color: #A789DD;" target="_blank"><i class="fab fa-instagram"></i></a>
+						<a href="https://www.instagram.com/buyanylight/" style="color: white" target="_blank"><i class="fab fa-instagram"></i></a>
 					</div>
 					<div class="col-12 mt-2">
-						<a href="https://www.facebook.com/BuyAnyLight/" style="color: #A789DD;" target="_blank"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://www.facebook.com/BuyAnyLight/" style="color: white" target="_blank"><i class="fab fa-facebook-f"></i></a>
 					</div>
 					<div class="col-12 mt-2">
-						<a href="https://github.com/buyanylight" style="color: #A789DD;" target="_blank"><i class="fab fa-github"></i></a>
+						<a href="https://github.com/buyanylight" style="color: white" target="_blank"><i class="fab fa-github"></i></a>
 					</div>
 					<div class="col-12 mt-2">
-						<a href="https://www.reddit.com/r/BuyAnyLight/" style="color: #A789DD;" target="_blank"><i class="fab fa-reddit-alien"></i></a>
+						<a href="https://www.reddit.com/r/BuyAnyLight/" style="color: white" target="_blank"><i class="fab fa-reddit-alien"></i></a>
 					</div>
 					<div class="col-12 mt-2">
-						<a href="https://bitcointalk.org/index.php?topic=5193049.0;topicseen" style="color: #A789DD;" target="_blank"><i class="fab fa-bitcoin"></i></a>
+						<a href="https://bitcointalk.org/index.php?topic=5193049.0;topicseen" style="color: white" target="_blank"><i class="fab fa-bitcoin"></i></a>
 					</div>
 					<div class="col-12 mt-2">
-						<a href="https://t.me/buyanylight" style="color: #A789DD;" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+						<a href="https://t.me/buyanylight" style="color: white" target="_blank"><i class="fab fa-telegram-plane"></i></a>
 					</div>
 					<div class="col-12 mt-2">
-						<a href="https://medium.com/buyanylight" style="color: #A789DD;" target="_blank"><i class="fab fa-medium-m"></i></a>
+						<a href="https://medium.com/buyanylight" style="color: white" target="_blank"><i class="fab fa-medium-m"></i></a>
 					</div>
 					<div class="col-12 mt-2">
-						<a href="https://www.linkedin.com/company/buyanylight/" style="color: #A789DD;" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+						<a href="https://www.linkedin.com/company/buyanylight/" style="color: white" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 					</div>
 				</div>
 			</div>

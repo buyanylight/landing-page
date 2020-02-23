@@ -19,12 +19,14 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="{{ route('home') }}#ninety">How it works</a>
-                  <!--       <a class="dropdown-item" href="{{ route('home') }}#balvsretail">BAL vs. retail</a> -->
                         <a class="dropdown-item" href="{{ route('home') }}#about">About BAL</a>
                         <a class="dropdown-item" href="{{ route('home') }}#why-bal">Why BAL</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#all-packages">Packages</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#package">Summary</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#addons">Add-ons</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown mr-3">
+                <!-- <li class="nav-item dropdown mr-3">
                     <a class="nav-link dropdown-toggle text-white links" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Packages
                     </a>
@@ -36,7 +38,7 @@
                         <a class="dropdown-item" href="{{ route('home') }}#package">Summary</a>
                         <a class="dropdown-item" href="{{ route('home') }}#addons">Add-ons</a>
                     </div>
-                </li>
+                </li> -->
                <!--  <li class="nav-item dropdown mr-3">
                     <a class="nav-link dropdown-toggle text-white links" href="{{ route('home') }}#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Buyers
@@ -71,28 +73,15 @@
                         <a class="dropdown-item" href="{{ route('investor') }}">Lets talk</a>
                     </div>
                 </li> -->
-
-
-              <!--   <li class="nav-item dropdown mr-3">
+                 <li class="nav-item dropdown mr-3">
                     <a class="nav-link dropdown-toggle text-white links" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Media
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="https://medium.com/buyanylight" target="_blank">News</a>
+                        <a class="dropdown-item" href="https://blog.buyanylight.com" target="_blank">Blog</a>
                         <a class="dropdown-item" href="{{ route('downloads') }}">Downloads</a>
-                        <a class="dropdown-item" href="{{ route('videos') }}">Videos</a>
                     </div>
-                </li>
- -->
-                <li class="nav-item mr-3">
-                    <a class="nav-link text-white links" href="{{ route('downloads') }}" target="_blank">Media</a>
-                </li>
-
-                <li class="nav-item mr-3">
-                    <a class="nav-link text-white links" href="https://medium.com/buyanylight" target="_blank">News</a>
-                </li>
-
-                <li class="nav-item mr-3">
-                    <a class="nav-link text-white links" href="https://blog.buyanylight.com" target="_blank">Blog</a>
                 </li>
                 <li class="nav-item mr-3">
                     <a class="nav-link text-white links" href="{{ route('contact') }}">Contact</a>

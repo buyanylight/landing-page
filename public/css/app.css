@@ -11181,6 +11181,10 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+.section2 .card-contents .btn-video {
+  color: #5134e9;
+}
+
 .section3 {
   height: 100vh;
   background-image: url("/images/trial-bg.png");
@@ -11197,8 +11201,16 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+.section4 .btn-video {
+  color: #5134e9;
+}
+
 .section5 {
   background-color: #F4F9FF;
+}
+
+.section5 .btn-video {
+  color: #5134e9;
 }
 
 .section6 h4 {
