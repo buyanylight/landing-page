@@ -11221,6 +11221,10 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+.section6 .btn-video {
+  color: #5134e9;
+}
+
 .section7 {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(47.02%, #3F41E2), to(#7917F8));
   background-image: linear-gradient(to right, #3F41E2 47.02%, #7917F8);
