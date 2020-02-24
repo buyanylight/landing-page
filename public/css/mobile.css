@@ -11212,6 +11212,10 @@ nav .dropdown-toggle::after {
   padding: 0.375rem 0.25rem;
 }
 
+.section2 .btn-video {
+  color: #5134e9;
+}
+
 .section3 h4 {
   background: -webkit-gradient(linear, left top, right top, color-stop(47.02%, #3F41E2), to(#7917F8));
   background: linear-gradient(to right, #3F41E2 47.02%, #7917F8);
@@ -11220,8 +11224,16 @@ nav .dropdown-toggle::after {
   -webkit-text-fill-color: transparent;
 }
 
+.section3 .btn-video {
+  color: #5134e9;
+}
+
 .section5 {
   background-color: #F4F9FF;
+}
+
+.section5 .btn-video {
+  color: #5134e9;
 }
 
 .section6 h4 {
@@ -11230,6 +11242,10 @@ nav .dropdown-toggle::after {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.section6 .btn-video {
+  color: #5134e9;
 }
 
 .section7 {

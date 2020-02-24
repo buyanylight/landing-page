@@ -96,11 +96,14 @@
 							</h5>
 							<p>B2B & B2C</p>
 							<p> LightFinder users are businesses such as lighting companies, consultants or homeowners who prefer to source LED lights personally and directly from
-								manufacturers... </p>
-								<a href="#finder" class="btn btn-BAL" style="font-size: 13px;">
-									<b>Cut LED cost, not quality</b>	
-								</a>
-								
+								manufacturers... 
+							</p>
+							<a data-fancybox href="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
+								<i class="fas fa-play"></i>&nbsp;<b>Play Video</b>	
+							</a>
+							<a href="#finder" class="btn btn-BAL" style="font-size: 13px;">
+								<b>Cut LED cost, not quality</b>	
+							</a>
 							</div>
 						</div>
 					</div>
@@ -115,6 +118,9 @@
 								</h5>
 								<p>Private homes, villas, and palaces</p>
 								<p>Generic lights don’t belong in stylish, 21st century homes… Custom LED saves energy and costs, helps protect our planet and gives far greater aesthetic and design opportunities...</p>
+								<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
+									<i class="fas fa-play"></i>&nbsp;<b>Play Video</b>	
+								</a>
 								<a href="#home" class="btn btn-BAL" style="font-size: 13px;">
 									<b>Find dream home LED at dreamy prices</b>
 								</a>
@@ -132,6 +138,9 @@
 							</h5>
 							<p>Consultants, contractors, clients</p>
 							<p>My Tower users leverage our expertise to get the best products in the market, save a fortune, and improve their project delivery. When starting a project, you subscribe to our package...</p>
+							<a data-fancybox href="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
+								<i class="fas fa-play"></i>&nbsp;<b>Play Video</b>	
+							</a>
 							<a href="#tower" class="btn btn-BAL" style="font-size: 13px;">
 								<b>Get the best quality and prices ever</b>
 							</a>
@@ -164,6 +173,9 @@
 					<p>
 						Whether you have lots of experience with LED lights or none at all, we have a package to help you achieve all your objectives.
 					</p>
+					<a data-fancybox href="https://www.youtube.com/embed/aaJQLTaSgLk?rel=0&enablejsapi=1" class="btn btn-video w-100 text-center pl-0" style="font-size: 13px;">
+						<i class="fas fa-play"></i>&nbsp;<b>Introduction to BuyAnyLight</b>	
+					</a>
 				</div>
 			</div>
 		</div>
@@ -176,7 +188,11 @@
 						<img src="{{ Util::assetUrl('images/about(1).png') }}" alt="" width="60%">
 					</div>
 					<div class="pt-3 text-center">
-						<b>A private homeowner?</b>
+						<b>A private homeowner?</b> <br>
+						<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
+							<i class="fas fa-play"></i>&nbsp;<b>My Home</b>	
+						</a>
+					
 						<p class="pt-2 text-justify">
 							A typical homeowner does not have the technical expertise to understand lux calculations, wattages, IP or IK ratings, lumen per watt, and the same applies to lighting setup and design aesthetics. Use BuyAnyLight to make your home a greener, more stylish and energy-efficient zone by switching to LED Lights. The difference in prices are huge and so will be your energy bill savings.
 						</p>
@@ -188,6 +204,9 @@
 					</div>
 					<div class="pt-3 text-center">
 						<b>A consultant, contractor or project owner?</b>
+						<a data-fancybox href="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
+							<i class="fas fa-play"></i>&nbsp;<b>My Tower</b>	
+						</a>
 						<p class="pt-2 text-justify">
 							We've got you covered! We save you time, money and add even more value with the finest technical expertise to specify the ideal LED lights for your project. Your own BAL expert will help you through your project, every step of the way ensuring that you get the best prices, designs and products anywhere in the world. BAL allows contractors and consultants to provide outstanding services for their clients, achieve project objectives and maximise profits. With BAL, it's always a win-win situation!
 						</p>
@@ -199,6 +218,9 @@
 					</div>
 					<div class="pt-3 text-center">
 						<b>Researching LED prices and products?</b>
+						<a data-fancybox href="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
+							<i class="fas fa-play"></i>&nbsp;<b>LightFinder</b>	
+						</a>
 						<p class="pt-2 text-justify">
 							Whether you just want to get an idea of the market or aim to outsource your lighting needs for any of your project, we have got you covered. Our LightFinder platform makes this as easy as submitting an online form. Simply sign up and submit your RFQ (request for quotation). That’s it! Our AI based system will find the right lighting products specially catered for your lighting needs while ensuring the best value in product quality, costs, and service.
 						</p>
@@ -223,6 +245,9 @@
 					<p>
 						BAL secures 100% of your funds until you receive your goods. The system also manages the logistics, so you receive your order on time, safely and securely.
 					</p>
+					<a data-fancybox href="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" class="btn btn-video text-left pl-0" style="font-size: 13px;">
+						<i class="fas fa-play"></i>&nbsp;<b>LightFinder</b>	
+					</a>
 				</div>
 			</div>
 		</div>

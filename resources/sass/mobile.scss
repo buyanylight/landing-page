@@ -115,11 +115,25 @@ nav .dropdown-toggle::after {
 	}
 }
 
+.section2{
+	.btn-video {
+		color: #5134e9;
+	}
+}
+
+
+
+
+
 .section3{
 	h4{
 		background: $primaryBtn;
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
+	}
+
+	.btn-video {
+		color: #5134e9;
 	}
 }
 
@@ -127,6 +141,9 @@ nav .dropdown-toggle::after {
 
 .section5{
 	background-color: #F4F9FF;
+	.btn-video {
+		color: #5134e9;
+	}
 }
 
 .section6{
@@ -134,6 +151,10 @@ nav .dropdown-toggle::after {
 		background: $primaryBtn;
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
+	}
+
+	.btn-video {
+		color: #5134e9;
 	}
 }
 
