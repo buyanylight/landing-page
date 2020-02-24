@@ -352,9 +352,8 @@
 													<i class="far fa-play-circle"></i>
 												</span>
 											</div>
-											<div class="col-10 text-white">
-												<p class="mb-0">BUYANYLIGHT IEO</p>  
-												<p style="font-size:10px;">How BAL IEO works</p>
+											<div class="col-10 text-white pt-2">
+												<p class="mb-0">BUYANYLIGHT IEO</p>
 											</div>
 										</div>
 									</a>
@@ -652,19 +651,28 @@ $newsdatas = [];
 
 <section class="section7 section-buy-token" id="section-bal-token">
 	<div class="pt-3 mt-3 container">
-		<h3>
-			<strong>
-				<span>
-					Buy
-				</span>
-				<span class="header-text">
-					BAL 
-				</span>
-				<span>
-					Tokens
-				</span>
-			</strong>
-		</h3>
+		<div class="row">
+			<div class="col-7">
+				<h3 class="">
+					<b>
+						<span>
+							Buy
+						</span>
+						<span class="header-text">
+							BAL 
+						</span>
+						<span>
+							Tokens
+						</span>
+					</b>
+				</h3>
+			</div>
+			<div class="col-5">
+				<a data-fancybox href="https://www.youtube.com/embed/o8CAwwz6tIM?rel=0&enablejsapi=1" class="btn btn-BAL text-white text-left" style="font-size: 10px;">
+					<i class="fas fa-play"></i>&nbsp;<b>How it works?</b>	
+				</a>
+			</div>
+		</div>
 		<div class="buying-content">
 			<form action="/buy-token" method="post" enctype="multipart/form-data" id="token-form">
 				@csrf()
