@@ -245,7 +245,7 @@
 					<p>
 						BAL secures 100% of your funds until you receive your goods. The system also manages the logistics, so you receive your order on time, safely and securely.
 					</p>
-					<a data-fancybox href="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" class="btn btn-video text-left pl-0" style="font-size: 13px;">
+					<a data-fancybox href="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" class="btn btn-video w-100 text-center pl-0" style="font-size: 13px;">
 						<i class="fas fa-play"></i>&nbsp;<b>LightFinder</b>	
 					</a>
 				</div>
