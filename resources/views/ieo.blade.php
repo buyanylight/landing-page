@@ -2233,7 +2233,7 @@ $newsdatas = [];
 					$partners[] = [ 'style'=>"", 'title'=>"Vitro Services", 'link'=>"https://vitor-services.company", 'src'=>"images/ieo/marketing-partners/vitor-services2.png", 'width' => ''];
 					$partners[] = [ 'style'=>"", 'title'=>"Consulate General of the Federal Republic of Germany Dubai", 'link'=>"https://uae.diplo.de/ae-en/vertretungen/generalkonsulat1", 'src'=>"Consulate General of the Federal Republic of Germany Dubai", 'width' => ''];
 					$partners[] = [ 'style'=>"", 'title'=>"Bitcoin Subsidium", 'link'=>"https://www.bitcoin-subsidium.org/", 'src'=>"images/ieo/partners/bitcoin_sub.png",  'width' => '60%'];
-					$partners[] = [ 'style'=>"", 'title'=>"Transcendence", 'link'=>"https://teloscoin.org/", 'src'=>"images/ieo/partners/transcendence.png",  'width' => '60%'];
+					$partners[] = [ 'style'=>"", 'title'=>"Transcendence", 'link'=>"https://teloscoin.org/", 'src'=>"images/ieo/partners/transcendence.png",  'width' => '45%'];
 					$partners[] = [ 'style'=>"", 'title'=>"Telos", 'link'=>"https://teloscoin.org/", 'src'=>"images/ieo/partners/telos.png",  'width' => '30%'];
 					$partners[] = [ 'style'=>"", 'title'=>"Bitcoin Subsidium", 'link'=>"https://bitdorado.exchange/", 'src'=>"images/ieo/partners/bitdrado.png",  'width' => '60%'];
 				?>
