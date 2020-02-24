@@ -230,9 +230,7 @@
 						Do you worry about paying sky-high prices and have trust issues with suppliers? <br>
 						Do you hate delayed deliveries and want secured payments? 
 					</p>
-					<p>
-					</p>
-					<div class="pt-3 row ">
+					<div class="pt-3 row">
 						<div class="col pr-1">
 							<a href="#meet-bal" class="btn btn-BAL w-100">
 								<i class="fas fa-link"></i>
@@ -266,6 +264,43 @@
 								<i class="far fa-file-pdf"></i>
 								<br>
 								Pitch Deck
+							</a>
+						</div>
+					</div>
+					<div class="pt-3 row">
+						<div class="col pr-1">
+							<a data-fancybox href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0" class="btn btn-play text-white w-100">
+								<i class="fas fa-play"></i>
+								<br>
+								BAL IEO
+							</a>
+						</div>
+						<div class="col pr-1 pl-1">
+							<a data-fancybox href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0"  target="_blank" class="btn btn-play text-white w-100">
+								<i class="fas fa-play"></i>
+								<br>
+								Introducing BAL
+							</a>
+						</div>
+						<div class="col pr-1 pl-1">
+							<a data-fancybox href="https://www.youtube-nocookie.com/embed/rWX1qeigBMk?rel=0"class="btn btn-play text-white w-100" target="_blank">
+								<i class="fas fa-play"></i>
+								<br>
+								MyHome
+							</a>
+						</div>
+						<div class="col pr-1 pl-1">
+							<a data-fancybox href="https://www.youtube-nocookie.com/embed/IdrrtNgvDKo&t?rel=0" target="_blank" class="btn btn-play text-white w-100">
+								<i class="fas fa-play"></i>
+								<br>
+								MyTower
+							</a>					
+						</div>
+						<div class="col pl-1" style="z-index:100">
+							<a data-fancybox href="https://www.youtube-nocookie.com/embed/k-zrKcgJf0Q?rel=0" class="btn btn-play text-white w-100" target="_blank">
+								<i class="fas fa-play"></i>
+								<br>
+								LightFinder
 							</a>
 						</div>
 					</div>
@@ -416,9 +451,8 @@
 													<i class="far fa-play-circle"></i>
 												</span>
 											</div>
-											<div class="col-10 text-white">
-												<p class="mb-0">BUYANYLIGHT IEO</p>  
-												<p style="font-size:10px;">How BAL IEO works</p>
+											<div class="col-10 text-white pt-2">
+												<p class="mb-0">BUYANYLIGHT IEO</p>
 											</div>
 										</div>
 									</a>
@@ -715,6 +749,38 @@ $newsdatas = [];
 				</div>
 			@endforeach
 		</div>
+		<div class="row w-100 social-links mt-4 text-center justify-content-center">
+			<div class="col-sm-1 one-link">
+				<a href="http://www.youtube.com/c/BuyAnyLight" class="text-white" target="_blank"><i class="fab fa-youtube"></i></a>
+			</div>
+			<div class="col-sm-1 one-link">
+				<a href="https://twitter.com/BuyAnyLight" class="text-white" target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+			<div class="col-sm-1 one-link">
+				<a href="https://www.instagram.com/buyanylight/" class="text-white" target="_blank"><i class="fab fa-instagram"></i></a>
+			</div>
+			<div class="col-sm-1 one-link">
+				<a href="https://www.facebook.com/BuyAnyLight/" class="text-white" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<div class="col-sm-1 one-link">
+				<a href="https://github.com/buyanylight" class="text-white" target="_blank"><i class="fab fa-github"></i></a>
+			</div>
+			<div class="col-sm-1 one-link">
+				<a href="https://www.reddit.com/r/BuyAnyLight/" class="text-white" target="_blank"><i class="fab fa-reddit-alien"></i></a>
+			</div>
+			<div class="col-sm-1 one-link">
+				<a href="https://bitcointalk.org/index.php?topic=5193049.0;topicseen" class="text-white" target="_blank"><i class="fab fa-bitcoin"></i></a>
+			</div>
+			<div class="col-sm-1 one-link">
+				<a href="https://t.me/buyanylight" class="text-white" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+			</div>
+			<div class="col-sm-1 one-link">
+				<a href="https://medium.com/buyanylight" class="text-white" target="_blank"><i class="fab fa-medium-m"></i></a>
+			</div>
+			<div class="col-sm-1 one-link">
+				<a href="https://www.linkedin.com/company/buyanylight/" class="text-white" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -722,19 +788,28 @@ $newsdatas = [];
 
 <section class="section8 section-buy-token" id="section-bal-token">
 	<div class="container" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
-		<h3>
-			<b>
-				<span>
-					Buy
-				</span>
-				<span class="header-text">
-					BAL 
-				</span>
-				<span>
-					Tokens
-				</span>
-			</b>
-		</h3>
+		<div class="row">
+			<div class="col-md-6">
+				<h3>
+					<b>
+						<span>
+							Buy
+						</span>
+						<span class="header-text">
+							BAL 
+						</span>
+						<span>
+							Tokens
+						</span>
+					</b>
+				</h3>
+			</div>
+			<div class="col-md-6 text-right">
+				<a data-fancybox href="https://www.youtube.com/embed/o8CAwwz6tIM?rel=0&enablejsapi=1" class="btn btn-BAL text-white text-left" style="font-size: 13px;">
+					<i class="fas fa-play"></i>&nbsp;<b>How it works?</b>	
+				</a>
+			</div>
+		</div>
 		<div class="buying-content">
 			<form action="/buy-token" method="post" enctype="multipart/form-data">
 				@csrf()

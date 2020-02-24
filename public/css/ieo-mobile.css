@@ -11212,6 +11212,10 @@ nav .dropdown-toggle::after {
   margin-top: 4rem;
 }
 
+.section1 .btn-play {
+  font-size: 12px;
+}
+
 .section3 .card {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(52.29%, #3F41E2), to(#3C8AF7));
   background-image: linear-gradient(to right, #3F41E2 52.29%, #3C8AF7);

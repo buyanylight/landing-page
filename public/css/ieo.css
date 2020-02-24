@@ -11175,6 +11175,10 @@ section {
   width: 110%;
 }
 
+.section1 .btn-play {
+  font-size: 12px;
+}
+
 .section2 {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(65.03%, #030026), to(#3e007f));
   background-image: linear-gradient(to right, #030026 65.03%, #3e007f);
