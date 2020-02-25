@@ -691,7 +691,7 @@
 	aria-labelledby="BAL Token Sale" 
 	aria-hidden="true">
 	    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-	        <div style="background-image: url({{ Util::assetUrl('images/popup-bg3.png') }}); background-size: cover; background-position: center;"
+	        <div style="background-image: url({{ Util::assetUrl('images/popup-bg3.png') }}), linear-gradient(to right, #3F41E2 52.29%, #7917F8); background-size: cover; background-position: center;"
 	        class="modal-content">
 	            <div class="modal-header" style="border-bottom: 0; padding-bottom: 10px;">
 	            	<div class="d-flex align-items-center justify-content-center" style="width: 100%;">
