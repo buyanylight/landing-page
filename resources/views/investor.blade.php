@@ -55,7 +55,9 @@
 </div>
 <div class="container pb-5">
 	<h3><b>Drop us a message</b></h3>
-	<p>If you’re considering investing and would like to know more, please get in touch to discuss our hugely exciting investment proposal.</p>
+	<p>
+        If you’re considering investing and would like to know more, please get in touch to discuss our hugely exciting investment proposal.
+    </p>
 	<div class="contact-form pt-3 pb-5">
 			<div class="container contact-form-container bg-black"> 
                 <div class="row">
@@ -106,10 +108,10 @@
                         <div class="location text-white">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <i class="fas fa-map-marker-alt text-BAL"></i>
+                                    <i class="fas fa-map-marker-alt text-white"></i>
                                 </div>
                                 <div class="col-md-10">
-                                    <span class="text-BAL"><b>BuyAnyLight.com</b></span><br>
+                                    <span class="text-white"><b>BuyAnyLight.com</b></span><br>
                                     <span>Dubai Investment Park 1, <br> Opp. Green Community East, Showroom 10, P.O. BOX 3219 <br> Dubai,  United Arab Emirates</span>
                                 </div>
                             </div>
@@ -117,10 +119,10 @@
                         <div class="location text-white">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <i class="fas fa-phone text-BAL"></i>
+                                    <i class="fas fa-phone text-white"></i>
                                 </div>
                                 <div class="col-md-10">
-                                    <span class="text-BAL"><b>+971 4 887 3265</b></span><br>
+                                    <span class="text-white"><b>+971 4 887 3265</b></span><br>
                                     <span>Mon to Fri 9am to 6pm</span><br>
                                 </div>
                             </div>
@@ -128,10 +130,10 @@
                         <div class="location text-white">
                             <div class="row">
                                 <div class="col-md-1">
-                                    <i class="fas fa-envelope text-BAL"></i>
+                                    <i class="fas fa-envelope text-white"></i>
                                 </div>
                                 <div class="col-md-10">
-                                    <span  class="text-BAL"><b>info@buyanylight.com</b></span><br>
+                                    <span  class="text-white"><b>info@buyanylight.com</b></span><br>
                                     <span>Send us your query anytime</span><br>
                                 </div>
                             </div>
@@ -139,7 +141,12 @@
                     </div>
                 </div>
             </div>
-		</div>
+        </div>
+        <h3>
+           <b>
+               Also have a look at our <a href="/ieo">IEO Page</a>
+           </b>
+        </h3>
 </div>
 <script src="https://www.google.com/recaptcha/api.js?render={{ env('CAPTCHA_KEY') }}"></script>
 <script type="text/javascript">
