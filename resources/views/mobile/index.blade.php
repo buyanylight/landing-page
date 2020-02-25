@@ -97,10 +97,10 @@
 							<p>B2B & B2C</p>
 							<p> LightFinder users are businesses such as lighting companies, consultants or homeowners who prefer to source LED lights personally and directly from
 								manufacturers... 
-							</p><br>
+							</p>
 							<a data-fancybox href="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
 								<i class="fas fa-play"></i>&nbsp;<b>Play Video</b>	
-							</a>
+							</a><br>
 							<a href="#finder" class="btn btn-BAL" style="font-size: 13px;">
 								<b>Cut LED cost, not quality</b>	
 							</a>
