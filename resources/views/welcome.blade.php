@@ -1,6 +1,36 @@
 @extends('layouts.main-layout')
 
 
+@section('body-end-javascript')
+	<script>
+
+	$('.lightfinder-btn').click(function(){
+		$('.lightfinder-div').addClass('animated infinite pulse delay-2s');
+		$('.lightfinder-div').click(function(){	
+			$('.lightfinder-div').removeClass('animated infinite pulse delay-2s');
+		})
+	})
+
+	$('.home-btn').click(function(){
+		$('.home-div').addClass('animated infinite pulse delay-2s');
+		$('.home-div').click(function(){	
+			$('.home-div').removeClass('animated infinite pulse delay-2s');
+		})
+	})
+
+	$('.tower-btn').click(function(){
+		$('.tower-div').addClass('animated infinite pulse delay-2s');
+		$('.tower-div').click(function(){	
+			$('.tower-div').removeClass('animated infinite pulse delay-2s');
+		})
+	})
+
+
+	</script>
+@endsection
+
+
+
 @section('content')
 <section class="section1">
 	<div class="container h-100 d-flex align-items-center">
@@ -123,7 +153,7 @@
 						<a data-fancybox href="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
 							<i class="fas fa-play"></i>&nbsp;<b>Play Video</b>	
 						</a>
-						<a href="#all-packages" class="btn btn-BAL" style="font-size: 13px;">
+						<a href="#all-packages" class="btn btn-BAL lightfinder-btn" style="font-size: 13px;">
 							<b>Cut LED cost, not quality</b>	
 						</a>
 							
@@ -144,7 +174,7 @@
 							<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
 								<i class="fas fa-play"></i>&nbsp;<b>Play Video</b>	
 							</a>
-							<a href="#all-packages" class="btn btn-BAL" style="font-size: 13px;">
+							<a href="#all-packages" class="btn btn-BAL home-btn" style="font-size: 13px;">
 								<b>Find dream home LED at dreamy prices</b>
 							</a>
 						</div>
@@ -164,7 +194,7 @@
 						<a data-fancybox href="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
 							<i class="fas fa-play"></i>&nbsp;<b>Play Video</b>	
 						</a>
-						<a href="#all-packages" class="btn btn-BAL" style="font-size: 13px;">
+						<a href="#all-packages" class="btn btn-BAL tower-btn" style="font-size: 13px;">
 							<b>Get the best quality and prices ever</b>
 						</a>
 					</div>
@@ -673,7 +703,7 @@
 		</div>
 		<hr class="border-white">
 		<div class=" card-deck pt-0 pb-0">
-			<div class="card mr-2">
+			<div class="card mr-2 lightfinder-div">
 				<div class="card-body">
 					<h4 class="card-title pt-1 pb-3">
 						<b>LightFinder</b>
@@ -980,7 +1010,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="card mr-2 ml-2">
+			<div class="card mr-2 ml-2 home-div">
 				<div class="card-body">
 					<h4 class="card-title pt-1 pb-3">
 						<b>My Home</b>
@@ -1144,7 +1174,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="card ml-2">
+			<div class="card ml-2 tower-div">
 				<div class="card-body">
 					<h4 class="card-title pt-1 pb-3">
 						<b>My Tower</b>
