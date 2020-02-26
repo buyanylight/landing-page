@@ -149,7 +149,9 @@
 						</h5>
 						<p>B2B & B2C</p>
 						<p> LightFinder users are businesses such as lighting companies, consultants or homeowners who prefer to source LED lights personally and directly from
-							manufacturers... </p>
+						manufacturers... <a href="#all-packages" class="lightfinder-btn">more</a>
+					
+						</p>
 						<a data-fancybox href="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
 							<i class="fas fa-play"></i>&nbsp;<b>Play Video</b>	
 						</a>
@@ -170,7 +172,7 @@
 								<b>My Home</b>
 							</h5>
 							<p>Private homes, villas, and palaces</p>
-							<p>Generic lights don’t belong in stylish, 21st century homes… Custom LED saves energy and costs, helps protect our planet and gives far greater aesthetic and design opportunities...</p>
+							<p>Generic lights don’t belong in stylish, 21st century homes… Custom LED saves energy and costs, helps protect our planet and gives far greater aesthetic and design opportunities... <a href="#all-packages" class="home-btn">more</a></p>
 							<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
 								<i class="fas fa-play"></i>&nbsp;<b>Play Video</b>	
 							</a>
@@ -190,7 +192,7 @@
 							<b>My Tower</b>
 						</h5>
 						<p>Consultants, contractors, clients</p>
-						<p>My Tower users leverage our expertise to get the best products in the market, save a fortune, and improve their project delivery. When starting a project, you subscribe to our package...</p>
+						<p>My Tower users leverage our expertise to get the best products in the market, save a fortune, and improve their project delivery. When starting a project, you subscribe to our package... <a href="#all-packages" class="tower-btn">more</a></p>
 						<a data-fancybox href="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
 							<i class="fas fa-play"></i>&nbsp;<b>Play Video</b>	
 						</a>
