@@ -15,15 +15,15 @@
 					</h4>
 					<div class="row mt-3">
 						<div class="col-4">
-							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" class="btn btn-BAL w-100">BAL One Pager</a>
+							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" class="btn btn-BAL w-100">BAL One-Pager</a>
 						</div>
 						<div class="col-4">
-							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" class="btn btn-BAL w-100">BAL IEO One Pager</a>
+							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" class="btn btn-BAL w-100">IEO One-Pager</a>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-4">
-							<a href="{{ route('ieo') }}" class="btn btn-BAL mt-2 w-100">IEO</a>
+							<a href="{{ route('ieo') }}" class="btn btn-BAL mt-2 w-100">Take me to IEO</a>
 						</div>
 						<div class="col-4">
 							<a href="{{ route('ieo') }}#section-bal-token" class="btn btn-BAL mt-2 w-100">Buy BAL Tokens</a>
