@@ -8,7 +8,7 @@
                             <img src="{{ Util::assetUrl('images/logo-white.png')}}" alt="" width="50%">
                         </div>
                         <p class="mt-4" style="font-size: 13px; color: white;">
-                            An innovative platform that revolutionizes the procurement process of LED lights by harnessing the power of blockchain, AI, Big Data and Smart Contracts.
+                            {{ trans('msg.footer1') }}
                         </p>
                         <!-- <h5 class="text-white font-weight-bold">Connect with our newsletter</h5>
 
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div class="text-left mt-4">
-                       <span class="text-white">Brought to you by:&nbsp;</span>  
+                       <span class="text-white">{{ trans('msg.footer19') }}:&nbsp;</span>  
                         <a href="https://dotcomv.com" target="_blank">
                             <img src="{{ Util::assetUrl('images/dv_white.png') }}" width="14%">
                         </a>
@@ -85,65 +85,65 @@
                     </div> -->
                 </div>
                 <div class="col-md-2">
-                    <h5 class="text-white font-weight-bold">Buyers</h5>
+                    <h5 class="text-white font-weight-bold">{{ trans('msg.footer2') }}</h5>
                     <ul class="list-group footer-list">
                         <li class="mt-3">
-                            <a href="{{ route('home') }}#ninety" class="text-white">How it works</a>
+                            <a href="{{ route('home') }}#ninety" class="text-white">{{ trans('msg.footer3') }}</a>
                         </li>
                          <li class="mt-3">
-                            <a href="{{ route('home') }}#package" class="text-white">Packages</a>
+                            <a href="{{ route('home') }}#package" class="text-white">{{ trans('msg.footer4') }}</a>
                          </li>
                         <li class="mt-3">
-                            <a href="{{ route('home') }}#about" class="text-white">About us</a>
+                            <a href="{{ route('home') }}#about" class="text-white">{{ trans('msg.footer5') }}</a>
                         </li>
                         <li class="mt-3">
-                            <a href="{{ route('home') }}#why-bal" class="text-white">Why BAL</a>
+                            <a href="{{ route('home') }}#why-bal" class="text-white">{{ trans('msg.footer6') }}</a>
                         </li>
                         <li class="mt-3">
-                            <a href="https://lightfinder.buyanylight.com/buyer/register" class="text-white">Register</a>
+                            <a href="https://lightfinder.buyanylight.com/buyer/register" class="text-white">{{ trans('msg.footer7') }}</a>
                         </li>
                          <li class="mt-3">
-                            <a href="https://lightfinder.buyanylight.com" class="text-white">Sign in</a>
+                            <a href="https://lightfinder.buyanylight.com" class="text-white">{{ trans('msg.footer8') }}</a>
                          </li>
                         <li class="mt-3">
-                            <a href="{{ route('downloads') }}" class="text-white">Media</a>
+                            <a href="{{ route('downloads') }}" class="text-white">{{ trans('msg.footer9') }}</a>
                         </li>
                          <li class="mt-3">
-                            <a href="{{ route('buyer-faq') }}" class="text-white">FAQ</a>
+                            <a href="{{ route('buyer-faq') }}" class="text-white">{{ trans('msg.footer10') }}</a>
                          </li>
                      </ul>
                 </div>
                 <div class="col-md-2">
-                    <h5 class="text-white font-weight-bold">Sellers</h5>
+                    <h5 class="text-white font-weight-bold">{{ trans('msg.footer11') }}</h5>
                     <ul class="list-group footer-list">
                          <li class="mt-3">
-                            <a href="{{ route('seller') }}" class="text-white">Start today</a>
+                            <a href="{{ route('seller') }}" class="text-white">{{ trans('msg.footer12') }}</a>
                          </li>
                         <li class="mt-3">
-                            <a href="https://lightfinder.buyanylight.com/supplier/register" class="text-white">Register</a>
+                            <a href="https://lightfinder.buyanylight.com/supplier/register" class="text-white">{{ trans('msg.footer7') }}</a>
                         </li>
                         <li class="mt-3">
-                            <a href="https://lightfinder.buyanylight.com" class="text-white">Sign in</a>
+                            <a href="https://lightfinder.buyanylight.com" class="text-white">{{ trans('msg.footer8') }}</a>
                         </li>
                         <li class="mt-3">
-                            <a href="{{ route('seller-faq') }}" class="text-white">FAQ</a>
+                            <a href="{{ route('seller-faq') }}" class="text-white">{{ trans('msg.footer10') }}</a>
                          </li>
                      </ul>
                 </div>
                 <div class="col-md-2">
-                    <h5 class="text-white font-weight-bold">Investors</h5>
+                    <h5 class="text-white font-weight-bold">{{ trans('msg.footer15') }}</h5>
                     <ul class="list-group footer-list">
                         <li class="mt-3">
-                            <a href="{{ route('investor') }}" class="text-white">Let's talk</a>
+                            <a href="{{ route('investor') }}" class="text-white">{{ trans('msg.footer16') }}</a>
                         </li>
                         <li class="mt-3">
-                            <a href="{{ route('ieo') }}" class="text-white">IEO</a>
+                            <a href="{{ route('ieo') }}" class="text-white">{{ trans('msg.footer17') }}</a>
                         </li>
                      </ul>
                 </div>
                 <div class="col-md-12 mt-5">
                     <p style="font-size: 10px; color: white;">
-                        RISK WARNING: Trading and investing in cryptocurrencies involves substantial risk of loss and is not suitable for all types of investors. Please make sure you are investing mindfully after understanding the nature, complexity and risks inherent in the trading of cryptocurrency. You should not purchase cryptocurrency unless you understand the extent of your exposure to potential loss. Cryptocurrencies price can be affected by many factors, including, but not limited to, national and international economic, financial, regulatory, political, terrorist, military, and other events. Extreme changes in price may occur at any time, resulting in a potential loss of value of your entire investment in cryptocurrencies, complete or partial loss of purchasing power, and difficulty or a complete inability to sell or exchange your currency. Please make sure you are not risking funds you can not afford to lose. In no event shall Buyanylight.com will be liable to any loss or damage of any kind incurred as a result of the use of this site or the services found at this site. Licence number 5539. DOTCOM VENTURES FZE, UAQ Free Trade Zone, United Arab Emirates. Copyright © 2020 Buyanylight.com. All rights Reserved.
+                    {{ trans('msg.footer18') }}
                     </p>
                 </div>
                <!--  <div class="col-md-2">
@@ -167,7 +167,7 @@
                                 <div class="col-sm-6 text-left">
                                 </div>
                                 <div class="col-sm-6">
-                                    <a href="{{ route('terms') }}" class="text-white">Terms of use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ route('privacy') }}" class="text-white">Privacy & cookies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© BuyAnyLight 2019
+                                    <a href="{{ route('terms') }}" class="text-white">{{ trans('msg.footer21') }}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ route('privacy') }}" class="text-white">{{ trans('msg.footer22') }}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© BuyAnyLight 2019
                                 </div>
                                 <div class="col-sm-4">
                                 </div>

@@ -12,9 +12,11 @@
 |
 */
 
-Route::middleware('throttle:5,1')->group(function () {
-	
-	Route::get('/', 'PageController@home')->name('home');
+Route::middleware('throttle:60,1')->group(function () {
+
+
+	Route::get('lang/{locale}', 'LocalizationController@lang');
+	Route::get('/','PageController@home')->name('home');
 	Route::get('/seller', 'PageController@seller')->name('seller');
 	Route::get('/investor', 'PageController@investor')->name('investor');
 	Route::get('/terms', 'PageController@terms')->name('terms');

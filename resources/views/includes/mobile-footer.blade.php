@@ -40,7 +40,7 @@
 			<div class="accordion-group">
                 <div class="accordion-heading newsletter-btn">
                 	<a class="accordion-toggle pt-4 pb-4 pl-3 text-white w-100 d-block" data-toggle="collapse" href="#newsletter">
-                    	Newsletter
+                    	{{ trans('msg.footer_newsletter') }}
                     	<div class="newsletter-down float-right pr-4">
                   			<i class="fas fa-angle-down"></i>
                   		</div>
@@ -70,7 +70,7 @@
 			<div class="accordion-group">
                 <div class="accordion-heading contact-btn">
                 	<a class="accordion-toggle pt-4 pb-4 pl-3 text-white w-100 d-block" data-toggle="collapse" href="#contact">
-                    	Contact
+					{{ trans('msg.footer_contact1') }}
                     	<div class="contact-down float-right pr-4">
                   			<i class="fas fa-angle-down"></i>
                   		</div>
@@ -83,7 +83,7 @@
                 <div id="contact" class="accordion-body collapse in">
                 	<div class="accordion-inner">
                     	<div class=" p-3">
-                        <p>Feel free to get in touch with us.</p>
+                        <p>{{ trans('msg.footer_contact2') }}</p>
                        	<form method="post" action="/contact-us">
                              {{ csrf_field() }}
                             <div class="row">
@@ -110,7 +110,7 @@
                             </div>
                             <input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
                            	<div class="form-group mt-3">
-                            	<button type="submit"  class="btn btn-dark w-100    send-message" disabled="disabled">Send Message</button>
+                            	<button type="submit"  class="btn btn-dark w-100    send-message" disabled="disabled">{{ trans('msg.footer20') }}</button>
                             </div>
                         </form>
                     </div>
@@ -121,7 +121,7 @@
             <div class="accordion-group">
                 <div class="accordion-heading about-btn">
                     <a class="accordion-toggle pt-4 pb-4 pl-3 text-white w-100 d-block" data-toggle="collapse" href="#about">
-                        About
+                       {{ trans('msg.footer25') }}
                         <div class="about-down float-right pr-4">
                             <i class="fas fa-angle-down"></i>
                         </div>
@@ -136,27 +136,27 @@
                         <ul class="footer-list m-0 text-white">
                             <li class="mt-3">
                                 <a href="{{ route('m-home') }}#works" class="text-white">
-                                    How it works                                    
+                                    {{ trans('msg.footer3') }}                               
                                 </a>
                             </li>
                             <!-- <li class="mt-3">
                                 <a href="">BAL vs. retail</a>
                             </li> -->
                             <li class="mt-3">
-                                <a href="{{ route('m-home') }}#packages" class="text-white" >Packages</a>
+                                <a href="{{ route('m-home') }}#packages" class="text-white" > {{ trans('msg.footer4') }}</a>
                             
                             </li>
                             <li class="mt-3">
-                                <a href="{{ route('m-home') }}#about" class="text-white">About us</a>
+                                <a href="{{ route('m-home') }}#about" class="text-white"> {{ trans('msg.footer5') }}</a>
                             </li>
                             <li class="mt-3 mb-3">
                                 <a href="{{ route('m-home') }}#why-bal" class="text-white">
-                                    Why BAL
+                                  {{ trans('msg.footer6') }}
                                 </a>
                             </li>
                             <li class="mt-3 mb-3">
                                 <a href="{{ route('downloads') }}" class="text-white">
-                                    Media
+                                  {{ trans('msg.footer9') }}
                                 </a>
                             </li>
                         </ul>
@@ -168,7 +168,7 @@
             <div class="accordion-group">
                 <div class="accordion-heading buyer-btn">
                 	<a class="accordion-toggle pt-4 pb-4 pl-3 text-white w-100 d-block" data-toggle="collapse" href="#buyer">
-                    	Buyers
+                    	Buyers {{ trans('msg.footer2') }}
                     	<div class="buyer-down float-right pr-4">
                   			<i class="fas fa-angle-down"></i>
                   		</div>
@@ -183,17 +183,17 @@
                     	<ul class="footer-list m-0 text-white">
                   			<li class="mt-3">
                   				<a href="https://lightfinder.buyanylight.com/buyer/register" class="text-white">
-                  					Register
+                  					{{ trans('msg.footer8') }}
                   				</a>
                   			</li>
                   			<li class="mt-3">
                   				<a href="https://lightfinder.buyanylight.com/" class="text-white">
-                  					Sign in
+								  {{ trans('msg.footer9') }}
                   				</a>
                   			</li>
                   			<li class="mt-3 mb-3">
                   				<a href="{{ route('buyer-faq') }}" class="text-white">
-                  					FAQ
+								  {{ trans('msg.footer10') }}
                   				</a>
                   			</li>
                 		</ul>
@@ -205,7 +205,7 @@
             <div class="accordion-group ">
             	<div class="accordion-heading seller-btn">
                 	<a class="accordion-toggle pt-4 pb-4 pl-3 text-white w-100 d-block" data-toggle="collapse" href="#seller">
-                  		Sellers
+					{{ trans('msg.footer11') }}
                   		<div class="seller-down float-right pr-4">
                   			<i class="fas fa-angle-down"></i>
                   		</div>
@@ -220,22 +220,22 @@
                     	<ul class="footer-list m-0 text-white">
                   			<li class="mt-3" >
                   				<a href="{{ route('seller') }}" class="text-white">
-                  					Start today
+								  {{ trans('msg.footer12') }}
                   				</a>
                   			</li>
                   			<li class="mt-3">
                   				<a href="https://lightfinder.buyanylight.com/supplier/register" class="text-white">
-                  					Register
+                  				{{ trans('msg.footer7') }}
                   				</a>
                   			</li>
                   			<li class="mt-3" >
                   				<a href="https://lightfinder.buyanylight.com/" class="text-white">
-                  					Sign in
+								  {{ trans('msg.footer8') }}
                   				</a>
                   			</li>
                   			<li class="mt-3 mb-3">
                   				<a href="{{ route('seller-faq') }}" class="text-white">
-                  					FAQ
+								  {{ trans('msg.footer10') }}
                   				</a>
                   			</li>
                 		</ul>
@@ -247,7 +247,7 @@
             <div class="accordion-group">
                 <div class="accordion-heading investor-btn ">
                 	<a class="accordion-toggle text-white w-100 d-block pl-3 pt-4 pb-4" data-toggle="collapse" href="#investor">
-                    	Investors
+					{{ trans('msg.footer15') }}
                     	<div class="investor-down float-right pr-4">
                   			<i class="fas fa-angle-down"></i>
                   		</div>
@@ -262,12 +262,12 @@
                     	<ul class="footer-list m-0 text-white">
                         	<li class="mt-3">
                         		<a href="{{ route('investor') }}" class="text-white">
-                        			Lets Talk
+                        		{{ trans('msg.footer16') }}
                         		</a>
                         	</li>
                         	<li class="mt-3 mb-3">
                         		<a href="{{ route('ieo') }}" class="text-white">
-                        			IEO
+								{{ trans('msg.footer17') }}
                         		</a>
                         	</li>
                     	</ul>
@@ -316,19 +316,19 @@
             		</div>
             		<div class="col-2">
             			<a href="{{ route('terms') }}" class="text-white">
-            				Terms
+						{{ trans('msg.footer21') }}
             			</a>
             		</div>
             		<div class="col-2">
             			<a href="{{ route('privacy') }}" class="text-white">
-            				Policy
+						{{ trans('msg.footer22') }}
             			</a>
             		</div>
 				</div>
 				<div class="row mt-3">
 					<div class="col-12">
 						<p class="text-left" style="font-size: 10px;">
-							RISK WARNING: Trading and investing in cryptocurrencies involves substantial risk of loss and is not suitable for all types of investors. Please make sure you are investing mindfully after understanding the nature, complexity and risks inherent in the trading of cryptocurrency. You should not purchase cryptocurrency unless you understand the extent of your exposure to potential loss. Cryptocurrencies price can be affected by many factors, including, but not limited to, national and international economic, financial, regulatory, political, terrorist, military, and other events. Extreme changes in price may occur at any time, resulting in a potential loss of value of your entire investment in cryptocurrencies, complete or partial loss of purchasing power, and difficulty or a complete inability to sell or exchange your currency. Please make sure you are not risking funds you can not afford to lose. In no event shall Billboard.ly will be liable to any loss or damage of any kind incurred as a result of the use of this site or the services found at this site. Licence number 5539. DOTCOM VENTURES FZE, UAQ Free Trade Zone, United Arab Emirates. Copyright © 2020 Buyanylight.com. All rights Reserved.
+						{{ trans('msg.footer18') }}
 						</p>
 					</div>
 				</div>

@@ -11,19 +11,19 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mr-3">
-                    <a class="nav-link text-white links" href="{{ route('home') }}">Home</a>
+                    <a class="nav-link text-white links" href="{{ route('home') }}">{{ trans('msg.Home') }}</a>
                 </li>
                 <li class="nav-item dropdown mr-3">
                     <a class="nav-link dropdown-toggle text-white links" href="{{ route('home') }}#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    About
+                    {{ trans('msg.About') }}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{{ route('home') }}#ninety">How it works</a>
-                        <a class="dropdown-item" href="{{ route('home') }}#about">About BAL</a>
-                        <a class="dropdown-item" href="{{ route('home') }}#why-bal">Why BAL</a>
-                        <a class="dropdown-item" href="{{ route('home') }}#all-packages">Packages</a>
-                        <a class="dropdown-item" href="{{ route('home') }}#package">Summary</a>
-                        <a class="dropdown-item" href="{{ route('home') }}#addons">Add-ons</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#ninety">{{ trans('msg.How') }}</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#about">{{ trans('msg.About_bal') }}</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#why-bal">{{ trans('msg.Why') }}</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#all-packages">{{ trans('msg.Packages') }}</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#package">{{ trans('msg.Summary') }}</a>
+                        <a class="dropdown-item" href="{{ route('home') }}#addons">{{ trans('msg.Add_ons') }}</a>
                     </div>
                 </li>
                 <!-- <li class="nav-item dropdown mr-3">
@@ -59,10 +59,10 @@
                     </div>
                 </li> -->
                  <li class="nav-item mr-3">
-                    <a class="nav-link text-white links" href="{{ route('ieo') }}" target="_blank">IEO</a>
+                    <a class="nav-link text-white links" href="{{ route('ieo') }}" target="_blank">{{ trans('msg.IEO') }}</a>
                 </li>
                  <li class="nav-item mr-3">
-                    <a class="nav-link text-white links" href="{{ route('investor') }}" target="_blank">Investors</a>
+                    <a class="nav-link text-white links" href="{{ route('investor') }}" target="_blank">{{ trans('msg.Investors') }}</a>
                 </li>
                 <!-- <li class="nav-item dropdown mr-3">
                     <a class="nav-link dropdown-toggle text-white links" href="{{ route('investor') }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -75,30 +75,50 @@
                 </li> -->
                  <li class="nav-item dropdown mr-3">
                     <a class="nav-link dropdown-toggle text-white links" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Media
+                    {{ trans('msg.Media') }}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="https://medium.com/buyanylight" target="_blank">News</a>
-                        <a class="dropdown-item" href="https://blog.buyanylight.com" target="_blank">Blog</a>
-                        <a class="dropdown-item" href="{{ route('downloads') }}">Downloads</a>
+                        <a class="dropdown-item" href="https://medium.com/buyanylight" target="_blank">{{ trans('msg.News') }}</a>
+                        <a class="dropdown-item" href="https://blog.buyanylight.com" target="_blank">{{ trans('msg.Blog') }}</a>
+                        <a class="dropdown-item" href="{{ route('downloads') }}">{{ trans('msg.Downloads') }}</a>
                     </div>
                 </li>
                 <li class="nav-item mr-3">
-                    <a class="nav-link text-white links" href="{{ route('contact') }}">Contact</a>
+                    <a class="nav-link text-white links" href="{{ route('contact') }}">{{ trans('msg.Contact') }}</a>
                 </li>
                 <li class="nav-item mr-3">
-                    <a class="nav-link text-white links" href="https://lightfinder.buyanylight.com">Sign in</a>
+                    <a class="nav-link text-white links" href="https://lightfinder.buyanylight.com">{{ trans('msg.Sign') }}</a>
                 </li>
                 <li class="nav-item dropdown mr-3">
                     <a class="nav-link dropdown-toggle text-white links" href="{{ route('seller') }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Register
+                    {{ trans('msg.Register') }}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="https://lightfinder.buyanylight.com/buyer/register">Buyers</a>
-                        <a class="dropdown-item" href="https://lightfinder.buyanylight.com/supplier/register">Sellers</a>
+                        <a class="dropdown-item" href="https://lightfinder.buyanylight.com/buyer/register">{{ trans('msg.Buyers') }}</a>
+                        <a class="dropdown-item" href="https://lightfinder.buyanylight.com/supplier/register">{{ trans('msg.Sellers') }}</a>
                     </div>
                 </li>
-
+                @php $locale = session()->get('locale'); @endphp
+                <li class="nav-item dropdown">
+                    <a id="navbarDropdownMenuLink" class="nav-link dropdown-toggle text-white links" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    @switch($locale)
+                        @case('kr')
+                            Korean
+                        @break
+                        @default
+                            English
+                    @endswitch <span class="caret"></span>
+                    </a>
+                 
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="lang/en">
+                            English
+                        </a>
+                        <a class="dropdown-item" href="lang/kr">
+                            Korean
+                        </a>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>

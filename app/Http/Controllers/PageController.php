@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Jenssegers\Agent\Agent;
+use App;
 
 
 class PageController extends Controller
@@ -15,7 +16,6 @@ class PageController extends Controller
 
         $isMobile = $agent->isMobile();
         $isTablet = $agent->isTablet();
-
     
         if($isMobile || $isTablet) {
             return view('mobile.index')->with('showpopup',true);

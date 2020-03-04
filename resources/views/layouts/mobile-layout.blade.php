@@ -443,10 +443,10 @@
 			if (minutes < "10") { minutes = "0" + minutes; }
 			if (seconds < "10") { seconds = "0" + seconds; }
 
-			$("#days").html("<span style='font-size: 14px;'>" + days +" </span>" + "<br><span>Days</span>");
-			$("#hours").html("<span style='font-size: 14px;'>" + hours +" </span>" + "<br><span>Hours</span>");
-			$("#minutes").html("<span style='font-size: 14px;'>" + minutes +" </span>" + "<br><span>Minutes</span>");
-			$("#seconds").html("<span style='font-size: 14px;'>" + seconds +" </span>" + "<br><span>Seconds</span>");       
+			$("#days").html("<span style='font-size: 14px;'>" + days +" </span>" + "<br><span>{{ trans('msg.section3_days') }}</span>");
+			$("#hours").html("<span style='font-size: 14px;'>" + hours +" </span>" + "<br><span>{{ trans('msg.section3_hrs') }}</span>");
+			$("#minutes").html("<span style='font-size: 14px;'>" + minutes +" </span>" + "<br><span>{{ trans('msg.section3_mins') }}</span>");
+			$("#seconds").html("<span style='font-size: 14px;'>" + seconds +" </span>" + "<br><span>{{ trans('msg.section3_secs') }}</span>");       
 
 		}
 
@@ -621,14 +621,13 @@
 	            <div class="modal-body pt-2 pr-5 pb-5 pl-5 mb-4" style="">
 	            	<div style="text-align: center;">
 		                <h1 class="modal-title pt-0 pb-4" style="line-height: 40px;">
-		                	BAL TOKEN PRE-IEO SALE IS LIVE!
+							{{ trans('msg.pop_up') }}
 		                </h1>
 	            		<h3>
 			                <a class="closeIEOPopUp btn btn-success btn-lg" 
 			                style="font-size: 1em; padding: 0.25em 1em;" 
 			                href="{{ route('ieo') }}#section-bal-token">
-				                Get your <strong>17.5%</strong>
-				                DISCOUNT NOW!
+								{{ trans('msg.section3_days') }}
 			            	</a>				                
 	            		</h3>
 	            	</div>
@@ -660,14 +659,13 @@
 	            <div class="modal-body pt-2 pr-5 pb-5 pl-5 mb-4" style="">
 	            	<div style="text-align: center;">
 		                <h1 class="modal-title pt-0 pb-4" style="line-height: 40px; font-size: 2em;">
-		                	BAL TOKEN PRE-IEO SALE IS LIVE!
+							{{ trans('msg.pop_up') }}
 		                </h1>
 	            		<h3>            			
 			                <a class="closeIEOPopUp btn btn-success btn-lg" 
 			                style="font-size: 1em; padding: 0.25em 1em;" 
 			                href="{{ route('ieo') }}#section-bal-token">
-				                Get your <strong>17.5%</strong>
-				                DISCOUNT NOW!
+								{{ trans('msg.section3_btn1') }}
 			            	</a>			            	
 	            		</h3>
 	            	</div>
