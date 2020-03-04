@@ -222,48 +222,45 @@
 			<div class="col-md-6">
 				<div>
 					<h1 class="" style="font-size: 66.7px">
-						<span style="font-weight: 100;">Light Sourcing,</span><br>
-						<strong>Revolutionized!</strong>
+						{!! trans('msg.section1_heading') !!}
 					</h1>
 					<p class=" pt-3">
-						Do you need lighting products for your villa, building, tower, or real-estate project? <br>
-						Do you worry about paying sky-high prices and have trust issues with suppliers? <br>
-						Do you hate delayed deliveries and want secured payments? 
+						{!! trans('msg.section1_desc') !!}
 					</p>
 					<div class="pt-3 row">
 						<div class="col pr-1">
 							<a href="#meet-bal" class="btn btn-BAL w-100">
 								<i class="fas fa-link"></i>
 								<br>
-								Meet BAL
+								{{ trans('msg.section1_btn1') }}
 							</a>
 						</div>
 						<div class="col pr-1 pl-1">
 							<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}"  target="_blank" class="btn btn-BAL w-100">
 								<i class="far fa-file-pdf"></i>
 								<br>
-								White Paper
+								{{ trans('msg.section1_btn2') }}
 							</a>
 						</div>
 						<div class="col pr-1 pl-1">
 							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL w-100" target="_blank">
 								<i class="far fa-file-pdf"></i>
 								<br>
-								Yellow Paper
+								{{ trans('msg.section1_btn3') }}
 							</a>
 						</div>
 						<div class="col pr-1 pl-1">
 							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL w-100">
 								<i class="far fa-file-pdf"></i>
 								<br>
-								One Pager
+								{{ trans('msg.section1_btn4') }}
 							</a>					
 						</div>
 						<div class="col pl-1" style="z-index:100">
 							<a href="{{ Util::assetUrl('BuyAnyLight_Pitch_Deck.pdf') }}" class="btn btn-BAL w-100" target="_blank">
 								<i class="far fa-file-pdf"></i>
 								<br>
-								Pitch Deck
+								{{ trans('msg.section1_btn5') }}
 							</a>
 						</div>
 					</div>
@@ -272,35 +269,35 @@
 							<a data-fancybox href="https://www.youtube-nocookie.com/embed/o8CAwwz6tIM?rel=0" class="btn btn-play text-white w-100">
 								<i class="fas fa-play"></i>
 								<br>
-								BAL IEO
+								{{ trans('msg.section1_video1') }}
 							</a>
 						</div>
 						<div class="col pr-1 pl-1">
 							<a data-fancybox href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0"  target="_blank" class="btn btn-play text-white w-100">
 								<i class="fas fa-play"></i>
 								<br>
-								Introducing BAL
+								{{ trans('msg.section1_video') }}
 							</a>
 						</div>
 						<div class="col pr-1 pl-1">
 							<a data-fancybox href="https://www.youtube-nocookie.com/embed/rWX1qeigBMk?rel=0"class="btn btn-play text-white w-100" target="_blank">
 								<i class="fas fa-play"></i>
 								<br>
-								MyHome
+								{{ trans('msg.section2_myhome') }}
 							</a>
 						</div>
 						<div class="col pr-1 pl-1">
 							<a data-fancybox href="https://www.youtube-nocookie.com/embed/IdrrtNgvDKo&t?rel=0" target="_blank" class="btn btn-play text-white w-100">
 								<i class="fas fa-play"></i>
 								<br>
-								MyTower
+								{{ trans('msg.section2_mytower') }}
 							</a>					
 						</div>
 						<div class="col pl-1" style="z-index:100">
 							<a data-fancybox href="https://www.youtube-nocookie.com/embed/k-zrKcgJf0Q?rel=0" class="btn btn-play text-white w-100" target="_blank">
 								<i class="fas fa-play"></i>
 								<br>
-								LightFinder
+								{{ trans('msg.section2_lightfinder') }}
 							</a>
 						</div>
 					</div>
@@ -366,7 +363,7 @@
 			<div class="col-12 d-flex align-items-center justify-content-center">
 				<div class=" text-center">
 					<h4>
-						Ratings by ICO Experts 
+					{{ trans('msg.section2_heading') }}
 					</h4>
 				</div>
 			</div>
@@ -391,9 +388,9 @@
 				<div class="card card-body">
 					<div class="container">
 						<h5 class="">
-							<b>IEO - BAL TOKEN</b> 
+							<b>{{ trans('msg.section3_heading1') }}</b> 
 						</h5> 
-						<p class="">The IEO of BAL Token Starts in:</p>
+						<p class="">{!! trans('msg.section3_desc1') !!}</p>
 						<div>
 							<div id="timer" class=" pt-1">
 								<div class="" style="">
@@ -406,10 +403,10 @@
 						</div>
 						<div class="pt-3">
 							<a href="#section-bal-token" class="btn btn-light rounded" style="color:#3D75F1; font-size:11.892px">
-								<b>GET 17.5% DISCOUNT NOW!</b>	
+								<b>{{ trans('msg.section3_btn1') }}</b>	
 							</a>
 							<p class="m-0 mt-2 ">
-								<b>Soon on Leading IEO Launchpads</b>	
+								<b>{!! trans('msg.section3_launch') !!}</b>	
 							</p>
 						</div>
 					</div>
@@ -419,14 +416,14 @@
 				<div class="card card-body">
 					<div class="container">
 						<h5 class="">
-							<b>Token Sale</b>
+							<b>{{ trans('msg.section3_heading2') }}</b>
 						</h5>
 						<div class="pt-5">
 							<div class="row " style="font-size:12px;">
-								<p class="col-md-1 m-0 d-flex align-items-center"><b>Start</b></p>
+								<p class="col-md-1 m-0 d-flex align-items-center"><b>{{ trans('msg.section3_progress1') }}</b></p>
 								<p class="col-md-2 text-center m-0"><b></b></p>
-								<p class="col-md-2 text-center m-0"><b>Soft Cap</b></p>
-								<p class="col-md-7 text-right m-0 d-flex align-items-center justify-content-end"><b>Hard Cap</b></p>
+								<p class="col-md-2 text-center m-0"><b>{{ trans('msg.section3_progress2') }}</b></p>
+								<p class="col-md-7 text-right m-0 d-flex align-items-center justify-content-end"><b>{{ trans('msg.section3_progress3') }}</b></p>
 							</div>
 							<div class="pt-1">
 								<div class="progress">
@@ -435,10 +432,10 @@
 								</div>
 							</div>
 							<div class="row pt-1 " style="font-size:12px;">
-								<p class="col-md-1 mb-0"><b>$0</b></p>
+								<p class="col-md-1 mb-0"><b>{{ trans('msg.section3_progress4') }}</b></p>
 								<p class="col-md-2 text-center mb-0"><b></b></p>
-								<p class="col-md-2 text-center mb-0"><b>$2 Mil</b></p>
-								<p class="col-md-7 text-right mb-0"><b>$8 Mil</b></p>
+								<p class="col-md-2 text-center mb-0"><b>{{ trans('msg.section3_progress5') }}</b></p>
+								<p class="col-md-7 text-right mb-0"><b>{{ trans('msg.section3_progress6') }}</b></p>
 							</div>
 						</div>
 						<div class="pt-4">
@@ -452,7 +449,7 @@
 												</span>
 											</div>
 											<div class="col-10 text-white pt-2">
-												<p class="mb-0">BUYANYLIGHT IEO</p>
+												<p class="mb-0">{{ trans('msg.section3_video1') }}</p>
 											</div>
 										</div>
 									</a>
@@ -466,7 +463,7 @@
 												</span>
 											</div>
 											<div class="col-10 text-white pt-2">
-												<p class="mb-0">IEO vs ICO</p>
+												<p class="mb-0">{{ trans('msg.section3_video2') }}</p>
 											</div>
 										</div>
 									</a>
@@ -482,17 +479,17 @@
 				<div class="card card-body">
 					<div class="container">
 						<h5 class=" text-center">
-							<b>PRIVATE SALE</b>	
+							<b>{{ trans('msg.section3_private') }}</b>	
 						</h5>
 						<div class="card card-body mt-3" style="
 						background-color:#3249B5; 
 						background-image:none; 
 						color:white;
 						padding:0.7rem;">
-							<p class="m-0 text-center">0.2 USD</p>
+							<p class="m-0 text-center">{{ trans('msg.section3_private_desc1') }}</p>
 						</div>
 						<div class="mt-3  text-center">
-							<p class="m-0">1st Oct 2019 to 31st Oct 2019</p>
+							<p class="m-0">{{ trans('msg.section3_private_desc2') }}</p>
 						</div>
 					</div>
 				</div>
@@ -501,17 +498,17 @@
 				<div class="card card-body">
 					<div class="container">
 						<h5 class=" text-center">
-							<b>PRE-IEO</b>	
+							<b>{{ trans('msg.section3_pre_ieo') }}</b>	
 						</h5>
 						<div class="card card-body mt-3" style="
 						background-color:#3249B5; 
 						background-image:none; 
 						color:white;
 						padding:0.7rem;">
-							<p class="m-0 text-center">0.25 USD</p>
+							<p class="m-0 text-center">{{ trans('msg.section3_pre_ieo_desc1') }}</p>
 						</div>
 						<div class="mt-3  text-center">
-							<p class="m-0">1st Nov 2019 to 6th April 2020</p>
+							<p class="m-0">{{ trans('msg.section3_pre_ieo_desc2') }}</p>
 						</div>
 					</div>
 				</div>
@@ -520,17 +517,17 @@
 				<div class="card card-body">
 					<div class="container">
 						<h5 class=" text-center">
-							<b>IEO</b>	
+							<b>{{ trans('msg.section3_ieo') }}</b>	
 						</h5>
 						<div class="card card-body mt-3" style="
 						background-color:#3249B5; 
 						background-image:none; 
 						color:white;
 						padding:0.7rem;">
-							<p class="m-0 text-center">0.30303 USD</p>
+							<p class="m-0 text-center">{{ trans('msg.section3_ieo_desc1') }}</p>
 						</div>
 						<div class="mt-3  text-center">
-							<p class="m-0">7th April 2020 to 30th April 2020</p>
+							<p class="m-0">{{ trans('msg.section3_ieo_desc2') }}</p>
 						</div>
 					</div>
 				</div>
@@ -544,12 +541,12 @@
 			<div class="col-6 d-flex justify-content-center flex-column">
 				<h3 class="">
 					<strong>
-						Meet BuyAnyLight
+					{{ trans('msg.section4_heading') }}
 					</strong> 
 				</h3>
 				<div class="pt-3">
 					<p class="">
-						BuyAnyLight helps you source quality LED products for all of your lighting needs. Using blockchain, AI, big data and smart contracts, it gets your inquiries before the right manufacturers and ensures that you receive the products you ordered.
+					{{ trans('msg.section4_desc') }}
 					</p>
 				</div>
 				<div class="all-videos mt-4">
@@ -561,7 +558,7 @@
 								</button>
 								&nbsp;
 								<span class="text-white">
-									Introducing BAL
+								{{ trans('msg.section4_video1') }}
 								</span>
 		                    </div>
 		                </div>
@@ -574,7 +571,7 @@
 								</button>
 								&nbsp;
 								<span class="text-white">
-									LightFinder Package
+								{{ trans('msg.section4_video2') }}
 								</span> 
 		                    </div>
 		                </div>
@@ -594,10 +591,10 @@
 	<div class="">
 		<div class="container">
 			<h2 class="text-center">
-				<b>Benefits of using BuyAnyLight</b>	
+				<b>{{ trans('msg.section6_heading') }}</b>	
 			</h2>
 			<p class="text-center pt-2">
-				BuyAnyLight revolutionizes LED Light sourcing by deploying the entire procurement process on blockchain. <br>By adopting its innovative model, it offers the following benefits:
+			{!! trans('msg.section6_desc') !!}
 			</p>
 			<div class="row pt-5" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 				<div class="col-6">
@@ -610,10 +607,10 @@
 							</div>
 							<div class="col-10">
 								<h5>
-									SEAMLESS ORDERS
+								{{ trans('msg.section6_point1') }}
 								</h5>
 								<div class="benefit-text">
-									Submit your lighting requirements as easy as sharing an image, then receive the best quotations.
+								{{ trans('msg.section6_point1_desc') }}
 								</div>
 							</div>
 						</div>
@@ -629,10 +626,10 @@
 							</div>
 							<div class="col-10">
 								<h5>
-									TRUSTLESS PAYMENTS
+								{{ trans('msg.section6_point2') }}
 								</h5>
 								<div class="benefit-text">
-									With blockchain deployed self-enforceable smart contracts, your payments are trustless and 100% secured. 
+								{{ trans('msg.section6_point2_desc') }}
 								</div>
 							</div>
 						</div>
@@ -650,10 +647,10 @@
 							</div>
 							<div class="col-10">
 								<h5>
-									TRACEABLE LOGISTICS
+								{{ trans('msg.section6_point3') }}
 								</h5>
 								<div class="benefit-text">
-									All your order details from the manufacturer to the shipper and then to you are added to a traceable blockchain network. 
+								{{ trans('msg.section6_point3_desc') }}
 								</div>
 							</div>
 						</div>
@@ -669,10 +666,10 @@
 							</div>
 							<div class="col-10">
 								<h5>
-									EXPERT CONSULTATION
+								{{ trans('msg.section6_point4') }}
 								</h5>
 								<div class="benefit-text">
-									Get free consultation from experts, who support you 24/7. 
+								{{ trans('msg.section6_point4_desc') }}
 								</div>
 							</div>
 						</div>
@@ -690,10 +687,10 @@
 							</div>
 							<div class="col-10">
 								<h5>
-									NOMINAL PRICES
+								{{ trans('msg.section6_point5') }}
 								</h5>
 								<div class="benefit-text">
-									Choose from products of similar quality and design to the big brands, for up to 90% lower prices.
+								{{ trans('msg.section6_point5_desc') }}
 								</div>
 							</div>
 						</div>
@@ -709,10 +706,10 @@
 							</div>
 							<div class="col-10">
 								<h5>
-									NO MORE MIDDLEMAN
+								{{ trans('msg.section6_point6') }}
 								</h5>
 								<div class="benefit-text">
-									Avoid hectic order processing and higher costs when you buy from retailers. Get direct access to manufacturers. 
+								{{ trans('msg.section6_point6_desc') }}
 								</div>
 							</div>
 						</div>
@@ -736,7 +733,7 @@ $newsdatas = [];
 ?>
 
 <section class="section7" style=" height: 100%;" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
-	<h3 class="text-center"><strong>BuyAnyLight in the News and Media</strong></h3>
+	<h3 class="text-center"><strong>{{ trans('msg.section7_heading') }}</strong></h3>
 	<div class="container d-flex align-items-center flex-column pt-4 pb-5" style="">
 		<div class="row">
 			@foreach($newsdatas as $nd)
@@ -793,20 +790,14 @@ $newsdatas = [];
 				<h3>
 					<b>
 						<span>
-							Buy
-						</span>
-						<span class="header-text">
-							BAL 
-						</span>
-						<span>
-							Tokens
+						{{ trans('msg.sectionbuy_heading') }}
 						</span>
 					</b>
 				</h3>
 			</div>
 			<div class="col-md-6 text-right">
 				<a data-fancybox href="https://www.youtube.com/embed/o8CAwwz6tIM?rel=0&enablejsapi=1" class="btn btn-BAL text-white text-left" style="font-size: 13px;">
-					<i class="fas fa-play"></i>&nbsp;<b>How it works?</b>	
+					<i class="fas fa-play"></i>&nbsp;<b>{{ trans('msg.sectionbuy_video') }}</b>	
 				</a>
 			</div>
 		</div>
@@ -820,17 +811,15 @@ $newsdatas = [];
 	    						<img src="{{ Util::assetUrl('images/logo-white-mobile.png') }}" width="28">
 	    					</span>
 	  					</div>
-	  					<input class="form-control bal-token-input pl-4" placeholder="Enter an amount you want to buy" name="bal" required="required" >
+	  					<input class="form-control bal-token-input pl-4" placeholder="{{ trans('msg.sectionbuy_enteramt') }}" name="bal" required="required" >
 					</div>
 	  				<div>
-	  					<small>The minimum purchasing threshold is 50 USD and 200 BAL</small>
-	  					{{-- <small>The minimum investment is 5,000 USD and 25,000 BAL</small> --}}
+	  					<small>{{ trans('msg.sectionbuy_price') }}</small>
 	  				</div>
 				</div>
 				<div class="pt-4 bal-alert" style="display: none;">
 					<div class="alert alert-danger" role="alert">
-  						The minimum investment is 50 USD and 200 BAL
-  						{{-- The minimum investment is 5,000 USD and 25,000 BAL --}}
+						{{ trans('msg.sectionbuy_price') }}
 					</div>
 				</div>
 				<hr/>
@@ -839,7 +828,7 @@ $newsdatas = [];
 						<div class="col-6">
 						<h3 class="pb-3">
 							<b>
-								BAL <span class="header-text">Costs</span> Today
+							{{ trans('msg.sectionbuy_col_1') }}
 							</b>
 						</h3>
 						@foreach($tokens as $token)
@@ -865,7 +854,7 @@ $newsdatas = [];
 						<div class="col-6">
 							<h3 class="pb-3">
 								<b>
-									<span class=""> Purchase today and get lucrative gains.
+									<span class=""> {{ trans('msg.sectionbuy_col_2') }}
 								</b>
 							</h3>
 
@@ -877,7 +866,7 @@ $newsdatas = [];
 										<div class="pt-2">
 											<h5>
 												<b>
-													<u>Cost today</u>
+													<u>{{ trans('msg.sectionbuy_cost1') }}</u>
 												</b>
 											</h5>
 											<p style="padding-bottom: 18px;">
@@ -887,7 +876,7 @@ $newsdatas = [];
 											</p>
 											<h5>
 												<b>
-													<u>Cost during IEO</u>
+													<u>{{ trans('msg.sectionbuy_cost2') }}</u>
 												</b>
 											</h5>
 											<p style="padding-bottom: 18px;">
@@ -896,15 +885,15 @@ $newsdatas = [];
 											</p>
 											<h5>
 												<b>
-													<u>Gain on purchasing the token now!</u>
+													<u>{{ trans('msg.sectionbuy_gain') }}</u>
 												</b>
 											</h5>
 											<p class="mb-1 mt-1">
 											 	{{-- ROI : 51.52%  --}}
-											 	Gain Ratio  : 21.21% 
+											 	{{ trans('msg.sectionbuy_gain1') }} : 21.21% 
 											 </p>
 											 <p class="mb-0">
-											 	Gain Made in USD :
+											 	{{ trans('msg.sectionbuy_gain2') }}:
 												<span class="USD_return">
 													{{-- 0.10303  --}}
 													0.05303 
@@ -917,7 +906,7 @@ $newsdatas = [];
 										<div class="pt-2 token-price" style="display: none">
 											<h5>
 												<b>
-													<u>Price today</u>
+													<u>{{ trans('msg.sectionbuy_pricetoday') }}</u>
 												</b>
 											</h5>
 											<p style="padding-bottom: 18px;">
@@ -927,7 +916,7 @@ $newsdatas = [];
 											</p>
 											<h5>
 												<b>
-													<u>Price during IEO</u>
+													<u>{{ trans('msg.sectionbuy_priceieo') }}</u>
 												</b>
 											</h5>
 											<p style="padding-bottom: 18px;">
@@ -939,7 +928,7 @@ $newsdatas = [];
 								</div>
 								<p class="ribbon">
 								  	<span class="text">
-								  		<strong class="bold">17.5% OFF</strong> until IEO Sale!
+										{!! trans('msg.sectionbuy_ieosale') !!}
 								  	</span>
 								</p>								
 							</div>
@@ -954,7 +943,7 @@ $newsdatas = [];
 							<div class="form-group">
 								<h3>
 									<label> 
-										<b>Step 1:</b> Select <span>Currency</span> to buy BAL Tokens
+										{!! trans('msg.sectionbuy_step') !!}
 									</label>
 								</h3>
 								<div class="row">
@@ -965,10 +954,7 @@ $newsdatas = [];
 											@endforeach
 										</select>
 										<small class="pt-3">
-											<b>
-												We accept: 
-											</b>
-											Visa, Mastercard, Bank Transfer, Bitcoin, Ethereum
+											{!! trans('msg.sectionbuy_accept') !!}
 										</small>
 									</div>
 									<div class="col-md-6 col-12">
@@ -976,7 +962,7 @@ $newsdatas = [];
 											<input type="hidden" name="referral_code" value="{{ $code }}">
 										@endif
 										<button type="submit" class="btn btn-buy-token w-100" style="border-radius: 10px; color: #fff;" id="token-btn">
-											<b>Buy Tokens Now!</b>
+											<b>{{ trans('msg.sectionbuy_buytokens') }}</b>
 										</button>
 									</div>
 								</div>
@@ -984,8 +970,8 @@ $newsdatas = [];
 						</div>
 					</div>
 					<div class="card card-body add-token mt-3">
-			  				How to add a Custom ERC20 Token / our BAL Token to your Ethereum wallet? <br>
-			  				<a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/" target="_blank">Check out this easy step-by-step guide</a>
+							{{ trans('msg.sectionbuy_how1') }} <br>
+			  				<a href="https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/" target="_blank">{{ trans('msg.sectionbuy_how2') }}</a>
 			  			</div>
 					</div>
 				</div>
@@ -1162,31 +1148,31 @@ $newsdatas = [];
 	<div class="container h-100 d-flex justify-content-center align-items-center flex-column">
 		<div class="pt-1 text-center">
 			<h3>
-				<b>Want to know more?</b>
+				<b>{{ trans('msg.download_section_heading') }}</b>
 			</h3>
 			<p class="pt-3">
-				Download to know more about us, <br>our project, and how can you participate in our token sale.
+				{!! trans('msg.download_section_desc') !!}
 			</p>
 			<div class="buttons pt-3 ">
 				<div class="row w-100">
 					<div class="col">
 						<div class="d-flex justify-content-center align-items-center">
 							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL">
-							<b>One Pager</b>	
+							<b>{{ trans('msg.One_pager') }}</b>	
 							</a>
 						</div>
 					</div>
 					<div class="col">
 						<div>
 							<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-BAL">
-							<b>Whitepaper</b>	
+							<b>{{ trans('msg.Whitepaper') }}</b>	
 							</a>
 						</div>
 					</div>
 					<div class="col">
 						<div>
 							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL" target="_blank">
-							<b>Yellowpaper</b>	
+							<b>{{ trans('msg.Yellowpaper') }}</b>	
 							</a>				
 						</div>
 					</div>
@@ -1194,12 +1180,12 @@ $newsdatas = [];
 				<div class="pt-3">
 					<div class="row w-100">
 						<div class="col">
-							<a href="#contact" class="btn btn-BAL">Schedule a meeting</a>
+							<a href="#contact" class="btn btn-BAL">{{ trans('msg.meeting') }}</a>
 						</div>
 						<div class="col">
 							<a href="#section-bal-token" class="btn btn-BAL">
 								<b>
-									BUY BAL TOKENS NOW!
+								{{ trans('msg.BAL_token') }}
 								</b>
 							</a>
 						</div>
@@ -1217,16 +1203,11 @@ $newsdatas = [];
 				<div class="col-md-6">
 					<h3>
 						<strong>
-							<span class="header-text">
-								Our
-							</span>
-							<span class="">
-								Vision
-							</span>
+						{!! trans('msg.section9_heading1') !!} 
 						</strong> 
 					</h3>
 					<p class="">
-						We want to revolutionize the entire sourcing process by harnessing the power of blockchain, AI, big data, and smart contracts. Starting from the LED lighting industry, we aim to expand the BAL Network into other industries, among them the construction and precious metal industries. 
+					{!! trans('msg.section9_desc1') !!} 
 					</p>
 				</div>
 				<div class="col-md-6">
@@ -1244,16 +1225,11 @@ $newsdatas = [];
 				<div class="col-md-6">
 					<h3>
 						<strong>
-							<span class="header-text">
-								Our
-							</span>
-							<span class="">
-								Mission
-							</span>
+						{!! trans('msg.section9_heading2') !!} 
 						</strong> 
 					</h3>
 					<p class="">
-						Our mission is to become the platform of choice for individuals, businesses, and manufacturers. Principled, honest, and focused, we leverage the world’s best suppliers and deliver the most significant value LED products, with the most exceptional service and advice, and first-rate customer satisfaction – every time.
+					{{ trans('msg.section9_desc2') }} 
 					</p>
 				</div>
 			</div>
@@ -1265,7 +1241,7 @@ $newsdatas = [];
 	<div class="container">
 		<h3 class="text-center">
 			<strong>
-				Why choose BAL token?
+			{{ trans('msg.section10_heading') }} 
 			</strong> 
 		</h3>
 		<div class="row pt-5" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
@@ -1277,10 +1253,10 @@ $newsdatas = [];
 					<div class="col-9 d-flex align-items-center">
 						<div class="">
 							<h5>
-								<b>Decentralization</b>
+								<b>{{ trans('msg.section10_point1') }} </b>
 							</h5>
 							<p class="pt-1">
-								BAL is decentralized and community owned.
+							{{ trans('msg.section10_point1_desc') }} 
 							</p>
 						</div>
 					</div>
@@ -1294,10 +1270,10 @@ $newsdatas = [];
 					<div class="col-9 d-flex align-items-center">
 						<div class="">
 							<h5>
-								<b>Security</b>
+								<b>{{ trans('msg.section10_point2') }} </b>
 							</h5>
 							<p class="pt-1">
-								All transactions in BAL are secured by smart contracts.
+							{{ trans('msg.section10_point2_desc') }} 
 							</p>
 						</div>
 					</div>
@@ -1313,10 +1289,10 @@ $newsdatas = [];
 					<div class="col-9 d-flex align-items-center">
 						<div class="">
 							<h5>
-								<b>Utility</b>
+								<b>{{ trans('msg.section10_point3') }} </b>
 							</h5>
 							<p class="pt-1">
-								BAL token is the native token within the BAL ecosystem.
+							{{ trans('msg.section10_point3_desc') }} 
 							</p>
 						</div>
 					</div>
@@ -1330,10 +1306,10 @@ $newsdatas = [];
 					<div class="col-9 d-flex align-items-center">
 						<div class="">
 							<h5>
-								<b>Liquidity</b>
+								<b>{{ trans('msg.section10_point4') }} </b>
 							</h5>
 							<p class="pt-1">
-								To exchange or transfer value is as simple as sending an email.
+							{{ trans('msg.section10_point4_desc') }} 
 							</p>
 						</div>
 					</div>
@@ -1349,10 +1325,10 @@ $newsdatas = [];
 					<div class="col-9 d-flex align-items-center">
 						<div class="">
 							<h5>
-								<b>Nominal Transactional Fee</b>
+								<b>{{ trans('msg.section10_point5') }} </b>
 							</h5>
 							<p class="pt-1">
-								Transfer up to a million dollars for only a single digit fee.
+							{{ trans('msg.section10_point5_desc') }} 
 							</p>
 						</div>
 					</div>
@@ -1366,10 +1342,10 @@ $newsdatas = [];
 					<div class="col-9 d-flex align-items-center">
 						<div class="">
 							<h5>
-								<b>Transparency</b>
+								<b>{{ trans('msg.section10_point6') }} </b>
 							</h5>
 							<p class="pt-1">
-								All transactions are transparent and auditable.
+							{{ trans('msg.section10_point6_desc') }} 
 							</p>
 						</div>
 					</div>
@@ -1385,18 +1361,13 @@ $newsdatas = [];
 		<div class="container text-center">
 			<h3>
 				<strong>
-					<span class="header-text">
-						BAL
-					</span>
-					<span class="">
-						Roadmap
-					</span>
+				{{ trans('msg.section11_heading') }} 
 				</strong> 
 			</h3>
 
 			<div>
 				<p class="">
-					The BAL platform is an established business with a ready platform. To expand our operations and decentralize our business model through blockchain we have devised a solid plan and an ambitious roadmap, with an expert team, and we are positioned to expand globally. Our ability to rapidly deploy a solution once the technology has been developed makes our financial goal more achievable.
+				{{ trans('msg.section11_desc') }} 
 				</p>
 			</div>
 
@@ -1410,30 +1381,30 @@ $newsdatas = [];
 						'name' => '2014',
 						'icon' => 'fas fa-archway',
 						'items' => [
-							'Foundation of Almani Lighting Gmbh.',
+							trans('msg.section11_roadmap1'),
 						],
 					];
 					$timeline[] = [
 						'name' => '2015',
 						'icon' => 'far fa-handshake',
 						'items' => [
-							'Foundation of Almani Lighting LLC, Dubai.',
-							'Strategic Partnerships.',
+							trans('msg.section11_roadmap2'),
+							trans('msg.section11_roadmap3'),
 						],
 					];
 					$timeline[] = [
 						'name' => '2016',
 						'icon' => 'fas fa-users',
 						'items' => [
-							'BAL Idea inception. Research and feasibility and development team recruitment.',
+							trans('msg.section11_roadmap4'),
 						],
 					];
 					$timeline[] = [
 						'name' => '2017',
 						'icon' => 'fas fa-warehouse',
 						'items' => [
-							'51% Ownership acquisition of Almani Lighting LLC by ASAS Holding, warehouse expansion.',
-							'BAL Light Finder development and testing.',
+							trans('msg.section11_roadmap5'),
+							trans('msg.section11_roadmap6'),
 						],
 					];
 					$timelines[] = $timeline;
@@ -1446,31 +1417,31 @@ $newsdatas = [];
 						'name' => '2018',
 						'icon' => 'fas fa-sitemap',
 						'items' => [
-							'Team expansion, product range extended to 600+.',
-							'Fiat partner collaboration, major Sheikh palace contracts in UAE.',
+							trans('msg.section11_roadmap7'),
+							trans('msg.section11_roadmap8'),
 						],
 					];
 					$timeline[] = [
 						'name' => '2019',
 						'icon' => 'fas fa-at',
 						'items' => [
-							'BAL Beta version release,',
-							'documentation and drafting,',
-							'Website development and launch,',
-							'seed round finished and public token sale.',
-							'Marketing kickstart.',
+							trans('msg.section11_roadmap9'),
+							trans('msg.section11_roadmap10'),
+							trans('msg.section11_roadmap11'),
+							trans('msg.section11_roadmap12'),
+							trans('msg.section11_roadmap13'),
 						],
 					];
 					$timeline[] = [
 						'name' => '2020',
 						'icon' => 'fas fa-link',
 						'items' => [
-							'IEO sale and listing on exchanges.',
+							trans('msg.section11_roadmap14'),
 							// 'Blockchain development team expansion',
-							'Blockchain based platform development initiated.',
-							'Smart contracts development, wallet development with cross-chain.',
-							'Asset exchange.',
-							'Traceable logistic partnerships and development initiated.',
+							trans('msg.section11_roadmap15'),
+							trans('msg.section11_roadmap16'),
+							trans('msg.section11_roadmap17'),
+							trans('msg.section11_roadmap18'),
 						],
 					];
 					$timelines[] = $timeline;
@@ -1482,27 +1453,27 @@ $newsdatas = [];
 						'name' => '2021',
 						'icon' => 'fas fa-mobile',
 						'items' => [
-							'Traceable logistic functionality implementation.',
-							'Alpha version release.',
-							'Mobile apps release.',
+							trans('msg.section11_roadmap19'),
+							trans('msg.section11_roadmap20'),
+							trans('msg.section11_roadmap21'),
 						],
 					];
 					$timeline[] = [
 						'name' => '2022',
 						'icon' => 'fas fa-brain',
 						'items' => [
-							'On-chain logistic fully implemented.',
-							'AI-based smart contracts implementation.',
-							'BAL custodial platform development.',
+							trans('msg.section11_roadmap22'),
+							trans('msg.section11_roadmap23'),
+							trans('msg.section11_roadmap24'),
 						],
 					];
 					$timeline[] = [
 						'name' => '2023',
 						'icon' => 'fas fa-file',
 						'items' => [
-							'Expansion into construction industry.',
-							'BAL tokenization platform development.',
-							'Smart contract notary service launch.',
+							trans('msg.section11_roadmap25'),
+							trans('msg.section11_roadmap26'),
+							trans('msg.section11_roadmap27'),
 						],
 					];
 
@@ -1517,7 +1488,7 @@ $newsdatas = [];
 							@foreach ($tmls as $key2 => $tml )
 								<li class="event" data-date="{{ $tml['name'] }}">
 									@foreach ($tml['items'] as $content)
-									<p data-aos="fade-left" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">{{ $content }}</p>
+									<p data-aos="fade-left" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">{!! $content !!}</p>
 									@endforeach
 								</li>
 							@endforeach
@@ -1536,7 +1507,7 @@ $newsdatas = [];
 		<div class="container pt-5 pb-5" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 			<h3 class="text-center">
 				<strong>
-					BAL Crowd Sale Information
+				{{ trans('msg.section12_heading') }} 
 				</strong> 
 			</h3>
 			<div class="text-left pt-5">
@@ -1548,61 +1519,61 @@ $newsdatas = [];
 					</div>
 					<div class="col-md-5">
 						<div>
-							<h4 class="text-left"> <b>Token Information</b></h4>
+							<h4 class="text-left"> <b>{{ trans('msg.section12_info1') }} </b></h4>
 							<div class="row pt-3">
 								<div class="col-5">
 									<div>
-										<b>Token name:</b>
+										<b>{{ trans('msg.section12_info2') }} </b>
 									</div>
 									<div class="pt-2">
-										<b>Ticker:</b>
+										<b>{{ trans('msg.section12_info3') }} </b>
 									</div>
 									<div class="pt-2">
-										<b>Network:</b>
+										<b>{{ trans('msg.section12_info4') }} </b>
 									</div>
 									<div class="pt-2">
-										<b>Soft Cap:</b>
+										<b>{{ trans('msg.section12_info5') }} </b>
 									</div>
 									<div class="pt-2">
-										<b>Hard Cap:</b>
+										<b>{{ trans('msg.section12_info6') }} </b>
 									</div>
 									<div class="pt-2">
-										<b>Total supply:</b>
+										<b>{{ trans('msg.section12_info7') }} </b>
 									</div>
 									<div class="pt-2">
-										<b>IEO price:</b>
+										<b>{{ trans('msg.section12_info8') }} </b>
 									</div>
 									<div class="pt-2">
-										<b>Pre-IEO Sale price:</b>
+										<b>{{ trans('msg.section12_info9') }} </b>
 									</div>
 									<div class="pt-2">
-										<b>Private Round price:</b>
+										<b>{{ trans('msg.section12_info10') }} </b>
 									</div>
 								</div>
 								<div class="col-7">
 									<div>
-										BAL Token
+										BAL TOKEN
 									</div>
 									<div class="pt-2">
 										BAL
 									</div>
 									<div class="pt-2">
-										Ethereum
+									{{ trans('msg.section12_desc1') }} 
 									</div>
 									<div class="pt-2">
-										2 Million USD
+									{{ trans('msg.section12_desc2') }} 
 									</div>
 									<div class="pt-2">
-										8 Million USD
+									{{ trans('msg.section12_desc3') }} 
 									</div>
 									<div class="pt-2">
-										55 Million BAL
+									{{ trans('msg.section11_heading') }} 
 									</div>
 									<div class="pt-2">
-										1BAL =  0.30303 USD (Upcoming)
+										1BAL =  0.30303 USD {{ trans('msg.section12_desc4') }} 
 									</div>
 									<div class="pt-2">
-										1BAL =  0.25 USD (Live)
+										1BAL =  0.25 USD {{ trans('msg.section12_desc5') }} 
 									</div>
 									<div class="pt-2">
 										1BAL =  0.20 USD
@@ -1621,25 +1592,25 @@ $newsdatas = [];
 		<div class="container" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 			<h3 class="text-left">
 				<strong>
-					Funds Distribution Plan
+				{{ trans('msg.section13_heading') }} 
 				</strong> 
 			</h3>
 			<div class="pt-3">
 				<p>
-					Our aim is to make BAL Platform the leading marketplace for sourcing light products around the world, and we have devised a plan to make our dream a reality. The proceeds from the token sale will fund the decentralized platform launch, continued platform development, user acquisition, and marketing:				
+				{{ trans('msg.section13_desc') }} 				
 				</p>
 			</div>
 			<div class="pt-3">
 				<div class="row">
-					<div class="col-md-4">
-						<p><b>DEVELOPMENT AND GROWTH</b></p>
-						<p><b>MARKETING EXPENSE</b></p>
-						<p><b>HIRING SPECIALISTS AND BUILDING TEAM</b></p>
-						<p><b>PROMOTER EXPENSE</b></p>
-						<p><b>ADMINISTRATIVE CHARGES AND LEGAL ISSUES</b></p>
-						<p><b>FOUNDING TEAM</b></p>
+					<div class="col-md-5">
+						<p><b>{{ trans('msg.section13_progress1') }} </b></p>
+						<p><b>{{ trans('msg.section13_progress2') }} </b></p>
+						<p><b>{{ trans('msg.section13_progress3') }} </b></p>
+						<p><b>{{ trans('msg.section13_progress4') }} </b></p>
+						<p><b>{{ trans('msg.section13_progress5') }} </b></p>
+						<p><b>{{ trans('msg.section13_progress6') }} </b></p>
 					</div>
-					<div class="col-md-8">
+					<div class="col-md-7">
 						<div class="progress">
 							<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 40%; background-color: #72649F;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
@@ -1669,7 +1640,7 @@ $newsdatas = [];
 		<div class="container" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 			<h3 class="text-left">
 				<strong>
-					Token Distribution
+				{{ trans('msg.section14_heading') }}
 				</strong> 
 			</h3>
 			<div class="row pt-3 d-flex align-items-center">
@@ -1687,12 +1658,12 @@ $newsdatas = [];
 										</div>
 										<div class="d-inline-block pl-2">
 											<span> 
-												20% (11 mil)
+											{{ trans('msg.section14_chart1') }}
 											</span>
 											<br>	 
 											<span>
-												Seed Investor Allocation <br>
-												<a target="_blank" href="https://etherscan.io/address/0xe8c066E2A338e57d220C34306B9B1f4e2490DFf3#tokentxns">View Allocation</a>
+											{{ trans('msg.section14_chart1_desc') }} <br>
+												<a target="_blank" href="https://etherscan.io/address/0xe8c066E2A338e57d220C34306B9B1f4e2490DFf3#tokentxns">{{ trans('msg.section14_view') }}</a>
 											</span>	
 										</div>
 									</div>
@@ -1704,12 +1675,12 @@ $newsdatas = [];
 										</div>
 										<div class="d-inline-block pl-2">
 											<span> 
-												10% (5.5 mil)
+											{{ trans('msg.section14_chart2') }}
 											</span>
 											<br>	 
 											<span>
-												Private & Pre-IEO Sale<br>
-												<a target="_blank" href="https://etherscan.io/address/0x56d700c93184F1A440eF49A366f5532AB2611b4D#tokentxns">View Allocation</a>
+											{{ trans('msg.section14_chart2_desc') }}<br>
+												<a target="_blank" href="https://etherscan.io/address/0x56d700c93184F1A440eF49A366f5532AB2611b4D#tokentxns">{{ trans('msg.section14_view') }}</a>
 											</span>	
 										</div>
 									</div>
@@ -1721,12 +1692,12 @@ $newsdatas = [];
 										</div>
 										<div class="d-inline-block pl-2">
 											<span> 
-												30% (16.5 mil)
+											{{ trans('msg.section14_chart3') }}
 											</span>
 											<br>	 
 											<span>
-												Main Sale Event<br>
-												<a target="_blank" href="https://etherscan.io/address/0x955a5d4f04e7Ce70b2783D84eA38A483ED00DdEf#tokentxns">View Allocation</a>
+											{{ trans('msg.section14_chart3_desc') }}<br>
+												<a target="_blank" href="https://etherscan.io/address/0x955a5d4f04e7Ce70b2783D84eA38A483ED00DdEf#tokentxns">{{ trans('msg.section14_view') }}</a>
 											</span>	
 										</div>
 									</div>
@@ -1738,12 +1709,12 @@ $newsdatas = [];
 										</div>
 										<div class="d-inline-block pl-2">
 											<span> 
-												10% (5.5 mil)
+											{{ trans('msg.section14_chart4') }}
 											</span>
 											<br>	 
 											<span>
-												Advisory Board Allocation<br>
-												<a target="_blank" href="https://etherscan.io/address/0xbDC7B020FCFbB08877cF7af9F78591D06F881BAf#tokentxns">View Allocation</a>
+											{{ trans('msg.section14_chart4_desc') }}<br>
+												<a target="_blank" href="https://etherscan.io/address/0xbDC7B020FCFbB08877cF7af9F78591D06F881BAf#tokentxns">{{ trans('msg.section14_view') }}</a>
 											</span>	
 										</div>
 									</div>
@@ -1760,12 +1731,12 @@ $newsdatas = [];
 										</div>
 										<div class="d-inline-block pl-2">
 											<span> 
-												5% (2.75 mil)
+											{{ trans('msg.section14_chart5') }}
 											</span>
 											<br>	 
 											<span>
-												Bounty and Airdrop<br>
-												<a target="_blank" href="https://etherscan.io/address/0x997C48bF57fa3234ee718D0e3d6D0AD496aC5E83#tokentxns">View Allocation</a>
+											{{ trans('msg.section14_chart5_desc') }}<br>
+												<a target="_blank" href="https://etherscan.io/address/0x997C48bF57fa3234ee718D0e3d6D0AD496aC5E83#tokentxns">{{ trans('msg.section14_view') }}</a>
 											</span>	
 										</div>
 									</div>
@@ -1777,12 +1748,12 @@ $newsdatas = [];
 										</div>
 										<div class="d-inline-block pl-2">
 											<span> 
-												10% (5.5 mil)
+											{{ trans('msg.section14_chart6') }}
 											</span>
 											<br>	 
 											<span>
-												Team and Management<br>
-												<a target="_blank" href="https://etherscan.io/address/0x0482AeFB13627A10b5489a89fE7d6F49Eb62B9B2#tokentxns">View Allocation</a>
+											{{ trans('msg.section14_chart6_desc') }}<br>
+												<a target="_blank" href="https://etherscan.io/address/0x0482AeFB13627A10b5489a89fE7d6F49Eb62B9B2#tokentxns">{{ trans('msg.section14_view') }}</a>
 											</span>	
 										</div>
 									</div>
@@ -1794,12 +1765,12 @@ $newsdatas = [];
 										</div>
 										<div class="d-inline-block pl-2">
 											<span> 
-												15% (8.25 mil)
+											{{ trans('msg.section14_chart7') }}
 											</span>
 											<br>	 
 											<span>
-												Reserve<br>
-												<a target="_blank" href="https://etherscan.io/address/0x412ca7c3ed4Fe0d213C08443E261224b5EEd6222#tokentxns">View Allocation</a>
+											{{ trans('msg.section14_chart7_desc') }}<br>
+												<a target="_blank" href="https://etherscan.io/address/0x412ca7c3ed4Fe0d213C08443E261224b5EEd6222#tokentxns">{{ trans('msg.section14_view') }}</a>
 											</span>	
 										</div>
 									</div>
@@ -1816,31 +1787,31 @@ $newsdatas = [];
 	<div class="container h-100 d-flex justify-content-center align-items-center flex-column">
 		<div class="pt-1 text-center">
 			<h3>
-				<b>Want to know more?</b>
+				<b>{{ trans('msg.download_section_heading') }}</b>
 			</h3>
 			<p class="pt-3">
-				Download to learn more about us, <br>our project, and how you can participate in our token sale.
+				{!! trans('msg.download_section_desc') !!}
 			</p>
 			<div class="buttons pt-3 ">
 				<div class="row w-100">
 					<div class="col">
 						<div class="d-flex justify-content-center align-items-center">
 							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL">
-							<b>One Pager</b>	
+							<b>{{ trans('msg.One_pager') }}</b>	
 							</a>
 						</div>
 					</div>
 					<div class="col">
 						<div>
 							<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-BAL">
-							<b>Whitepaper</b>	
+							<b>{{ trans('msg.Whitepaper') }}</b>	
 							</a>
 						</div>
 					</div>
 					<div class="col">
 						<div>
 							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL" target="_blank">
-							<b>Yellowpaper</b>	
+							<b>{{ trans('msg.Yellowpaper') }}</b>	
 							</a>				
 						</div>
 					</div>
@@ -1848,12 +1819,12 @@ $newsdatas = [];
 				<div class="pt-3">
 					<div class="row w-100">
 						<div class="col">
-							<a href="#contact" class="btn btn-BAL">Schedule a meeting</a>
+							<a href="#contact" class="btn btn-BAL">{{ trans('msg.meeting') }}</a>
 						</div>
 						<div class="col">
 							<a href="#section-bal-token" class="btn btn-BAL">
 								<b>
-									BUY BAL TOKENS NOW!
+								{{ trans('msg.BAL_token') }}
 								</b>
 							</a>
 						</div>
@@ -1869,25 +1840,25 @@ $newsdatas = [];
 			<div class="container">
 				<h3 class="text-center">
 					<strong>
-						Meet Our <span class="team-text">Team</span> <span class="advisor-text">Advisors</span>
+						{!! trans('msg.sectionteam_heading') !!}
 					</strong> 
 				</h3>
 				<ul class="nav nav-pills mt-5 mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
 					<li class="nav-item">
-						<a class="nav-link active team" id="pills-team-tab" data-toggle="pill" href="#pills-team" role="tab" aria-controls="pills-home" aria-selected="true">Team</a>
+						<a class="nav-link active team" id="pills-team-tab" data-toggle="pill" href="#pills-team" role="tab" aria-controls="pills-home" aria-selected="true">{{ trans('msg.sectionteam_Team') }}</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link advisory" id="pills-advisory-tab" data-toggle="pill" href="#pills-advisory" role="tab" aria-controls="pills-profile" aria-selected="false">Advisory</a>
+						<a class="nav-link advisory" id="pills-advisory-tab" data-toggle="pill" href="#pills-advisory" role="tab" aria-controls="pills-profile" aria-selected="false">{{ trans('msg.sectionteam_Advisory') }}</a>
 					</li>
 				</ul>
 				<div class="tab-content" id="pills-tabContent">
 					<div class="tab-pane fade show active" id="pills-team" role="tabpanel" aria-labelledby="pills-team-tab">
 					<?php
 						$coreTeam = [];
-						$coreTeam[] = [	'name'=>'Johannes Eidens', 'title'=>'CEO & Founder', 'linkedin'=>'https://www.linkedin.com/in/dotcomv', 'image'=>'images/ieo/team/joh.jpg', 'text'=>'Mr. Johannes, the founder, and CEO is a dreamer by nature and has charted his own unconventional career path as a serial entrepreneur. Following his dreams has led him to build successful businesses, he started with a master degree in International Management to the creation of a vast portfolio of successful startups and early-stage companies that includes but is not limited to Almani Lighting LLC, ZoomDNA.com, DubaiConsult.com, and Dotcom Ventures FZE.<br><br>Through his path, he’s developed expertise in navigating career changes, career reinvention, inspired leadership, life & work strategies, as well as intra and entrepreneurship. He has studied at a top German University and under the best in class entrepreneurs and leaders that aid in him delivering the very best to his businesses and end clients.<br><br>BuyAnyLight is his latest venture, whereby he is aiming to streamline and simplify the Light Sourcing process by helping home owners, contractors, consultants, project owners and tower builders get the best in the market LED Products at the most competitive rates.', 'model_no' => 1 ];
-						$coreTeam[] = [	'name'=>'Martin Heyen', 'title'=>'Co-Founder & CFO', 'linkedin'=>'', 'image'=>'images/ieo/team/martin.jpg', 'text'=>'A serial entrepreneur, venture capitalist and expert in International Business and Management. He is the founder of Almani Lighting GmbH, Germany and also the director and owner of Norok GmbH. He also manages and develops an international property portfolio. His passion for lighting has deep roots: His father, Dr. Meino Heyen, is the founder of AIXTRON GmbH which is listed on the Frankfurt Stock Exchange. AIXTRON achieved impressive innovations within the LED and OLED industry which are the fundamentals for Almani Lightings existence today.<br><br>Martin also has been a venture capitalist and early stage investor since early 2000 and have helped a multitude of successful startups and early-stage companies under his portfolio. Martin owns a good fortune generated from his investments and has been an inspiration to young entrepreneurs with High Potential ideas. BuyAnyLight is one of his venture on his mission to gap revolutionizing the entire LED Lighting industry with modern-age technical infrastructure.<br><br>Mr. Martin is a highly goal-driven, experienced finance professional with significant academic knowledge and over 20 years of financial management, audit, accounting, financial analysis, reporting, budgeting and corporate finance experience. Highly skilled in treasury management & planning, taxation, internal controls evaluation, financial modeling and cash flow management; proficient in assisting clients in operational improvements.He serves as a team leader who thrives in advanced teamwork situations, exceedingly capable to collaborate with diversely talented teams, extremely motivated to make BuyAnyLight the leading LED Sourcing platform of the world.', 'model_no' => 2 ];
-						$coreTeam[] = [	'name'=>'Leo Vicente', 'title'=>'Chief Technical Officer', 'linkedin'=>'https://www.linkedin.com/in/ljvicente', 'image'=>'images/ieo/team/leo.jpg', 'text'=>'Mr. Leo Vicente is the Chief Technology Officer at BuyAnyLight. He is an IT Professional with over 10 years of experience in Project/Product Management, design, application architecture, development, data modeling testing, telecommunication, blockchain solutions and Implementation of Software Solutions. A good team player with the ability to work independently, having excellent communication and interpersonal skills. Expertise in design, development and implementation of component based client/server, n-tier applications and web development, using object technology.<br><br>Mr. Leo has created and launched a huge number of projects of enterprise scale, among which some of the prominent projects are: development of in-house infrastructure for Almani Lighting Software, BuyAnyLight Light Finder Platform and integration with blockchain etc.<br><br>His main task as a Chief Technical Officer of BAL is to implement technology strategies and ensuring that the technological resources are aligned with the company’s business needs. Leo actively participate in the engineering efforts to ensure the solutions are delivered correctly and efficiently.', 'model_no' => 3];
-						$coreTeam[] = [	'name'=>'Muhammad Younas', 'title'=>'Chief Operating Officer', 'linkedin'=>'https://www.linkedin.com/in/muhammad-younas2023', 'image'=>'images/ieo/advisors/muhammad.jpg', 'text'=>'Mr. Muhammad is the Chief Operating Officer of BuyAnyLight. He is an experienced individual with more than ten years of industry experience. From startups to fully matured businesses, he has worked with over 500 clients as a consultant. He has experience in overseeing various operational teams with the goal of optimizing service delivery for end consumers and customers. <br><br>Muhammad has extensive knowledge in blockchain technologies, Initial Coin Offerings (ICO), Security Token Offerings (STO), Initial Exchange Offering, business development, Artificial Intelligence (AI) technology, Internet of things (IoT), Crowd Funding, Venture capital industry. He is proficient in Community management, Community Growth, and Digital Marketing. Muhammad’s background in computer science had blessed him with the cognitive ability to comprehend technical information, and he ensures to transform the idea into a seed to be planted in the reader´s minds and hearts. Muhammad also has a diverse experience in the provision of research, content, and copywriting solutions for companies based on FinTech and blockchain. Since 2017, he has helped over 75 blockchain startups, ICOs, STO, and IEOs, with his role starting from initial research and idea refinement to drafting authority documents i.e., white papers and business proposals to delivering quality copy/content in areas such as website, video script and blogs, articles and press releases.<br><br>At BuyAnyLight, he directly manages and play an integral role in developing leaders of several operational teams covering Business Operations, Business Development, Customer Success, etc. and work closely with leadership teams overseas to ensure international alignment and operational effectiveness.', 'model_no' => 13];
+						$coreTeam[] = [	'name'=>trans('msg.sectionteam_1_name'), 'title'=>trans('msg.sectionteam_1_desc'), 'linkedin'=>'https://www.linkedin.com/in/dotcomv', 'image'=>'images/ieo/team/joh.jpg', 'text'=>trans('msg.sectionteam_1_about'), 'model_no' => 1 ];
+						$coreTeam[] = [	'name'=>trans('msg.sectionteam_2_name'), 'title'=>trans('msg.sectionteam_2_desc'), 'linkedin'=>'', 'image'=>'images/ieo/team/martin.jpg', 'text'=>trans('msg.sectionteam_2_about'), 'model_no' => 2 ];
+						$coreTeam[] = [	'name'=>trans('msg.sectionteam_3_name'), 'title'=>trans('msg.sectionteam_3_desc'), 'linkedin'=>'https://www.linkedin.com/in/ljvicente', 'image'=>'images/ieo/team/leo.jpg', 'text'=>trans('msg.sectionteam_3_about'), 'model_no' => 3];
+						$coreTeam[] = [	'name'=>trans('msg.sectionteam_4_name'), 'title'=>trans('msg.sectionteam_4_desc'), 'linkedin'=>'https://www.linkedin.com/in/muhammad-younas2023', 'image'=>'images/ieo/advisors/muhammad.jpg', 'text'=>trans('msg.sectionteam_4_about'), 'model_no' => 13];
 						
 					?>
 						<div class="row pt-5 justify-content-center" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
@@ -1912,7 +1883,7 @@ $newsdatas = [];
 								<p class=" pt-1 mb-1">
 									{{ $tm['title'] }}							
 								</p>
-								<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button>
+								<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">{{ trans('msg.sectionteam_about_btn') }}</button>
 								<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModalLabel" aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
@@ -1937,10 +1908,10 @@ $newsdatas = [];
 	
 						<?php
 							$coreTeam = [];
-							$coreTeam[] = [	'name'=>'Rene Rowell dela Rama', 'title'=>'Director of Blockchain Integration', 'linkedin'=>'https://www.linkedin.com/in/rene-rowell-dela-rama-3ab529148', 'image'=>'images/ieo/team/rene.jpg', 'text'=>'Rene is working as the BAL Director of Blockchain Integration and the scope of his role is to interpret complex technical blockchain infrastructure and express clearly the goal to a variety of cross-functional stakeholders.<br><br>Rene is an innovative person with broad understanding of cryptocurrency and matters involving around it. He is greatly exposed to international trends and is always looking for ways to further push the limits of encrypted technology.<br><br>Rene also develops and implement software modules and at the same time diagnose and resolve issues of the BAL Platform. He is also responsible for developing innovative solutions to challenging problems, including command and control and high integrity solutions.', 'model_no' => 4];
-							$coreTeam[] = [	'name'=>'Rizvi Iqbal', 'title'=>'Blockchain & DLT Specialist', 'linkedin'=>'https://www.linkedin.com/in/rizviqbal', 'image'=>'images/ieo/team/rizvi.jpg', 'text'=>'Mr. Rizvi is the Blockchain/DLT Specialist with the BuyAnyLight Project. His role for the project is to define key elements regarding Blockchain and Distributed Ledger Technology. He provides an in-depth analysis of the performance and scalability of the system as well as developing infrastructure and tools to analyze blockchain transactions.', 'model_no' => 5];
-							$coreTeam[] = [	'name'=>'Artem Gordadze', 'title'=>'Marketing Specialist', 'linkedin'=>'https://www.linkedin.com/in/artem-gordadze', 'image'=>'images/ieo/team/artem.jpg', 'text'=>'My contribution to the BAL team is to conduct market research to develop data about the current trends and habits for the intended clients. I made conclusions for the market data analysis by gathering results from campaigns, conversion rates and website traffic online. I use all the data to improve the BAL Platform\'s future campaigns and strategies.', 'model_no' => 6];	
-							$coreTeam[] = [	'name'=>'Nantha Kumar', 'title'=>'Sales Director', 'linkedin'=>'https://www.linkedin.com/in/nantha-kumar-36b92685', 'image'=>'images/ieo/team/nantha.jpg', 'text'=>'My main participation with BuyAnyLight as a Sales Director is to ensure that my team will be able to accelerate sales growth. I generate and submit sales-related reports to management for evaluation. Additionally, we collaborate with senior sales team for the BAL Platform to set revenue goals and future strategic plans and make sure the successful execution of these strategies to achieve the company’s financial target.', 'model_no' => 7];
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_5_name'), 'title'=>trans('msg.sectionteam_5_desc'), 'linkedin'=>'https://www.linkedin.com/in/rene-rowell-dela-rama-3ab529148', 'image'=>'images/ieo/team/rene.jpg', 'text'=>trans('msg.sectionteam_5_about'), 'model_no' => 4];
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_6_name'), 'title'=>trans('msg.sectionteam_6_desc'), 'linkedin'=>'https://www.linkedin.com/in/rizviqbal', 'image'=>'images/ieo/team/rizvi.jpg', 'text'=>trans('msg.sectionteam_6_about'), 'model_no' => 5];
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_7_name'), 'title'=>trans('msg.sectionteam_7_desc'), 'linkedin'=>'https://www.linkedin.com/in/artem-gordadze', 'image'=>'images/ieo/team/artem.jpg', 'text'=>trans('msg.sectionteam_7_about'), 'model_no' => 6];	
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_8_name'), 'title'=>trans('msg.sectionteam_8_desc'), 'linkedin'=>'https://www.linkedin.com/in/nantha-kumar-36b92685', 'image'=>'images/ieo/team/nantha.jpg', 'text'=>trans('msg.sectionteam_8_about'), 'model_no' => 7];
 						
 						?>
 						<div class="row pt-5 justify-content-center" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
@@ -1965,7 +1936,7 @@ $newsdatas = [];
 								<p class=" pt-1 mb-1">
 									{{ $tm['title'] }}							
 								</p>
-								<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button>
+								<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">{{ trans('msg.sectionteam_about_btn') }}</button>
 								<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModalLabel" aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
@@ -1990,10 +1961,10 @@ $newsdatas = [];
 	
 						<?php
 							$coreTeam = [];
-							$coreTeam[] = [	'name'=>'Marc Vazquez', 'title'=>'Sourcing, Production & Investors Relations', 'linkedin'=>'https://www.linkedin.com/in/marc-vazquez-6b01a794', 'image'=>'images/ieo/team/marc.jpg', 'text'=>'I am responsible for the BuyAnyLight’s Sourcing, Production and Investors Relations. I expedite the gathering of data for research models, support development and investment information. I together with my team extracts market and peer data to create more leads. I also participate in the monthly and quarterly report for shareholders and management for feedback regarding the project.', 'model_no' => 8];					
-							$coreTeam[] = [	'name'=>'Ryan Quines', 'title'=>'Design Lead', 'linkedin'=>'https://www.linkedin.com/in/ryan-matthew-quines-551a85152', 'image'=>'images/ieo/team/ryan.jpg', 'text'=>'My major contribution to BuyAnyLight project is to create and integrate creative designs for the overall impression of the platform. I work closely with the graphic designs and photographs to create a much-needed piece to complete every detailed to achieve perfections. I also collaborate with content specialists and management to be able to deliver impressive results. I develop the overall layout and production design for BAL.', 'model_no' => 9];
-							$coreTeam[] = [	'name'=>'Zain Ul Abdin', 'title'=>'Senior Architect', 'linkedin'=>'https://www.linkedin.com/in/muhammad-zain-ul-abdin-120a3612a', 'image'=>'images/ieo/team/zain.jpg', 'text'=>'I am the Senior Architect for the BuyAnyLight project, my active participation entails on the tactical level of the organization. I work directly with business representatives to figure out specific requirements to determine design solutions. Portion of my job concentration is with regards to budgeting, contracts and structural specifications.', 'model_no' => 10];
-							$coreTeam[] = [	'name'=>'Shajudeen Yousf', 'title'=>'Lighting Design Architect', 'linkedin'=>'https://www.linkedin.com/in/shajudeen-yousf-783452146/', 'image'=>'images/ieo/team/shajudeen.jpg', 'text'=>'As an LED lighting designer architect, I am responsible to identify the core values of BuyAnyLight. In this role, I am facing the client and need to take ownership of projects while assisting in creating appropriate led lighting design solutions through to completion.', 'model_no' => 11];
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_9_name'), 'title'=>trans('msg.sectionteam_9_desc'), 'linkedin'=>'https://www.linkedin.com/in/marc-vazquez-6b01a794', 'image'=>'images/ieo/team/marc.jpg', 'text'=>trans('msg.sectionteam_9_about'), 'model_no' => 8];					
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_10_name'), 'title'=>trans('msg.sectionteam_10_desc'), 'linkedin'=>'https://www.linkedin.com/in/ryan-matthew-quines-551a85152', 'image'=>'images/ieo/team/ryan.jpg', 'text'=>trans('msg.sectionteam_10_about'), 'model_no' => 9];
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_11_name'), 'title'=>trans('msg.sectionteam_11_desc'), 'linkedin'=>'https://www.linkedin.com/in/muhammad-zain-ul-abdin-120a3612a', 'image'=>'images/ieo/team/zain.jpg', 'text'=>trans('msg.sectionteam_11_about'), 'model_no' => 10];
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_12_name'), 'title'=>trans('msg.sectionteam_12_desc'), 'linkedin'=>'https://www.linkedin.com/in/shajudeen-yousf-783452146/', 'image'=>'images/ieo/team/shajudeen.jpg', 'text'=>trans('msg.sectionteam_12_about'), 'model_no' => 11];
 							// $coreTeam[] = [	'name'=>'Ammar Mohamed', 'title'=>'Lighting Design Architect', 'linkedin'=>'https://www.linkedin.com/in/ammar-mohamed-231379103/', 'image'=>'images/ieo/team/ammar.jpg', 'text'=>'My responsibilities as Lighting Designer Architect are mainly: Preparing renderings, drawings and specification, Assisting with the concept development, visualization, calculations and design development of the company\'s specialist lighting design projects. Attending site meetings and presenting creative designs to clients are also part of my tasks.', 'model_no' => 12];
 					
 						?>
@@ -2019,7 +1990,7 @@ $newsdatas = [];
 								<p class=" pt-1 mb-1">
 									{{ $tm['title'] }}							
 								</p>
-								<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button>
+								<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">{{ trans('msg.sectionteam_about_btn') }}</button>
 								<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModalLabel" aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
@@ -2044,10 +2015,10 @@ $newsdatas = [];
 	
 						<?php
 							$coreTeam = [];
-							$coreTeam[] = [	'name'=>'Chad Hanson', 'title'=>'Social Media, Community Manager', 'linkedin'=>'https://www.linkedin.com/in/chad-hanson-a747a2137/', 'image'=>'images/ieo/team/chad.jpg', 'text'=>'My role with BuyAnyLight includes working alongside other community managers and the marketing department to promote the project, build and maintain community relations, and provide accurate answers to community questions.', 'model_no' => 14];
-							$coreTeam[] = [	'name'=>'Maria Carron Igloso', 'title'=>'Investor relations and Public Relations Manager', 'linkedin'=>'https://www.linkedin.com/in/maria-carron-igloso-1324b5105', 'image'=>'images/ieo/team/maria.jpg', 'text'=>'I am BuyAnyLight\'s Investor Relations and Public Relations Manager. I facilitate all the release of information to investors and the general public. I handle meetings and inquiries and reports back to the management for results. I also take part in providing a solution to crisis management. My other task for BuyAnyLight is to maintain professional connections to all clients and investors.', 'model_no' => 15];
-							$coreTeam[] = [	'name'=>'Tiffany Anggot', 'title'=>'Director Of Strategic Partnerships', 'linkedin'=>'https://www.linkedin.com/in/tiffany-jel-a-367548147', 'image'=>'images/ieo/team/tiffany.jpg', 'text'=>'My responsibility is to expand community relations and informing partners of strategic business goals. I work closely with other executives to define short-and long-terms policies and strategies and then connect with the stakeholders to expand on these company visions.', 'model_no' => 16];
-							$coreTeam[] = [	'name'=>'Juliane Schreilechner', 'title'=>'Training Consultant', 'linkedin'=>'https://www.linkedin.com/in/juliane-schreilechner-142108174/', 'image'=>'images/ieo/team/juliane.jpg', 'text'=>'I am the Training Consultant for the BuyAnyLight team, and my key responsibilities are developing and organizing educational activities to boost team\'s job performance. Training, seminars and courses with regards to cryptography, blockchain and smart contracts were organized to keep a well-versed and confident BAL team. Creating a non-toxic work culture with high efficiency will remain my utmost goal.', 'model_no' => 17];
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_13_name'), 'title'=>trans('msg.sectionteam_13_desc'), 'linkedin'=>'https://www.linkedin.com/in/chad-hanson-a747a2137/', 'image'=>'images/ieo/team/chad.jpg', 'text'=>trans('msg.sectionteam_13_about'), 'model_no' => 14];
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_14_name'), 'title'=>trans('msg.sectionteam_14_desc'), 'linkedin'=>'https://www.linkedin.com/in/maria-carron-igloso-1324b5105', 'image'=>'images/ieo/team/maria.jpg', 'text'=>trans('msg.sectionteam_14_about'), 'model_no' => 15];
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_15_name'), 'title'=>trans('msg.sectionteam_15_desc'), 'linkedin'=>'https://www.linkedin.com/in/tiffany-jel-a-367548147', 'image'=>'images/ieo/team/tiffany.jpg', 'text'=>trans('msg.sectionteam_15_about'), 'model_no' => 16];
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_16_name'), 'title'=>trans('msg.sectionteam_16_desc'), 'linkedin'=>'https://www.linkedin.com/in/juliane-schreilechner-142108174/', 'image'=>'images/ieo/team/juliane.jpg', 'text'=>trans('msg.sectionteam_16_about'), 'model_no' => 17];
 						?>
 	
 						<div class="row pt-5 justify-content-center" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
@@ -2072,7 +2043,7 @@ $newsdatas = [];
 								<p class=" pt-1 mb-1">
 									{{ $tm['title'] }}							
 								</p>
-								<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button>
+								<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">{{ trans('msg.sectionteam_about_btn') }}</button>
 								<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModalLabel" aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
@@ -2099,11 +2070,11 @@ $newsdatas = [];
 	
 						<?php
 							$coreTeam = [];
-							$coreTeam[] = [	'name'=>'Khalid Almutawa', 'title'=>'Partner and Chairman ASAS Holding Group', 'linkedin'=>'', 'image'=>'images/ieo/advisors/khalid.jpg', 'text'=>'My participation with BuyAnyLight is not limited to leadership and governance alone, I pledge my full dedication with the BAL project to make it a success. I am responsible for creating an effective and harmonious step by step transition of the project. I ensure an effective relationship with everyone who participates in the BuyAnyLight project by allowing a constructive exchange of theories and opinions. I also ensure that every strategies and policy are lawfully implemented within the organization.', 'model_no' => 18];
-							$coreTeam[] = [	'name'=>'Sebastijan Eder', 'title'=>'Partner, 0C Ventures', 'linkedin'=>'https://www.linkedin.com/in/sebastijan-eder-a8235028/', 'image'=>'images/ieo/advisors/sebastijan.jpg', 'text'=>'My association with BuyAnyLight revolves around strengthening the project knowledge by providing precise analysis of financial data that will uphold the project\'s current business strategies. I endorse the verification of the effectivity of commercial, financial and operational targets to make sure that expected results were delivered. I also must build a strong relation and partnership with future stakeholders, business people, and everyone who wish to take part in the project.', 'model_no' => 19];
-							$coreTeam[] = [	'name'=>'Ralph Kattan ', 'title'=>'Major International Bank', 'linkedin'=>'https://www.linkedin.com/in/ralph-kattan-709103191/', 'image'=>'images/ieo/advisors/ralph.jpg', 'text'=>'My key role is to advise about blockchain and economic developments. I have an experience of  5+ years with huge international derivatives trading businesses.', 'model_no' => 20];
-							$coreTeam[] = [	'name'=>'Alexander Vogt', 'title'=>'International Key Account Manager, CustomBiotech EMEA/LATAM at Roche Diagnostic Germany', 'linkedin'=>'https://www.linkedin.com/in/alexander-vogt-b5b80858/', 'image'=>'images/ieo/advisors/alexander.jpg', 'text'=>'I assist the team with insights on how to work on the project systematically by undertaking market research. I assist in creating sustainable progress on the BuyAnyLight platform. As an advisor, I also help to enterprise the project by creating leads through affiliates. I maintain a constant data feed on analytical business report.', 'model_no' => 21];
-							$coreTeam[] = [	'name'=>'Dr. Moritz Eidens', 'title'=>'CEO PharmGenomics GmbH', 'linkedin'=>'https://www.linkedin.com/in/dr-moritz-eidens-80550910/', 'image'=>'images/ieo/advisors/moritz.jpg', 'text'=>'My involvement with BuyAnyLight project revolves around the proper analysis of the business plan to give counsel on marketing, investments and potential funding opportunities. I also perform extensive research on processes and endeavor on recommendations for changes in strategy to improve the project development. I also aid on issue and risk analysis to mitigate the business threats involved in the implementation of the project.', 'model_no' => 22];
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_17_name'), 'title'=>trans('msg.sectionteam_17_desc'), 'linkedin'=>'', 'image'=>'images/ieo/advisors/khalid.jpg', 'text'=>trans('msg.sectionteam_17_name'), 'model_no' => 18];
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_18_name'), 'title'=>trans('msg.sectionteam_18_desc'), 'linkedin'=>'https://www.linkedin.com/in/sebastijan-eder-a8235028/', 'image'=>'images/ieo/advisors/sebastijan.jpg', 'text'=>trans('msg.sectionteam_18_about'), 'model_no' => 19];
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_19_name'), 'title'=>trans('msg.sectionteam_19_desc'), 'linkedin'=>'https://www.linkedin.com/in/ralph-kattan-709103191/', 'image'=>'images/ieo/advisors/ralph.jpg', 'text'=>trans('msg.sectionteam_19_about'), 'model_no' => 20];
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_20_name'), 'title'=>trans('msg.sectionteam_20_desc'), 'linkedin'=>'https://www.linkedin.com/in/alexander-vogt-b5b80858/', 'image'=>'images/ieo/advisors/alexander.jpg', 'text'=>trans('msg.sectionteam_20_desc'), 'model_no' => 21];
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_21_name'), 'title'=>trans('msg.sectionteam_21_desc'), 'linkedin'=>'https://www.linkedin.com/in/dr-moritz-eidens-80550910/', 'image'=>'images/ieo/advisors/moritz.jpg', 'text'=>trans('msg.sectionteam_21_about'), 'model_no' => 22];
 							//$coreTeam[] = [	'name'=>'Dr. Stefan Freh', 'title'=>'Specialist Solicitor Industrial Law', 'linkedin'=>'', 'image'=>'images/ieo/advisors/stefan.jpg', 'text'=>'The best time to plant a tree was 20 years ago. The second best time is now.', ];
 						?>
 						<div class="row pt-5 justify-content-center" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
@@ -2128,7 +2099,7 @@ $newsdatas = [];
 								<p class=" pt-1 mb-1">
 									{{ $tm['title'] }}							
 								</p>
-								<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button>
+								<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">{{ trans('msg.sectionteam_about_btn') }}</button>
 								<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModalLabel" aria-hidden="true">
 									  <div class="modal-dialog" role="document">
 										<div class="modal-content">
@@ -2154,8 +2125,8 @@ $newsdatas = [];
 		
 						<?php
 							$coreTeam = [];
-							$coreTeam[] = [	'name'=>'Mohsin Irshad', 'title'=>'Sr. UI/UX Designer at EXCEED IT Services', 'linkedin'=>'https://www.linkedin.com/in/mohsin-irshad-8b982532', 'image'=>'images/ieo/advisors/mohsin.jpg', 'text'=>'I am a proud Sr. UI/UX Designer Advisor for BuyAnyLight project. I present the team with organized information to create a unique interactive experience that could attract users into the platform. Most of my input to the project was through my years of testing and user research. I also contribute to task flows, design ideas, GUI elements and sitemaps of the BAL platform.', 'model_no' => 23];
-							$coreTeam[] = [	'name'=>'Janis Leitans', 'title'=>'Scientific Assistant, Latvian Biomedical Research Centre', 'linkedin'=>'https://www.linkedin.com/in/janis-leitans-16297269/', 'image'=>'images/ieo/team/janis.jpg', 'text'=>'I take part in providing possible business support landscape for the BuyAnyLight project. My in-depth knowledge allows me to advise BuyAnyLight team with a range of options available for the business development of the project. I provide counsel on the business planning process to attract more leads through improved techniques.', 'model_no' => 24];
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_22_name'), 'title'=>trans('msg.sectionteam_22_desc'), 'linkedin'=>'https://www.linkedin.com/in/mohsin-irshad-8b982532', 'image'=>'images/ieo/advisors/mohsin.jpg', 'text'=>trans('msg.sectionteam_22_name'), 'model_no' => 23];
+							$coreTeam[] = [	'name'=>trans('msg.sectionteam_23_name'), 'title'=>trans('msg.sectionteam_23_desc'), 'linkedin'=>'https://www.linkedin.com/in/janis-leitans-16297269/', 'image'=>'images/ieo/team/janis.jpg', 'text'=>trans('msg.sectionteam_23_name'), 'model_no' => 24];
 						?>
 						<div class="row pt-5 justify-content-center" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 						@foreach($coreTeam as $tm)
@@ -2179,7 +2150,7 @@ $newsdatas = [];
 								<p class=" pt-1 mb-1">
 									{{ $tm['title'] }}							
 								</p>
-								<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">About Me</button>
+								<button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#TeamModal{{$tm['model_no']}}">{{ trans('msg.sectionteam_about_btn') }}</button>
 								<div class="modal fade" id="TeamModal{{$tm['model_no']}}" tabindex="-1" role="dialog" aria-labelledby="TeamModalLabel" aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
@@ -2242,7 +2213,7 @@ $newsdatas = [];
 				?>
 				<div class="col-12 text-center">
 					<h2 class=" ml-3 mt-0"> 
-						<b>Partners</b>	
+						<b>{{ trans('msg.partners') }}</b>	
 					</h2>
 					<div class="icons">
 						@foreach($partners as $prtnr)
@@ -2273,7 +2244,7 @@ $newsdatas = [];
 				?>
 				<div class="col-12 mt-10 text-center">
 					<h2 class=" ml-3 mt-0 ">
-						<b>Road Shows</b>	
+						<b>{{ trans('msg.roadshows') }}</b>	
 					</h2>
 					<div class="icons">
 						@foreach($roadshows as $rdshw)
@@ -2334,7 +2305,7 @@ $newsdatas = [];
 				<div class="container">
 					<h3 class="text-center">
 						<b>
-							Get in Touch
+						{{ trans('msg.touch') }}
 						</b>
 					</h3>
 				</div>
@@ -2346,7 +2317,7 @@ $newsdatas = [];
 							</div>
 							<div class="col-md-10">
 								<span  class="header-text"><b>info@buyanylight.com</b></span><br>
-								<span>Send us your query anytime</span><br>
+								<span>{{ trans('msg.query') }}</span><br>
 							</div>
 						</div>
 					</div>
@@ -2357,7 +2328,7 @@ $newsdatas = [];
 							</div>
 							<div class="col-md-10">
 								<span class="header-text"><b>+971 4 887 3265</b></span><br>
-								<span>Mon to Fri 9am to 6pm</span><br>
+								<span>{{ trans('msg.time') }}</span><br>
 							</div>
 						</div>
 					</div>
@@ -2383,33 +2354,33 @@ $newsdatas = [];
 										<div class="row pb-3">
 											<div class="col-6">
 												<div class="">
-													<input type="text" name="name" class="form-control" placeholder="Name*">
+													<input type="text" name="name" class="form-control" placeholder="{{ trans('msg.contact_name') }}">
 												</div>
 											</div>
 											<div class="col-sm-6">
 												<div class="">
-													<input type="email" name="email" class="form-control" placeholder="Email*">
+													<input type="email" name="email" class="form-control" placeholder="{{ trans('msg.contact_email') }}">
 												</div>
 											</div>
 										</div>
 										<div class="row pb-3">
 											<div class="col-sm-12">
 												<div class="">
-													<input type="text" name="subject" class="form-control" placeholder="Subject*">
+													<input type="text" name="subject" class="form-control" placeholder="{{ trans('msg.contact_subject') }}">
 												</div>
 											</div>
 										</div>
 										<div class="row pb-3">
 											<div class="col-sm-12">
 												<div class="">
-													<textarea class="form-control" name="message" placeholder="Enter you Message" rows="3"></textarea>
+													<textarea class="form-control" name="message" placeholder="{{ trans('msg.message1') }}" rows="3"></textarea>
 												</div>
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-sm-12 text-center">
 												<input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
-												<input type="submit" class="btn btn-BAL w-50 send-message" value="Send Message" disabled="disabled">
+												<input type="submit" class="btn btn-BAL w-50 send-message" value="{{ trans('msg.message2') }}" disabled="disabled">
 											</div>
 										</div>
 									</form>
@@ -2428,7 +2399,7 @@ $newsdatas = [];
 <section class="section19" style="position: relative; bottom: 175px;">
 	<div class="container" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 		<h3 class="text-center">
-			<b>Stay Connected!</b>	
+			<b>{{ trans('msg.stay') }}</b>	
 		</h3>
 		<div class="card newsletter-card mt-4">
 			<div class="card-body">
@@ -2436,16 +2407,16 @@ $newsdatas = [];
 					<div class="col-md-8 d-flex align-items-center flex-column">
 						<h4 class="w-100">
 							<b>
-								Sign up for our IEO newsletter
+							{{ trans('msg.sign_up') }}
 							</b>
 						</h4>
-						<p class="w-100">What to know more about our Privat Round? Contact us!</p>
+						<p class="w-100">{{ trans('msg.private_round') }}</p>
 						<div class="w-100">
 							<form  action="https://buyanylight.us3.list-manage.com/subscribe/post?u=22d8456f8db4bacaef7a16d53&amp;id=7b85cd9f3f" method="post" class="input-group mt-3" name="mc-embedded-subscribe-form" novalidate target="_blank">
-							<input type="email" name="EMAIL" class="form-control" placeholder="Your Email Address">
+							<input type="email" name="EMAIL" class="form-control" placeholder="{{ trans('msg.subcribe_email') }}">
 								<div class="input-group-append">
 									<button type="submit" class="btn btn-BAL">
-										<b>Subscribe now</b>	
+										<b>{{ trans('msg.subcribe_email') }}</b>	
 									</button>
 								</div>
 							</form>

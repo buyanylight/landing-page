@@ -38,25 +38,25 @@
 			<div class="col-5 text-white">
 				<div class="d-flex justify-content-center flex-column h-100">
 					<h1 class="display-4">
-						<b>Sourcing Reinvented!</b>	
+						<b>{{ trans('msg.section1_header1')}}</b>	
 					</h1>
 					<h4>
-						The global platform for LED lighting
+					{{ trans('msg.section1_header2')}}
 					</h4>
 					<div class="row mt-3">
 						<div class="col-4">
-							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" class="btn btn-BAL w-100">BAL One-Pager</a>
+							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" class="btn btn-BAL w-100">{{ trans('msg.section1_button1')}}</a>
 						</div>
 						<div class="col-4">
-							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" class="btn btn-BAL w-100">IEO One-Pager</a>
+							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" class="btn btn-BAL w-100">{{ trans('msg.section1_button2')}}</a>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-4">
-							<a href="{{ route('ieo') }}" class="btn btn-BAL mt-2 w-100">Take me to IEO</a>
+							<a href="{{ route('ieo') }}" class="btn btn-BAL mt-2 w-100">{{ trans('msg.section1_button3')}}</a>
 						</div>
 						<div class="col-4">
-							<a href="{{ route('ieo') }}#section-bal-token" class="btn btn-BAL mt-2 w-100">Buy BAL Tokens</a>
+							<a href="{{ route('ieo') }}#section-bal-token" class="btn btn-BAL mt-2 w-100">{{ trans('msg.section1_button4')}}</a>
 						</div>
 					</div>
 					<div class="mt-3">
@@ -65,7 +65,7 @@
 								<i class="far fa-play-circle"></i>&nbsp; 
 							</span>
 							<b class="video-text">
-								Introducing BuyAnyLight
+							{{ trans('msg.section1_video')}}
 							</b>
 						</a>
 					</div>
@@ -73,7 +73,7 @@
 						<div class="row">
 							<div class="col-12">
 								<b>
-									ICO Rating Review:
+								{{ trans('msg.section1_ratings')}}
 								</b>	
 							</div>
 							<div class="col-12 pt-3">
@@ -145,18 +145,17 @@
 					</div>
 					<div class="card-contents">
 						<h5>
-							<b>LightFinder</b>
+							<b>{{ trans('msg.section2_lightfinder')}}</b>
 						</h5>
-						<p>B2B & B2C</p>
-						<p> LightFinder users are businesses such as lighting companies, consultants or homeowners who prefer to source LED lights personally and directly from
-						manufacturers... <a href="#all-packages" class="lightfinder-btn">more</a>
+						<p>{{ trans('msg.section2_lightfinder_desc')}}</p>
+						<p> {{ trans('msg.section2_lightfinder_desc1')}} <a href="#all-packages" class="lightfinder-btn">more</a>
 					
 						</p>
 						<a data-fancybox href="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
-							<i class="fas fa-play"></i>&nbsp;<b>Play Video</b>	
+							<i class="fas fa-play"></i>&nbsp;<b>{{ trans('msg.section2_video')}}</b>	
 						</a>
 						<a href="#all-packages" class="btn btn-BAL lightfinder-btn" style="font-size: 13px;">
-							<b>Cut LED cost, not quality</b>	
+							<b>{{ trans('msg.section2_lightfinder_btn')}}</b>	
 						</a>
 							
 						</div>
@@ -169,15 +168,15 @@
 						</div>
 						<div class="card-contents">
 							<h5>
-								<b>My Home</b>
+								<b>{{ trans('msg.section2_myhome')}}</b>
 							</h5>
-							<p>Private homes, villas, and palaces</p>
-							<p>Generic lights don’t belong in stylish, 21st century homes… Custom LED saves energy and costs, helps protect our planet and gives far greater aesthetic and design opportunities... <a href="#all-packages" class="home-btn">more</a></p>
+							<p>{{ trans('msg.section2_myhome_desc')}}</p>
+							<p>{{ trans('msg.section2_myhome_desc1')}}<a href="#all-packages" class="home-btn">more</a></p>
 							<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
-								<i class="fas fa-play"></i>&nbsp;<b>Play Video</b>	
+								<i class="fas fa-play"></i>&nbsp;<b>{{ trans('msg.section2_video')}}</b>	
 							</a>
 							<a href="#all-packages" class="btn btn-BAL home-btn" style="font-size: 13px;">
-								<b>Find dream home LED at dreamy prices</b>
+								<b>{{ trans('msg.section2_myhome_btn')}}</b>
 							</a>
 						</div>
 					</div>
@@ -189,15 +188,15 @@
 					</div>
 					<div class="card-contents">
 						<h5>
-							<b>My Tower</b>
+							<b>{{ trans('msg.section2_mytower')}}</b>
 						</h5>
-						<p>Consultants, contractors, clients</p>
-						<p>My Tower users leverage our expertise to get the best products in the market, save a fortune, and improve their project delivery. When starting a project, you subscribe to our package... <a href="#all-packages" class="tower-btn">more</a></p>
+						<p>{{ trans('msg.section2_mytower_desc')}}</p>
+						<p>{{ trans('msg.section2_mytower_desc1')}}<a href="#all-packages" class="tower-btn">more</a></p>
 						<a data-fancybox href="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
-							<i class="fas fa-play"></i>&nbsp;<b>Play Video</b>	
-						</a>
+							<i class="fas fa-play"></i>&nbsp;<b>{{ trans('msg.section2_video')}}</b>	
+						</a><br>
 						<a href="#all-packages" class="btn btn-BAL tower-btn" style="font-size: 13px;">
-							<b>Get the best quality and prices ever</b>
+							<b>{{ trans('msg.section2_mytower_btn')}}</b>
 						</a>
 					</div>
 				</div>
@@ -208,12 +207,12 @@
 <section class="section3" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 	<div class="container text-white text-center d-flex justify-content-end align-items-center flex-column h-100">
 		<h4>
-			<b>Start your free trial now!</b> 
+			<b>{{ trans('msg.section3_heading') }}</b> 
 		</h4>
 		<p>
-			Get your favorite lighting products with a single click registration process. <br>Submit your requirements and our experts will do the rest.
+			{!! trans('msg.section3_desc') !!}
 		</p>
-		<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-outline-light btn-lg">Start your free trial</a>
+		<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-outline-light btn-lg">{!! trans('msg.section3_btn') !!}</a>
 		
 	</div>
 </section>
@@ -222,23 +221,23 @@
 		<div class="row">
 			<div class="col-6 d-flex justify-content-center flex-column">
 				<h4>
-					<b>About BuyAnyLight</b>
+					<b>{{ trans('msg.section4_heading') }}</b>
 				</h4>
 				<p>
-					BuyAnyLight (BAL) has transformed the way we source LED lighting. The BAL platform gives users:
+					{{ trans('msg.section4_desc') }}
 				</p>
 				<ul>
-					<li>higher profit margins</li>
-					<li>the best possible prices for any light unit</li>
-					<li>greater efficiency of lighting procurement</li>
-					<li>superb online automation and functionality</li>
-					<li>access to top global brand manufacturers.</li>
+					<li>{{ trans('msg.section4_point1') }}</li>
+					<li>{{ trans('msg.section4_point2') }}</li>
+					<li>{{ trans('msg.section4_point3') }}</li>
+					<li>{{ trans('msg.section4_point4') }}</li>
+					<li>{{ trans('msg.section4_point5') }}</li>
 				</ul>
 				<p>
-					Whether you have lots of experience with LED lights or none at all, we have a package to help you achieve all your objectives.
+					{{ trans('msg.section4_desc2') }}
 				</p>
 				<a data-fancybox href="https://www.youtube.com/embed/aaJQLTaSgLk?rel=0&enablejsapi=1" class="btn btn-video text-left pl-0" style="font-size: 13px;">
-					<i class="fas fa-play"></i>&nbsp;<b>Introduction to BuyAnyLight</b>	
+					<i class="fas fa-play"></i>&nbsp;<b>{{ trans('msg.section4_video') }}</b>	
 				</a>
 				
 			</div>
@@ -256,12 +255,12 @@
 					<img src="{{ Util::assetUrl('images/about(1).png') }}" alt="" width="50%">
 				</div>
 				<div class="pt-3 text-center">
-					<b>A private homeowner?</b> <br>
+					<b>{{ trans('msg.section5_heading1') }}</b> <br>
 					<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
-						<i class="fas fa-play"></i>&nbsp;<b>My Home</b>	
+						<i class="fas fa-play"></i>&nbsp;<b>{{ trans('msg.section5_video1') }}</b>	
 					</a>
 					<p class="pt-2 text-justify">
-						A typical homeowner does not have the technical expertise to understand lux calculations, wattages, IP or IK ratings, lumen per watt, and the same applies to lighting setup and design aesthetics. Use BuyAnyLight to make your home a greener, more stylish and energy-efficient zone by switching to LED Lights. The difference in prices are huge and so will be your energy bill savings.
+						{{ trans('msg.section5_desc1') }}
 					</p>
 				</div>
 			</div>
@@ -270,12 +269,12 @@
 					<img src="{{ Util::assetUrl('images/about(2).png') }}" alt="" width="50%">
 				</div>
 				<div class="pt-3 text-center">
-					<b>A consultant, contractor or project owner?</b>
+					<b>{{ trans('msg.section5_heading2') }}</b>
 					<a data-fancybox href="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
-						<i class="fas fa-play"></i>&nbsp;<b>My Tower</b>	
+						<i class="fas fa-play"></i>&nbsp;<b>{{ trans('msg.section5_video2') }}</b>	
 					</a>
 					<p class="pt-2 text-justify">
-						We've got you covered! We save you time, money and add even more value with the finest technical expertise to specify the ideal LED lights for your project. Your own BAL expert will help you through your project, every step of the way ensuring that you get the best prices, designs and products anywhere in the world. BAL allows contractors and consultants to provide outstanding services for their clients, achieve project objectives and maximise profits. With BAL, it's always a win-win situation!
+						{{ trans('msg.section5_desc2') }}	
 					</p>
 				</div>
 			</div>
@@ -284,12 +283,12 @@
 					<img src="{{ Util::assetUrl('images/about(3).png') }}" alt="" width="76%">
 				</div>
 				<div class="pt-3 text-center">
-					<b>Researching LED prices and products?</b>
+					<b>{{ trans('msg.section5_heading3') }}</b>
 					<a data-fancybox href="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
-						<i class="fas fa-play"></i>&nbsp;<b>LightFinder</b>	
+						<i class="fas fa-play"></i>&nbsp;<b>{{ trans('msg.section5_video3') }}</b>	
 					</a>
 					<p class="pt-2 text-justify">
-						Whether you just want to get an idea of the market or aim to outsource your lighting needs for any of your project, we have got you covered. Our LightFinder platform makes this as easy as submitting an online form. Simply sign up and submit your RFQ (request for quotation). That’s it! Our AI based system will find the right lighting products specially catered for your lighting needs while ensuring the best value in product quality, costs, and service.
+						{{ trans('msg.section5_desc3') }}
 					</p>
 				</div>
 			</div>
@@ -304,13 +303,13 @@
 			</div>
 			<div class="col-6 d-flex justify-content-center flex-column">
 				<h4>
-					<b>WE ALWAYS FIND THE BEST <br> LIGHT AT THE BEST PRICE</b>
+					<b>{!! trans('msg.section6_heading') !!}</b>
 				</h4>
 				<p>
-					BuyAnyLight (BAL) has the world’s largest network of lighting manufacturers, and we are continually adding more, allowing BAL to provide the best platform for finding any type of LED light. Our AI powered systems and high speed servers match buyer enquiries with the most suitable suppliers within seconds and send out Requests For Quotes (RFQs) instantly. Simply use the powerful BAL tools to select the most competitive: it’s fast – and beautifully simple!
+					{{ trans('msg.section6_para1') }}
 				</p>
 				<p>
-					BAL secures 100% of your funds until you receive your goods. The system also manages the logistics, so you receive your order on time, safely and securely.
+					{{ trans('msg.section6_para2') }}
 				</p>
 				<a data-fancybox href="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" class="btn btn-video text-left pl-0" style="font-size: 13px;">
 					<i class="fas fa-play"></i>&nbsp;<b>LightFinder</b>	
@@ -324,16 +323,16 @@
 		<div class="row text-white">
 			<div class="col-6">
 				<h4>
-					<b>SAVE UP TO 90%...<br> HOW DOES THAT WORK?</b>
+					<b>{!! trans('msg.section7_heading') !!}</b>
 				</h4>
 				<p>
-					Outsourcing of LED lights has increased hugely in recent years. The digital age, globalisation, increased transparency and continued cost pressures all make outsourcing a viable and attractive option for major brands worldwide.
+					{{ trans('msg.section7_para1') }}
 				</p>
 				<p>
-					The best outsourcing manufacturers adhere strictly to the brand specifications while also leveraging the low production costs. We are contracted to these factories which supply us with products similar to global brands such as Phillips, Osram etc. at unbelievable prices and of course, fully within the law.
+					{{ trans('msg.section7_para2') }}	
 				</p>
 				<p>
-					Due to the massive overheads such as staff, warehouse, multi-level supply chain these global brands prices are far higher. BAL creates powerful applications that process large amounts of data and build relationships with manufacturers to provide the finest products, the best prices, and top-notch services anywhere in the world. Combining our low fees and super-low product prices means that every BAL user makes massive savings compared with any other supplier in the market.
+				{{ trans('msg.section7_para3') }}
 				</p>
 			</div>
 			<div class="col-6">
@@ -346,31 +345,31 @@
 	<div class="container h-100 d-flex justify-content-center align-items-center flex-column">
 		<div class="pt-1 text-center">
 			<h3>
-				<b>Want to know more?</b>
+				<b>{{ trans('msg.download_section_heading') }}</b>
 			</h3>
 			<p class="pt-3">
-				Download to know more about us, <br>our project, and how can you participate in our token sale.
+				{!! trans('msg.download_section_desc') !!}
 			</p>
 			<div class="buttons pt-3 ">
 				<div class="row w-100">
 					<div class="col">
 						<div class="d-flex justify-content-center align-items-center">
 							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL">
-							<b>One Pager</b>	
+							<b>{{ trans('msg.One_pager') }}</b>	
 							</a>
 						</div>
 					</div>
 					<div class="col">
 						<div>
 							<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-BAL">
-							<b>Whitepaper</b>	
+							<b>{{ trans('msg.Whitepaper') }}</b>	
 							</a>
 						</div>
 					</div>
 					<div class="col">
 						<div>
 							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL" target="_blank">
-							<b>Yellowpaper</b>	
+							<b>{{ trans('msg.Yellowpaper') }}</b>	
 							</a>				
 						</div>
 					</div>
@@ -378,12 +377,12 @@
 				<div class="pt-3">
 					<div class="row w-100">
 						<div class="col">
-							<a href="#contact" class="btn btn-BAL">Schedule a meeting</a>
+							<a href="#contact" class="btn btn-BAL">{{ trans('msg.meeting') }}</a>
 						</div>
 						<div class="col">
 							<a href="#section-bal-token" class="btn btn-BAL">
 								<b>
-									BUY BAL TOKENS NOW!
+									{{ trans('msg.BAL_token') }}
 								</b>
 							</a>
 						</div>
@@ -396,21 +395,21 @@
 <section class="section8" id="why-bal">
 	<div class="container" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 		<h3 class="text-center">
-			<b>WHY CHOOSE US?</b>
+			<b>{{ trans('msg.section8_heading') }}</b>
 		</h3>
 		<p class="text-center">
-			BuyAnyLight (BAL) delivers exceptional advantages to both sellers and buyers, ensuring that every BAL platform user gets win-win results, every time!
+			{{ trans('msg.section8_desc') }}	
 		</p>
 		<p class="text-center">
-			Take a look at just some of the big BAL benefits:
+			{{ trans('msg.section8_desc2') }}
 		</p>
 		<div class="pt-3">
 			<ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
 				<li class="nav-item " style="">
-					<a class="nav-link buyer active " id="pills-buyer-tab" data-toggle="pill" href="#pills-buyer" role="tab" aria-controls="pills-buyer" aria-selected="true">Buyers</a>
+					<a class="nav-link buyer active " id="pills-buyer-tab" data-toggle="pill" href="#pills-buyer" role="tab" aria-controls="pills-buyer" aria-selected="true">{{ trans('msg.section_buyer') }}</a>
 				</li>
 				<li class="nav-item" style="">
-					<a class="nav-link seller " id="pills-seller-tab" data-toggle="pill" href="#pills-seller" role="tab" aria-controls="pills-seller" aria-selected="false">Sellers</a>
+					<a class="nav-link seller " id="pills-seller-tab" data-toggle="pill" href="#pills-seller" role="tab" aria-controls="pills-seller" aria-selected="false">{{ trans('msg.section_seller') }}</a>
 				</li>
 			</ul>
 			<div class="tab-content" id="pills-tabContent">
@@ -424,9 +423,9 @@
 											<img src="{{ Util::assetUrl('images/whychoose(1).png') }}" alt="" width="100%">
 										</div>
 										<div class="col-9 d-flex justify-content-center flex-column">
-											<b>Convenient</b>
+											<b>{{ trans('msg.section_buyer1_header') }}</b>
 											<p>
-												BAL is a one-stop shop that reduces the time spent on sourcing LED lights by over 90%.
+												{{ trans('msg.section_buyer1_desc') }}
 											</p>
 										</div>
 									</div>
@@ -439,9 +438,9 @@
 											<img src="{{ Util::assetUrl('images/whychoose(2).png') }}" alt="" width="100%">
 										</div>
 										<div class="col-9 d-flex justify-content-center flex-column">
-											<b>Lowest Prices</b>
+											<b>{{ trans('msg.section_buyer2_header') }}</b>
 											<p>
-												Get the best quotes directly from BAL and manufacturers, without involving any costly middle-men.
+												{{ trans('msg.section_buyer2_desc') }}
 											</p>
 										</div>
 									</div>
@@ -454,9 +453,9 @@
 											<img src="{{ Util::assetUrl('images/whychoose(3).png') }}" alt="" width="100%">
 										</div>
 										<div class="col-9 d-flex justify-content-center flex-column">
-											<b>Greater variety</b>
+											<b>{{ trans('msg.section_buyer3_header') }}</b>
 											<p>
-												Find any type of LED light you need on BAL. Review different designs and technical specifications from world-class manufacturers.
+												{{ trans('msg.section_buyer3_desc') }}
 											</p>
 										</div>
 									</div>
@@ -470,9 +469,9 @@
 										<img src="{{ Util::assetUrl('images/whychoose(4).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9 d-flex justify-content-center flex-column">
-										<b>Easy price comparison</b>
+										<b>{{ trans('msg.section_buyer4_header') }}</b>
 										<p>
-											Use the advanced filter feature to select quotes and pick the best ones to review and compare.
+											{{ trans('msg.section_buyer4_desc') }}
 										</p>
 									</div>
 								</div>
@@ -483,9 +482,9 @@
 										<img src="{{ Util::assetUrl('images/whychoose(5).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9 d-flex justify-content-center flex-column">
-										<b>Trustless Payments</b>
+										<b>{{ trans('msg.section_buyer5_header') }}</b>
 										<p>
-											All your payments are 100% secured as they are managed and processed by trustless smart contracts. 
+											{{ trans('msg.section_buyer5_desc') }}
 										</p>
 									</div>
 								</div>
@@ -496,9 +495,9 @@
 										<img src="{{ Util::assetUrl('images/whychoose(6).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9 d-flex justify-content-center flex-column">
-										<b>Risk-free</b>
+										<b>{{ trans('msg.section_buyer6_header') }}</b>
 										<p>
-											No long-term financial commitment - and no upfront payment when using My Home and My Tower packages.
+											{{ trans('msg.section_buyer6_desc') }}
 										</p>
 									</div>
 								</div>
@@ -511,9 +510,9 @@
 										<img src="{{ Util::assetUrl('images/whychoose(7).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9 d-flex justify-content-center flex-column">
-										<b>Request samples</b>
+										<b>{{ trans('msg.section_buyer7_header') }}</b>
 										<p>
-											Want to try before you buy? You can order a few samples first before buying in bulk.
+											{{ trans('msg.section_buyer7_desc') }}
 										</p>
 									</div>
 								</div>
@@ -524,9 +523,9 @@
 										<img src="{{ Util::assetUrl('images/whychoose(8).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9 d-flex justify-content-center flex-column">
-										<b>Traceable Logistics</b>
+										<b>{{ trans('msg.section_buyer8_header') }}</b>
 										<p>
-											With BAL, you get end to end traceability of your shipments. We promise on-time delivery and a live shipment tracker.
+											{{ trans('msg.section_buyer8_desc') }}
 										</p>
 									</div>
 								</div>
@@ -537,9 +536,9 @@
 										<img src="{{ Util::assetUrl('images/whychoose(9).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9 d-flex justify-content-center flex-column">
-										<b>First-class consultancy</b>
+										<b>{{ trans('msg.section_buyer9_header') }}</b>
 										<p>
-											Private homeowners, consultants and contractors can take advantage of our consultancy services. Our LED lighting experts are here to ensure the success of every project, whatever its size.
+											{{ trans('msg.section_buyer9_desc') }}
 										</p>
 									</div>
 								</div>
@@ -556,9 +555,9 @@
 										<img src="{{ Util::assetUrl('images/whychoose(1).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9">
-										<b>Easy set-up</b>
+										<b>{{ trans('msg.section_seller1_header') }}</b>
 										<p>
-											No need for tedious product listing processes: just complete your seller profile and verification.
+											{{ trans('msg.section_seller1_desc') }}
 										</p>
 									</div>
 								</div>
@@ -569,9 +568,9 @@
 										<img src="{{ Util::assetUrl('images/whychoose(2).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9">
-										<b>Free registration</b>
+										<b>{{ trans('msg.section_seller2_header') }}</b>
 										<p>
-											BAL is completely free for sellers. Simply register and start receiving Requests For Quotes (RFQs) from buyers worldwide!
+											{{ trans('msg.section_seller2_desc') }}
 										</p>
 									</div>
 								</div>
@@ -582,9 +581,9 @@
 										<img src="{{ Util::assetUrl('images/whychoose(3).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9">
-										<b>Cost-saving</b>
+										<b>{{ trans('msg.section_seller3_header') }}</b>
 										<p>
-											Find any type of LED light you need on BAL. Review different designs and technical specifications from world-class brands.
+											{{ trans('msg.section_seller3_desc') }}
 										</p>
 									</div>
 								</div>
@@ -597,9 +596,9 @@
 										<img src="{{ Util::assetUrl('images/whychoose(4).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9">
-										<b>Flexible pricing</b>
+										<b>{{ trans('msg.section_seller4_header') }}</b>
 										<p>
-											Use the advanced filter feature to select quotes and pick the best ones to review and compare.
+											{{ trans('msg.section_seller4_desc') }}	
 										</p>
 									</div>
 								</div>
@@ -610,9 +609,9 @@
 										<img src="{{ Util::assetUrl('images/whychoose(5).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9">
-										<b>Secure platform</b>
+										<b>{{ trans('msg.section_seller5_header') }}</b>
 										<p>
-											BAL guarantees the payments for every supply project and acts as trustee. Fulfil all your orders with absolute confidence!
+											{{ trans('msg.section_seller5_desc') }}
 										</p>
 									</div>
 								</div>
@@ -623,9 +622,9 @@
 										<img src="{{ Util::assetUrl('images/whychoose(6).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9">
-										<b>Completely free</b>
+										<b>{{ trans('msg.section_seller6_header') }}</b>
 										<p>
-											Suppliers can use the service of BAL to provide quotes at no cost at all. However, every supplier must pass our screening process to use the BAL platform and start selling.
+											{{ trans('msg.section_seller6_desc') }}
 										</p>
 									</div>
 								</div>
@@ -638,9 +637,9 @@
 										<img src="{{ Util::assetUrl('images/whychoose(7).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9">
-										<b>Provide samples</b>
+										<b>{{ trans('msg.section_seller7_header') }}</b>
 										<p>
-											Buyers can order samples before a bulk order. This feature prevents disputes as the buyer knows what to expect.
+											{{ trans('msg.section_seller7_desc') }}
 										</p>
 									</div>
 								</div>
@@ -651,9 +650,9 @@
 										<img src="{{ Util::assetUrl('images/whychoose(8).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9">
-										<b>Hassle-free supply</b>
+										<b>{{ trans('msg.section_seller8_header') }}</b>
 										<p>
-											We save you all the hassle and headaches of managing logistics: we fulfil the order and make sure it’s sent to the buyer promptly and safely.
+											{{ trans('msg.section_seller8_desc') }}
 										</p>
 									</div>
 								</div>
@@ -664,9 +663,9 @@
 										<img src="{{ Util::assetUrl('images/whychoose(9).png') }}" alt="" width="100%">
 									</div>
 									<div class="col-9">
-										<b>Easy to use</b>
+										<b>{{ trans('msg.section_seller9_header') }}</b>
 										<p>
-											Forget about tiring learning curves! The BAL platform is intuitive and easy to use.
+											{{ trans('msg.section_seller9_desc') }}
 										</p>
 									</div>
 								</div>
@@ -682,23 +681,26 @@
 	<div class="container" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 		<h3 class="text-center">
 			<b>
-				OUR PACKAGES
+				{{ trans('msg.section9_heading') }}
 			</b>
 		</h3>
-		<p class="pt-3 text-center">We welcome everyone to use our platform. Take a look at the groups below and see which one is right for you. <br> If you have any queries, don’t hesitate to <a href="{{ route('contact') }}" class="">get in touch.</a></p>
+		<p class="pt-3 text-center">{{ trans('msg.section9_heading_desc') }} <br> {!! trans('msg.section9_heading_desc2') !!}</p>
 	</div>
 	<div class="container pt-3 pb-5" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 		<div class="card mb-3">
 			<div class="card-body">
 				<h4 class="card-title text-center">
-					<b>Free Trial</b>
+					<b>
+						{{ trans('msg.section9_trial_heading') }}
+					</b>
 				</h4>
 				<p class="text-center">
-					Register now and experience yourself the variety of tools and packages offered by BAL.
+					{{ trans('msg.section9_trial_desc') }}
 				</p>
 				<div class="text-center">
 					<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-BAL">
-						Register Now
+						{{ trans('msg.section9_trial_btn') }}
+
 					</a>
 				</div>
 			</div>
@@ -708,7 +710,8 @@
 			<div class="card mr-2 lightfinder-div">
 				<div class="card-body">
 					<h4 class="card-title pt-1 pb-3">
-						<b>LightFinder</b>
+						<b>	{{ trans('msg.section9_lightfinder_heading') }}
+</b>
 					</h4>
 					<a data-fancybox href="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" class=" text-white package-link">
 					<div class="package-one">
@@ -716,7 +719,7 @@
 							<div>
 								<i class="fab fa-youtube"></i> 
 								<span>
-									Play video
+									{{ trans('msg.section_play_video') }}
 								</span>
 							</div>
 						</div>
@@ -726,7 +729,8 @@
 						<div class="col-md-12">
 							<!-- <hr class="border-black"> -->
 							<button class="btn w-100 text-left pl-0 introduction" type="button" data-toggle="collapse" data-target="#introduction" aria-expanded="false" aria-controls="introduction">
-								<b>Introduction</b>
+								<b>{{ trans('msg.section9_introduction') }}
+</b>
 								<div class="introduction-down float-right">
 									<i class="fas fa-angle-down"></i>
 								</div>
@@ -736,11 +740,11 @@
 							</button>
 							<div class="collapse" id="introduction">
 								<div class="card card-body ml-0 pl-0 border-0">
-									LightFinder users are businesses such as lighting companies, consultants or homeowners who prefer to source LED lights personally and directly from manufacturers. As a LightFinder user you can access the innovative BAL platform, upload your requirements and get the best quotes direct from BAL’s various world-class manufacturer partners. All suppliers on the BAL platform are first-class manufacturers, vetted directly by our team of experts.
+									{{ trans('msg.section9_introduction_desc1') }}
 								</div>
 							</div>
 							<button class="btn w-100 text-left pl-0 finder2" type="button" data-toggle="collapse" data-target="#finder2" aria-expanded="false" aria-controls="finder2">
-								<b>Finest quality, lowest prices, no stress!</b>
+								<b>{{ trans('msg.section9_finest') }}</b>
 								<div class="finder2-down float-right">
 									<i class="fas fa-angle-down"></i>
 								</div>
@@ -750,12 +754,11 @@
 							</button>
 							<div class="collapse" id="finder2">
 								<div class="card card-body ml-0 pl-0 border-0">
-									When you upload your requirements as a LightFinder user, BAL’s intelligent systems match you with manufacturers whose products match your request. BAL then sends out an instant Request for Quotation (RFQ). All you need to do is sit back and wait for your quotations to arrive. 
-									BAL saves you all the time and stress of manually sifting through lots of supplier quotes. Use the intelligent filter on BAL to sort the quotes automatically until you arrive at a handful you’d like to vet manually. After selecting your preferred supplier, you can confirm the order immediately or request a sample.
+									{{ trans('msg.section9_finest_desc') }}
 								</div>
 							</div>
 							<button class="btn w-100 text-left pl-0 finder3" type="button" data-toggle="collapse" data-target="#finder3" aria-expanded="false" aria-controls="finder3">
-								<b>LightFinder level that works for you!</b>
+								<b>{{ trans('msg.section9_level') }}</b>
 								<div class="finder3-down float-right">
 									<i class="fas fa-angle-down"></i>
 								</div>
@@ -765,11 +768,11 @@
 							</button>
 							<div class="collapse" id="finder3">
 								<div class="card card-body ml-0 pl-0 border-0">
-									As a LightFinder user you have the choice of Mini, Standard, and Premium subscriptions, depending on the volumes you need. Like all BAL users, you can leverage the platform’s power to find the finest global suppliers and the best value for a fraction of the usual cost - all from the comfort of your own home or office.
+									{{ trans('msg.section9_level_desc') }}
 								</div>
 							</div>
 							<button class="btn w-100 text-left pl-0 pricing" type="button" data-toggle="collapse" data-target="#pricing" aria-expanded="false" aria-controls="pricing">
-								<b>Pricing</b>
+								<b>{{ trans('msg.section9_pricing') }}</b>
 								<div class="pricing-down float-right">
 									<i class="fas fa-angle-down"></i>
 								</div>
@@ -783,13 +786,13 @@
 										<div class="card-header pricing-header">
 											<ul class="nav nav-pills card-header-pills nav-justified">
 												<li class="nav-item  border border-white rounded-0">
-													<a class="nav-link active rounded-0" id="mini-tab" data-toggle="tab" href="#mini" role="tab" aria-controls="mini" aria-selected="true" style=" {{ ($agent->is('IE')) ? 'height: 100%; font-size: 12px' : '' }}">Mini</a>
+													<a class="nav-link active rounded-0" id="mini-tab" data-toggle="tab" href="#mini" role="tab" aria-controls="mini" aria-selected="true" style=" {{ ($agent->is('IE')) ? 'height: 100%; font-size: 12px' : '' }}">{{ trans('msg.section_lightfinder1') }}</a>
 												</li>
 												<li class="nav-item border border-white rounded-0">
-													<a class="nav-link rounded-0" id="premium-tab" data-toggle="tab" href="#premium" role="tab" aria-controls="premium" aria-selected="true" style=" {{ ($agent->is('IE')) ? 'height: 100%; font-size: 12px' : '' }}">Premium</a>
+													<a class="nav-link rounded-0" id="premium-tab" data-toggle="tab" href="#premium" role="tab" aria-controls="premium" aria-selected="true" style=" {{ ($agent->is('IE')) ? 'height: 100%; font-size: 12px' : '' }}">{{ trans('msg.section_lightfinder2') }}</a>
 												</li>
 												<li class="nav-item border border-white rounded-0">
-													<a class="nav-link rounded-0" id="standard-tab" data-toggle="tab" href="#standard" role="tab" aria-controls="standard" aria-selected="true" style=" {{ ($agent->is('IE')) ? 'height: 100%; font-size: 12px' : '' }}">Standard</a>
+													<a class="nav-link rounded-0" id="standard-tab" data-toggle="tab" href="#standard" role="tab" aria-controls="standard" aria-selected="true" style=" {{ ($agent->is('IE')) ? 'height: 100%; font-size: 12px' : '' }}">{{ trans('msg.section_lightfinder3') }}</a>
 												</li>
 											</ul>
 										</div>
@@ -798,63 +801,73 @@
 												<div class="card-body pt-5 pb-3 text-center text-dark">
 													<p class="card-text">
 														<small>
-															MAKE A GREAT BAL START RIGHT HERE!
+														{{ trans('msg.section_minipackage_desc') }}
 														</small>
 													</p>
 													<div class="pt-2 pb-2 text-left">
 														<ul class="trial-list">
 															<li>
 																<i class="fas fa-check"></i>
-																Inquire & source 3 items
+																{{ trans('msg.section_lighfinder_point1') }}
+
 															</li>
 															<li>
 																<i class="fas fa-check"></i>
-																Minimum order quantity: 20
+																{{ trans('msg.section_lighfinder_point4') }}
+																
 															</li>
 															<li>
 																<i class="fas fa-check"></i>
-																100% payment guarantee
+																{{ trans('msg.section_package_point9') }}
+
 															</li>
 															<li>
 																<i class="fas fa-check"></i>
-																Best price guarantee
+																{{ trans('msg.section_package_point8') }}
+
 															</li>
 															<li>
 																<i class="fas fa-check"></i>
-																Sample request
+																{{ trans('msg.section_package_point3') }}
+
 															</li>
 															<li>
 																<i class="fas fa-check"></i>
-																Additional inquiry for $199
+																{{ trans('msg.section_lighfinder_point6') }}
+
 															</li>
 															<li>
 																<i class="fas fa-times"></i>
-																Label & design support
-																<span class="" data-toggle="tooltip" data-placement="bottom" title="Our ODM services mean we can brand your individual light fittings with your own logo and/or labels." style="font-size: 12px; ">
+																{{ trans('msg.section_lighfinder_point9') }}
+
+																<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_lighfinder_point9_desc') }}" style="font-size: 12px; ">
 																	<i class="fas fa-info-circle"></i>
 																</span>
 															</li>
 															<li>
 																<i class="fas fa-times"></i>
-																Designated lighting designer
-																<span class="" data-toggle="tooltip" data-placement="bottom" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
+																{{ trans('msg.section_package_point11') }}
+
+																<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point11_desc') }}" style="font-size: 12px; ">
 																	<i class="fas fa-info-circle"></i>
 																</span>
 															</li>
 															<li>
 																<i class="fas fa-times"></i>
-																Markup feature
-																<span class="" data-toggle="tooltip" data-placement="bottom" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
+																{{ trans('msg.section_package_point6') }}
+																<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point6_desc') }}" style="font-size: 12px; ">
 																	<i class="fas fa-info-circle"></i>
 																</span>
 															</li>
 														</ul>
 													</div>
-													<p class="text-center">* 20% BAL fee on order confirmation</p>
+													<p class="text-center">
+														{{ trans('msg.section_lighfinder1_confirm') }}
+													</p>
 													<hr>
 													<div class="text-center pt-2">
-														<h5>$499/Monthly</h5>
-														<small>$5499/Yearly</small>   
+														<h5>{{ trans('msg.section_lighfinder1_monthly') }}</h5>
+														<small>{{ trans('msg.section_lighfinder1_yearly') }}</small>   
 													</div>
 												</div>
 											</div>
@@ -863,63 +876,64 @@
 													<div class="card-premium-contents">
 														<p class="card-text">
 															<small>
-																AN ABUNDANCE OF GREAT BAL BENEFITS - THE PERFECT PACKAGE FOR YOUR BUSINESS
+																{{ trans('msg.section_premiumpackage_desc') }}
 															</small>
 														</p>
 														<div class="pt-2 pb-2 text-left">
 															<ul class="trial-list">
 																<li>
 																	<i class="fas fa-check"></i>
-																	Inquire & source 10 items
+																	{{ trans('msg.section_lighfinder_point2') }}
 																</li>
 																<li>
 																	<i class="fas fa-check"></i>
-																	Minimum order quantity: 10
+																	{{ trans('msg.section_lighfinder_point5') }}
 																</li>
 																<li>
 																	<i class="fas fa-check"></i>
-																	100% payment guarantee
+																	{{ trans('msg.section_package_point9') }}
 																</li>
 																<li>
 																	<i class="fas fa-check"></i>
-																	Best price guarantee
+																	{{ trans('msg.section_package_point8') }}
 																</li>
 																<li>
 																	<i class="fas fa-check"></i>
-																	Sample request
+																	{{ trans('msg.section_package_point3') }}
 																</li>
 																<li>
 																	<i class="fas fa-check"></i>
-																	Additional inquiry for $99
+																	{{ trans('msg.section_lighfinder_point7') }}
 																</li>
 																<li>
 																	<i class="fas fa-check"></i>
-																	Label & design support
-																	<span class="" data-toggle="tooltip" data-placement="bottom" title="Our ODM services mean we can brand your individual light fittings with your own logo and/or labels." style="font-size: 12px; ">
+																	{{ trans('msg.section_lighfinder_point9') }}
+																	<span class="" data-toggle="tooltip" data-placement="bottom" title="
+																	{{ trans('msg.section_lighfinder_point9_desc') }}" style="font-size: 12px; ">
 																		<i class="fas fa-info-circle"></i>
 																	</span>
 																</li>
 																<li>
 																	<i class="fas fa-check"></i>
-																	Designated lighting designer
-																	<span class="" data-toggle="tooltip" data-placement="bottom" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
+																	{{ trans('msg.section_package_point11') }}
+																	<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point11_desc') }}" style="font-size: 12px; ">
 																			<i class="fas fa-info-circle"></i>
 																	</span>
 																</li>
 																<li>
 																	<i class="fas fa-check"></i>
-																	Markup feature
-																	<span class="" data-toggle="tooltip" data-placement="bottom" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
+																	{{ trans('msg.section_package_point6') }}
+																	<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point6_desc') }}" style="font-size: 12px; ">
 																		<i class="fas fa-info-circle"></i>
 																	</span>
 																</li>
 															</ul>
 														</div>
-														<p class="text-center">* 10% BAL fee on order confirmation</p>
+														<p class="text-center">{{ trans('msg.section_lighfinder2_confirm') }}</p>
 														<hr>
 														<div class="text-center pb-2">
-															<h5>$899/Monthly</h5>
-															<small>$9899/Yearly</small>   
+															<h5>{{ trans('msg.section_lighfinder2_monthly') }}</h5>
+															<small>{{ trans('msg.section_lighfinder2_yearly') }}</small>   
 														</div>
 													</div>
 												</div>
@@ -929,63 +943,63 @@
 													<div class="card-standard-contents">
 														<p class="card-text">
 															<small>
-																NEED MORE THAN JUST A FEW LIGHTS? THIS IS THE PACKAGE FOR YOU!
+															{{ trans('msg.section_standardpackage_desc') }}
 															</small>
 														</p>
 														<div class="pt-2 pb-2 text-left">
 															<ul class="trial-list">
 																<li>
 																	<i class="fas fa-check"></i>
-																	Inquire & source 6 items
+																	{{ trans('msg.section_lighfinder_point3') }}
 																</li>
 																<li>
 																	<i class="fas fa-check"></i>
-																	Minimum order quantity: 10
+																	{{ trans('msg.section_lighfinder_point5') }}
 																</li>
 																<li>
 																	<i class="fas fa-check"></i>
-																	100% payment guarantee
+																	{{ trans('msg.section_package_point9') }}
 																</li>
 																<li>
 																	<i class="fas fa-check"></i>
-																	Best price guarantee
+																	{{ trans('msg.section_package_point8') }}
 																</li>
 																<li>
 																	<i class="fas fa-check"></i>
-																	Sample request
+																	{{ trans('msg.section_package_point3') }}
 																</li>
 																<li>
 																	<i class="fas fa-check"></i>
-																	Additional inquiry for $149
+																	{{ trans('msg.section_lighfinder_point8') }}
 																</li>
 																<li>
 																	<i class="fas fa-times"></i>
-																	Label & design support
-																	<span class="" data-toggle="tooltip" data-placement="bottom" title="Our ODM services mean we can brand your individual light fittings with your own logo and/or labels." style="font-size: 12px; ">
+																	{{ trans('msg.section_lighfinder_point9') }}
+																	<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_lighfinder_point9_desc') }}" style="font-size: 12px; ">
 																		<i class="fas fa-info-circle"></i>
 																	</span>
 																</li>
 																<li>
 																	<i class="fas fa-times"></i>
-																	Designated lighting designer
-																	<span class=" " data-toggle="tooltip" data-placement="bottom" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
+																	{{ trans('msg.section_package_point11') }}
+																	<span class=" " data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point11_desc') }}" style="font-size: 12px; ">
 																		<i class="fas fa-info-circle"></i>
 																	</span>
 																</li>
 																<li>
 																	<i class="fas fa-times"></i>
-																	Markup feature
-																	<span class="" data-toggle="tooltip" data-placement="bottom" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
+																	{{ trans('msg.section_package_point6') }}
+																	<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point6_desc') }}" style="font-size: 12px; ">
 																		<i class="fas fa-info-circle"></i>
 																	</span>
 																</li>
 															</ul>
 														</div>
-														<p class="text-center">* 15% BAL fee on order confirmation</p>
+														<p class="text-center">{{ trans('msg.section_lighfinder3_confirm') }}</p>
 														<hr>
 														<div class="text-center pb-2">
-															<h5>$699/Monthly</h5>
-															<small>$7699/Yearly</small>   
+															<h5>{{ trans('msg.section_lighfinder3_monthly') }}</h5>
+															<small>{{ trans('msg.section_lighfinder3_yearly') }}</small>   
 														</div>
 													</div>
 												</div>
@@ -998,12 +1012,12 @@
 								<div class="row">
 									<div class="col-6">
 										<a href="https://lightfinder.buyanylight.com/buyer/register" class=" w-100 btn btn-BAL">
-											Register Now
+											{{ trans('msg.section9_btn1') }}
 										</a>
 									</div>
 									<div class="col-6">
 										<a href="{{ Util::assetUrl('brochures/LightFinder_BAL.pdf') }}" class=" w-100 btn btn-BAL" target="_blank">
-											Brochure
+											{{ trans('msg.section9_btn2') }}
 										</a>
 									</div>
 								</div>
@@ -1015,7 +1029,7 @@
 			<div class="card mr-2 ml-2 home-div">
 				<div class="card-body">
 					<h4 class="card-title pt-1 pb-3">
-						<b>My Home</b>
+						<b>{{ trans('msg.section9_myhome_heading') }}</b>
 					</h4>
 					<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="text-white package-link">
 					<div class="package-two">
@@ -1023,7 +1037,7 @@
 							<div>
 								<i class="fab fa-youtube"></i> 
 								<span>
-									Play video
+									{{ trans('msg.section_play_video') }}
 								</span>
 							</div>
 						</div>
@@ -1033,7 +1047,7 @@
 						<div class="col-md-12 pt-3">
 							<!-- <hr class="border-black"> -->
 							<button class="btn w-100 text-left pl-0 introduction" type="button" data-toggle="collapse" data-target="#introduction" aria-expanded="false" aria-controls="introduction">
-								<b>Introduction</b>
+								<b>{{ trans('msg.section9_introduction') }}</b>
 								<div class="introduction-down float-right">
 									<i class="fas fa-angle-down"></i>
 								</div>
@@ -1043,11 +1057,11 @@
 							</button>
 							<div class="collapse" id="introduction">
 								<div class="card card-body ml-0 pl-0 border-0">
-									Generic lights don’t belong in stylish, 21st century homes… Custom LED saves energy and costs, helps protect our planet and gives far greater aesthetic and design opportunities. However, choosing and buying LED locally is often complex, stressful and disappointing. BAL is here to help you source LED lights with professional precision and world-class products and service. Very few private property owners are experts in LED, lumens, CCT or CRI, so we provide all the help you want and need.
+								{{ trans('msg.section9_introduction_desc2') }}
 								</div>
 							</div>
 							<button class="btn w-100 text-left pl-0 home2" type="button" data-toggle="collapse" data-target="#home2" aria-expanded="false" aria-controls="home2">
-								<b>Perfect for homeowners</b>
+								<b>{{ trans('msg.section9_perfect') }}</b>
 								<div class="home2-down float-right">
 									<i class="fas fa-angle-down"></i>
 								</div>
@@ -1057,14 +1071,11 @@
 							</button>
 							<div class="collapse" id="home2">
 								<div class="card card-body ml-0 pl-0 border-0">
-									To start your project on the right track, choose the My Home package, upload your lighting requirements or share with us pictures of the lighting that’s currently in your home. Our team of experts will explore the ideal technology and design options for you and present you with a quote for your LED light project, quickly and efficiently. BAL offers you the lowest prices for excellent quality LED lights - plus you’ll also make huge savings on electricity bills. No more messing with local stores that exploit your inexperience and sell you their old stock at high prices! BAL raises the quality, lowers the costs and gives you a far more pleasing outcome all round.
-									<br>
-									<br>
-									Don’t forget, with LED lights you’ll be playing a role in reducing the carbon footprint, saving energy and making the world a better place.
+								{{ trans('msg.section9_perfect_desc') }}
 								</div>
 							</div>
 							<button class="btn w-100 text-left pl-0 home3" type="button" data-toggle="collapse" data-target="#home3" aria-expanded="false" aria-controls="home3">
-								<b>The next step</b>
+								<b>{{ trans('msg.section9_next') }}</b>
 								<div class="home3-down float-right">
 									<i class="fas fa-angle-down"></i>
 								</div>
@@ -1074,14 +1085,11 @@
 							</button>
 							<div class="collapse" id="home3">
 								<div class="card card-body ml-0 pl-0 border-0">
-									We go above and beyond just designing your lights and quoting for projects. We offer you the best possible prices for every product we quote, saving you up to 90% on your LED project. BAL buying power attracts significant discounts from manufacturers and we’re proud to pass on these great savings to you.
-									<br>
-									<br>
-									To take advantage of these huge savings and benefits, we charge only a one-time project subscription fee and 10% commission on the total product cost. That’s quite simply how we earn our revenue. Plus, you don’t pay anything until you’ve decided to commit to our quote, so there is ZERO RISK to you when trying us out!
+									{{ trans('msg.section9_next_desc1') }}
 								</div>
 							</div>
 							<button class="btn w-100 text-left pl-0 pricing" type="button" data-toggle="collapse" data-target="#pricing" aria-expanded="false" aria-controls="pricing">
-								<b>Pricing</b>
+								<b>{{ trans('msg.section9_pricing') }}</b>
 								<div class="pricing-down float-right">
 									<i class="fas fa-angle-down"></i>
 								</div>
@@ -1094,65 +1102,65 @@
 								   <div class="card m-0 card-my-home">
 									   <div class="card-header pricing-header text-center text-white">
 										   <h5 class=" mb-0 pb-0">
-											   My Home
+										   {{ trans('msg.section9_myhome_heading') }}
 										   </h5>
-										   <small>NO UPFRONT COSTS & FREE QUOTATION</small>
+										   <small>{{ trans('msg.section_package_desc') }}</small>
 									   </div>
 										<div class="card-body pt-5 pb-3">
 											<p class="card-text text-center">
 												<small>
-													GET THE POSSIBLE RESULTS FOR EVERY BEAUTIFUL HOME!
+												{{ trans('msg.section_myhomepackage_desc') }}
 												</small>
 											</p>
 											<div class="pb-2 pt-2">
 												<ul class="trial-list">
 													<li>
 														<i class="fas fa-check"></i>
-														Risk-free
+														{{ trans('msg.section_package_point1') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Unlimited revisions
+														{{ trans('msg.section_package_point7') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Sample request
+														{{ trans('msg.section_package_point3') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Best price guarantee
+														{{ trans('msg.section_package_point8') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														100% payment protection
+														{{ trans('msg.section_package_point9') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Home lighting consultation
+														{{ trans('msg.section_package_point10') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Designated lighting designer
-														<span class="" data-toggle="tooltip" data-placement="bottom" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
+														{{ trans('msg.section_package_point11') }}
+														<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point11_desc') }}" style="font-size: 12px; ">
 															<i class="fas fa-info-circle"></i>
 														</span>
 													</li>
 													<li>
 														<i class="fas fa-times"></i>
-														Markup feature
-														<span class="" data-toggle="tooltip" data-placement="bottom" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
+														{{ trans('msg.section_package_point6') }}
+														<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point6_desc') }}" style="font-size: 12px; ">
 															<i class="fas fa-info-circle"></i>
 														</span>
 													</li>
 												</ul>
 											</div>
 											<p class="text-center">
-												* 10% BAL fee on order confirmation <br>
-												** $949 Project fee payable only on offer acceptance
+												{{ trans('msg.section_confirm') }} <br>
+												{{ trans('msg.section_home_confirm') }}
 											</p>
 											<hr>
 											<div class="text-center pb-2">
-												<h5>FOR ALL THIS, YOU PAY <b>$0.00</b></h5> 
+												<h5>{!! trans('msg.section_subcribe_desc') !!}</h5> 
 											</div>
 										</div>
 									</div>
@@ -1162,12 +1170,12 @@
 								<div class="row">
 									<div class="col-6">
 										<a href="https://lightfinder.buyanylight.com/buyer/register" class=" w-100 btn btn-BAL">
-											Register Now
+											{{ trans('msg.section9_btn1') }}
 										</a>
 									</div>
 									<div class="col-6">
 										<a href="{{ Util::assetUrl('brochures/MyHome_BAL.pdf') }}" class=" w-100 btn btn-BAL" target="_blank">
-											Brochure
+											{{ trans('msg.section9_btn2') }}
 										</a>
 									</div>
 								</div>
@@ -1179,7 +1187,7 @@
 			<div class="card ml-2 tower-div">
 				<div class="card-body">
 					<h4 class="card-title pt-1 pb-3">
-						<b>My Tower</b>
+						<b>{{ trans('msg.section9_mytower_heading') }}</b>
 					</h4>
 					<a data-fancybox href="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" class="text-white package-link">
 					<div class="package-three">
@@ -1187,7 +1195,7 @@
 							<div>
 								<i class="fab fa-youtube"></i> 
 								<span>
-									Play video
+									{{ trans('msg.section_play_video') }}
 								</span>
 							</div>
 						</div>
@@ -1197,7 +1205,7 @@
 						<div class="col-md-12">
 							<!-- <hr class="border-black"> -->
 							<button class="btn w-100 text-left pl-0 introduction" type="button" data-toggle="collapse" data-target="#introduction" aria-expanded="false" aria-controls="introduction">
-								<b>Introduction</b>
+								<b>{{ trans('msg.section9_introduction') }}</b>
 								<div class="introduction-down float-right">
 									<i class="fas fa-angle-down"></i>
 								</div>
@@ -1207,11 +1215,11 @@
 							</button>
 							<div class="collapse" id="introduction">
 								<div class="card card-body ml-0 pl-0 border-0">
-									My Tower users leverage our expertise to get the best products in the market, save a fortune, and improve their project delivery. When starting a project, you subscribe to our package and either upload your requirements or drag and drop your Bill of Quantities (BOQ). With NO UPFRONT PAYMENT, you can receive a solution and quote from BAL, confident in the knowledge that our expertise, products, prices, and service are unrivalled in the LED marketplace.
+									{{ trans('msg.section9_introduction_desc3') }}
 								</div>
 							</div>
 							<button class="btn w-100 text-left pl-0 tower2" type="button" data-toggle="collapse" data-target="#tower2" aria-expanded="false" aria-controls="tower2">
-								<b>How does BAL save you money?</b>
+								<b>{{ trans('msg.section9_save') }}</b>
 								<div class="tower2-down float-right">
 									<i class="fas fa-angle-down"></i>
 								</div>
@@ -1221,11 +1229,11 @@
 							</button>
 							<div class="collapse" id="tower2">
 								<div class="card card-body ml-0 pl-0 border-0">
-									Corporate customers enjoy prices up to 90% lower than those of local suppliers. Our massive orders attract exclusive discounts from manufacturers, so we can offer you the best prices on the market. Besides, we have no large sales force, no executive car fleet or costly showrooms to run, so our low business overheads also help us to give our customers the best products at unbelievable prices.
+								{{ trans('msg.section9_save_desc') }}
 								</div>
 							</div>
 							<button class="btn w-100 text-left pl-0 tower3" type="button" data-toggle="collapse" data-target="#tower3" aria-expanded="false" aria-controls="tower3">
-								<b>The next step</b>
+								<b>{{ trans('msg.section9_next') }}</b>
 								<div class="tower3-down float-right">
 									<i class="fas fa-angle-down"></i>
 								</div>
@@ -1235,14 +1243,11 @@
 							</button>
 							<div class="collapse" id="tower3">
 								<div class="card card-body ml-0 pl-0 border-0">
-									When (and only when) you decide to commit to a BAL quote, you’ll be asked to make a one-time project subscription fee to confirm your order or request samples. We charge a 10% commission on the total cost of the products: this is how BAL earns its revenue and maintains its service.
-									<br>
-									<br>
-									DID YOU KNOW? Our Markup Feature (exclusive to BAL corporate users) - is a fantastic BAL feature, allowing you to add markups to the quotes, quickly and easily. It means you can offer your customers lower prices than local suppliers while also boosting your profits - a win-win for everyone!
+									{{ trans('msg.section9_next_desc2') }}
 								</div>
 							</div>
 							<button class="btn w-100 text-left pl-0 pricing" type="button" data-toggle="collapse" data-target="#pricing" aria-expanded="false" aria-controls="pricing">
-								<b>Pricing</b>
+								<b>{{ trans('msg.section9_pricing') }}</b>
 								<div class="pricing-down float-right">
 									<i class="fas fa-angle-down"></i>
 								</div>
@@ -1255,65 +1260,65 @@
 								   <div class="card m-0 card-my-tower text-dark">
 										<div class="card-header text-center pricing-header text-white">
 											<h5 class=" mb-0 pb-0">
-												My Tower
+											{{ trans('msg.section9_mytower_heading') }}
 											</h5>
-											<small>NO UPFRONT COSTS & FREE QUOTATION</small>
+											<small>{{ trans('msg.section_package_desc') }}</small>
 										</div>
 										<div class="card-body pt-5 pb-3">
 											<p class="card-text text-center">
 												<small>
-													A COMPLETE PROJECT SOLUTION WITH LOWEST PRICES IN THE ENTIRE MARKET
+												{{ trans('msg.section_mytowerpackage_desc') }}
 												</small>
 											</p>
 											<div class="pb-2 pt-2">
 												<ul class="trial-list">
 													<li>
 														<i class="fas fa-check"></i>
-														Risk-free
+														{{ trans('msg.section_package_point1') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Unlimited revisions
+														{{ trans('msg.section_package_point7') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Sample request
+														{{ trans('msg.section_package_point3') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Best price guarantee
+														{{ trans('msg.section_package_point8') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														100% payment protection
+														{{ trans('msg.section_package_point9') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Project lighting consultation
+														{{ trans('msg.section_package_point10_1') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Designated lighting designer
-														<span class="" data-toggle="tooltip" data-placement="bottom" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
+														{{ trans('msg.section_package_point11') }}
+														<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point11_desc') }}" style="font-size: 12px; ">
 																<i class="fas fa-info-circle"></i>
 														</span>
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Markup feature
-														<span class="" data-toggle="tooltip" data-placement="bottom" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
+														{{ trans('msg.section_package_point6') }}
+														<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point6_desc') }}" style="font-size: 12px; ">
 															<i class="fas fa-info-circle"></i>
 														</span>
 													</li>
 												</ul>
 											</div>
 											<p class="text-center">
-												* 10% BAL fee on order confirmation <br>
-												** $1949 Project fee payable only on offer acceptance
+												{{ trans('msg.section_confirm') }} <br>
+												{{ trans('msg.section_tower_confirm') }}
 											</p>
 											<hr>
 											<div class="text-center pb-2">
-												<h5>FOR ALL THIS, YOU PAY <b>$0.00</b></h5> 
+												<h5>{!! trans('msg.section_subcribe_desc') !!}</h5> 
 											</div>
 										</div>
 									</div>
@@ -1323,12 +1328,12 @@
 								<div class="row">
 									<div class="col-6">
 										<a href="https://lightfinder.buyanylight.com/buyer/register" class=" w-100 btn btn-BAL">
-											Register Now
+										{{ trans('msg.section9_btn1') }}
 										</a>
 									</div>
 									<div class="col-6">
 										<a href="{{ Util::assetUrl('brochures/MyTower_BAL.pdf') }}" class=" w-100 btn btn-BAL" target="_blank">
-											Brochure
+										{{ trans('msg.section9_btn2') }}
 										</a>
 									</div>
 								</div>
@@ -1347,21 +1352,21 @@
 	<div class="h-100" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 		<div class="container h-100">
 			<h4 class="text-left">
-				<b>ALL PACKAGES</b>
+				<b>{{ trans('msg.section10_heading') }}</b>
 			</h4>
 			<div class="pt-5 h-100">
 				<ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
 					<li class="nav-item trial" style="border: 1px solid black;">
-						<a class="nav-link trial" id="pills-trial-tab" data-toggle="pill" href="#pills-trial" role="tab" aria-controls="pills-trial" aria-selected="true">Free Trial</a>
+						<a class="nav-link trial" id="pills-trial-tab" data-toggle="pill" href="#pills-trial" role="tab" aria-controls="pills-trial" aria-selected="true">{{ trans('msg.section_trial_package') }}</a>
 					</li>
 					<li class="nav-item home" style="border: 1px solid black;">
-						<a class="nav-link active " id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false">My Home</a>
+						<a class="nav-link active " id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false">{{ trans('msg.section_myhome_package') }}</a>
 					</li>
 					<li class="nav-item tower" style="border: 1px solid black;">
-						<a class="nav-link" id="pills-tower-tab" data-toggle="pill" href="#pills-tower" role="tab" aria-controls="pills-tower" aria-selected="false">My Tower</a>
+						<a class="nav-link" id="pills-tower-tab" data-toggle="pill" href="#pills-tower" role="tab" aria-controls="pills-tower" aria-selected="false">{{ trans('msg.section_mytower_package') }}</a>
 					</li>
 					<li class="nav-item finder" style="border: 1px solid black;">
-						<a class="nav-link finder" id="pills-finder-tab" data-toggle="pill" href="#pills-finder" role="tab" aria-controls="pills-finder" aria-selected="false">LightFinder</a>
+						<a class="nav-link finder" id="pills-finder-tab" data-toggle="pill" href="#pills-finder" role="tab" aria-controls="pills-finder" aria-selected="false">{{ trans('msg.section_lightfinder_package') }}</a>
 					</li>
 				</ul>
 				<div class="tab-content pt-5" id="pills-tabContent" style="height: 90%;">
@@ -1370,49 +1375,49 @@
 							<div class="card card-trial-summary">
 								<div class="card-header text-center bg-BAL text-white">
 									<h4 class="mb-0">
-										Free Trial
+									{{ trans('msg.section_trial_package') }}
 									</h4>
-									<small>NO UPFRONT COSTS & FREE QUOTATION</small>
+									<small>{{ trans('msg.section_package_desc') }}</small>
 								</div>
 								<div class="card-body pt-5 pb-5">
-									<p class="card-text text-center">GET A FREE QUOTE. YOU’LL LOVE OUR AMAZING PRICES!</p>
+									<p class="card-text text-center">{{ trans('msg.section_trialpackage_desc') }}</p>
 									<div class="pb-2 pt-2">
 										<ul class="trial-list">
 											<li>
 												<i class="fas fa-check"></i>
-												Risk-free
+												{{ trans('msg.section_package_point1') }}
 											</li>
 											<li>
 												<i class="fas fa-check"></i>
-												Explore BAL
+												{{ trans('msg.section_package_point2') }}
 											</li>
 											<li>
 												<i class="fas fa-times"></i>
-												Sample request
+												{{ trans('msg.section_package_point3') }}
 											</li>
 											<li>
 												<i class="fas fa-times"></i>
-												Multiple item request
+												{{ trans('msg.section_package_point4') }}
 											</li>
 											<li>
 												<i class="fas fa-times"></i>
-												Designated lighting designer
+												{{ trans('msg.section_package_point11') }}
 											</li>
 											<li>
 												<i class="fas fa-times"></i>
-												Markup feature 
-												<span class="" data-toggle="tooltip" data-placement="right" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
+												{{ trans('msg.section_package_point6') }}
+												<span class="" data-toggle="tooltip" data-placement="right" title="{{ trans('msg.section_package_point6_desc') }}" style="font-size: 12px; ">
 													<i class="fas fa-info-circle"></i>
 												</span>
 											</li>
 										</ul>
 									</div>
 									 <p class="text-center">
-										<b>Note </b> <br> A LightFinder package is required to <br> confirm the order.
+										<b>{{ trans('msg.section_trial_note') }}</b> <br>{!! trans('msg.section_trial_note_desc') !!}
 									</p>
 									<hr>
 									<div class="text-center pt-4">
-										<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-BAL">Subscribe now</a>
+										<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-BAL">{{ trans('msg.section_subscribe_btn') }}</a>
 									</div>
 								</div>
 							</div>
@@ -1422,133 +1427,137 @@
 						<div class="pills-all h-100">
 							<div class="card card-my-home-summary">
 								<div class="card-header text-center bg-BAL text-white">
-									<h4 class="mb-0">
-										My Home
+									<h4 class=" mb-0 pb-0">
+									{{ trans('msg.section9_myhome_heading') }}
 									</h4>
-									<small>NO UPFRONT COSTS & FREE QUOTATION</small>
+									<small>{{ trans('msg.section_package_desc') }}</small>
 								</div>
-								<div class="card-body pt-5 pb-5">
-									<p class="card-text text-center">GET THE POSSIBLE RESULTS FOR EVERY BEAUTIFUL HOME!</p>
-									<div class="pb-2 pt-2">
-										<ul class="trial-list">
-											<li>
-												<i class="fas fa-check"></i>
-												Risk-free
-											</li>
-											<li>
-												<i class="fas fa-check"></i>
-												Unlimited revisions
-											</li>
-											<li>
-												<i class="fas fa-check"></i>
-												Sample request
-											</li>
-											<li>
-												<i class="fas fa-check"></i>
-												Best price guarantee
-											</li>
-											<li>
-												<i class="fas fa-check"></i>
-												100% payment protection
-											</li>
-											<li>
-												<i class="fas fa-check"></i>
-												Home lighting consultation
-											</li>
-											<li>
-												<i class="fas fa-check"></i>
-												Designated lighting designer
-												<span class="" data-toggle="tooltip" data-placement="right" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
-													<i class="fas fa-info-circle"></i>
-												</span>
-											</li>
-											<li>
-												<i class="fas fa-times"></i>
-												Markup feature
-												<span class="" data-toggle="tooltip" data-placement="right" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
-													<i class="fas fa-info-circle"></i>
-												</span>
-											</li>
-										</ul>
-									</div>
+								 <div class="card-body pt-5 pb-3">
+									 <p class="card-text text-center">
+										 {{ trans('msg.section_myhomepackage_desc') }}
+									 </p>
+									 <div class="pb-2 pt-2">
+										 <ul class="trial-list">
+											 <li>
+												 <i class="fas fa-check"></i>
+												 {{ trans('msg.section_package_point1') }}
+											 </li>
+											 <li>
+												 <i class="fas fa-check"></i>
+												 {{ trans('msg.section_package_point7') }}
+											 </li>
+											 <li>
+												 <i class="fas fa-check"></i>
+												 {{ trans('msg.section_package_point3') }}
+											 </li>
+											 <li>
+												 <i class="fas fa-check"></i>
+												 {{ trans('msg.section_package_point8') }}
+											 </li>
+											 <li>
+												 <i class="fas fa-check"></i>
+												 {{ trans('msg.section_package_point9') }}
+											 </li>
+											 <li>
+												 <i class="fas fa-check"></i>
+												 {{ trans('msg.section_package_point10') }}
+											 </li>
+											 <li>
+												 <i class="fas fa-check"></i>
+												 {{ trans('msg.section_package_point11') }}
+												 <span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point11_desc') }}" style="font-size: 12px; ">
+													 <i class="fas fa-info-circle"></i>
+												 </span>
+											 </li>
+											 <li>
+												 <i class="fas fa-times"></i>
+												 {{ trans('msg.section_package_point6') }}
+												 <span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point6_desc') }}" style="font-size: 12px; ">
+													 <i class="fas fa-info-circle"></i>
+												 </span>
+											 </li>
+										 </ul>
+									 </div>
 									 <p class="text-center">
-										* 10% BAL fee on order confirmation <br>
-										** $949 Project fee payable only on offer acceptance
-									</p>
-									<hr>
-									<div class="text-center pb-2">
-										<h5>FOR ALL THIS, YOU PAY <b>$0.00</b></h5> 
+										 {{ trans('msg.section_confirm') }} <br>
+										 {{ trans('msg.section_home_confirm') }}
+									 </p>
+									 <hr>
+									 <div class="text-center pb-2">
+										 <h5>{!! trans('msg.section_subcribe_desc') !!}</h5> 
+									 </div>
+									 <div class="text-center">
+										<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-BAL">{{ trans('msg.section_subscribe_btn') }}</a>
 									</div>
-									<div class="text-center">
-										<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-BAL">Subscribe now</a>
-									</div>
-								</div>
-							</div>
+								 </div>
+							 </div>
 						</div>
 					</div>
 					<div class="tab-pane fade  h-100" id="pills-tower" role="tabpanel" aria-labelledby="pills-tower-tab">
 						<div class="pills-all h-100">
 							<div class="card card-my-tower-summary">
 								<div class="card-header text-center bg-BAL text-white">
-									<h4 class="mb-0">
-										My Tower
+									<h4 class="">
+									{{ trans('msg.section9_mytower_heading') }}
 									</h4>
-									<small>NO UPFRONT COSTS & FREE QUOTATION</small>
+									<small>{{ trans('msg.section_package_desc') }}</small>
 								</div>
-								<div class="card-body pt-5 pb-5">
-									<p class="card-text text-center">A COMPLETE PROJECT SOLUTION WITH LOWEST PRICES IN THE ENTIRE MARKET - GUARANTEED!</p>
+								<div class="card-body pt-5 pb-3">
+									<p class="card-text text-center">
+										{{ trans('msg.section_mytowerpackage_desc') }}
+									</p>
 									<div class="pb-2 pt-2">
 										<ul class="trial-list">
 											<li>
 												<i class="fas fa-check"></i>
-												Risk-free
+												{{ trans('msg.section_package_point1') }}
 											</li>
 											<li>
 												<i class="fas fa-check"></i>
-												Unlimited revisions
+												{{ trans('msg.section_package_point7') }}
 											</li>
 											<li>
 												<i class="fas fa-check"></i>
-												Sample request
+												{{ trans('msg.section_package_point3') }}
 											</li>
 											<li>
 												<i class="fas fa-check"></i>
-												Best price guarantee
+												{{ trans('msg.section_package_point8') }}
 											</li>
 											<li>
 												<i class="fas fa-check"></i>
-												100% payment protection
+												{{ trans('msg.section_package_point9') }}
 											</li>
 											<li>
 												<i class="fas fa-check"></i>
-												Project lighting consultation
+												{{ trans('msg.section_package_point10_1') }}
 											</li>
 											<li>
 												<i class="fas fa-check"></i>
-												Designated lighting designer
-												<span class="" data-toggle="tooltip" data-placement="right" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
-													<i class="fas fa-info-circle"></i>
+												{{ trans('msg.section_package_point11') }}
+												<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point11_desc') }}" style="font-size: 12px; ">
+														<i class="fas fa-info-circle"></i>
 												</span>
 											</li>
 											<li>
 												<i class="fas fa-check"></i>
-												Markup feature
-												<span class="" data-toggle="tooltip" data-placement="right" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
+												{{ trans('msg.section_package_point6') }}
+												<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point6_desc') }}" style="font-size: 12px; ">
 													<i class="fas fa-info-circle"></i>
 												</span>
 											</li>
 										</ul>
 									</div>
-									 <p class="text-center">
-										* 10% BAL fee on order confirmation <br>
-										** $1949 Project fee payable only on offer acceptance
+									<p class="text-center">
+										{{ trans('msg.section_confirm') }} <br>
+										{{ trans('msg.section_tower_confirm') }}
 									</p>
 									<hr>
 									<div class="text-center pb-2">
-										<h5>FOR ALL THIS, YOU PAY <b>$0.00</b></h5> 
+										<h5>{!! trans('msg.section_subcribe_desc') !!}</h5> 
 									</div>
 									<div class="text-center">
-										<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-BAL">Subscribe now</a>
+										<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-BAL">{{ trans('msg.section_subscribe_btn') }}</a>
 									</div>
 								</div>
 							</div>
@@ -1560,64 +1569,78 @@
 								<div class="card card-mini-summary">
 									<h4 class="card-header text-center bg-BAL text-white">MINI</h4>
 									<div class="card-body pt-5 pb-5 text-center">
-										<p class="card-text">MAKE A GREAT BAL START RIGHT HERE!</p>
+										<p class="card-text">
+											<small>
+											{{ trans('msg.section_minipackage_desc') }}
+											</small>
+										</p>
 										<div class="pt-2 pb-2 text-left">
 											<ul class="trial-list">
 												<li>
 													<i class="fas fa-check"></i>
-													Inquire & source 3 items
+													{{ trans('msg.section_lighfinder_point1') }}
+
 												</li>
 												<li>
 													<i class="fas fa-check"></i>
-													Minimum order quantity: 20
+													{{ trans('msg.section_lighfinder_point4') }}
+													
 												</li>
 												<li>
 													<i class="fas fa-check"></i>
-													100% payment guarantee
+													{{ trans('msg.section_package_point9') }}
+
 												</li>
 												<li>
 													<i class="fas fa-check"></i>
-													Best price guarantee
+													{{ trans('msg.section_package_point8') }}
+
 												</li>
 												<li>
 													<i class="fas fa-check"></i>
-													Sample request
+													{{ trans('msg.section_package_point3') }}
+
 												</li>
 												<li>
 													<i class="fas fa-check"></i>
-													Additional inquiry for $199
+													{{ trans('msg.section_lighfinder_point6') }}
+
 												</li>
 												<li>
 													<i class="fas fa-times"></i>
-													Label & design support
-													<span class="" data-toggle="tooltip" data-placement="right" title="Our ODM services mean we can brand your individual light fittings with your own logo and/or labels." style="font-size: 12px; ">
+													{{ trans('msg.section_lighfinder_point9') }}
+
+													<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_lighfinder_point9_desc') }}" style="font-size: 12px; ">
 														<i class="fas fa-info-circle"></i>
 													</span>
 												</li>
 												<li>
 													<i class="fas fa-times"></i>
-													Designated lighting designer
-													<span class="" data-toggle="tooltip" data-placement="right" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
+													{{ trans('msg.section_package_point11') }}
+
+													<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point11_desc') }}" style="font-size: 12px; ">
 														<i class="fas fa-info-circle"></i>
 													</span>
 												</li>
 												<li>
 													<i class="fas fa-times"></i>
-													Markup feature
-													<span class="" data-toggle="tooltip" data-placement="right" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
+													{{ trans('msg.section_package_point6') }}
+													<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point6_desc') }}" style="font-size: 12px; ">
 														<i class="fas fa-info-circle"></i>
 													</span>
 												</li>
 											</ul>
 										</div>
-										<p class="text-center">* 20% BAL fee on order confirmation</p>
+										<p class="text-center">
+											{{ trans('msg.section_lighfinder1_confirm') }}
+										</p>
 										<hr>
-										<div class="text-center pb-2">
-											<h5>$499/Monthly</h5>
-											<small>$5499/Yearly</small>   
+										<div class="text-center pt-2">
+											<h5>{{ trans('msg.section_lighfinder1_monthly') }}</h5>
+											<small>{{ trans('msg.section_lighfinder1_yearly') }}</small>   
 										</div>
-										<div >
-											<a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder" class="btn btn-BAL">Subscribe now</a>
+										<div class="text-center">
+											<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-BAL">{{ trans('msg.section_subscribe_btn') }}</a>
 										</div>
 									</div>
 								</div>
@@ -1627,69 +1650,74 @@
 									</h4>
 									<div class="best-pick w-100 d-flex align-items-center justify-content-center">
 										<span class="text-black ">
-											<b>BEST PICK</b>
+											<b>{{ trans('msg.section_premiumpackage_best') }}</b>
 										</span>
 									</div>
 									<div class="card-body {{ ($agent->is('IE')) ? 'pb-5 pt-5' : 'pb-0 pt-0' }} text-center d-flex align-items-center">
 										<div class="card-premium-contents">
-											<p class="card-text">AN ABUNDANCE OF GREAT BAL BENEFITS - THE PERFECT PACKAGE FOR YOUR BUSINESS</p>
+											<p class="card-text">
+												<small>
+													{{ trans('msg.section_premiumpackage_desc') }}
+												</small>
+											</p>
 											<div class="pt-2 pb-2 text-left">
 												<ul class="trial-list">
 													<li>
 														<i class="fas fa-check"></i>
-														Inquire & source 10 items
+														{{ trans('msg.section_lighfinder_point2') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Minimum order quantity: 10
+														{{ trans('msg.section_lighfinder_point5') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														100% payment guarantee
+														{{ trans('msg.section_package_point9') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Best price guarantee
+														{{ trans('msg.section_package_point8') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Sample request
+														{{ trans('msg.section_package_point3') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Additional inquiry for $99
+														{{ trans('msg.section_lighfinder_point7') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Label & design support
-														<span class="" data-toggle="tooltip" data-placement="right" title="Our ODM services mean we can brand your individual light fittings with your own logo and/or labels." style="font-size: 12px; ">
+														{{ trans('msg.section_lighfinder_point9') }}
+														<span class="" data-toggle="tooltip" data-placement="bottom" title="
+														{{ trans('msg.section_lighfinder_point9_desc') }}" style="font-size: 12px; ">
 															<i class="fas fa-info-circle"></i>
 														</span>
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Designated lighting designer
-														<span class="" data-toggle="tooltip" data-placement="right" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
-															<i class="fas fa-info-circle"></i>
+														{{ trans('msg.section_package_point11') }}
+														<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point11_desc') }}" style="font-size: 12px; ">
+																<i class="fas fa-info-circle"></i>
 														</span>
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Markup feature
-														<span class="" data-toggle="tooltip" data-placement="right" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
+														{{ trans('msg.section_package_point6') }}
+														<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point6_desc') }}" style="font-size: 12px; ">
 															<i class="fas fa-info-circle"></i>
 														</span>
 													</li>
 												</ul>
 											</div>
-											<p class="text-center">* 10% BAL fee on order confirmation</p>
+											<p class="text-center">{{ trans('msg.section_lighfinder2_confirm') }}</p>
 											<hr>
 											<div class="text-center pb-2">
-												<h5>$899/Monthly</h5>
-												<small>$9899/Yearly</small>   
+												<h5>{{ trans('msg.section_lighfinder2_monthly') }}</h5>
+												<small>{{ trans('msg.section_lighfinder2_yearly') }}</small>   
 											</div>
-											<div>
-												<a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder" class="btn btn-BAL">Subscribe now</a>
+											<div class="text-center">
+												<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-BAL">{{ trans('msg.section_subscribe_btn') }}</a>
 											</div>
 										</div>
 									</div>
@@ -1698,64 +1726,68 @@
 									<h4 class="card-header text-center bg-BAL text-white">STANDARD</h4>
 									<div class="card-body pt-5 pb-5 text-center d-flex align-items-center">
 										<div class="card-standard-contents">
-											<p class="card-text">NEED MORE THAN JUST A FEW LIGHTS? THIS IS THE PACKAGE FOR YOU!</p>
+											<p class="card-text">
+												<small>
+												{{ trans('msg.section_standardpackage_desc') }}
+												</small>
+											</p>
 											<div class="pt-2 pb-2 text-left">
 												<ul class="trial-list">
 													<li>
 														<i class="fas fa-check"></i>
-														Inquire & source 6 items
+														{{ trans('msg.section_lighfinder_point3') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Minimum order quantity: 10
+														{{ trans('msg.section_lighfinder_point5') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														100% payment guarantee
+														{{ trans('msg.section_package_point9') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Best price guarantee
+														{{ trans('msg.section_package_point8') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Sample request
+														{{ trans('msg.section_package_point3') }}
 													</li>
 													<li>
 														<i class="fas fa-check"></i>
-														Additional inquiry for $149
+														{{ trans('msg.section_lighfinder_point8') }}
 													</li>
 													<li>
 														<i class="fas fa-times"></i>
-														Label & design support
-														<span class="" data-toggle="tooltip" data-placement="right" title="Our ODM services mean we can brand your individual light fittings with your own logo and/or labels." style="font-size: 12px; ">
+														{{ trans('msg.section_lighfinder_point9') }}
+														<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_lighfinder_point9_desc') }}" style="font-size: 12px; ">
 															<i class="fas fa-info-circle"></i>
 														</span>
 													</li>
 													<li>
 														<i class="fas fa-times"></i>
-														Designated lighting designer
-														<span class=" " data-toggle="tooltip" data-placement="right" title="Enjoy direct communication with your designated lighting designer from start to finish." style="font-size: 12px; ">
+														{{ trans('msg.section_package_point11') }}
+														<span class=" " data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point11_desc') }}" style="font-size: 12px; ">
 															<i class="fas fa-info-circle"></i>
 														</span>
 													</li>
 													<li>
 														<i class="fas fa-times"></i>
-														Markup feature
-														<span class="" data-toggle="tooltip" data-placement="right" title="Customise your quotation prices with our flexible markup feature." style="font-size: 12px; ">
+														{{ trans('msg.section_package_point6') }}
+														<span class="" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.section_package_point6_desc') }}" style="font-size: 12px; ">
 															<i class="fas fa-info-circle"></i>
 														</span>
 													</li>
 												</ul>
 											</div>
-											<p class="text-center">* 15% BAL fee on order confirmation</p>
+											<p class="text-center">{{ trans('msg.section_lighfinder3_confirm') }}</p>
 											<hr>
 											<div class="text-center pb-2">
-												<h5>$699/Monthly</h5>
-												<small>$7699/Yearly</small>   
+												<h5>{{ trans('msg.section_lighfinder3_monthly') }}</h5>
+												<small>{{ trans('msg.section_lighfinder3_yearly') }}</small>   
 											</div>
-											<div>
-												<a href="https://lightfinder.buyanylight.com/buyer/register/lightfinder" class="btn btn-BAL">Subscribe now</a>
+											<div class="text-center">
+												<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-BAL">{{ trans('msg.section_subscribe_btn') }}</a>
 											</div>
 										</div>
 									</div>
@@ -1772,31 +1804,31 @@
 	<div class="container h-100 d-flex justify-content-center align-items-center flex-column" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 		<div class="pt-1 text-center">
 			<h3>
-				<b>Want to know more?</b>
+				<b>{{ trans('msg.download_section_heading') }}</b>
 			</h3>
 			<p class="pt-3">
-				Download to know more about us, <br>our project, and how can you participate in our token sale.
+				{!! trans('msg.download_section_desc') !!}
 			</p>
 			<div class="buttons pt-3 ">
 				<div class="row w-100">
 					<div class="col">
 						<div class="d-flex justify-content-center align-items-center">
 							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" target="_blank" class="btn btn-BAL">
-							<b>One Pager</b>	
+							<b>{{ trans('msg.One_pager') }}</b>	
 							</a>
 						</div>
 					</div>
 					<div class="col">
 						<div>
 							<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" target="_blank" class="btn btn-BAL">
-							<b>Whitepaper</b>	
+							<b>{{ trans('msg.Whitepaper') }}</b>	
 							</a>
 						</div>
 					</div>
 					<div class="col">
 						<div>
 							<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" class="btn btn-BAL" target="_blank">
-							<b>Yellowpaper</b>	
+							<b>{{ trans('msg.Yellowpaper') }}</b>	
 							</a>				
 						</div>
 					</div>
@@ -1806,14 +1838,14 @@
 						<div class="col">
 							<a href="#contact" class="btn btn-BAL">
 								<b>
-									Schedule a meeting
+									{{ trans('msg.meeting') }}
 								</b>
 							</a>
 						</div>
 						<div class="col">
 							<a href="#section-bal-token" class="btn btn-BAL">
 								<b>
-									BUY BAL TOKENS NOW!
+									{{ trans('msg.BAL_token') }}
 								</b>
 							</a>
 						</div>
@@ -1827,14 +1859,14 @@
 	<div class="container" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 		<h3 class="pt-5">
 			<b>
-				ALWAYS ADDING VALUE: optional extras
+				{{ trans('msg.section11_heading') }}
 			</b>
 		</h3>
 		<p class="pt-3">
-			We’ve designed packages of options to delight various user categories. But every user is an individual, and for maximum flexibility the BuyAnyLight (BAL) platform enables you to add in extra services to suit you. These services are provided by our superb team of highly experienced LED lighting design experts, able to support every kind of LED project for private villas, industrial estates, hotels, public facilities and any other building or infrastructure.  
+			{{ trans('msg.section11_desc') }}
 		</p>
 		<p>
-			Our optional add-on services include:
+			{{ trans('msg.section11_desc2') }}
 		</p>
 		<div class="row">
 			<div class="col-md-4">
@@ -1846,17 +1878,17 @@
 				</div> -->
 				<h5 class="pt-3">
 					<b>
-						Lighting consultation
+						{{ trans('msg.section11_option1') }}
 					</b>
 				</h5>
 				<div class="collapse" id="read-more">
 					<div class="card card-body ml-0 pl-0 border-0">
-						Great lighting creates an aesthetic ambience that instantly elevates one’s mood and style. Our highly skilled LED lighting designers will help you to create a stunning atmosphere that brings your LED lighting design dreams to life. This add-on is available to all BAL users, irrespective of your package choice. We provide one-to-one access to our world-class consultants who will work with you and provide expert advice from project start-up to the final glorious switch-on!
+						{{ trans('msg.section11_readmore1') }}
 					</div>
 				</div>
 				<button class="btn w-100 text-left pl-0 read-more" type="button" data-toggle="collapse" data-target="#read-more" aria-expanded="false" aria-controls="read-more">
-					<b class="1-read-more">Read more</b>
-					<b  class="1-read-less" style="display: none;">Read less</b>
+					<b class="1-read-more">{{ trans('msg.section11_readmore') }}</b>
+					<b  class="1-read-less" style="display: none;">{{ trans('msg.section11_readless') }}</b>
 					<div class="read-more-down float-right">
 						<i class="fas fa-angle-down"></i>
 					</div>
@@ -1865,7 +1897,7 @@
 					</div>
 				</button>
 				<button class="btn w-100 text-left pl-0 pricing" type="button" data-toggle="collapse" data-target="#pricing" aria-expanded="false" aria-controls="pricing">
-					<b>Pricing</b>
+					<b>{{ trans('msg.section11_pricing') }}</b>
 					<div class="pricing-down float-right">
 						<i class="fas fa-angle-down"></i>
 					</div>
@@ -1875,11 +1907,11 @@
 				</button>
 				<div class="collapse" id="pricing">
 					<div class="card card-body ml-0 pl-0 border-0">
-						$199
+						{{ trans('msg.section11_pricing1') }}
 					</div>
 				</div>
 				<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-BAL">
-					Book Now
+					{{ trans('msg.section11_booknow') }}
 				</a>
 			</div>
 			<div class="col-md-4">
@@ -1890,16 +1922,16 @@
 					</div>
 				</div> -->
 				<h5 class="pt-3">
-					<b>Lux calculation</b>
+					<b>{{ trans('msg.section11_option2') }}</b>
 				</h5>
 				<div class="collapse" id="read-more">
 					<div class="card card-body ml-0 pl-0 border-0">
-						This valuable add-on determines the exact brightness requirements (lumens) for a project area - data which is essential for selecting the right products and quantities to achieve the design objectives in any lighting project. Essentially, contractors and consultants can leverage our expertise to give their clients the most reasonable quote - and including this data in a proposal or quote elevates your professionalism and credibility. What’s more, an accurate lux calculation justifies the quote’s rationale and increases the chances of winning the project bid.
+						{{ trans('msg.section11_readmore2') }}
 					</div>
 				</div>
 				<button class="btn w-100 text-left pl-0 read-more" type="button" data-toggle="collapse" data-target="#read-more" aria-expanded="false" aria-controls="read-more">
-					<b class="2-read-more">Read more</b>
-					<b  class="2-read-less" style="display: none;">Read less</b>
+					<b class="2-read-more">{{ trans('msg.section11_readmore') }}</b>
+					<b  class="2-read-less" style="display: none;">{{ trans('msg.section11_readless') }}</b>
 					<div class="read-more-down float-right">
 						<i class="fas fa-angle-down"></i>
 					</div>
@@ -1908,7 +1940,7 @@
 					</div>
 				</button>
 				<button class="btn w-100 text-left pl-0 pricing" type="button" data-toggle="collapse" data-target="#pricing" aria-expanded="false" aria-controls="pricing">
-					<b>Pricing</b>
+					<b>{{ trans('msg.section11_pricing') }}</b>
 					<div class="pricing-down float-right">
 						<i class="fas fa-angle-down"></i>
 					</div>
@@ -1918,11 +1950,11 @@
 				</button>
 				<div class="collapse" id="pricing">
 					<div class="card card-body ml-0 pl-0 border-0">
-						$299
+						{{ trans('msg.section11_pricing2') }}
 					</div>
 				</div>
 				<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-BAL">
-					Book Now
+					{{ trans('msg.section11_booknow') }}
 				</a>
 			</div>
 			<div class="col-md-4">
@@ -1933,16 +1965,16 @@
 					</div>
 				</div> -->
 				<h5 class="pt-3">
-					<b>3D lighting design</b>
+					<b>{{ trans('msg.section11_option3') }}</b>
 				</h5>
 				<div class="collapse" id="read-more">
 					<div class="card card-body ml-0 pl-0 border-0">
-						This additional option (available to all BAL users) gives you the opportunity to envision the look and feel of your finished project area. Our professional lighting designers prepare your 3D designs with pinpoint accuracy. In some cases, a 3D lighting design is a contractual requirement when executing a lighting project, but every contractor and consultant can present these stunning 3D models to their clients to inform, reassure and impress. It’s also a chance to gain an edge over competitors, and can add an extra revenue stream to the project.
+						{{ trans('msg.section11_readmore3') }}
 					</div>
 				</div>
 				<button class="btn w-100 text-left pl-0 read-more" type="button" data-toggle="collapse" data-target="#read-more" aria-expanded="false" aria-controls="read-more">
-					<b class="3-read-more">Read more</b>
-					<b  class="3-read-less" style="display: none;">Read less</b>
+					<b class="3-read-more">{{ trans('msg.section11_readmore') }}</b>
+					<b  class="3-read-less" style="display: none;">{{ trans('msg.section11_readless') }}</b>
 					<div class="read-more-down float-right">
 						<i class="fas fa-angle-down"></i>
 					</div>
@@ -1951,7 +1983,7 @@
 					</div>
 				</button>
 				<button class="btn w-100 text-left pl-0 pricing" type="button" data-toggle="collapse" data-target="#pricing" aria-expanded="false" aria-controls="pricing">
-					<b>Pricing</b>
+					<b>{{ trans('msg.section11_pricing') }}</b>
 					<div class="pricing-down float-right">
 						<i class="fas fa-angle-down"></i>
 					</div>
@@ -1961,11 +1993,11 @@
 				</button>
 				<div class="collapse" id="pricing">
 					<div class="card card-body ml-0 pl-0 border-0">
-						$399
+						{{ trans('msg.section11_pricing3') }}
 					</div>
 				</div>
 				<a href="https://lightfinder.buyanylight.com/buyer/register" class="btn btn-BAL">
-					Book Now
+					{{ trans('msg.section11_booknow') }}
 				</a>
 			</div>
 		</div>
