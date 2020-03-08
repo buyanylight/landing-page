@@ -276,7 +276,7 @@
 							<a data-fancybox href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0"  target="_blank" class="btn btn-play text-white w-100">
 								<i class="fas fa-play"></i>
 								<br>
-								{{ trans('msg.section1_video') }}
+								{{ trans('msg.section4_video1') }}
 							</a>
 						</div>
 						<div class="col pr-1 pl-1">
