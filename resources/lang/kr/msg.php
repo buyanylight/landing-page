@@ -576,7 +576,18 @@ return [
     'step3' => '3단계',
     'step3_desc' => '고객 파악하기(KYC)',
     'disclaimer' => '귀하가 미국 시민, 거주자(조세권 해당 및 비해당) 또는 미국 영주권자 또는 중화인민공화국, 이란 및 북한의 시민 또는 거주자일 경우 BAL 토큰을 구매할 수 없습니다.',
-    'agreement' => '토큰 세일 동의',
+    'agreement' => '
+    <a data-fancybox href=":file" class="btn" style="background-color: #5555A4; color: white;"> 토큰 세일 동의
+    <span class="text-success sale-tick" style="display: none;">
+      <i class="fas fa-check-circle"></i>
+    </span>
+  </a>
+    
+    
+    
+    
+    
+    ',
     'info_head' => '투자자 정보',
     'ref_id' => '참조 ID ',
     'buyer_name' => '이름',
