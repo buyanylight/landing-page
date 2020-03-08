@@ -148,7 +148,7 @@
 							<b>{{ trans('msg.section2_lightfinder')}}</b>
 						</h5>
 						<p>{{ trans('msg.section2_lightfinder_desc')}}</p>
-						<p> {{ trans('msg.section2_lightfinder_desc1')}} <a href="#all-packages" class="lightfinder-btn">more</a>
+						<p> {{ trans('msg.section2_lightfinder_desc1')}} <a href="#all-packages" class="lightfinder-btn">{{ trans('msg.more_btn')}}</a>
 					
 						</p>
 						<a data-fancybox href="https://www.youtube.com/embed/k-zrKcgJf0Q?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
@@ -171,7 +171,7 @@
 								<b>{{ trans('msg.section2_myhome')}}</b>
 							</h5>
 							<p>{{ trans('msg.section2_myhome_desc')}}</p>
-							<p>{{ trans('msg.section2_myhome_desc1')}}<a href="#all-packages" class="home-btn">more</a></p>
+							<p>{{ trans('msg.section2_myhome_desc1')}}<a href="#all-packages" class="home-btn">{{ trans('msg.more_btn')}}</a></p>
 							<a data-fancybox href="https://www.youtube.com/embed/rWX1qeigBMk?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
 								<i class="fas fa-play"></i>&nbsp;<b>{{ trans('msg.section2_video')}}</b>	
 							</a>
@@ -191,7 +191,7 @@
 							<b>{{ trans('msg.section2_mytower')}}</b>
 						</h5>
 						<p>{{ trans('msg.section2_mytower_desc')}}</p>
-						<p>{{ trans('msg.section2_mytower_desc1')}}<a href="#all-packages" class="tower-btn">more</a></p>
+						<p>{{ trans('msg.section2_mytower_desc1')}}<a href="#all-packages" class="tower-btn">{{ trans('msg.more_btn')}}</a></p>
 						<a data-fancybox href="https://www.youtube.com/embed/IdrrtNgvDKo?rel=0&enablejsapi=1" class="btn btn-video" style="font-size: 13px;">
 							<i class="fas fa-play"></i>&nbsp;<b>{{ trans('msg.section2_video')}}</b>	
 						</a><br>
