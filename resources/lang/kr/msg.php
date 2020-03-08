@@ -605,7 +605,7 @@ return [
     'edit_btn' => '수정하기',
     'trxn_details' => '거래 세부 정보',
     'bal_amt' => 'BAL 토큰',
-    'amount' => 'Amount to be paid',
+    'amount' => '지급금액',
     'pay_accept' => '당사는 다음 지급 방식을 수락합니다',
     'choose_pay' => '결제 방법을 선택하세요',
     'pay1' => '신용 카드/ 직불 카드',
