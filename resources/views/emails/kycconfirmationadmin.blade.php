@@ -23,6 +23,7 @@
 		<li style="padding-top: 10px;"><b>Amount Paid:</b> {{ $amount }}</li>
 		@endif
 		<li style="padding-top: 10px;"><b>Country:</b> {{ $country }}</li>
+		<li style="padding-top: 5px;"><b>Physical Address:</b> {{ $address }}</li>
 		<li style="padding-top: 10px;"><b>User ETH address:</b> {{ $receiver_id }}</li>
 		<li style="padding-top: 10px;"><b>User Verification ID:</b> {{ $user_id }}</li>
 		<li style="padding-top: 10px;"><b>User Selfie Verification:</b> {{ $selfie_user_id }}</li>

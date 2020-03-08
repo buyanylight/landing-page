@@ -98,6 +98,12 @@
 								</div>
 							</div>
 							<div class="form-group row">
+								<label class="col-sm-3 col-form-label"><b>{{ trans('msg.buyer_address')}}:</b> </label>
+								<div class="col-sm-9">
+									<input type="text" name="address" class="form-control" placeholder="{{ trans('msg.buyer_address_placeholder')}}" required="required">
+								</div>
+							</div>
+							<div class="form-group row">
 								<label class="col-sm-3 col-form-label"><b>{{ trans('msg.kyc3')}}:</b> </label>
 								<div class="col-sm-9">
 									<select name="country" class="form-control" required>
