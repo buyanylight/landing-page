@@ -712,7 +712,6 @@
 			                <a class="closeIEOPopUp btn btn-success btn-lg" 
 			                style="font-size: 1em; padding: 0.25em 1em;" 
 			                href="{{ route('ieo') }}#section-bal-token">
-				                Get your <strong>17.5%</strong>
 				                {{ trans('msg.section3_btn1') }}
 			            	</a>			            	
 	            		</h3>
