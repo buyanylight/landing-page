@@ -577,7 +577,11 @@ return [
     'step3' => 'Step 3',
     'step3_desc' => 'Know Your Customer (KYC)',
     'disclaimer' => 'You are not eligible and you are not to purchase any BAL token if you are a citizen, resident (tax or otherwise) or green card holder of the United States of America or a citizen or resident of the Peoples Republic of China, Iran and North Korea.',
-    'agreement' => 'Token Sale Agreement',
+    'agreement' => '    <a data-fancybox href=":file" class="btn" style="background-color: #5555A4; color: white;"> Token Sale Agreement
+    <span class="text-success sale-tick" style="display: none;">
+      <i class="fas fa-check-circle"></i>
+    </span>
+  </a>',
     'info_head' => 'Investor Information',
     'ref_id' => 'Reference ID',
     'buyer_name' => 'Name',
