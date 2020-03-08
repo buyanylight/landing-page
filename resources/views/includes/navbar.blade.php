@@ -98,6 +98,8 @@
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/supplier/register">{{ trans('msg.Sellers') }}</a>
                     </div>
                 </li>
+                @if(\Request::is('buy-token') || \Request::is('kyc') || \Request::is('kyc-form') || \Request::is('thank-you'))
+                @else
                 @php $locale = session()->get('locale'); @endphp
                 <li class="nav-item dropdown">
                     <a id="navbarDropdownMenuLink" class="nav-link dropdown-toggle text-white links" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -119,6 +121,7 @@
                         </a>
                     </div>
                 </li>
+                @endif
             </ul>
         </div>
     </div>
