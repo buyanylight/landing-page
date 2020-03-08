@@ -18,9 +18,9 @@ return [
     'section2_lightfinder_desc'=>'B2B & B2C',
     'section2_myhome_desc'=>'개인적 집, 별장, 궁전',
     'section2_mytower_desc'=>'컨설턴트, 계약자, 고객',
-    'section2_lightfinder_desc1'=>'LightFinder 사용자는 조명 회사, 컨설턴트 또는 집주인과 같은 기업체로서 개인적으로나 제조업체로부터 직접 LED 조명을 공급받기를 선호합니다.',
+    'section2_lightfinder_desc1'=>'LightFinder 사용자는 조명 회사, 컨설턴트 또는 집주인과 같은 기업체로서 개인적으로나 제조업체로부터 직접 LED 조명을 공급받기를 선호합니다...',
     'section2_myhome_desc1'=>'일반 조명은 스타일리쉬한 21세기 주택에 어울리지 않습니다.  맞춤형 LED는 에너지와 비용을 절약하고 지구를 보호하며 훨씬 더 미적으로 디자인을 할 기회를 제공합니다...',
-    'section2_mytower_desc1'=>'My Tower 사용자들은 당사의 전문 지식을 활용하여 시장에서 최고의 제품을 얻고, 돈을 절약하고, 그들의 프로젝트를 개선해 수행합다. 프로젝트를 시작할 때 당사의 패키지에 가입하십시오.',
+    'section2_mytower_desc1'=>'My Tower 사용자들은 당사의 전문 지식을 활용하여 시장에서 최고의 제품을 얻고, 돈을 절약하고, 그들의 프로젝트를 개선해 수행합다. 프로젝트를 시작할 때 당사의 패키지에 가입하십시오...',
     'section2_video'=>'동영상 재생',
     'section2_lightfinder_btn'=>'품질이 아닌 LED 비용을 절감하세요',
     'section2_myhome_btn'=>'꿈같은 가격으로 꿈의 집 LED 찾기',
@@ -669,6 +669,8 @@ return [
     'thanks11' => '금액 지급',
     'thanks12' => '사용자 인증 ID 이미지',
     'thanks13' => '사용자 셀카 확인 이미지',
+
+    'more_btn' => '더'
 
 
 

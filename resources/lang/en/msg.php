@@ -664,6 +664,9 @@ return [
     'thanks13' => 'User selfie verification image',
 
 
+    'more_btn' => 'more'
+
+
 
 
 
