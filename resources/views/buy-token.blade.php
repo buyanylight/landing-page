@@ -354,17 +354,13 @@
 				<div class="pt-3">
 				
 					<div class="pt-3">
-						<a data-fancybox href="{{ Util::assetUrl('BAL_Token_Sale_Agreement.pdf') }}" class="btn" style="background-color: #5555A4; color: white;"> {{ trans('msg.agreement')}}
-							<span class="text-success sale-tick" style="display: none;">
-								<i class="fas fa-check-circle"></i>
-							</span>
-						</a>
+						@if(app()->getLocale() == 'en')
+							{!! trans('msg.agreement', ['file' => Util::assetUrl('BAL_Token_Sale_Agreement.pdf')]) !!}
+							@else 
+							{!! trans('msg.agreement', ['file' => Util::assetUrl('BAL_Token_Sale_Agreement_kr.pdf')]) !!}
+						@endif
 					</div>
-					
 				</div>
-
-
-
 				<div class="pt-3 pb-5">
 					@if( $curr == 'credit')
 					<div class="row">
