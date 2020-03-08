@@ -1178,13 +1178,13 @@
 					  								</div>
 				  									<div class="form-group row">
 				  										<label class="col-sm-3 col-form-label">
-				  											<b>{{ trans('msg.btc6')}}:</b>
+				  											<b>{{ trans('msg.btc5')}}:</b>
 				  											<span class="" name="transaction_id" data-toggle="tooltip" data-placement="bottom" title="{{ trans('msg.btc6.1')}}" style="font-size: 12px; ">
                                                             <i class="fas fa-info-circle"></i>
                                                         </span>
 				  										</label>
 				  										<div class="col-sm-9">
-				  											<input type="text" name="transaction_id" class="form-control" required="required" placeholder="{{ trans('msg.btc3')}}" pattern=".{64,}" required title="Please enter the correct address">
+				  											<input type="text" name="transaction_id" class="form-control" required="required" placeholder="{!! trans('msg.btc6') !!}" pattern=".{64,}" required title="Please enter the correct address">
 				  										</div>
 				  									</div>
 				  									<div class="form-group row">

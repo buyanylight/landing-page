@@ -87,45 +87,49 @@
 						</b>
 					</h3>
 					<div class="pt-4">
-						<p>Hello {{ $u_details['user_name'] }}, </p>
-						<p>Thank you for completing the Know Your Customer (KYC) form.</p>
-						<p>We have received the following details:</p>
+					<p>{{ trans('msg.thanks1')}} {{ $u_details['user_name'] }}, </p>
+				<p>{{ trans('msg.thanks2')}}</p>
+				<p>{{ trans('msg.thanks3')}}</p>
 						<ul>
-							<li><b>Reference ID</b> : {{ $u_details['user_reference_id'] }}</li>
-							<li><b>Name:</b> {{ $u_details['user_name'] }}</li>
-							<li><b>Email:</b> {{ $u_details['email_id'] }}</li>
-							<li><b>Mobile:</b> {{ $u_details['number'] }}</li>
-							<li><b>BAL Tokens purchased:</b> {{ $u_details['bal_amt'] }} BAL</li>
-							<li><b>Amount Paid:</b> {{ $u_details['amount'] }}</li>
-							<li><b>Country:</b> {{ $u_details['country'] }}</li>
-							<li><b>User verification ID image:</b> Received</li>
-							<li><b>User selfie verification image:</b> Received</li>
+					<li><b>{{ trans('msg.ref_id')}}:</b> {{ $u_details['user_reference_id'] }}</li>
+					<li><b>{{ trans('msg.buyer_name')}}:</b> {{ $u_details['user_name'] }}</li>
+					<li><b>{{ trans('msg.buyer_email')}}:</b> {{ $u_details['email_id'] }}</li>
+					<li><b>{{ trans('msg.buyer_mobile')}}:</b> {{ $u_details['number'] }}</li>
+					<li><b>{{ trans('msg.thanks10')}}:</b> {{ $u_details['bal_amt'] }} BAL</li>
+					<li><b>{{ trans('msg.thanks11')}}:</b> {{ $u_details['amount'] }}</li>
+					<li><b>{{ trans('msg.kyc3')}}:</b> {{ $u_details['country'] }}</li>
+					<li><b>{{ trans('msg.buyer_address')}}:</b> {{ $u_details['address'] }}</li>
+					<li><b>{{ trans('msg.thanks12')}}:</b> Received</li>
+					<li><b>{{ trans('msg.thanks13')}}:</b> Received</li>
 					<input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse2" class="recaptchaResponse">
-
-						</ul>
-							<p class="account-confirm">
-				 <b> Please wait while we check for your account. </b>
+				</ul>
+				<p class="account-confirm">
+				 <b> {{ trans('msg.thanks4')}}</b>
 				</p>
-						<p>
-							<i>In case we face issues with your payment or KYC, we will contact you via Email or Mobile.</i>
-						</p>
-						<p>
-							Once your payment was received and after successful KYC passing, you will receive your {{ $u_details['bal_amt'] }} BAL Tokens into the following ETH address: {{ $u_details['receiver_id'] }}
-						</p>
-						<p>
-							For any further queries, please contact us at 
-							<a href="mailto:invest@buyanylight.com">invest@buyanylight.com</a> or call us at +971 (0) 488 732 65.
-						</p>
+				<p>
+					<i>{{ trans('msg.thanks5')}}</i>
+				</p>
+				<p>
+					{{ trans('msg.thanks6', [
+						'bal_amt' => $u_details['bal_amt'], 
+						'receiver_id' => $u_details['receiver_id']
+						])
+					}}
+				</p>
+				<p>
+					{!! trans('msg.kyc2') !!}
+				</p>
 
-						<p>
-							Thanks again for your trust, support and BAL Token investment during our PRE-IEO sale.
-						</p>
+				<p>
+					{{ trans('msg.thanks8')}}
+				</p>
 
-						<p>Thank You!
-							<br>
-							Team BuyAnyLight
-						</p>
-						
+				<p>{{ trans('msg.thanks7')}}
+					<br>
+					BuyAnyLight Team
+				</p>
+				
+			</div>		
 					</div>
 				</div>
 			</div>

@@ -664,7 +664,10 @@ return [
     'thanks13' => 'User selfie verification image',
 
 
-    'more_btn' => 'more'
+    'more_btn' => 'more',
+
+    'buyer_address' => 'Physical Address',
+    'buyer_address_placeholder' => 'Enter your Physical Address',
 
 
 

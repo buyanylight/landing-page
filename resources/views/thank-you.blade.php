@@ -114,6 +114,7 @@
 					<li><b>{{ trans('msg.thanks10')}}:</b> {{ $u_details['bal_amt'] }} BAL</li>
 					<li><b>{{ trans('msg.thanks11')}}:</b> {{ $u_details['amount'] }}</li>
 					<li><b>{{ trans('msg.kyc3')}}:</b> {{ $u_details['country'] }}</li>
+					<li><b>{{ trans('msg.buyer_address')}}:</b> {{ $u_details['address'] }}</li>
 					<li><b>{{ trans('msg.thanks12')}}:</b> Received</li>
 					<li><b>{{ trans('msg.thanks13')}}:</b> Received</li>
 					<input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse2" class="recaptchaResponse">

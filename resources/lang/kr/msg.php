@@ -670,7 +670,10 @@ return [
     'thanks12' => '사용자 인증 ID 이미지',
     'thanks13' => '사용자 셀카 확인 이미지',
 
-    'more_btn' => '더'
+    'more_btn' => '더',
+
+    'buyer_address' => '주소',
+    'buyer_address_placeholder' => '실제 주소를 입력하십시오',
 
 
 

@@ -756,7 +756,7 @@ class TokenController extends Controller
 			TokenBuyer::create($email_details);
 
 
-	        \Mail::to('info@buyanylight.com')->send(new BuyingConfirmationAdmin($request));
+	        \Mail::to('rizvi.almanilighting@gmail.com')->send(new BuyingConfirmationAdmin($request));
 
 
 	        \Mail::to($request->get('email_id'))->send(new BuyingConfirmation($request));
@@ -1606,6 +1606,7 @@ class TokenController extends Controller
             'user_name' => ['required', 'min:3'],
             'email_id' => ['required'],
             'country' => ['required'],
+            'address' => ['required'],
             'receiver_id' => ['required'],
             'bal_amt' => ['required'],
             'amount' => ['required'],
@@ -1654,6 +1655,7 @@ class TokenController extends Controller
        		'amount' => $request['amount'],
        		'number' => $request['number'],
        		'country' => $request['country'],
+       		'address' => $request['address'],
        		'later_bank' => (!empty($request->get('later_bank'))) ? 1 : '',
        		'reference' => (!empty($request->get('reference'))) ? 1 : '',
        		'password' => $passwordString,	
@@ -1692,6 +1694,7 @@ class TokenController extends Controller
 	      		'user_id_pic' => $file_name,
 	      		'selfie_id_pic' => $selfie_file_name,
 	      		'country' => $request['country'],
+	      		'address' => $request['address'],
 	      	]);
 
 
@@ -1699,7 +1702,7 @@ class TokenController extends Controller
 
         	\Mail::to($request->get('email_id'))->send(new KYCConfirmation($request));
 
-        	\Mail::to('info@buyanylight.com')->send(new KYCConfirmationAdmin($request));
+        	\Mail::to('rizvi.almanilighting@gmail.com')->send(new KYCConfirmationAdmin($request));
 
         $agent = new Agent();
 

@@ -13,7 +13,9 @@ class AddAddress extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('token_users', function (Blueprint $table) {
+            $table->string('address')->nullable();
+        });
     }
 
     /**
