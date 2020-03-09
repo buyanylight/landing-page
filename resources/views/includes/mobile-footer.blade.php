@@ -168,7 +168,7 @@
             <div class="accordion-group">
                 <div class="accordion-heading buyer-btn">
                 	<a class="accordion-toggle pt-4 pb-4 pl-3 text-white w-100 d-block" data-toggle="collapse" href="#buyer">
-                    	Buyers {{ trans('msg.footer2') }}
+                    	{{ trans('msg.footer2') }}
                     	<div class="buyer-down float-right pr-4">
                   			<i class="fas fa-angle-down"></i>
                   		</div>
