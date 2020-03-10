@@ -324,9 +324,9 @@
 						</h5>
 						<div class="pt-3">
 							<div class="row " style="font-size:12px;">
-								<p class="col-md-1 m-0 d-flex align-items-center"><b>{{ trans('msg.section3_progress1') }}</b></p>
-								<p class="col-md-2 text-center m-0"><b>{{ trans('msg.section3_progress2') }}</b></p>
-								<p class="col-md-7 text-right m-0 d-flex align-items-center justify-content-end"><b>{{ trans('msg.section3_progress3') }}</b></p>
+								<p class="col-2 m-0 d-flex align-items-center"><b>{{ trans('msg.section3_progress1') }}</b></p>
+								<p class="col-4 text-center m-0"><b>{{ trans('msg.section3_progress2') }}</b></p>
+								<p class="col-6 text-right m-0 d-flex align-items-center justify-content-end"><b>{{ trans('msg.section3_progress3') }}</b></p>
 							</div>
 							<div class="pt-1">
 								<div class="progress">
@@ -335,9 +335,9 @@
 								</div>
 							</div>
 							<div class="row pt-1 " style="font-size:12px;">
-							<p class="col-md-1 mb-0"><b>{{ trans('msg.section3_progress4') }}</b></p>
-								<p class="col-md-2 text-center mb-0"><b>{{ trans('msg.section3_progress5') }}</b></p>
-								<p class="col-md-7 text-right mb-0"><b>{{ trans('msg.section3_progress6') }}</b></p>
+							<p class="col-2 mb-0"><b>{{ trans('msg.section3_progress4') }}</b></p>
+								<p class="col-4 text-center mb-0"><b>{{ trans('msg.section3_progress5') }}</b></p>
+								<p class="col-6 text-right mb-0"><b>{{ trans('msg.section3_progress6') }}</b></p>
 							</div>
 						</div>
 						<div class="pt-4 text-left">
