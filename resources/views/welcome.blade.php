@@ -1071,7 +1071,7 @@
 							</button>
 							<div class="collapse" id="home2">
 								<div class="card card-body ml-0 pl-0 border-0">
-								{{ trans('msg.section9_perfect_desc') }}
+								{!! trans('msg.section9_perfect_desc') !!}
 								</div>
 							</div>
 							<button class="btn w-100 text-left pl-0 home3" type="button" data-toggle="collapse" data-target="#home3" aria-expanded="false" aria-controls="home3">
@@ -1243,7 +1243,7 @@
 							</button>
 							<div class="collapse" id="tower3">
 								<div class="card card-body ml-0 pl-0 border-0">
-								{!! trans('msg.section9_next_desc2') !!}
+									{!! trans('msg.section9_next_desc2') !!}
 								</div>
 							</div>
 							<button class="btn w-100 text-left pl-0 pricing" type="button" data-toggle="collapse" data-target="#pricing" aria-expanded="false" aria-controls="pricing">
