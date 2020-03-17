@@ -40,23 +40,23 @@
 	<div class="intro-investor d-flex align-items-center">
 		<div class="container">
 			<h3 class="text-white">
-				<b>Be an investor</b>
+				<b>{{ trans('msg.investor1') }}</b>
 			</h3>
 			<p class="text-white">
-				<b>BAL: immense growth potential and exceptional investment opportunities!</b>
+				<b>{{ trans('msg.investor2') }}</b>
 			</p>
 		</div>
 	</div>
 </div>
 <div class="container pt-5">
 	<p>
-		BAL has pioneered the innovative sourcing of LED lights and we intend to become one of the most successful commercial platforms in the world.
+    {{ trans('msg.investor3') }}
 	</p>
 </div>
 <div class="container pb-5">
-	<h3><b>Drop us a message</b></h3>
+	<h3><b>{{ trans('msg.investor4') }}</b></h3>
 	<p>
-        If you’re considering investing and would like to know more, please get in touch to discuss our hugely exciting investment proposal.
+    {{ trans('msg.investor5') }}
     </p>
 	<div class="contact-form pt-3 pb-5">
 			<div class="container contact-form-container bg-black"> 
@@ -68,13 +68,13 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="inputBox ">
-                                            <div class="inputText">Name</div>
+                                            <div class="inputText">{{ trans('msg.investor6') }}</div>
                                             <input type="text" name="name" class="input">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="inputBox">
-                                            <div class="inputText">Email</div>
+                                            <div class="inputText">{{ trans('msg.investor7') }}</div>
                                             <input type="text" name="email" class="input">
                                         </div>
                                     </div>
@@ -82,7 +82,7 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="inputBox">
-                                            <div class="inputText">Subject</div>
+                                            <div class="inputText">{{ trans('msg.investor8') }}</div>
                                             <input type="text" name="subject" class="input">
                                         </div>
                                     </div>
@@ -90,7 +90,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="inputBox">
-                                            <div class="inputText">Message</div>
+                                            <div class="inputText">{{ trans('msg.investor9') }}</div>
                                             <textarea class="input" name="message"></textarea>
                                         </div>
                                     </div>
@@ -98,7 +98,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
-                                        <input type="submit" class="btn btn-dark w-100 send-message" value="Send Message" disabled="disabled">
+                                        <input type="submit" class="btn btn-dark w-100 send-message" value="{{ trans('msg.investor10') }}" disabled="disabled">
                                     </div>
                                 </div>
                             </form>
@@ -123,7 +123,7 @@
                                 </div>
                                 <div class="col-md-10">
                                     <span class="text-white"><b>+971 4 887 3265</b></span><br>
-                                    <span>Mon to Fri 9am to 6pm</span><br>
+                                    <span>{{ trans('msg.investor11') }}</span><br>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +134,7 @@
                                 </div>
                                 <div class="col-md-10">
                                     <span  class="text-white"><b>info@buyanylight.com</b></span><br>
-                                    <span>Send us your query anytime</span><br>
+                                    <span>{{ trans('msg.investor12') }}</span><br>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
         </div>
         <h3>
            <b>
-               Also have a look at our <a href="/ieo">IEO Page</a>
+           {!! trans('msg.investor13') !!}
            </b>
         </h3>
 </div>

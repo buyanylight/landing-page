@@ -255,7 +255,7 @@ return [
     'News' => '뉴스',
     'Blog' => '블로그',
     'Downloads' => '다운로드',
-    'Contact' => '접촉',
+    'Contact' => '연락처',
     'Sign' => '로그인',
     'Register' => '등록하기',
     'Buyers' => '구매자',
@@ -444,7 +444,7 @@ return [
     'sectionteam_heading' =>'우리를 만나 <span class="team-text">팀 </span> <span class="advisor-text">자문단</span>',
     'sectionteam_Team'=>'팀',
     'sectionteam_Advisory'=>'자문단',
-    'sectionteam_about_btn'=>'저에 관해서',
+    'sectionteam_about_btn'=>'관련 정보',
     
     'sectionteam_1_name'=>'Johannes Eidens',
     'sectionteam_1_desc'=>'CEO & 설립자',
@@ -674,6 +674,29 @@ return [
 
     'buyer_address' => '주소',
     'buyer_address_placeholder' => '실제 주소를 입력하십시오',
+
+
+
+    'europop_up' => '당사는 더 나은 검색 환경을 제공하고, 사이트 이용 현황을 분석하고, 컨텐츠를 개인에 적합하게 제공해 드리기 위해 쿠키를 사용합니다. 쿠키를 사용하는 방법과 개인 정보 보호 정책에서 쿠키를 제어하는 방법에 대해 읽어보세요. 이 사이트를 계속 사용하신다면 당사가 쿠키를 사용한다는 것에 동의하시는 것입니다.',
+    'europop_up_btn1' => '계속하기',
+    'europop_up_btn2' => '더 알아보기',
+
+
+    'investor1' => '투자자가 되세요',
+    'investor2' => 'BAL: 엄청난 성장 가능성과 특출난 투자 기회들!',
+    'investor3' => 'BAL은 LED 조명을 혁신적으로 구매하는 방식을 개척했으며, 당사는 세계에서 가장 성공적인 상용 플랫폼 중 하나가 될 것입니다.',
+    'investor4' => '메시지를 남겨주세요',
+    'investor5' => '만약 투자에 대해 생각하시며 더 알아보고 싶으시다면, 당사의 아주 흥미로운 투자 제안에 대해 논의드릴 수 있도록 연락을 주세요.',
+    'investor6' => '성명',
+    'investor7' => '이메일',
+    'investor8' => '제목',
+    'investor9' => '메시지',
+    'investor10' => '메시지 보내기',
+    'investor11' => '월요일부터 금요일까지, 오전 9시부터 오후 6시까지',
+    'investor12' => '언제나 문의사항을 보내주세요',
+    'investor13' => '   
+    당사의 <a href="/ieo">IEO</a>페이지도 확인해 보세요',
+    'investor14' => '당사의 <a href="/ieo">IEO</a>페이지도 확인해 보세요',
 
 
 

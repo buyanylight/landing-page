@@ -563,6 +563,16 @@
 	setInterval(function() { makeTimerPublic(); }, 1000);
 
 
+	if ($(".eupopup").length > 0) {
+        $(document).euCookieLawPopup().init({
+            'info' : 'YOU_CAN_ADD_MORE_SETTINGS_HERE',
+            'cookiePolicyUrl' : '/privacy',
+            'popupTitle' : '',
+            'popupText' : '{{ trans('msg.europop_up') }}',
+            'buttonContinueTitle' : '{{ trans('msg.europop_up_btn1') }}',
+            'buttonLearnmoreTitle' : '{{ trans('msg.europop_up_btn2') }}',
+        });
+    }
 
 	</script>
 
