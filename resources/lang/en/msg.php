@@ -670,6 +670,27 @@ return [
     'buyer_address_placeholder' => 'Enter your Physical Address',
 
 
+    'europop_up' => 'We use cookies to offer you a better browsing experience, analyze site traffic, personalize content. Read about how we use cookies and how you can control them on our Privacy Policy. If you continue to use this site, you consent to our use of cookies.',
+    'europop_up_btn1' => 'Continue',
+    'europop_up_btn2' => 'Learn more',
+
+
+    'investor1' => 'Be an investor',
+    'investor2' => 'BAL: immense growth potential and exceptional investment opportunities!',
+    'investor3' => 'BAL has pioneered the innovative sourcing of LED lights and we intend to become one of the most successful commercial platforms in the world.',
+    'investor4' => 'Drop us a message',
+    'investor5' => 'If you\'re considering investing and would like to know more, please get in touch to discuss our hugely exciting investment proposal.',
+    'investor6' => 'Name',
+    'investor7' => 'Email',
+    'investor8' => 'Subject',
+    'investor9' => 'Message',
+    'investor10' => 'Send Message',
+    'investor11' => 'Mon to Fri 9am to 6pm',
+    'investor12' => 'Send us your query anytime',
+    'investor13' => 'Also have a look at our <a href="/ieo">IEO Page</a>',
+    'investor14' => 'Also have a look at our <br> <a href="/ieo">IEO Page</a>',
+
+
 
 
 

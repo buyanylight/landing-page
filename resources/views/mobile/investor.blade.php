@@ -28,50 +28,55 @@
 <div class="section14 pt-5 pb-5 all-contents">
 	<div class="section14-contents d-flex align-items-center">
 		<div class="container text-white">
-			<h3><b>BE AN INVESTOR</b></h3>
+			<h3><b>{{ trans('msg.investor1') }}</b></h3>
 		</div>
 	</div>
 	<div class="container pt-3">
 			<p>
-				<b>BuyAnyLight… IMMENSE GROWTH POTENTIAL AND EXCEPTIONAL INVESTMENT OPPORTUNITIES!</b>
+				<b>{{ trans('msg.investor2') }}</b>
 			</p>
 			<p>
-				BAL has pioneered the innovative sourcing of LED lights and we are set to become one of the most successful commercial platforms in the world.
+			{{ trans('msg.investor3') }}
 			</p>
-		<p>If you’re considering investing and would like to know more, please call +971 4 8873265 to discuss our hugely exciting investment proposal!</p>
+
 		<div class="pt-3">
-		<h3><b>Drop us a message</b></h3>
-		<p>Feel free to get in touch with us</p>
+		<h3><b>{{ trans('msg.investor4') }}</b></h3>
+		<p>{{ trans('msg.investor5') }}</p>
 			<form method="post" action="/contact-us">
 	            {{ csrf_field() }}
 	            <div class="row">
 	                <div class="col-sm-6">
 	                    <div class="form-group">
-	                    	<input class="form-control" name="name" id="name" type="text" placeholder="Enter your name" required>
+	                    	<input class="form-control" name="name" id="name" type="text" placeholder="{{ trans('msg.investor6') }}" required>
 	                    </div>
 	                </div>
 	                <div class="col-sm-6">
 	                	<div class="form-group">
-	                    	<input class="form-control" name="email" id="email" type="email" placeholder="Enter email address" required>
+	                    	<input class="form-control" name="email" id="email" type="email" placeholder="{{ trans('msg.investor7') }}" required>
 	                   	</div>
 	                </div>
 	                <div class="col-12">
 	                    <div class="form-group">
-	                     	<input class="form-control" name="subject" id="subject" type="text" placeholder="Enter Subject"required>
+	                     	<input class="form-control" name="subject" id="subject" type="text" placeholder="{{ trans('msg.investor8') }}"required>
 	                    </div>
 	                </div>
 	                <div class="col-12">
 	                    <div class="form-group">
-	                    	<textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" placeholder="Enter Message" spellcheck="false"></textarea required>
+	                    	<textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" placeholder="{{ trans('msg.investor9') }}" spellcheck="false"></textarea required>
 	                    </div>
 	                </div>
 	            </div>
 	            <input type="hidden" value="" name="recaptcha_response" id="recaptchaResponse">
 	            <div class="form-group mt-3">
-	            	<button type="submit" class="btn btn-dark w-100 send-message" disabled="disabled">Send Message</button>
+	            	<button type="submit" class="btn btn-dark w-100 send-message" disabled="disabled">{{ trans('msg.investor10') }}</button>
 	            </div>
 	        </form>
 		</div>
+		<h3>
+			<b>
+			{!! trans('msg.investor14') !!}
+			</b>
+		 </h3>
 	</div>
 </div>
 <script src="https://www.google.com/recaptcha/api.js?render={{ env('CAPTCHA_KEY') }}"></script>
