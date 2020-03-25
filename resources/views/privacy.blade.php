@@ -72,7 +72,7 @@
                                 <span style="font-weight: bold">Name:</span> Dotcom Ventures FZE
                             </li>
                             <li class="pt-2">
-                                <span style="font-weight: bold">Address:</span> Almani Ligthing L.L.C Dubai Investment Park 1, Opp. Green Community East, Showroom 10, P.O. BOX 3219, Dubai, United Arab Emirates
+                                <span style="font-weight: bold">Address:</span> Almani Lighting L.L.C Dubai Investment Park 1, Opp. Green Community East, Showroom 10, P.O. BOX 3219, Dubai, United Arab Emirates
                             </li>
                             <li class="pt-2">
                                 <span style="font-weight: bold">Email:</span> <a href="mailto:info@buyanylight.com">info@buyanylight.com</a>
