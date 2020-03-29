@@ -301,10 +301,10 @@ return [
     'section3_private_desc2'=> '1st Oct 2019 to 31st Oct 2019',
     'section3_pre_ieo'=> 'PRE-IEO',
     'section3_pre_ieo_desc1'=> '0.25 USD',
-    'section3_pre_ieo_desc2'=> '1st Nov 2019 to 6th April 2020',
+    'section3_pre_ieo_desc2'=> '1st Nov 2019 to 31st May 2020',
     'section3_ieo'=> 'IEO',
     'section3_ieo_desc1'=> '0.30303 USD',
-    'section3_ieo_desc2'=> '7th April 2020 to 30th April 2020',
+    'section3_ieo_desc2'=> '1st June 2020 to 30th June 2020',
     // Section 4
     'section4_heading'=>'Meet BuyAnyLight',
     'section4_desc'=>'BuyAnyLight helps you source quality LED products for all of your lighting needs. Using blockchain, AI, big data and smart contracts, it gets your inquiries before the right manufacturers and ensures that you receive the products you ordered.',
