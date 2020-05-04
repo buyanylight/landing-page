@@ -323,7 +323,7 @@
 		<div class="row text-white">
 			<div class="col-6">
 				<h4>
-					<b>{!! trans('msg.section7_heading') !!}</b>
+					<b>{!! trans('msg.section7_heading1') !!}</b>
 				</h4>
 				<p>
 					{{ trans('msg.section7_para1') }}
