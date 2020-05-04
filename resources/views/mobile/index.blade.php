@@ -254,7 +254,7 @@
 	<div class="section7 pt-5 pb-5" id="works">
 		<div class="container">
 			<h4 class="text-center text-white">
-				<b>{!! trans('msg.section7_heading') !!}</b>
+				<b>{!! trans('msg.section7_heading1') !!}</b>
 			</h4>
 			<div class="row text-white pt-4">
 				<div class="col-12">
