@@ -301,7 +301,7 @@ return [
     'section3_private_desc2'=> '2019년 10월 1일부터 2019년 10월 31일까지',
     'section3_pre_ieo'=> '사전 IEO',
     'section3_pre_ieo_desc1'=> '0.25 USD',
-    'section3_pre_ieo_desc2'=> '2019년 11월 1일부터 2020년 5월 31일',
+    'section3_pre_ieo_desc2'=> '2019년 11월 1일부터 2020년 9월 30일',
     'section3_ieo'=> 'IEO',
     'section3_ieo_desc1'=> '0.30303 USD',
     'section3_ieo_desc2'=> '2020년 10월 1일 2020년 10월 30일',
