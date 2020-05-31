@@ -536,7 +536,7 @@
 
 	function makeTimerPublic() {
 
-		var endTime = new Date("01 June 2020 0:00:00 GMT+04:00");
+		var endTime = new Date("01 October 2020 0:00:00 GMT+04:00");
 		endTime = (Date.parse(endTime) / 1000);
 
 		var now = new Date();
@@ -554,10 +554,10 @@
 		if (minutes < "10") { minutes = "0" + minutes; }
 		if (seconds < "10") { seconds = "0" + seconds; }
 
-		$("#days1").html("<span style='font-size:10px;'>{{ trans('msg.section3_days') }}</span><br><span style='font-size: 24px;'>" + days +" </span>");
-		$("#hours1").html("<span style='font-size:10px;'>{{ trans('msg.section3_hrs') }}</span><br><span style='font-size: 24px;'>" + hours +" </span>" );
-		$("#minutes1").html("<span style='font-size:10px;'>{{ trans('msg.section3_mins') }}</span> <br><span style='font-size: 24px;'>" + minutes +" </span>");
-		$("#seconds1").html("<span style='font-size:10px;'>{{ trans('msg.section3_secs') }}</span><br><span style='font-size: 24px;'>" + seconds +" </span>" );       
+		$("#days1").html("<span style='font-size:10px;'>{{ trans('msg.section3_days') }}</span><br><span style='font-size:17px;'>" + days +" </span>");
+		$("#hours1").html("<span style='font-size:10px;'>{{ trans('msg.section3_hrs') }}</span><br><span style='font-size: 17px;'>" + hours +" </span>" );
+		$("#minutes1").html("<span style='font-size:10px;'>{{ trans('msg.section3_mins') }}</span> <br><span style='font-size: 17px;'>" + minutes +" </span>");
+		$("#seconds1").html("<span style='font-size:10px;'>{{ trans('msg.section3_secs') }}</span><br><span style='font-size: 17px;'>" + seconds +" </span>" );       
 
 	}
 	setInterval(function() { makeTimerPublic(); }, 1000);

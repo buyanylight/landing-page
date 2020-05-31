@@ -304,7 +304,7 @@ return [
     'section3_pre_ieo_desc2'=> '2019년 11월 1일부터 2020년 5월 31일',
     'section3_ieo'=> 'IEO',
     'section3_ieo_desc1'=> '0.30303 USD',
-    'section3_ieo_desc2'=> '2020년 6월 1일 2020년 6월 30일',
+    'section3_ieo_desc2'=> '2020년 10월 1일 2020년 10월 30일',
     // Section 4
     'section4_heading'=>'BuyAnyLight를 만나보세요',
     'section4_desc'=>'BuyAnyLight는 모든 조명에 관련된 요구에 맞는 고품질의 LED 제품을 제공하는 데 도움을 드립니다. 블록체인, AI, 빅 데이터 및 스마트 계약을 사용하여 올바른 제조업체에 견적을 문의하고 주문한 제품을 받으세요.',
