@@ -45,18 +45,18 @@
 					</h4>
 					<div class="row mt-3">
 						<div class="col-4">
-							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" class="btn btn-BAL w-100">{{ trans('msg.section1_button1')}}</a>
+							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight.pdf') }}" class="btn btn-BAL w-100" target="_blank">{{ trans('msg.section1_button1')}}</a>
 						</div>
 						<div class="col-4">
-							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" class="btn btn-BAL w-100">{{ trans('msg.section1_button2')}}</a>
+							<a href="{{ Util::assetUrl('one-pagers/BuyAnyLight-IEO.pdf') }}" class="btn btn-BAL w-100" target="_blank">{{ trans('msg.section1_button2')}}</a>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-4">
-							<a href="{{ route('ieo') }}" class="btn btn-BAL mt-2 w-100">{{ trans('msg.section1_button3')}}</a>
+							<a href="{{ route('ieo') }}" class="btn btn-BAL mt-2 w-100" target="_blank">{{ trans('msg.section1_button3')}}</a>
 						</div>
 						<div class="col-4">
-							<a href="{{ route('ieo') }}#section-bal-token" class="btn btn-BAL mt-2 w-100">{{ trans('msg.section1_button4')}}</a>
+							<a href="{{ route('ieo') }}#section-bal-token" class="btn btn-BAL mt-2 w-100" target="_blank">{{ trans('msg.section1_button4')}}</a>
 						</div>
 					</div>
 					<div class="mt-3">
