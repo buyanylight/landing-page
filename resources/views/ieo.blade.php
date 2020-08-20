@@ -228,14 +228,8 @@
 						{!! trans('msg.section1_desc') !!}
 					</p>
 					<div class="pt-3 row">
+						
 						<div class="col pr-1">
-							<a href="#meet-bal" class="btn btn-BAL w-100">
-								<i class="fas fa-link"></i>
-								<br>
-								{{ trans('msg.section1_btn1') }}
-							</a>
-						</div>
-						<div class="col pr-1 pl-1">
 							<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}"  target="_blank" class="btn btn-BAL w-100">
 								<i class="far fa-file-pdf"></i>
 								<br>
@@ -256,7 +250,7 @@
 								{{ trans('msg.section1_btn4') }}
 							</a>					
 						</div>
-						<div class="col pl-1" style="z-index:100">
+						<div class="col pr-1 pl-1" style="z-index:100">
 							<a href="{{ Util::assetUrl('BuyAnyLight_Pitch_Deck.pdf') }}" class="btn btn-BAL w-100" target="_blank">
 								<i class="far fa-file-pdf"></i>
 								<br>
@@ -268,6 +262,13 @@
 								<i class="fas fa-coins"></i>
 								<br>
 								{{ trans('msg.section1_btn6') }}
+							</a>
+						</div>
+						<div class="col-12 pt-2">
+							<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL w-100">
+								<i class="fas fa-link"></i>
+								<br>
+								{{ trans('msg.section1_button4') }}
 							</a>
 						</div>
 					</div>

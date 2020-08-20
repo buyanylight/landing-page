@@ -208,14 +208,6 @@
 			<div class="col-12 text-center pt-4">
 				<div class="row">
 					<div class="col-6">
-						<a href="#meet-bal" 
-							class="btn btn-BAL w-100 mt-3 ">
-							<i class="fas fa-link"></i>
-							&nbsp;
-							{{ trans('msg.section1_btn1') }}								
-						</a>
-					</div>
-					<div class="col-6">
 						<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" 
 							target="_blank" class="btn btn-BAL w-100 mt-3">
 							<i class="far fa-file-pdf"></i>
@@ -225,7 +217,7 @@
 					</div>
 					<div class="col-6">
 						<a href="{{ Util::assetUrl('papers/Yellowpaper_1.0.pdf') }}" 
-							target="_blank" class="btn btn-BAL w-100 mt-2">
+							target="_blank" class="btn btn-BAL w-100 mt-3">
 							<i class="far fa-file-pdf"></i>
 							&nbsp;
 							{{ trans('msg.section1_btn3') }}							
@@ -245,6 +237,14 @@
 							<i class="far fa-file-pdf"></i>
 							&nbsp;
 							{{ trans('msg.section1_btn5') }}								
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" 
+							class="btn btn-BAL w-100 mt-2 ">
+							<i class="fas fa-link"></i>
+							&nbsp;
+							{{ trans('msg.section1_button4') }}								
 						</a>
 					</div>
 					<div class="col-6">

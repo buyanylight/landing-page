@@ -75,6 +75,28 @@
 							</a>                    
 						</div>
 					</div>
+					<div class="col-6">
+						<div class="text-center pt-2">
+							<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" 
+							target="_blank" 		            
+							class="btn btn-BAL w-100">
+								<small>
+									{{ trans('msg.section1_button4') }}
+								</small>
+							</a>                    
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="text-center pt-2">
+							<a href="https://app.uniswap.org/#/add/ETH/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" 
+							target="_blank" 		            
+							class="btn btn-BAL w-100">
+								<small>
+									{{ trans('msg.section1_btn6') }}
+								</small>
+							</a>                    
+						</div>
+					</div>
 				</div>
 				<div>
 					<img src="{{ Util::assetUrl('images/main-image.png') }}" alt="" width="100%">
