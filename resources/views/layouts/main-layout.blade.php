@@ -536,7 +536,7 @@
 
 	function makeTimerPublic() {
 
-		var endTime = new Date("01 October 2020 0:00:00 GMT+04:00");
+		var endTime = new Date("10 August 2020 0:00:00 GMT+04:00");
 		endTime = (Date.parse(endTime) / 1000);
 
 		var now = new Date();
@@ -549,10 +549,10 @@
 		var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
 		var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
 
-		if (days < "10") { days = "0" + days; }
-		if (hours < "10") { hours = "0" + hours; }
-		if (minutes < "10") { minutes = "0" + minutes; }
-		if (seconds < "10") { seconds = "0" + seconds; }
+		if (days < "10") { days = "0"; hours = "0"; minutes = "0"; seconds = "0";}
+		if (hours < "10") {  }
+		if (minutes < "10") {  }
+		if (seconds < "10") {  }
 
 		$("#days1").html("<span style='font-size:10px;'>{{ trans('msg.section3_days') }}</span><br><span style='font-size:17px;'>" + days +" </span>");
 		$("#hours1").html("<span style='font-size:10px;'>{{ trans('msg.section3_hrs') }}</span><br><span style='font-size: 17px;'>" + hours +" </span>" );
@@ -720,7 +720,7 @@
 	            		<h3>            			
 			                <a class="closeIEOPopUp btn btn-success btn-lg" 
 			                style="font-size: 1em; padding: 0.25em 1em;" 
-			                href="{{ route('ieo') }}#section-bal-token">
+			                href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b">
 				                {{ trans('msg.section3_btn1') }}
 			            	</a>			            	
 	            		</h3>

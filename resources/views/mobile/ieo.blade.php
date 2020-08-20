@@ -207,7 +207,7 @@
 			</div>
 			<div class="col-12 text-center pt-4">
 				<div class="row">
-					<div class="col-12">
+					<div class="col-6">
 						<a href="#meet-bal" 
 							class="btn btn-BAL w-100 mt-3 ">
 							<i class="fas fa-link"></i>
@@ -217,7 +217,7 @@
 					</div>
 					<div class="col-6">
 						<a href="{{ Util::assetUrl('papers/Whitepaper_1.1.pdf') }}" 
-							target="_blank" class="btn btn-BAL w-100 mt-2">
+							target="_blank" class="btn btn-BAL w-100 mt-3">
 							<i class="far fa-file-pdf"></i>
 							&nbsp;
 							{{ trans('msg.section1_btn2') }}							
@@ -245,6 +245,14 @@
 							<i class="far fa-file-pdf"></i>
 							&nbsp;
 							{{ trans('msg.section1_btn5') }}								
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="https://app.uniswap.org/#/add/ETH/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" 
+							target="_blank" class="btn btn-BAL w-100 mt-2">
+							<i class="fas fa-coins"></i>
+							&nbsp;
+							{{ trans('msg.section1_btn6') }}								
 						</a>
 					</div>
 				</div>
@@ -306,12 +314,12 @@
 							</div>
 						</div>
 						<div class="pt-3">
-							<a href="#section-bal-token" class="btn btn-light rounded" style="color:#3D75F1; font-size:11.892px">
+							<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-light rounded" style="color:#3D75F1; font-size:11.892px">
 							<b>{{ trans('msg.section3_btn1') }}</b>		
 							</a>
-							<p class="m-0 mt-2 ">
+							<!-- <p class="m-0 mt-2 ">
 							<b>{!! trans('msg.section3_launch') !!}</b>	
-							</p>
+							</p> -->
 						</div>
 					</div>
 				</div>
@@ -330,7 +338,7 @@
 							</div>
 							<div class="pt-1">
 								<div class="progress">
-									  <div class="progress-bar" role="progressbar" style="width: 38%" aria-valuenow="35" aria-valuemin="0" aria-valuemax	="100">	
+									  <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="35" aria-valuemin="0" aria-valuemax	="100">	
 									  </div>
 								</div>
 							</div>
@@ -648,7 +656,7 @@ $newsdatas = [];
 </section>
 
 
-<section class="section7 section-buy-token" id="section-bal-token">
+<!-- <section class="section7 section-buy-token" id="section-bal-token">
 	<div class="pt-3 mt-3 container">
 		<div class="row">
 			<div class="col-7">
@@ -812,7 +820,7 @@ $newsdatas = [];
 
 							<div class="pt-4">
 								<div class="form-group">
-									<label> <b>Step 1:</b>{!! trans('msg.sectionbuy_step') !!}</label>
+									<label>{!! trans('msg.sectionbuy_step') !!}</label>
 									<select name="currency" class="form-control" required>
 										@foreach($tokens as $token)
 											<option value="" class="{{ $token['base'] }}_value">{{ $token['base'] }}</option>
@@ -843,7 +851,7 @@ $newsdatas = [];
 		</div>
 	</div>
 
-</section>
+</section> -->
 
 
 <section class="section8">

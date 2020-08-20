@@ -285,7 +285,7 @@ return [
     'section3_hrs'=>'시간',
     'section3_mins'=>'분',
     'section3_secs'=>'초',
-    'section3_btn1'=>'지금 17.5% 할인을 받으세요!',
+    'section3_btn1'=>'uniswap 거래',
     'section3_launch'=>'<span style="font-size:14px;">곧 선두하는 IEO 런치패드에 상장됩니다</span>',
     'section3_heading2'=> '토큰 판매',
     'section3_progress1'=> '시작',
@@ -301,10 +301,10 @@ return [
     'section3_private_desc2'=> '2019년 10월 1일부터 2019년 10월 31일까지',
     'section3_pre_ieo'=> '사전 IEO',
     'section3_pre_ieo_desc1'=> '0.25 USD',
-    'section3_pre_ieo_desc2'=> '2019년 11월 1일부터 2020년 9월 30일',
+    'section3_pre_ieo_desc2'=> '2019년 11월 1일부터 2020년 8월 19일',
     'section3_ieo'=> 'IEO',
     'section3_ieo_desc1'=> '0.30303 USD',
-    'section3_ieo_desc2'=> '2020년 10월 1일 2020년 10월 30일',
+    'section3_ieo_desc2'=> ' 2020년 8월 20일',
     // Section 4
     'section4_heading'=>'BuyAnyLight를 만나보세요',
     'section4_desc'=>'BuyAnyLight는 모든 조명에 관련된 요구에 맞는 고품질의 LED 제품을 제공하는 데 도움을 드립니다. 블록체인, AI, 빅 데이터 및 스마트 계약을 사용하여 올바른 제조업체에 견적을 문의하고 주문한 제품을 받으세요.',
@@ -535,7 +535,7 @@ return [
     'subcribe_btn' => '지금 구독하기',
 
 
-    'pop_up'=> 'BAL TOKEN PRE-IEO 세일이 시작되었습니다!',
+    'pop_up'=> '지금 Uniswap에서 BAL 토큰을 사용할 수 있습니다!',
 
 
     // Footer

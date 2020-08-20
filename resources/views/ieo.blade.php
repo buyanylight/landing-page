@@ -263,6 +263,13 @@
 								{{ trans('msg.section1_btn5') }}
 							</a>
 						</div>
+						<div class="col pl-1" style="z-index:100">
+							<a href="https://app.uniswap.org/#/add/ETH/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL w-100" target="_blank">
+								<i class="fas fa-coins"></i>
+								<br>
+								{{ trans('msg.section1_btn6') }}
+							</a>
+						</div>
 					</div>
 					<div class="pt-3 row">
 						<div class="col pr-1">
@@ -402,12 +409,12 @@
 							</div>
 						</div>
 						<div class="pt-3">
-							<a href="#section-bal-token" class="btn btn-light rounded" style="color:#3D75F1; font-size:11.892px">
+							<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-light rounded" style="color:#3D75F1; font-size:11.892px">
 								<b>{{ trans('msg.section3_btn1') }}</b>	
 							</a>
-							<p class="m-0 mt-2 ">
+							<!-- <p class="m-0 mt-2 ">
 								<b>{!! trans('msg.section3_launch') !!}</b>	
-							</p>
+							</p> -->
 						</div>
 					</div>
 				</div>
@@ -418,7 +425,7 @@
 						<h5 class="">
 							<b>{{ trans('msg.section3_heading2') }}</b>
 						</h5>
-						<div class="pt-5">
+						<div class="pt-3">
 							<div class="row " style="font-size:12px;">
 								<p class="col-md-1 m-0 d-flex align-items-center"><b>{{ trans('msg.section3_progress1') }}</b></p>
 								<p class="col-md-2 text-center m-0"><b></b></p>
@@ -427,7 +434,7 @@
 							</div>
 							<div class="pt-1">
 								<div class="progress">
-									  <div class="progress-bar" role="progressbar" style="width: 38%" aria-valuenow="35" aria-valuemin="0" aria-valuemax	="100">	
+									  <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="35" aria-valuemin="0" aria-valuemax	="100">	
 									  </div>
 								</div>
 							</div>
@@ -783,7 +790,7 @@ $newsdatas = [];
 
 
 
-<section class="section8 section-buy-token" id="section-bal-token">
+<!-- <section class="section8 section-buy-token" id="section-bal-token">
 	<div class="container" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
 		<div class="row">
 			<div class="col-md-6">
@@ -825,7 +832,7 @@ $newsdatas = [];
 				<hr/>
 				<div class=" mt-4">
 					<div class="row">
-						<div class="col-6">
+						<div class="col-12">
 						<h3 class="pb-3">
 							<b>
 							{{ trans('msg.sectionbuy_col_1') }}
@@ -834,10 +841,10 @@ $newsdatas = [];
 						@foreach($tokens as $token)
 							<div class="card mb-3" style="">
   								<div class="row no-gutters">
-    								<div class="col-md-3 d-flex align-items-center justify-content-center token-info" data-toggle="tooltip" data-placement="right" title="{{ $token['symbol'] }}">
+    								<div class="col-md-2 d-flex align-items-center justify-content-center token-info" data-toggle="tooltip" data-placement="right" title="{{ $token['symbol'] }}">
       									<p class="mb-0" style="font-size: 20px;">{!! $token['logo'] !!}</p>
     								</div>
-    								<div class="col-md-9">
+    								<div class="col-md-10">
       									<div class="card-body card-body d-flex align-items-center justify-content-end token-value" style="height: 60px;">
         									<p class="card-text text-right mb-0">
         										<span class="{{ $token['base'] }}_value" data-value="{{ $token['bal_rate'] }}">
@@ -978,7 +985,7 @@ $newsdatas = [];
 			</form>
 		</div>
 	</div>
-</section>
+</section> -->
 
 
 
@@ -996,14 +1003,6 @@ $newsdatas = [];
 
 
 
-
-
-
-
-
-
-
-<?php /*
 
 
 
@@ -1183,7 +1182,7 @@ $newsdatas = [];
 							<a href="#contact" class="btn btn-BAL">{{ trans('msg.meeting') }}</a>
 						</div>
 						<div class="col">
-							<a href="#section-bal-token" class="btn btn-BAL">
+							<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL">
 								<b>
 								{{ trans('msg.BAL_token') }}
 								</b>
@@ -1822,7 +1821,7 @@ $newsdatas = [];
 							<a href="#contact" class="btn btn-BAL">{{ trans('msg.meeting') }}</a>
 						</div>
 						<div class="col">
-							<a href="#section-bal-token" class="btn btn-BAL">
+							<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL">
 								<b>
 								{{ trans('msg.BAL_token') }}
 								</b>

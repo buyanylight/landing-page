@@ -271,6 +271,7 @@ return [
     'section1_btn3'=>'Yellow Paper',
     'section1_btn4'=>'One Pager',
     'section1_btn5'=>'Pitch Deck',
+    'section1_btn6'=>'Add Liquidity',
     'section1_video1'=>'BAL IEO',
     'section1_video2'=>'Introducing BAL',
     'section1_video3'=>'MyHome',
@@ -285,7 +286,7 @@ return [
     'section3_hrs'=>'Hours',
     'section3_mins'=>'Minutes',
     'section3_secs'=>'Seconds',
-    'section3_btn1'=>'GET 17.5% DISCOUNT NOW!',
+    'section3_btn1'=>'Trade on Uniswap',
     'section3_launch'=>'Soon on Leading IEO Launchpads',
     'section3_heading2'=> 'Token Sale',
     'section3_progress1'=> 'Start',
@@ -301,10 +302,10 @@ return [
     'section3_private_desc2'=> '1st Oct 2019 to 31st Oct 2019',
     'section3_pre_ieo'=> 'PRE-IEO',
     'section3_pre_ieo_desc1'=> '0.25 USD',
-    'section3_pre_ieo_desc2'=> '1st Nov 2019 to 30th Sept 2020',
-    'section3_ieo'=> 'IEO',
+    'section3_pre_ieo_desc2'=> '1st Nov 2019 to 19th Aug 2020',
+    'section3_ieo'=> 'IEO (Uniswap)',
     'section3_ieo_desc1'=> '0.30303 USD',
-    'section3_ieo_desc2'=> '1st Oct 2020 to 31st Oct 2020',
+    'section3_ieo_desc2'=> '20th August 2020',
     // Section 4
     'section4_heading'=>'Meet BuyAnyLight',
     'section4_desc'=>'BuyAnyLight helps you source quality LED products for all of your lighting needs. Using blockchain, AI, big data and smart contracts, it gets your inquiries before the right manufacturers and ensures that you receive the products you ordered.',
@@ -537,7 +538,7 @@ return [
 
 
 
-    'pop_up'=> 'BAL TOKEN PRE-IEO SALE IS LIVE!',
+    'pop_up'=> 'BAL Tokens available on Uniswap now!',
 
 
 
