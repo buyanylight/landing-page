@@ -380,7 +380,7 @@
 							<a href="#contact" class="btn btn-BAL">{{ trans('msg.meeting') }}</a>
 						</div>
 						<div class="col">
-							<a href="#section-bal-token" class="btn btn-BAL">
+							<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL">
 								<b>
 									{{ trans('msg.BAL_token') }}
 								</b>
@@ -1843,7 +1843,7 @@
 							</a>
 						</div>
 						<div class="col">
-							<a href="#section-bal-token" class="btn btn-BAL">
+							<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL">
 								<b>
 									{{ trans('msg.BAL_token') }}
 								</b>
