@@ -393,13 +393,13 @@
 						<h5 class=" text-center">
 							<b>{{ trans('msg.section3_private') }}</b>	
 						</h5>
-						<div class="card card-body mt-3" style="
+						<!-- <div class="card card-body mt-3" style="
 						background-color:#3249B5; 
 						background-image:none; 
 						color:white;
 						padding:0.7rem;">
 							<p class="m-0 text-center">{{ trans('msg.section3_private_desc1') }}</p>
-						</div>
+						</div> -->
 						<div class="mt-3  text-center">
 							<p class="m-0">{{ trans('msg.section3_private_desc2') }}</p>
 						</div>
@@ -412,13 +412,13 @@
 						<h5 class=" text-center">
 							<b>{{ trans('msg.section3_pre_ieo') }}</b>	
 						</h5>
-						<div class="card card-body mt-3" style="
+						<!-- <div class="card card-body mt-3" style="
 						background-color:#3249B5; 
 						background-image:none; 
 						color:white;
 						padding:0.7rem;">
 							<p class="m-0 text-center">{{ trans('msg.section3_pre_ieo_desc1') }}</p>
-						</div>
+						</div> -->
 						<div class="mt-3  text-center">
 							<p class="m-0">{{ trans('msg.section3_pre_ieo_desc2') }}</p>
 						</div>
@@ -431,13 +431,13 @@
 						<h5 class=" text-center">
 							<b>{{ trans('msg.section3_ieo') }}</b>	
 						</h5>
-						<div class="card card-body mt-3" style="
+						<!-- <div class="card card-body mt-3" style="
 						background-color:#3249B5; 
 						background-image:none; 
 						color:white;
 						padding:0.7rem;">
 							<p class="m-0 text-center">{{ trans('msg.section3_ieo_desc1') }}</p>
-						</div>
+						</div> -->
 						<div class="mt-3  text-center">
 							<p class="m-0">{{ trans('msg.section3_ieo_desc2') }}</p>
 						</div>
