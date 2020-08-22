@@ -76,25 +76,46 @@
 					</div>
 					<div class="mt-3">
 						<div class="row">
-							<div class="col-12">
-								<b>
-								{{ trans('msg.section1_ratings')}}
-								</b>	
+							<div class="col-4">
+								<div class="row">
+									<div class="col-12">
+										<b>
+										{{ trans('msg.section1_ratings')}}
+										</b>	
+									</div>
+									<div class="col-12 pt-3">
+										<a href="https://icobench.com/ico/buyanylight-bal" 
+							target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICObench">					
+								<img border="0" async src="{{Util::assetUrl('images/ieo/partners/icobench.png')}}" 						
+								style="height: 60px; margin-bottom: -15px; margin-right: 5px;" 
+								alt="BuyAnyLight (BAL) ICO rating"/>
+							</a>
+							
+							<a href="https://icomarks.com/ico/buyanylight" 
+							target="_blank" rel="nofollow" title="BuyAnyLight ICO">
+								<img border="0" async src="{{Util::assetUrl('images/ieo/partners/icomarks.svg')}}"
+								style="height: 60px; margin-bottom: -15px; margin-left: 5px;" 
+								alt="BuyAnyLight ICO Rating"/>
+							</a>
+									</div>
+								</div>
 							</div>
-							<div class="col-12 pt-3">
-								<a href="https://icobench.com/ico/buyanylight-bal" 
-					target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on ICObench">					
-						<img border="0" async src="{{Util::assetUrl('images/ieo/partners/icobench.png')}}" 						
-						style="height: 60px; margin-bottom: -15px; margin-right: 5px;" 
-						alt="BuyAnyLight (BAL) ICO rating"/>
-					</a>
-					
-					<a href="https://icomarks.com/ico/buyanylight" 
-					target="_blank" rel="nofollow" title="BuyAnyLight ICO">
-						<img border="0" async src="{{Util::assetUrl('images/ieo/partners/icomarks.svg')}}"
-						style="height: 60px; margin-bottom: -15px; margin-left: 5px;" 
-						alt="BuyAnyLight ICO Rating"/>
-					</a>
+							<div class="col-4">
+								<div class="row">
+									<div class="col-12">
+										<b>
+										{{ trans('msg.section1_partners')}}
+										</b>	
+									</div>
+									<div class="col-12 pt-3">
+										<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" 
+							target="_blank" rel="nofollow" title="BuyAnyLight (BAL) on Uniswap">					
+								<img border="0" async src="{{Util::assetUrl('images/ieo/partners/uniswap.jpeg')}}" 						
+								style="height: 60px; margin-bottom: -15px; margin-right: 5px;" 
+								alt="BuyAnyLight (BAL) ICO rating"/>
+							</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

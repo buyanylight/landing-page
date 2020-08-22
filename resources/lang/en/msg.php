@@ -10,6 +10,7 @@ return [
     'section1_button4'=>'Buy BAL Tokens',
     'section1_video'=>'Introducing BuyAnyLight',
     'section1_ratings'=>'ICO Rating Review:',
+    'section1_partners'=>'Partners:',
     'section1_video2'=>'Watch Video',
     // Section 2
     'section2_lightfinder'=>'LightFinder',

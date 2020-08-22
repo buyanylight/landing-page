@@ -22,6 +22,12 @@
 						style="height: 60px; margin-bottom: -15px; margin-left: 5px;" 
 						alt="BuyAnyLight ICO Rating"/>
 					</a>
+					<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" 
+					target="_blank" rel="nofollow" title="BuyAnyLight ICO">
+						<img border="0" src="{{Util::assetUrl('images/ieo/partners/uniswap.jpeg')}}"
+						style="height: 60px; margin-bottom: -15px; margin-left: 5px;" 
+						alt="BuyAnyLight ICO Rating"/>
+					</a>
 				</div>
 				<div class="row pt-2">
 					<div class="col-12">

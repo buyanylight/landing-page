@@ -2210,6 +2210,7 @@ $newsdatas = [];
 					$partners[] = [ 'style'=>"", 'title'=>"Transcendence", 'link'=>"https://teloscoin.org/", 'src'=>"images/ieo/partners/transcendence.png",  'width' => '45%'];
 					$partners[] = [ 'style'=>"", 'title'=>"Telos", 'link'=>"https://teloscoin.org/", 'src'=>"images/ieo/partners/telos.png",  'width' => '30%'];
 					$partners[] = [ 'style'=>"", 'title'=>"Bitcoin Subsidium", 'link'=>"https://bitdorado.exchange/", 'src'=>"images/ieo/partners/bitdrado.png",  'width' => '60%'];
+					$partners[] = [ 'style'=>"", 'title'=>"Uniswap", 'link'=>"https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b", 'src'=>"images/ieo/partners/uniswap.jpeg",  'width' => '60%'];
 				?>
 				<div class="col-12 text-center">
 					<h2 class=" ml-3 mt-0"> 
