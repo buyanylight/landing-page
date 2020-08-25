@@ -411,8 +411,8 @@ return [
     'section12_desc1' => 'Ethereum(이더리움)',
     'section12_desc2' => '200만 USD',
     'section12_desc3' => '800만 USD',
-    'section12_desc4' => '(예정)',
-    'section12_desc5' => '(실시간)',
+    'section12_desc4' => 'Uniswap에서 사용 가능',
+    'section12_desc5' => '(종료)',
     // Section 13
     'section13_heading' =>'자금분배 계획',
     'section13_desc' =>'당사의 목표는 BAL 플랫폼을 전 세계 경량 제품 구매의 선도적인 시장으로 만드는 것입니다. 그리고 저희는 당사의 꿈을 실현하기 위한 계획을 고안했습니다. 토큰 판매 수익은 분산형 플랫폼 출시, 지속적인 플랫폼 개발, 사용자 모집 및 마케팅에 자금으로 분배됩니다.',

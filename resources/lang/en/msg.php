@@ -305,7 +305,7 @@ return [
     'section3_pre_ieo_desc1'=> '0.25 USD',
     'section3_pre_ieo_desc2'=> '1st Nov 2019 to 19th Aug 2020',
     'section3_ieo'=> 'IEO (Uniswap)',
-    'section3_ieo_desc1'=> '0.30303 USD',
+    'section3_ieo_desc1'=> 'Available on Uniswap',
     'section3_ieo_desc2'=> '20th August 2020',
     // Section 4
     'section4_heading'=>'Meet BuyAnyLight',
@@ -414,8 +414,8 @@ return [
     'section12_desc1' => 'Ethereum',
     'section12_desc2' => '2 Million USD',
     'section12_desc3' => '8 Million USD',
-    'section12_desc4' => '(Upcoming)',
-    'section12_desc5' => '(Live)',
+    'section12_desc4' => 'Available on Uniswap',
+    'section12_desc5' => '(Ended)',
     // Section 13
     'section13_heading' =>'Funds Distribution Plan',
     'section13_desc' =>'Our aim is to make BAL Platform the leading marketplace for sourcing light products around the world, and we have devised a plan to make our dream a reality. The proceeds from the token sale will fund the decentralized platform launch, continued platform development, user acquisition, and marketing:',

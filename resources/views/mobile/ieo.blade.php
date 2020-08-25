@@ -1150,6 +1150,8 @@ $newsdatas = [];
 					</div>
 					<div class="pt-2">
 						<b>{{ trans('msg.section12_info9') }} </b>
+						<br>
+						<br>
 					</div>
 					<div class="pt-2">
 						<b>{{ trans('msg.section12_info10') }} </b>
@@ -1175,7 +1177,7 @@ $newsdatas = [];
 					{{ trans('msg.section11_heading') }} 
 					</div>
 					<div class="pt-2">
-						1BAL =  0.30303 USD {{ trans('msg.section12_desc4') }} 
+						{{ trans('msg.section12_desc4') }} 
 					</div>
 					<div class="pt-2">
 						1BAL =  0.25 USD {{ trans('msg.section12_desc5') }} 
