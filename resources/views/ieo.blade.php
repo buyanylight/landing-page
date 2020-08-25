@@ -257,20 +257,20 @@
 								{{ trans('msg.section1_btn5') }}
 							</a>
 						</div>
-						<div class="col pl-1" style="z-index:100">
+						<!-- <div class="col pl-1" style="z-index:100">
 							<a href="https://app.uniswap.org/#/add/ETH/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL w-100" target="_blank">
 								<i class="fas fa-coins"></i>
 								<br>
 								{{ trans('msg.section1_btn6') }}
 							</a>
-						</div>
-						<div class="col-12 pt-2">
+						</div> -->
+						<!-- <div class="col-12 pt-2">
 							<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL w-100">
 								<i class="fas fa-link"></i>
 								<br>
 								{{ trans('msg.section1_button4') }}
 							</a>
-						</div>
+						</div> -->
 					</div>
 					<div class="pt-3 row">
 						<div class="col pr-1">
@@ -1182,13 +1182,13 @@ $newsdatas = [];
 						<div class="col">
 							<a href="#contact" class="btn btn-BAL">{{ trans('msg.meeting') }}</a>
 						</div>
-						<div class="col">
+						<!-- <div class="col">
 							<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL">
 								<b>
 								{{ trans('msg.BAL_token') }}
 								</b>
 							</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -1821,13 +1821,13 @@ $newsdatas = [];
 						<div class="col">
 							<a href="#contact" class="btn btn-BAL">{{ trans('msg.meeting') }}</a>
 						</div>
-						<div class="col">
+						<!-- <div class="col">
 							<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL">
 								<b>
 								{{ trans('msg.BAL_token') }}
 								</b>
 							</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -2210,7 +2210,7 @@ $newsdatas = [];
 					$partners[] = [ 'style'=>"", 'title'=>"Transcendence", 'link'=>"https://teloscoin.org/", 'src'=>"images/ieo/partners/transcendence.png",  'width' => '45%'];
 					$partners[] = [ 'style'=>"", 'title'=>"Telos", 'link'=>"https://teloscoin.org/", 'src'=>"images/ieo/partners/telos.png",  'width' => '30%'];
 					$partners[] = [ 'style'=>"", 'title'=>"Bitcoin Subsidium", 'link'=>"https://bitdorado.exchange/", 'src'=>"images/ieo/partners/bitdrado.png",  'width' => '60%'];
-					$partners[] = [ 'style'=>"", 'title'=>"Uniswap", 'link'=>"https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b", 'src'=>"images/ieo/partners/uniswap.jpeg",  'width' => '60%'];
+					// $partners[] = [ 'style'=>"", 'title'=>"Uniswap", 'link'=>"https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b", 'src'=>"images/ieo/partners/uniswap.jpeg",  'width' => '60%'];
 				?>
 				<div class="col-12 text-center">
 					<h2 class=" ml-3 mt-0"> 

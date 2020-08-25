@@ -539,7 +539,7 @@ return [
 
 
 
-    'pop_up'=> 'BAL Tokens available on Uniswap now!',
+    'pop_up'=> '<p>Dear Community,</p><p>Together with our early investors, we have realized, that we need to restructure our project as well as tokenomics.</p><p>Due to that, we are going to remove liquidity from UNISWAP by the 27th of August. We will inform at a later stage about a token offering, investment opportunities, and project updates.</p><p>Thanks for your support so far. We will be back!</p><p>Team BAL</p>',
 
 
 

@@ -239,7 +239,7 @@
 							{{ trans('msg.section1_btn5') }}								
 						</a>
 					</div>
-					<div class="col-6">
+					<!-- <div class="col-6">
 						<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" 
 							class="btn btn-BAL w-100 mt-2 ">
 							<i class="fas fa-link"></i>
@@ -254,7 +254,7 @@
 							&nbsp;
 							{{ trans('msg.section1_btn6') }}								
 						</a>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="pt-4">
@@ -313,14 +313,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="pt-3">
+						<!-- <div class="pt-3">
 							<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-light rounded" style="color:#3D75F1; font-size:11.892px">
 							<b>{{ trans('msg.section3_btn1') }}</b>		
 							</a>
-							<!-- <p class="m-0 mt-2 ">
+							<p class="m-0 mt-2 ">
 							<b>{!! trans('msg.section3_launch') !!}</b>	
-							</p> -->
-						</div>
+							</p>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -1626,7 +1626,7 @@ $newsdatas = [];
 					$partners[] = [ 'style'=>"", 'title'=>"Transcendence", 'link'=>"https://teloscoin.org/", 'src'=>"images/ieo/partners/transcendence.png"];
 					$partners[] = [ 'style'=>"", 'title'=>"Telos", 'link'=>"https://teloscoin.org/", 'src'=>"images/ieo/partners/telos.png"];
 					$partners[] = [ 'style'=>"", 'title'=>"Bitcoin Subsidium", 'link'=>"https://bitdorado.exchange/", 'src'=>"images/ieo/partners/bitdrado.png"];
-					$partners[] = [ 'style'=>"", 'title'=>"Uniswap", 'link'=>"https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b", 'src'=>"images/ieo/partners/uniswap.jpeg",  'width' => '60%'];
+					// $partners[] = [ 'style'=>"", 'title'=>"Uniswap", 'link'=>"https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b", 'src'=>"images/ieo/partners/uniswap.jpeg",  'width' => '60%'];
 
 				?>
 				<div class="row pt-4 justify-content-center partners sponsored_fair">

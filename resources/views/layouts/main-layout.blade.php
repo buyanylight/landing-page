@@ -694,7 +694,7 @@
 	</style>
 
 
-	<div id="ieo-popup" 
+<!-- <div id="ieo-popup" 
 	class="modal fade" 
 	tabindex="-1" 
 	role="dialog" 
@@ -724,6 +724,37 @@
 				                {{ trans('msg.section3_btn1') }}
 			            	</a>			            	
 	            		</h3>
+	            	</div>
+	            </div>
+	        </div>
+	    </div>
+	</div> -->
+
+
+
+	<div id="ieo-popup" 
+	class="modal fade" 
+	tabindex="-1" 
+	role="dialog" 
+	aria-labelledby="BAL Token Sale" 
+	aria-hidden="true">
+	    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+	        <div style="background-image: url({{ Util::assetUrl('images/popup-bg3.png') }}), linear-gradient(to right, #3F41E2 52.29%, #7917F8); background-size: cover; background-position: center;"
+	        class="modal-content">
+	            <div class="modal-header" style="border-bottom: 0; padding-bottom: 10px;">
+	            	<div class="d-flex align-items-center justify-content-center" style="width: 100%;">
+		            	<img style="height: 100px; margin: 20px; margin-bottom: 0px;" src="{{ Util::assetUrl('images/logos/logo-white.png') }}"/>
+	            	</div>
+	                <button type="button" class="btn closeIEOPopUp" aria-label="Close" data-dismiss="modal"
+	                style="position: absolute; right: 20px; top: 10px; padding: 0px 0px 10px 10px; outline: none; margin: 0px 0px 10px 10px; font-size: 25px;">
+	                    <i class="fas fa-times"></i>
+	                </button>
+	            </div>
+	            <div class="modal-body pt-2 pr-5 pb-5 pl-5" style="">
+	            	<div style="text-align: left;">
+		                <div class="pt-0" style="font-size: 16px; color:white;">
+		                {!! trans('msg.pop_up') !!}
+		                </div>
 	            	</div>
 	            </div>
 	        </div>

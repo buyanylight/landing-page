@@ -25,6 +25,14 @@ class TokenController extends Controller
 
 		$curr = 'https://api.coinbase.com/v2/exchange-rates?currency=USD';
 
+		// $test_link = 'https://api.thegraph.com/subgraphs/name/graphprotocol/uniswap';
+
+		// $check_link =  'https://app.uniswap.org/#/swap?exactAmount=10&inputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b&outputCurrency=ETH';
+
+		// $link_result = file_get_contents($check_link);
+
+		// dd($link_result);
+
 
 		if (Cache::has('currency')) {
 			$curr_all = json_decode(Cache::get('currency'), true);
@@ -206,6 +214,15 @@ class TokenController extends Controller
 
 
 			$curr = 'https://api.coinbase.com/v2/exchange-rates?currency=USD';
+
+			$test_link = 'https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2';
+
+			$check_link =  'https://app.uniswap.org/#/swap?exactAmount=10&inputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b&outputCurrency=ETH';
+
+
+
+			dd($test_link);
+
 
 			$curr_result = file_get_contents($curr);
 			$curr_all = json_decode($curr_result, true);

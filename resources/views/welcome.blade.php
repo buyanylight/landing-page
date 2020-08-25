@@ -55,15 +55,15 @@
 						<div class="col-4">
 							<a href="{{ route('ieo') }}" class="btn btn-BAL mt-2 w-100" target="_blank">{{ trans('msg.section1_button3')}}</a>
 						</div>
-						<div class="col-4">
+						<!-- <div class="col-4">
 							<a href="https://app.uniswap.org/#/add/ETH/0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL mt-2 w-100" target="_blank">{{ trans('msg.section1_btn6')}}</a>
-						</div>
+						</div> -->
 					</div>
-					<div class="row">
+					<!-- <div class="row">
 						<div class="col-8">
 							<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL mt-2 w-100" target="_blank">{{ trans('msg.section1_button4')}}</a>
 						</div>
-					</div>
+					</div> -->
 					<div class="mt-3">
 						<a data-fancybox href="https://www.youtube-nocookie.com/embed/aaJQLTaSgLk?rel=0" class="text-white">
 							<span style="font-size: 30px;">
@@ -100,7 +100,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<!-- <div class="col-4">
 								<div class="row">
 									<div class="col-12">
 										<b>
@@ -116,7 +116,7 @@
 							</a>
 									</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -405,13 +405,13 @@
 						<div class="col">
 							<a href="#contact" class="btn btn-BAL">{{ trans('msg.meeting') }}</a>
 						</div>
-						<div class="col">
+						<!-- <div class="col">
 							<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL">
 								<b>
 									{{ trans('msg.BAL_token') }}
 								</b>
 							</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -1868,13 +1868,13 @@
 								</b>
 							</a>
 						</div>
-						<div class="col">
+						<!-- <div class="col">
 							<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-BAL">
 								<b>
 									{{ trans('msg.BAL_token') }}
 								</b>
 							</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
