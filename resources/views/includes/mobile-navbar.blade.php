@@ -90,10 +90,10 @@
                     <a class="nav-link text-white links w-100" href="{{ route('home') }}#footer">{{ trans('msg.Contact') }}</a>
                 </li>
                 <hr class="border-white w-100 m-2">
-                <li class="nav-item mr-3 ml-3">
+                <!-- <li class="nav-item mr-3 ml-3">
                     <a class="nav-link text-white links w-100" href="https://lightfinder.buyanylight.com">{{ trans('msg.Sign') }}</a>
-                </li>
-                <li class="nav-item dropdown mr-3 ml-3">
+                </li> -->
+                <!-- <li class="nav-item dropdown mr-3 ml-3">
                     <button class="nav-link dropdown-toggle text-left text-white links btn-black w-100" href="/https://lightfinder.buyanylight.com/buyer/register" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     {{ trans('msg.Register') }}
                     </button>
@@ -101,7 +101,7 @@
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/buyer/register">{{ trans('msg.Buyers') }}</a>
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/supplier/register">{{ trans('msg.Sellers') }}</a>
                     </div>
-                </li>
+                </li> -->
                 @php $locale = session()->get('locale'); @endphp
                 <li class="nav-item dropdown mr-3 ml-3">
                     <span id="nspanvbarDropdownMenuLink" class="nav-link dropdown-toggle  text-left text-white links btn-black w-100" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

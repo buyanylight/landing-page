@@ -86,10 +86,10 @@
                 <li class="nav-item mr-3">
                     <a class="nav-link text-white links" href="{{ route('contact') }}">{{ trans('msg.Contact') }}</a>
                 </li>
-                <li class="nav-item mr-3">
+                <!-- <li class="nav-item mr-3">
                     <a class="nav-link text-white links" href="https://lightfinder.buyanylight.com">{{ trans('msg.Sign') }}</a>
-                </li>
-                <li class="nav-item dropdown mr-3">
+                </li> -->
+                <!-- <li class="nav-item dropdown mr-3">
                     <a class="nav-link dropdown-toggle text-white links" href="{{ route('seller') }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     {{ trans('msg.Register') }}
                     </a>
@@ -97,7 +97,7 @@
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/buyer/register">{{ trans('msg.Buyers') }}</a>
                         <a class="dropdown-item" href="https://lightfinder.buyanylight.com/supplier/register">{{ trans('msg.Sellers') }}</a>
                     </div>
-                </li>
+                </li> -->
                 @if(\Request::is('buy-token') || \Request::is('kyc') || \Request::is('kyc-form') || \Request::is('thank-you'))
                 @else
                 @php $locale = session()->get('locale'); @endphp
