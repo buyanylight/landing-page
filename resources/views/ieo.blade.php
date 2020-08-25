@@ -409,14 +409,17 @@
 								</div>
 							</div>
 						</div>
-						<!-- <div class="pt-3">
-							<a href="https://app.uniswap.org/#/swap?outputCurrency=0xd8e1c43a29dc0311dcadbaccc8c3b677cd462a1b" class="btn btn-light rounded" style="color:#3D75F1; font-size:11.892px">
-								<b>{{ trans('msg.section3_btn1') }}</b>	
-							</a>
-							<p class="m-0 mt-2 ">
+						<div class="pt-3">
+							<button disabled class="btn btn-light rounded">
+								<a href="" class="btn btn-light rounded" style="color:#3D75F1; font-size:11.892px">
+									<b>{{ trans('msg.section3_btn1') }}</b>	
+								</a>
+
+							</button>
+							<!-- <p class="m-0 mt-2 ">
 								<b>{!! trans('msg.section3_launch') !!}</b>	
-							</p>
-						</div> -->
+							</p> -->
+						</div>
 					</div>
 				</div>
 			</div>
