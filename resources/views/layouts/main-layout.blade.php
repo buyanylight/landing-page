@@ -732,7 +732,7 @@
 
 
 
-	<div id="ieo-popup" 
+	<!-- <div id="ieo-popup" 
 	class="modal fade" 
 	tabindex="-1" 
 	role="dialog" 
@@ -759,7 +759,7 @@
 	            </div>
 	        </div>
 	    </div>
-	</div>
+	</div> -->
 	{{-- ////////////////////////////////////////////////////////////// --}}
 	{{-- ieo-popup --}}
 
